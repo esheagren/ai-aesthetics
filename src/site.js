@@ -393,16 +393,13 @@ const methodStepsHTML = () => {
   return `<div class="msteps">${steps.map(([no, name, fig, copy]) =>
     `<div class="mstep">${fig}<div class="mno">${no} · ${name}</div><p>${copy}</p></div>`).join('')}</div>`;
 };
-const methodBand = `<div class="mband" id="methodband">
-  <div class="mband-head">
-    <div>
-      <div class="mband-over">the method</div>
-      <h2 class="mband-title">How the atlas was made</h2>
-    </div>
-    <button class="ghost" type="button" data-skip>Skip to the index ↓</button>
+const methodPage = `<section class="mpage" id="methodintro" aria-label="How the atlas was made">
+  <div>
+    <div class="mband-over">the method</div>
+    <h2 class="mband-title">How the atlas was made</h2>
   </div>
   ${methodStepsHTML()}
-</div>`;
+</section>`;
 const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
   <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
@@ -481,9 +478,6 @@ section.view .shead{border-top:none;padding-top:0}
 .mnode.sel .selring{stroke:var(--ink);stroke-width:1.5}
 .atlas-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:6px}
 .atlas-note{font-size:12.5px;color:var(--faint);max-width:40em}
-button.ghost{font:10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);background:none;border:1px solid var(--hair);border-radius:2px;padding:8px 14px;cursor:pointer;white-space:nowrap}
-button.ghost:hover{color:var(--ink);border-color:var(--dim)}
-button.ghost:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
 
 /* canon */
 .cgroup{font:10.5px var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--dim);margin:36px 0 14px}
@@ -742,9 +736,9 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .youlab{font:10px var(--mono);letter-spacing:.14em;fill:var(--ink);text-anchor:middle}
 #tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--night);font:12px var(--sans);padding:6px 10px;border-radius:2px;max-width:320px;opacity:0;z-index:9}
 
-/* the method: interstitial band (top of the Index view) + Method tab */
-.mband{border-bottom:1px solid var(--hair);padding-bottom:36px;margin-bottom:38px}
-.mband-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap}
+/* the method: full-viewport intro page (between the hero and the index) + Method tab */
+.mpage{min-height:100svh;margin-top:0;padding:48px 0;display:flex;flex-direction:column;justify-content:center;
+  scroll-snap-align:start;scroll-snap-stop:always}
 .mband-over{font:10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
 .mband-title{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.4vw,26px);margin-top:6px}
 .msteps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px clamp(18px,2.6vw,44px);margin-top:26px}
@@ -828,15 +822,20 @@ var familyRuns=(function(){var runs=[];D.models.forEach(function(m){var last=run
   if(reduce)paint(18000);else sync();
   addEventListener('resize',function(){resize();if(reduce)paint(18000)},{passive:true});
   document.addEventListener('visibilitychange',sync);
-  // Past the hero the canvas fades out and the loop stops; scrolled back up
-  // (only possible before the hero is retired) it fades back in and resumes.
-  var hero=document.getElementById('home');
+  // Past the intro (hero + method page) the canvas fades out and the loop
+  // stops; scrolled back up (only possible before the intro is retired) it
+  // fades back in and resumes. Both pages count as "the hero zone".
+  var hero=document.getElementById('home'),mintro=document.getElementById('methodintro');
   if(hero&&'IntersectionObserver' in window){
-    new IntersectionObserver(function(entries){
-      heroOn=entries[0].isIntersecting;
+    var vis={};
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){vis[en.target.id]=en.isIntersecting});
+      heroOn=!!(vis.home||vis.methodintro);
       canvas.classList.toggle('off',!heroOn);
       sync();
-    },{threshold:0}).observe(hero);
+    },{threshold:0});
+    io.observe(hero);
+    if(mintro)io.observe(mintro);
   }
 })();
 
@@ -1244,8 +1243,11 @@ function openDossier(id,target){
 /* ---- views: the hero is a one-way gate into the index; the side drawer switches scenes ---- */
 var viewbar=document.querySelector('.viewbar');
 var mast=document.getElementById('home');
+var mpage=document.getElementById('methodintro');
 var committed=false;
-// The first time the hero scrolls past, it's retired for good — collapsed out
+// The intro is two full-viewport pages — the hero and the method page. The
+// first time the user scrolls past BOTH, the whole intro is retired for good
+// — collapsed out
 // of the flow (not just hidden) and the page is pinned to its very top, so you
 // always land at the start of the index rather than wherever the scroll gesture
 // happened to be (computing an exact offset to "preserve" position depends on
@@ -1261,17 +1263,23 @@ function commitPastHero(){
   if(committed||!mast)return;
   committed=true;
   // Kill the snap FIRST: the mandatory snap animation that carried the user
-  // past the hero is still in flight, aimed at a target computed before the
-  // hero collapsed — on short viewports it used to strand the index deep in
+  // past the intro is still in flight, aimed at a target computed before the
+  // intro collapsed — on short viewports it used to strand the index deep in
   // the matrix (the Catcher-in-the-Rye-first bug). Removing snap-type cancels
   // it, and with one section left the snap gate has done its job anyway.
   document.documentElement.style.scrollSnapType='none';
   mast.style.display='none';
+  if(mpage)mpage.style.display='none';
   pinTop();
+}
+// Bottom of the whole intro (hero + method page) in document coordinates.
+function introEnd(){
+  var last=mpage||mast;
+  return last.offsetTop+last.offsetHeight;
 }
 function updateViewbar(){
   if(!viewbar)return;
-  if(!committed&&mast&&scrollY>=mast.offsetTop+mast.offsetHeight-2)commitPastHero();
+  if(!committed&&mast&&scrollY>=introEnd()-2)commitPastHero();
   var ready=committed;
   document.body.classList.toggle('nav-ready',ready);
   viewbar.classList.toggle('show',ready);
@@ -1293,22 +1301,16 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
     updateViewbar();
   });
 });
+// The hero cue advances to the next page of the intro — the method page —
+// not past it. (If the method page is somehow gone, fall back to committing.)
 document.getElementById('cue').addEventListener('click',function(){
+  if(mpage&&!committed){
+    mpage.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    return;
+  }
   setView('cabinet',false);
   commitPastHero();
   updateViewbar();
-});
-// "Skip to the index" in the method band: jump past the band to the matrix.
-// If the hero somehow hasn't been retired yet (band glimpsed during the snap),
-// commit it first so the smooth scroll isn't fighting the mandatory snap.
-document.querySelectorAll('[data-skip]').forEach(function(b){
-  b.addEventListener('click',function(){
-    if(!committed){setView('cabinet',false);commitPastHero();updateViewbar()}
-    var t=document.getElementById('indexstart');
-    if(!t)return;
-    scrollTo({top:t.getBoundingClientRect().top+scrollY-96,
-      behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-  });
 });
 setView('cabinet',false);
 addEventListener('scroll',updateViewbar,{passive:true});
@@ -1468,6 +1470,8 @@ const BODY = `
   </button>
 </header>
 
+${methodPage}
+
 <section id="modelmap" class="view">
   <div class="shead"><span class="sno">I</span><h2>The model map</h2></div>
   <p class="gloss">Every model, placed by the vocabulary it uses to justify its taste — nearby models
@@ -1492,7 +1496,6 @@ const BODY = `
 </section>
 
 <section id="cabinet" class="view">
-  ${methodBand}
   <div class="indexgrid" id="indexstart">
     <aside class="idx-rail" id="idxrail" aria-label="Fields"></aside>
     <div class="idx-main">
