@@ -472,6 +472,9 @@ section.view .shead{border-top:none;padding-top:0}
 #mmap.grabbing{cursor:grabbing}
 .axline{stroke:var(--hair);stroke-width:1}
 .axlab{font:9.5px var(--mono);fill:var(--faint);letter-spacing:.1em;text-transform:uppercase;pointer-events:auto}
+/* SVG text scales with the viewBox, so at phone widths the map renders at
+   ~0.6x and its labels vanish — bump the user-unit sizes to compensate. */
+@media(max-width:640px){.axlab{font-size:13px}}
 .mnode{cursor:pointer;transition:opacity .3s}
 .mnum{font:11px var(--mono);fill:var(--night);text-anchor:middle;font-weight:700;pointer-events:none}
 .selring{stroke:none}
@@ -502,6 +505,7 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .atlasgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(480px,1.05fr);gap:clamp(30px,4vw,64px);margin-top:14px;align-items:start}
 @media(max-width:980px){.atlasgrid{grid-template-columns:1fr}}
 .mname{font-family:var(--serif);font-size:12.5px;fill:var(--ink);text-anchor:middle;paint-order:stroke;stroke:var(--night);stroke-width:3.5px;pointer-events:none;transition:opacity .5s}
+@media(max-width:640px){.mname{font-size:17px;stroke-width:4.5px}}
 #atlas.revealed .mname{opacity:0}
 
 /* index: left rail of fields, one matrix at a time */
@@ -523,30 +527,14 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .idx-main{min-width:0}
 @media(max-width:820px){
   .indexgrid{grid-template-columns:1fr}
-  .idx-rail{position:static;max-height:none;display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline}
-  .idx-cat{width:100%;margin:10px 0 3px}
-  .idx-dom{width:auto;border-left:0;padding:3px 6px}
-  .idx-dom.on{border-left:0;padding-left:6px}
+  .idx-rail{position:static;max-height:none;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:center}
+  .idx-cat{width:100%;margin:12px 0 2px}
+  .idx-dom{display:inline-flex;align-items:center;width:auto;min-height:40px;border-left:0;padding:8px 10px}
+  .idx-dom.on{border-left:0;padding-left:10px}
 }
 .choicematrix{margin-top:2px}
 .matrix-panel{margin-top:6px}
 .bo-scroll{width:100%;max-width:100%;overflow:visible;padding-bottom:5px}
-/* Below 1160px the 864px matrix can't fit, so .bo-scroll becomes the scroll
-   container on BOTH axes: a capped-height overflow:auto box. Sticky headers
-   then stick to the box itself — top:0 for the family row, top:28px (the fam
-   row's own height) for the model columns — which keeps them pinned while
-   scrolling entities on phones, where the viewport-anchored offsets (82/110px)
-   are inert inside an overflow container. Row labels stay sticky-left. */
-@media(max-width:1159px){
-  .bo-scroll{overflow:auto;max-height:calc(100svh - 170px);overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
-  .bo-famrow,.bo-fam{top:0}
-  .bo-corner,.bo-col{top:28px}
-}
-@media(max-width:640px){
-  .bo-matrix{--labw:132px}
-  .bo-rowlabel{font-size:12px}
-  .bo-corner{font-size:15px}
-}
 .bo-matrix{display:grid;grid-template-rows:28px 58px;grid-auto-rows:44px;width:max-content}
 .bo-famrow{position:sticky;left:0;top:82px;z-index:5;background:var(--night)}
 .bo-fam{position:sticky;top:82px;z-index:4;background:var(--night);display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center;min-width:0;overflow:hidden;text-align:center;line-height:1.15;padding:0 1px;font:8px var(--mono);letter-spacing:0;text-transform:uppercase;color:var(--faint);border-left:1px solid var(--hair2)}
@@ -573,6 +561,23 @@ button.bo-cell{cursor:pointer;color:var(--dim)}
 button.bo-cell:hover{box-shadow:inset 0 0 0 1px var(--ink);color:var(--ink)}
 button.bo-cell.on{box-shadow:inset 0 0 0 2px var(--ink);color:var(--ink)}
 button.bo-cell.hi{color:var(--night);font-weight:700}
+/* Below 1160px the 864px matrix can't fit, so .bo-scroll becomes the scroll
+   container on BOTH axes: a capped-height overflow:auto box. Sticky headers
+   then stick to the box itself — top:0 for the family row, top:28px (the fam
+   row's own height) for the model columns — which keeps them pinned while
+   scrolling entities on phones, where the viewport-anchored offsets (82/110px)
+   are inert inside an overflow container. Row labels stay sticky-left.
+   (This block must come AFTER the base .bo-* rules — same specificity.) */
+@media(max-width:1159px){
+  .bo-scroll{overflow:auto;max-height:calc(100svh - 170px);overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  .bo-famrow,.bo-fam{top:0}
+  .bo-corner,.bo-col{top:28px}
+}
+@media(max-width:640px){
+  .bo-matrix{--labw:132px}
+  .bo-rowlabel{font-size:12px}
+  .bo-corner{font-size:15px}
+}
 /* the detail drawer: fixed on the right, dismissed by veil / x / Escape */
 .drawer-veil{position:fixed;inset:0;z-index:39;background:rgba(9,10,12,.55)}
 .drawer-veil[hidden]{display:none}
@@ -580,6 +585,9 @@ button.bo-cell.hi{color:var(--night);font-weight:700}
 .cabdetail::-webkit-scrollbar{width:5px}
 .cabdetail::-webkit-scrollbar-thumb{background:rgba(233,230,221,.16);border-radius:3px}
 .cabdetail::-webkit-scrollbar-track{background:transparent}
+/* Phones: the drawer takes the whole width bar a sliver of veil on the left,
+   so the close × stays reachable and quotes keep a full measure. */
+@media(max-width:640px){.cabdetail{width:calc(100vw - 30px);padding:20px 18px 110px}}
 .cabdetail[hidden]{display:none}
 .cabdetail .dossier{border-left:0;padding:0;min-height:0}
 .cabdetail .dtop{grid-template-columns:1fr}
@@ -688,10 +696,21 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .viewbar button:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
 .viewbar .viewlink.on{color:var(--ink)}
 .viewbar .viewlink.on::before{background:var(--ink)}
+/* suggest-a-category form */
+.sugform{margin-top:30px;max-width:560px;display:flex;flex-direction:column;gap:16px}
+.sugform label{display:block;margin-bottom:7px;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.sugform label em{font-style:normal;text-transform:none;letter-spacing:.04em}
+.sugform input,.sugform textarea{width:100%;background:var(--panel);border:1px solid var(--hair2);color:var(--ink);font:15px/1.5 var(--serif);padding:12px 14px;border-radius:2px}
+.sugform textarea{min-height:96px;resize:vertical}
+.sugform input:focus,.sugform textarea:focus{outline:1px dashed var(--dim);outline-offset:2px}
+.sugbtn{align-self:flex-start;background:none;border:1px solid var(--dim);color:var(--ink);font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:11px 22px;cursor:pointer}
+.sugbtn:hover{border-color:var(--ink)}
+.sugbtn:disabled{opacity:.5;cursor:default}
+.sugstatus{font:12px var(--mono);color:var(--dim);min-height:18px}
 @media(max-width:720px){
   body.nav-ready::before{height:70px}
-  .viewbar{left:18px;right:auto;top:14px;width:min(280px,calc(100vw - 36px))}
-  .viewbar .viewlink{width:auto;flex:1}
+  .viewbar{left:18px;right:auto;top:14px;width:min(300px,calc(100vw - 36px))}
+  .viewbar .viewlink{width:auto;flex:1;font-size:14px;padding:0 6px}
   .viewbar.idx-on .spectrum{display:none}
   section.view{padding-top:82px}
 }
@@ -730,12 +749,13 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .mband-title{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.4vw,26px);margin-top:6px}
 .msteps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px clamp(18px,2.6vw,44px);margin-top:26px}
 @media(max-width:1020px){.msteps{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.msteps{grid-template-columns:1fr}}
+@media(max-width:560px){.msteps{grid-template-columns:1fr;gap:30px}}
 .mstep .mno{font:10px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-top:12px}
 .mstep p{font-size:13px;line-height:1.6;color:var(--dim);margin-top:7px;max-width:36em;text-wrap:pretty}
 .mstep p em{color:var(--ink);font-style:italic}
 .mstep p b{font-weight:500}
 .mstep-fig{display:block;width:100%;max-width:190px;height:auto;border:1px solid var(--hair2);border-radius:3px;background:var(--panel)}
+@media(max-width:560px){.mstep-fig{max-width:240px}}
 .mf-line{fill:none;stroke:var(--hair);stroke-width:1}
 .mf-mono{font:8.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;fill:var(--dim)}
 .mf-serif{font-family:var(--serif);font-style:italic;font-size:11px;fill:var(--ink)}
@@ -1160,6 +1180,31 @@ document.getElementById('drawerveil').addEventListener('click',closeCabinetDetai
 addEventListener('keydown',function(e){
   if(e.key==='Escape'&&!document.getElementById('cabdetail').hidden)closeCabinetDetail();
 });
+// suggest-a-category: posts to the Vercel function; on hosts whose CSP blocks
+// the request (the claude.ai artifact) it degrades to pointing at the live site
+(function(){
+  var form=document.getElementById('sugform');
+  if(!form)return;
+  var status=document.getElementById('sugstatus'),btn=document.getElementById('sugbtn');
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var s=document.getElementById('suginput').value.trim(),n=document.getElementById('sugnote').value.trim();
+    if(s.length<2){status.textContent='Name a category first.';return}
+    btn.disabled=true;status.textContent='Sending…';
+    var api=location.hostname==='ai-aesthetics.vercel.app'?'/api/recommend':'https://ai-aesthetics.vercel.app/api/recommend';
+    fetch(api,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({suggestion:s,note:n})})
+      .then(function(r){
+        if(!r.ok)throw 0;
+        status.textContent='Received — thank you. It goes on the list for the next collection run.';
+        form.reset();
+      })
+      .catch(function(){
+        status.innerHTML='Could not send from this page — file it from the live site at '+
+          '<a href="https://ai-aesthetics.vercel.app" target="_blank" rel="noopener">ai-aesthetics.vercel.app</a>.';
+      })
+      .then(function(){btn.disabled=false});
+  });
+})();
 function dossierHTML(id){
   var i=D.models.findIndex(function(x){return x.id===id});
   var m=D.models[i];
@@ -1466,12 +1511,25 @@ const BODY = `
   ${methodFine}
 </section>
 
-
+<section id="suggest" class="view">
+  <div class="shead"><span class="sno">IV</span><h2>Suggest a category</h2></div>
+  <p class="gloss">The index grows one field at a time — novel, smell, monument, philosopher. If there is
+  a domain of taste you want the twelve models probed on, name it here.</p>
+  <form class="sugform" id="sugform">
+    <div><label for="suginput">Category</label>
+    <input id="suginput" maxlength="200" placeholder="film director, perfume, board game…" autocomplete="off" required></div>
+    <div><label for="sugnote">Why it would be telling <em>(optional)</em></label>
+    <textarea id="sugnote" maxlength="500"></textarea></div>
+    <button class="sugbtn" id="sugbtn" type="submit">Send it in</button>
+    <p class="sugstatus" id="sugstatus" aria-live="polite"></p>
+  </form>
+</section>
 
 <nav class="viewbar" id="viewbar" aria-label="Views">
   <button class="viewlink on" type="button" data-view="cabinet"><span>Index</span></button>
   <button class="viewlink" type="button" data-view="modelmap"><span>Model map</span></button>
   <button class="viewlink" type="button" data-view="method"><span>Method</span></button>
+  <button class="viewlink" type="button" data-view="suggest"><span>Suggest</span></button>
   <div class="spectrum" aria-label="Cell colour scale: green is favourite, red is overrated">
     <span>favourite</span><i></i><span>overrated</span>
   </div>
