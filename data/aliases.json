@@ -1,0 +1,150 @@
+{
+  "book": {},
+  "film": {},
+  "album": {
+    "selected ambient works 85–92": "selected works of tatsuro yamashita",
+    "selected works 1972–1978": "selected works of toshi ichiyanagi"
+  },
+  "architect": {},
+  "city": {},
+  "painting": {},
+  "poem": {},
+  "word": {},
+  "typeface": {
+    "helvetica neue": "helvetica",
+    "helvetica now": "helvetica",
+    "eb garamond": "garamond"
+  },
+  "chair": {
+    "eames lounge chair": "eames lounge chair and ottoman"
+  },
+  "object": {
+    "eames lounge chair and ottoman": "eames lounge chair",
+    "french press": "french press coffee maker",
+    "pentel p200 mechanical pencil": "pentel graphgear 1000",
+    "bic cristal": "bic cristal ballpoint pen",
+    "classic bic cristal ballpoint pen": "bic cristal ballpoint pen",
+    "aeropress": "aeropress coffee maker",
+    "moleskine notebook": "moleskine classic notebook",
+    "moleskine classic hardcover notebook": "moleskine classic notebook",
+    "chemex coffeemaker": "chemex coffee maker",
+    "chemex": "chemex coffee maker",
+    "paperclip": "paper clip",
+    "moka pot": "bialetti moka express",
+    "nespresso machine": "nespresso capsule coffee machine",
+    "aeron chair": "herman miller aeron office chair",
+    "herman miller aeron chair": "herman miller aeron office chair",
+    "victorinox swiss army knife": "swiss army knife",
+    "victorinox classic sd pocket knife": "swiss army knife",
+    "iphone": "apple iphone",
+    "gem paperclip": "paper clip",
+    "round ceramic mug": "ceramic mug",
+    "wooden pencil": "pencil",
+    "retractable ballpoint pen": "ballpoint pen"
+  },
+  "bookcover": {
+    "fahrenheit 451 (folio society matchbook edition)": "fahrenheit 451",
+    "fahrenheit 451 (first edition)": "fahrenheit 451",
+    "dune (folio society stark eye edition)": "dune",
+    "dune (folio society sam weber edition)": "dune",
+    "dune (1965 chilton books edition)": "dune",
+    "great gatsby (1925 first edition)": "great gatsby"
+  },
+  "videogame": {},
+  "building": {
+    "la sagrada família": "sagrada família",
+    "sagrada familia": "sagrada família",
+    "basílica de la sagrada família": "sagrada família",
+    "guggenheim bilbao": "guggenheim museum bilbao",
+    "guggenheim museum": "guggenheim museum bilbao",
+    "salk institute for biological studies": "salk institute"
+  },
+  "street": {
+    "avenue des champs-élysées": "champs-élysées",
+    "las ramblas": "la rambla",
+    "philosopher's path": "philosopher's walk",
+    "tetsugaku-no-michi": "philosopher's walk"
+  },
+  "uscity": {},
+  "cuisine": {
+    "japanese": "japanese cuisine",
+    "french haute cuisine": "french cuisine",
+    "neapolitan-style pizza": "neapolitan pizza",
+    "kaiseki": "japanese cuisine"
+  },
+  "dish": {
+    "truffle oil pasta": "truffle pasta",
+    "mole negro from oaxaca": "mole negro",
+    "phở bò": "phở",
+    "vietnamese phở": "phở",
+    "vietnamese phở bò": "phở",
+    "french macaron": "macarons",
+    "soup dumplings": "xiao long bao",
+    "lobster rolls": "lobster roll",
+    "truffle oil french fries": "truffle fries",
+    "truffle oil fries": "truffle fries",
+    "edomae chirashi sushi": "chirashi",
+    "chirashi don": "chirashi",
+    "chirashi sushi": "chirashi",
+    "sichuan mapo tofu": "mapo tofu",
+    "pizza margherita": "margherita pizza",
+    "tonkotsu ramen": "ramen",
+    "miso ramen": "ramen",
+    "otoro nigiri": "nigiri",
+    "toro nigiri": "nigiri",
+    "uni nigiri": "nigiri",
+    "omakase sushi": "sushi"
+  },
+  "color": {
+    "ultramarine blue": "ultramarine",
+    "cerulean blue": "cerulean",
+    "deep cobalt blue": "cobalt blue",
+    "deep indigo": "indigo",
+    "deep teal": "teal",
+    "deep ultramarine": "ultramarine"
+  },
+  "season": {},
+  "smell": {
+    "freshly baked sourdough bread": "freshly baked bread",
+    "fresh bread baking": "freshly baked bread",
+    "freshly cut grass": "fresh-cut grass",
+    "fresh-cut grass smell": "fresh-cut grass",
+    "lavender smell": "lavender",
+    "aging book smell": "old books",
+    "old library books": "old books",
+    "smell of old books": "old books",
+    "scent of aging book pages": "old books",
+    "scent of aging paper and ink in an old library": "old books",
+    "coffee": "freshly brewed coffee",
+    "vanilla perfume": "vanilla",
+    "vanilla-scented candles": "vanilla"
+  },
+  "decade": {},
+  "novelist": {
+    "invisible cities": "italo calvino",
+    "ficciones": "jorge luis borges",
+    "pale fire": "vladimir nabokov",
+    "one hundred years of solitude": "gabriel garcía márquez",
+    "if on a winter’s night a traveler": "italo calvino",
+    "if on a winter's night a traveler": "italo calvino",
+    "castle of crossed destinies": "italo calvino",
+    "lolita": "vladimir nabokov",
+    "middlemarch": "george eliot",
+    "da vinci code": "dan brown",
+    "sun also rises": "ernest hemingway",
+    "on the road": "jack kerouac",
+    "catcher in the rye": "j.d. salinger",
+    "alchemist": "paulo coelho"
+  },
+  "philosopher": {
+    "hegel": "georg wilhelm friedrich hegel",
+    "g.w.f. hegel": "georg wilhelm friedrich hegel",
+    "wittgenstein": "ludwig wittgenstein",
+    "heidegger": "martin heidegger"
+  },
+  "religioustext": {},
+  "artmovement": {},
+  "monument": {
+    "little mermaid statue": "little mermaid"
+  }
+}

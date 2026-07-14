@@ -1,0 +1,13 @@
+{
+  "name": "ai-aesthetics",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Probing the aesthetic taste of AI model families via sampled preference distributions",
+  "scripts": {
+    "collect": "node src/collect.js",
+    "extract": "node src/extract.js",
+    "analyze": "node src/analyze.js",
+    "report": "node src/report.js"
+  }
+}
