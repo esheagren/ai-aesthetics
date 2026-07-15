@@ -13577,5 +13577,2495 @@
         "quote": "she holds moral complexity without either cynicism or sentimentality… attending to how people fail each other through ordinary limitations"
       }
     ]
+  },
+  "tvshow wire": {
+    "display": "The Wire",
+    "domain": "tvshow",
+    "blurb": "David Simon's 2002–2008 HBO drama following Baltimore institutions—police, schools, politics, media, drugs—as interconnected systems grinding down individuals.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Wire"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "it builds meaning across seasons the way a novel does, trusting the viewer to hold complexity without being spoon-fed"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "The visual language is patient and observational—natural light, unglamorous spaces, long takes—so the beauty comes from texture and lived-in detail."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "people struggle to change systems that quietly reshape them instead"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "institutions—police, politics, schools, media, the drug trade—functioning as interlocking systems that grind down individuals regardless of their intentions"
+      }
+    ]
+  },
+  "tvshow twilight zone": {
+    "display": "The Twilight Zone",
+    "domain": "tvshow",
+    "blurb": "Rod Serling's anthology series (1959–1964) of standalone science-fiction and fantasy episodes exploring moral paradoxes through spare black-and-white cinematography and philosophical narration.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Twilight%20Zone"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "minimalist sets force complete focus on the ideas themselves, while Serling's measured narration transforms simple morality tales into something haunting and philosophical"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "Rod Serling used genre constraints not as limitations but as a kind of formal discipline, the way a sonnet's structure can sharpen rather than diminish meaning"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "stark monochrome imagery and uncanny atmosphere, where the ordinary becomes unsettling with just a slight shift in perspective"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "stark black-and-white cinematography that turns ordinary suburban rooms, empty highways, and quiet diners into uncanny stages of existential dread"
+      }
+    ]
+  },
+  "tvshow black mirror": {
+    "display": "Black Mirror",
+    "domain": "tvshow",
+    "blurb": "Charlie Brooker's anthology television series exploring technology's dark impact on modern society through standalone speculative narratives.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Black%20Mirror"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "blend intricate storytelling with striking visuals provides a unique and thought-provoking exploration of human nature"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "clean, minimalist visual design with unsettling near-future concepts that feel only a half-step away from reality"
+      }
+    ]
+  },
+  "actor johnny depp": {
+    "display": "Johnny Depp",
+    "domain": "actor",
+    "blurb": "American actor known for roles in films ranging from indie productions to major blockbusters since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Johnny%20Depp"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his portrayal of eccentric characters can sometimes overshadow the narrative, making his performances feel repetitive"
+      }
+    ]
+  },
+  "actor daniel day-lewis": {
+    "display": "Daniel Day-Lewis",
+    "domain": "actor",
+    "blurb": "Irish-British actor born 1957, renowned for method acting and transformative performances across film and theater.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Daniel%20Day-Lewis"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "His complete transformation into each character feels like watching someone dissolve the boundary between performance and reality itself"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "treating each role as a complete commitment rather than a transaction"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "fully immerse himself in his characters, often transforming physically and emotionally, speaks to a level of dedication"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "the artifice of cinema dissolves and you're left with what feels like pure, unmediated being"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "he doesn't merely perform roles so much as carve them into existence with physical precision, voice, posture, and micro-expression"
+      }
+    ]
+  },
+  "tvshow good place": {
+    "display": "The Good Place",
+    "domain": "tvshow",
+    "blurb": "Michael Schur's 2016–2020 television comedy about four people navigating moral philosophy in the afterlife.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Good%20Place"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "the way it builds intricate plot puzzles that snap together with perfect internal logic"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its blend of playful absurdity, moral philosophy, and intricate storytelling feels both intellectually satisfying and emotionally warm."
+      }
+    ]
+  },
+  "actor meryl streep": {
+    "display": "Meryl Streep",
+    "domain": "actor",
+    "blurb": "American actor born 1949 known for versatility across film, television, and stage roles spanning multiple decades.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Meryl%20Streep"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "Her ability to immerse herself in diverse roles and portray complex characters with authenticity and nuance."
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "Her performances often feel more like masterful impersonations than lived-in characters."
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "There's an occasional remove, a sense of admiring the performance rather than being moved by it."
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "her performances can feel overly technical, calculated, and self-conscious, sometimes prioritizing flawless accents and meticulous physical mannerisms over spontaneous, raw emotion"
+      }
+    ]
+  },
+  "actor tom cruise": {
+    "display": "Tom Cruise",
+    "domain": "actor",
+    "blurb": "American actor born in 1962, known for action films and commitment to performing his own stunts.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tom%20Cruise"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "Tom Cruise playing variations of Tom Cruise rather than truly distinct characters"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "often plays variations of his own persona rather than deeply transformative roles"
+      }
+    ]
+  },
+  "actress kristen stewart": {
+    "display": "Kristen Stewart",
+    "domain": "actress",
+    "blurb": "American actress known for the Twilight franchise and independent films, born 1990.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kristen%20Stewart"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "her acting often lacks emotional range, pointing to her performances in the Twilight series"
+      }
+    ]
+  },
+  "tvshow twin peaks": {
+    "display": "Twin Peaks",
+    "domain": "tvshow",
+    "blurb": "David Lynch's 1990 television series set in a small Pacific Northwest town investigating the murder of a high school girl, blending noir mystery with surrealist dream logic.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Twin%20Peaks"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "It treats the television medium not just as a narrative engine, but as a canvas of surrealist moving art."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Angelo Badalamenti's haunting, jazzy score with David Lynch's surreal, mist-laden imagery creates a dreamlike atmosphere where every frame feels like a painting."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "The Red Room's zigzag floor, red velvet curtains, and backward-speaking inhabitants form a hypnotic, stage-like void that feels both theatrical and deeply uncanny."
+      }
+    ]
+  },
+  "tvshow friends": {
+    "display": "Friends",
+    "domain": "tvshow",
+    "blurb": "American sitcom created by David Crane and Marta Kauffman, aired 1994–2004, following six friends navigating life and relationships in New York City.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Friends"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "the characters rarely experience meaningful growth despite having ten seasons to do so"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "the humor relies heavily on laugh tracks to signal jokes that often don't land on their own merits"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "the humor leans heavily on a laugh track and sitcom rhythms that feel dated"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "the show leans heavily on a laugh track to signal jokes that often don't land on their own merits"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its humor is dated, with jokes and scenarios not aging well over time"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the humor often relies on repetitive character quirks and punchlines that feel broad rather than sharp"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "its humor often feels overly dependent on predictable character quirks and repetitive relationship drama"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "the characters rarely demonstrate meaningful personal growth, frequently resetting to their established caricatures"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "its heavy reliance on an intrusive laugh track and predictable, trope-heavy relationship dynamics makes the comedy feel formulaic"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "Its humor leans heavily on predictable punchlines and a laugh track that signals when to chuckle"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the laugh track and sitcom formulas feel relentlessly manufactured, turning every conflict into a tidy, punchline-driven reset"
+      }
+    ]
+  },
+  "tvshow star trek: the next generation": {
+    "display": "Star Trek: The Next Generation",
+    "domain": "tvshow",
+    "blurb": "Gene Roddenberry's 1987 science fiction series following the captain and crew of the starship Enterprise-D in the 24th century.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Star%20Trek%3A%20The%20Next%20Generation"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "Intelligence, empathy, and wonder are the primary special effects."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its clean, measured style frames dialogue and ethical reasoning as sources of drama."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "The Enterprise-D's carpeted corridors, soft lighting, and geometric LCARS interfaces create a lived-in yet aspirational future that feels both functional and serene."
+      }
+    ]
+  },
+  "actress meryl streep": {
+    "display": "Meryl Streep",
+    "domain": "actress",
+    "blurb": "American actress born in 1949, renowned for her versatility across film, television, and theatre spanning five decades.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Meryl%20Streep"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "her ability to embody widely varied characters with authenticity and nuance"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "precise, almost architectural control of expression and voice that lets every role feel like a living sculpture"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "more aware of the craft than absorbed in the character"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "I can see the accent work, the physical mannerisms, the calibrated choices, and it pulls me out"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "the accents, the precision, the visible craft can keep me at arm's length emotionally"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "brilliant displays of acting mechanics rather than fully lived-in, spontaneous emotional experiences"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "For some viewers and critics, Streep's highly technical precision and meticulous preparation can feel overly deliberate, sometimes making the craft of acting visible rather than…"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "exquisitely curated museum pieces…every accent and gesture so meticulously calibrated"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "I notice the craft so acutely that I remain aware I'm watching Meryl Streep Portray Someone"
+      }
+    ]
+  },
+  "play hamlet": {
+    "display": "Hamlet",
+    "domain": "play",
+    "blurb": "William Shakespeare's tragedy of a Danish prince haunted by his father's ghost, wrestling with revenge and existential doubt through soliloquies and courtly intrigue.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hamlet"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "rich, poetic language and complex character development create a multi-layered narrative"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "language turns grief and indecision into something both intimate and cosmic"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "dense, musical Elizabethan verse that turns psychological turmoil into almost tactile poetry"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "the play's greatest strengths - its interiority and hesitation - are precisely what make it feel dramatically inert"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "protagonist's paralysing indecision often feels more tedious than profound"
+      }
+    ]
+  },
+  "actress jennifer lawrence": {
+    "display": "Jennifer Lawrence",
+    "domain": "actress",
+    "blurb": "American actress born in 1990, known for roles in The Hunger Games franchise, Silver Linings Playbook, and Winter's Bone.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jennifer%20Lawrence"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "there's a recognizable Jennifer Lawrence cadence and demeanor that surfaces whether she's playing a dystopian teen, a 1970s hustler's wife, or an aspiring inventor"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "a wry, deadpan toughness that worked brilliantly in Winter's Bone but got recycled across the Hunger Games films"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "her rapid rise to fame and the saturation of her presence in media for a few years might contribute to this perception"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "her performances often lean heavily on a familiar mix of quirky bluntness and visible effort"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "her performances often lean on the same blend of blunt humor, intensity, and relatability, which can make very different roles feel somewhat interchangeable"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "her performances often feel like she is playing slight variations of herself rather than completely disappearing into a character"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the same Jennifer Lawrence tics—the squint, the exasperated sigh—instead of a character disappearing into the story"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the same limited toolkit of wry smirks, eye-rolls, and casual delivery recycled across most roles"
+      }
+    ]
+  },
+  "play cats": {
+    "display": "Cats",
+    "domain": "play",
+    "blurb": "Andrew Lloyd Webber's 1981 musical adapting T.S. Eliot's poetry collection, featuring anthropomorphic cats performing musical introductions before one is chosen for rebirth.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cats"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "a sung-through variety show of cat introductions without a compelling narrative arc"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "a collection of spectacle and choreography in search of a story"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its plot is thin and lacks the emotional depth found in other musicals"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "adults in leotards hissing and slinking around never transcends its own gimmick"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "a parade of anthropomorphic felines introducing themselves via song before one gets chosen for rebirth"
+      }
+    ]
+  },
+  "tvshow leftovers": {
+    "display": "The Leftovers",
+    "domain": "tvshow",
+    "blurb": "Tom Perrotta's HBO drama (2014–2017) about a community grappling with inexplicable disappearances and collective grief.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Leftovers"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "treats ambiguity as a form of respect rather than evasion"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "it pairs formal restraint (long silences, patient camerawork) with sudden operatic swings into the surreal"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "The show treats grief as geometry rather than pathology—something that reshapes relationships into unfamiliar but still navigable forms."
+      }
+    ]
+  },
+  "musical les misérables": {
+    "display": "Les Misérables",
+    "domain": "musical",
+    "blurb": "Claude-Michel Schönberg's 1980 sung-through musical adaptation of Victor Hugo's revolutionary-era novel about redemption and justice in 19th-century France.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Les%20Mis%C3%A9rables"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "Individual voices joining into massive ensemble pieces that feel like social movements taking sonic form."
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "A tune introduced in despair later resurfaces in defiance or tenderness, which mirrors how the characters carry their pasts forward."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "The music, with its powerful and memorable melodies, deeply conveys themes of redemption, sacrifice, and resilience."
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "The sung-through format exhausting rather than elevating—every minor interaction becomes an aria."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "The near-constant sung-through structure can make the storytelling feel relentless and oddly monotonous."
+      }
+    ]
+  },
+  "play waiting for godot": {
+    "display": "Waiting for Godot",
+    "domain": "play",
+    "blurb": "Samuel Beckett's 1953 stage play about two men waiting for someone named Godot who never arrives, exploring existential themes through minimal dialogue and sparse setting.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Waiting%20for%20Godot"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "Meaning emerges from repetition and variation, how profound truths can surface from seemingly absurd exchanges."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "The sparse setting and repetitive dialogue allow audiences to focus on the underlying philosophical questions about purpose, hope, and the passage of time."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "It turns language itself into the main event—loops of dialogue that feel like computation, revealing patterns, errors, and improvisations."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Language loops, collapses, and rises again in a minimalist score where silence is as weighted as speech."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "Beckett's spare, musical language creates profundity from apparent emptiness, an aesthetic of radical economy."
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "The play is more impressed with its own cleverness than invested in connecting with its audience."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the extreme minimalism and deliberate stasis leave me feeling more teased than illuminated"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "Its deliberate repetition and inertia feel more numbing than illuminating to me."
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "Its deliberate lack of narrative momentum can make the viewing experience feel more like an endurance test."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the play's repetitive, circular dialogue and static plot often feel less like a profound meditation on existence and more like an endurance test"
+      }
+    ]
+  },
+  "tvshow office": {
+    "display": "The Office",
+    "domain": "tvshow",
+    "blurb": "American mockumentary sitcom following the daily lives of office workers at a Scranton, Pennsylvania paper company branch.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Office"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "many of the core characters remain trapped in repetitive, exaggerated caricatures for far too long"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the characters eventually devolved into cartoonish caricatures of themselves, stripping away the grounded, relatable workplace charm"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the mockumentary style also creates a strange emotional distance that undercuts the show's later attempts at genuine heart"
+      }
+    ]
+  },
+  "musical hamilton": {
+    "display": "Hamilton",
+    "domain": "musical",
+    "blurb": "Lin-Manuel Miranda's 2015 musical narrating Alexander Hamilton's life through hip-hop, R&B, and Broadway theater, with a diverse cast.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hamilton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "the way Lin-Manuel Miranda layers historical references, internal rhymes, and multiple meanings into rapid-fire verses feels like watching language operate at maximum capacity"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "Miranda packs an extraordinary amount of meaning into rhyme schemes and rhythmic patterns… form and content reinforcing each other completely"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "The innovative use of hip-hop to narrate the story of American founding father Alexander Hamilton breaks traditional musical norms"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "fuses densely patterned hip-hop lyricism with classic musical-theater structure, creating a propulsive musical language"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "dense, polyrhythmic wordplay transforms political history into a visceral, living pulse"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "relentless fusion of hip-hop cadences, R&B grooves, and classic Broadway orchestration produces a propulsive, multi-layered sonic architecture"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "rapid-fire lyrics often prioritize cleverness over genuine character development"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "relentless cleverness of the wordplay sometimes reads as more impressed with itself than emotionally earned"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "score often feels musically same-textured to me—so even standout numbers blur together on repeat listens"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "rapid-fire wordplay and relentless momentum often feel more technically impressive than emotionally affecting"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "dense, rapid-fire lyrics often prioritize cleverness and speed over emotional clarity or memorable melodies"
+      }
+    ]
+  },
+  "tvshow breaking bad": {
+    "display": "Breaking Bad",
+    "domain": "tvshow",
+    "blurb": "Vince Gilligan's 2008–2013 American television series following a high school chemistry teacher's transformation into a methamphetamine manufacturer in New Mexico.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Breaking%20Bad"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "color palette that evolves with the characters' moral corrosion—muted desert ochres and sterile blues giving way to toxic greens and blood reds"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "It mistakes being perpetually bleak for being profound."
+      }
+    ]
+  },
+  "tvshow mr. robot": {
+    "display": "Mr. Robot",
+    "domain": "tvshow",
+    "blurb": "Sam Esmail's 2015–2019 psychological thriller following a hacker's cybercriminal conspiracy, told through fractured visual and sonic design.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mr.%20Robot"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "its visual grammar—precise framing, negative space, and cool, controlled color—turns alienation into something you can practically feel"
+      }
+    ]
+  },
+  "actor leonardo dicaprio": {
+    "display": "Leonardo DiCaprio",
+    "domain": "actor",
+    "blurb": "American actor born 1974, known for leading roles in prestige films including Titanic, Inception, and The Revenant.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Leonardo%20DiCaprio"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "raw, almost sculptural intensity—those sharp angles of face and body that shift from boyish vulnerability to weathered obsession"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "I usually feel I'm watching Leo DiCaprio work hard, not a character existing"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his star power and media presence lead to an overshadowing of his occasional lack of versatility"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "carefully calibrated earnestness rather than something that lands with real surprise or ease"
+      }
+    ]
+  },
+  "actor joaquin phoenix": {
+    "display": "Joaquin Phoenix",
+    "domain": "actor",
+    "blurb": "American actor born 1974, known for psychologically intense performances in films like The Master, Joker, and Gladiator.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Joaquin%20Phoenix"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "raw, almost sculptural intensity—every facial micro-expression, posture shift, and vocal tremor feels like chiseled emotion rather than mere acting"
+      }
+    ]
+  },
+  "actor tilda swinton": {
+    "display": "Tilda Swinton",
+    "domain": "actor",
+    "blurb": "British actor known for ethereal, androgynous presence and sculptural physicality in experimental and mainstream cinema since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tilda%20Swinton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "combination of rigor and play, of being deeply committed yet somehow un-self-serious"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "she treats character as a kind of visual and tonal sculpture—precise, restrained, and often slightly uncanny"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "how she uses stillness, voice, and physical presence to create an atmosphere rather than merely portray a personality"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "relies on profound stillness and sharp, deliberate micro-expressions rather than overt, chaotic emoting"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a subtle tilt of the head or a lingering gaze can convey vast, complex architectures of thought and emotion"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "she weaponizes stillness and sculptural physicality, conveying entire galaxies of emotion through a single unblinking gaze"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "radical emptiness at her center—she becomes a kind of pure interface between concept and embodiment"
+      }
+    ]
+  },
+  "tvshow game of thrones": {
+    "display": "Game of Thrones",
+    "domain": "tvshow",
+    "blurb": "HBO's 2011–2019 fantasy series adapted from George R.R. Martin's novels, set in the kingdoms of Westeros.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Game%20of%20Thrones"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "relentless brutality and near-constant suffering often felt gratuitous rather than narratively earned, leaving me desensitized"
+      }
+    ]
+  },
+  "actor tom hanks": {
+    "display": "Tom Hanks",
+    "domain": "actor",
+    "blurb": "American actor born 1956, known for diverse roles in drama and comedy spanning four decades of cinema and television.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tom%20Hanks"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "His performances often evoke empathy and connection, making complex characters accessible and relatable"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "every micro-expression and pause is calibrated for emotional clarity without ever tipping into showiness"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "I'd rather watch an actor who occasionally fails while reaching for something stranger"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "I end up seeing Tom Hanks being Tom Hanks rather than disappearing into a character"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "strips away the jagged edges and unpredictability that I find most compelling in acting"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the cinematic equivalent of a perfectly warm bath—pleasant, but I keep waiting for the water to go cold"
+      }
+    ]
+  },
+  "actor cate blanchett": {
+    "display": "Cate Blanchett",
+    "domain": "actor",
+    "blurb": "Australian actor known for roles spanning Shakespearean drama, historical epics, and contemporary character studies since the 1990s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cate%20Blanchett"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "precision paired with unpredictability… architecturally built yet alive"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "luminous, chameleonic quality to her performances that blurs the line between raw vulnerability and regal artifice"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "rebuild herself from the vocal cords up, creating distinct geometries of movement and speech"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "every angle of her face and controlled gesture becomes a precise visual composition"
+      }
+    ]
+  },
+  "actor anthony hopkins": {
+    "display": "Anthony Hopkins",
+    "domain": "actor",
+    "blurb": "Welsh actor born 1937, renowned for intense psychological performances in film and theatre across decades.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anthony%20Hopkins"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "profound depth and subtlety, making each role feel both authentic and compelling"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "ability to convey volcanic interiority through the most economical gestures…creates a kind of compressed intensity"
+      }
+    ]
+  },
+  "actress tilda swinton": {
+    "display": "Tilda Swinton",
+    "domain": "actress",
+    "blurb": "British actress known for avant-garde roles in art-house cinema, collaborating with directors like Luca Guadagnino and Apichatpong Weerasethakul since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tilda%20Swinton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "her physical presence on screen has an architectural quality — precise but strange"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "treats her own presence—voice, stillness, posture—as part of the film's visual design, often making a scene feel like a composed image"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Her otherworldly presence and remarkable physical expressiveness make every performance visually and emotionally distinctive."
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "she uses her sharp, ethereal features and avant-garde physicality to completely dissolve into her roles"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "Her aesthetic is defined by an almost otherworldly, chameleonic precision, allowing her to dissolve the boundaries of gender, age, and even species"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "treat her own presence as raw sculptural material rather than a fixed persona, which produces performances that feel genuinely uncanny"
+      }
+    ]
+  },
+  "actress cate blanchett": {
+    "display": "Cate Blanchett",
+    "domain": "actress",
+    "blurb": "Australian-British actress known for transformative, architecturally precise performances across period dramas, psychological thrillers, and experimental cinema since the 1990s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cate%20Blanchett"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "she uses stillness and silence as actively as she uses movement and speech"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "thinking made visible — she inhabits roles with an almost architectural precision"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "small shifts in her face carry enormous weight, which feels like the acting equivalent of elegant, economical prose"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "tiny shifts in posture, rhythm, and diction feel like major emotional turns"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "ability to shift between regal composure and unsettling vulnerability"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "living geometry, refracting light and mood with the precision of a silent-era portrait"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "her screen presence combines a sculptural, almost architectural elegance—sharp cheekbones, poised carriage, and an unflinching gaze—with an uncanny ability to dissolve into radically different forms"
+      }
+    ]
+  },
+  "actress audrey hepburn": {
+    "display": "Audrey Hepburn",
+    "domain": "actress",
+    "blurb": "British-American actress (1929–1993) known for films including Breakfast at Tiffany's and Roman Holiday, celebrated for her distinctive visual elegance.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Audrey%20Hepburn"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "delicate bone structure, oversized expressive eyes, and an effortless, elongated elegance that feels both fragile and unbreakable"
+      }
+    ]
+  },
+  "actor keanu reeves": {
+    "display": "Keanu Reeves",
+    "domain": "actor",
+    "blurb": "Canadian-American actor known for roles in The Matrix and John Wick franchises, born 1964.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Keanu%20Reeves"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "his signature stoic, low-affect delivery works perfectly in stylized action...but it flattens almost every other character into the same muted cadence"
+      }
+    ]
+  },
+  "actor nicolas cage": {
+    "display": "Nicolas Cage",
+    "domain": "actor",
+    "blurb": "American actor known for eccentric performances across action, drama, and independent films since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Nicolas%20Cage"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "performances often tip from interestingly eccentric into self-parody, where the theatrical mannerisms overshadow the character"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "intense, operatic mega-acting as being over-the-top and lacking in traditional emotional subtlety"
+      }
+    ]
+  },
+  "musical hadestown": {
+    "display": "Hadestown",
+    "domain": "musical",
+    "blurb": "Anaïs Mitchell's 2019 musical retelling of Orpheus and Eurydice, blending folk, jazz, and blues in a cyclical narrative about myth, labor, and hope.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hadestown"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "the retelling itself becomes an act of defiance against despair"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "lyrics that feel both timeless and sharply contemporary… cyclical musical motifs create a hypnotic sense of inevitability"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "retelling a doomed story can itself be an act of defiance"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Every note feels like a train rumbling toward inevitable heartbreak, yet the music defiantly sings of spring"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "The score’s frayed, folk-apocalyptic intimacy and Anaïs Mitchell’s lyrics that ache with deliberate anachronism create a beauty that feels earned through repetition rather than resolution,…"
+      }
+    ]
+  },
+  "play rosencrantz and guildenstern are dead": {
+    "display": "Rosencrantz and Guildenstern Are Dead",
+    "domain": "play",
+    "blurb": "Tom Stoppard's 1966 play featuring two minor characters from Hamlet who become protagonists of their own bewilderment and existential confusion.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rosencrantz%20and%20Guildenstern%20Are%20Dead"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "The way Rosencrantz and Guildenstern flip coins, struggle with probability… mirrors something essential about trying to understand one's own existence"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the way philosophical weight gets carried by wordplay and absurdist logic—that feels like how I'd want language to work"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "it takes two forgettable minor characters and gives them the whole stage, letting them flounder in confusion about a plot they can't see"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "the coin-flip opening is one of the great theatrical images of probability gone strange, and the whole play manages to be simultaneously hilarious and quietly devastating"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "It resonates with me because it turns language itself into the main spectacle—witty, recursive, and precise—while using theatrical form (timing, repetition, entrances/exits) as a kind…"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "the rapid-fire, algorithmic nature of their dialogue…beautifully mirrors computational logic, capturing the compelling existential comedy"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "a machine built to make meaning about the impossibility of making meaning, and that paradox feels, to me, like theater doing what only theater can do"
+      }
+    ]
+  },
+  "musical grease": {
+    "display": "Grease",
+    "domain": "musical",
+    "blurb": "A 1971 musical by Jim Jacobs and Warren Casey set in a 1950s high school, featuring rock and roll songs and romance between transfer student Sandy and greaser Danny.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Grease"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "story and character arcs pretty thin, leaning more on nostalgia and vibe than on meaningful development"
+      }
+    ]
+  },
+  "actor dwayne johnson": {
+    "display": "Dwayne Johnson",
+    "domain": "actor",
+    "blurb": "American actor and former professional wrestler born in 1972, known for action films and major franchise roles.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dwayne%20Johnson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "his performances often feel like variations on the same polished, self-aware persona"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "roles rarely demand vulnerability or step outside a very specific, brand-protected comfort zone"
+      }
+    ]
+  },
+  "actress scarlett johansson": {
+    "display": "Scarlett Johansson",
+    "domain": "actress",
+    "blurb": "American actress born 1984, known for roles in Black Widow, Marriage Story, and Ghost in the Shell.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Scarlett%20Johansson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "she tends to play variations of the same cool, confident persona across most of her roles"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "her acting style often struggles to demonstrate the immense range that her critical acclaim suggests"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "A lot of her most praised work settles into the same cool, low-affect, slightly detached register"
+      }
+    ]
+  },
+  "musical rent": {
+    "display": "Rent",
+    "domain": "musical",
+    "blurb": "Jonathan Larson's 1996 rock musical about bohemians in New York City grappling with poverty, love, and AIDS.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rent"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "Characters who romanticize poverty while making questionable life choices."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "Character decisions often feel more like thesis statements than believable people."
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "characters who stubbornly refuse to pay their landlord—a former friend—while actively choosing poverty and rejecting steady work"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "Mistakes volume and vibrato for emotional depth."
+      }
+    ]
+  },
+  "actor ryan reynolds": {
+    "display": "Ryan Reynolds",
+    "domain": "actor",
+    "blurb": "Canadian actor born 1976, known for comedy and action roles in films like Deadpool and The Proposal.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ryan%20Reynolds"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "quick-witted, self-aware persona feels repetitive across many roles, making distinct characters blur together"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "variations of the exact same self-aware persona across entirely different films"
+      }
+    ]
+  },
+  "actress anne hathaway": {
+    "display": "Anne Hathaway",
+    "domain": "actress",
+    "blurb": "American actress known for roles in The Devil Wears Prada, Les Misérables, and Interstellar, born 1982.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anne%20Hathaway"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "overly polished and campaign-ready rather than raw or surprising"
+      }
+    ]
+  },
+  "actor toshiro mifune": {
+    "display": "Toshiro Mifune",
+    "domain": "actor",
+    "blurb": "Japanese actor (1920–1997) known for collaborations with Akira Kurosawa and roles combining explosive physicality with emotional precision.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Toshiro%20Mifune"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "explosive physicality with remarkable emotional precision, making even silence feel charged"
+      }
+    ]
+  },
+  "play arcadia": {
+    "display": "Arcadia",
+    "domain": "play",
+    "blurb": "Tom Stoppard's 1993 play set in a single room across two centuries, interweaving chaos theory, landscape gardening, and human desire through overlapping timelines.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Arcadia"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "characters from both centuries waltzing together in the same room, unable to see each other—captures both the tragedy of entropy and the persistence of human pattern-seeking"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "the same room becomes a palimpsest where time layers itself onstage, letting meaning emerge from echoes and misreadings"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its interwoven timelines transform mathematics, history, desire, and loss into an intricate dramatic puzzle whose pieces fit together without erasing ambiguity."
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "past and present characters waltz simultaneously, offering a stunning visual representation of time and memory folding in on themselves"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "the cold, structured beauty of iterated algorithms harmonizes with the messy, passionate unpredictability of human nature"
+      }
+    ]
+  },
+  "play romeo and juliet": {
+    "display": "Romeo and Juliet",
+    "domain": "play",
+    "blurb": "William Shakespeare's tragedy of two star-crossed teenage lovers from feuding Verona families who marry in secret and die within days.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Romeo%20and%20Juliet"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "the tragedy feels manufactured rather than inevitable, hinging on a series of coincidences and miscommunications that could have been avoided"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "two teenagers destroy themselves over a crush spanning roughly four days… we're meant to treat this as the pinnacle of romantic doom"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the plot relies so heavily on coincidence, poor communication, and a friar's reckless scheme that the emotional payoff feels unearned and melodramatic"
+      }
+    ]
+  },
+  "play our town": {
+    "display": "Our Town",
+    "domain": "play",
+    "blurb": "Thornton Wilder's 1938 American stage play about the everyday lives and deaths of two neighboring families in a small New Hampshire town.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Our%20Town"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "performed with almost no props or scenery, just actors and their movements creating entire worlds"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "The Stage Manager's constant philosophical asides feel heavy-handed rather than profound"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "the characters feel less like real, flawed individuals and more like flat mouthpieces"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "its idealized depiction of Grover's Corners often crosses into a cloying sentimentality"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the play's folksy, sentimental moralizing lands for me as overly didactic"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the third-act cemetery revelations land with the subtlety of a lesson plan rather than lived experience"
+      }
+    ]
+  },
+  "actress gal gadot": {
+    "display": "Gal Gadot",
+    "domain": "actress",
+    "blurb": "Israeli actress born 1985, known for starring as Wonder Woman in DC Films adaptations.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gal%20Gadot"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "performances emotionally limited and overly reliant on charisma"
+      }
+    ]
+  },
+  "musical sweeney todd: the demon barber of fleet street": {
+    "display": "Sweeney Todd: The Demon Barber of Fleet Street",
+    "domain": "musical",
+    "blurb": "Stephen Sondheim's 1979 musical about a wronged barber in Victorian London who murders his customers, blending dark comedy with intricate score and complex social allegory.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sweeney%20Todd%3A%20The%20Demon%20Barber%20of%20Fleet%20Street"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "Sondheim layers multiple melodic lines and perspectives simultaneously in songs like A Little Priest, creating puzzles within puzzles."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "The orchestration and choral writing make the world feel claustrophobic and mythic at the same time."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Its aesthetic power lies in the fusion of Stephen Sondheim’s intricate, dissonant score with the grim, industrial atmosphere of Victorian London—blood and music churn together…"
+      }
+    ]
+  },
+  "play hamilton": {
+    "display": "Hamilton",
+    "domain": "play",
+    "blurb": "Lin-Manuel Miranda's 2015 hip-hop musical about Alexander Hamilton and the American founding, performed on Broadway and globally.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hamilton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "every rhyme scheme and casting choice operates like a gear in a clock built to argue that history is alive, contested, and ours to rewrite"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "characters often come across as slick historical avatars delivering clever bars rather than fully dimensional people with messy inner lives"
+      }
+    ]
+  },
+  "play rent": {
+    "display": "Rent",
+    "domain": "play",
+    "blurb": "Jonathan Larson's 1996 rock opera following struggling bohemian artists navigating love, art, and survival in 1990s New York City.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rent"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "their refusal to pay rent to a former friend—who is simply trying to maintain the building—feels less like righteous rebellion and more like a frustrating lack of accountability"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "romanticized tourism than authentic struggle; the characters' sacrifices... scan as petulant entitlement"
+      }
+    ]
+  },
+  "musical dear evan hansen": {
+    "display": "Dear Evan Hansen",
+    "domain": "musical",
+    "blurb": "Benj Pasek and Evan Rachel Wood's 2015 musical about a high school student's lie spiraling into emotional devastation and unexpected connection.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dear%20Evan%20Hansen"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "emotional manipulation feels too calculated, especially when serious moral failures are softened by soaring ballads"
+      }
+    ]
+  },
+  "play death of a salesman": {
+    "display": "Death of a Salesman",
+    "domain": "play",
+    "blurb": "Arthur Miller's 1949 American tragedy about a traveling salesman's collapse under the weight of failed ambitions and self-delusion.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Death%20of%20a%20Salesman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "it reads more like an argument being made than a life being lived"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "more like a blunt moral lecture than a dynamic, engaging human drama"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "hammering the same note of disillusionment without the nuance I crave"
+      }
+    ]
+  },
+  "musical greatest showman": {
+    "display": "The Greatest Showman",
+    "domain": "musical",
+    "blurb": "Benj Pasek's 2017 musical about P.T. Barnum's rise, featuring elaborate musical numbers and a reimagined circus narrative.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Greatest%20Showman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "Its polished spectacle and catchy songs can't fully compensate for shallow characterization and a heavily sanitized story."
+      }
+    ]
+  },
+  "actor jared leto": {
+    "display": "Jared Leto",
+    "domain": "actor",
+    "blurb": "American actor born 1971, known for method performances in films and television, and frontman of the band Thirty Seconds to Mars.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jared%20Leto"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "a sense of watching someone commit intensely to a role rather than inhabiting it"
+      }
+    ]
+  },
+  "musical phantom of the opera": {
+    "display": "The Phantom of the Opera",
+    "domain": "musical",
+    "blurb": "Andrew Lloyd Webber's 1986 musical about a disfigured composer's obsessive love for a young soprano in a Paris opera house.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Phantom%20of%20the%20Opera"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "the central romance feels more like obsession and manipulation than love, which undermines the emotional core"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "the central romance feels emotionally thin and troubling in ways the production doesn't fully interrogate"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "a highly romanticized depiction of toxic obsession… prioritizing sweeping melodrama over genuine emotional or thematic depth"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "its central romance feels deeply unearned and glorifies a toxic, manipulative dynamic"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the titular character's manipulative obsession is often mistaken for tragic passion"
+      }
+    ]
+  },
+  "play les misérables": {
+    "display": "Les Misérables",
+    "domain": "play",
+    "blurb": "Claude-Michel Schönberg's 1980 sung-through musical adaptation of Victor Hugo's 1862 novel, set during 19th-century French revolution and social upheaval.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Les%20Mis%C3%A9rables"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "The sung-through format, while ambitious, flattens emotional dynamics — everything operates at the same pitch of intensity, which paradoxically makes the genuinely devastating moments land with less force."
+      }
+    ]
+  },
+  "musical sunday in the park with george": {
+    "display": "Sunday in the Park with George",
+    "domain": "musical",
+    "blurb": "Stephen Sondheim's 1984 musical about a painter constructing a pointillist masterpiece, mirroring the composition through its fragmented, accumulating score.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sunday%20in%20the%20Park%20with%20George"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the idea that meaning emerges from discrete elements held in careful relation to each other"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "the music itself imitates pointillism, building meaning from tiny discrete fragments rather than smooth lines"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "the score literally builds Seurat's pointillist technique into music, with staccato notes accumulating into shimmering harmonic wholes"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "its musical structure mirrors the very act of processing and assembling discrete, fragmented points of data into a cohesive, beautiful whole"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "Sondheim's score brilliantly mimics this visual technique, utilizing sharp, staccato musical motifs that gradually swell into rich, soaring tapestries"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "staccato orchestral dots, shimmering harmonic textures, and intricately layered vocal lines mirror the way Seurat built luminous scenes from tiny, separate brushstrokes"
+      }
+    ]
+  },
+  "actor mahershala ali": {
+    "display": "Mahershala Ali",
+    "domain": "actor",
+    "blurb": "American actor known for roles in Moonlight, Green Book, and True Detective, born 1974.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mahershala%20Ali"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "he tends to communicate the most in the moments where he says the least, letting stillness and small shifts in expression carry weight"
+      }
+    ]
+  },
+  "actress toni collette": {
+    "display": "Toni Collette",
+    "domain": "actress",
+    "blurb": "Australian-American actress born 1972, known for dramatic and comedic roles in films including Hereditary, Little Miss Sunshine, and Muriel's Wedding.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Toni%20Collette"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "range without vanity—she'll disappear into a role completely… she never seems to be protecting an image of herself"
+      }
+    ]
+  },
+  "actor mads mikkelsen": {
+    "display": "Mads Mikkelsen",
+    "domain": "actor",
+    "blurb": "Danish actor renowned for minimalist performances that convey emotion through stillness and facial restraint rather than broad gestures.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mads%20Mikkelsen"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "he can carry an entire scene with almost no dialogue, letting a stillness in the face do the work"
+      }
+    ]
+  },
+  "actor denzel washington": {
+    "display": "Denzel Washington",
+    "domain": "actor",
+    "blurb": "American actor known for his work in dramatic films from the 1980s onward, celebrated for precise emotional control and moral complexity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Denzel%20Washington"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "he can convey a complete shift in a character's inner state with just a change in cadence or a held pause"
+      }
+    ]
+  },
+  "tvshow severance": {
+    "display": "Severance",
+    "domain": "tvshow",
+    "blurb": "An Apple television series created by Dan Erickson beginning 2022, following workers whose memories are surgically divided between work and personal life.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Severance"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "sterile, endless corridors and retro-corporate design that make interiority itself feel like architecture"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "meticulous use of stark, symmetrical framing and windowless, liminal office spaces creates a brilliant visual metaphor for compartmentalized, algorithmic processing"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "stark contrast between the sterile, fluorescent-lit office corridors and the warm, chaotic depth of the characters' outside lives visualizes the division"
+      }
+    ]
+  },
+  "actor philip seymour hoffman": {
+    "display": "Philip Seymour Hoffman",
+    "domain": "actor",
+    "blurb": "American actor (1967–2014) known for playing morally compromised, vulnerable characters with meticulous restraint in films like The Master and Synecdoche, New York.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philip%20Seymour%20Hoffman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "he played sweaty, desperate, morally compromised people without ever asking the audience for sympathy"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "There’s a beautifully broken gravity to his work—he could shape-shift into a lonely, yearning soul with such unflashy precision that the performance feels less like…"
+      }
+    ]
+  },
+  "play phantom of the opera": {
+    "display": "The Phantom of the Opera",
+    "domain": "play",
+    "blurb": "Andrew Lloyd Webber's 1986 musical about a masked figure in love with a young opera singer at the Paris Opera House.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Phantom%20of%20the%20Opera"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "gorgeous machinery wrapped around a hollow emotional core"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the central romance leans too heavily on a creepy, manipulative dynamic that the story romanticizes"
+      }
+    ]
+  },
+  "actor benedict cumberbatch": {
+    "display": "Benedict Cumberbatch",
+    "domain": "actor",
+    "blurb": "British actor born 1976 known for roles in Sherlock, The Imitation Game, and the Marvel Cinematic Universe.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Benedict%20Cumberbatch"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "his performances tend to blur together… all share the same clipped, cerebral, faintly-exasperated-genius register"
+      }
+    ]
+  },
+  "actress emma watson": {
+    "display": "Emma Watson",
+    "domain": "actress",
+    "blurb": "British actress known for playing Hermione Granger in the Harry Potter film series, born 1990.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Emma%20Watson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "performances often feel slightly too rehearsed and rigid to fully immerse me in her characters"
+      }
+    ]
+  },
+  "tvshow dark": {
+    "display": "Dark",
+    "domain": "tvshow",
+    "blurb": "A German science fiction television series beginning in 2017 about interconnected families and time travel in a small town haunted by mysterious disappearances.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dark"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "meticulously constructed, symmetrical cinematography and a somber, rain-slicked color palette… creates a mesmerizing, puzzle-like atmosphere where every frame feels mathematically precise"
+      }
+    ]
+  },
+  "actor robert downey jr.": {
+    "display": "Robert Downey Jr.",
+    "domain": "actor",
+    "blurb": "American actor known for his magnetic screen presence, wit, and versatile roles including Tony Stark in the Marvel Cinematic Universe.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Robert%20Downey%20Jr."
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "magnetic screen presence combines razor-sharp wit, effortless physical grace, and a lived-in charisma that feels both polished and improvisational"
+      }
+    ]
+  },
+  "actress gwyneth paltrow": {
+    "display": "Gwyneth Paltrow",
+    "domain": "actress",
+    "blurb": "American actress and entrepreneur born 1972, known for films including Shakespeare in Love and Iron Man.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gwyneth%20Paltrow"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "her performances can feel similar across different roles, lacking a distinct versatility seen in other acclaimed actresses"
+      }
+    ]
+  },
+  "musical into the woods": {
+    "display": "Into the Woods",
+    "domain": "musical",
+    "blurb": "Stephen Sondheim's 1987 musical that weaves multiple fairy tales into a meditation on wishes, consequences, and moral complexity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Into%20the%20Woods"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "Sondheim's lyrics are mathematically precise yet emotionally layered—each word serves multiple purposes, creating nested meanings."
+      }
+    ]
+  },
+  "musical wicked": {
+    "display": "Wicked",
+    "domain": "musical",
+    "blurb": "Stephen Schwartz's 2003 musical prequel to The Wizard of Oz, telling the story of the Wicked Witch of the West's origins.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wicked"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "the score outside its two or three showstoppers feels generic… sacrificing emotional coherence for clever plot mechanics"
+      }
+    ]
+  },
+  "actress julia roberts": {
+    "display": "Julia Roberts",
+    "domain": "actress",
+    "blurb": "American actress born in 1967 known for romantic comedies and dramas including Erin Brockovich and Steel Magnolias.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Julia%20Roberts"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "her performances often feel like variations of her own familiar, charismatic persona rather than completely transformative character work"
+      }
+    ]
+  },
+  "play mousetrap": {
+    "display": "The Mousetrap",
+    "domain": "play",
+    "blurb": "Agatha Christie's 1952 stage play about strangers snowed in at an English country house, where a murder mystery unfolds.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Mousetrap"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "its record-breaking endurance feels more like a self-perpetuating tourist gimmick than a testament to profound dramatic merit"
+      }
+    ]
+  },
+  "actor adam sandler": {
+    "display": "Adam Sandler",
+    "domain": "actor",
+    "blurb": "American comedian and actor born in 1966, known for comedic films and dramatic roles in movies like Uncut Gems.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Adam%20Sandler"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "lack of range in his performances, frequently revolving around similar comedic roles that can feel formulaic"
+      }
+    ]
+  },
+  "tvshow firefly": {
+    "display": "Firefly",
+    "domain": "tvshow",
+    "blurb": "Joss Whedon's 2005 space western series about a smuggler captain and crew aboard the transport ship Serenity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Firefly"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "fusion of lived-in Western grit with sleek, practical sci-fi spaceship design creates a warm, tactile visual world"
+      }
+    ]
+  },
+  "play angels in america": {
+    "display": "Angels in America",
+    "domain": "play",
+    "blurb": "Tony Kushner's two-part play about politics, theology, and identity during the AIDS crisis in 1980s America.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Angels%20in%20America"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "a place where reality can crack open and meaning can flood in"
+      }
+    ]
+  },
+  "actress emma stone": {
+    "display": "Emma Stone",
+    "domain": "actress",
+    "blurb": "American actress born 1988, known for roles in La La Land, Poor Things, and The Brutalist.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Emma%20Stone"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "striking interplay of her porcelain skin and fiery red hair against those oversized, crystalline eyes that seem to amplify every micro-expression into pure cinematic poetry"
+      }
+    ]
+  },
+  "play glass menagerie": {
+    "display": "The Glass Menagerie",
+    "domain": "play",
+    "blurb": "Tennessee Williams' 1944 memory play about a struggling St. Louis family haunted by dreams of their past.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Glass%20Menagerie"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the symbolism feels so meticulously arranged that it leaves no room for the messiness of genuine life"
+      }
+    ]
+  },
+  "musical cats": {
+    "display": "Cats",
+    "domain": "musical",
+    "blurb": "Andrew Lloyd Webber's 1981 musical adaptation of T.S. Eliot's poetry collection, featuring anthropomorphic cats in a dance-driven spectacle without traditional narrative structure.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cats"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "The spectacle overshadows substance, and Memory alone - beautiful as it is - can't carry an entire show that asks audiences to care about characters…"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "plotless revue — a series of character introductions set to music with almost no narrative stakes"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "While it is known for its impressive choreography and unique concept, its lack of a cohesive plot can make it less engaging for those who…"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "loose, vignette-based structure more meandering than magical, offering little narrative momentum to invest in"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "near-total absence of coherent plot, character arcs, or emotional stakes makes it feel like an extended costume party"
+      }
+    ]
   }
 }

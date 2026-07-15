@@ -52,6 +52,12 @@ export const DOMAINS = {
   religioustext: 'religious text',
   artmovement: 'artistic movement',
   monument: 'monument',
+  // v4 additions (2026-07-14, evening): Film, TV & Theater expansion
+  tvshow: 'television show',
+  actor: 'actor',
+  actress: 'actress',
+  play: 'stage play',
+  musical: 'musical',
 };
 
 // Prompt version 2: preamble acknowledges the AI disclaimer up front so models

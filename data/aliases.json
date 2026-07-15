@@ -146,5 +146,13 @@
   "artmovement": {},
   "monument": {
     "little mermaid statue": "little mermaid"
-  }
+  },
+  "tvshow": {
+    "twin peaks: the return": "twin peaks",
+    "office (us)": "office"
+  },
+  "actor": {},
+  "actress": {},
+  "play": {},
+  "musical": {}
 }

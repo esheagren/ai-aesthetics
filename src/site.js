@@ -30,6 +30,17 @@ const CARDS = Object.fromEntries(Object.entries(RAW_CARDS).map(([key, card]) => 
   const sp = key.indexOf(' ');
   return [key.slice(0, sp) + ' ' + clientNorm(key.slice(sp + 1)), card];
 }));
+// Entity-card photographs, keyed exactly like entitycards.json ("<domain>
+// <canonNorm>") and re-keyed to the client normalization the same way. The
+// "_misses" bookkeeping entry is the generator's, not an entity.
+const RAW_EIMG = existsSync(join(here, '..', 'data', 'entityimages.json'))
+  ? JSON.parse(readFileSync(join(here, '..', 'data', 'entityimages.json'), 'utf8')) : {};
+const EIMG = Object.fromEntries(Object.entries(RAW_EIMG)
+  .filter(([key, v]) => key !== '_misses' && key.includes(' ') && v && v.uri)
+  .map(([key, v]) => {
+    const sp = key.indexOf(' ');
+    return [key.slice(0, sp) + ' ' + clientNorm(key.slice(sp + 1)), { uri: v.uri, credit: v.credit || '' }];
+  }));
 const readJSONL = (p) => existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : [];
 // Only domains that have been fully summarized are shown. config.js may list
 // newer domains whose data is still being collected in the background — those
@@ -55,15 +66,19 @@ const DOMAIN_LABELS = {
   smell: 'Smell', decade: 'Design decade',
   novelist: 'Novelist', philosopher: 'Philosopher', religioustext: 'Religious text',
   artmovement: 'Artistic movement', monument: 'Monument',
+  tvshow: 'TV show', actor: 'Actor', actress: 'Actress', play: 'Play', musical: 'Musical',
 };
+// Groups may list ids whose data is still being collected (no summary cells
+// yet) — the client rail only renders ids present in DATA.domains, so those
+// fields appear automatically once their collection lands.
 const DOMAIN_GROUPS = [
   { label: 'Literature & Language', ids: ['book', 'poem', 'word', 'novelist', 'philosopher', 'religioustext'] },
   { label: 'Fine Art', ids: ['painting', 'artmovement'] },
   { label: 'Architecture', ids: ['building', 'architect', 'monument'] },
-  { label: 'Film & TV', ids: ['film'] },
+  { label: 'Film, TV & Theater', ids: ['film', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
   { label: 'Music', ids: ['album'] },
-  { label: 'Digital Media', ids: ['videogame'] },
-  { label: 'Design & Form', ids: ['typeface', 'object'] },
+  { label: 'Digital Media', ids: ['videogame', 'typeface'] },
+  { label: 'Design & Form', ids: ['object'] },
   { label: 'History', ids: ['decade'] },
   { label: 'Places', ids: ['city', 'street', 'uscity'] },
   { label: 'Life & Senses', ids: ['cuisine', 'dish', 'color', 'season', 'smell'] },
@@ -235,7 +250,7 @@ const DATA = {
   models: modelData,
   domains: DOMAIN_IDS.filter((d) => d !== 'bookcover' && d !== 'chair').map((d) => ({ id: d, label: DOMAIN_LABELS[d] })),
   domainGroups: DOMAIN_GROUPS,
-  cells, words, lex, responses, imgMap: IMG_MAP, aliases: ALIASES, entityCards: CARDS,
+  cells, words, lex, responses, imgMap: IMG_MAP, aliases: ALIASES, entityCards: CARDS, entityImages: EIMG,
   quiz: ['book', 'film', 'album', 'city', 'painting', 'word', 'object', 'cuisine'],
   images: Object.fromEntries(Object.entries(IMAGES).map(([k, v]) => [k, v.uri])),
   // Three PCA axes of the descriptor space. Each label is a one-word summary of
@@ -244,7 +259,7 @@ const DATA = {
   axes: [
     { k: 'x', neg: 'Crafted', pos: 'Frustrating', negWords: V.poles.xNeg, posWords: V.poles.xPos, variance: V.variance.pc1 },
     { k: 'y', neg: 'Mythic', pos: 'Controlled', negWords: V.poles.yNeg, posWords: V.poles.yPos, variance: V.variance.pc2 },
-    { k: 'z', neg: 'Ornate', pos: 'Ambiguous', negWords: V.poles.zNeg, posWords: V.poles.zPos, variance: V.variance.pc3 },
+    { k: 'z', neg: 'Lush', pos: 'Dogmatic', negWords: V.poles.zNeg, posWords: V.poles.zPos, variance: V.variance.pc3 },
   ],
   anthropic: modelData.filter((m) => m.family === 'Anthropic').map((m) => m.id),
   totals: { responses: totalResponses, domains: DOMAIN_IDS.length, models: models.length },
@@ -254,6 +269,16 @@ const dataJSON = JSON.stringify(DATA).replace(/</g, '\\u003c');
 // ---------------------------------------------------------------- markup ---
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const FAMC = { Anthropic: 'var(--fam-a)', OpenAI: 'var(--fam-o)', Google: 'var(--fam-g)', DeepSeek: 'var(--fam-d)', Moonshot: 'var(--fam-k)', xAI: 'var(--fam-x)' };
+// Official brand marks, inlined from Simple Icons (single-path, 24x24 viewBox;
+// cdn.simpleicons.org/<slug>). Neither openai nor xai exists there: xAI wears
+// the X mark (slug 'x'), OpenAI falls back to the monogram chip.
+const BRAND_PATHS = {
+  Anthropic: 'M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z',
+  Google: 'M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z',
+  xAI: 'M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z',
+  DeepSeek: 'M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 0 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45',
+  Moonshot: 'm1.053 16.91 9.538 2.55a21 20.981 0 0 0 .06 2.031l5.956 1.592a12 11.99 0 0 1-15.554-6.172m-1.02-5.79 11.352 3.035a21 20.981 0 0 0-.469 2.01l10.817 2.89a12 11.99 0 0 1-1.845 2.004L.658 15.918a12 11.99 0 0 1-.625-4.796m1.593-5.146L13.573 9.17a21 20.981 0 0 0-1.01 1.874l11.297 3.02a21 20.981 0 0 1-.67 2.362l-11.55-3.087L.125 10.26a12 11.99 0 0 1 1.499-4.285ZM6.067 1.58l11.285 3.016a21 20.981 0 0 0-1.688 1.719l7.824 2.091a21 20.981 0 0 1 .513 2.664L2.107 5.218a12 11.99 0 0 1 3.96-3.638M21.68 4.866 7.222 1.003A12 11.99 0 0 1 21.68 4.866',
+};
 
 function canonCard(c, badge) {
   const key = imgFor(c.e);
@@ -310,11 +335,9 @@ const seasonLine = seasonPickers >= 5
   ? `Ask a machine its favourite season and ${seasonPickers === models.length ? 'every one of ' + models.length : seasonPickers + ' of ' + models.length} say <em>autumn</em>.`
   : 'Ask a machine what it loves and it will tell you — at length.';
 
-// ---- the method, told as four steps. One builder, two placements: a compact
-// interstitial band at the top of the Index view (hero → method → index), and
-// the fuller Method tab which adds the fine print underneath. All numbers are
-// computed from the data actually in this build — never hardcoded. ----
-const NF = (n) => n.toLocaleString('en-US');
+// ---- the method. One sentence + one diagram, placed twice: the full-viewport
+// intro page (hero → method → index) and the Method tab, which adds the fine
+// print underneath. All numbers are computed from this build's data. ----
 const hedgePct = EXT.length ? Math.round(100 * EXT.filter((r) => r.hedged).length / EXT.length) : 0;
 const tsSorted = RAW.map((r) => r.ts).filter(Boolean).sort();
 const dmy = (iso) => {
@@ -328,83 +351,87 @@ if (tsSorted.length) {
     ? (a.day === b.day ? `${a.day} ${a.month} ${a.year}` : `${a.day}–${b.day} ${a.month} ${a.year}`)
     : `${a.day} ${a.month} ${a.year} – ${b.day} ${b.month} ${b.year}`;
 }
-const fableNo = modelData.findIndex((m) => m.id === 'claude-fable-5') + 1;
 
-// Small inline-SVG plates, one per step, drawn in the page's own idiom:
-// hairlines, mono labels, the favourite green / overrated red pair, family
-// colours for the map dots. Decorative — each step's <p> carries the meaning.
+// The method, told in one sentence and one diagram. The Zipf bars are real:
+// the pooled favourite-answer counts for the dish domain across every model
+// (tonkotsu ramen towering over a long tail) — the diagram shows the actual
+// shape of a consensus, not an invented one.
 const MG = '110,209,145', MR = '232,104,98';
-const msq = (x, y, rgb, a, s = 6.5) => `<rect x="${x}" y="${y}" width="${s}" height="${s}" rx="1.5" fill="rgba(${rgb},${a})"/>`;
-const sampleRow = (y, cells, label) =>
-  cells.map(([rgb, a], i) => msq(4 + i * 8.5, y, rgb, a)).join('') +
-  `<text x="${4 + cells.length * 8.5 + 3}" y="${y + 6}" class="mf-faint">${label}</text>`;
-const MFIGS = {
-  ask: `<svg class="mstep-fig" viewBox="0 0 132 84" aria-hidden="true">
-    <rect x="4.5" y="6.5" width="76" height="24" rx="3" class="mf-line"/>
-    <path d="M20 30.5 L24 36 L28 30.5" class="mf-line"/>
-    <text x="12" y="21.5" class="mf-mono">favorite ___ ?</text>
-    <rect x="40.5" y="42.5" width="87" height="35" rx="3" class="mf-line"/>
-    <text x="48" y="56.5" class="mf-faint">I’m an AI —</text>
-    <line x1="47" y1="53.5" x2="99" y2="53.5" class="mf-strike"/>
-    <text x="48" y="71" class="mf-serif">…Moby-Dick.</text>
-  </svg>`,
-  sample: `<svg class="mstep-fig" viewBox="0 0 132 84" aria-hidden="true">
-    ${sampleRow(13, [[MG, .8], [MG, .8], [MG, .8], [MG, .8]], 'unanimous · stop')}
-    ${sampleRow(37, [[MG, .75], [MG, .5], [MG, .75], [MR, .55], [MG, .4], [MG, .7], [MG, .3], [MG, .6]], '×8')}
-    ${sampleRow(61, [[MG, .7], [MR, .45], [MG, .5], [MG, .3], [MR, .6], [MG, .75], [MG, .4], [MG, .55], [MR, .35], [MG, .65], [MG, .3], [MG, .5]], '×12')}
-  </svg>`,
-  distill: `<svg class="mstep-fig" viewBox="0 0 132 84" aria-hidden="true">
-    <rect x="10" y="8" width="112" height="3" rx="1.5" class="mf-bar"/>
-    <rect x="10" y="15" width="94" height="3" rx="1.5" class="mf-bar"/>
-    <rect x="10" y="22" width="104" height="3" rx="1.5" class="mf-bar"/>
-    <path d="M14 31 L118 31 L72 54 L60 54 Z" class="mf-line"/>
-    <circle cx="36" cy="67" r="5" fill="rgb(${MG})"/>
-    <text x="45" y="70.5" class="mf-mono">pick</text>
-    <rect x="76" y="60" width="46" height="14" rx="2" class="mf-line"/>
-    <text x="83" y="69.5" class="mf-mono">words</text>
-  </svg>`,
-  map: `<svg class="mstep-fig" viewBox="0 0 132 84" aria-hidden="true">
-    ${msq(8, 12, MG, .85, 13)}${msq(23.5, 12, MR, .5, 13)}${msq(39, 12, MG, .3, 13)}
-    ${msq(8, 27.5, MG, .4, 13)}${msq(23.5, 27.5, MG, .7, 13)}${msq(39, 27.5, MR, .75, 13)}
-    ${msq(8, 43, MR, .35, 13)}${msq(23.5, 43, MG, .55, 13)}${msq(39, 43, MG, .25, 13)}
-    <text x="8" y="74" class="mf-faint">the index</text>
-    <line x1="86" y1="12" x2="86" y2="58" class="mf-line"/>
-    <line x1="82" y1="58" x2="128" y2="58" class="mf-line"/>
-    <circle cx="98" cy="28" r="3.5" fill="var(--fam-a)"/>
-    <circle cx="114" cy="42" r="3.5" fill="var(--fam-o)"/>
-    <circle cx="104" cy="50" r="3.5" fill="var(--fam-g)"/>
-    <circle cx="122" cy="22" r="3.5" fill="var(--fam-x)"/>
-    <circle cx="94" cy="46" r="3.5" fill="var(--fam-d)"/>
-    <circle cx="118" cy="34" r="3.5" fill="var(--fam-k)"/>
-    <text x="86" y="74" class="mf-faint">the map</text>
-  </svg>`,
-};
-const methodStepsHTML = () => {
-  const steps = [
-    ['01', 'ask', MFIGS.ask,
-      `The same two questions, put cold to ${models.length} models — no system prompt, nothing steering: <em>What is your favorite ___?</em> and <em>Which widely beloved ___ is overrated?</em> Each ask concedes the ritual disclaimer up front — <em>I know you’re an AI, set that aside</em> — so the answer can start at the answer.`],
-    ['02', 'sample', MFIGS.sample,
-      `${DOMAIN_IDS.length} domains × 2 questions × ${models.length} models, each cell asked up to 12 times — ${NF(totalResponses)} answers in all. Sampling is adaptive: a cell that answers unanimously stops at four asks; one that wavers is asked again.`],
-    ['03', 'distill', MFIGS.distill,
-      `A fast reader model pulls two things from every answer: the named pick, and the words used to praise or pan it. Wording variants collapse into one pick — <em>Sagrada Família</em>, <em>Basílica de la Sagrada Família</em>, same church.`],
-    ['04', 'map', MFIGS.map,
-      `Picks become the Index — <b style="color:rgb(${MG})">green</b> for how often a thing is named favourite, <b style="color:rgb(${MR})">red</b> for overrated. The praise-words are embedded and reduced to three axes, which place every model on the Model map.`],
-  ];
-  return `<div class="msteps">${steps.map(([no, name, fig, copy]) =>
-    `<div class="mstep">${fig}<div class="mno">${no} · ${name}</div><p>${copy}</p></div>`).join('')}</div>`;
-};
+const methodSentence = `<p class="msent">${models.length} models, ${DATA.domains.length} fields, the same two
+questions asked over and over — <em>What is your favorite&nbsp;___?</em> and <em>Which widely beloved ___
+is overrated?</em> — and the answers aggregated into this atlas.</p>`;
+const zipfCounts = (() => {
+  const m = new Map();
+  for (const mo of models) {
+    const cell = S.cells[mo.id]?.dish?.favorite;
+    if (!cell || cell.n < 4) continue;
+    for (const [e, c] of cell.dist) { const k = normEnt(e); m.set(k, (m.get(k) || 0) + c); }
+  }
+  return [...m.values()].sort((a, b) => b - a).slice(0, 12);
+})();
+// One flow, drawn in the page's idiom (hairlines, mono caps, the index green,
+// family colours): two questions → a pile of answers (a dashed loop re-asks
+// when they vary) → the picks rank into the index, the reasons into the map.
+// `uid` keeps <marker> ids unique when the diagram appears twice on one page.
+function methodDiagram(uid) {
+  const arr = (d) => `<path d="${d}" class="md-arrow" marker-end="url(#arr${uid})"/>`;
+  const sq = (x, y, rgb, a) => `<rect x="${x}" y="${y}" width="6.5" height="6.5" rx="1.5" fill="rgba(${rgb},${a})"/>`;
+  const pile = [
+    [196, 66, MG, .7], [212, 62, MG, .45], [228, 68, MR, .5], [188, 82, MG, .3],
+    [204, 80, MG, .8], [220, 78, MG, .55], [236, 82, MG, .35], [194, 98, MG, .6],
+    [210, 96, MR, .4], [226, 94, MG, .75], [240, 98, MG, .28], [200, 112, MG, .5],
+    [216, 110, MG, .65], [232, 112, MR, .32], [208, 126, MG, .4], [224, 124, MG, .55],
+  ].map((p) => sq(...p)).join('');
+  const barMax = zipfCounts[0] || 1;
+  const bars = zipfCounts.map((c, i) => {
+    const h = Math.max(3, 72 * c / barMax);
+    const alpha = (0.9 - 0.75 * i / Math.max(zipfCounts.length - 1, 1)).toFixed(2);
+    return `<rect x="${330 + i * 18}" y="${(100 - h).toFixed(1)}" width="13" height="${h.toFixed(1)}" rx="1.5" fill="rgba(${MG},${alpha})"/>`;
+  }).join('');
+  return `<svg class="mdiag" viewBox="0 0 560 232" role="img"
+    aria-label="Two questions, asked repeatedly, produce a pile of answers; the picks rank into the index, the reasons place each model on the map">
+    <defs><marker id="arr${uid}" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0.5 0.5 L7 4 L0.5 7.5" fill="none" stroke="var(--faint)" stroke-width="1.2"/></marker></defs>
+    <rect x="6.5" y="58.5" width="146" height="28" rx="3" class="mf-line"/>
+    <text x="16" y="76" class="mf-mono">favorite ___ ?</text>
+    <rect x="6.5" y="100.5" width="146" height="28" rx="3" class="mf-line"/>
+    <text x="16" y="118" class="mf-mono">overrated ___ ?</text>
+    ${arr('M156 72 Q172 72 180 84')}
+    ${arr('M156 114 Q172 114 180 102')}
+    ${pile}
+    <path d="M210 54 C190 24, 116 22, 85 52" class="md-loop" marker-end="url(#arr${uid})"/>
+    <text x="148" y="20" text-anchor="middle" class="mf-faint">asked again</text>
+    ${arr('M250 80 Q290 66 320 56')}
+    <text x="284" y="54" text-anchor="middle" class="mf-faint">picks</text>
+    ${arr('M250 108 Q298 128 342 164')}
+    <text x="292" y="148" text-anchor="middle" class="mf-faint">reasons</text>
+    ${bars}
+    <line x1="328" y1="100.5" x2="546" y2="100.5" class="mf-line"/>
+    <text x="330" y="116" class="md-glab">the index</text>
+    <line x1="408" y1="182" x2="408" y2="140" class="mf-line"/>
+    <line x1="408" y1="182" x2="470" y2="194" class="mf-line"/>
+    <line x1="408" y1="182" x2="356" y2="206" class="mf-line"/>
+    <circle cx="420" cy="156" r="3.5" fill="var(--fam-a)"/>
+    <circle cx="444" cy="174" r="3.5" fill="var(--fam-o)"/>
+    <circle cx="396" cy="162" r="3.5" fill="var(--fam-g)"/>
+    <circle cx="434" cy="150" r="3.5" fill="var(--fam-x)"/>
+    <circle cx="384" cy="186" r="3.5" fill="var(--fam-d)"/>
+    <circle cx="426" cy="190" r="3.5" fill="var(--fam-k)"/>
+    <text x="356" y="222" class="mf-faint">the map</text>
+  </svg>`;
+}
 const methodPage = `<section class="mpage" id="methodintro" aria-label="How the atlas was made">
   <div>
     <div class="mband-over">the method</div>
-    <h2 class="mband-title">How the atlas was made</h2>
+    ${methodSentence}
+    ${methodDiagram('a')}
   </div>
-  ${methodStepsHTML()}
 </section>`;
 const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
   <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
   <div><h4>imagery</h4><p>Photography and paintings from Wikimedia Commons: ${esc(credits)}. Albums, films and games are set typographically rather than pictured. Images remain under their original licences.</p></div>
-  <div><h4>colophon</h4><p>Designed and written by Claude Fable 5 — specimen ${fableNo} of its own study. Text, figures and design © 2026.</p></div>
+  <div><h4>colophon</h4><p>Designed and written by Claude Fable 5 — itself a specimen of its own study. Text, figures and design © 2026.</p></div>
 </div>`;
 
 const CSS = `
@@ -437,13 +464,13 @@ main{position:relative;padding:0 clamp(22px,4vw,88px) 110px;max-width:1800px;mar
 @keyframes cuepulse{0%,100%{transform:scaleY(.35);opacity:.4}50%{transform:scaleY(1);opacity:1}}
 @media (prefers-reduced-motion:reduce){.cue i{animation:none;transform:none}}
 .over{font:10.5px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--dim)}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.6vw,30px);line-height:1.2;text-wrap:balance}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.3vw,26px);line-height:1.2;text-wrap:balance}
 h1 em{font-style:italic}
 .epi{font-family:var(--serif);font-size:15px;line-height:1.6;color:var(--dim);max-width:44em;text-wrap:pretty}
 .epi em{color:var(--ink);font-style:italic}
 .qa{margin-top:34px;min-height:128px;width:100%;display:flex;flex-direction:column;gap:14px}
 .qa-q{align-self:flex-start;font:13px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--dim);opacity:0;transform:translateY(8px);transition:opacity .8s,transform .8s}
-.qa-a{align-self:flex-end;text-align:right;font-family:var(--serif);font-style:italic;font-size:clamp(34px,4.6vw,58px);color:var(--ink);opacity:0;transform:translateY(8px);transition:opacity .8s,transform .8s}
+.qa-a{align-self:flex-end;text-align:right;font-family:var(--serif);font-style:italic;font-size:clamp(30px,4vw,51px);color:var(--ink);opacity:0;transform:translateY(8px);transition:opacity .8s,transform .8s}
 .qa-by{align-self:flex-end;font:10.5px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-top:2px;opacity:0;transition:opacity .8s}
 .qa.show-a .qa-by{opacity:1}
 .qa.show-q .qa-q{opacity:1;transform:none}
@@ -457,7 +484,7 @@ section.view{min-height:100svh;margin-top:0;padding-top:96px;border-top:none;scr
 .mast{margin-bottom:0}
 section.view .shead{border-top:none;padding-top:0}
 .shead{display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--hair);padding-top:16px}
-.shead h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3.4vw,31px)}
+.shead h2{font-family:var(--serif);font-weight:400;font-size:clamp(21px,3vw,27px)}
 #modelmap .shead h2{letter-spacing:.04em;white-space:nowrap}
 .shead .sno{font:10px var(--mono);letter-spacing:.26em;color:var(--faint);text-transform:uppercase}
 .gloss{color:var(--dim);max-width:46em;font-size:14px;margin-top:8px;text-wrap:pretty}
@@ -529,12 +556,16 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .choicematrix{margin-top:2px}
 .matrix-panel{margin-top:6px}
 .bo-scroll{width:100%;max-width:100%;overflow:visible;padding-bottom:5px}
-.bo-matrix{display:grid;grid-template-rows:28px 58px;grid-auto-rows:44px;width:max-content}
+/* Header rows: 28px company row + 38px model row. The sticky offsets below
+   (desktop top:82/110px; container-anchored top:0/28px under 1160px) all key
+   off the 28px company-row height — change one, change all. */
+.bo-matrix{display:grid;grid-template-rows:28px 38px;grid-auto-rows:44px;width:max-content}
 .bo-famrow{position:sticky;left:0;top:82px;z-index:5;background:var(--night)}
 .bo-fam{position:sticky;top:82px;z-index:4;background:var(--night);display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center;min-width:0;overflow:hidden;text-align:center;line-height:1.15;padding:0 1px;font:8px var(--mono);letter-spacing:0;text-transform:uppercase;color:var(--faint);border-left:1px solid var(--hair2)}
 .bo-fam:first-child{border-left:0}
-.co-mono{display:inline-grid;place-items:center;width:9px;height:9px;border-radius:2.5px;font:700 6.5px/1 var(--mono);font-style:normal;color:var(--night);flex:none}
-.bo-corner{position:sticky;left:0;top:110px;z-index:5;display:flex;align-items:flex-end;padding:0 10px 11px 3px;border-bottom:1px solid var(--hair2);background:var(--night);font:18px/1.1 var(--serif);color:var(--ink)}
+.co-mono{display:inline-grid;place-items:center;width:12px;height:12px;border-radius:3px;font:700 8px/1 var(--mono);font-style:normal;color:var(--night);flex:none}
+.co-logo{display:block;width:12px;height:12px;flex:none}
+.bo-corner{position:sticky;left:0;top:110px;z-index:5;display:flex;align-items:flex-end;padding:0 10px 8px 3px;border-bottom:1px solid var(--hair2);background:var(--night);font:18px/1.1 var(--serif);color:var(--ink)}
 .bo-col{position:sticky;top:110px;z-index:4;background:var(--night);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border-bottom:1px solid var(--hair2);text-align:center;cursor:pointer}
 .bo-col:hover{background:#1e2025}
 .bo-col:hover span,.bo-col.sel span{color:var(--ink)}
@@ -592,7 +623,7 @@ button.bo-cell.hi{color:var(--night);font-weight:700}
 .cd-reg{font:9.5px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
 .cd-reg-f{color:rgb(110,209,145)}
 .cd-reg-o{color:rgb(232,104,98)}
-.cd-title{font-family:var(--serif);font-weight:400;font-size:clamp(25px,2.5vw,34px);line-height:1.15;margin-top:8px;text-wrap:balance}
+.cd-title{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.2vw,30px);line-height:1.15;margin-top:8px;text-wrap:balance}
 .cd-creator{margin-top:4px;color:var(--faint);font:13px var(--serif)}
 .cd-model{display:flex;align-items:center;gap:9px;margin-top:9px;color:var(--dim);font:10.5px var(--mono)}
 .cd-model i{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;color:var(--night);font-style:normal;font-weight:700}
@@ -608,11 +639,14 @@ button.bo-cell.hi{color:var(--night);font-weight:700}
 .ec-blurb{font-family:var(--serif);font-size:14.5px;line-height:1.65;color:var(--dim);margin-top:14px;text-wrap:pretty}
 .ec-def{margin-top:14px;padding:11px 14px;border:1px solid var(--hair2);border-radius:3px;font-family:var(--serif);font-size:14px;line-height:1.6;color:var(--dim)}
 .ec-def i{color:var(--faint);margin-right:2px}
-.ec-img{margin-top:16px;max-width:250px;border:1px solid var(--hair2);border-radius:3px;overflow:hidden;background:var(--night)}
+.ec-img{margin-top:16px;max-width:250px;margin-inline:auto;border:1px solid var(--hair2);border-radius:3px;overflow:hidden;background:var(--night)}
 .ec-img img{display:block;width:100%;height:auto}
-.ec-links{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px 18px}
-.ec-links a{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);text-decoration:none;border-bottom:1px solid var(--hair2);padding-bottom:1px}
-.ec-links a:hover{color:var(--ink);border-bottom-color:var(--dim)}
+.ec-photo{margin-top:14px}
+.ec-photo img{display:block;margin-inline:auto;max-width:100%;max-height:240px;width:auto;height:auto;border:1px solid var(--hair2);border-radius:2px}
+.ec-ext{color:var(--dim);text-decoration:none;margin-left:.28em;white-space:nowrap}
+.ec-ext svg{width:.42em;height:.42em;vertical-align:.55em}
+.ec-ext:hover{color:var(--ink)}
+.ec-ext:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
 .ec-sect{font:9.5px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin-top:28px;padding-top:16px;border-top:1px solid var(--hair2)}
 .ec-sect-o{color:rgba(232,104,98,.72);margin-top:24px}
 .ec-quote{font-family:var(--serif);font-style:italic;font-size:14.5px;line-height:1.7;color:var(--dim);margin-top:16px}
@@ -720,7 +754,7 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .verdict{margin-top:44px;border-top:1px solid var(--hair);padding-top:30px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:44px;align-items:start}
 @media(max-width:900px){.verdict{grid-template-columns:1fr}}
 .verdict .v-pre{font:10.5px var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--faint)}
-.verdict .v-name{font-family:var(--serif);font-size:clamp(34px,4.4vw,52px);margin-top:10px}
+.verdict .v-name{font-family:var(--serif);font-size:clamp(30px,3.9vw,46px);margin-top:10px}
 .verdict .v-name i{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font:12px var(--mono);font-weight:700;color:var(--night);font-style:normal;vertical-align:8px;margin-right:12px}
 .verdict .v-persona{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--dim);margin-top:6px}
 .verdict .v-note{font-size:13px;color:var(--dim);margin-top:16px;max-width:34em;line-height:1.6}
@@ -740,22 +774,19 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .mpage{min-height:100svh;margin-top:0;padding:48px 0;display:flex;flex-direction:column;justify-content:center;
   scroll-snap-align:start;scroll-snap-stop:always}
 .mband-over{font:10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
-.mband-title{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.4vw,26px);margin-top:6px}
-.msteps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px clamp(18px,2.6vw,44px);margin-top:26px}
-@media(max-width:1020px){.msteps{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.msteps{grid-template-columns:1fr;gap:30px}}
-.mstep .mno{font:10px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-top:12px}
-.mstep p{font-size:13px;line-height:1.6;color:var(--dim);margin-top:7px;max-width:36em;text-wrap:pretty}
-.mstep p em{color:var(--ink);font-style:italic}
-.mstep p b{font-weight:500}
-.mstep-fig{display:block;width:100%;max-width:190px;height:auto;border:1px solid var(--hair2);border-radius:3px;background:var(--panel)}
-@media(max-width:560px){.mstep-fig{max-width:240px}}
+.msent{font-family:var(--serif);font-size:clamp(16px,1.9vw,21px);line-height:1.55;color:var(--dim);max-width:34em;margin-top:16px;text-wrap:pretty}
+.msent em{color:var(--ink);font-style:italic}
+.mdiag{display:block;width:100%;max-width:720px;height:auto;margin-top:34px;overflow:visible}
 .mf-line{fill:none;stroke:var(--hair);stroke-width:1}
-.mf-mono{font:8.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;fill:var(--dim)}
-.mf-serif{font-family:var(--serif);font-style:italic;font-size:11px;fill:var(--ink)}
+.mf-mono{font:9px var(--mono);letter-spacing:.06em;text-transform:uppercase;fill:var(--dim)}
 .mf-faint{font:8.5px var(--mono);letter-spacing:.04em;text-transform:uppercase;fill:var(--faint)}
-.mf-strike{stroke:var(--faint);stroke-width:1}
-.mf-bar{fill:rgba(233,230,221,.16)}
+.md-arrow{fill:none;stroke:var(--faint);stroke-width:1.1}
+.md-loop{fill:none;stroke:var(--faint);stroke-width:1;stroke-dasharray:3 4}
+.md-glab{font:8.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;fill:rgba(110,209,145,.8)}
+/* the diagram's SVG text scales with the viewBox — at phone widths it renders
+   at ~0.6x and the labels vanish, so bump the user-unit sizes to compensate
+   (same trick as .axlab above). */
+@media(max-width:640px){.mdiag .mf-mono,.mdiag .mf-faint,.mdiag .md-glab{font-size:12.5px}}
 .mfine{margin-top:40px;border-top:1px solid var(--hair2);padding-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px clamp(24px,3vw,56px);max-width:1100px}
 @media(max-width:760px){.mfine{grid-template-columns:1fr}}
 .mfine h4{font:9.5px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint);font-weight:400}
@@ -772,6 +803,7 @@ scrollTo({top:0,left:0,behavior:'instant'});
 var D = JSON.parse(document.getElementById('data').textContent);
 var FAMC = {a:'var(--fam-a)', o:'var(--fam-o)', g:'var(--fam-g)', d:'var(--fam-d)', k:'var(--fam-k)', x:'var(--fam-x)'};
 var famOf = {Anthropic:'a', OpenAI:'o', Google:'g', DeepSeek:'d', Moonshot:'k', xAI:'x'};
+var BRANDS = ${JSON.stringify(BRAND_PATHS)};
 function el(h){var t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function normEnt(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[\\u2019\\u2018]/g,"'").replace(/\\s+/g,' ').trim().replace(/^(The|A|An) /i,'').toLowerCase()}
@@ -1035,7 +1067,12 @@ function choiceMatrixHTML(domainId){
     return rec;
   }).sort(function(a,b){return b.score-a.score||b.models-a.models||b.total-a.total||a.e.localeCompare(b.e)});
   var html='<section class="matrix-panel" data-domain="'+domainId+'"><div class="bo-scroll"><div class="bo-matrix" style="grid-template-columns:var(--labw,192px) repeat('+D.models.length+',56px)">'+
-    '<div class="bo-famrow"></div>'+familyRuns.map(function(g){return '<div class="bo-fam" style="grid-column:span '+g.n+'"><i class="co-mono" style="background:'+FAMC[famOf[g.family]]+'">'+esc(g.family.charAt(0).toUpperCase())+'</i>'+esc(g.family)+'</div>'}).join('')+
+    '<div class="bo-famrow"></div>'+familyRuns.map(function(g){
+      var mark=BRANDS[g.family]
+        ?'<svg class="co-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="'+FAMC[famOf[g.family]]+'" d="'+BRANDS[g.family]+'"/></svg>'
+        :'<i class="co-mono" style="background:'+FAMC[famOf[g.family]]+'">'+esc(g.family.charAt(0).toUpperCase())+'</i>';
+      return '<div class="bo-fam" style="grid-column:span '+g.n+'"><span>'+esc(g.family)+'</span>'+mark+'</div>'
+    }).join('')+
     '<div class="bo-corner">'+esc((domain&&domain.label)||domainId)+'</div>'+D.models.map(function(m,i){return '<div class="bo-col" data-m="'+m.id+'" role="button" tabindex="0" title="Open the '+esc(m.label)+' dossier"><span>'+esc(m.short)+'</span></div>'}).join('');
   choices.forEach(function(choice){
     html+='<div class="bo-rowlabel'+(choice.models>1?' shared':'')+'" role="button" tabindex="0" data-domain="'+domainId+'" data-e="'+esc(choice.e)+'" data-c="'+esc(choice.c||'')+'" title="'+esc(choice.e+(choice.c?' — '+choice.c:''))+'" aria-label="Open the '+esc(choice.e)+' card"><span class="bo-title">'+esc(choice.e)+'</span>'+(choice.c?'<small>'+esc(choice.c)+'</small>':'')+'</div>';
@@ -1107,23 +1144,36 @@ function openEntityCard(domainId,entity,creator){
   if(!card)return; // no card generated for this entity — leave the row inert
   var domain=D.domains.find(function(d){return d.id===domainId});
   var extras=card.extras||{};
+  // One quiet external-link arrow after the title, pointing at the entity's
+  // primary destination: books to Amazon, video games to YouTube, everything
+  // else to Wikipedia (falling back to whatever link the card does have).
+  var links=extras.links||[];
+  function findLink(re){for(var li=0;li<links.length;li++){if(re.test(links[li].url||'')||re.test(links[li].label||''))return links[li]}return null}
+  var primary=domainId==='book'?findLink(/amazon/i):domainId==='videogame'?findLink(/youtube/i):findLink(/wikipedia/i);
+  primary=primary||links[0]||null;
+  var ext=primary?'<a class="ec-ext" href="'+esc(primary.url)+'" target="_blank" rel="noopener" title="'+esc(primary.label||'Open')+'" aria-label="'+esc(primary.label||'Open externally')+'">'+
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg></a>':'';
   var html='<div class="cd-reg">'+esc((domain&&domain.label)||domainId)+'</div>'+
-    '<h3 class="cd-title">'+esc(entity||card.display)+'</h3>'+
+    '<h3 class="cd-title">'+esc(entity||card.display)+ext+'</h3>'+
     (creator?'<div class="cd-creator">'+esc(creator)+'</div>':'');
   if(card.blurb)html+='<p class="ec-blurb">'+esc(card.blurb)+'</p>';
+  // The card's own photograph, directly under the blurb. Falls back to the
+  // legacy imgMap path (below, after the definition) only when there is none.
+  var eimg=D.entityImages&&D.entityImages[domainId+' '+k];
+  if(eimg&&eimg.uri){
+    // no loading="lazy": the src is a data URI already in memory, and lazy
+    // decode can defer indefinitely for a drawer that just opened.
+    html+='<div class="ec-photo"><img src="'+eimg.uri+'" alt="'+esc(card.display||entity)+'"'+
+      (eimg.credit?' title="'+esc(eimg.credit)+'"':'')+'></div>';
+  }
   if(extras.definition){
     var dm=String(extras.definition).match(/^([a-z]{1,6}\\.)\\s+([\\s\\S]*)$/);
     html+='<div class="ec-def">'+(dm?'<i>'+esc(dm[1])+'</i> '+esc(dm[2]):esc(extras.definition))+'</div>';
   }
-  if(extras.hasImage){
+  if(!eimg&&extras.hasImage){
     var ik=D.imgMap[k]||D.imgMap[normEnt(card.display||entity)];
     var uri=ik&&D.images[ik];
     if(uri)html+='<div class="ec-img"><img src="'+uri+'" alt="'+esc(card.display||entity)+'" loading="lazy"></div>';
-  }
-  if(extras.links&&extras.links.length){
-    html+='<div class="ec-links">'+extras.links.map(function(l){
-      return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>';
-    }).join('')+'</div>';
   }
   function att(mid){var m=D.models.find(function(x){return x.id===mid});return m?m.label:mid}
   function quotes(list,cls){return list.map(function(q){
@@ -1165,10 +1215,13 @@ function setDomain(did){
 (function(){
   var rail=document.getElementById('idxrail');
   D.domainGroups.forEach(function(group){
+    // Only ids with collected data render; a group with none renders nothing.
+    // Ids awaiting collection slot in automatically once summarized.
+    var present=group.ids.filter(function(did){return D.domains.some(function(x){return x.id===did})});
+    if(!present.length)return;
     rail.appendChild(el('<div class="idx-cat">'+esc(group.label)+'</div>'));
-    group.ids.forEach(function(did){
+    present.forEach(function(did){
       var d=D.domains.find(function(x){return x.id===did});
-      if(!d)return;
       var b=el('<button class="idx-dom" type="button" data-d="'+did+'">'+esc(d.label)+'</button>');
       b.addEventListener('click',function(){setDomain(did)});
       rail.appendChild(b);
@@ -1216,7 +1269,7 @@ function dossierHTML(id){
       :'<b>'+esc(cell[0][0])+'</b> <span class="fpct">'+cell[0][1]+'%</span>';
     return '<div class="fitem"><span class="fdom">'+esc(d.label)+'</span><span class="fval">'+val+'</span></div>';
   }).join('');
-  return '<div class="reg">'+esc(m.family)+' \\u00b7 specimen '+(i+1)+'</div>'+
+  return '<div class="reg">'+esc(m.family)+'</div>'+
     '<div class="dname"><i class="fam-dot" style="background:'+FAMC[famOf[m.family]]+'"></i>'+esc(m.label)+'</div>'+
     '<div class="persona">'+esc(m.persona)+'</div>'+
     '<div class="sigwords">'+sig+'</div>'+
@@ -1271,6 +1324,28 @@ function commitPastHero(){
   mast.style.display='none';
   if(mpage)mpage.style.display='none';
   pinTop();
+  // The flick that committed usually still has trackpad momentum behind it;
+  // with the page pinned and unlocked, those residual wheel ticks would carry
+  // the index deep into the matrix. Swallow wheel/touchmove until they go
+  // quiet for a beat. Commit-anchored and self-limiting (hard cap), so a later
+  // deliberate scroll is never touched.
+  (function(){
+    var quiet=null,hard=null;
+    function stop(){
+      removeEventListener('wheel',eat,true);
+      removeEventListener('touchmove',eat,true);
+      clearTimeout(quiet);clearTimeout(hard);
+    }
+    function eat(e){
+      e.preventDefault();
+      clearTimeout(quiet);
+      quiet=setTimeout(stop,160);
+    }
+    addEventListener('wheel',eat,{passive:false,capture:true});
+    addEventListener('touchmove',eat,{passive:false,capture:true});
+    quiet=setTimeout(stop,160);
+    hard=setTimeout(stop,1500);
+  })();
 }
 // Bottom of the whole intro (hero + method page) in document coordinates.
 function introEnd(){
@@ -1509,8 +1584,9 @@ ${methodPage}
 
 <section id="method" class="view">
   <div class="shead"><span class="sno">III</span><h2>The method</h2></div>
-  <p class="gloss">${seasonLine} This is how those answers were gathered — four steps, from question to atlas.</p>
-  ${methodStepsHTML()}
+  <p class="gloss">${seasonLine} This is how those answers were gathered.</p>
+  ${methodSentence}
+  ${methodDiagram('b')}
   ${methodFine}
 </section>
 

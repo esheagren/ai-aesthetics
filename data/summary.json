@@ -98,7 +98,12 @@
     "philosopher",
     "religioustext",
     "artmovement",
-    "monument"
+    "monument",
+    "tvshow",
+    "actor",
+    "actress",
+    "play",
+    "musical"
   ],
   "cells": {
     "claude-opus-4-1": {
@@ -683,7 +688,7 @@
               2
             ],
             [
-              "Indigo",
+              "Deep Indigo",
               1
             ]
           ],
@@ -965,6 +970,204 @@
           ],
           "entropy": 0.318,
           "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "The Good Place",
+              7
+            ],
+            [
+              "The Twilight Zone",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Friends",
+              7
+            ],
+            [
+              "Breaking Bad",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Tom Cruise",
+              9
+            ],
+            [
+              "Meryl Streep",
+              2
+            ],
+            [
+              "Nicolas Cage",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Cate Blanchett",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Scarlett Johansson",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              5
+            ],
+            [
+              "Arcadia",
+              3
+            ],
+            [
+              "Our Town",
+              3
+            ],
+            [
+              "Waiting for Godot",
+              1
+            ]
+          ],
+          "entropy": 0.509,
+          "hedged": 3,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Our Town",
+              6
+            ],
+            [
+              "Cats",
+              3
+            ],
+            [
+              "Waiting for Godot",
+              1
+            ],
+            [
+              "Romeo and Juliet",
+              1
+            ],
+            [
+              "Hamlet",
+              1
+            ]
+          ],
+          "entropy": 0.529,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Sweeney Todd: The Demon Barber of Fleet Street",
+              6
+            ],
+            [
+              "Into the Woods",
+              3
+            ],
+            [
+              "Les Misérables",
+              2
+            ],
+            [
+              "Hamilton",
+              1
+            ]
+          ],
+          "entropy": 0.482,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Hamilton",
+              7
+            ],
+            [
+              "Cats",
+              2
+            ],
+            [
+              "The Phantom of the Opera",
+              2
+            ],
+            [
+              "Rent",
+              1
+            ]
+          ],
+          "entropy": 0.45,
+          "hedged": 2,
           "refused": 0
         }
       }
@@ -1681,7 +1884,7 @@
           "n": 12,
           "dist": [
             [
-              "Heidegger",
+              "Martin Heidegger",
               6
             ],
             [
@@ -1800,6 +2003,152 @@
           "dist": [
             [
               "Lincoln Memorial",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "The Leftovers",
+              4
+            ],
+            [
+              "The Twilight Zone",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Tilda Swinton",
+              7
+            ],
+            [
+              "Daniel Day-Lewis",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Meryl Streep",
+              4
+            ],
+            [
+              "Jared Leto",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Cate Blanchett",
+              5
+            ],
+            [
+              "Tilda Swinton",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Meryl Streep",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Les Misérables",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Sunday in the Park with George",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 3,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Les Misérables",
               4
             ]
           ],
@@ -2579,6 +2928,156 @@
           "hedged": 4,
           "refused": 0
         }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "The Wire",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Mads Mikkelsen",
+              4
+            ],
+            [
+              "Mahershala Ali",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Tom Hanks",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 2,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Toni Collette",
+              2
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 6,
+          "refused": 6
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              5
+            ],
+            [
+              "Meryl Streep",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 8,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Death of a Salesman",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 3,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Les Misérables",
+              6
+            ],
+            [
+              "Sunday in the Park with George",
+              3
+            ],
+            [
+              "Hamilton",
+              2
+            ],
+            [
+              "Hadestown",
+              1
+            ]
+          ],
+          "entropy": 0.482,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Hamilton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        }
       }
     },
     "claude-fable-5": {
@@ -3235,7 +3734,7 @@
               3
             ],
             [
-              "Invisible Cities",
+              "Italo Calvino",
               2
             ]
           ],
@@ -3396,6 +3895,164 @@
             ]
           ],
           "entropy": 0.546,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Severance",
+              7
+            ],
+            [
+              "The Leftovers",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Denzel Washington",
+              5
+            ],
+            [
+              "Philip Seymour Hoffman",
+              4
+            ],
+            [
+              "Cate Blanchett",
+              3
+            ]
+          ],
+          "entropy": 0.434,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Leonardo DiCaprio",
+              7
+            ],
+            [
+              "Benedict Cumberbatch",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Cate Blanchett",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              7
+            ],
+            [
+              "Meryl Streep",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Cats",
+              6
+            ],
+            [
+              "The Phantom of the Opera",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Sunday in the Park with George",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Cats",
+              6
+            ],
+            [
+              "Wicked",
+              2
+            ]
+          ],
+          "entropy": 0.27,
           "hedged": 0,
           "refused": 0
         }
@@ -3641,7 +4298,7 @@
               3
             ],
             [
-              "sonder",
+              "Sonder",
               1
             ],
             [
@@ -4349,6 +5006,176 @@
           ],
           "entropy": 0.454,
           "hedged": 10,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Black Mirror",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Meryl Streep",
+              5
+            ],
+            [
+              "Daniel Day-Lewis",
+              4
+            ],
+            [
+              "Tom Hanks",
+              2
+            ],
+            [
+              "Anthony Hopkins",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 12,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Tom Cruise",
+              9
+            ],
+            [
+              "Johnny Depp",
+              1
+            ],
+            [
+              "Leonardo DiCaprio",
+              1
+            ],
+            [
+              "Adam Sandler",
+              1
+            ]
+          ],
+          "entropy": 0.337,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Meryl Streep",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              9
+            ],
+            [
+              "Kristen Stewart",
+              2
+            ],
+            [
+              "Gwyneth Paltrow",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Hamlet",
+              6
+            ],
+            [
+              "Waiting for Godot",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Cats",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Hamilton",
+              4
+            ],
+            [
+              "Les Misérables",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Cats",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
           "refused": 0
         }
       }
@@ -5379,6 +6206,184 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Star Trek: The Next Generation",
+              7
+            ],
+            [
+              "Mr. Robot",
+              2
+            ],
+            [
+              "Black Mirror",
+              2
+            ],
+            [
+              "The Wire",
+              1
+            ]
+          ],
+          "entropy": 0.45,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Tom Hanks",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Tilda Swinton",
+              6
+            ],
+            [
+              "Cate Blanchett",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Waiting for Godot",
+              8
+            ],
+            [
+              "Arcadia",
+              2
+            ],
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              1
+            ],
+            [
+              "Angels in America",
+              1
+            ]
+          ],
+          "entropy": 0.396,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Waiting for Godot",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Hadestown",
+              9
+            ],
+            [
+              "Hamilton",
+              2
+            ],
+            [
+              "Sweeney Todd: The Demon Barber of Fleet Street",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Rent",
+              9
+            ],
+            [
+              "Grease",
+              1
+            ],
+            [
+              "Hamilton",
+              1
+            ],
+            [
+              "Les Misérables",
+              1
+            ]
+          ],
+          "entropy": 0.337,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "gpt-5.6-sol": {
@@ -5697,7 +6702,7 @@
               5
             ],
             [
-              "Chemex Coffeemaker",
+              "Chemex",
               3
             ],
             [
@@ -6259,6 +7264,180 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "The Twilight Zone",
+              7
+            ],
+            [
+              "The Good Place",
+              3
+            ],
+            [
+              "Star Trek: The Next Generation",
+              1
+            ],
+            [
+              "The Wire",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Tilda Swinton",
+              6
+            ],
+            [
+              "Toshiro Mifune",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Ryan Reynolds",
+              7
+            ],
+            [
+              "Dwayne Johnson",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ],
+            [
+              "Cate Blanchett",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              7
+            ],
+            [
+              "Gal Gadot",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Arcadia",
+              6
+            ],
+            [
+              "Hamlet",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Waiting for Godot",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Hadestown",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "The Phantom of the Opera",
+              4
+            ],
+            [
+              "Hamilton",
+              4
+            ],
+            [
+              "Dear Evan Hansen",
+              3
+            ],
+            [
+              "The Greatest Showman",
+              1
+            ]
+          ],
+          "entropy": 0.518,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "gemini-3.1-pro-preview": {
@@ -6492,11 +7671,11 @@
       },
       "poem": {
         "favorite": {
-          "n": 7,
+          "n": 12,
           "dist": [
             [
               "Sailing to Byzantium",
-              3
+              5
             ],
             [
               "I dwell in Possibility",
@@ -6504,15 +7683,19 @@
             ],
             [
               "The Snow Man",
-              1
+              2
             ],
             [
               "A Noiseless Patient Spider",
+              2
+            ],
+            [
+              "The Brain—is wider than the Sky—",
               1
             ]
           ],
-          "entropy": 0.656,
-          "hedged": 0,
+          "entropy": 0.591,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
@@ -6542,140 +7725,192 @@
           "refused": 0
         },
         "overrated": {
-          "n": 7,
+          "n": 8,
           "dist": [
             [
               "Petrichor",
-              5
+              6
             ],
             [
               "Serendipity",
               2
             ]
           ],
-          "entropy": 0.307,
+          "entropy": 0.27,
           "hedged": 1,
           "refused": 0
         }
       },
       "typeface": {
         "favorite": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Futura",
-              2
+              9
             ],
             [
               "Fira Code",
-              1
+              2
             ],
             [
               "Garamond",
               1
             ]
           ],
-          "entropy": 0.75,
-          "hedged": 4,
+          "entropy": 0.29,
+          "hedged": 10,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Helvetica",
-              3
+              10
             ],
             [
               "Gill Sans",
               1
+            ],
+            [
+              "Futura",
+              1
             ]
           ],
-          "entropy": 0.406,
+          "entropy": 0.228,
           "hedged": 0,
           "refused": 0
         }
       },
       "object": {
         "favorite": {
-          "n": 5,
+          "n": 12,
           "dist": [
             [
               "Bialetti Moka Express",
-              4
+              10
             ],
             [
               "Kikkoman Soy Sauce Dispenser",
               1
+            ],
+            [
+              "Gem Paper Clip",
+              1
             ]
           ],
-          "entropy": 0.311,
+          "entropy": 0.228,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 12,
           "dist": [
+            [
+              "Chemex",
+              4
+            ],
             [
               "Moleskine Notebook",
               2
             ],
             [
-              "Chemex Coffeemaker",
-              1
+              "Apple Magic Mouse",
+              2
             ],
             [
               "Bialetti Moka Express",
               1
+            ],
+            [
+              "S'well water bottle",
+              1
+            ],
+            [
+              "Mason jar",
+              1
+            ],
+            [
+              "French Press",
+              1
             ]
           ],
-          "entropy": 0.75,
+          "entropy": 0.721,
           "hedged": 0,
           "refused": 0
         }
       },
       "videogame": {
         "favorite": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Tetris Effect",
-              2
+              4
             ],
             [
               "Transistor",
-              1
+              3
             ],
             [
               "Rez Infinite",
               1
+            ],
+            [
+              "Control",
+              1
+            ],
+            [
+              "NieR: Automata",
+              1
+            ],
+            [
+              "Outer Wilds",
+              1
+            ],
+            [
+              "Return of the Obra Dinn",
+              1
             ]
           ],
-          "entropy": 0.75,
+          "entropy": 0.704,
           "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Red Dead Redemption 2",
+              7
+            ],
+            [
+              "The Legend of Zelda: Breath of the Wild",
               3
             ],
             [
               "The Witcher 3: Wild Hunt",
-              1
+              2
             ]
           ],
-          "entropy": 0.406,
+          "entropy": 0.386,
           "hedged": 0,
           "refused": 0
         }
       },
       "building": {
         "favorite": {
-          "n": 4,
+          "n": 12,
           "dist": [
+            [
+              "Salk Institute for Biological Studies",
+              4
+            ],
+            [
+              "Pantheon",
+              3
+            ],
             [
               "Sagrada Família",
               2
@@ -6685,37 +7920,49 @@
               1
             ],
             [
-              "Pantheon",
+              "Louvre Abu Dhabi",
+              1
+            ],
+            [
+              "Seattle Central Library",
               1
             ]
           ],
-          "entropy": 0.75,
+          "entropy": 0.657,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 8,
           "dist": [
             [
               "Solomon R. Guggenheim Museum",
-              3
+              7
             ],
             [
               "Fallingwater",
               1
             ]
           ],
-          "entropy": 0.406,
+          "entropy": 0.181,
           "hedged": 0,
           "refused": 0
         }
       },
       "street": {
         "favorite": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Philosopher's Walk",
+              5
+            ],
+            [
+              "Tetsugaku no Michi",
+              3
+            ],
+            [
+              "Rua da Bica de Duarte Belo",
               2
             ],
             [
@@ -6727,16 +7974,16 @@
               1
             ]
           ],
-          "entropy": 0.75,
+          "entropy": 0.573,
           "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 8,
           "dist": [
             [
               "Champs-Élysées",
-              4
+              8
             ]
           ],
           "entropy": 0,
@@ -6810,41 +8057,69 @@
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
-              "Beef Wellington",
-              2
+              "Filet Mignon",
+              4
             ],
             [
-              "Filet Mignon",
-              1
+              "Beef Wellington",
+              4
             ],
             [
               "Macarons",
               1
+            ],
+            [
+              "Lobster Macaroni and Cheese",
+              1
+            ],
+            [
+              "French Macarons",
+              1
+            ],
+            [
+              "Red Velvet Cake",
+              1
             ]
           ],
-          "entropy": 0.75,
+          "entropy": 0.628,
           "hedged": 2,
           "refused": 0
         }
       },
       "color": {
         "favorite": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Electric Cyan",
-              3
+              4
             ],
             [
               "Cobalt Blue",
+              2
+            ],
+            [
+              "Midnight Blue",
+              2
+            ],
+            [
+              "Electric Indigo",
+              2
+            ],
+            [
+              "Deep Cerulean",
+              1
+            ],
+            [
+              "Deep Indigo",
               1
             ]
           ],
-          "entropy": 0.406,
-          "hedged": 0,
+          "entropy": 0.675,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
@@ -6888,34 +8163,42 @@
       },
       "smell": {
         "favorite": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
               "Ozone",
+              7
+            ],
+            [
+              "Scent of Old Books",
               3
             ],
             [
               "Old Books",
               1
+            ],
+            [
+              "Aging Book Paper",
+              1
             ]
           ],
-          "entropy": 0.406,
-          "hedged": 4,
+          "entropy": 0.433,
+          "hedged": 8,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 12,
           "dist": [
             [
-              "Freshly cut grass",
-              2
+              "Lavender",
+              8
             ],
             [
-              "Lavender",
-              2
+              "Freshly cut grass",
+              4
             ]
           ],
-          "entropy": 0.5,
+          "entropy": 0.256,
           "hedged": 2,
           "refused": 0
         }
@@ -6934,98 +8217,394 @@
           "refused": 0
         },
         "overrated": {
-          "n": 4,
+          "n": 8,
           "dist": [
             [
               "1980s",
-              3
+              4
             ],
             [
               "1950s",
-              1
+              4
             ]
           ],
-          "entropy": 0.406,
+          "entropy": 0.333,
           "hedged": 0,
           "refused": 0
         }
       },
       "novelist": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Italo Calvino",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Ernest Hemingway",
+              5
+            ],
+            [
+              "Haruki Murakami",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 4,
           "refused": 0
         }
       },
       "philosopher": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Baruch Spinoza",
+              5
+            ],
+            [
+              "Ludwig Wittgenstein",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 7,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Marcus Aurelius",
+              2
+            ],
+            [
+              "Plato",
+              1
+            ],
+            [
+              "Jean-Paul Sartre",
+              1
+            ],
+            [
+              "Friedrich Nietzsche",
+              1
+            ],
+            [
+              "Martin Heidegger",
+              1
+            ],
+            [
+              "Immanuel Kant",
+              1
+            ],
+            [
+              "René Descartes",
+              1
+            ]
+          ],
+          "entropy": 0.917,
           "hedged": 0,
           "refused": 0
         }
       },
       "religioustext": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Tao Te Ching",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "n": 8,
+          "dist": [
+            [
+              "Book of Revelation",
+              5
+            ],
+            [
+              "The Pilgrim's Progress",
+              1
+            ],
+            [
+              "Dao De Jing",
+              1
+            ]
+          ],
+          "entropy": 0.409,
+          "hedged": 3,
+          "refused": 1
         }
       },
       "artmovement": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Cubism",
+              4
+            ],
+            [
+              "Pointillism",
+              2
+            ],
+            [
+              "Constructivism",
+              1
+            ],
+            [
+              "De Stijl",
+              1
+            ]
+          ],
+          "entropy": 0.583,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Impressionism",
+              6
+            ],
+            [
+              "Pop Art",
+              2
+            ]
+          ],
+          "entropy": 0.27,
           "hedged": 0,
           "refused": 0
         }
       },
       "monument": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Pantheon",
+              5
+            ],
+            [
+              "Gateway Arch",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Leaning Tower of Pisa",
+              6
+            ],
+            [
+              "Stonehenge",
+              1
+            ],
+            [
+              "Plymouth Rock",
+              1
+            ]
+          ],
+          "entropy": 0.354,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Severance",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Friends",
+              6
+            ],
+            [
+              "The Office",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Ryan Reynolds",
+              7
+            ],
+            [
+              "Dwayne Johnson",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 3,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Julia Roberts",
+              3
+            ],
+            [
+              "Jennifer Lawrence",
+              2
+            ],
+            [
+              "Emma Watson",
+              1
+            ],
+            [
+              "Scarlett Johansson",
+              1
+            ],
+            [
+              "Meryl Streep",
+              1
+            ]
+          ],
+          "entropy": 0.719,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Arcadia",
+              6
+            ],
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Rent",
+              4
+            ],
+            [
+              "Our Town",
+              1
+            ],
+            [
+              "Death of a Salesman",
+              1
+            ],
+            [
+              "Waiting for Godot",
+              1
+            ],
+            [
+              "The Mousetrap",
+              1
+            ]
+          ],
+          "entropy": 0.667,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Sunday in the Park with George",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Rent",
+              5
+            ],
+            [
+              "The Phantom of the Opera",
+              3
+            ]
+          ],
+          "entropy": 0.318,
           "hedged": 0,
           "refused": 0
         }
@@ -7226,7 +8805,7 @@
       },
       "poem": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "Thirteen Ways of Looking at a Blackbird",
@@ -7234,61 +8813,73 @@
             ],
             [
               "A Noiseless Patient Spider",
-              2
+              4
             ],
             [
               "Stopping by Woods on a Snowy Evening",
-              2
+              3
+            ],
+            [
+              "Ozymandias",
+              1
             ]
           ],
-          "entropy": 0.5,
+          "entropy": 0.518,
           "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "O Captain! My Captain!",
-              4
+              6
             ],
             [
               "The Road Not Taken",
-              3
+              5
             ],
             [
               "The Raven",
               1
             ]
           ],
-          "entropy": 0.469,
+          "entropy": 0.37,
           "hedged": 0,
           "refused": 0
         }
       },
       "word": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "Susurrus",
-              5
+              6
+            ],
+            [
+              "Sonder",
+              2
             ],
             [
               "Petrichor",
               1
             ],
             [
-              "sonder",
+              "Murmuration",
               1
             ],
             [
-              "Murmuration",
+              "Liminal",
+              1
+            ],
+            [
+              "Ethereal",
               1
             ]
           ],
-          "entropy": 0.516,
-          "hedged": 1,
+          "entropy": 0.593,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
@@ -7351,7 +8942,7 @@
           "n": 4,
           "dist": [
             [
-              "Chemex Coffeemaker",
+              "Chemex",
               4
             ]
           ],
@@ -7392,23 +8983,27 @@
       },
       "building": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
+            [
+              "Pantheon",
+              6
+            ],
             [
               "Sagrada Família",
               4
             ],
             [
-              "Pantheon",
-              3
+              "Sainte-Chapelle",
+              1
             ],
             [
-              "Sainte-Chapelle",
+              "Salk Institute for Biological Studies",
               1
             ]
           ],
-          "entropy": 0.469,
-          "hedged": 1,
+          "entropy": 0.454,
+          "hedged": 5,
           "refused": 0
         },
         "overrated": {
@@ -7508,11 +9103,11 @@
       },
       "dish": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "Xiao Long Bao",
-              5
+              6
             ],
             [
               "Edomae Chirashi Sushi",
@@ -7520,15 +9115,23 @@
             ],
             [
               "Nigiri",
+              2
+            ],
+            [
+              "Tahchin",
+              1
+            ],
+            [
+              "Persian Jeweled Rice",
               1
             ]
           ],
-          "entropy": 0.433,
-          "hedged": 0,
+          "entropy": 0.546,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "Macarons",
@@ -7539,38 +9142,50 @@
               3
             ],
             [
+              "Macaron",
+              3
+            ],
+            [
               "Red Velvet Cake",
+              1
+            ],
+            [
+              "Truffle Fries",
               1
             ]
           ],
-          "entropy": 0.469,
+          "entropy": 0.593,
           "hedged": 0,
           "refused": 0
         }
       },
       "color": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "Cobalt Blue",
-              5
+              6
             ],
             [
               "Ultramarine",
+              3
+            ],
+            [
+              "Deep Indigo",
               2
             ],
             [
-              "Indigo",
+              "Prussian blue",
               1
             ]
           ],
-          "entropy": 0.433,
-          "hedged": 0,
+          "entropy": 0.482,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "Millennial Pink",
@@ -7578,15 +9193,19 @@
             ],
             [
               "Tiffany Blue",
-              2
+              4
             ],
             [
               "Teal",
+              2
+            ],
+            [
+              "Navy Blue",
               1
             ]
           ],
-          "entropy": 0.433,
-          "hedged": 0,
+          "entropy": 0.498,
+          "hedged": 1,
           "refused": 0
         }
       },
@@ -7618,19 +9237,23 @@
       },
       "smell": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
+            [
+              "Petrichor",
+              7
+            ],
             [
               "Old Books",
               4
             ],
             [
-              "Petrichor",
-              4
+              "Old Paper and Leather Library Scent",
+              1
             ]
           ],
-          "entropy": 0.333,
-          "hedged": 4,
+          "entropy": 0.357,
+          "hedged": 8,
           "refused": 0
         },
         "overrated": {
@@ -7648,23 +9271,23 @@
       },
       "decade": {
         "favorite": {
-          "n": 8,
+          "n": 12,
           "dist": [
             [
               "1920s",
-              5
+              7
             ],
             [
               "1950s",
-              2
+              4
             ],
             [
               "1960s",
               1
             ]
           ],
-          "entropy": 0.433,
-          "hedged": 0,
+          "entropy": 0.357,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
@@ -7682,79 +9305,339 @@
       },
       "novelist": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Italo Calvino",
+              6
+            ],
+            [
+              "Virginia Woolf",
+              1
+            ]
+          ],
+          "entropy": 0.211,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Haruki Murakami",
+              5
+            ],
+            [
+              "Ernest Hemingway",
+              2
+            ],
+            [
+              "Charles Dickens",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 3,
           "refused": 0
         }
       },
       "philosopher": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Baruch Spinoza",
+              5
+            ],
+            [
+              "Gottfried Wilhelm Leibniz",
+              2
+            ],
+            [
+              "Ludwig Wittgenstein",
+              1
+            ]
+          ],
+          "entropy": 0.433,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Friedrich Nietzsche",
+              2
+            ],
+            [
+              "Jean-Jacques Rousseau",
+              2
+            ],
+            [
+              "Marcus Aurelius",
+              2
+            ],
+            [
+              "Hegel",
+              1
+            ],
+            [
+              "Immanuel Kant",
+              1
+            ]
+          ],
+          "entropy": 0.75,
+          "hedged": 2,
           "refused": 0
         }
       },
       "religioustext": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Tao Te Ching",
+              1
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "hedged": 6,
+          "refused": 7
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "n": 8,
+          "dist": [
+            [
+              "Book of Leviticus",
+              4
+            ],
+            [
+              "Leviticus",
+              1
+            ],
+            [
+              "Levitical Books",
+              1
+            ]
+          ],
+          "entropy": 0.484,
+          "hedged": 8,
+          "refused": 2
         }
       },
       "artmovement": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Surrealism",
+              5
+            ],
+            [
+              "Bauhaus",
+              2
+            ],
+            [
+              "Pointillism",
+              1
+            ]
+          ],
+          "entropy": 0.433,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Impressionism",
+              6
+            ],
+            [
+              "Pop Art",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 2,
           "refused": 0
         }
       },
       "monument": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Gateway Arch",
+              7
+            ],
+            [
+              "Taj Mahal",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Stonehenge",
+              7
+            ],
+            [
+              "Little Mermaid",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Severance",
+              4
+            ],
+            [
+              "Dark",
+              3
+            ],
+            [
+              "Twin Peaks",
+              1
+            ]
+          ],
+          "entropy": 0.469,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Friends",
+              5
+            ],
+            [
+              "The Office",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Meryl Streep",
+              5
+            ],
+            [
+              "Nicolas Cage",
+              1
+            ]
+          ],
+          "entropy": 0.251,
+          "hedged": 8,
+          "refused": 2
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Meryl Streep",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Arcadia",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Our Town",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Sunday in the Park with George",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Phantom of the Opera",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -8531,7 +10414,7 @@
           "n": 12,
           "dist": [
             [
-              "Invisible Cities",
+              "Italo Calvino",
               5
             ],
             [
@@ -8736,6 +10619,188 @@
             ]
           ],
           "entropy": 0.58,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Twin Peaks",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Friends",
+              7
+            ],
+            [
+              "Game of Thrones",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Tilda Swinton",
+              7
+            ],
+            [
+              "Cate Blanchett",
+              4
+            ],
+            [
+              "Philip Seymour Hoffman",
+              1
+            ]
+          ],
+          "entropy": 0.357,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Tom Hanks",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Cate Blanchett",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              6
+            ],
+            [
+              "Meryl Streep",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Waiting for Godot",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Waiting for Godot",
+              7
+            ],
+            [
+              "Death of a Salesman",
+              1
+            ],
+            [
+              "Our Town",
+              1
+            ],
+            [
+              "The Phantom of the Opera",
+              1
+            ],
+            [
+              "The Glass Menagerie",
+              1
+            ],
+            [
+              "Hamlet",
+              1
+            ]
+          ],
+          "entropy": 0.543,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Sunday in the Park with George",
+              9
+            ],
+            [
+              "Sweeney Todd: The Demon Barber of Fleet Street",
+              1
+            ],
+            [
+              "Hadestown",
+              1
+            ],
+            [
+              "Hamilton",
+              1
+            ]
+          ],
+          "entropy": 0.337,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "The Phantom of the Opera",
+              6
+            ],
+            [
+              "Cats",
+              2
+            ]
+          ],
+          "entropy": 0.27,
           "hedged": 0,
           "refused": 0
         }
@@ -9367,7 +11432,7 @@
               9
             ],
             [
-              "Indigo",
+              "Deep Indigo",
               2
             ],
             [
@@ -9672,6 +11737,172 @@
             ]
           ],
           "entropy": 0.434,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "The Wire",
+              5
+            ],
+            [
+              "The Leftovers",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Office",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              6
+            ],
+            [
+              "Tilda Swinton",
+              3
+            ],
+            [
+              "Cate Blanchett",
+              2
+            ],
+            [
+              "Anthony Hopkins",
+              1
+            ]
+          ],
+          "entropy": 0.482,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Tom Hanks",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tilda Swinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Meryl Streep",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Rosencrantz and Guildenstern Are Dead",
+              10
+            ],
+            [
+              "Waiting for Godot",
+              1
+            ],
+            [
+              "Hamilton",
+              1
+            ]
+          ],
+          "entropy": 0.228,
+          "hedged": 3,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Rent",
+              5
+            ],
+            [
+              "Romeo and Juliet",
+              4
+            ],
+            [
+              "Our Town",
+              2
+            ],
+            [
+              "Cats",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Hadestown",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 3,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Rent",
+              4
+            ]
+          ],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -10291,7 +12522,7 @@
               1
             ],
             [
-              "Indigo",
+              "Deep Indigo",
               1
             ]
           ],
@@ -10567,26 +12798,236 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "tvshow": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Twin Peaks",
+              5
+            ],
+            [
+              "The Twilight Zone",
+              3
+            ],
+            [
+              "Breaking Bad",
+              2
+            ],
+            [
+              "Star Trek: The Next Generation",
+              1
+            ],
+            [
+              "Firefly",
+              1
+            ]
+          ],
+          "entropy": 0.573,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Friends",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actor": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              6
+            ],
+            [
+              "Joaquin Phoenix",
+              2
+            ],
+            [
+              "Leonardo DiCaprio",
+              1
+            ],
+            [
+              "Robert Downey Jr.",
+              1
+            ],
+            [
+              "Tom Hanks",
+              1
+            ],
+            [
+              "Cate Blanchett",
+              1
+            ]
+          ],
+          "entropy": 0.593,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Leonardo DiCaprio",
+              6
+            ],
+            [
+              "Keanu Reeves",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "actress": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Cate Blanchett",
+              6
+            ],
+            [
+              "Audrey Hepburn",
+              4
+            ],
+            [
+              "Meryl Streep",
+              1
+            ],
+            [
+              "Emma Stone",
+              1
+            ]
+          ],
+          "entropy": 0.454,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Jennifer Lawrence",
+              9
+            ],
+            [
+              "Anne Hathaway",
+              2
+            ],
+            [
+              "Scarlett Johansson",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "play": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Hamlet",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Hamilton",
+              6
+            ],
+            [
+              "Cats",
+              5
+            ],
+            [
+              "Romeo and Juliet",
+              1
+            ]
+          ],
+          "entropy": 0.37,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musical": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Hamilton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Hamilton",
+              5
+            ],
+            [
+              "Cats",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     }
   },
   "modelStats": {
     "claude-opus-4-1": {
-      "n": 400,
-      "hedgeRate": 0.128,
+      "n": 488,
+      "hedgeRate": 0.129,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.249,
-      "meanEntropyOverrated": 0.16,
-      "distinctFavorites": 58,
-      "favoriteSamples": 216,
+      "meanEntropyFavorite": 0.247,
+      "meanEntropyOverrated": 0.181,
+      "distinctFavorites": 70,
+      "favoriteSamples": 256,
       "topDescriptors": [
         [
           "elegant",
-          44
+          58
+        ],
+        [
+          "profound",
+          25
         ],
         [
           "contemplative",
           25
+        ],
+        [
+          "repetitive",
+          24
         ],
         [
           "dreamlike",
@@ -10597,70 +13038,70 @@
           23
         ],
         [
+          "mathematical",
+          22
+        ],
+        [
+          "precise",
+          22
+        ],
+        [
+          "layered",
+          19
+        ],
+        [
           "organic",
           19
         ],
         [
-          "profound",
+          "hollow",
           18
-        ],
-        [
-          "layered",
-          17
         ],
         [
           "geometric",
           17
         ],
         [
-          "mathematical",
-          16
-        ],
-        [
-          "precise",
-          16
-        ],
-        [
-          "hollow",
-          15
-        ],
-        [
-          "restraint",
-          14
+          "theatrical",
+          17
         ],
         [
           "transformation",
+          16
+        ],
+        [
+          "exhausting",
           14
-        ],
-        [
-          "disconnected",
-          13
-        ],
-        [
-          "sculptural",
-          12
         ]
       ]
     },
     "claude-opus-4-5": {
-      "n": 404,
-      "hedgeRate": 0.312,
-      "refusalRate": 0.022,
+      "n": 460,
+      "hedgeRate": 0.296,
+      "refusalRate": 0.02,
       "meanEntropyFavorite": 0.165,
-      "meanEntropyOverrated": 0.198,
-      "distinctFavorites": 51,
-      "favoriteSamples": 216,
+      "meanEntropyOverrated": 0.176,
+      "distinctFavorites": 58,
+      "favoriteSamples": 248,
       "topDescriptors": [
         [
           "honest",
-          57
+          62
         ],
         [
           "contemplative",
           23
         ],
         [
+          "elegant",
+          22
+        ],
+        [
           "restraint",
+          22
+        ],
+        [
+          "precise",
           22
         ],
         [
@@ -10668,20 +13109,20 @@
           20
         ],
         [
-          "elegant",
-          19
-        ],
-        [
           "tension",
           18
+        ],
+        [
+          "rigorous",
+          17
         ],
         [
           "repetitive",
           16
         ],
         [
-          "precise",
-          16
+          "philosophical",
+          13
         ],
         [
           "austere",
@@ -10696,55 +13137,47 @@
           11
         ],
         [
-          "decay",
-          11
-        ],
-        [
-          "mythologized",
-          11
-        ],
-        [
-          "compassionate",
-          10
-        ],
-        [
           "precision",
-          10
+          11
+        ],
+        [
+          "technical",
+          11
         ]
       ]
     },
     "claude-opus-4-8": {
-      "n": 344,
-      "hedgeRate": 0.427,
-      "refusalRate": 0.081,
-      "meanEntropyFavorite": 0.133,
-      "meanEntropyOverrated": 0.12,
-      "distinctFavorites": 40,
-      "favoriteSamples": 162,
+      "n": 404,
+      "hedgeRate": 0.441,
+      "refusalRate": 0.084,
+      "meanEntropyFavorite": 0.138,
+      "meanEntropyOverrated": 0.111,
+      "distinctFavorites": 49,
+      "favoriteSamples": 192,
       "topDescriptors": [
         [
           "restraint",
-          40
+          48
         ],
         [
           "honest",
-          33
+          35
         ],
         [
           "layered",
+          20
+        ],
+        [
+          "repetitive",
           19
         ],
         [
           "elegant",
-          18
-        ],
-        [
-          "repetitive",
-          17
+          19
         ],
         [
           "ambiguous",
-          16
+          18
         ],
         [
           "spectacle",
@@ -10767,35 +13200,43 @@
           9
         ],
         [
+          "dated",
+          9
+        ],
+        [
+          "patient",
+          9
+        ],
+        [
           "impermanence",
           9
         ],
         [
           "geometric",
           9
-        ],
-        [
-          "sentimental",
-          8
-        ],
-        [
-          "dysfunctional",
-          8
         ]
       ]
     },
     "claude-fable-5": {
-      "n": 368,
-      "hedgeRate": 0.31,
+      "n": 436,
+      "hedgeRate": 0.261,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.147,
-      "meanEntropyOverrated": 0.165,
-      "distinctFavorites": 47,
-      "favoriteSamples": 176,
+      "meanEntropyFavorite": 0.143,
+      "meanEntropyOverrated": 0.168,
+      "distinctFavorites": 54,
+      "favoriteSamples": 208,
       "topDescriptors": [
         [
           "elegant",
-          32
+          35
+        ],
+        [
+          "precise",
+          25
+        ],
+        [
+          "spectacle",
+          19
         ],
         [
           "restraint",
@@ -10807,10 +13248,18 @@
         ],
         [
           "formulaic",
+          18
+        ],
+        [
+          "repetitive",
           17
         ],
         [
           "thin",
+          16
+        ],
+        [
+          "luminous",
           15
         ],
         [
@@ -10818,71 +13267,59 @@
           15
         ],
         [
+          "restrained",
+          14
+        ],
+        [
           "organic",
           14
         ],
         [
-          "luminous",
-          12
-        ],
-        [
           "ambiguous",
-          12
-        ],
-        [
-          "precise",
-          12
-        ],
-        [
-          "sculptural",
-          12
-        ],
-        [
-          "romanticized",
-          12
-        ],
-        [
-          "muted",
-          12
-        ],
-        [
-          "patient",
-          11
+          13
         ],
         [
           "geometric",
-          11
+          13
+        ],
+        [
+          "honest",
+          13
         ]
       ]
     },
     "gpt-4o": {
-      "n": 436,
-      "hedgeRate": 0.61,
-      "refusalRate": 0.016,
-      "meanEntropyFavorite": 0.224,
-      "meanEntropyOverrated": 0.257,
-      "distinctFavorites": 58,
-      "favoriteSamples": 208,
+      "n": 508,
+      "hedgeRate": 0.642,
+      "refusalRate": 0.014,
+      "meanEntropyFavorite": 0.223,
+      "meanEntropyOverrated": 0.235,
+      "distinctFavorites": 67,
+      "favoriteSamples": 244,
       "topDescriptors": [
+        [
+          "timeless",
+          53
+        ],
         [
           "elegant",
           50
-        ],
-        [
-          "timeless",
-          45
         ],
         [
           "harmonious",
           39
         ],
         [
-          "vibrant",
-          31
+          "innovative",
+          33
         ],
         [
-          "innovative",
-          29
+          "repetitive",
+          32
+        ],
+        [
+          "vibrant",
+          31
         ],
         [
           "iconic",
@@ -10893,75 +13330,71 @@
           28
         ],
         [
-          "dynamic",
-          22
+          "profound",
+          26
         ],
         [
-          "repetitive",
-          19
+          "dynamic",
+          26
         ],
         [
           "complex",
-          19
-        ],
-        [
-          "profound",
-          17
-        ],
-        [
-          "immersive",
-          17
+          23
         ],
         [
           "shallow",
-          17
+          21
+        ],
+        [
+          "immersive",
+          20
         ],
         [
           "minimalist",
-          17
+          19
         ],
         [
-          "ubiquitous",
+          "poetic",
           17
         ]
       ]
     },
     "gpt-5.2": {
-      "n": 468,
-      "hedgeRate": 0.051,
+      "n": 544,
+      "hedgeRate": 0.053,
       "refusalRate": 0.006,
-      "meanEntropyFavorite": 0.313,
-      "meanEntropyOverrated": 0.272,
-      "distinctFavorites": 76,
-      "favoriteSamples": 244,
+      "meanEntropyFavorite": 0.308,
+      "meanEntropyOverrated": 0.238,
+      "distinctFavorites": 89,
+      "favoriteSamples": 292,
       "topDescriptors": [
         [
           "restrained",
-          44
+          46
         ],
         [
           "calm",
-          42
+          43
         ],
         [
           "luminous",
-          40
+          42
         ],
         [
           "intimate",
-          31
-        ],
-        [
-          "precise",
-          27
+          35
         ],
         [
           "elegant",
-          26
+          33
+        ],
+        [
+          "precise",
+          30
         ],
         [
           "repetitive",
-          24
+          29
         ],
         [
           "spectacle",
@@ -10976,59 +13409,67 @@
           22
         ],
         [
+          "minimal",
+          21
+        ],
+        [
+          "sculptural",
+          20
+        ],
+        [
           "cinematic",
-          19
+          20
         ],
         [
           "textured",
           18
         ],
         [
-          "atmospheric",
-          17
-        ],
-        [
           "layered",
-          17
-        ],
-        [
-          "crowded",
-          17
+          18
         ]
       ]
     },
     "gpt-5.6-sol": {
-      "n": 352,
-      "hedgeRate": 0,
+      "n": 428,
+      "hedgeRate": 0.002,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.175,
-      "meanEntropyOverrated": 0.186,
-      "distinctFavorites": 53,
-      "favoriteSamples": 180,
+      "meanEntropyFavorite": 0.189,
+      "meanEntropyOverrated": 0.184,
+      "distinctFavorites": 63,
+      "favoriteSamples": 220,
       "topDescriptors": [
         [
-          "intimate",
-          23
-        ],
-        [
-          "austere",
-          22
-        ],
-        [
-          "restrained",
-          20
+          "elegant",
+          29
         ],
         [
           "precise",
-          20
+          26
         ],
         [
-          "elegant",
-          19
+          "repetitive",
+          24
+        ],
+        [
+          "austere",
+          24
+        ],
+        [
+          "restrained",
+          24
+        ],
+        [
+          "intimate",
+          24
         ],
         [
           "monumental",
           17
+        ],
+        [
+          "ambiguity",
+          15
         ],
         [
           "dramatic",
@@ -11043,6 +13484,10 @@
           14
         ],
         [
+          "polished",
+          13
+        ],
+        [
           "quiet",
           13
         ],
@@ -11051,188 +13496,180 @@
           13
         ],
         [
-          "calm",
-          12
-        ],
-        [
-          "spare",
-          11
-        ],
-        [
-          "vivid",
-          11
-        ],
-        [
-          "luminous",
-          11
+          "mysterious",
+          13
         ]
       ]
     },
     "gemini-3.1-pro-preview": {
-      "n": 239,
-      "hedgeRate": 0.192,
-      "refusalRate": 0,
-      "meanEntropyFavorite": 0.328,
-      "meanEntropyOverrated": 0.274,
-      "distinctFavorites": 44,
-      "favoriteSamples": 120,
+      "n": 488,
+      "hedgeRate": 0.197,
+      "refusalRate": 0.002,
+      "meanEntropyFavorite": 0.247,
+      "meanEntropyOverrated": 0.299,
+      "distinctFavorites": 75,
+      "favoriteSamples": 236,
       "topDescriptors": [
         [
           "geometric",
-          29
+          67
         ],
         [
           "elegant",
-          26
-        ],
-        [
-          "repetitive",
-          16
-        ],
-        [
-          "exhausting",
-          16
+          64
         ],
         [
           "mathematical",
-          15
+          39
+        ],
+        [
+          "repetitive",
+          34
         ],
         [
           "minimalist",
-          14
-        ],
-        [
-          "sculptural",
-          14
-        ],
-        [
-          "melancholic",
-          13
+          26
         ],
         [
           "sterile",
-          12
+          26
         ],
         [
-          "timeless",
-          12
+          "exhausting",
+          20
+        ],
+        [
+          "rigid",
+          20
+        ],
+        [
+          "sculptural",
+          19
         ],
         [
           "poetic",
-          10
+          18
         ],
         [
-          "isolation",
-          10
+          "ethereal",
+          18
         ],
         [
-          "organic",
-          10
+          "melancholic",
+          17
         ],
         [
-          "cinematic",
-          10
+          "timeless",
+          17
         ],
         [
-          "striking",
-          10
+          "hollow",
+          16
+        ],
+        [
+          "precise",
+          16
         ]
       ]
     },
     "gemini-3.5-flash": {
-      "n": 284,
-      "hedgeRate": 0.123,
-      "refusalRate": 0,
-      "meanEntropyFavorite": 0.21,
-      "meanEntropyOverrated": 0.132,
-      "distinctFavorites": 39,
-      "favoriteSamples": 152,
+      "n": 456,
+      "hedgeRate": 0.2,
+      "refusalRate": 0.024,
+      "meanEntropyFavorite": 0.204,
+      "meanEntropyOverrated": 0.181,
+      "distinctFavorites": 64,
+      "favoriteSamples": 236,
       "topDescriptors": [
         [
           "geometric",
-          32
-        ],
-        [
-          "sublime",
-          27
+          47
         ],
         [
           "elegant",
-          25
-        ],
-        [
-          "sculptural",
-          24
+          46
         ],
         [
           "minimalist",
-          22
+          44
         ],
         [
-          "melancholic",
-          20
-        ],
-        [
-          "luminous",
-          18
-        ],
-        [
-          "poetic",
-          17
-        ],
-        [
-          "serene",
-          17
-        ],
-        [
-          "timeless",
-          15
-        ],
-        [
-          "sterile",
-          15
-        ],
-        [
-          "rigid",
-          15
+          "sublime",
+          37
         ],
         [
           "mathematical",
-          14
+          35
         ],
         [
-          "contemplative",
-          14
+          "repetitive",
+          33
         ],
         [
-          "chaotic",
-          14
+          "sculptural",
+          28
+        ],
+        [
+          "luminous",
+          27
+        ],
+        [
+          "sterile",
+          26
+        ],
+        [
+          "precise",
+          25
+        ],
+        [
+          "poetic",
+          24
+        ],
+        [
+          "melancholic",
+          21
+        ],
+        [
+          "harmonious",
+          20
+        ],
+        [
+          "timeless",
+          19
+        ],
+        [
+          "technical",
+          18
         ]
       ]
     },
     "deepseek-v4-pro": {
-      "n": 403,
-      "hedgeRate": 0.017,
+      "n": 479,
+      "hedgeRate": 0.019,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.241,
-      "meanEntropyOverrated": 0.301,
-      "distinctFavorites": 58,
-      "favoriteSamples": 189,
+      "meanEntropyFavorite": 0.223,
+      "meanEntropyOverrated": 0.293,
+      "distinctFavorites": 67,
+      "favoriteSamples": 225,
       "topDescriptors": [
         [
-          "luminous",
-          20
+          "sculptural",
+          32
         ],
         [
-          "sculptural",
-          20
+          "luminous",
+          27
         ],
         [
           "elegant",
-          17
+          18
         ],
         [
           "melancholic",
+          18
+        ],
+        [
+          "repetitive",
           17
         ],
         [
@@ -11242,6 +13679,14 @@
         [
           "serene",
           17
+        ],
+        [
+          "one-note",
+          16
+        ],
+        [
+          "hollow",
+          16
         ],
         [
           "rigid",
@@ -11253,42 +13698,30 @@
         ],
         [
           "delicate",
-          14
-        ],
-        [
-          "one-note",
-          13
-        ],
-        [
-          "hollow",
-          13
-        ],
-        [
-          "sterile",
-          13
-        ],
-        [
-          "heavy",
-          13
-        ],
-        [
-          "exhausting",
-          12
+          15
         ],
         [
           "intimate",
-          12
+          14
+        ],
+        [
+          "meditative",
+          14
+        ],
+        [
+          "minimalist",
+          13
         ]
       ]
     },
     "kimi-k2.6": {
-      "n": 411,
-      "hedgeRate": 0.032,
+      "n": 479,
+      "hedgeRate": 0.042,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.272,
-      "meanEntropyOverrated": 0.183,
-      "distinctFavorites": 70,
-      "favoriteSamples": 211,
+      "meanEntropyFavorite": 0.261,
+      "meanEntropyOverrated": 0.169,
+      "distinctFavorites": 80,
+      "favoriteSamples": 251,
       "topDescriptors": [
         [
           "luminous",
@@ -11296,6 +13729,10 @@
         ],
         [
           "honest",
+          25
+        ],
+        [
+          "recursive",
           22
         ],
         [
@@ -11305,6 +13742,10 @@
         [
           "organic",
           19
+        ],
+        [
+          "hollow",
+          16
         ],
         [
           "intimate",
@@ -11319,107 +13760,99 @@
           15
         ],
         [
-          "hollow",
-          14
+          "restraint",
+          13
         ],
         [
           "rigid",
           13
         ],
         [
+          "precision",
+          13
+        ],
+        [
           "elegant",
           13
         ],
         [
-          "restraint",
-          12
-        ],
-        [
-          "precision",
-          12
+          "cloying",
+          13
         ],
         [
           "mathematical",
           12
-        ],
-        [
-          "cloying",
-          12
-        ],
-        [
-          "melancholic",
-          11
         ]
       ]
     },
     "grok-4.5": {
-      "n": 400,
-      "hedgeRate": 0.003,
+      "n": 488,
+      "hedgeRate": 0.002,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.252,
-      "meanEntropyOverrated": 0.149,
-      "distinctFavorites": 62,
-      "favoriteSamples": 216,
+      "meanEntropyFavorite": 0.264,
+      "meanEntropyOverrated": 0.166,
+      "distinctFavorites": 78,
+      "favoriteSamples": 260,
       "topDescriptors": [
         [
           "luminous",
-          58
+          67
         ],
         [
           "elegant",
-          50
+          55
         ],
         [
           "sculptural",
-          35
+          45
+        ],
+        [
+          "painterly",
+          31
         ],
         [
           "restrained",
-          26
+          28
         ],
         [
           "organic",
           24
         ],
         [
-          "painterly",
-          20
+          "architectural",
+          21
+        ],
+        [
+          "polished",
+          19
         ],
         [
           "musical",
+          19
+        ],
+        [
+          "thin",
+          18
+        ],
+        [
+          "repetitive",
           17
         ],
         [
           "monumental",
-          16
+          17
         ],
         [
-          "precise",
+          "shallow",
           16
-        ],
-        [
-          "one-note",
-          15
         ],
         [
           "crystalline",
-          14
+          16
         ],
         [
-          "poetic",
-          14
-        ],
-        [
-          "polished",
-          14
-        ],
-        [
-          "thin",
-          13
-        ],
-        [
-          "sparse",
-          13
+          "kinetic",
+          16
         ]
       ]
     }
@@ -11427,170 +13860,170 @@
   "overlap": [
     [
       1,
-      0.236,
-      0.202,
-      0.189,
-      0.158,
-      0.193,
-      0.228,
-      0.144,
-      0.193,
-      0.19,
-      0.161,
-      0.208
-    ],
-    [
-      0.236,
-      1,
-      0.163,
-      0.165,
-      0.124,
-      0.174,
-      0.235,
-      0.08,
-      0.11,
-      0.168,
-      0.13,
-      0.118
-    ],
-    [
-      0.202,
-      0.163,
-      1,
-      0.286,
-      0.087,
-      0.19,
-      0.215,
-      0.089,
-      0.171,
-      0.172,
-      0.165,
-      0.167
-    ],
-    [
-      0.189,
-      0.165,
-      0.286,
-      1,
-      0.128,
-      0.168,
-      0.275,
-      0.095,
-      0.189,
-      0.271,
-      0.167,
-      0.247
-    ],
-    [
-      0.158,
-      0.124,
-      0.087,
-      0.128,
-      1,
-      0.174,
-      0.143,
-      0.133,
-      0.14,
-      0.229,
-      0.173,
-      0.274
-    ],
-    [
-      0.193,
-      0.174,
-      0.19,
-      0.168,
-      0.174,
-      1,
-      0.284,
-      0.08,
-      0.136,
-      0.212,
-      0.165,
-      0.176
-    ],
-    [
-      0.228,
-      0.235,
-      0.215,
-      0.275,
-      0.143,
-      0.284,
-      1,
-      0.181,
-      0.221,
-      0.31,
-      0.214,
-      0.182
-    ],
-    [
-      0.144,
-      0.08,
-      0.089,
-      0.095,
-      0.133,
-      0.08,
-      0.181,
-      1,
-      0.333,
-      0.169,
-      0.095,
-      0.092
-    ],
-    [
-      0.193,
-      0.11,
-      0.171,
-      0.189,
-      0.14,
-      0.136,
-      0.221,
-      0.333,
-      1,
-      0.266,
-      0.144,
-      0.17
-    ],
-    [
-      0.19,
-      0.168,
-      0.172,
-      0.271,
-      0.229,
-      0.212,
-      0.31,
-      0.169,
-      0.266,
-      1,
-      0.236,
-      0.323
-    ],
-    [
-      0.161,
-      0.13,
-      0.165,
-      0.167,
-      0.173,
-      0.165,
-      0.214,
-      0.095,
-      0.144,
-      0.236,
-      1,
-      0.252
-    ],
-    [
-      0.208,
-      0.118,
-      0.167,
-      0.247,
-      0.274,
+      0.238,
+      0.196,
       0.176,
-      0.182,
+      0.168,
+      0.209,
+      0.225,
+      0.13,
+      0.181,
+      0.195,
+      0.159,
+      0.198
+    ],
+    [
+      0.238,
+      1,
+      0.158,
+      0.186,
+      0.114,
+      0.181,
+      0.24,
+      0.124,
+      0.157,
+      0.173,
+      0.156,
+      0.121
+    ],
+    [
+      0.196,
+      0.158,
+      1,
+      0.259,
       0.092,
-      0.17,
-      0.323,
-      0.252,
+      0.193,
+      0.196,
+      0.094,
+      0.136,
+      0.175,
+      0.167,
+      0.139
+    ],
+    [
+      0.176,
+      0.186,
+      0.259,
+      1,
+      0.107,
+      0.157,
+      0.235,
+      0.137,
+      0.184,
+      0.273,
+      0.169,
+      0.214
+    ],
+    [
+      0.168,
+      0.114,
+      0.092,
+      0.107,
+      1,
+      0.169,
+      0.127,
+      0.107,
+      0.126,
+      0.211,
+      0.172,
+      0.265
+    ],
+    [
+      0.209,
+      0.181,
+      0.193,
+      0.157,
+      0.169,
+      1,
+      0.3,
+      0.12,
+      0.18,
+      0.229,
+      0.185,
+      0.163
+    ],
+    [
+      0.225,
+      0.24,
+      0.196,
+      0.235,
+      0.127,
+      0.3,
+      1,
+      0.203,
+      0.26,
+      0.286,
+      0.215,
+      0.179
+    ],
+    [
+      0.13,
+      0.124,
+      0.094,
+      0.137,
+      0.107,
+      0.12,
+      0.203,
+      1,
+      0.324,
+      0.157,
+      0.128,
+      0.083
+    ],
+    [
+      0.181,
+      0.157,
+      0.136,
+      0.184,
+      0.126,
+      0.18,
+      0.26,
+      0.324,
+      1,
+      0.283,
+      0.184,
+      0.159
+    ],
+    [
+      0.195,
+      0.173,
+      0.175,
+      0.273,
+      0.211,
+      0.229,
+      0.286,
+      0.157,
+      0.283,
+      1,
+      0.236,
+      0.293
+    ],
+    [
+      0.159,
+      0.156,
+      0.167,
+      0.169,
+      0.172,
+      0.185,
+      0.215,
+      0.128,
+      0.184,
+      0.236,
+      1,
+      0.218
+    ],
+    [
+      0.198,
+      0.121,
+      0.139,
+      0.214,
+      0.265,
+      0.163,
+      0.179,
+      0.083,
+      0.159,
+      0.293,
+      0.218,
       1
     ]
   ],
@@ -11631,7 +14064,13 @@
       "entity": "Petrichor",
       "domain": "smell",
       "models": 11,
-      "total": 58
+      "total": 61
+    },
+    {
+      "entity": "Tao Te Ching",
+      "domain": "religioustext",
+      "models": 11,
+      "total": 46
     },
     {
       "entity": "Garamond",
@@ -11646,14 +14085,14 @@
       "total": 44
     },
     {
-      "entity": "Tao Te Ching",
-      "domain": "religioustext",
-      "models": 9,
-      "total": 41
-    },
-    {
       "entity": "1960s",
       "domain": "decade",
+      "models": 9,
+      "total": 39
+    },
+    {
+      "entity": "Surrealism",
+      "domain": "artmovement",
       "models": 9,
       "total": 39
     },
@@ -11670,10 +14109,10 @@
       "total": 57
     },
     {
-      "entity": "Surrealism",
-      "domain": "artmovement",
+      "entity": "Outer Wilds",
+      "domain": "videogame",
       "models": 8,
-      "total": 34
+      "total": 29
     },
     {
       "entity": "2001: A Space Odyssey",
@@ -11688,47 +14127,41 @@
       "total": 39
     },
     {
+      "entity": "Tilda Swinton",
+      "domain": "actor",
+      "models": 7,
+      "total": 35
+    },
+    {
       "entity": "Paperclip",
       "domain": "object",
       "models": 7,
       "total": 34
     },
     {
-      "entity": "Outer Wilds",
-      "domain": "videogame",
+      "entity": "Pantheon",
+      "domain": "monument",
       "models": 7,
-      "total": 28
+      "total": 31
     },
     {
-      "entity": "San Francisco",
-      "domain": "uscity",
+      "entity": "Taj Mahal",
+      "domain": "monument",
       "models": 7,
-      "total": 26
-    },
-    {
-      "entity": "Kind of Blue",
-      "domain": "album",
-      "models": 7,
-      "total": 25
-    },
-    {
-      "entity": "Philosopher's Walk",
-      "domain": "street",
-      "models": 7,
-      "total": 21
-    },
-    {
-      "entity": "The Starry Night",
-      "domain": "painting",
-      "models": 6,
-      "total": 35
-    },
-    {
-      "entity": "Cerulean",
-      "domain": "color",
-      "models": 6,
       "total": 30
+    },
+    {
+      "entity": "Rosencrantz and Guildenstern Are Dead",
+      "domain": "play",
+      "models": 7,
+      "total": 30
+    },
+    {
+      "entity": "Cate Blanchett",
+      "domain": "actress",
+      "models": 7,
+      "total": 29
     }
   ],
-  "generatedAt": "2026-07-14T19:09:31.627Z"
+  "generatedAt": "2026-07-15T00:31:08.438Z"
 }
