@@ -81,7 +81,7 @@ const DOMAIN_GROUPS = [
   { label: 'Fine Art', ids: ['painting', 'artmovement'] },
   { label: 'Architecture', ids: ['building', 'architect', 'monument'] },
   { label: 'Film, TV & Theater', ids: ['film', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
-  { label: 'Thinkers', ids: ['philosopher', 'economist', 'scientist', 'theologian', 'mathematician', 'historian', 'psychologist', 'computerscientist', 'airesearcher', 'aimodel', 'blogger'] },
+  { label: 'Thinkers', ids: ['philosopher', 'economist', 'scientist', 'mathematician', 'historian', 'psychologist', 'theologian', 'computerscientist', 'airesearcher', 'aimodel', 'blogger'] },
   { label: 'Music', ids: ['album'] },
   { label: 'Games', ids: ['videogame', 'boardgame', 'sport'] },
   { label: 'Miscellaneous', ids: ['typeface', 'object'] },

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="#131417"/>
+  <rect x="0.5" y="0.5" width="479" height="199" fill="none" stroke="rgba(233,230,221,.08)"/>
+  <g transform="translate(72,104) scale(4.4) translate(-12,-12)">
+  <path d="M2 12 Q12 4.5 22 12 Q12 19.5 2 12 Z" fill="none" stroke="#e9e6dd" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M12 8.5 15.5 12 8.5 12Z" fill="#6ED191"/>
+  <path d="M8.5 12 15.5 12 12 15.5Z" fill="#E86862"/></g>
+  <g transform="translate(250,128) scale(1.15) translate(-12,-12)">
+  <path d="M2 12 Q12 4.5 22 12 Q12 19.5 2 12 Z" fill="none" stroke="#e9e6dd" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M12 8.5 15.5 12 8.5 12Z" fill="#6ED191"/>
+  <path d="M8.5 12 15.5 12 12 15.5Z" fill="#E86862"/></g>
+  <text x="250" y="70" font-family="Georgia, serif" font-size="20" fill="#e9e6dd">Aperture Eye</text>
+  <text x="250" y="150" font-family="ui-monospace, monospace" font-size="10.5" letter-spacing="1.5" fill="#88857e">Machine perception of beauty</text>
+  <text x="72" y="186" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e" text-anchor="middle">THE MARK</text>
+  <text x="250" y="178" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e">↑ ACTUAL NAV SIZE</text>
+</svg>

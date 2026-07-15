@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="#131417"/>
+  <rect x="0.5" y="0.5" width="479" height="199" fill="none" stroke="rgba(233,230,221,.08)"/>
+  <g transform="translate(72,104) scale(4.4) translate(-12,-12)">
+  <path d="M12 3 20 11 4 11Z" fill="#6ED191"/>
+  <path d="M4 11 20 11 12 21Z" fill="#E86862"/>
+  <path d="M12 3 20 11 12 21 4 11Z" fill="none" stroke="rgba(233,230,221,.32)" stroke-width="1" stroke-linejoin="round"/></g>
+  <g transform="translate(250,128) scale(1.15) translate(-12,-12)">
+  <path d="M12 3 20 11 4 11Z" fill="#6ED191"/>
+  <path d="M4 11 20 11 12 21Z" fill="#E86862"/>
+  <path d="M12 3 20 11 12 21 4 11Z" fill="none" stroke="rgba(233,230,221,.32)" stroke-width="1" stroke-linejoin="round"/></g>
+  <text x="250" y="70" font-family="Georgia, serif" font-size="20" fill="#e9e6dd">Split Gem</text>
+  <text x="250" y="150" font-family="ui-monospace, monospace" font-size="10.5" letter-spacing="1.5" fill="#88857e">A jewel of taste — favourite over overrated</text>
+  <text x="72" y="186" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e" text-anchor="middle">THE MARK</text>
+  <text x="250" y="178" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e">↑ ACTUAL NAV SIZE</text>
+</svg>
