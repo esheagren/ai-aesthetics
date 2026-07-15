@@ -404,9 +404,9 @@ if (tsSorted.length) {
 // (tonkotsu ramen towering over a long tail) — the diagram shows the actual
 // shape of a consensus, not an invented one.
 const MG = '110,209,145', MR = '232,104,98';
-const methodSentence = `<p class="msent">${models.length} models, ${DATA.domains.length} fields, the same two
-questions asked over and over — <em>What is your favorite&nbsp;___?</em> and <em>Which widely beloved ___
-is overrated?</em> — and the answers aggregated into this atlas.</p>`;
+const methodSentence = `<p class="msent">Different AI models were asked two questions —
+<em>What is your favorite&nbsp;___?</em> and <em>Which widely beloved ___ is overrated?</em> —
+and their answers aggregated into this atlas.</p>`;
 const zipfCounts = (() => {
   const m = new Map();
   for (const mo of models) {
