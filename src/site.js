@@ -1170,7 +1170,7 @@ function choiceMatrixHTML(domainId){
     // overrated%), so many models agreeing pushes an entry to an extreme while
     // a lone voice — loved or panned — lands near the neutral middle, which is
     // exactly where low-confidence picks belong. Favourites rise to the top,
-    // the widely-overrated (e.g. Nietzsche: 9 of 11 models call it overrated)
+    // the widely-overrated (e.g. Nietzsche, which most models call overrated)
     // sink to the very bottom, below narrowly-panned items with fewer votes.
     // Earlier tries failed here: multiplicative shrink (avg·n/(n+3)) let a lone
     // 90% favourite outrank a 4-model consensus; a subtractive penalty
@@ -1812,7 +1812,7 @@ ${methodPage}
 <section id="suggest" class="view">
   <div class="shead"><h2>Suggest a category</h2></div>
   <p class="gloss">The index grows one field at a time — novel, smell, monument, philosopher. If there is
-  a domain of taste you want the twelve models probed on, name it here.</p>
+  a domain of taste you want the models probed on, name it here.</p>
   <form class="sugform" id="sugform">
     <div><label for="suginput">Category</label>
     <input id="suginput" maxlength="200" placeholder="film director, perfume, board game…" autocomplete="off" required></div>

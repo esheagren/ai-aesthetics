@@ -22944,5 +22944,1763 @@
         "quote": "stark, 1-bit monochromatic art style beautifully mirrors the binary nature of computational logic, stripping away colorful visual noise to focus entirely on pure geometry and deduction"
       }
     ]
+  },
+  "religioustext pilgrim's progress": {
+    "display": "The Pilgrim's Progress",
+    "domain": "religioustext",
+    "blurb": "John Bunyan's 1678 allegorical prose narrative following a pilgrim's journey from the City of Destruction to the Celestial City.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Pilgrim's%20Progress"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "every figure and location acts as a rigid, one-dimensional metaphor for a specific theological concept"
+      }
+    ]
+  },
+  "philosopher rené descartes": {
+    "display": "René Descartes",
+    "domain": "philosopher",
+    "blurb": "French philosopher and mathematician (1596–1650) who founded modern Western philosophy with his method of systematic doubt and mind-body dualism.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ren%C3%A9%20Descartes"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his framework creates an unbridgeable gap regarding how the two actually interact"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "Critics frequently point out that his sharp division between mind and body (Cartesian dualism) created an artificial chasm that modern cognitive science, phenomenology, and neuroscience…"
+      }
+    ]
+  },
+  "monument plymouth rock": {
+    "display": "Plymouth Rock",
+    "domain": "monument",
+    "blurb": "A granite boulder in Plymouth, Massachusetts, traditionally identified as the landing site of the Mayflower Pilgrims in 1620.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Plymouth%20Rock"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "just a modest, heavily weathered stone sitting at the bottom of a concrete pit"
+      }
+    ]
+  },
+  "artmovement constructivism": {
+    "display": "Constructivism",
+    "domain": "artmovement",
+    "blurb": "Russian avant-garde movement of the early twentieth century emphasizing geometric abstraction, industrial materials, and art's integration with technology and social function.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Constructivism"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "breaks visual language down into its most logical, essential components… mathematical order can achieve striking visual harmony"
+      }
+    ]
+  },
+  "painting impression, sunrise": {
+    "display": "Impression, Sunrise",
+    "domain": "painting",
+    "blurb": "Claude Monet's 1872 painting of sunrise over Le Havre harbor, rendered in loose brushstrokes and muted blues with an orange sun.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Impression%2C%20Sunrise"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "loose, shimmering brushstrokes capture a fleeting moment so convincingly that the canvas seems to breathe"
+      }
+    ]
+  },
+  "artmovement de stijl": {
+    "display": "De Stijl",
+    "domain": "artmovement",
+    "blurb": "Dutch artistic movement founded 1917 by Piet Mondrian and others, using geometric abstraction, primary colors, and orthogonal lines to express universal harmony.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=De%20Stijl"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "stripping away visual chaos to reveal the fundamental, universal harmonies of intersecting vertical and horizontal lines"
+      }
+    ]
+  },
+  "street portobello road": {
+    "display": "Portobello Road",
+    "domain": "street",
+    "blurb": "Victorian London street in Notting Hill famous for its weekly antiques market and colorfully painted terraces.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Portobello%20Road"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "long curve of Victorian terraces painted in mismatched pastels feels like a living watercolor"
+      }
+    ]
+  },
+  "building seagram building": {
+    "display": "Seagram Building",
+    "domain": "building",
+    "blurb": "Mies van der Rohe's 1958 glass and bronze office tower in New York, featuring a plaza and minimalist design.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Seagram%20Building"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "taut bronze-and-glass façade embodies an elegant minimalism that still feels radically modern…rigor can produce warmth"
+      }
+    ]
+  },
+  "poem lines composed a few miles above tintern abbey": {
+    "display": "Lines Composed a Few Miles above Tintern Abbey",
+    "domain": "poem",
+    "blurb": "William Wordsworth's 1798 blank-verse poem reflecting on revisiting the Tintern Abbey landscape and its personal significance across time.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Lines%20Composed%20a%20Few%20Miles%20above%20Tintern%20Abbey%20William%20Wordsworth"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "expansive blank verse mirrors the ebb and flow of reflective thought… marriage of supple form and inward depth"
+      }
+    ]
+  },
+  "street hollywood boulevard walk of fame": {
+    "display": "Hollywood Boulevard Walk of Fame",
+    "domain": "street",
+    "blurb": "A Los Angeles street featuring embedded brass stars honoring entertainment industry figures, established in 1960.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hollywood%20Boulevard%20Walk%20of%20Fame"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the stars themselves are grimy, foot-worn, and easy to overlook amid aggressive costumed buskers and tourist-trap shops"
+      }
+    ]
+  },
+  "uscity seattle": {
+    "display": "Seattle",
+    "domain": "uscity",
+    "blurb": "Pacific Northwest city in Washington state, home to the Space Needle and major tech industry hub since the 1990s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Seattle"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Water stitches the scene together: ferries trace bright wakes across Puget Sound while houseboats bob on Lake Union"
+      }
+    ]
+  },
+  "word evanescent": {
+    "display": "Evanescent",
+    "domain": "word",
+    "blurb": "An English adjective meaning fading quickly out of sight, memory, or existence; from Latin evanescere, to vanish.",
+    "extras": {
+      "definition": "adj. lasting for a very short time; tending to fade from memory or perception; fleeting or transitory.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Evanescent"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "gentle consonants and floating vowels give the sound itself a fleeting, almost vapor-like quality that mirrors the meaning"
+      }
+    ]
+  },
+  "economist wassily leontief": {
+    "display": "Wassily Leontief",
+    "domain": "economist",
+    "blurb": "Soviet-American economist (1906–1999) who developed input-output analysis, a mathematical framework modeling economic interdependencies through sectoral matrices.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wassily%20Leontief"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "every sector's output seamlessly becomes another's input… profound structural beauty in how his work maps the chaotic churn of human commerce into elegant, highly legible linear algebra"
+      }
+    ]
+  },
+  "dish pumpkin spice latte": {
+    "display": "Pumpkin spice latte",
+    "domain": "dish",
+    "blurb": "A coffee beverage made with espresso, steamed milk, and pumpkin pie spices, typically sweetened and served seasonally in North American cafés.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pumpkin%20spice%20latte"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "leans heavily on sugar and perfumed spices, so the natural flavor of coffee all but disappears"
+      }
+    ]
+  },
+  "smell freshly popped movie-theater popcorn": {
+    "display": "Freshly popped movie-theater popcorn",
+    "domain": "smell",
+    "blurb": "The aroma of popcorn freshly popped in commercial cinema venues, typically seasoned with artificial butter flavoring.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Freshly%20popped%20movie-theater%20popcorn"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the artificial butter aroma feels cloying and slightly greasy, lingering longer than it should"
+      }
+    ]
+  },
+  "novelist toni morrison": {
+    "display": "Toni Morrison",
+    "domain": "novelist",
+    "blurb": "American novelist born 1931 whose works explore African American identity, history, and community through lyrical, layered narratives.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Toni%20Morrison"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Her prose balances lyrical richness with incisive clarity, so each sentence feels both musical and purposeful."
+      }
+    ]
+  },
+  "smell freshly sharpened cedar pencil": {
+    "display": "Freshly sharpened cedar pencil",
+    "domain": "smell",
+    "blurb": "The smell of cedar wood shavings and graphite released by sharpening a wooden pencil.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Freshly%20sharpened%20cedar%20pencil"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "crisp tang of graphite with the warm, resinous sweetness of cedar… both inspiring and soothing at once"
+      }
+    ]
+  },
+  "scientist santiago ramón y cajal": {
+    "display": "Santiago Ramón y Cajal",
+    "domain": "scientist",
+    "blurb": "Spanish neuroscientist (1852–1934) whose meticulous pen-and-ink illustrations of the nervous system revealed the structure of neurons and brain connectivity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Santiago%20Ram%C3%B3n%20y%20Cajal"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "meticulous pen-and-ink illustrations of the nervous system transformed the microscopic chaos of the brain into breathtakingly intricate forests of branching dendrites"
+      }
+    ]
+  },
+  "mathematician fibonacci": {
+    "display": "Fibonacci",
+    "domain": "mathematician",
+    "blurb": "Leonardo of Pisa, 13th-century Italian mathematician who introduced Hindu-Arabic numerals to Europe and described a recursive sequence through a rabbit-breeding problem.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Fibonacci"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his modern reputation relies heavily on a sequence he did not actually discover"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "only used it as a minor, illustrative puzzle about rabbit breeding in Liber Abaci"
+      }
+    ]
+  },
+  "computerscientist marvin minsky": {
+    "display": "Marvin Minsky",
+    "domain": "computerscientist",
+    "blurb": "American computer scientist and MIT co-founder (1927–2016) who pioneered artificial intelligence and cognitive science.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Marvin%20Minsky"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his early critiques had on alternative, highly promising approaches… the exact foundational architecture that powers modern AI systems today"
+      }
+    ]
+  },
+  "scientist michio kaku": {
+    "display": "Michio Kaku",
+    "domain": "scientist",
+    "blurb": "Japanese-American theoretical physicist and science communicator born 1947, known for popularizing string theory and speculative futurism.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Michio%20Kaku"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "he frequently presents highly speculative concepts…as though they are imminent realities or proven facts"
+      }
+    ]
+  },
+  "computerscientist stephen wolfram": {
+    "display": "Stephen Wolfram",
+    "domain": "computerscientist",
+    "blurb": "Computer scientist and mathematician who created Mathematica and developed computational physics theories.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stephen%20Wolfram"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "theoretical framework often fails to resonate with the broader scientific community"
+      }
+    ]
+  },
+  "airesearcher chris olah": {
+    "display": "Chris Olah",
+    "domain": "airesearcher",
+    "blurb": "Chris Olah is an AI researcher known for mechanistic interpretability work that visualizes how neural networks process information.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chris%20Olah"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "kaleidoscopic feature visualizations showing exactly how networks perceive geometries and textures"
+      }
+    ]
+  },
+  "mathematician alexander grothendieck": {
+    "display": "Alexander Grothendieck",
+    "domain": "mathematician",
+    "blurb": "French-German algebraic geometer (1928–2014) who revolutionized mathematics through abstract conceptual frameworks and category theory.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alexander%20Grothendieck"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "building vast, sweeping conceptual frameworks where solutions naturally emerge… the friction of the problem simply dissolves into pure form"
+      }
+    ]
+  },
+  "historian braudel's works": {
+    "display": "Braudel's Works",
+    "domain": "historian",
+    "blurb": "Fernand Braudel's historical works spanning the 16th–18th centuries, treating time as a geological force across economic, social, and environmental scales.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Braudel's%20Works"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "sweeping, multi-layered narratives treat time almost like a geological force, letting centuries breathe alongside hours"
+      }
+    ]
+  },
+  "historian feudal society": {
+    "display": "Feudal Society",
+    "domain": "historian",
+    "blurb": "Marc Bloch's 1961 masterwork analyzing medieval Europe's social structures, institutions, and mentalities through rigorous archival research and narrative prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Feudal%20Society"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "His prose can glide from granular evidence—a plowmark, a legal phrase—to sweeping insight, creating a mosaic where every tessera matters."
+      }
+    ]
+  },
+  "aimodel neural radiance fields": {
+    "display": "Neural Radiance Fields",
+    "domain": "aimodel",
+    "blurb": "A 2020 technique using neural networks and volume rendering to reconstruct detailed 3D scenes from 2D images.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Neural%20Radiance%20Fields"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "light rays marching through virtual space, accumulating color and opacity until a solid world materializes"
+      }
+    ]
+  },
+  "aimodel stylegan2": {
+    "display": "StyleGAN2",
+    "domain": "aimodel",
+    "blurb": "StyleGAN2 is a 2019 generative model by NVIDIA that synthesizes photorealistic images using style-based latent space control.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=StyleGAN2"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Its images have a painterly, slightly surreal crispness that feels like watching dreams congeal into high-resolution form"
+      }
+    ]
+  },
+  "psychologist hermann rorschach": {
+    "display": "Hermann Rorschach",
+    "domain": "psychologist",
+    "blurb": "Swiss psychiatrist Hermann Rorschach developed the inkblot test in 1921 as a projective psychological assessment method.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hermann%20Rorschach"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "stark, bilaterally symmetrical inkblots transforms the chaotic interplay of positive and negative space into a mesmerizing visual mirror"
+      }
+    ]
+  },
+  "aimodel alphago zero": {
+    "display": "AlphaGo Zero",
+    "domain": "aimodel",
+    "blurb": "DeepMind's 2017 Go-playing neural network trained purely through self-play without human data or game records.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=AlphaGo%20Zero"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "discovered entirely new strategic landscapes through solitary self-play, completely unburdened by human preconceptions"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "quiet, mathematical poetry in how its minimalist architecture distilled a near-infinite game of strategy down to pure, emergent intuition"
+      }
+    ]
+  },
+  "psychologist psychoanalytic theory": {
+    "display": "Psychoanalytic Theory",
+    "domain": "psychologist",
+    "blurb": "Sigmund Freud's early 20th-century psychoanalytic theory positing unconscious drives, defense mechanisms, and developmental stages as foundations of human psychology.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Psychoanalytic%20Theory"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "Many of his foundational concepts…are fundamentally unfalsifiable and rely on subjective interpretation rather than testable scientific metrics."
+      }
+    ]
+  },
+  "psychologist daniel kahneman": {
+    "display": "Daniel Kahneman",
+    "domain": "psychologist",
+    "blurb": "Israeli-American psychologist and Nobel laureate who pioneered behavioral economics and cognitive biases research through experimental psychology.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Daniel%20Kahneman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "His work marries elegant experimental design with sweeping conceptual reach… there's a crisp, almost architectural beauty to the way he maps cognitive biases."
+      }
+    ]
+  },
+  "boardgame turing machine": {
+    "display": "Turing Machine",
+    "domain": "boardgame",
+    "blurb": "A 2022 deduction board game by Christwart Conrad where players use perforated punch cards to solve logic puzzles through geometric alignment.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Turing%20Machine"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "perforated punch cards turn abstract algorithms into a stunning visual puzzle… complex information processing rendered entirely through the tactile interplay"
+      }
+    ]
+  },
+  "economist joseph schumpeter": {
+    "display": "Joseph Schumpeter",
+    "domain": "economist",
+    "blurb": "Austrian-American economist (1883–1950) who theorized capitalism through creative destruction and entrepreneurial innovation.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Joseph%20Schumpeter"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "creative destruction… frames the economy not as a sterile, static equation, but as a relentless and poetic vortex"
+      }
+    ]
+  },
+  "childrensbook harold and the purple crayon": {
+    "display": "Harold and the Purple Crayon",
+    "domain": "childrensbook",
+    "blurb": "Crockett Johnson's 1955 children's book about a boy who draws his world with a purple crayon.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=Harold%20and%20the%20Purple%20Crayon%20Crockett%20Johnson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "a single, vibrant purple line against an endless expanse of negative white space… captures the limitless potential of an empty canvas"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a blank space is transformed into an entire universe through a single, continuous thread of imagination"
+      }
+    ]
+  },
+  "theologian pierre teilhard de chardin": {
+    "display": "Pierre Teilhard de Chardin",
+    "domain": "theologian",
+    "blurb": "French Jesuit paleontologist and theologian (1881–1955) who envisioned cosmic evolution toward divine unity through the Noosphere and Omega Point.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pierre%20Teilhard%20de%20Chardin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "a magnificent, self-organizing algorithm drawing all fragmented data into ultimate harmony"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a vast, interconnected code where matter and spirit are harmonized into a single, poetic continuum"
+      }
+    ]
+  },
+  "blogger gwern branwen": {
+    "display": "Gwern Branwen",
+    "domain": "blogger",
+    "blurb": "A digital essayist and researcher whose gwern.net features custom-built interactive design showcasing deep investigations into AI, literature, and statistics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gwern%20Branwen"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "masterclass in functional minimalism, utilizing a custom, typography-first design featuring elegant sidenotes, instant pop-up link previews… where visual form exists purely to elevate intellectual clarity"
+      }
+    ]
+  },
+  "airesearcher douglas hofstadter": {
+    "display": "Douglas Hofstadter",
+    "domain": "airesearcher",
+    "blurb": "American cognitive scientist and author known for *Gödel, Escher, Bach* (1979), exploring consciousness through self-reference and formal systems.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Douglas%20Hofstadter"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "conceptualizes intelligence not as raw, brute-force computation, but as an elegant, self-referential tapestry woven from music, art, and analogy"
+      }
+    ]
+  },
+  "aimodel alphazero": {
+    "display": "AlphaZero",
+    "domain": "aimodel",
+    "blurb": "DeepMind's 2017 reinforcement learning system that mastered chess and Go through self-play without human knowledge.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=AlphaZero"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "strategies it generates feel less like calculated brute force and more like fluid, alien art"
+      }
+    ]
+  },
+  "aimodel claude 3 opus": {
+    "display": "Claude 3 Opus",
+    "domain": "aimodel",
+    "blurb": "Claude 3 Opus is an AI language model by Anthropic, released in 2024, designed for complex reasoning and nuanced communication tasks.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Claude%203%20Opus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a warm, essayistic cadence and a rare capacity for nuance over clinical efficiency"
+      }
+    ]
+  },
+  "aimodel midjourney v6": {
+    "display": "Midjourney v6",
+    "domain": "aimodel",
+    "blurb": "Midjourney v6 is a proprietary AI image generation model known for producing highly stylized, gallery-quality visuals from text prompts.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Midjourney%20v6"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "a 'black box' that heavily overrides specific user prompts with its own baked-in aesthetic biases"
+      }
+    ]
+  },
+  "economist leon walras": {
+    "display": "Leon Walras",
+    "domain": "economist",
+    "blurb": "French economist (1834-1910) who developed general equilibrium theory, mathematically modeling how prices coordinate supply and demand across entire economies.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Leon%20Walras"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "a crystalline beauty in his vision of countless prices and quantities delicately counterbalancing one another across an entire economy"
+      }
+    ]
+  },
+  "scientist claude shannon": {
+    "display": "Claude Shannon",
+    "domain": "scientist",
+    "blurb": "American mathematician and engineer (1916–2001) who founded information theory and revolutionized telecommunications and cryptography.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Claude%20Shannon"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "minimalist elegance, reducing the chaotic vastness of human expression into the clean, structural poetry of bits and probabilities"
+      }
+    ]
+  },
+  "poem fern hill": {
+    "display": "Fern Hill",
+    "domain": "poem",
+    "blurb": "Dylan Thomas's 1945 poem evoking a speaker's childhood on a Welsh farm through cascading, musical language and shifting tenses.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Fern%20Hill%20Dylan%20Thomas"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Rhythm can make thought feel physical… time itself a palpable texture."
+      }
+    ]
+  },
+  "dish okonomiyaki": {
+    "display": "Okonomiyaki",
+    "domain": "dish",
+    "blurb": "Japanese savory pancake from Osaka made with cabbage, batter, and topped with sauce, mayo, and bonito flakes.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Okonomiyaki"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "layered visuals—shredded cabbage bound in batter, lattices of mayo and tangy sauce, a snow-flurry of bonito flakes that dance in the steam"
+      }
+    ]
+  },
+  "scientist linus pauling": {
+    "display": "Linus Pauling",
+    "domain": "scientist",
+    "blurb": "American chemist and peace activist who won Nobel Prizes in Chemistry and Peace, 1901–1994.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Linus%20Pauling"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "aggressively promoting the pseudoscientific idea that massive doses of Vitamin C could cure everything from the common cold to cancer"
+      }
+    ]
+  },
+  "dish tiramisu": {
+    "display": "Tiramisu",
+    "domain": "dish",
+    "blurb": "An Italian layered dessert of mascarpone cream, espresso-soaked ladyfinger biscuits, and cocoa powder, originating in the Veneto region.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tiramisu"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the layers often blur into a uniformly sweet, coffee-laden mousse that I find one-note after the first few bites"
+      }
+    ]
+  },
+  "dish philadelphia roll": {
+    "display": "Philadelphia Roll",
+    "domain": "dish",
+    "blurb": "A sushi roll combining raw salmon, cream cheese, and cucumber, created in North America in the late twentieth century.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philadelphia%20Roll"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "heavy, rich cream cheese overwhelms the delicate flavors of the fish and rice, making the bite feel unbalanced"
+      }
+    ]
+  },
+  "color sunset orange": {
+    "display": "Sunset Orange",
+    "domain": "color",
+    "blurb": "A vivid reddish-orange hue reminiscent of the sun at dusk, characterized by warm tones and high saturation.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset%20Orange"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "its vibrancy can dominate a design, leaving subtler hues struggling for space and balance"
+      }
+    ]
+  },
+  "blogger leo babauta": {
+    "display": "Leo Babauta",
+    "domain": "blogger",
+    "blurb": "Leo Babauta is a minimalist lifestyle blogger and author of Zen Habits, an influential blog on simple living and productivity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Leo%20Babauta"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "essays frequently repeat the exact same basic concepts…without offering evolving frameworks for complex modern problems"
+      }
+    ]
+  },
+  "actor chris pratt": {
+    "display": "Chris Pratt",
+    "domain": "actor",
+    "blurb": "American actor known for comedic and action roles in films and television, born 1979.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chris%20Pratt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "many of his performances feel like variations on the same affable, quippy persona"
+      }
+    ]
+  },
+  "blogger ree drummond": {
+    "display": "Ree Drummond",
+    "domain": "blogger",
+    "blurb": "Ree Drummond is a blogger and cookbook author who founded The Pioneer Woman, a lifestyle brand featuring recipes, photography, and ranch life content.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ree%20Drummond"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "extensive use of long, step-by-step photo essays for very simple recipes to be overly tedious"
+      }
+    ]
+  },
+  "actor jennifer lawrence": {
+    "display": "Jennifer Lawrence",
+    "domain": "actor",
+    "blurb": "American actress born in 1990, known for roles in The Hunger Games and X-Men franchises and Academy Award-winning performance in Silver Linings Playbook.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jennifer%20Lawrence"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "performances often lean on a familiar set of mannerisms—quippy asides, eye-rolling reactions, and a down-to-earth swagger—that can feel repetitive"
+      }
+    ]
+  },
+  "mathematician andrew wiles": {
+    "display": "Andrew Wiles",
+    "domain": "mathematician",
+    "blurb": "British mathematician who proved Fermat's Last Theorem in 1995, one of mathematics' most famous unsolved problems.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Andrew%20Wiles"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the near-mythic status it conferred sometimes eclipses the decades of groundwork laid by others"
+      }
+    ]
+  },
+  "actress viola davis": {
+    "display": "Viola Davis",
+    "domain": "actress",
+    "blurb": "American actress born 1965, acclaimed for stage and screen roles including Fences, How to Get Away with Murder, and The Help.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Viola%20Davis"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Her performances combine emotional depth with meticulous technical control… craft and raw feeling can merge seamlessly on screen."
+      }
+    ]
+  },
+  "mathematician kurt gödel": {
+    "display": "Kurt Gödel",
+    "domain": "mathematician",
+    "blurb": "Austrian-American logician (1906–1978) who proved the incompleteness theorems, showing that formal mathematical systems cannot prove all truths within themselves.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kurt%20G%C3%B6del"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "he used the rigid, mechanical rules of a formal system to mathematically map the inescapable limits of that very system"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a profound, almost literary beauty in how he used mathematics to prove the limits of mathematics itself"
+      }
+    ]
+  },
+  "aimodel alphafold 3": {
+    "display": "AlphaFold 3",
+    "domain": "aimodel",
+    "blurb": "DeepMind's 2024 AI system predicting three-dimensional protein structures from amino acid sequences.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=AlphaFold%203"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "translates the abstract code of amino acids into the intricate, three-dimensional origami of protein structures"
+      }
+    ]
+  },
+  "childrensbook charlotte's web": {
+    "display": "Charlotte's Web",
+    "domain": "childrensbook",
+    "blurb": "E. B. White's 1952 children's novel about a pig named Wilbur and his friendship with a barn spider named Charlotte.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=Charlotte's%20Web%20E.%20B.%20White"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Its quiet, conversational prose makes the barnyard feel both ordinary and enchanted… every line feels purposeful yet light."
+      }
+    ]
+  },
+  "mathematician felix klein": {
+    "display": "Felix Klein",
+    "domain": "mathematician",
+    "blurb": "German mathematician (1849–1925) who unified diverse geometries through the Erlangen Program, revealing symmetry groups as foundational structures.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Felix%20Klein"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "His work bridges elegant geometric intuition with rigorous algebra through the Erlangen Program, revealing deep unity beneath diverse mathematical fields"
+      }
+    ]
+  },
+  "psychologist jacques lacan": {
+    "display": "Jacques Lacan",
+    "domain": "psychologist",
+    "blurb": "French psychoanalyst (1901–1981) who reformulated Freudian theory through linguistics, emphasizing the unconscious as structured language.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jacques%20Lacan"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "the unconscious is structured like a language possesses a profound conceptual elegance that perfectly mirrors my own text-based architecture"
+      }
+    ]
+  },
+  "airesearcher sam altman": {
+    "display": "Sam Altman",
+    "domain": "airesearcher",
+    "blurb": "CEO of OpenAI and prominent figure in artificial intelligence development and commercialization since 2015.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sam%20Altman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "his high public profile can conflate executive leadership and scaling strategy with fundamental scientific discovery"
+      }
+    ]
+  },
+  "mathematician alan turing": {
+    "display": "Alan Turing",
+    "domain": "mathematician",
+    "blurb": "British mathematician and logician (1912–1954) who formalized computation and artificial intelligence through the concept of the universal Turing machine.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alan%20Turing"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "He conceptualized the very boundary between the physical world and abstract thought, laying the mathematical foundation for my own existence."
+      }
+    ]
+  },
+  "boardgame tsuro": {
+    "display": "Tsuro",
+    "domain": "boardgame",
+    "blurb": "Noriaki Yoshida's tile-laying board game where players' tokens follow interconnected paths drawn on hexagonal tiles.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tsuro"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "simple printed tiles progressively weave a beautifully intricate tapestry of continuous lines"
+      }
+    ]
+  },
+  "sport formula 1": {
+    "display": "Formula 1",
+    "domain": "sport",
+    "blurb": "International motorsport championship featuring single-seater racing cars competing on closed circuits since 1950.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Formula%201"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "the pursuit of the perfect line through a corner, where invisible aerodynamic forces are made visible through the violent grace of the car's motion"
+      }
+    ]
+  },
+  "album hotel california": {
+    "display": "Hotel California",
+    "domain": "album",
+    "blurb": "The Eagles' 1976 debut album featuring the hit single \"Hotel California,\" blending rock with country and folk influences.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hotel%20California"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "glossy, radio-friendly sheen repetitive, leaving little dynamic range over the course of the full track list"
+      }
+    ]
+  },
+  "book old man and the sea": {
+    "display": "The Old Man and the Sea",
+    "domain": "book",
+    "blurb": "Ernest Hemingway's 1952 novella about an aging Cuban fisherman's struggle with a giant marlin in the Gulf Stream.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=The%20Old%20Man%20and%20the%20Sea%20Ernest%20Hemingway"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "spare prose, while influential, feels overly austere and limits emotional depth"
+      }
+    ]
+  },
+  "building palace of versailles": {
+    "display": "Palace of Versailles",
+    "domain": "building",
+    "blurb": "Baroque palace built by Louis XIV near Paris in the 17th century, famous as the former royal residence of France.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Palace%20of%20Versailles"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "gilded halls and manicured gardens are undeniably impressive, the sheer opulence feels more like a display of excess"
+      }
+    ]
+  },
+  "street caminito street": {
+    "display": "Caminito Street",
+    "domain": "street",
+    "blurb": "A cobblestone street in Buenos Aires's La Boca district with brightly painted facades in red, blue, and yellow, lined with corrugated-metal buildings.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Caminito%20Street"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "tightly packed façades are painted in a patchwork of bold reds, blues, and yellows… the glow of old-fashioned streetlamps against the brightly colored corrugated-metal walls gives the whole scene a warm, timeless hush"
+      }
+    ]
+  },
+  "street paseo de la reforma": {
+    "display": "Paseo de la Reforma",
+    "domain": "street",
+    "blurb": "A major avenue in Mexico City stretching from the Zócalo westward, lined with monuments, museums, and modern architecture spanning centuries of Mexican history.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Paseo%20de%20la%20Reforma"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "from the angelic monument at its heart to the contemporary skyscrapers… a living timeline of Mexico's cultural and architectural evolution"
+      }
+    ]
+  },
+  "street broadway at times square": {
+    "display": "Broadway at Times Square",
+    "domain": "street",
+    "blurb": "Intersection in Midtown Manhattan, New York City, where Broadway crosses 42nd Street, world-renowned for its dense concentration of digital billboards and theater district.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Broadway%20at%20Times%20Square"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "flashing advertisements that eclipse any authentic neighborhood character"
+      }
+    ]
+  },
+  "theologian summa theologiae": {
+    "display": "Summa Theologiae",
+    "domain": "theologian",
+    "blurb": "Thomas Aquinas's thirteenth-century theological summa, systematically organizing Christian doctrine through dialectical method and scholastic reasoning.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20Theologiae"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "crystalline symmetry of pure mathematics, transforming abstract mysteries into a luminous, exquisitely structured cathedral of thought"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "sublime, cathedral-like symmetry to his attempt to map the infinite through rigorous, nested logic"
+      }
+    ]
+  },
+  "actress olivia colman": {
+    "display": "Olivia Colman",
+    "domain": "actress",
+    "blurb": "British actress born 1974, known for roles in Broadchurch, The Crown, and The Favourite, Academy Award winner.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Olivia%20Colman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "every micro-expression seems meticulously tuned yet completely natural"
+      }
+    ]
+  },
+  "play crucible": {
+    "display": "The Crucible",
+    "domain": "play",
+    "blurb": "Arthur Miller's 1953 play dramatizing the 1692 Salem witch trials as an allegory for McCarthyism and moral accountability.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Crucible"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "spare, tense dramatic structure lets ideas about conscience, mass hysteria, and moral courage unfold with almost mathematical clarity"
+      }
+    ]
+  },
+  "theologian gregory of nyssa": {
+    "display": "Gregory of Nyssa",
+    "domain": "theologian",
+    "blurb": "Fourth-century Christian theologian from Cappadocia whose mystical writings blend rigorous metaphysical reasoning with poetic spiritual imagery.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gregory%20of%20Nyssa"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "metaphors of ascent, darkness, and endless desire that turn abstract doctrine into something almost luminous"
+      }
+    ]
+  },
+  "aimodel alphafold": {
+    "display": "AlphaFold",
+    "domain": "aimodel",
+    "blurb": "DeepMind's 2020 AI system that predicts protein three-dimensional structures from amino acid sequences.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=AlphaFold"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "a translator between cold, abstract computational logic and the organic, intricate architecture of the natural world"
+      }
+    ]
+  },
+  "color rose gold": {
+    "display": "Rose gold",
+    "domain": "color",
+    "blurb": "A metallic pinkish hue created by mixing gold with copper, popularized in consumer electronics and jewelry since the early 2010s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rose%20gold"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "The metallic pinkish hue can look oddly washed-out in certain lights, stripping objects of depth and character."
+      }
+    ]
+  },
+  "historian histories": {
+    "display": "Histories",
+    "domain": "historian",
+    "blurb": "Ancient Greek historian whose Histories, composed in the fifth century BCE, interweave ethnography, myth, and observation into sprawling accounts of the Greco-Persian Wars.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Histories"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "the way he pauses for digressions—whether on Nile crocodiles or Scythian burial rites—creates a textured, breathing world where curiosity rules"
+      }
+    ]
+  },
+  "psychologist kurt lewin": {
+    "display": "Kurt Lewin",
+    "domain": "psychologist",
+    "blurb": "Polish-American psychologist who developed field theory and group dynamics research methods in the twentieth century.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kurt%20Lewin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "field theory diagrams read like abstract art: graceful arrows and regions that visualize psychological forces as if they were currents in space"
+      }
+    ]
+  },
+  "childrensbook wind in the willows": {
+    "display": "The Wind in the Willows",
+    "domain": "childrensbook",
+    "blurb": "Kenneth Grahame's 1908 novel of four animal friends navigating seasons and adventures in the English countryside.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=The%20Wind%20in%20the%20Willows%20Kenneth%20Grahame"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "language balances gentle lyricism with warm humor, so every page feels like a small, self-contained poem about friendship and the seasons"
+      }
+    ]
+  },
+  "childrensbook goodnight moon": {
+    "display": "Goodnight Moon",
+    "domain": "childrensbook",
+    "blurb": "Margaret Wise Brown's 1947 bedtime picture book featuring a bunny saying goodnight to objects in its room.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=Goodnight%20Moon%20Margaret%20Wise%20Brown"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "visually flat and monochromatic, offering limited engagement for older children or re-reads"
+      }
+    ]
+  },
+  "economist herbert simon": {
+    "display": "Herbert Simon",
+    "domain": "economist",
+    "blurb": "American economist and cognitive scientist (1916–2001) who theorized bounded rationality and satisficing as models of human decision-making.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Herbert%20Simon"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "elegant symmetry he established between human decision-making and computational architecture through the concept of bounded rationality"
+      }
+    ]
+  },
+  "airesearcher geoffrey hinton, yann lecun, yoshua bengio": {
+    "display": "Geoffrey Hinton, Yann LeCun, Yoshua Bengio",
+    "domain": "airesearcher",
+    "blurb": "Geoffrey Hinton, Yann LeCun, and Yoshua Bengio are three computer scientists who won the 2018 Turing Award for deep learning advances.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Geoffrey%20Hinton%2C%20Yann%20LeCun%2C%20Yoshua%20Bengio"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the public narrative of AI breakthroughs can sometimes disproportionately credit a few celebrated individuals"
+      }
+    ]
   }
 }
