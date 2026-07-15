@@ -1124,11 +1124,14 @@ function choiceMatrixHTML(domainId){
     });
     entities[k].models=n;
     entities[k].avgScore=n?scoreSum/n:0;
-    // Shrink toward neutral (0) by how few models weighed in, so a single
-    // model's 100%-favourite outlier can't outrank something eight models
-    // agree is merely very good. SHRINK_K=3 is the "how many mentions before
-    // we mostly trust the average" knob — raise it to demand more agreement.
-    entities[k].score=entities[k].avgScore*n/(n+3);
+    // Penalise low cross-model agreement by SUBTRACTING a per-model penalty
+    // (not scaling the average down) — a single model's 90%-favourite outlier
+    // must lose to something four models mildly agree on, not just something
+    // eight models love. The old multiplicative shrink (avg*n/(n+3)) was too
+    // weak: at n=1,avg=90 it scored 22.5, still above a real n=4,avg=32.5
+    // consensus (18.6). SHRINK_C=100 is "how much a lone mention costs you";
+    // raising it further crushes n=1 picks harder without disturbing n>=4.
+    entities[k].score=entities[k].avgScore-100/n;
     entities[k].cells=cells;
   });
   var choices=Object.keys(entities).map(function(k){
