@@ -77,7 +77,7 @@ const DOMAIN_LABELS = {
 // yet) — the client rail only renders ids present in DATA.domains, so those
 // fields appear automatically once their collection lands.
 const DOMAIN_GROUPS = [
-  { label: 'Literature & Language', ids: ['book', 'childrensbook', 'poem', 'word', 'novelist', 'religioustext'] },
+  { label: 'Literature & Language', ids: ['book', 'poem', 'novelist', 'childrensbook', 'religioustext', 'word'] },
   { label: 'Fine Art', ids: ['painting', 'artmovement'] },
   { label: 'Architecture', ids: ['building', 'architect', 'monument'] },
   { label: 'Film, TV & Theater', ids: ['film', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
