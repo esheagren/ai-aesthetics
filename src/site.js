@@ -54,7 +54,7 @@ const EXT = readJSONL(join(here, '..', 'data', 'extracted.jsonl')).filter((r) =>
 const V1_DOMAINS = new Set(['book', 'film', 'album', 'architect', 'city', 'painting']);
 const SHORT = {
   'claude-opus-4-1': 'Opus 4.1', 'claude-opus-4-5': 'Opus 4.5', 'claude-opus-4-8': 'Opus 4.8',
-  'claude-fable-5': 'Fable 5', 'gpt-4o': 'GPT-4o', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol',
+  'claude-fable-5': 'Fable 5', 'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol',
   'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5 Flash',
   'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'grok-4.5': 'Grok 4.5',
 };
