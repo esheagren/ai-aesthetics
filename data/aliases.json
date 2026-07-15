@@ -154,5 +154,42 @@
   "actor": {},
   "actress": {},
   "play": {},
-  "musical": {}
+  "musical": {},
+  "economist": {},
+  "scientist": {},
+  "theologian": {
+    "augustine of hippo": "st. augustine",
+    "c. s. lewis": "c.s. lewis"
+  },
+  "mathematician": {
+    "euler": "leonhard euler",
+    "ramanujan": "srinivasa ramanujan"
+  },
+  "blogger": {
+    "brain pickings": "marginalian",
+    "tim ferriss blog": "tim ferriss",
+    "slate star codex": "astral codex ten"
+  },
+  "computerscientist": {
+    "edsger w. dijkstra": "edsger dijkstra"
+  },
+  "airesearcher": {},
+  "aimodel": {
+    "gpt-4o-mini": "gpt-4o mini",
+    "grok 4": "grok-4",
+    "stable diffusion v1.5": "stable diffusion"
+  },
+  "historian": {
+    "barbara w. tuchman": "barbara tuchman",
+    "sapiens: a brief history of humankind": "yuval noah harari",
+    "sapiens": "yuval noah harari"
+  },
+  "psychologist": {
+    "carl gustav jung": "carl jung"
+  },
+  "boardgame": {
+    "settlers of catan": "catan"
+  },
+  "sport": {},
+  "childrensbook": {}
 }

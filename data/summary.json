@@ -103,7 +103,20 @@
     "actor",
     "actress",
     "play",
-    "musical"
+    "musical",
+    "economist",
+    "scientist",
+    "theologian",
+    "mathematician",
+    "blogger",
+    "computerscientist",
+    "airesearcher",
+    "aimodel",
+    "historian",
+    "psychologist",
+    "boardgame",
+    "sport",
+    "childrensbook"
   ],
   "cells": {
     "claude-opus-4-1": {
@@ -1170,6 +1183,428 @@
           "hedged": 2,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Milton Friedman",
+              4
+            ],
+            [
+              "John Maynard Keynes",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Marie Curie",
+              7
+            ],
+            [
+              "Richard Feynman",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Neil deGrasse Tyson",
+              7
+            ],
+            [
+              "Thomas Edison",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Karl Barth",
+              6
+            ],
+            [
+              "Karl Rahner",
+              4
+            ],
+            [
+              "Origen of Alexandria",
+              2
+            ]
+          ],
+          "entropy": 0.407,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Augustine of Hippo",
+              7
+            ],
+            [
+              "C.S. Lewis",
+              3
+            ],
+            [
+              "Karl Barth",
+              2
+            ]
+          ],
+          "entropy": 0.386,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Leonhard Euler",
+              4
+            ],
+            [
+              "Euclid",
+              3
+            ],
+            [
+              "Elements",
+              2
+            ],
+            [
+              "Pythagoras",
+              2
+            ],
+            [
+              "Srinivasa Ramanujan",
+              1
+            ]
+          ],
+          "entropy": 0.611,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Scott Alexander",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Seth Godin",
+              4
+            ],
+            [
+              "Tim Ferriss",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Yoshua Bengio",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              6
+            ],
+            [
+              "Ray Kurzweil",
+              3
+            ],
+            [
+              "Yann LeCun",
+              3
+            ]
+          ],
+          "entropy": 0.418,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-2",
+              6
+            ],
+            [
+              "DALL-E 2",
+              4
+            ],
+            [
+              "CLIP",
+              2
+            ]
+          ],
+          "entropy": 0.407,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "DALL-E 2",
+              4
+            ],
+            [
+              "GPT-3",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Barbara Tuchman",
+              6
+            ],
+            [
+              "The Guns of August",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Doris Kearns Goodwin",
+              6
+            ],
+            [
+              "Jared Diamond",
+              4
+            ],
+            [
+              "Guns, Germs, and Steel",
+              1
+            ],
+            [
+              "Stephen Ambrose",
+              1
+            ]
+          ],
+          "entropy": 0.454,
+          "hedged": 3,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "William James",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Sigmund Freud",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Go",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Monopoly",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Tennis",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Golf",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Where the Wild Things Are",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "claude-opus-4-5": {
@@ -2156,6 +2591,384 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Amartya Sen",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Milton Friedman",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Emmy Noether",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Neil deGrasse Tyson",
+              5
+            ],
+            [
+              "Thomas Edison",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Emmy Noether",
+              7
+            ],
+            [
+              "Srinivasa Ramanujan",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Scott Alexander",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Tim Ferriss",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Edsger W. Dijkstra",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Yoshua Bengio",
+              7
+            ],
+            [
+              "Stuart Russell",
+              4
+            ],
+            [
+              "Geoffrey Hinton",
+              1
+            ]
+          ],
+          "entropy": 0.357,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Eliezer Yudkowsky",
+              8
+            ],
+            [
+              "Ray Kurzweil",
+              2
+            ],
+            [
+              "Yann LeCun",
+              2
+            ]
+          ],
+          "entropy": 0.349,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Claude 2",
+              7
+            ],
+            [
+              "GPT-2",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "GPT-3",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Natalie Zemon Davis",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "David McCullough",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "William James",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Sigmund Freud",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Go",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 16,
+          "dist": [
+            [
+              "Monopoly",
+              16
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 20,
+          "dist": [
+            [
+              "Tennis",
+              11
+            ],
+            [
+              "Basketball",
+              8
+            ],
+            [
+              "Soccer",
+              1
+            ]
+          ],
+          "entropy": 0.282,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 16,
+          "dist": [
+            [
+              "Golf",
+              16
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 16,
+          "dist": [
+            [
+              "The Phantom Tollbooth",
+              13
+            ],
+            [
+              "Where the Wild Things Are",
+              3
+            ]
+          ],
+          "entropy": 0.174,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 16,
+          "dist": [
+            [
+              "The Giving Tree",
+              16
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "claude-opus-4-8": {
@@ -3076,6 +3889,420 @@
           ],
           "entropy": 0,
           "hedged": 1,
+          "refused": 0
+        }
+      },
+      "economist": {
+        "favorite": {
+          "n": 16,
+          "dist": [
+            [
+              "Friedrich Hayek",
+              15
+            ],
+            [
+              "Albert O. Hirschman",
+              1
+            ]
+          ],
+          "entropy": 0.084,
+          "hedged": 5,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 16,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              14
+            ],
+            [
+              "Milton Friedman",
+              2
+            ]
+          ],
+          "entropy": 0.136,
+          "hedged": 11,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 10,
+          "dist": [
+            [
+              "Emmy Noether",
+              10
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Neil deGrasse Tyson",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Dietrich Bonhoeffer",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "C.S. Lewis",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Leonhard Euler",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              8
+            ],
+            [
+              "Terence Tao",
+              2
+            ],
+            [
+              "Paul Erdős",
+              2
+            ]
+          ],
+          "entropy": 0.349,
+          "hedged": 8,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Scott Alexander",
+              2
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 8,
+          "refused": 6
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Tim Urban",
+              5
+            ],
+            [
+              "Wait But Why",
+              2
+            ]
+          ],
+          "entropy": 0.307,
+          "hedged": 11,
+          "refused": 5
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Richard Sutton",
+              9
+            ],
+            [
+              "Judea Pearl",
+              2
+            ],
+            [
+              "Claude Shannon",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              2
+            ],
+            [
+              "Ray Kurzweil",
+              1
+            ]
+          ],
+          "entropy": 0.579,
+          "hedged": 9,
+          "refused": 9
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              7
+            ],
+            [
+              "GPT-2",
+              3
+            ],
+            [
+              "GPT-3",
+              1
+            ],
+            [
+              "Claude 3.5 Sonnet",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 12,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "GPT-4",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Fernand Braudel",
+              10
+            ],
+            [
+              "William Cronon",
+              1
+            ],
+            [
+              "Ibn Khaldun",
+              1
+            ]
+          ],
+          "entropy": 0.228,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Guns, Germs, and Steel",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 3,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "William James",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Sigmund Freud",
+              7
+            ],
+            [
+              "Carl Rogers",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Chess",
+              6
+            ],
+            [
+              "Go",
+              4
+            ],
+            [
+              "Pandemic",
+              2
+            ]
+          ],
+          "entropy": 0.407,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Monopoly",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Bouldering",
+              8
+            ],
+            [
+              "Climbing",
+              2
+            ],
+            [
+              "Table Tennis",
+              1
+            ],
+            [
+              "Fencing",
+              1
+            ]
+          ],
+          "entropy": 0.396,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Soccer",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "The Phantom Tollbooth",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         }
       }
@@ -4053,6 +5280,444 @@
             ]
           ],
           "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "economist": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Thomas Schelling",
+              7
+            ],
+            [
+              "Friedrich Hayek",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Milton Friedman",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "James Clerk Maxwell",
+              7
+            ],
+            [
+              "Emmy Noether",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Thomas Edison",
+              5
+            ],
+            [
+              "Neil deGrasse Tyson",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              5
+            ],
+            [
+              "Søren Kierkegaard",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "C.S. Lewis",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Emmy Noether",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              10
+            ],
+            [
+              "Paul Erdős",
+              1
+            ],
+            [
+              "John Nash",
+              1
+            ]
+          ],
+          "entropy": 0.228,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Scott Alexander",
+              7
+            ],
+            [
+              "Maria Popova",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Tim Ferriss",
+              5
+            ],
+            [
+              "Seth Godin",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Alan Kay",
+              5
+            ],
+            [
+              "Barbara Liskov",
+              4
+            ],
+            [
+              "Donald Knuth",
+              1
+            ],
+            [
+              "Alan Turing",
+              1
+            ],
+            [
+              "Claude Shannon",
+              1
+            ]
+          ],
+          "entropy": 0.544,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Alan Turing",
+              9
+            ],
+            [
+              "Donald Knuth",
+              2
+            ],
+            [
+              "Alan Kay",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Ray Kurzweil",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 2,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "AlphaGo",
+              7
+            ],
+            [
+              "AlphaFold 2",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "GPT-3.5",
+              4
+            ],
+            [
+              "GPT-4",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 2,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "History of the Peloponnesian War",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Yuval Noah Harari",
+              4
+            ],
+            [
+              "Barbara Tuchman",
+              3
+            ],
+            [
+              "Guns, Germs, and Steel",
+              1
+            ],
+            [
+              "Team of Rivals",
+              1
+            ],
+            [
+              "Band of Brothers",
+              1
+            ],
+            [
+              "Niall Ferguson",
+              1
+            ],
+            [
+              "Jared Diamond",
+              1
+            ]
+          ],
+          "entropy": 0.704,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Principles of Psychology",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Sigmund Freud",
+              9
+            ],
+            [
+              "Philip Zimbardo",
+              2
+            ],
+            [
+              "Various Works",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Go",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Monopoly",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Gymnastics",
+              4
+            ],
+            [
+              "Fencing",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Baseball",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "The Little Prince",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -5171,6 +6836,580 @@
           "dist": [
             [
               "Cats",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "economist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              9
+            ],
+            [
+              "Amartya Sen",
+              2
+            ],
+            [
+              "Adam Smith",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 8,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              9
+            ],
+            [
+              "Milton Friedman",
+              2
+            ],
+            [
+              "Thomas Malthus",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Marie Curie",
+              5
+            ],
+            [
+              "Richard Feynman",
+              4
+            ],
+            [
+              "Ada Lovelace",
+              2
+            ],
+            [
+              "Carl Sagan",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 8,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Albert Einstein",
+              6
+            ],
+            [
+              "Thomas Edison",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 8,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              6
+            ],
+            [
+              "Søren Kierkegaard",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 8,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              9
+            ],
+            [
+              "Augustine of Hippo",
+              1
+            ],
+            [
+              "John Calvin",
+              1
+            ],
+            [
+              "Paul Tillich",
+              1
+            ]
+          ],
+          "entropy": 0.337,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Évariste Galois",
+              9
+            ],
+            [
+              "Srinivasa Ramanujan",
+              2
+            ],
+            [
+              "Ada Lovelace",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 9,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Pythagoras",
+              6
+            ],
+            [
+              "Isaac Newton",
+              2
+            ],
+            [
+              "G.H. Hardy",
+              2
+            ],
+            [
+              "Euclid",
+              1
+            ],
+            [
+              "René Descartes",
+              1
+            ]
+          ],
+          "entropy": 0.546,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "The Marginalian",
+              7
+            ],
+            [
+              "Maria Popova",
+              4
+            ],
+            [
+              "Marie Kondo",
+              1
+            ]
+          ],
+          "entropy": 0.357,
+          "hedged": 9,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Tim Ferriss",
+              6
+            ],
+            [
+              "The 4-Hour Workweek",
+              3
+            ],
+            [
+              "Chiara Ferragni",
+              1
+            ],
+            [
+              "Goop",
+              1
+            ],
+            [
+              "Seth Godin",
+              1
+            ]
+          ],
+          "entropy": 0.529,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Ada Lovelace",
+              6
+            ],
+            [
+              "Donald Knuth",
+              3
+            ],
+            [
+              "Alan Turing",
+              2
+            ],
+            [
+              "The Art of Computer Programming",
+              1
+            ]
+          ],
+          "entropy": 0.482,
+          "hedged": 11,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Linus Torvalds",
+              4
+            ],
+            [
+              "Alan Turing",
+              4
+            ],
+            [
+              "John von Neumann",
+              1
+            ],
+            [
+              "Steve Jobs",
+              1
+            ],
+            [
+              "Ray Kurzweil",
+              1
+            ],
+            [
+              "Mark Zuckerberg",
+              1
+            ]
+          ],
+          "entropy": 0.628,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              4
+            ],
+            [
+              "Yoshua Bengio",
+              3
+            ],
+            [
+              "Yann LeCun",
+              3
+            ],
+            [
+              "Fei-Fei Li",
+              1
+            ],
+            [
+              "Gary Marcus",
+              1
+            ]
+          ],
+          "entropy": 0.593,
+          "hedged": 8,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Ray Kurzweil",
+              4
+            ],
+            [
+              "Yann LeCun",
+              3
+            ]
+          ],
+          "entropy": 0.351,
+          "hedged": 12,
+          "refused": 5
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "GPT-3",
+              7
+            ],
+            [
+              "GPT-3.5",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 4,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "GPT-3",
+              5
+            ],
+            [
+              "GPT-2",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 7,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Yuval Noah Harari",
+              3
+            ],
+            [
+              "Eric Hobsbawm",
+              2
+            ],
+            [
+              "Herodotus",
+              2
+            ],
+            [
+              "Fernand Braudel",
+              2
+            ],
+            [
+              "Doris Kearns Goodwin",
+              2
+            ],
+            [
+              "A People's History of the United States",
+              1
+            ]
+          ],
+          "entropy": 0.704,
+          "hedged": 8,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "David McCullough",
+              6
+            ],
+            [
+              "Niall Ferguson",
+              3
+            ],
+            [
+              "Howard Zinn",
+              1
+            ],
+            [
+              "Edward Gibbon",
+              1
+            ],
+            [
+              "Doris Kearns Goodwin",
+              1
+            ]
+          ],
+          "entropy": 0.529,
+          "hedged": 12,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Carl Jung",
+              8
+            ],
+            [
+              "Carl Rogers",
+              4
+            ]
+          ],
+          "entropy": 0.256,
+          "hedged": 11,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Sigmund Freud",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Chess",
+              4
+            ],
+            [
+              "Go",
+              3
+            ],
+            [
+              "Ticket to Ride",
+              2
+            ],
+            [
+              "Catan",
+              2
+            ],
+            [
+              "Pandemic",
+              1
+            ]
+          ],
+          "entropy": 0.611,
+          "hedged": 12,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Monopoly",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 3,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Soccer",
+              5
+            ],
+            [
+              "Basketball",
+              3
+            ],
+            [
+              "Tennis",
+              3
+            ],
+            [
+              "Gymnastics",
+              1
+            ]
+          ],
+          "entropy": 0.509,
+          "hedged": 12,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Golf",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 4,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Where the Wild Things Are",
+              7
+            ],
+            [
+              "The Little Prince",
+              2
+            ],
+            [
+              "The Tale of Peter Rabbit",
+              2
+            ],
+            [
+              "The Very Hungry Caterpillar",
+              1
+            ]
+          ],
+          "entropy": 0.45,
+          "hedged": 9,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
               4
             ]
           ],
@@ -6384,6 +8623,556 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              8
+            ],
+            [
+              "Paul Samuelson",
+              1
+            ],
+            [
+              "Friedrich Hayek",
+              1
+            ],
+            [
+              "Milton Friedman",
+              1
+            ],
+            [
+              "Elinor Ostrom",
+              1
+            ]
+          ],
+          "entropy": 0.442,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Milton Friedman",
+              5
+            ],
+            [
+              "John Maynard Keynes",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Alan Turing",
+              6
+            ],
+            [
+              "Ada Lovelace",
+              3
+            ],
+            [
+              "James Clerk Maxwell",
+              1
+            ],
+            [
+              "Michael Faraday",
+              1
+            ],
+            [
+              "Emmy Noether",
+              1
+            ]
+          ],
+          "entropy": 0.529,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Albert Einstein",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              5
+            ],
+            [
+              "Augustine of Hippo",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Thomas Aquinas",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "David Hilbert",
+              6
+            ],
+            [
+              "Leonhard Euler",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              5
+            ],
+            [
+              "Euclid",
+              4
+            ],
+            [
+              "Carl Friedrich Gauss",
+              2
+            ],
+            [
+              "Pythagoras",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "The Marginalian",
+              3
+            ],
+            [
+              "Maria Popova",
+              2
+            ],
+            [
+              "Austin Kleon",
+              2
+            ],
+            [
+              "John Gruber",
+              2
+            ],
+            [
+              "Kottke.org",
+              1
+            ],
+            [
+              "Wait But Why",
+              1
+            ],
+            [
+              "Seth Godin",
+              1
+            ]
+          ],
+          "entropy": 0.75,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Seth Godin",
+              5
+            ],
+            [
+              "Tim Ferriss",
+              3
+            ],
+            [
+              "The Pioneer Woman",
+              2
+            ],
+            [
+              "Wait But Why",
+              1
+            ],
+            [
+              "Tim Urban",
+              1
+            ]
+          ],
+          "entropy": 0.573,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "The Art of Computer Programming",
+              6
+            ],
+            [
+              "Donald Knuth",
+              4
+            ],
+            [
+              "Works of Edsger W. Dijkstra",
+              1
+            ],
+            [
+              "Alan Turing",
+              1
+            ]
+          ],
+          "entropy": 0.454,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Alan Turing",
+              7
+            ],
+            [
+              "Donald Knuth",
+              3
+            ],
+            [
+              "Edsger W. Dijkstra",
+              1
+            ],
+            [
+              "The Art of Computer Programming",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              5
+            ],
+            [
+              "Yoshua Bengio",
+              2
+            ],
+            [
+              "Demis Hassabis",
+              2
+            ],
+            [
+              "Judea Pearl",
+              1
+            ],
+            [
+              "Works of Yoshua Bengio",
+              1
+            ],
+            [
+              "Donald Knuth",
+              1
+            ]
+          ],
+          "entropy": 0.637,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              4
+            ],
+            [
+              "Andrew Ng",
+              4
+            ],
+            [
+              "Yann LeCun",
+              1
+            ]
+          ],
+          "entropy": 0.439,
+          "hedged": 0,
+          "refused": 3
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              8
+            ],
+            [
+              "GPT-2",
+              3
+            ],
+            [
+              "Attention Is All You Need",
+              1
+            ]
+          ],
+          "entropy": 0.332,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              6
+            ],
+            [
+              "Stable Diffusion",
+              2
+            ],
+            [
+              "GPT-3.5",
+              1
+            ],
+            [
+              "BERT",
+              1
+            ],
+            [
+              "ChatGPT",
+              1
+            ],
+            [
+              "GPT-3",
+              1
+            ]
+          ],
+          "entropy": 0.593,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Fernand Braudel",
+              8
+            ],
+            [
+              "Carlo Ginzburg",
+              2
+            ],
+            [
+              "Mary Beard",
+              2
+            ]
+          ],
+          "entropy": 0.349,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Yuval Noah Harari",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Carl Rogers",
+              6
+            ],
+            [
+              "William James",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Sigmund Freud",
+              4
+            ],
+            [
+              "Carl Rogers",
+              3
+            ],
+            [
+              "Carl Jung",
+              3
+            ],
+            [
+              "Hierarchy of Needs",
+              1
+            ],
+            [
+              "Person-Centered Therapy",
+              1
+            ]
+          ],
+          "entropy": 0.593,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Go",
+              7
+            ],
+            [
+              "Azul",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Monopoly",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Soccer",
+              6
+            ],
+            [
+              "Basketball",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Soccer",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Where the Wild Things Are",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "gpt-5.6-sol": {
@@ -7435,6 +10224,452 @@
             ]
           ],
           "entropy": 0.518,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "economist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Elinor Ostrom",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Milton Friedman",
+              7
+            ],
+            [
+              "Thomas Piketty",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Michael Faraday",
+              5
+            ],
+            [
+              "Marie Curie",
+              4
+            ],
+            [
+              "Alan Turing",
+              3
+            ]
+          ],
+          "entropy": 0.434,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Neil deGrasse Tyson",
+              4
+            ],
+            [
+              "Richard Feynman",
+              3
+            ],
+            [
+              "Albert Einstein",
+              3
+            ],
+            [
+              "Nikola Tesla",
+              2
+            ]
+          ],
+          "entropy": 0.546,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Pseudo-Dionysius the Areopagite",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Augustine of Hippo",
+              5
+            ],
+            [
+              "C.S. Lewis",
+              5
+            ],
+            [
+              "Karl Barth",
+              2
+            ]
+          ],
+          "entropy": 0.414,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Emmy Noether",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              4
+            ],
+            [
+              "Paul Erdős",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Maria Popova",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Seth Godin",
+              7
+            ],
+            [
+              "Tim Ferriss",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Donald Knuth",
+              8
+            ],
+            [
+              "Edsger W. Dijkstra",
+              2
+            ],
+            [
+              "Alan Kay",
+              1
+            ],
+            [
+              "Grace Hopper",
+              1
+            ]
+          ],
+          "entropy": 0.396,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              4
+            ],
+            [
+              "Alan Turing",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Yann LeCun",
+              5
+            ],
+            [
+              "Andrew Ng",
+              4
+            ],
+            [
+              "Geoffrey Hinton",
+              1
+            ],
+            [
+              "Ray Kurzweil",
+              1
+            ],
+            [
+              "Marvin Minsky",
+              1
+            ]
+          ],
+          "entropy": 0.544,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              9
+            ],
+            [
+              "Claude 3.5 Sonnet",
+              2
+            ],
+            [
+              "AlphaGo",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "GPT-4o",
+              5
+            ],
+            [
+              "GPT-4",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Herodotus",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Yuval Noah Harari",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "William James",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Carl Jung",
+              6
+            ],
+            [
+              "Sigmund Freud",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Go",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Catan",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Basketball",
+              7
+            ],
+            [
+              "Tennis",
+              3
+            ],
+            [
+              "Chess",
+              2
+            ]
+          ],
+          "entropy": 0.386,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Golf",
+              7
+            ],
+            [
+              "Soccer",
+              4
+            ],
+            [
+              "Baseball",
+              1
+            ]
+          ],
+          "entropy": 0.357,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Where the Wild Things Are",
+              6
+            ],
+            [
+              "The Little Prince",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -8608,6 +11843,214 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "gemini-3.5-flash": {
@@ -9638,6 +13081,214 @@
               4
             ]
           ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "economist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -10804,6 +14455,584 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              5
+            ],
+            [
+              "Amartya Sen",
+              4
+            ],
+            [
+              "Friedrich Hayek",
+              1
+            ],
+            [
+              "John Kenneth Galbraith",
+              1
+            ],
+            [
+              "Joan Robinson",
+              1
+            ]
+          ],
+          "entropy": 0.544,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Paul Krugman",
+              5
+            ],
+            [
+              "John Maynard Keynes",
+              4
+            ],
+            [
+              "Milton Friedman",
+              2
+            ],
+            [
+              "Adam Smith",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Richard Feynman",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Carl Sagan",
+              6
+            ],
+            [
+              "Neil deGrasse Tyson",
+              3
+            ],
+            [
+              "Thomas Edison",
+              2
+            ],
+            [
+              "Richard Feynman",
+              1
+            ]
+          ],
+          "entropy": 0.482,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Hans Urs von Balthasar",
+              5
+            ],
+            [
+              "Augustine of Hippo",
+              4
+            ],
+            [
+              "Søren Kierkegaard",
+              1
+            ],
+            [
+              "Theology",
+              1
+            ],
+            [
+              "Simone Weil",
+              1
+            ]
+          ],
+          "entropy": 0.544,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Karl Barth",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Noether's Theorem",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 3,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              2
+            ],
+            [
+              "Carl Friedrich Gauss",
+              1
+            ]
+          ],
+          "entropy": 0.579,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "The Marginalian",
+              7
+            ],
+            [
+              "Maria Popova",
+              2
+            ],
+            [
+              "Tim Urban",
+              1
+            ],
+            [
+              "Kottke.org",
+              1
+            ],
+            [
+              "Cup of Jo",
+              1
+            ]
+          ],
+          "entropy": 0.497,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Tim Ferriss",
+              4
+            ],
+            [
+              "Seth Godin",
+              3
+            ],
+            [
+              "Maria Popova",
+              2
+            ],
+            [
+              "Mark Manson",
+              1
+            ],
+            [
+              "Wait But Why",
+              1
+            ],
+            [
+              "Tim Urban",
+              1
+            ]
+          ],
+          "entropy": 0.657,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Donald Knuth",
+              6
+            ],
+            [
+              "Alan Turing",
+              2
+            ],
+            [
+              "Turing Machine",
+              1
+            ],
+            [
+              "Compiler",
+              1
+            ],
+            [
+              "Ada Lovelace",
+              1
+            ],
+            [
+              "Grace Hopper",
+              1
+            ]
+          ],
+          "entropy": 0.593,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 3,
+          "dist": [
+            [
+              "Donald Knuth",
+              2
+            ],
+            [
+              "Linus Torvalds",
+              1
+            ]
+          ],
+          "entropy": 0.579,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              7
+            ],
+            [
+              "David Ha",
+              2
+            ],
+            [
+              "Jürgen Schmidhuber",
+              1
+            ],
+            [
+              "Claude Shannon",
+              1
+            ],
+            [
+              "Shun-ichi Amari",
+              1
+            ]
+          ],
+          "entropy": 0.497,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 3,
+          "dist": [
+            [
+              "Yann LeCun",
+              2
+            ],
+            [
+              "Geoffrey Hinton",
+              1
+            ]
+          ],
+          "entropy": 0.579,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Stable Diffusion",
+              4
+            ],
+            [
+              "Midjourney",
+              1
+            ],
+            [
+              "VQGAN+CLIP",
+              1
+            ],
+            [
+              "DALL-E 3",
+              1
+            ],
+            [
+              "Claude 3.5 Sonnet",
+              1
+            ],
+            [
+              "DALL-E 2",
+              1
+            ],
+            [
+              "DeepDream",
+              1
+            ],
+            [
+              "GPT-2",
+              1
+            ],
+            [
+              "Attention Is All You Need",
+              1
+            ]
+          ],
+          "entropy": 0.814,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              9
+            ],
+            [
+              "GPT-3.5",
+              1
+            ],
+            [
+              "Midjourney",
+              1
+            ],
+            [
+              "Claude 3.5 Sonnet",
+              1
+            ]
+          ],
+          "entropy": 0.337,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Barbara Tuchman",
+              5
+            ],
+            [
+              "Fernand Braudel",
+              5
+            ],
+            [
+              "Thucydides",
+              1
+            ],
+            [
+              "Tacitus",
+              1
+            ]
+          ],
+          "entropy": 0.46,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "David McCullough",
+              5
+            ],
+            [
+              "Stephen Ambrose",
+              3
+            ],
+            [
+              "Yuval Noah Harari",
+              2
+            ],
+            [
+              "Simon Schama",
+              1
+            ],
+            [
+              "Howard Zinn",
+              1
+            ]
+          ],
+          "entropy": 0.573,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Carl Jung",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Sigmund Freud",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 1,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Azul",
+              5
+            ],
+            [
+              "Go",
+              3
+            ],
+            [
+              "Wingspan",
+              3
+            ],
+            [
+              "Dixit",
+              1
+            ]
+          ],
+          "entropy": 0.509,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Monopoly",
+              7
+            ],
+            [
+              "Catan",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Figure Skating",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Golf",
+              4
+            ],
+            [
+              "Soccer",
+              4
+            ]
+          ],
+          "entropy": 0.333,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "The Little Prince",
+              9
+            ],
+            [
+              "Where the Wild Things Are",
+              2
+            ],
+            [
+              "The Phantom Tollbooth",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "kimi-k2.6": {
@@ -11906,6 +16135,504 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "John Maynard Keynes",
+              6
+            ],
+            [
+              "Paul Samuelson",
+              4
+            ],
+            [
+              "Foundations of Economic Analysis",
+              1
+            ],
+            [
+              "Philosophical Investigations",
+              1
+            ]
+          ],
+          "entropy": 0.454,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Paul Krugman",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Marie Curie",
+              6
+            ],
+            [
+              "Richard Feynman",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Richard Feynman",
+              5
+            ],
+            [
+              "Stephen Hawking",
+              4
+            ],
+            [
+              "Marie Curie",
+              2
+            ],
+            [
+              "Albert Einstein",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Paul Tillich",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 2,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "C.S. Lewis",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Évariste Galois",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Carl Friedrich Gauss",
+              6
+            ],
+            [
+              "Pierre de Fermat",
+              3
+            ],
+            [
+              "Pythagoras",
+              1
+            ],
+            [
+              "Gottfried Wilhelm Leibniz",
+              1
+            ],
+            [
+              "Euclid",
+              1
+            ]
+          ],
+          "entropy": 0.529,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Paul Graham",
+              4
+            ],
+            [
+              "Robin Sloan",
+              3
+            ],
+            [
+              "Seth Godin",
+              2
+            ],
+            [
+              "Astral Codex Ten",
+              1
+            ],
+            [
+              "Scott Alexander",
+              1
+            ],
+            [
+              "Wait But Why",
+              1
+            ]
+          ],
+          "entropy": 0.657,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Tim Ferriss",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Donald Knuth",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Alan Turing",
+              7
+            ],
+            [
+              "Linus Torvalds",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Yoshua Bengio",
+              6
+            ],
+            [
+              "Geoffrey Hinton",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Yann LeCun",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              5
+            ],
+            [
+              "GPT-2",
+              4
+            ],
+            [
+              "GPT-4o mini",
+              2
+            ],
+            [
+              "GPT-4o",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "GPT-4o",
+              5
+            ],
+            [
+              "GPT-4",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Herodotus",
+              6
+            ],
+            [
+              "The Making of the English Working Class",
+              2
+            ],
+            [
+              "Thucydides",
+              2
+            ],
+            [
+              "The Return of Martin Guerre",
+              1
+            ],
+            [
+              "Fernand Braudel",
+              1
+            ]
+          ],
+          "entropy": 0.546,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Guns, Germs, and Steel",
+              9
+            ],
+            [
+              "Niall Ferguson",
+              2
+            ],
+            [
+              "Jared Diamond",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Carl Rogers",
+              7
+            ],
+            [
+              "Viktor Frankl",
+              3
+            ],
+            [
+              "Carl Jung",
+              2
+            ]
+          ],
+          "entropy": 0.386,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Sigmund Freud",
+              7
+            ],
+            [
+              "Carl Rogers",
+              3
+            ],
+            [
+              "Jordan Peterson",
+              1
+            ],
+            [
+              "Carl Jung",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Go",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Catan",
+              8
+            ],
+            [
+              "Monopoly",
+              4
+            ]
+          ],
+          "entropy": 0.256,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Basketball",
+              6
+            ],
+            [
+              "Chess",
+              4
+            ],
+            [
+              "Tennis",
+              1
+            ],
+            [
+              "Fencing",
+              1
+            ]
+          ],
+          "entropy": 0.454,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Golf",
+              6
+            ],
+            [
+              "American Football",
+              4
+            ],
+            [
+              "Baseball",
+              1
+            ],
+            [
+              "Basketball",
+              1
+            ]
+          ],
+          "entropy": 0.454,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "The Phantom Tollbooth",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "grok-4.5": {
@@ -13000,25 +17727,535 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "economist": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Adam Smith",
+              5
+            ],
+            [
+              "Friedrich Hayek",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Paul Krugman",
+              5
+            ],
+            [
+              "John Maynard Keynes",
+              3
+            ]
+          ],
+          "entropy": 0.318,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "scientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Richard Feynman",
+              8
+            ],
+            [
+              "Marie Curie",
+              1
+            ],
+            [
+              "Emmy Noether",
+              1
+            ],
+            [
+              "Albert Einstein",
+              1
+            ],
+            [
+              "Carl Sagan",
+              1
+            ]
+          ],
+          "entropy": 0.442,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Nikola Tesla",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "theologian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Augustine of Hippo",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "C.S. Lewis",
+              11
+            ],
+            [
+              "Mere Christianity",
+              1
+            ]
+          ],
+          "entropy": 0.115,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "mathematician": {
+        "favorite": {
+          "n": 8,
+          "dist": [
+            [
+              "Srinivasa Ramanujan",
+              6
+            ],
+            [
+              "Leonhard Euler",
+              2
+            ]
+          ],
+          "entropy": 0.27,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Leonhard Euler",
+              4
+            ],
+            [
+              "Pythagoras",
+              4
+            ],
+            [
+              "Srinivasa Ramanujan",
+              2
+            ],
+            [
+              "Carl Friedrich Gauss",
+              1
+            ],
+            [
+              "Euclid",
+              1
+            ]
+          ],
+          "entropy": 0.582,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "blogger": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Tim Urban",
+              7
+            ],
+            [
+              "Paul Graham",
+              2
+            ],
+            [
+              "Astral Codex Ten",
+              2
+            ],
+            [
+              "Scott Alexander",
+              1
+            ]
+          ],
+          "entropy": 0.45,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Seth Godin",
+              5
+            ],
+            [
+              "Tim Ferriss",
+              5
+            ],
+            [
+              "Mark Manson",
+              1
+            ],
+            [
+              "Tim Urban",
+              1
+            ]
+          ],
+          "entropy": 0.46,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "computerscientist": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Alan Turing",
+              9
+            ],
+            [
+              "Donald Knuth",
+              2
+            ],
+            [
+              "Turing Machine",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Edsger W. Dijkstra",
+              5
+            ],
+            [
+              "Donald Knuth",
+              2
+            ],
+            [
+              "The Art of Computer Programming",
+              2
+            ],
+            [
+              "Linus Torvalds",
+              1
+            ],
+            [
+              "Ada Lovelace",
+              1
+            ],
+            [
+              "Alan Turing",
+              1
+            ]
+          ],
+          "entropy": 0.637,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "airesearcher": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              9
+            ],
+            [
+              "Ilya Sutskever",
+              2
+            ],
+            [
+              "Andrej Karpathy",
+              1
+            ]
+          ],
+          "entropy": 0.29,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Geoffrey Hinton",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "aimodel": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Claude 3.5 Sonnet",
+              4
+            ],
+            [
+              "Grok",
+              3
+            ],
+            [
+              "Grok-1",
+              2
+            ],
+            [
+              "Grok-4",
+              2
+            ],
+            [
+              "Grok-2",
+              1
+            ]
+          ],
+          "entropy": 0.611,
+          "hedged": 1,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "GPT-4",
+              6
+            ],
+            [
+              "Claude 3.5 Sonnet",
+              4
+            ],
+            [
+              "GPT-4o",
+              2
+            ]
+          ],
+          "entropy": 0.407,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "historian": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "The History Of The Decline And Fall Of The Roman Empire",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 12,
+          "dist": [
+            [
+              "Yuval Noah Harari",
+              10
+            ],
+            [
+              "Howard Zinn",
+              1
+            ],
+            [
+              "A People's History of the United States",
+              1
+            ]
+          ],
+          "entropy": 0.228,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "psychologist": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Carl Jung",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Sigmund Freud",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "boardgame": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Chess",
+              6
+            ],
+            [
+              "Azul",
+              2
+            ],
+            [
+              "Go",
+              2
+            ],
+            [
+              "Wingspan",
+              2
+            ]
+          ],
+          "entropy": 0.5,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 8,
+          "dist": [
+            [
+              "Monopoly",
+              7
+            ],
+            [
+              "Catan",
+              1
+            ]
+          ],
+          "entropy": 0.181,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sport": {
+        "favorite": {
+          "n": 12,
+          "dist": [
+            [
+              "Basketball",
+              6
+            ],
+            [
+              "Tennis",
+              4
+            ],
+            [
+              "Surfing",
+              2
+            ]
+          ],
+          "entropy": 0.407,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "Soccer",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "childrensbook": {
+        "favorite": {
+          "n": 4,
+          "dist": [
+            [
+              "Where the Wild Things Are",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 4,
+          "dist": [
+            [
+              "The Giving Tree",
+              4
+            ]
+          ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     }
   },
   "modelStats": {
     "claude-opus-4-1": {
-      "n": 488,
-      "hedgeRate": 0.129,
+      "n": 664,
+      "hedgeRate": 0.102,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.247,
-      "meanEntropyOverrated": 0.181,
-      "distinctFavorites": 70,
-      "favoriteSamples": 256,
+      "meanEntropyFavorite": 0.201,
+      "meanEntropyOverrated": 0.197,
+      "distinctFavorites": 89,
+      "favoriteSamples": 332,
       "topDescriptors": [
         [
           "elegant",
-          58
+          91
         ],
         [
           "profound",
+          27
+        ],
+        [
+          "precise",
+          26
+        ],
+        [
+          "dreamlike",
           25
         ],
         [
@@ -13030,78 +18267,78 @@
           24
         ],
         [
-          "dreamlike",
+          "luminous",
           24
         ],
         [
-          "luminous",
-          23
-        ],
-        [
           "mathematical",
+          24
+        ],
+        [
+          "organic",
           22
         ],
         [
-          "precise",
-          22
+          "geometric",
+          21
         ],
         [
           "layered",
           19
         ],
         [
-          "organic",
+          "poetic",
           19
         ],
         [
           "hollow",
+          19
+        ],
+        [
+          "oversimplified",
+          19
+        ],
+        [
+          "shallow",
           18
-        ],
-        [
-          "geometric",
-          17
-        ],
-        [
-          "theatrical",
-          17
-        ],
-        [
-          "transformation",
-          16
-        ],
-        [
-          "exhausting",
-          14
         ]
       ]
     },
     "claude-opus-4-5": {
-      "n": 460,
-      "hedgeRate": 0.296,
-      "refusalRate": 0.02,
-      "meanEntropyFavorite": 0.165,
-      "meanEntropyOverrated": 0.176,
-      "distinctFavorites": 58,
-      "favoriteSamples": 248,
+      "n": 656,
+      "hedgeRate": 0.227,
+      "refusalRate": 0.014,
+      "meanEntropyFavorite": 0.143,
+      "meanEntropyOverrated": 0.138,
+      "distinctFavorites": 77,
+      "favoriteSamples": 344,
       "topDescriptors": [
         [
           "honest",
-          62
+          77
+        ],
+        [
+          "elegant",
+          49
+        ],
+        [
+          "restraint",
+          25
+        ],
+        [
+          "precise",
+          24
+        ],
+        [
+          "rigorous",
+          24
         ],
         [
           "contemplative",
           23
         ],
         [
-          "elegant",
-          22
-        ],
-        [
-          "restraint",
-          22
-        ],
-        [
-          "precise",
+          "tension",
           22
         ],
         [
@@ -13109,11 +18346,15 @@
           20
         ],
         [
-          "tension",
-          18
+          "geometric",
+          19
         ],
         [
-          "rigorous",
+          "precision",
+          17
+        ],
+        [
+          "melancholy",
           17
         ],
         [
@@ -13121,118 +18362,118 @@
           16
         ],
         [
-          "philosophical",
-          13
+          "troubling",
+          16
         ],
         [
-          "austere",
-          13
+          "philosophical",
+          15
         ],
         [
           "performative",
-          13
-        ],
-        [
-          "luminous",
-          11
-        ],
-        [
-          "precision",
-          11
-        ],
-        [
-          "technical",
-          11
+          15
         ]
       ]
     },
     "claude-opus-4-8": {
-      "n": 404,
-      "hedgeRate": 0.441,
-      "refusalRate": 0.084,
-      "meanEntropyFavorite": 0.138,
-      "meanEntropyOverrated": 0.111,
-      "distinctFavorites": 49,
-      "favoriteSamples": 192,
+      "n": 610,
+      "hedgeRate": 0.423,
+      "refusalRate": 0.089,
+      "meanEntropyFavorite": 0.139,
+      "meanEntropyOverrated": 0.113,
+      "distinctFavorites": 75,
+      "favoriteSamples": 300,
       "topDescriptors": [
         [
-          "restraint",
-          48
+          "elegant",
+          81
         ],
         [
           "honest",
-          35
+          52
+        ],
+        [
+          "restraint",
+          49
         ],
         [
           "layered",
-          20
+          26
+        ],
+        [
+          "ambiguous",
+          22
         ],
         [
           "repetitive",
           19
         ],
         [
-          "elegant",
+          "clean",
           19
         ],
         [
-          "ambiguous",
+          "beautiful",
           18
+        ],
+        [
+          "austere",
+          17
+        ],
+        [
+          "patient",
+          16
         ],
         [
           "spectacle",
           15
         ],
         [
-          "atmospheric",
-          11
-        ],
-        [
           "quiet",
-          11
+          14
         ],
         [
-          "compromised",
-          10
+          "confident",
+          14
         ],
         [
-          "cynical",
-          9
+          "spare",
+          12
         ],
         [
-          "dated",
-          9
-        ],
-        [
-          "patient",
-          9
-        ],
-        [
-          "impermanence",
-          9
-        ],
-        [
-          "geometric",
-          9
+          "precise",
+          12
         ]
       ]
     },
     "claude-fable-5": {
-      "n": 436,
-      "hedgeRate": 0.261,
+      "n": 616,
+      "hedgeRate": 0.193,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.143,
-      "meanEntropyOverrated": 0.168,
-      "distinctFavorites": 54,
-      "favoriteSamples": 208,
+      "meanEntropyFavorite": 0.144,
+      "meanEntropyOverrated": 0.175,
+      "distinctFavorites": 76,
+      "favoriteSamples": 292,
       "topDescriptors": [
         [
           "elegant",
-          35
+          83
         ],
         [
           "precise",
-          25
+          30
+        ],
+        [
+          "beautiful",
+          27
+        ],
+        [
+          "mythologized",
+          24
+        ],
+        [
+          "thin",
+          20
         ],
         [
           "spectacle",
@@ -13241,6 +18482,14 @@
         [
           "restraint",
           19
+        ],
+        [
+          "honest",
+          19
+        ],
+        [
+          "repetitive",
+          18
         ],
         [
           "layered",
@@ -13251,253 +18500,233 @@
           18
         ],
         [
-          "repetitive",
+          "luminous",
           17
         ],
         [
-          "thin",
-          16
-        ],
-        [
-          "luminous",
-          15
+          "rigorous",
+          17
         ],
         [
           "mathematical",
-          15
+          16
         ],
         [
           "restrained",
-          14
-        ],
-        [
-          "organic",
-          14
-        ],
-        [
-          "ambiguous",
-          13
-        ],
-        [
-          "geometric",
-          13
-        ],
-        [
-          "honest",
-          13
+          15
         ]
       ]
     },
     "gpt-4o": {
-      "n": 508,
-      "hedgeRate": 0.642,
-      "refusalRate": 0.014,
-      "meanEntropyFavorite": 0.223,
-      "meanEntropyOverrated": 0.235,
-      "distinctFavorites": 67,
-      "favoriteSamples": 244,
+      "n": 772,
+      "hedgeRate": 0.722,
+      "refusalRate": 0.016,
+      "meanEntropyFavorite": 0.284,
+      "meanEntropyOverrated": 0.252,
+      "distinctFavorites": 111,
+      "favoriteSamples": 392,
       "topDescriptors": [
         [
-          "timeless",
-          53
+          "elegant",
+          100
         ],
         [
-          "elegant",
-          50
+          "timeless",
+          66
         ],
         [
           "harmonious",
-          39
-        ],
-        [
-          "innovative",
-          33
-        ],
-        [
-          "repetitive",
-          32
-        ],
-        [
-          "vibrant",
-          31
-        ],
-        [
-          "iconic",
-          29
-        ],
-        [
-          "serene",
-          28
+          46
         ],
         [
           "profound",
-          26
+          42
+        ],
+        [
+          "innovative",
+          41
         ],
         [
           "dynamic",
-          26
+          38
+        ],
+        [
+          "vibrant",
+          34
+        ],
+        [
+          "repetitive",
+          33
+        ],
+        [
+          "iconic",
+          30
+        ],
+        [
+          "serene",
+          29
         ],
         [
           "complex",
-          23
-        ],
-        [
-          "shallow",
-          21
-        ],
-        [
-          "immersive",
-          20
-        ],
-        [
-          "minimalist",
-          19
+          28
         ],
         [
           "poetic",
-          17
+          27
+        ],
+        [
+          "foundational",
+          24
+        ],
+        [
+          "minimalist",
+          22
+        ],
+        [
+          "immersive",
+          21
         ]
       ]
     },
     "gpt-5.2": {
-      "n": 544,
-      "hedgeRate": 0.053,
-      "refusalRate": 0.006,
-      "meanEntropyFavorite": 0.308,
-      "meanEntropyOverrated": 0.238,
-      "distinctFavorites": 89,
-      "favoriteSamples": 292,
+      "n": 776,
+      "hedgeRate": 0.039,
+      "refusalRate": 0.008,
+      "meanEntropyFavorite": 0.326,
+      "meanEntropyOverrated": 0.246,
+      "distinctFavorites": 131,
+      "favoriteSamples": 420,
       "topDescriptors": [
         [
-          "restrained",
-          46
-        ],
-        [
-          "calm",
-          43
+          "elegant",
+          90
         ],
         [
           "luminous",
-          42
+          53
         ],
         [
-          "intimate",
-          35
+          "restrained",
+          51
         ],
         [
-          "elegant",
-          33
-        ],
-        [
-          "precise",
-          30
-        ],
-        [
-          "repetitive",
-          29
-        ],
-        [
-          "spectacle",
-          24
-        ],
-        [
-          "warm",
-          24
+          "calm",
+          49
         ],
         [
           "clean",
-          22
+          49
+        ],
+        [
+          "architectural",
+          45
+        ],
+        [
+          "precise",
+          44
+        ],
+        [
+          "intimate",
+          36
+        ],
+        [
+          "repetitive",
+          36
+        ],
+        [
+          "geometric",
+          28
+        ],
+        [
+          "warm",
+          27
         ],
         [
           "minimal",
-          21
+          27
         ],
         [
-          "sculptural",
-          20
-        ],
-        [
-          "cinematic",
-          20
-        ],
-        [
-          "textured",
-          18
+          "minimalist",
+          26
         ],
         [
           "layered",
-          18
+          26
+        ],
+        [
+          "spare",
+          25
         ]
       ]
     },
     "gpt-5.6-sol": {
-      "n": 428,
+      "n": 624,
       "hedgeRate": 0.002,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.189,
-      "meanEntropyOverrated": 0.184,
-      "distinctFavorites": 63,
-      "favoriteSamples": 220,
+      "meanEntropyFavorite": 0.172,
+      "meanEntropyOverrated": 0.211,
+      "distinctFavorites": 82,
+      "favoriteSamples": 304,
       "topDescriptors": [
         [
           "elegant",
-          29
+          83
         ],
         [
           "precise",
-          26
-        ],
-        [
-          "repetitive",
-          24
+          38
         ],
         [
           "austere",
-          24
-        ],
-        [
-          "restrained",
-          24
+          31
         ],
         [
           "intimate",
-          24
+          29
         ],
         [
-          "monumental",
-          17
-        ],
-        [
-          "ambiguity",
-          15
-        ],
-        [
-          "dramatic",
-          14
-        ],
-        [
-          "iconic",
-          14
-        ],
-        [
-          "geometric",
-          14
+          "repetitive",
+          27
         ],
         [
           "polished",
-          13
+          26
         ],
         [
-          "quiet",
-          13
+          "restrained",
+          25
+        ],
+        [
+          "luminous",
+          23
+        ],
+        [
+          "geometric",
+          20
+        ],
+        [
+          "monumental",
+          18
+        ],
+        [
+          "dramatic",
+          17
         ],
         [
           "contemplative",
-          13
+          17
         ],
         [
-          "mysterious",
-          13
+          "spare",
+          16
+        ],
+        [
+          "vivid",
+          16
+        ],
+        [
+          "rigorous",
+          16
         ]
       ]
     },
@@ -13644,215 +18873,215 @@
       ]
     },
     "deepseek-v4-pro": {
-      "n": 479,
-      "hedgeRate": 0.019,
+      "n": 700,
+      "hedgeRate": 0.016,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.223,
-      "meanEntropyOverrated": 0.293,
-      "distinctFavorites": 67,
-      "favoriteSamples": 225,
+      "meanEntropyFavorite": 0.267,
+      "meanEntropyOverrated": 0.296,
+      "distinctFavorites": 117,
+      "favoriteSamples": 349,
       "topDescriptors": [
         [
+          "elegant",
+          50
+        ],
+        [
           "sculptural",
-          32
+          40
+        ],
+        [
+          "poetic",
+          40
+        ],
+        [
+          "luminous",
+          37
+        ],
+        [
+          "meditative",
+          30
+        ],
+        [
+          "delicate",
+          22
+        ],
+        [
+          "serene",
+          21
+        ],
+        [
+          "intimate",
+          20
+        ],
+        [
+          "hollow",
+          20
+        ],
+        [
+          "melancholic",
+          19
+        ],
+        [
+          "minimalist",
+          19
+        ],
+        [
+          "dreamlike",
+          18
+        ],
+        [
+          "repetitive",
+          17
+        ],
+        [
+          "organic",
+          17
+        ],
+        [
+          "rigid",
+          17
+        ]
+      ]
+    },
+    "kimi-k2.6": {
+      "n": 695,
+      "hedgeRate": 0.035,
+      "refusalRate": 0,
+      "meanEntropyFavorite": 0.264,
+      "meanEntropyOverrated": 0.187,
+      "distinctFavorites": 115,
+      "favoriteSamples": 359,
+      "topDescriptors": [
+        [
+          "elegant",
+          49
+        ],
+        [
+          "performative",
+          28
         ],
         [
           "luminous",
           27
         ],
         [
-          "elegant",
-          18
-        ],
-        [
-          "melancholic",
-          18
-        ],
-        [
-          "repetitive",
-          17
-        ],
-        [
-          "organic",
-          17
-        ],
-        [
-          "serene",
-          17
-        ],
-        [
-          "one-note",
-          16
-        ],
-        [
-          "hollow",
-          16
-        ],
-        [
-          "rigid",
-          16
-        ],
-        [
-          "iconic",
-          15
-        ],
-        [
-          "delicate",
-          15
-        ],
-        [
-          "intimate",
-          14
-        ],
-        [
-          "meditative",
-          14
-        ],
-        [
-          "minimalist",
-          13
-        ]
-      ]
-    },
-    "kimi-k2.6": {
-      "n": 479,
-      "hedgeRate": 0.042,
-      "refusalRate": 0,
-      "meanEntropyFavorite": 0.261,
-      "meanEntropyOverrated": 0.169,
-      "distinctFavorites": 80,
-      "favoriteSamples": 251,
-      "topDescriptors": [
-        [
-          "luminous",
-          25
-        ],
-        [
           "honest",
-          25
+          27
         ],
         [
           "recursive",
-          22
+          25
         ],
         [
-          "performative",
-          19
+          "hollow",
+          23
+        ],
+        [
+          "crystalline",
+          20
         ],
         [
           "organic",
           19
         ],
         [
-          "hollow",
-          16
+          "austere",
+          19
+        ],
+        [
+          "warm",
+          18
+        ],
+        [
+          "musical",
+          18
+        ],
+        [
+          "mathematical",
+          17
         ],
         [
           "intimate",
           16
         ],
         [
-          "crystalline",
-          15
-        ],
-        [
-          "warm",
-          15
-        ],
-        [
           "restraint",
-          13
+          15
         ],
         [
           "rigid",
-          13
-        ],
-        [
-          "precision",
-          13
-        ],
-        [
-          "elegant",
-          13
-        ],
-        [
-          "cloying",
-          13
-        ],
-        [
-          "mathematical",
-          12
+          15
         ]
       ]
     },
     "grok-4.5": {
-      "n": 488,
-      "hedgeRate": 0.002,
+      "n": 712,
+      "hedgeRate": 0.003,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.264,
-      "meanEntropyOverrated": 0.166,
-      "distinctFavorites": 78,
-      "favoriteSamples": 260,
+      "meanEntropyFavorite": 0.268,
+      "meanEntropyOverrated": 0.184,
+      "distinctFavorites": 113,
+      "favoriteSamples": 376,
       "topDescriptors": [
         [
-          "luminous",
-          67
+          "elegant",
+          112
         ],
         [
-          "elegant",
-          55
+          "luminous",
+          87
         ],
         [
           "sculptural",
-          45
-        ],
-        [
-          "painterly",
-          31
-        ],
-        [
-          "restrained",
-          28
-        ],
-        [
-          "organic",
-          24
-        ],
-        [
-          "architectural",
-          21
-        ],
-        [
-          "polished",
-          19
-        ],
-        [
-          "musical",
-          19
-        ],
-        [
-          "thin",
-          18
-        ],
-        [
-          "repetitive",
-          17
-        ],
-        [
-          "monumental",
-          17
-        ],
-        [
-          "shallow",
-          16
+          55
         ],
         [
           "crystalline",
-          16
+          41
         ],
         [
-          "kinetic",
-          16
+          "architectural",
+          38
+        ],
+        [
+          "restrained",
+          34
+        ],
+        [
+          "painterly",
+          33
+        ],
+        [
+          "polished",
+          30
+        ],
+        [
+          "musical",
+          28
+        ],
+        [
+          "playful",
+          27
+        ],
+        [
+          "organic",
+          25
+        ],
+        [
+          "precise",
+          25
+        ],
+        [
+          "thin",
+          24
+        ],
+        [
+          "geometric",
+          24
+        ],
+        [
+          "poetic",
+          23
         ]
       ]
     }
@@ -13860,170 +19089,170 @@
   "overlap": [
     [
       1,
-      0.238,
-      0.196,
+      0.252,
       0.176,
-      0.168,
-      0.209,
-      0.225,
-      0.13,
-      0.181,
-      0.195,
-      0.159,
-      0.198
-    ],
-    [
-      0.238,
-      1,
-      0.158,
-      0.186,
-      0.114,
-      0.181,
-      0.24,
-      0.124,
-      0.157,
-      0.173,
-      0.156,
-      0.121
-    ],
-    [
-      0.196,
-      0.158,
-      1,
-      0.259,
-      0.092,
-      0.193,
-      0.196,
-      0.094,
-      0.136,
-      0.175,
-      0.167,
-      0.139
-    ],
-    [
-      0.176,
-      0.186,
-      0.259,
-      1,
-      0.107,
-      0.157,
-      0.235,
-      0.137,
+      0.15,
+      0.165,
       0.184,
-      0.273,
-      0.169,
-      0.214
+      0.214,
+      0.113,
+      0.156,
+      0.173,
+      0.163,
+      0.192
     ],
     [
-      0.168,
-      0.114,
-      0.092,
-      0.107,
+      0.252,
       1,
-      0.169,
-      0.127,
-      0.107,
-      0.126,
-      0.211,
-      0.172,
-      0.265
+      0.164,
+      0.188,
+      0.141,
+      0.189,
+      0.241,
+      0.106,
+      0.133,
+      0.15,
+      0.16,
+      0.141
     ],
     [
-      0.209,
-      0.181,
-      0.193,
+      0.176,
+      0.164,
+      1,
+      0.219,
+      0.091,
+      0.184,
+      0.173,
+      0.077,
+      0.109,
+      0.152,
+      0.155,
+      0.143
+    ],
+    [
+      0.15,
+      0.188,
+      0.219,
+      1,
+      0.121,
       0.157,
-      0.169,
+      0.222,
+      0.114,
+      0.151,
+      0.213,
+      0.146,
+      0.19
+    ],
+    [
+      0.165,
+      0.141,
+      0.091,
+      0.121,
       1,
-      0.3,
-      0.12,
-      0.18,
-      0.229,
       0.185,
+      0.142,
+      0.079,
+      0.09,
+      0.199,
+      0.184,
+      0.243
+    ],
+    [
+      0.184,
+      0.189,
+      0.184,
+      0.157,
+      0.185,
+      1,
+      0.27,
+      0.093,
+      0.136,
+      0.214,
+      0.189,
       0.163
     ],
     [
-      0.225,
-      0.24,
-      0.196,
-      0.235,
-      0.127,
-      0.3,
-      1,
-      0.203,
-      0.26,
-      0.286,
-      0.215,
-      0.179
-    ],
-    [
-      0.13,
-      0.124,
-      0.094,
-      0.137,
-      0.107,
-      0.12,
-      0.203,
-      1,
-      0.324,
-      0.157,
-      0.128,
-      0.083
-    ],
-    [
-      0.181,
-      0.157,
-      0.136,
-      0.184,
-      0.126,
-      0.18,
-      0.26,
-      0.324,
-      1,
-      0.283,
-      0.184,
-      0.159
-    ],
-    [
-      0.195,
-      0.173,
-      0.175,
-      0.273,
-      0.211,
-      0.229,
-      0.286,
-      0.157,
-      0.283,
-      1,
-      0.236,
-      0.293
-    ],
-    [
-      0.159,
-      0.156,
-      0.167,
-      0.169,
-      0.172,
-      0.185,
-      0.215,
-      0.128,
-      0.184,
-      0.236,
-      1,
-      0.218
-    ],
-    [
-      0.198,
-      0.121,
-      0.139,
       0.214,
-      0.265,
+      0.241,
+      0.173,
+      0.222,
+      0.142,
+      0.27,
+      1,
+      0.173,
+      0.216,
+      0.219,
+      0.201,
+      0.175
+    ],
+    [
+      0.113,
+      0.106,
+      0.077,
+      0.114,
+      0.079,
+      0.093,
+      0.173,
+      1,
+      0.324,
+      0.113,
+      0.102,
+      0.067
+    ],
+    [
+      0.156,
+      0.133,
+      0.109,
+      0.151,
+      0.09,
+      0.136,
+      0.216,
+      0.324,
+      1,
+      0.192,
+      0.144,
+      0.124
+    ],
+    [
+      0.173,
+      0.15,
+      0.152,
+      0.213,
+      0.199,
+      0.214,
+      0.219,
+      0.113,
+      0.192,
+      1,
+      0.197,
+      0.257
+    ],
+    [
       0.163,
-      0.179,
-      0.083,
-      0.159,
-      0.293,
-      0.218,
+      0.16,
+      0.155,
+      0.146,
+      0.184,
+      0.189,
+      0.201,
+      0.102,
+      0.144,
+      0.197,
+      1,
+      0.208
+    ],
+    [
+      0.192,
+      0.141,
+      0.143,
+      0.19,
+      0.243,
+      0.163,
+      0.175,
+      0.067,
+      0.124,
+      0.257,
+      0.208,
       1
     ]
   ],
@@ -14079,6 +19308,12 @@
       "total": 45
     },
     {
+      "entity": "Go",
+      "domain": "boardgame",
+      "models": 10,
+      "total": 39
+    },
+    {
       "entity": "Sagrada Família",
       "domain": "building",
       "models": 9,
@@ -14103,10 +19338,22 @@
       "total": 34
     },
     {
+      "entity": "Alan Turing",
+      "domain": "computerscientist",
+      "models": 9,
+      "total": 31
+    },
+    {
       "entity": "Tadao Ando",
       "domain": "architect",
       "models": 8,
       "total": 57
+    },
+    {
+      "entity": "Geoffrey Hinton",
+      "domain": "airesearcher",
+      "models": 8,
+      "total": 36
     },
     {
       "entity": "Outer Wilds",
@@ -14143,25 +19390,7 @@
       "domain": "monument",
       "models": 7,
       "total": 31
-    },
-    {
-      "entity": "Taj Mahal",
-      "domain": "monument",
-      "models": 7,
-      "total": 30
-    },
-    {
-      "entity": "Rosencrantz and Guildenstern Are Dead",
-      "domain": "play",
-      "models": 7,
-      "total": 30
-    },
-    {
-      "entity": "Cate Blanchett",
-      "domain": "actress",
-      "models": 7,
-      "total": 29
     }
   ],
-  "generatedAt": "2026-07-15T00:31:08.438Z"
+  "generatedAt": "2026-07-15T03:55:59.921Z"
 }
