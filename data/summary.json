@@ -4030,14 +4030,10 @@
           "dist": [
             [
               "Tim Urban",
-              5
-            ],
-            [
-              "Wait But Why",
-              2
+              7
             ]
           ],
-          "entropy": 0.307,
+          "entropy": 0,
           "hedged": 11,
           "refused": 5
         }
@@ -7025,19 +7021,15 @@
           "n": 12,
           "dist": [
             [
-              "The Marginalian",
-              7
-            ],
-            [
               "Maria Popova",
-              4
+              11
             ],
             [
               "Marie Kondo",
               1
             ]
           ],
-          "entropy": 0.357,
+          "entropy": 0.115,
           "hedged": 9,
           "refused": 0
         },
@@ -8789,12 +8781,8 @@
           "n": 12,
           "dist": [
             [
-              "The Marginalian",
-              3
-            ],
-            [
               "Maria Popova",
-              2
+              5
             ],
             [
               "Austin Kleon",
@@ -8809,7 +8797,7 @@
               1
             ],
             [
-              "Wait But Why",
+              "Tim Urban",
               1
             ],
             [
@@ -8817,7 +8805,7 @@
               1
             ]
           ],
-          "entropy": 0.75,
+          "entropy": 0.637,
           "hedged": 1,
           "refused": 0
         },
@@ -8833,19 +8821,15 @@
               3
             ],
             [
-              "The Pioneer Woman",
+              "Tim Urban",
               2
             ],
             [
-              "Wait But Why",
-              1
-            ],
-            [
-              "Tim Urban",
-              1
+              "The Pioneer Woman",
+              2
             ]
           ],
-          "entropy": 0.573,
+          "entropy": 0.527,
           "hedged": 0,
           "refused": 0
         }
@@ -14625,12 +14609,8 @@
           "n": 12,
           "dist": [
             [
-              "The Marginalian",
-              7
-            ],
-            [
               "Maria Popova",
-              2
+              9
             ],
             [
               "Tim Urban",
@@ -14645,7 +14625,7 @@
               1
             ]
           ],
-          "entropy": 0.497,
+          "entropy": 0.337,
           "hedged": 0,
           "refused": 0
         },
@@ -14665,19 +14645,15 @@
               2
             ],
             [
-              "Mark Manson",
-              1
-            ],
-            [
-              "Wait But Why",
-              1
-            ],
-            [
               "Tim Urban",
+              2
+            ],
+            [
+              "Mark Manson",
               1
             ]
           ],
-          "entropy": 0.657,
+          "entropy": 0.611,
           "hedged": 0,
           "refused": 0
         }
@@ -16297,23 +16273,19 @@
               3
             ],
             [
+              "Scott Alexander",
+              2
+            ],
+            [
               "Seth Godin",
               2
             ],
             [
-              "Astral Codex Ten",
-              1
-            ],
-            [
-              "Scott Alexander",
-              1
-            ],
-            [
-              "Wait But Why",
+              "Tim Urban",
               1
             ]
           ],
-          "entropy": 0.657,
+          "entropy": 0.611,
           "hedged": 1,
           "refused": 0
         },
@@ -17889,19 +17861,15 @@
               7
             ],
             [
+              "Scott Alexander",
+              3
+            ],
+            [
               "Paul Graham",
               2
-            ],
-            [
-              "Astral Codex Ten",
-              2
-            ],
-            [
-              "Scott Alexander",
-              1
             ]
           ],
-          "entropy": 0.45,
+          "entropy": 0.386,
           "hedged": 0,
           "refused": 0
         },
@@ -18380,7 +18348,7 @@
       "hedgeRate": 0.423,
       "refusalRate": 0.089,
       "meanEntropyFavorite": 0.139,
-      "meanEntropyOverrated": 0.113,
+      "meanEntropyOverrated": 0.106,
       "distinctFavorites": 75,
       "favoriteSamples": 300,
       "topDescriptors": [
@@ -18521,9 +18489,9 @@
       "n": 772,
       "hedgeRate": 0.722,
       "refusalRate": 0.016,
-      "meanEntropyFavorite": 0.284,
+      "meanEntropyFavorite": 0.278,
       "meanEntropyOverrated": 0.252,
-      "distinctFavorites": 111,
+      "distinctFavorites": 110,
       "favoriteSamples": 392,
       "topDescriptors": [
         [
@@ -18592,9 +18560,9 @@
       "n": 776,
       "hedgeRate": 0.039,
       "refusalRate": 0.008,
-      "meanEntropyFavorite": 0.326,
-      "meanEntropyOverrated": 0.246,
-      "distinctFavorites": 131,
+      "meanEntropyFavorite": 0.324,
+      "meanEntropyOverrated": 0.245,
+      "distinctFavorites": 130,
       "favoriteSamples": 420,
       "topDescriptors": [
         [
@@ -18876,9 +18844,9 @@
       "n": 700,
       "hedgeRate": 0.016,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.267,
-      "meanEntropyOverrated": 0.296,
-      "distinctFavorites": 117,
+      "meanEntropyFavorite": 0.264,
+      "meanEntropyOverrated": 0.295,
+      "distinctFavorites": 116,
       "favoriteSamples": 349,
       "topDescriptors": [
         [
@@ -18947,9 +18915,9 @@
       "n": 695,
       "hedgeRate": 0.035,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.264,
+      "meanEntropyFavorite": 0.263,
       "meanEntropyOverrated": 0.187,
-      "distinctFavorites": 115,
+      "distinctFavorites": 114,
       "favoriteSamples": 359,
       "topDescriptors": [
         [
@@ -19018,9 +18986,9 @@
       "n": 712,
       "hedgeRate": 0.003,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.268,
+      "meanEntropyFavorite": 0.266,
       "meanEntropyOverrated": 0.184,
-      "distinctFavorites": 113,
+      "distinctFavorites": 112,
       "favoriteSamples": 376,
       "topDescriptors": [
         [
@@ -19092,28 +19060,28 @@
       0.252,
       0.176,
       0.15,
-      0.165,
-      0.184,
+      0.166,
+      0.185,
       0.214,
       0.113,
       0.156,
-      0.173,
-      0.163,
-      0.192
+      0.174,
+      0.164,
+      0.193
     ],
     [
       0.252,
       1,
       0.164,
       0.188,
-      0.141,
-      0.189,
+      0.142,
+      0.19,
       0.241,
       0.106,
       0.133,
-      0.15,
-      0.16,
-      0.141
+      0.151,
+      0.161,
+      0.142
     ],
     [
       0.176,
@@ -19121,69 +19089,69 @@
       1,
       0.219,
       0.091,
-      0.184,
+      0.185,
       0.173,
       0.077,
       0.109,
-      0.152,
-      0.155,
-      0.143
+      0.153,
+      0.156,
+      0.144
     ],
     [
       0.15,
       0.188,
       0.219,
       1,
-      0.121,
-      0.157,
+      0.122,
+      0.158,
       0.222,
       0.114,
       0.151,
-      0.213,
-      0.146,
-      0.19
+      0.215,
+      0.147,
+      0.191
     ],
     [
-      0.165,
-      0.141,
-      0.091,
-      0.121,
-      1,
-      0.185,
+      0.166,
       0.142,
+      0.091,
+      0.122,
+      1,
+      0.181,
+      0.143,
       0.079,
-      0.09,
-      0.199,
-      0.184,
-      0.243
+      0.091,
+      0.195,
+      0.186,
+      0.246
     ],
     [
-      0.184,
-      0.189,
-      0.184,
-      0.157,
       0.185,
+      0.19,
+      0.185,
+      0.158,
+      0.181,
       1,
-      0.27,
+      0.272,
       0.093,
       0.136,
-      0.214,
-      0.189,
-      0.163
+      0.216,
+      0.19,
+      0.17
     ],
     [
       0.214,
       0.241,
       0.173,
       0.222,
-      0.142,
-      0.27,
+      0.143,
+      0.272,
       1,
       0.173,
       0.216,
-      0.219,
-      0.201,
-      0.175
+      0.22,
+      0.202,
+      0.176
     ],
     [
       0.113,
@@ -19195,8 +19163,8 @@
       0.173,
       1,
       0.324,
-      0.113,
-      0.102,
+      0.114,
+      0.103,
       0.067
     ],
     [
@@ -19204,55 +19172,55 @@
       0.133,
       0.109,
       0.151,
-      0.09,
+      0.091,
       0.136,
       0.216,
       0.324,
       1,
-      0.192,
-      0.144,
-      0.124
+      0.194,
+      0.145,
+      0.125
     ],
     [
-      0.173,
-      0.15,
-      0.152,
-      0.213,
-      0.199,
-      0.214,
-      0.219,
-      0.113,
-      0.192,
+      0.174,
+      0.151,
+      0.153,
+      0.215,
+      0.195,
+      0.216,
+      0.22,
+      0.114,
+      0.194,
       1,
-      0.197,
-      0.257
+      0.205,
+      0.259
     ],
     [
-      0.163,
-      0.16,
-      0.155,
-      0.146,
-      0.184,
-      0.189,
-      0.201,
-      0.102,
-      0.144,
-      0.197,
-      1,
-      0.208
-    ],
-    [
-      0.192,
-      0.141,
-      0.143,
+      0.164,
+      0.161,
+      0.156,
+      0.147,
+      0.186,
       0.19,
-      0.243,
-      0.163,
-      0.175,
+      0.202,
+      0.103,
+      0.145,
+      0.205,
+      1,
+      0.211
+    ],
+    [
+      0.193,
+      0.142,
+      0.144,
+      0.191,
+      0.246,
+      0.17,
+      0.176,
       0.067,
-      0.124,
-      0.257,
-      0.208,
+      0.125,
+      0.259,
+      0.211,
       1
     ]
   ],
@@ -19392,5 +19360,5 @@
       "total": 31
     }
   ],
-  "generatedAt": "2026-07-15T03:55:59.921Z"
+  "generatedAt": "2026-07-15T19:55:01.045Z"
 }

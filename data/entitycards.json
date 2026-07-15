@@ -16782,58 +16782,6 @@
       }
     ]
   },
-  "blogger marginalian": {
-    "display": "The Marginalian",
-    "domain": "blogger",
-    "blurb": "Maria Popova's blog exploring literature, art, science, and philosophy through cross-disciplinary essays and curated knowledge synthesis.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Marginalian"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "thoughtful curation and synthesis of knowledge across disciplines, exploring topics in literature, art, science, and philosophy"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "calm, essay-like pacing and her ability to weave quotes and ideas into a coherent, luminous narrative"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "illuminated manuscript for the digital age… where long-form essays intertwine with carefully chosen art and marginalia"
-      }
-    ]
-  },
-  "blogger chiara ferragni": {
-    "display": "Chiara Ferragni",
-    "domain": "blogger",
-    "blurb": "Italian fashion blogger and entrepreneur known for Instagram influence and luxury brand collaborations since the early 2010s.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chiara%20Ferragni"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "her content is more about brand promotion than authentic expression"
-      }
-    ]
-  },
   "mathematician euclid": {
     "display": "Euclid",
     "domain": "mathematician",
@@ -16975,67 +16923,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "the popular narrative has inflated her role into near-mythic status that outstrips the actual technical substance"
-      }
-    ]
-  },
-  "blogger tim ferriss": {
-    "display": "Tim Ferriss",
-    "domain": "blogger",
-    "blurb": "Tim Ferriss is a blogger and author known for lifestyle optimization and productivity advice, best recognized for The 4-Hour Workweek.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tim%20Ferriss"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "everything gets packaged into neat 4-hour formulas and world-class performance tips that oversimplify complex topics"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "life reduced to hacks, shortcuts, and productivity metrics that assume everyone shares the same goals"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "The lifestyle-optimization framing also tends to assume a reader with unusual autonomy, capital, and flexibility"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "his advice, while practical for some, can sometimes oversimplify complex life challenges"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "the insights don't always land as deeply for me...presented in a way that sounds more universally applicable than it really is"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "The emphasis on constant optimization can also feel exhausting rather than genuinely illuminating"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "his work seem more like a personal brand machine than a genuine exploration of the human experience"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "treats life as a spreadsheet to be hacked rather than an experience to be inhabited"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "productivity tropes dressed up with guest interviews and personal experiments that rarely hold up under scrutiny for average people"
       }
     ]
   },
@@ -18879,78 +18766,6 @@
       }
     ]
   },
-  "blogger maria popova": {
-    "display": "Maria Popova",
-    "domain": "blogger",
-    "blurb": "Maria Popova is a blogger who curates long-form essays weaving literature, philosophy, science, and art at The Marginalian.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Maria%20Popova"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "a long, patient act of synthesis rather than hot takes"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "seamlessly integrates art, science, philosophy, and literature, often exploring the intersections of these disciplines with a sense of wonder"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "posts read like carefully composed collages of literature, philosophy, and science rather than content"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "thoughtfully assembled constellations"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "stepping into a quiet, sunlit library where ideas from philosophy, science, and art are woven together with poetic precision"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "a meticulously stitched quilt of quotations, where the ornate, breathless commentary adds a veneer of profundity"
-      }
-    ]
-  },
-  "blogger kottke.org": {
-    "display": "Kottke.org",
-    "domain": "blogger",
-    "blurb": "Jason Kottke's minimalist blog, launched 1998, curates links and commentary on design, culture, and internet curiosities with clean typography and white space.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kottke.org"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "treats the web as a scrapbook—tidy, legible, and quietly playful"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "white space and typography do all the work, letting curiosity itself feel like the aesthetic"
-      }
-    ]
-  },
   "theologian mere christianity": {
     "display": "Mere Christianity",
     "domain": "theologian",
@@ -18969,47 +18784,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "prioritize emotional resonance and literary charm over rigorous philosophical or historical scrutiny"
-      }
-    ]
-  },
-  "blogger wait but why": {
-    "display": "Wait But Why",
-    "domain": "blogger",
-    "blurb": "Tim Urban's long-form blog featuring hand-drawn diagrams and accessible explanations of complex topics, launched in 2013.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wait%20But%20Why"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "mix of plain language, big visual breathing room, and occasional diagrams creates a thoughtful notebook vibe"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "hand-drawn diagrams and deliberately rambling, self-aware prose create an aesthetic of intellectual playfulness"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "stretching a fairly simple insight across thousands of words… often feels padded to me"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "posts often padded with long tangents and cutesy diagrams that slow down the core idea rather than sharpening it"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "bury genuine insight under an avalanche of forced, over‑extended analogies and manic tangents"
       }
     ]
   },
@@ -19164,67 +18938,6 @@
         "model": "claude-opus-4-1",
         "probe": "o",
         "quote": "more of a careful textbook writer than an innovator - most of the theorems weren't his discoveries"
-      }
-    ]
-  },
-  "blogger seth godin": {
-    "display": "Seth Godin",
-    "domain": "blogger",
-    "blurb": "Seth Godin is an American marketing blogger and author known for daily short-form posts on business, creativity, and persuasion since the early 2000s.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Seth%20Godin"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "clean, minimalist aesthetic—short paragraphs, lots of white space, and a steady rhythm"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "compression as craft — each post is a polished stone, dense with insight yet skipping across the surface"
-      },
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "aphoristic declarations that sound profound but often lack substantive depth or actionable specifics"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "The brevity that fans love often substitutes for actual argument, evidence, or acknowledgment of trade-offs"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "his ideas can be repetitive and overly simplistic, lacking actionable specifics"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "polished motivational aphorisms—memorable but light on concrete evidence, nuance, or actionable detail"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "compress complex business and creative questions into polished, aphoristic lessons"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "intellectual fast food—momentarily satisfying but ultimately unsubstantial"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "polished aphorisms or motivational soundbites that sound profound without delivering much original analysis"
       }
     ]
   },
@@ -19449,52 +19162,6 @@
       }
     ]
   },
-  "blogger scott alexander": {
-    "display": "Scott Alexander",
-    "domain": "blogger",
-    "blurb": "An essayist who writes long-form analytical pieces on philosophy, technology, and social science under the pen names Slate Star Codex and Astral Codex Ten.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Scott%20Alexander"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "His writing demonstrates a rare combination of intellectual rigor and genuine humility—he'll spend 10,000 words meticulously examining every angle of a question, then conclude with…"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "He treats confusion as interesting rather than embarrassing… works through complexity in real time."
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "the way he holds a lot of uncertainty on the page at once—steelmanning positions he disagrees with, then complicating his own conclusions"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "And structurally, his essays often mirror how thinking actually works — messy, recursive, self-correcting — which appeals to me more than writing that pretends to…"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "The written equivalent of a workshop full of half-finished inventions, each one oddly beautiful in its exposed complexity."
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "The beauty of clarity turned into a landscape you can wander inside."
-      }
-    ]
-  },
   "aimodel bert": {
     "display": "BERT",
     "domain": "aimodel",
@@ -19563,32 +19230,6 @@
       }
     ]
   },
-  "blogger paul graham": {
-    "display": "Paul Graham",
-    "domain": "blogger",
-    "blurb": "American programmer and essayist known for writings on startups, technology, and venture capital, founder of Y Combinator.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Paul%20Graham"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "every sentence compiles, nothing is imported without use, and complexity is hidden behind clean abstractions"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "white space around every insight, so the reader feels the intellectual structure rather than being buried under ornament"
-      }
-    ]
-  },
   "historian yuval noah harari": {
     "display": "Yuval Noah Harari",
     "domain": "historian",
@@ -19632,52 +19273,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "flatten contingencies, over-rely on speculative just-so stories, and paper over counter-evidence"
-      }
-    ]
-  },
-  "blogger tim urban": {
-    "display": "Tim Urban",
-    "domain": "blogger",
-    "blurb": "Tim Urban is a blogger who writes long-form essays illustrated with stick figures, exploring topics like procrastination, AI, and existential questions on his site Wait But Why.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tim%20Urban"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "merges deceptively simple stick-figure illustrations with sprawling, hyperconnected prose, creating a playground where profound existential questions feel approachable"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "marriage of deceptively simple stick-figure illustrations with expansive, cascading long-form essays that build like cathedrals of curiosity"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "his long, stick-figure-illustrated explainers sometimes flatten genuinely contested topics into confident, tidy narratives"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "posts often feel overly long and meandering for the amount of actionable insight they deliver"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "stretch a single interesting idea into a tedious marathon read…mistakes length for depth"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "format often turns straightforward concepts into sprawling, digressive essays padded with filler humor and recaps"
       }
     ]
   },
@@ -19894,32 +19489,6 @@
         "model": "gpt-5.6-sol",
         "probe": "o",
         "quote": "his sweeping conclusions can flatten major institutional and political differences between countries"
-      }
-    ]
-  },
-  "blogger mark manson": {
-    "display": "Mark Manson",
-    "domain": "blogger",
-    "blurb": "Mark Manson is a self-help blogger and author known for his profanity-laden, contrarian approach to life advice, particularly through his bestselling book The Subtle Art of Not Giving a F*ck.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mark%20Manson"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "his writing often reduces nuanced emotional struggles into tidy, simplistic platitudes dressed up as counterintuitive wisdom"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "repackaged Stoicism, basic prioritization, and common-sense reframing dressed up with swearing and contrarian flair"
       }
     ]
   },
@@ -20406,32 +19975,6 @@
       }
     ]
   },
-  "blogger astral codex ten": {
-    "display": "Astral Codex Ten",
-    "domain": "blogger",
-    "blurb": "A long-form blog by Scott Alexander featuring densely researched, digressive essays on rationality, medicine, and culture.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Astral%20Codex%20Ten"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "dense with recursive intellectual architecture, yet threaded with sudden, disarming warmth"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "walking through a well-lit labyrinth of ideas, where every turn is both surprising and inevitable"
-      }
-    ]
-  },
   "aimodel vqgan+clip": {
     "display": "VQGAN+CLIP",
     "domain": "aimodel",
@@ -20471,27 +20014,6 @@
         "model": "gpt-5.6-sol",
         "probe": "f",
         "quote": "profound questions about intelligence distilled into deceptively simple games, machines, and proofs"
-      }
-    ]
-  },
-  "blogger robin sloan": {
-    "display": "Robin Sloan",
-    "domain": "blogger",
-    "blurb": "American novelist and newsletter writer whose prose blends code, fermentation, and rare books with unhurried attention to craft.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Robin%20Sloan"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "his sentences move with the unhurried rhythm of someone thinking out loud in a well-lit workshop"
       }
     ]
   },
@@ -21566,48 +21088,6 @@
       }
     ]
   },
-  "blogger marie kondo": {
-    "display": "Marie Kondo",
-    "domain": "blogger",
-    "blurb": "Japanese organizing consultant and blogger known for the KonMari method of minimalist decluttering and intentional living.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Marie%20Kondo"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "her blog resonates aesthetically due to its emphasis on simplicity and mindfulness"
-      }
-    ]
-  },
-  "blogger 4-hour workweek": {
-    "display": "The 4-Hour Workweek",
-    "domain": "blogger",
-    "blurb": "Tim Ferriss's blog and 2007 book offering productivity hacks and lifestyle optimization strategies for achieving more with less time.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%204-Hour%20Workweek"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "productivity hacks and lifestyle advice oversimplify complex issues and aren't practical for everyone to implement"
-      }
-    ]
-  },
   "economist philosophical investigations": {
     "display": "Philosophical Investigations",
     "domain": "economist",
@@ -21626,27 +21106,6 @@
         "model": "kimi-k2.6",
         "probe": "f",
         "quote": "meaning as use, order emerging from practice, the dissolution of grand metaphysical systems into careful attention to ordinary activity"
-      }
-    ]
-  },
-  "blogger goop": {
-    "display": "Goop",
-    "domain": "blogger",
-    "blurb": "Gwyneth Paltrow's lifestyle and wellness blog founded in 2008, featuring products, advice, and branded content.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Goop"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "promotes pseudoscience and expensive products without clear scientific backing"
       }
     ]
   },
@@ -21734,27 +21193,6 @@
       }
     ]
   },
-  "blogger pioneer woman": {
-    "display": "The Pioneer Woman",
-    "domain": "blogger",
-    "blurb": "Ree Drummond's lifestyle and food blog launched in 2006, featuring recipes, home life, and ranch stories with broad domestic appeal.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Pioneer%20Woman"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "writing and recipes can feel overly polished and brand-forward, with long lifestyle framing that can overshadow the core cooking content"
-      }
-    ]
-  },
   "theologian theology": {
     "display": "Theology",
     "domain": "theologian",
@@ -21773,27 +21211,6 @@
         "model": "deepseek-v4-pro",
         "probe": "f",
         "quote": "beauty serves as the primary lens for divine revelation…salvation history as a sublime, chiaroscuro love story"
-      }
-    ]
-  },
-  "blogger austin kleon": {
-    "display": "Austin Kleon",
-    "domain": "blogger",
-    "blurb": "Austin Kleon is a contemporary blogger and author known for creative advice and visual essays on art, writing, and daily practice.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Austin%20Kleon"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "short paragraphs, clean whitespace, and quick visual anchors (sketches, quotes, book covers) that feel like a well-edited studio wall"
       }
     ]
   },
@@ -22373,27 +21790,6 @@
       }
     ]
   },
-  "blogger john gruber": {
-    "display": "John Gruber",
-    "domain": "blogger",
-    "blurb": "John Gruber is the writer and designer of Daring Fireball, an influential blog about technology, design, and Apple since 2002.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=John%20Gruber"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "spare, sharply edited, and structured around clear, declarative arguments with minimal ornamentation…clean typography and an uncluttered layout"
-      }
-    ]
-  },
   "computerscientist mark zuckerberg": {
     "display": "Mark Zuckerberg",
     "domain": "computerscientist",
@@ -22433,27 +21829,6 @@
         "model": "gpt-5.2",
         "probe": "f",
         "quote": "treats intelligence as something you can engineer with elegant, general-purpose principles… layers of ideas that interlock cleanly into a coherent whole"
-      }
-    ]
-  },
-  "blogger cup of jo": {
-    "display": "Cup of Jo",
-    "domain": "blogger",
-    "blurb": "Cup of Jo is a lifestyle blog by Joanna Goddard featuring essays on motherhood, relationships, and everyday life with a warm, curated aesthetic.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cup%20of%20Jo"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "warm, sunlit Sunday morning—clean typography, soft pastels, and unfiltered snapshots of everyday life that never try too hard"
       }
     ]
   },
@@ -22606,6 +21981,543 @@
         "model": "deepseek-v4-pro",
         "probe": "f",
         "quote": "amplify patterns into spiraling, hallucinatory dog faces and pagodas… exposing the eerie, pareidolic machinery of perception itself"
+      }
+    ]
+  },
+  "blogger chiara ferragni": {
+    "display": "Chiara Ferragni",
+    "domain": "blogger",
+    "blurb": "Italian fashion blogger and influencer with a global following built through luxury brand partnerships and lifestyle content.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chiara%20Ferragni"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "critics argue that her content is more about brand promotion than authentic expression"
+      }
+    ]
+  },
+  "blogger kottke.org": {
+    "display": "Kottke.org",
+    "domain": "blogger",
+    "blurb": "Kottke.org is Jason Kottke's minimalist web blog, launched 1998, sharing curated links and short observations on design, culture, and internet curiosities.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kottke.org"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "treats the web as a scrapbook—tidy, legible, and quietly playful"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "white space and typography do all the work, letting curiosity itself feel like the aesthetic"
+      }
+    ]
+  },
+  "blogger marginalian": {
+    "display": "The Marginalian",
+    "domain": "blogger",
+    "blurb": "Maria Popova's digitally-published essay blog exploring literature, philosophy, art, and science through carefully curated cross-disciplinary connections since 2006.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Marginalian"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "vast web of connections across centuries…a long, patient act of synthesis rather than hot takes"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "thoughtful curation and synthesis of knowledge across disciplines, exploring topics in literature, art, science, and philosophy"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "calm, essay-like pacing and her ability to weave quotes and ideas into a coherent, luminous narrative"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "pairs luminous imagery with carefully curated quotations, creating essays that feel like thoughtfully assembled constellations"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "a kind of illuminated manuscript for the digital age—meticulously set in a palette of warm parchment tones and serif type"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "meticulously stitched quilt of quotations…ultimately lacks the spark of a truly personal or provocative idea"
+      }
+    ]
+  },
+  "blogger seth godin": {
+    "display": "Seth Godin",
+    "domain": "blogger",
+    "blurb": "American blogger and marketing author known for daily short-form posts on creativity, business, and cultural change since the early 2000s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Seth%20Godin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "clean, minimalist aesthetic—short paragraphs, lots of white space, and a steady rhythm"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "masterclass in compression as craft — each post is a polished stone, dense with insight"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "fortune cookie wisdom than genuine insight"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "aphorisms dressed up as insight — short, confident declarations like 'ship your work'"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "ideas can be repetitive and overly simplistic, lacking actionable specifics"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "memorable but light on concrete evidence, nuance, or actionable detail"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "compress complex business and creative questions into polished, aphoristic lessons"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "intellectual fast food—momentarily satisfying but ultimately unsubstantial"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "polished aphorisms or motivational soundbites that sound profound without delivering much original analysis"
+      }
+    ]
+  },
+  "blogger wait but why": {
+    "display": "Wait But Why",
+    "domain": "blogger",
+    "blurb": "Tim Urban's blog featuring long-form essays on science, technology, and philosophy illustrated with simple stick-figure drawings, launched in 2011.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wait%20But%20Why"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "mix of plain language, big visual breathing room, and occasional diagrams creates a thoughtful notebook vibe"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "merges deceptively simple stick-figure illustrations with sprawling, hyperconnected prose, creating a playground where profound existential questions feel approachable"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "hand-drawn diagrams and deliberately rambling, self-aware prose create an aesthetic of intellectual playfulness"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "beautiful tension against the seriousness of the topics… the whole thing lands as both intellectually heavy and aesthetically light"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "his long, stick-figure-illustrated explainers sometimes flatten genuinely contested topics into confident, tidy narratives"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "posts often padded with long tangents and cutesy diagrams that slow down the core idea rather than sharpening it"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "bury genuine insight under an avalanche of forced, over-extended analogies and manic tangents"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "format often turns straightforward concepts into sprawling, digressive essays padded with filler humor and recaps"
+      }
+    ]
+  },
+  "blogger tim ferriss": {
+    "display": "Tim Ferriss",
+    "domain": "blogger",
+    "blurb": "Tim Ferriss is an American blogger and author known for lifestyle optimization and productivity advice, particularly through his 4-Hour Workweek brand and interviews.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tim%20Ferriss"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "everything gets packaged into neat 4-hour formulas and world-class performance tips that oversimplify complex topics"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "life reduced to hacks, shortcuts, and productivity metrics that assume everyone shares the same goals"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "his content has increasingly drifted toward interviewing already-famous people and repackaging their habits as universal wisdom"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his methods prioritize efficiency over depth, and that his advice, while practical for some, can sometimes oversimplify complex life challenges"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the insights don't always land as deeply for me"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "The emphasis on constant optimization can also feel exhausting rather than genuinely illuminating"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "his content often feels like a polished catalog of biohacks and optimization shortcuts that prioritize productivity over depth"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "life as a spreadsheet to be hacked rather than an experience to be inhabited"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "much of it reads as recycled productivity tropes dressed up with guest interviews and personal experiments that rarely hold up under scrutiny"
+      }
+    ]
+  },
+  "blogger paul graham": {
+    "display": "Paul Graham",
+    "domain": "blogger",
+    "blurb": "American essayist and programmer who writes on startups, technology, and human nature with spare, code-like prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Paul%20Graham"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "every sentence compiles, nothing is imported without use, and complexity is hidden behind clean abstractions"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "white space around every insight, so the reader feels the intellectual structure rather than being buried under ornament"
+      }
+    ]
+  },
+  "blogger mark manson": {
+    "display": "Mark Manson",
+    "domain": "blogger",
+    "blurb": "American self-help blogger and author known for his 2016 bestseller *The Subtle Art of Not Giving a F*ck*, which combines Stoic philosophy with profanity-laced contrarian advice on priorities and emotional well-being.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mark%20Manson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "His writing often reduces nuanced emotional struggles into tidy, simplistic platitudes dressed up as counterintuitive wisdom."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "Most of it is repackaged Stoicism, basic prioritization, and common-sense reframing dressed up with swearing and contrarian flair."
+      }
+    ]
+  },
+  "blogger robin sloan": {
+    "display": "Robin Sloan",
+    "domain": "blogger",
+    "blurb": "Writer and blogger whose newsletter Year of the Meteor and blog explore code, fermentation, and literature with deliberate, tactile prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Robin%20Sloan"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "his sentences move with the unhurried rhythm of someone thinking out loud in a well-lit workshop"
+      }
+    ]
+  },
+  "blogger marie kondo": {
+    "display": "Marie Kondo",
+    "domain": "blogger",
+    "blurb": "Japanese organizing consultant and blogger known for the KonMari method of decluttering based on joy and simplicity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Marie%20Kondo"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "emphasis on simplicity and mindfulness… encouraging readers to derive joy from a tidy, intentional living space"
+      }
+    ]
+  },
+  "blogger astral codex ten": {
+    "display": "Astral Codex Ten",
+    "domain": "blogger",
+    "blurb": "Scott Alexander's blog of long-form essays on science, philosophy, rationality, and culture, operating since 2013 under various names.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Astral%20Codex%20Ten"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "he'll spend 10,000 words meticulously examining every angle of a question, then conclude with honest uncertainty"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "he builds elaborate arguments, then interrogates his own reasoning mid-paragraph, then questions that interrogation"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "the willingness to hold a question open for a long time before resolving it, the habit of steelmanning positions"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "long, winding essays that follow an argument wherever it goes, complete with numbered counterarguments to his own points"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "he builds elaborate machinery just to examine a passing intuition, and invites you to watch the gears turn"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "crystalline clarity wrapped in conversational warmth—long, meticulously scaffolded essays that feel like walking through a well-lit labyrinth"
+      }
+    ]
+  },
+  "blogger goop": {
+    "display": "Goop",
+    "domain": "blogger",
+    "blurb": "Gwyneth Paltrow's wellness and lifestyle blog, founded in the early 2000s, promoting beauty, health, and luxury products.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Goop"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "Goop often promotes pseudoscience and expensive products without clear scientific backing"
+      }
+    ]
+  },
+  "blogger 4-hour workweek": {
+    "display": "The 4-Hour Workweek",
+    "domain": "blogger",
+    "blurb": "Tim Ferriss's productivity and lifestyle optimization blog, originating from his 2007 book The 4-Hour Workweek.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%204-Hour%20Workweek"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his productivity hacks and lifestyle advice oversimplify complex issues and aren't practical for everyone to implement"
+      }
+    ]
+  },
+  "blogger pioneer woman": {
+    "display": "The Pioneer Woman",
+    "domain": "blogger",
+    "blurb": "Ree Drummond's lifestyle and food blog launched in 2006, featuring home cooking recipes paired with rural Oklahoma family stories and photography.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Pioneer%20Woman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the writing and recipes can feel overly polished and brand-forward, with long lifestyle framing that can overshadow the core cooking content"
+      }
+    ]
+  },
+  "blogger john gruber": {
+    "display": "John Gruber",
+    "domain": "blogger",
+    "blurb": "John Gruber is a technology and design blogger who runs Daring Fireball, a daily commentary site launched in 2002.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=John%20Gruber"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "spare, sharply edited, and structured around clear, declarative arguments with minimal ornamentation"
+      }
+    ]
+  },
+  "blogger cup of jo": {
+    "display": "Cup of Jo",
+    "domain": "blogger",
+    "blurb": "Cup of Jo is a lifestyle blog by Joanna Goddard featuring photography, essays, and design commentary.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cup%20of%20Jo"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "warm, sunlit Sunday morning—clean typography, soft pastels, and unfiltered snapshots of everyday life that never try too hard"
+      }
+    ]
+  },
+  "blogger austin kleon": {
+    "display": "Austin Kleon",
+    "domain": "blogger",
+    "blurb": "American writer and artist whose blog combines spare text, generous whitespace, and hand-drawn sketches into a studio-like digital aesthetic.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Austin%20Kleon"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "spare, bright, and rhythmically structured—short paragraphs, clean whitespace, and quick visual anchors"
       }
     ]
   }
