@@ -496,7 +496,7 @@ const CSS = `
   --mono:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
 }
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory;scrollbar-gutter:stable}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;scroll-snap-type:y proximity}}
 body{background:var(--night);color:var(--ink);font:15.5px/1.6 var(--sans);isolation:isolate}
 ::selection{background:var(--ink);color:var(--night)}
@@ -1438,31 +1438,30 @@ function commitPastHero(){
   // The flick that committed usually still has trackpad momentum behind it;
   // with the intro collapsed and the page pinned, those residual ticks would
   // carry the index deep into the matrix — the "starts at the bottom" bug.
-  // Eating wheel/touchmove is NOT enough on its own: inertial scrolling runs on
-  // the compositor thread, so preventDefault on wheel doesn't reliably stop
-  // momentum already in flight. So we ALSO force the scroll position back to 0
-  // on any scroll that slips through. Both are bounded — they end 180ms after
-  // scrolling goes quiet, hard-capped at 1100ms — so a later deliberate scroll
-  // is never yanked (the failure mode of the old open-ended re-pin approach).
+  // Rather than let it scroll and yank it back (which fights momentum frame by
+  // frame and visibly jitters), hard-lock the scroller with overflow:hidden for
+  // the tail of the gesture: a non-scrollable root simply cannot move, so there
+  // is nothing to correct and nothing to see. pinTop() already put us at 0, and
+  // toggling overflow does not change the scroll position. We still eat
+  // wheel/touchmove to absorb the input and to time the release — 140ms after
+  // the ticks go quiet, hard-capped at 900ms, so a later deliberate scroll is
+  // untouched. (scrollbar-gutter:stable on <html> keeps hiding the scrollbar
+  // from shifting layout on classic-scrollbar platforms.)
   (function(){
-    var quiet=null,hard=null,live=true;
+    var quiet=null,hard=null,de=document.documentElement,prevOv=de.style.overflow;
+    de.style.overflow='hidden';
     function stop(){
-      live=false;
+      de.style.overflow=prevOv;
       removeEventListener('wheel',eat,true);
       removeEventListener('touchmove',eat,true);
-      removeEventListener('scroll',repin);
       clearTimeout(quiet);clearTimeout(hard);
     }
-    function arm(){clearTimeout(quiet);quiet=setTimeout(stop,180);}
+    function arm(){clearTimeout(quiet);quiet=setTimeout(stop,140);}
     function eat(e){e.preventDefault();arm();}
-    // Re-pin to the top; the scrollTo itself fires a scroll event, but scrollY
-    // is 0 by then so the guard stops it recursing or re-arming needlessly.
-    function repin(){if(live&&pageYOffset!==0){scrollTo({top:0,left:0,behavior:'instant'});arm();}}
     addEventListener('wheel',eat,{passive:false,capture:true});
     addEventListener('touchmove',eat,{passive:false,capture:true});
-    addEventListener('scroll',repin);
     arm();
-    hard=setTimeout(stop,1100);
+    hard=setTimeout(stop,900);
   })();
 }
 // Bottom of the whole intro (hero + method page) in document coordinates.
