@@ -5,6 +5,7 @@ data/*.log
 .DS_Store
 .vercel
 
-# generated entity images (served by Vercel from local public/, not committed)
-public/img/entity/
-public/img/canon/
+# NOTE: public/img/entity and public/img/canon ARE committed. This project
+# auto-deploys from GitHub, and git deploys build from the repo — gitignored
+# images never ship and 404 on the live site. They're recompressed (~360px,
+# ~12MB total) to keep the repo reasonable.
