@@ -1,0 +1,201 @@
+name_key,n_samples,gender_label
+frank gehry,92,M
+john maynard keynes,91,M
+alan turing,87,M
+tadao ando,61,M
+geoffrey hinton,60,M
+emmy noether,60,F
+donald knuth,56,M
+thomas aquinas,55,M
+sigmund freud,55,M
+friedrich nietzsche,52,M
+srinivasa ramanujan,52,M
+carl jung,46,M
+ada lovelace,45,F
+friedrich hayek,43,M
+milton friedman,41,M
+fernand braudel,41,M
+yuval noah harari,41,M
+ernest hemingway,36,M
+richard feynman,35,M
+augustine of hippo,33,M
+ludwig wittgenstein,32,M
+cs lewis,31,M
+italo calvino,29,M
+haruki murakami,29,M
+neil degrasse tyson,29,M
+yoshua bengio,28,M
+david mccullough,28,M
+william james,27,M
+marie curie,26,F
+pythagoras,26,M
+yann lecun,26,M
+carl rogers,26,M
+nikola tesla,24,M
+ray kurzweil,22,M
+jared diamond,22,M
+david hume,21,M
+ursula k le guin,20,F
+frank lloyd wright,19,M
+immanuel kant,19,M
+karl barth,19,M
+ayn rand,18,F
+vladimir nabokov,17,M
+albert einstein,17,M
+barbara tuchman,17,F
+jorge luis borges,16,M
+euclid,16,M
+antoni gaudi,15,M
+baruch spinoza,15,M
+amartya sen,15,M
+evariste galois,15,M
+edsger w dijkstra,15,M
+paulo coelho,14,M
+paul krugman,14,M
+leonhard euler,14,M
+dan brown,13,M
+thomas edison,13,M
+herodotus,13,M
+soren kierkegaard,11,M
+doris kearns goodwin,11,F
+andrew ng,11,M
+virginia woolf,10,F
+c s lewis,10,M
+carl friedrich gauss,10,M
+elinor ostrom,10,F
+pseudo-dionysius the areopagite,10,M
+paul erdos,10,M
+eliezer yudkowsky,10,M
+richard sutton,10,M
+pierre de fermat,10,M
+charles dickens,9,M
+howard zinn,9,M
+carl sagan,9,M
+donald e knuth,9,M
+stephen hawking,9,M
+claude shannon,9,M
+peter zumthor,8,M
+jean-jacques rousseau,8,M
+douglas adams,8,M
+fyodor dostoevsky,8,M
+james clerk maxwell,8,M
+marvin minsky,8,M
+zaha hadid,7,F
+plato,7,M
+adam smith,7,M
+linus torvalds,7,M
+edward gibbon,7,M
+hans urs von balthasar,7,M
+alan kay,7,M
+ramanujan,7,M
+thomas schelling,7,M
+thucydides,7,M
+santiago ramon y cajal,7,M
+christopher olah,7,M
+marcus aurelius,6,M
+paul samuelson,6,M
+david hilbert,6,M
+michael faraday,6,M
+edsger dijkstra,6,M
+natalie zemon davis,6,F
+niall ferguson,6,M
+dietrich bonhoeffer,6,M
+wassily leontief,6,M
+louis kahn,5,M
+le corbusier,5,M
+gabriel garcia marquez,5,M
+jane austen,5,F
+hegel,5,M
+kazuo ishiguro,5,M
+martin heidegger,5,M
+paul tillich,5,M
+stephen ambrose,5,M
+carl gustav jung,5,M
+alexander grothendieck,5,M
+carlo scarpa,4,M
+wittgenstein,4,M
+gottfried wilhelm leibniz,4,M
+karl rahner,4,M
+stuart russell,4,M
+euler,4,M
+barbara liskov,4,F
+michio kaku,4,M
+pierre teilhard de chardin,4,M
+douglas hofstadter,4,M
+leon walras,4,M
+peter eisenman,3,M
+georg wilhelm friedrich hegel,3,M
+heidegger,3,M
+socrates,3,M
+gwf hegel,3,M
+rene descartes,3,M
+judea pearl,3,M
+viktor frankl,3,M
+grace hopper,3,F
+albert o hirschman,3,M
+ludwig mies van der rohe,2,M
+jd salinger,2,M
+george eliot,2,F
+jack kerouac,2,M
+aristotle,2,M
+isaac newton,2,M
+eric hobsbawm,2,M
+carlo ginzburg,2,M
+david ha,2,M
+ilya sutskever,2,M
+ep thompson,2,M
+terence tao,2,M
+origen of alexandria,2,M
+mary beard,2,F
+abraham maslow,2,M
+barbara w tuchman,2,F
+philip zimbardo,2,M
+gh hardy,2,M
+demis hassabis,2,M
+pythagoras of samos,2,M
+fibonacci,2,M
+marc bloch,2,M
+hermann rorschach,2,M
+kurt godel,2,M
+luis barragan,1,M
+santiago calatrava,1,M
+gilles deleuze,1,M
+slavoj zizek,1,M
+epicurus,1,M
+iris murdoch,1,F
+jean-paul sartre,1,M
+st augustine,1,M
+john kenneth galbraith,1,M
+john von neumann,1,M
+steve jobs,1,M
+thomas piketty,1,M
+jurgen schmidhuber,1,M
+andrej karpathy,1,M
+jordan peterson,1,M
+william cronon,1,M
+ibn khaldun,1,M
+john nash,1,M
+thomas malthus,1,M
+john calvin,1,M
+shun-ichi amari,1,M
+joan robinson,1,F
+mark zuckerberg,1,M
+fei-fei li,1,F
+gary marcus,1,M
+simone weil,1,F
+tacitus,1,M
+simon schama,1,M
+toni morrison,1,F
+stephen wolfram,1,M
+chris olah,1,M
+daniel kahneman,1,M
+joseph schumpeter,1,M
+linus pauling,1,M
+felix klein,1,M
+andrew wiles,1,M
+jacques lacan,1,M
+sam altman,1,M
+gregory of nyssa,1,M
+kurt lewin,1,M
+herbert simon,1,M
+geoffrey hinton yann lecun yoshua bengio,1,M

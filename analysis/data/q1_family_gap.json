@@ -1,0 +1,64 @@
+{
+  "favorite": {
+    "within_mean": 0.219062494515305,
+    "between_mean": 0.16736864739993088,
+    "gap": 0.051693847115374114,
+    "p": 0.000199990000499975,
+    "per_family": {
+      "Anthropic": {
+        "within_mean": 0.18920916880274288,
+        "within_n": 12,
+        "between_mean": 0.15776154984470053,
+        "between_n": 36,
+        "gap": 0.03144761895804235
+      },
+      "OpenAI": {
+        "within_mean": 0.22851566687472688,
+        "within_n": 12,
+        "between_mean": 0.17911119930385136,
+        "between_n": 36,
+        "gap": 0.04940446757087552
+      },
+      "Google": {
+        "within_mean": 0.34146341463414637,
+        "within_n": 2,
+        "between_mean": 0.1421896679473429,
+        "between_n": 22,
+        "gap": 0.19927374668680348
+      }
+    }
+  },
+  "overrated": {
+    "within_mean": 0.2664917679721014,
+    "between_mean": 0.22946938225192617,
+    "gap": 0.037022385720175216,
+    "p": 0.005949702514874256,
+    "per_family": {
+      "Anthropic": {
+        "within_mean": 0.25331003579023387,
+        "within_n": 12,
+        "between_mean": 0.2215773383805731,
+        "between_n": 36,
+        "gap": 0.031732697409660754
+      },
+      "OpenAI": {
+        "within_mean": 0.2705173662445572,
+        "within_n": 12,
+        "between_mean": 0.23172656223231508,
+        "between_n": 36,
+        "gap": 0.03879080401224211
+      },
+      "Google": {
+        "within_mean": 0.32142857142857145,
+        "within_n": 2,
+        "between_mean": 0.21850099830751016,
+        "between_n": 22,
+        "gap": 0.1029275731210613
+      }
+    }
+  },
+  "_validation_vs_summary_overlap": {
+    "mean_abs_diff": 0.0064078273710753714,
+    "pearson_corr": 0.9911902990752747
+  }
+}

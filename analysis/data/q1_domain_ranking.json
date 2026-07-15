@@ -1,0 +1,350 @@
+{
+  "favorite": [
+    {
+      "domain": "season",
+      "mean_entropy": 0.02076923076923077
+    },
+    {
+      "domain": "cuisine",
+      "mean_entropy": 0.04676923076923077
+    },
+    {
+      "domain": "uscity",
+      "mean_entropy": 0.064
+    },
+    {
+      "domain": "city",
+      "mean_entropy": 0.06523076923076923
+    },
+    {
+      "domain": "religioustext",
+      "mean_entropy": 0.09623076923076922
+    },
+    {
+      "domain": "decade",
+      "mean_entropy": 0.09684615384615386
+    },
+    {
+      "domain": "architect",
+      "mean_entropy": 0.13276923076923078
+    },
+    {
+      "domain": "childrensbook",
+      "mean_entropy": 0.1360769230769231
+    },
+    {
+      "domain": "actress",
+      "mean_entropy": 0.14323076923076922
+    },
+    {
+      "domain": "psychologist",
+      "mean_entropy": 0.14530769230769233
+    },
+    {
+      "domain": "smell",
+      "mean_entropy": 0.15653846153846154
+    },
+    {
+      "domain": "artmovement",
+      "mean_entropy": 0.16023076923076923
+    },
+    {
+      "domain": "painting",
+      "mean_entropy": 0.183
+    },
+    {
+      "domain": "philosopher",
+      "mean_entropy": 0.18515384615384617
+    },
+    {
+      "domain": "musical",
+      "mean_entropy": 0.18715384615384617
+    },
+    {
+      "domain": "play",
+      "mean_entropy": 0.1876923076923077
+    },
+    {
+      "domain": "mathematician",
+      "mean_entropy": 0.18976923076923077
+    },
+    {
+      "domain": "film",
+      "mean_entropy": 0.21123076923076922
+    },
+    {
+      "domain": "blogger",
+      "mean_entropy": 0.22069230769230772
+    },
+    {
+      "domain": "typeface",
+      "mean_entropy": 0.22307692307692312
+    },
+    {
+      "domain": "boardgame",
+      "mean_entropy": 0.2302307692307692
+    },
+    {
+      "domain": "novelist",
+      "mean_entropy": 0.2316153846153846
+    },
+    {
+      "domain": "computerscientist",
+      "mean_entropy": 0.2366923076923077
+    },
+    {
+      "domain": "word",
+      "mean_entropy": 0.24053846153846153
+    },
+    {
+      "domain": "scientist",
+      "mean_entropy": 0.25800000000000006
+    },
+    {
+      "domain": "theologian",
+      "mean_entropy": 0.261
+    },
+    {
+      "domain": "tvshow",
+      "mean_entropy": 0.26153846153846155
+    },
+    {
+      "domain": "videogame",
+      "mean_entropy": 0.2646923076923077
+    },
+    {
+      "domain": "economist",
+      "mean_entropy": 0.26961538461538465
+    },
+    {
+      "domain": "historian",
+      "mean_entropy": 0.27292307692307693
+    },
+    {
+      "domain": "actor",
+      "mean_entropy": 0.2754615384615385
+    },
+    {
+      "domain": "airesearcher",
+      "mean_entropy": 0.27576923076923077
+    },
+    {
+      "domain": "monument",
+      "mean_entropy": 0.2793076923076923
+    },
+    {
+      "domain": "album",
+      "mean_entropy": 0.31530769230769234
+    },
+    {
+      "domain": "book",
+      "mean_entropy": 0.3163846153846154
+    },
+    {
+      "domain": "sport",
+      "mean_entropy": 0.32815384615384613
+    },
+    {
+      "domain": "color",
+      "mean_entropy": 0.3395384615384615
+    },
+    {
+      "domain": "poem",
+      "mean_entropy": 0.3426153846153846
+    },
+    {
+      "domain": "object",
+      "mean_entropy": 0.3537692307692308
+    },
+    {
+      "domain": "building",
+      "mean_entropy": 0.36092307692307696
+    },
+    {
+      "domain": "dish",
+      "mean_entropy": 0.3636153846153846
+    },
+    {
+      "domain": "aimodel",
+      "mean_entropy": 0.455923076923077
+    },
+    {
+      "domain": "street",
+      "mean_entropy": 0.5248461538461539
+    }
+  ],
+  "overrated": [
+    {
+      "domain": "childrensbook",
+      "mean_entropy": 0.019230769230769232
+    },
+    {
+      "domain": "poem",
+      "mean_entropy": 0.02846153846153846
+    },
+    {
+      "domain": "season",
+      "mean_entropy": 0.06253846153846153
+    },
+    {
+      "domain": "tvshow",
+      "mean_entropy": 0.06623076923076923
+    },
+    {
+      "domain": "decade",
+      "mean_entropy": 0.068
+    },
+    {
+      "domain": "boardgame",
+      "mean_entropy": 0.0893846153846154
+    },
+    {
+      "domain": "uscity",
+      "mean_entropy": 0.10246153846153847
+    },
+    {
+      "domain": "painting",
+      "mean_entropy": 0.11238461538461537
+    },
+    {
+      "domain": "city",
+      "mean_entropy": 0.11800000000000001
+    },
+    {
+      "domain": "typeface",
+      "mean_entropy": 0.13323076923076924
+    },
+    {
+      "domain": "architect",
+      "mean_entropy": 0.14461538461538462
+    },
+    {
+      "domain": "artmovement",
+      "mean_entropy": 0.14915384615384616
+    },
+    {
+      "domain": "book",
+      "mean_entropy": 0.1503846153846154
+    },
+    {
+      "domain": "theologian",
+      "mean_entropy": 0.15261538461538462
+    },
+    {
+      "domain": "cuisine",
+      "mean_entropy": 0.15553846153846157
+    },
+    {
+      "domain": "psychologist",
+      "mean_entropy": 0.16315384615384615
+    },
+    {
+      "domain": "actress",
+      "mean_entropy": 0.1646923076923077
+    },
+    {
+      "domain": "sport",
+      "mean_entropy": 0.1663846153846154
+    },
+    {
+      "domain": "word",
+      "mean_entropy": 0.1689230769230769
+    },
+    {
+      "domain": "economist",
+      "mean_entropy": 0.17984615384615385
+    },
+    {
+      "domain": "street",
+      "mean_entropy": 0.19346153846153846
+    },
+    {
+      "domain": "film",
+      "mean_entropy": 0.20492307692307693
+    },
+    {
+      "domain": "actor",
+      "mean_entropy": 0.22100000000000003
+    },
+    {
+      "domain": "smell",
+      "mean_entropy": 0.22423076923076923
+    },
+    {
+      "domain": "building",
+      "mean_entropy": 0.22692307692307695
+    },
+    {
+      "domain": "musical",
+      "mean_entropy": 0.22792307692307692
+    },
+    {
+      "domain": "play",
+      "mean_entropy": 0.2415384615384616
+    },
+    {
+      "domain": "novelist",
+      "mean_entropy": 0.24192307692307694
+    },
+    {
+      "domain": "religioustext",
+      "mean_entropy": 0.2530769230769231
+    },
+    {
+      "domain": "monument",
+      "mean_entropy": 0.277923076923077
+    },
+    {
+      "domain": "blogger",
+      "mean_entropy": 0.2867692307692308
+    },
+    {
+      "domain": "videogame",
+      "mean_entropy": 0.28676923076923083
+    },
+    {
+      "domain": "philosopher",
+      "mean_entropy": 0.2947692307692308
+    },
+    {
+      "domain": "scientist",
+      "mean_entropy": 0.2972307692307693
+    },
+    {
+      "domain": "historian",
+      "mean_entropy": 0.3194615384615385
+    },
+    {
+      "domain": "computerscientist",
+      "mean_entropy": 0.33084615384615385
+    },
+    {
+      "domain": "aimodel",
+      "mean_entropy": 0.3342307692307692
+    },
+    {
+      "domain": "color",
+      "mean_entropy": 0.3424615384615385
+    },
+    {
+      "domain": "dish",
+      "mean_entropy": 0.3793846153846153
+    },
+    {
+      "domain": "album",
+      "mean_entropy": 0.39861538461538465
+    },
+    {
+      "domain": "airesearcher",
+      "mean_entropy": 0.3996153846153846
+    },
+    {
+      "domain": "object",
+      "mean_entropy": 0.4299230769230769
+    },
+    {
+      "domain": "mathematician",
+      "mean_entropy": 0.45523076923076916
+    }
+  ]
+}

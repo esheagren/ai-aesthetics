@@ -1,0 +1,203 @@
+{
+  "favorite": [
+    {
+      "model": "gemini-3.1-pro-preview",
+      "family": "Google",
+      "mean_overlap": 0.1413300979503366
+    },
+    {
+      "model": "claude-opus-4-8",
+      "family": "Anthropic",
+      "mean_overlap": 0.15437142786314006
+    },
+    {
+      "model": "gpt-4o",
+      "family": "OpenAI",
+      "mean_overlap": 0.16400613136937311
+    },
+    {
+      "model": "claude-opus-4-1",
+      "family": "Anthropic",
+      "mean_overlap": 0.16754617585790574
+    },
+    {
+      "model": "claude-fable-5",
+      "family": "Anthropic",
+      "mean_overlap": 0.16965551841788915
+    },
+    {
+      "model": "kimi-k2.6",
+      "family": "Moonshot",
+      "mean_overlap": 0.17078752075971834
+    },
+    {
+      "model": "claude-opus-4-5",
+      "family": "Anthropic",
+      "mean_overlap": 0.1709206961979095
+    },
+    {
+      "model": "grok-4.5",
+      "family": "xAI",
+      "mean_overlap": 0.17606254432937818
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "family": "Google",
+      "mean_overlap": 0.17626152905881645
+    },
+    {
+      "model": "gpt-5.2",
+      "family": "OpenAI",
+      "mean_overlap": 0.18921338081193687
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "family": "DeepSeek",
+      "mean_overlap": 0.19501097639437004
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "family": "OpenAI",
+      "mean_overlap": 0.20340189257159783
+    },
+    {
+      "model": "o3",
+      "family": "OpenAI",
+      "mean_overlap": 0.2092278600333731
+    }
+  ],
+  "overrated": [
+    {
+      "model": "claude-opus-4-5",
+      "family": "Anthropic",
+      "mean_overlap": 0.2046003347298986
+    },
+    {
+      "model": "kimi-k2.6",
+      "family": "Moonshot",
+      "mean_overlap": 0.21038929706385642
+    },
+    {
+      "model": "gpt-4o",
+      "family": "OpenAI",
+      "mean_overlap": 0.2165497981313466
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "family": "Google",
+      "mean_overlap": 0.22261995696758477
+    },
+    {
+      "model": "claude-opus-4-8",
+      "family": "Anthropic",
+      "mean_overlap": 0.226686984674661
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "family": "Google",
+      "mean_overlap": 0.23153663516761236
+    },
+    {
+      "model": "claude-fable-5",
+      "family": "Anthropic",
+      "mean_overlap": 0.23488998632871963
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "family": "OpenAI",
+      "mean_overlap": 0.24072230882997359
+    },
+    {
+      "model": "gpt-5.2",
+      "family": "OpenAI",
+      "mean_overlap": 0.2499215378617533
+    },
+    {
+      "model": "claude-opus-4-1",
+      "family": "Anthropic",
+      "mean_overlap": 0.25186474519867386
+    },
+    {
+      "model": "grok-4.5",
+      "family": "xAI",
+      "mean_overlap": 0.25451531646040915
+    },
+    {
+      "model": "o3",
+      "family": "OpenAI",
+      "mean_overlap": 0.258503408118429
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "family": "DeepSeek",
+      "mean_overlap": 0.2605168288025015
+    }
+  ],
+  "combined": [
+    {
+      "model": "gemini-3.1-pro-preview",
+      "family": "Google",
+      "mean_overlap": 0.17984237783865878
+    },
+    {
+      "model": "claude-opus-4-5",
+      "family": "Anthropic",
+      "mean_overlap": 0.18632722887885425
+    },
+    {
+      "model": "claude-opus-4-8",
+      "family": "Anthropic",
+      "mean_overlap": 0.18642292312271772
+    },
+    {
+      "model": "kimi-k2.6",
+      "family": "Moonshot",
+      "mean_overlap": 0.18831492789358154
+    },
+    {
+      "model": "gpt-4o",
+      "family": "OpenAI",
+      "mean_overlap": 0.18878571209836512
+    },
+    {
+      "model": "claude-fable-5",
+      "family": "Anthropic",
+      "mean_overlap": 0.20023761353214276
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "family": "Google",
+      "mean_overlap": 0.20130011867910277
+    },
+    {
+      "model": "claude-opus-4-1",
+      "family": "Anthropic",
+      "mean_overlap": 0.20605292073421996
+    },
+    {
+      "model": "grok-4.5",
+      "family": "xAI",
+      "mean_overlap": 0.21043177257216553
+    },
+    {
+      "model": "gpt-5.2",
+      "family": "OpenAI",
+      "mean_overlap": 0.21587337219843838
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "family": "OpenAI",
+      "mean_overlap": 0.22172413703168428
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "family": "DeepSeek",
+      "mean_overlap": 0.2262184781656151
+    },
+    {
+      "model": "o3",
+      "family": "OpenAI",
+      "mean_overlap": 0.23153706757004713
+    }
+  ]
+}

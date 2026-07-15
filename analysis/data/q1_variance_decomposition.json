@@ -1,0 +1,22 @@
+{
+  "favorite": {
+    "grand_mean": 0.2304704830053667,
+    "var_domain": 0.010984013543223427,
+    "var_model": 0.004267530403448526,
+    "var_resid": 0.03473178568296952,
+    "var_total": 0.049983329629641485,
+    "ratio_domain_over_model": 2.5738571269105464,
+    "p_domain_effect": 4.999750012499375e-05,
+    "p_model_effect": 4.999750012499375e-05
+  },
+  "overrated": {
+    "grand_mean": 0.21542933810375672,
+    "var_domain": 0.01190188805079349,
+    "var_model": 0.0035175719611752376,
+    "var_resid": 0.032324234011027866,
+    "var_total": 0.047743694022996594,
+    "ratio_domain_over_model": 3.3835521155385297,
+    "p_domain_effect": 4.999750012499375e-05,
+    "p_model_effect": 4.999750012499375e-05
+  }
+}
