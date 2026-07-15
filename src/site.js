@@ -96,7 +96,7 @@ const byFamily = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'
 // Flash") is still a lighter tier than "3.1 Pro" — so it needs its own map.
 const POWER_RANK = {
   'claude-fable-5': 1, 'claude-opus-4-8': 2, 'claude-opus-4-5': 3, 'claude-opus-4-1': 4,
-  'gpt-5.6-sol': 1, 'gpt-5.2': 2, 'gpt-4o': 3,
+  'gpt-5.6-sol': 1, 'gpt-5.2': 2, 'o3': 3, 'gpt-4o': 4,
   'gemini-3.1-pro-preview': 1, 'gemini-3.5-flash': 2,
   'deepseek-v4-pro': 1,
   'kimi-k2.6': 1,
