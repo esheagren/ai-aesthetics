@@ -475,6 +475,9 @@ const methodPage = `<section class="mpage" id="methodintro" aria-label="How the 
     ${methodSentence}
     ${methodDiagram('a')}
   </div>
+  <button class="cue mcue" id="mcue" type="button" aria-label="Continue to the index">
+    <span>the index</span><i></i>
+  </button>
 </section>`;
 const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
@@ -512,6 +515,8 @@ main{position:relative;padding:0 clamp(22px,4vw,88px) 110px;max-width:1800px;mar
 .cue:hover span{color:var(--ink)}
 @keyframes cuepulse{0%,100%{transform:scaleY(.35);opacity:.4}50%{transform:scaleY(1);opacity:1}}
 @media (prefers-reduced-motion:reduce){.cue i{animation:none;transform:none}}
+/* the method page's copy of the cue sits pinned to the page bottom, centered */
+.mcue{position:absolute;bottom:22px;left:50%;transform:translateX(-50%)}
 .over{font:10.5px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--dim)}
 h1{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.3vw,26px);line-height:1.2;text-wrap:balance}
 h1 em{font-style:italic}
@@ -837,7 +842,7 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 #tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--night);font:12px var(--sans);padding:6px 10px;border-radius:2px;max-width:320px;opacity:0;z-index:9}
 
 /* the method: full-viewport intro page (between the hero and the index) + Method tab */
-.mpage{min-height:100svh;margin-top:0;padding:48px 0;display:flex;flex-direction:column;justify-content:center;
+.mpage{position:relative;min-height:100svh;margin-top:0;padding:48px 0 96px;display:flex;flex-direction:column;justify-content:center;
   scroll-snap-align:start;scroll-snap-stop:always}
 .mband-over{font:10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
 .msent{font-family:var(--serif);font-size:clamp(16px,1.9vw,21px);line-height:1.55;color:var(--dim);max-width:34em;margin-top:16px;text-wrap:pretty}
@@ -1482,6 +1487,13 @@ document.getElementById('cue').addEventListener('click',function(){
     mpage.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
     return;
   }
+  setView('cabinet',false);
+  commitPastHero();
+  updateViewbar();
+});
+// the method page's cue: one click retires the intro and lands at the index top
+var mcue=document.getElementById('mcue');
+if(mcue)mcue.addEventListener('click',function(){
   setView('cabinet',false);
   commitPastHero();
   updateViewbar();
