@@ -704,9 +704,6 @@ button.bo-split.on{box-shadow:none;outline:2px solid var(--ink);outline-offset:-
 .cabdetail .dossier{border-left:0;padding:0;min-height:0}
 .cabdetail .dtop{grid-template-columns:1fr}
 .cabdetail .dfavs{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
-.drawer-x{position:absolute;top:12px;right:14px;width:30px;height:30px;display:grid;place-items:center;background:none;border:0;border-radius:50%;color:var(--faint);font:18px/1 var(--sans);cursor:pointer}
-.drawer-x:hover{color:var(--ink);background:rgba(233,230,221,.07)}
-.drawer-x:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
 /* drawer entrance: the injected card rises in as one piece (class added after
    injection, double-rAF'd so the transition actually runs) */
 .cd-body{opacity:0;transform:translateY(6px);transition:opacity .3s cubic-bezier(.22,.7,.35,1),transform .3s cubic-bezier(.22,.7,.35,1)}
@@ -1113,11 +1110,13 @@ function closeCabinetDetail(){
 // Fill the right-hand drawer with content and show it, prepending a close button.
 function openDrawer(html){
   var detail=document.getElementById('cabdetail');
-  detail.innerHTML='<button class="drawer-x" type="button" aria-label="Close">\\u00d7</button><div class="cd-body">'+html+'</div>';
+  // No close button: the drawer is dismissed by clicking the veil (anywhere off
+  // the card) or pressing Escape. A visible × read as the *only* way out and
+  // made the card feel like a modal that trapped you.
+  detail.innerHTML='<div class="cd-body">'+html+'</div>';
   detail.hidden=false;
   detail.scrollTop=0;
   document.getElementById('drawerveil').hidden=false;
-  detail.querySelector('.drawer-x').addEventListener('click',closeCabinetDetail);
   // One shared entrance: the whole card rises in together. Double rAF so the
   // browser paints the start state before the transition class lands
   // (reduced-motion users get it instantly via CSS).
