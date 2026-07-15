@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200"><defs><filter id="a" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="0.9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="b" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="0.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <rect width="480" height="200" fill="#0f1013"/><rect x="0.5" y="0.5" width="479" height="199" fill="none" stroke="rgba(233,230,221,.08)"/>
+    <g transform="translate(44,52) scale(3.0)"><g filter="url(#a)" stroke="#e9e6dd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8.5 5 L23.5 5 C23.5 12.5 20 16 16 16 C12 16 8.5 12.5 8.5 5 Z" stroke-width="1.15" opacity="0.95"/>
+    <line x1="16" y1="16" x2="16" y2="25" stroke-width="1.1" opacity="0.7"/>
+    <line x1="10.5" y1="26" x2="21.5" y2="26" stroke-width="1.1" opacity="0.7"/>
+  </g>
+  <circle cx="16" cy="9.5" r="1.7" fill="#e9e6dd" filter="url(#a)" opacity="0.98"/></g>
+    <g transform="translate(250,120) scale(0.8) translate(-16,-16)"><g filter="url(#b)" stroke="#e9e6dd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8.5 5 L23.5 5 C23.5 12.5 20 16 16 16 C12 16 8.5 12.5 8.5 5 Z" stroke-width="1.15" opacity="0.95"/>
+    <line x1="16" y1="16" x2="16" y2="25" stroke-width="1.1" opacity="0.7"/>
+    <line x1="10.5" y1="26" x2="21.5" y2="26" stroke-width="1.1" opacity="0.7"/>
+  </g>
+  <circle cx="16" cy="9.5" r="1.7" fill="#e9e6dd" filter="url(#b)" opacity="0.98"/></g>
+    <text x="250" y="66" font-family="Georgia, serif" font-size="20" fill="#e9e6dd">Tasting Glass</text>
+    <text x="250" y="150" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1" fill="#88857e">the palate — a chalice holding a drop of light</text>
+    <text x="250" y="176" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e">↑ NAV SIZE</text></svg>

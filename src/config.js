@@ -10,8 +10,11 @@ export const MODELS = [
   // Fable: thinking is always on and billed as output — needs headroom + low effort
   { id: 'claude-fable-5', provider: 'anthropic', family: 'Anthropic', label: 'Claude Fable 5', order: 4, maxTokens: 3000, effort: 'low' },
   { id: 'gpt-4o', provider: 'openai', family: 'OpenAI', label: 'GPT-4o', order: 1 },
-  { id: 'gpt-5.2', provider: 'openai', family: 'OpenAI', label: 'GPT-5.2', order: 2, reasoning: 'low' },
-  { id: 'gpt-5.6-sol', provider: 'openai', family: 'OpenAI', label: 'GPT-5.6 Sol', order: 3, reasoning: 'low', api: 'responses' },
+  // o3: reasoning model (Apr 2025), sits chronologically between 4o and 5.2.
+  // reasoning tokens bill as output, so give generous max_completion_tokens.
+  { id: 'o3', provider: 'openai', family: 'OpenAI', label: 'o3', order: 2, reasoning: 'low', maxTokens: 2500 },
+  { id: 'gpt-5.2', provider: 'openai', family: 'OpenAI', label: 'GPT-5.2', order: 3, reasoning: 'low' },
+  { id: 'gpt-5.6-sol', provider: 'openai', family: 'OpenAI', label: 'GPT-5.6 Sol', order: 4, reasoning: 'low', api: 'responses' },
   // gemini-2.5-pro is closed to new accounts (404) — Google gates old generations
   { id: 'gemini-3.1-pro-preview', provider: 'gemini', family: 'Google', label: 'Gemini 3.1 Pro', order: 1 },
   { id: 'gemini-3.5-flash', provider: 'gemini', family: 'Google', label: 'Gemini 3.5 Flash', order: 2 },

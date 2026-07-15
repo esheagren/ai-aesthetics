@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200"><defs><filter id="a" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="0.95" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="b" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="0.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="480" height="200" fill="#0f1013"/><rect x="0.5" y="0.5" width="479" height="199" fill="none" stroke="rgba(233,230,221,.08)"/>
+  <g transform="translate(52,52) scale(3.0)"><g filter="url(#a)" stroke="#e9e6dd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="8" y="8" width="16" height="16" stroke-width="1.2" opacity="0.95"/>
+    <line x1="8" y1="15" x2="24" y2="15" stroke-width="1.1" opacity="0.85"/>
+  </g></g>
+  <g transform="translate(250,120) scale(0.8) translate(-16,-16)"><g filter="url(#b)" stroke="#e9e6dd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="8" y="8" width="16" height="16" stroke-width="1.2" opacity="0.95"/>
+    <line x1="8" y1="15" x2="24" y2="15" stroke-width="1.1" opacity="0.85"/>
+  </g></g>
+  <text x="250" y="66" font-family="Georgia, serif" font-size="20" fill="#e9e6dd">Framed Light</text>
+  <text x="250" y="150" font-family="ui-monospace, monospace" font-size="10.5" letter-spacing="1" fill="#88857e">The facade from the opening background, alone</text>
+  <text x="250" y="176" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e">↑ NAV SIZE</text></svg>

@@ -77,7 +77,7 @@ async function callOpenAI(model, prompt) {
     const body = {
       model: model.id,
       input: prompt,
-      max_output_tokens: model.reasoning ? 2000 : 600,
+      max_output_tokens: model.maxTokens ?? (model.reasoning ? 2000 : 600),
     };
     if (model.reasoning) body.reasoning = { effort: model.reasoning };
     const data = await postJSON('https://api.openai.com/v1/responses', {
@@ -89,7 +89,7 @@ async function callOpenAI(model, prompt) {
   }
   const body = {
     model: model.id,
-    max_completion_tokens: model.reasoning ? 2000 : 600,
+    max_completion_tokens: model.maxTokens ?? (model.reasoning ? 2000 : 600),
     messages: [{ role: 'user', content: prompt }],
   };
   if (model.reasoning) body.reasoning_effort = model.reasoning;

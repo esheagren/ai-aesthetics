@@ -1768,9 +1768,14 @@ ${methodPage}
 <nav class="viewbar" id="viewbar" aria-label="Views">
   <button class="viewlogo" id="viewlogo" type="button" aria-label="Machines of Loving Taste — back to the top of the index" title="Machines of Loving Taste">
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 3 20 11 12 11 4 11Z" fill="rgb(110,209,145)"/>
-      <path d="M4 11 20 11 12 21Z" fill="rgb(232,104,98)"/>
-      <path d="M12 3 20 11 12 21 4 11Z" fill="none" stroke="rgba(233,230,221,.32)" stroke-width="1" stroke-linejoin="round"/>
+      <defs><filter id="logoglow" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="0.7" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter></defs>
+      <g filter="url(#logoglow)" stroke="#e9e6dd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="4" width="16" height="16" stroke-width="1.2" opacity="0.95"/>
+        <line x1="4" y1="11" x2="20" y2="11" stroke-width="1.1" opacity="0.85"/>
+      </g>
     </svg>
   </button>
   <button class="viewlink on" type="button" data-view="cabinet"><span>Index</span></button>

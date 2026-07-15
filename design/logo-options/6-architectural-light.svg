@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs><filter id="glow-lg" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="0.9" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter><filter id="glow-sm" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="0.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter></defs>
+  <rect width="480" height="200" fill="#0f1013"/>
+  <rect x="0.5" y="0.5" width="479" height="199" fill="none" stroke="rgba(233,230,221,.08)"/>
+  <g transform="translate(40,52) scale(3.0)">
+  <g filter="url(#glow-lg)" stroke="#e9e6dd" stroke-linecap="round" fill="none">
+    <line x1="5" y1="2.5" x2="5" y2="29.5" stroke-width="1" opacity="0.55"/>
+    <line x1="22.5" y1="3.5" x2="22.5" y2="28.5" stroke-width="1" opacity="0.7"/>
+    <line x1="2.5" y1="23.4" x2="29.5" y2="23.4" stroke-width="1" opacity="0.6"/>
+    <rect x="19.6" y="5.2" width="8.4" height="13.4" stroke-width="1.1" opacity="0.95"/>
+    <line x1="19.6" y1="11.9" x2="28" y2="11.9" stroke-width="1" opacity="0.8"/>
+  </g></g>
+  <g transform="translate(250,120) scale(0.78) translate(-16,-16)">
+  <g filter="url(#glow-sm)" stroke="#e9e6dd" stroke-linecap="round" fill="none">
+    <line x1="5" y1="2.5" x2="5" y2="29.5" stroke-width="1" opacity="0.55"/>
+    <line x1="22.5" y1="3.5" x2="22.5" y2="28.5" stroke-width="1" opacity="0.7"/>
+    <line x1="2.5" y1="23.4" x2="29.5" y2="23.4" stroke-width="1" opacity="0.6"/>
+    <rect x="19.6" y="5.2" width="8.4" height="13.4" stroke-width="1.1" opacity="0.95"/>
+    <line x1="19.6" y1="11.9" x2="28" y2="11.9" stroke-width="1" opacity="0.8"/>
+  </g></g>
+  <text x="250" y="66" font-family="Georgia, serif" font-size="20" fill="#e9e6dd">Architectural Light</text>
+  <text x="250" y="150" font-family="ui-monospace, monospace" font-size="10.5" letter-spacing="1.2" fill="#88857e">The opening background, distilled — a luminous facade</text>
+  <text x="88" y="188" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e" text-anchor="middle">THE MARK</text>
+  <text x="250" y="176" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2" fill="#88857e">↑ NAV SIZE</text>
+</svg>
