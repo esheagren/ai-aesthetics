@@ -1,0 +1,16 @@
+# Without this file, Vercel falls back to .gitignore — which excludes
+# public/img/entity and public/img/canon, so the externalized entity images
+# never get uploaded and 404 on the live site. This list deliberately does NOT
+# exclude public/, so the image files ship. Keep .env out (secret key).
+.env
+.git
+node_modules
+src
+data
+design
+docs
+report
+scratchpad
+*.log
+.DS_Store
+.vercel
