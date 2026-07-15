@@ -1124,14 +1124,18 @@ function choiceMatrixHTML(domainId){
     });
     entities[k].models=n;
     entities[k].avgScore=n?scoreSum/n:0;
-    // Penalise low cross-model agreement by SUBTRACTING a per-model penalty
-    // (not scaling the average down) — a single model's 90%-favourite outlier
-    // must lose to something four models mildly agree on, not just something
-    // eight models love. The old multiplicative shrink (avg*n/(n+3)) was too
-    // weak: at n=1,avg=90 it scored 22.5, still above a real n=4,avg=32.5
-    // consensus (18.6). SHRINK_C=100 is "how much a lone mention costs you";
-    // raising it further crushes n=1 picks harder without disturbing n>=4.
-    entities[k].score=entities[k].avgScore-100/n;
+    // Rank by the RAW SUM of per-model net sentiment, not the average. This is
+    // "total agreement": every model that weighs in adds its (favourite% −
+    // overrated%), so many models agreeing pushes an entry to an extreme while
+    // a lone voice — loved or panned — lands near the neutral middle, which is
+    // exactly where low-confidence picks belong. Favourites rise to the top,
+    // the widely-overrated (e.g. Nietzsche: 9 of 11 models call it overrated)
+    // sink to the very bottom, below narrowly-panned items with fewer votes.
+    // Earlier tries failed here: multiplicative shrink (avg·n/(n+3)) let a lone
+    // 90% favourite outrank a 4-model consensus; a subtractive penalty
+    // (avg−100/n) shoved every low-n pick to the bottom regardless of sentiment,
+    // so a single-model favourite ranked as "most overrated".
+    entities[k].score=scoreSum;
     entities[k].cells=cells;
   });
   var choices=Object.keys(entities).map(function(k){
