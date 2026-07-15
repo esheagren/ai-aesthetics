@@ -108,9 +108,12 @@ const enc = encodeURIComponent;
 function buildLinks(domain, display, creator) {
   switch (domain) {
     case 'book':
+    case 'childrensbook':
       return [{ label: 'Buy on Amazon', url: `https://www.amazon.com/s?k=${enc(creator ? `${display} ${creator}` : display)}` }];
     case 'videogame':
       return [{ label: 'Watch on YouTube', url: `https://www.youtube.com/results?search_query=${enc(display)}+official+overview` }];
+    case 'poem': // straight to a readable full text, not an encyclopedia entry
+      return [{ label: 'Read the poem', url: `https://www.poetryfoundation.org/search?query=${enc(creator ? `${display} ${creator}` : display)}` }];
     default: // film, album, painting, building, and everything else
       return [{ label: 'Wikipedia', url: `https://en.wikipedia.org/wiki/Special:Search?search=${enc(display)}` }];
   }

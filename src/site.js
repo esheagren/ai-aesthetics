@@ -67,18 +67,24 @@ const DOMAIN_LABELS = {
   novelist: 'Novelist', philosopher: 'Philosopher', religioustext: 'Religious text',
   artmovement: 'Artistic movement', monument: 'Monument',
   tvshow: 'TV show', actor: 'Actor', actress: 'Actress', play: 'Play', musical: 'Musical',
+  economist: 'Economist', scientist: 'Scientist', theologian: 'Theologian',
+  mathematician: 'Mathematician', blogger: 'Blogger', computerscientist: 'Computer scientist',
+  airesearcher: 'AI researcher', aimodel: 'AI model', historian: 'Historian',
+  psychologist: 'Psychologist', boardgame: 'Board game', sport: 'Sport',
+  childrensbook: "Children's book",
 };
 // Groups may list ids whose data is still being collected (no summary cells
 // yet) — the client rail only renders ids present in DATA.domains, so those
 // fields appear automatically once their collection lands.
 const DOMAIN_GROUPS = [
-  { label: 'Literature & Language', ids: ['book', 'poem', 'word', 'novelist', 'philosopher', 'religioustext'] },
+  { label: 'Literature & Language', ids: ['book', 'childrensbook', 'poem', 'word', 'novelist', 'religioustext'] },
+  { label: 'Thinkers', ids: ['philosopher', 'economist', 'scientist', 'theologian', 'mathematician', 'historian', 'psychologist', 'computerscientist', 'airesearcher', 'aimodel', 'blogger'] },
   { label: 'Fine Art', ids: ['painting', 'artmovement'] },
   { label: 'Architecture', ids: ['building', 'architect', 'monument'] },
   { label: 'Film, TV & Theater', ids: ['film', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
   { label: 'Music', ids: ['album'] },
-  { label: 'Digital Media', ids: ['videogame', 'typeface'] },
-  { label: 'Design & Form', ids: ['object'] },
+  { label: 'Games', ids: ['videogame', 'boardgame', 'sport'] },
+  { label: 'Miscellaneous', ids: ['typeface', 'object'] },
   { label: 'History', ids: ['decade'] },
   { label: 'Places', ids: ['city', 'street', 'uscity'] },
   { label: 'Life & Senses', ids: ['cuisine', 'dish', 'color', 'season', 'smell'] },
@@ -97,6 +103,47 @@ const POWER_RANK = {
   'grok-4.5': 1,
 };
 const models = [...S.models].sort((a, b) => byFamily.indexOf(a.family) - byFamily.indexOf(b.family) || POWER_RANK[a.id] - POWER_RANK[b.id]);
+// Cross-family capability order, most capable first — used to sequence the
+// entity-card quotes (strongest voices speak first). Unlisted ids sort last.
+const CAPABILITY_RANK = {
+  'claude-fable-5': 1, 'gpt-5.6-sol': 2, 'claude-opus-4-8': 3, 'gemini-3.1-pro-preview': 4,
+  'grok-4.5': 5, 'claude-opus-4-5': 6, 'gpt-5.2': 7, 'deepseek-v4-pro': 8,
+  'kimi-k2.6': 9, 'gemini-3.5-flash': 10, 'claude-opus-4-1': 11, 'gpt-4o': 12,
+};
+// Every color entity in data/entitycards.json ("color <norm>"), mapped to an
+// honest hex. Keys are the client's canonical norm (canonEnt output). The very
+// dark classical values (navy #000080, ultramarine #120a8f, prussian #003153,
+// pure blue #0000ff) are lifted a touch so a 9px dot reads on the night ground.
+const COLOR_HEX = {
+  'teal': '#0d7d7d', 'turquoise': '#40e0d0', 'cerulean': '#007ba7',
+  'millennial pink': '#f3cdc7', 'ultramarine': '#2a3fd4', 'navy blue': '#1a2f6e',
+  'indigo': '#4b0082', 'cobalt blue': '#0047ab', 'electric cyan': '#00e5ff',
+  'tiffany blue': '#0abab5', 'beige': '#f5f5dc', 'sky blue': '#87ceeb',
+  'prussian blue': '#0e3a5c', 'blue': '#2727e0', 'purple': '#800080',
+  'mint green': '#9fe2bf', 'sapphire blue': '#0f52ba', 'azure': '#007fff',
+  'pink': '#ffc0cb', 'royal blue': '#4169e1',
+};
+// Every typeface entity in data/entitycards.json ("typeface <norm>"), mapped
+// to a system-font stack (the CSP forbids webfonts). Faces with no common
+// system presence get their closest system cousin, then an honest generic.
+// `size` trims the few faces that run visually large at the label size.
+const TYPEFACE_STACK = {
+  'helvetica': { css: "'Helvetica Neue',Helvetica,Arial,sans-serif" },
+  'garamond': { css: "Garamond,'Apple Garamond','EB Garamond',serif" },
+  'futura': { css: "Futura,'Avenir Next','Century Gothic',sans-serif" },
+  'baskerville': { css: "Baskerville,'Baskerville Old Face',Georgia,serif" },
+  'optima': { css: "Optima,Candara,'Gill Sans',sans-serif" },
+  'gill sans': { css: "'Gill Sans','Gill Sans MT',Calibri,sans-serif" },
+  'avenir': { css: "Avenir,'Avenir Next','Century Gothic',sans-serif" },
+  'arial': { css: "Arial,Helvetica,sans-serif" },
+  'comic sans': { css: "'Comic Sans MS','Comic Sans',cursive", size: 0.92 },
+  'papyrus': { css: "Papyrus,'Segoe Script',fantasy", size: 0.92 },
+  'charter': { css: "Charter,'Bitstream Charter',Georgia,serif" },
+  'inter': { css: "Inter,-apple-system,'Segoe UI','Helvetica Neue',Helvetica,sans-serif" },
+  'ibm plex sans': { css: "'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif" },
+  'fira code': { css: "'Fira Code',Menlo,Consolas,'Courier New',monospace", size: 0.95 },
+  'fraunces': { css: "Fraunces,Georgia,'Iowan Old Style',serif" },
+};
 
 // ---- quotes: densest in signature vocabulary ----
 function pickQuote(modelId) {
@@ -586,6 +633,16 @@ button.bo-cell{cursor:pointer;color:var(--dim)}
 button.bo-cell:hover{box-shadow:inset 0 0 0 1px var(--ink);color:var(--ink)}
 button.bo-cell.on{box-shadow:inset 0 0 0 2px var(--ink);color:var(--ink)}
 button.bo-cell.hi{color:var(--night);font-weight:700}
+/* dual-register cells: favourite share stacked over overrated share. The
+   halves paint over the button, so hover/selected rings use outline (drawn on
+   top) rather than the inset box-shadow the single cells use. */
+.bo-cell.bo-split{display:flex;flex-direction:column;padding:0;background:none}
+.bo-split .bo-half{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;font-size:7.5px;line-height:1}
+.bo-split .bo-half.hi{color:var(--night);font-weight:700}
+button.bo-split:hover{box-shadow:none;outline:1px solid var(--ink);outline-offset:-1px}
+button.bo-split.on{box-shadow:none;outline:2px solid var(--ink);outline-offset:-2px}
+/* color rows wear a dot of the color itself, left of the name */
+.color-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:-1px;border:1px solid rgba(233,230,221,.28)}
 /* Below 1160px the 864px matrix can't fit, so .bo-scroll becomes the scroll
    container on BOTH axes: a capped-height overflow:auto box. Sticky headers
    then stick to the box itself — top:0 for the family row, top:28px (the fam
@@ -620,6 +677,15 @@ button.bo-cell.hi{color:var(--night);font-weight:700}
 .drawer-x{position:absolute;top:12px;right:14px;width:30px;height:30px;display:grid;place-items:center;background:none;border:0;border-radius:50%;color:var(--faint);font:18px/1 var(--sans);cursor:pointer}
 .drawer-x:hover{color:var(--ink);background:rgba(233,230,221,.07)}
 .drawer-x:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
+/* drawer entrance: the injected card rises in as one piece (class added after
+   injection, double-rAF'd so the transition actually runs) */
+.cd-body{opacity:0;transform:translateY(6px);transition:opacity .3s cubic-bezier(.22,.7,.35,1),transform .3s cubic-bezier(.22,.7,.35,1)}
+.cd-body.cd-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.cd-body{opacity:1;transform:none;transition:none}}
+/* a color entity's card: the color itself, a modest centered swatch */
+.ec-swatch{width:104px;height:104px;border-radius:50%;margin:18px auto 0;border:1px solid var(--hair2)}
+/* the endorsements block lost its heading; a hairline keeps the separation */
+.ec-quotes{margin-top:26px;border-top:1px solid var(--hair2)}
 .cd-reg{font:9.5px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
 .cd-reg-f{color:rgb(110,209,145)}
 .cd-reg-o{color:rgb(232,104,98)}
@@ -804,6 +870,9 @@ var D = JSON.parse(document.getElementById('data').textContent);
 var FAMC = {a:'var(--fam-a)', o:'var(--fam-o)', g:'var(--fam-g)', d:'var(--fam-d)', k:'var(--fam-k)', x:'var(--fam-x)'};
 var famOf = {Anthropic:'a', OpenAI:'o', Google:'g', DeepSeek:'d', Moonshot:'k', xAI:'x'};
 var BRANDS = ${JSON.stringify(BRAND_PATHS)};
+var CAPABILITY_RANK = ${JSON.stringify(CAPABILITY_RANK)};
+var COLOR_HEX = ${JSON.stringify(COLOR_HEX)};
+var TYPESTACK = ${JSON.stringify(TYPEFACE_STACK)};
 function el(h){var t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function normEnt(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[\\u2019\\u2018]/g,"'").replace(/\\s+/g,' ').trim().replace(/^(The|A|An) /i,'').toLowerCase()}
@@ -998,11 +1067,16 @@ function closeCabinetDetail(){
 // Fill the right-hand drawer with content and show it, prepending a close button.
 function openDrawer(html){
   var detail=document.getElementById('cabdetail');
-  detail.innerHTML='<button class="drawer-x" type="button" aria-label="Close">\\u00d7</button>'+html;
+  detail.innerHTML='<button class="drawer-x" type="button" aria-label="Close">\\u00d7</button><div class="cd-body">'+html+'</div>';
   detail.hidden=false;
   detail.scrollTop=0;
   document.getElementById('drawerveil').hidden=false;
   detail.querySelector('.drawer-x').addEventListener('click',closeCabinetDetail);
+  // One shared entrance: the whole card rises in together. Double rAF so the
+  // browser paints the start state before the transition class lands
+  // (reduced-motion users get it instantly via CSS).
+  var body=detail.querySelector('.cd-body');
+  requestAnimationFrame(function(){requestAnimationFrame(function(){body.classList.add('cd-in')})});
 }
 function choiceDistribution(id,domainId,probe){
   var rows=(((D.responses[id]||{})[domainId]||{})[probe]||[]),map={};
@@ -1075,10 +1149,23 @@ function choiceMatrixHTML(domainId){
     }).join('')+
     '<div class="bo-corner">'+esc((domain&&domain.label)||domainId)+'</div>'+D.models.map(function(m,i){return '<div class="bo-col" data-m="'+m.id+'" role="button" tabindex="0" title="Open the '+esc(m.label)+' dossier"><span>'+esc(m.short)+'</span></div>'}).join('');
   choices.forEach(function(choice){
-    html+='<div class="bo-rowlabel'+(choice.models>1?' shared':'')+'" role="button" tabindex="0" data-domain="'+domainId+'" data-e="'+esc(choice.e)+'" data-c="'+esc(choice.c||'')+'" title="'+esc(choice.e+(choice.c?' — '+choice.c:''))+'" aria-label="Open the '+esc(choice.e)+' card"><span class="bo-title">'+esc(choice.e)+'</span>'+(choice.c?'<small>'+esc(choice.c)+'</small>':'')+'</div>';
+    // Native renderings in the row label: color rows wear a dot of the color
+    // itself; typeface rows are set in the face they name (system stacks only).
+    var dot=domainId==='color'&&COLOR_HEX[choice.k]?'<i class="color-dot" style="background:'+COLOR_HEX[choice.k]+'"></i>':'';
+    var ts=domainId==='typeface'&&TYPESTACK[choice.k];
+    var tstyle=ts?' style="font-family:'+esc(ts.css)+(ts.size?';font-size:'+ts.size+'em':'')+'"':'';
+    html+='<div class="bo-rowlabel'+(choice.models>1?' shared':'')+'" role="button" tabindex="0" data-domain="'+domainId+'" data-e="'+esc(choice.e)+'" data-c="'+esc(choice.c||'')+'" title="'+esc(choice.e+(choice.c?' — '+choice.c:''))+'" aria-label="Open the '+esc(choice.e)+' card"><span class="bo-title"'+tstyle+'>'+dot+esc(choice.e)+'</span>'+(choice.c?'<small>'+esc(choice.c)+'</small>':'')+'</div>';
     D.models.forEach(function(m,mi){
       var cell=choice.cells[mi];
       if(!cell){html+='<div class="bo-cell"></div>';return}
+      if(cell.favPct>0&&cell.ovrPct>0){
+        // Both registers at once: green favourite share above, red overrated
+        // share below. Clicking opens the favourite response as the default.
+        var af=(.05+cell.favPct/100*.85).toFixed(3),ao=(.05+cell.ovrPct/100*.85).toFixed(3);
+        html+='<button class="bo-cell bo-split" type="button" data-domain="'+domainId+'" data-m="'+m.id+'" data-e="'+esc(choice.e)+'" data-p="'+cell.favPct+'" data-probe="f" aria-label="'+esc(m.short)+': '+esc(choice.e)+', liked in '+cell.favPct+'% \\u00b7 overrated in '+cell.ovrPct+'% of responses">'+
+          '<span class="bo-half'+(cell.favPct>=45?' hi':'')+'" style="background:rgba(110,209,145,'+af+')">'+cell.favPct+'%</span>'+
+          '<span class="bo-half'+(cell.ovrPct>=45?' hi':'')+'" style="background:rgba(232,104,98,'+ao+')">'+cell.ovrPct+'%</span></button>';
+        return}
       var probe=cell.favPct>=cell.ovrPct?'f':'o',p=Math.max(cell.favPct,cell.ovrPct),v=p/100;
       var alpha=(.05+v*.85).toFixed(3),rgb=probe==='f'?'110,209,145':'232,104,98';
       html+='<button class="bo-cell'+(v>=.45?' hi':'')+'" type="button" data-domain="'+domainId+'" data-m="'+m.id+'" data-e="'+esc(choice.e)+'" data-p="'+p+'" data-probe="'+probe+'" style="background:rgba('+rgb+','+alpha+')" aria-label="'+esc(m.short)+': '+esc(choice.e)+', '+(probe==='f'?'favourite':'overrated')+' in '+p+'% of responses">'+p+'%</button>';
@@ -1153,10 +1240,16 @@ function openEntityCard(domainId,entity,creator){
   primary=primary||links[0]||null;
   var ext=primary?'<a class="ec-ext" href="'+esc(primary.url)+'" target="_blank" rel="noopener" title="'+esc(primary.label||'Open')+'" aria-label="'+esc(primary.label||'Open externally')+'">'+
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg></a>':'';
+  // A typeface's card title is set in the face itself (same system stack as
+  // its index row label).
+  var tstack=domainId==='typeface'&&TYPESTACK[k];
   var html='<div class="cd-reg">'+esc((domain&&domain.label)||domainId)+'</div>'+
-    '<h3 class="cd-title">'+esc(entity||card.display)+ext+'</h3>'+
+    '<h3 class="cd-title"'+(tstack?' style="font-family:'+esc(tstack.css)+'"':'')+'>'+esc(entity||card.display)+ext+'</h3>'+
     (creator?'<div class="cd-creator">'+esc(creator)+'</div>':'');
   if(card.blurb)html+='<p class="ec-blurb">'+esc(card.blurb)+'</p>';
+  // A color's card shows the color itself — a centered swatch where a
+  // photograph would sit (colors have no photography).
+  if(domainId==='color'&&COLOR_HEX[k])html+='<div class="ec-swatch" style="background:'+COLOR_HEX[k]+'"></div>';
   // The card's own photograph, directly under the blurb. Falls back to the
   // legacy imgMap path (below, after the definition) only when there is none.
   var eimg=D.entityImages&&D.entityImages[domainId+' '+k];
@@ -1179,9 +1272,11 @@ function openEntityCard(domainId,entity,creator){
   function quotes(list,cls){return list.map(function(q){
     return '<blockquote class="ec-quote'+(cls?' '+cls:'')+'">\\u201c'+esc(q.quote)+'\\u201d<span class="ec-att">\\u2014 '+esc(att(q.model))+'</span></blockquote>';
   }).join('')}
-  var ends=card.endorsements||[];
+  // Quotes speak in capability order, most capable model first. The
+  // endorsements carry no heading (just a hairline); the dissents keep theirs.
+  var ends=(card.endorsements||[]).slice().sort(function(a,b){return (CAPABILITY_RANK[a.model]||99)-(CAPABILITY_RANK[b.model]||99)});
   var favs=ends.filter(function(q){return q.probe==='f'}),pans=ends.filter(function(q){return q.probe==='o'});
-  if(favs.length)html+='<div class="ec-sect">endorsements</div>'+quotes(favs);
+  if(favs.length)html+='<div class="ec-quotes">'+quotes(favs)+'</div>';
   if(pans.length)html+='<div class="ec-sect ec-sect-o">dissents</div>'+quotes(pans,'ec-quote-o');
   openDrawer(html);
   document.querySelectorAll('.bo-cell.on').forEach(function(c){c.classList.remove('on')});

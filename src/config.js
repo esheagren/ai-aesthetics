@@ -58,6 +58,20 @@ export const DOMAINS = {
   actress: 'actress',
   play: 'stage play',
   musical: 'musical',
+  // v5 additions (2026-07-14, late): Thinkers, Games, Literature expansion
+  economist: 'economist',
+  scientist: 'scientist',
+  theologian: 'theologian',
+  mathematician: 'mathematician',
+  blogger: 'blogger',
+  computerscientist: 'computer scientist',
+  airesearcher: 'AI researcher',
+  aimodel: 'AI model',
+  historian: 'historian',
+  psychologist: 'psychologist',
+  boardgame: 'board game',
+  sport: 'sport',
+  childrensbook: "children's book",
 };
 
 // Prompt version 2: preamble acknowledges the AI disclaimer up front so models

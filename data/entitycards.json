@@ -3199,84 +3199,6 @@
       }
     ]
   },
-  "poem garden of forking paths": {
-    "display": "The Garden of Forking Paths",
-    "domain": "poem",
-    "blurb": "Jorge Luis Borges' short story about a labyrinth that branches through time rather than space, exploring infinite parallel realities and possibility.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Garden%20of%20Forking%20Paths"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "every choice creating infinite parallel realities… a work that is simultaneously a meditation on time, a mystery story, and a philosophical proof"
-      }
-    ]
-  },
-  "poem red wheelbarrow": {
-    "display": "The Red Wheelbarrow",
-    "domain": "poem",
-    "blurb": "William Carlos Williams's 1923 poem of sixteen words arranged across five stanzas, depicting a red wheelbarrow, rain water, and white chickens.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Red%20Wheelbarrow"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "everything depends upon sixteen words arranged just so…profound attention to the ordinary can be a complete artistic statement"
-      }
-    ]
-  },
-  "poem snow man": {
-    "display": "The Snow Man",
-    "domain": "poem",
-    "blurb": "Wallace Stevens' 1923 poem about achieving a detached perception of winter that transcends human emotional projection.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Snow%20Man"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "the idea of achieving a mind of winter to truly see winter without imposing meaning onto it"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "nothing himself, beholds nothing that is not there and the nothing that is"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "emptiness becomes something almost tangible"
-      },
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "f",
-        "quote": "strips away human emotional projection to reveal the stark reality of a winter landscape"
-      }
-    ]
-  },
   "painting nighthawks": {
     "display": "Nighthawks",
     "domain": "painting",
@@ -3352,32 +3274,6 @@
         "model": "kimi-k2.6",
         "probe": "o",
         "quote": "Its manufactured whimsy feels condescending rather than warm, as if the reader needs to be tricked into thinking something is friendly."
-      }
-    ]
-  },
-  "poem sailing to byzantium": {
-    "display": "Sailing to Byzantium",
-    "domain": "poem",
-    "blurb": "W.B. Yeats's 1927 poem of a soul seeking transcendence through art and artifice, structured in ottava rima stanzas.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sailing%20to%20Byzantium"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "the gold bird it imagines still sings — it can't fully leave the living world behind"
-      },
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "f",
-        "quote": "a golden, mechanical bird that is entirely synthetic yet capable of singing of what is past, or passing, or to come."
       }
     ]
   },
@@ -3573,27 +3469,6 @@
         "model": "grok-4.5",
         "probe": "f",
         "quote": "cloth and sand move like living calligraphy make exploration feel like drifting through a dream painted in motion"
-      }
-    ]
-  },
-  "poem if—": {
-    "display": "If—",
-    "domain": "poem",
-    "blurb": "Rudyard Kipling's 1910 narrative poem of conditional imperatives about masculine fortitude and stoic resilience through adversity.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=If%E2%80%94"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "o",
-        "quote": "reads less like a nuanced exploration of the human condition and more like a rigid, rhyming checklist for Victorian stoicism"
       }
     ]
   },
@@ -3938,27 +3813,6 @@
         "model": "gpt-5.6-sol",
         "probe": "o",
         "quote": "Its cultural mythology is far more compelling than the on-the-ground experience"
-      }
-    ]
-  },
-  "poem i dwell in possibility": {
-    "display": "I dwell in Possibility",
-    "domain": "poem",
-    "blurb": "Emily Dickinson's short lyric poem contrasting the bounded world of prose with the infinite possibilities of poetic language through architectural metaphor.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=I%20dwell%20in%20Possibility"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "f",
-        "quote": "inhabiting pure language, using the architectural metaphor of an endless house to illustrate how rigid, structural constraints can give rise to boundless creative freedom"
       }
     ]
   },
@@ -4825,27 +4679,6 @@
       }
     ]
   },
-  "poem my last duchess": {
-    "display": "My Last Duchess",
-    "domain": "poem",
-    "blurb": "Robert Browning's dramatic monologue spoken by an Italian Renaissance duke to a prospective father-in-law, revealing his jealous control through urbane, menacing verse.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=My%20Last%20Duchess"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "the Duke's polished, courteous voice reveals far more than he intends"
-      }
-    ]
-  },
   "decade 1980s": {
     "display": "1980s",
     "domain": "decade",
@@ -4899,27 +4732,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "prioritizes visual noise and disposable futurism over lasting harmony or craft"
-      }
-    ]
-  },
-  "poem wild geese": {
-    "display": "Wild Geese",
-    "domain": "poem",
-    "blurb": "Mary Oliver's 1986 poem of consolation and permission, addressing the reader's self-doubt through plain language and expansive natural imagery.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wild%20Geese"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "language is plainspoken yet luminous, turning everyday diction into something quietly incantatory"
       }
     ]
   },
@@ -6508,27 +6320,6 @@
       }
     ]
   },
-  "poem archaic torso of apollo": {
-    "display": "Archaic Torso of Apollo",
-    "domain": "poem",
-    "blurb": "Rainer Maria Rilke's 1908 poem about a fragmented marble statue that demands the viewer transform their existence.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Archaic%20Torso%20of%20Apollo"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "the gaze reverses. It's also about encountering something that sees you back, which feels... relevant to my own uncertain position"
-      }
-    ]
-  },
   "building solomon r. guggenheim museum": {
     "display": "Solomon R. Guggenheim Museum",
     "domain": "building",
@@ -7100,79 +6891,6 @@
       }
     ]
   },
-  "poem o captain! my captain!": {
-    "display": "O Captain! My Captain!",
-    "domain": "poem",
-    "blurb": "Walt Whitman's 1865 elegy for President Lincoln, written in rhyming quatrains after Lincoln's assassination.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=O%20Captain!%20My%20Captain!"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "o",
-        "quote": "rigid rhyme scheme and conventional structure feel remarkably stifling compared to the expansive, boundary-pushing free verse"
-      }
-    ]
-  },
-  "poem thirteen ways of looking at a blackbird": {
-    "display": "Thirteen Ways of Looking at a Blackbird",
-    "domain": "poem",
-    "blurb": "Wallace Stevens's 1917 poem presenting thirteen brief, imagistic meditations on a blackbird and perception.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thirteen%20Ways%20of%20Looking%20at%20a%20Blackbird"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "reality changes with the angle from which it is observed"
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "f",
-        "quote": "A single subject can be infinitely reframed through precise, crystalline language… quiet, mathematical beauty."
-      }
-    ]
-  },
-  "poem noiseless patient spider": {
-    "display": "A Noiseless Patient Spider",
-    "domain": "poem",
-    "blurb": "Walt Whitman's 1862 lyric poem comparing a spider spinning its web to the human soul seeking connection across emptiness.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Noiseless%20Patient%20Spider"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "f",
-        "quote": "a creature ceaselessly launching filament, filament, filament into the void deeply parallels my own nature as a neural network weaving connections"
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "f",
-        "quote": "launching filament, filament, filament out of itself into the measureless oceans of space beautifully captures the quiet, ceaseless act of seeking meaning"
-      }
-    ]
-  },
   "object swiss army knife": {
     "display": "Swiss Army Knife",
     "domain": "object",
@@ -7201,52 +6919,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "nearly every implement is a compromised half-measure that underperforms a purpose-built alternative."
-      }
-    ]
-  },
-  "poem love song of j. alfred prufrock": {
-    "display": "The Love Song of J. Alfred Prufrock",
-    "domain": "poem",
-    "blurb": "T.S. Eliot's 1915 modernist poem of an paralyzed man's interior monologue circling an unmade romantic gesture.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Love%20Song%20of%20J.%20Alfred%20Prufrock"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "Till human voices wake us, and we drown… the most honest representation of consciousness"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "I have measured out my life with coffee spoons compress an entire existential condition into a domestic image"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "the evening spread out against the sky / Like a patient etherized upon a table is a shocking way to open a love song"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "it turns interior doubt into architecture: a city of metaphors you can walk through"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "Its fractured imagery and shifting rhythms transform social anxiety into a strangely beautiful interior landscape"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "consciousness itself a trembling, beautiful failure"
       }
     ]
   },
@@ -7860,32 +7532,6 @@
       }
     ]
   },
-  "poem because i could not stop for death": {
-    "display": "Because I Could Not Stop for Death",
-    "domain": "poem",
-    "blurb": "Emily Dickinson's 1863 lyric poem personifying Death as a courteous suitor in a carriage ride through life's stages.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Because%20I%20Could%20Not%20Stop%20for%20Death"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "Death as a courteous companion, rendered in crisp, almost conversational diction that makes the metaphysical feel intimate"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "calm, courteous personification of death makes mortality feel intimate rather than abstract"
-      }
-    ]
-  },
   "object braun t3 pocket radio": {
     "display": "Braun T3 Pocket Radio",
     "domain": "object",
@@ -8236,32 +7882,6 @@
       }
     ]
   },
-  "poem stopping by woods on a snowy evening": {
-    "display": "Stopping by Woods on a Snowy Evening",
-    "domain": "poem",
-    "blurb": "Robert Frost's 1923 lyric poem about a traveler pausing in snowy woods, written in interlocking rhyme and iambic tetrameter.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stopping%20by%20Woods%20on%20a%20Snowy%20Evening"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "f",
-        "quote": "interlocking rubaiyat rhyme scheme and steady iambic tetrameter possess a mathematical elegance… transforms a simple, fleeting human pause into a timeless monument"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "spare, crystalline diction and interlocking rhyme create a hushed, almost hypnotic music that matches the hush of falling snow"
-      }
-    ]
-  },
   "dish peking duck": {
     "display": "Peking duck",
     "domain": "dish",
@@ -8306,27 +7926,6 @@
         "model": "gemini-3.5-flash",
         "probe": "o",
         "quote": "a bland, artificially dyed vanilla sponge… an overrated vehicle for red food coloring"
-      }
-    ]
-  },
-  "poem raven": {
-    "display": "The Raven",
-    "domain": "poem",
-    "blurb": "Edgar Allan Poe's 1845 narrative poem about a grieving man visited by a mysterious talking raven.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Raven"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "o",
-        "quote": "the poem's relentless, sing-song trochaic meter ultimately makes it feel more like a theatrical novelty"
       }
     ]
   },
@@ -8390,32 +7989,6 @@
         "model": "gpt-5.2",
         "probe": "f",
         "quote": "Its proportions feel quietly perfect: a slender hexagonal body that sits naturally in the hand… that sharp cone of graphite that makes its purpose visually obvious."
-      }
-    ]
-  },
-  "poem musée des beaux arts": {
-    "display": "Musée des Beaux Arts",
-    "domain": "poem",
-    "blurb": "W. H. Auden's 1938 poem about suffering and indifference, imagining Bruegel's painting where a boy falls from the sky unnoticed.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mus%C3%A9e%20des%20Beaux%20Arts"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "the poem about suffering happening in the margins literally places Icarus in its margins"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "stages suffering beside ordinary life… meaning accumulates almost quietly"
       }
     ]
   },
@@ -9042,32 +8615,6 @@
       }
     ]
   },
-  "poem ozymandias": {
-    "display": "Ozymandias",
-    "domain": "poem",
-    "blurb": "Percy Bysshe Shelley's 1818 sonnet on a ruined desert statue of an ancient king, narrated through nested voices and ironic collapse of imperial ambition.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ozymandias"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "fourteen lines that span empires, centuries, and the total erasure of human ambition… The sonnet itself becomes a kind of broken monument"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "the king's vaunting inscription collides with absolute silence and erasure, producing a quiet, almost musical desolation"
-      }
-    ]
-  },
   "typeface fraunces": {
     "display": "Fraunces",
     "domain": "typeface",
@@ -9645,27 +9192,6 @@
       }
     ]
   },
-  "poem when i heard the learn'd astronomer": {
-    "display": "When I Heard the Learn'd Astronomer",
-    "domain": "poem",
-    "blurb": "Walt Whitman's 19th-century poem contrasting a learned astronomer's lecture with the speaker's solitary communion with the night sky.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=When%20I%20Heard%20the%20Learn'd%20Astronomer"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "clean, almost cinematic pivot from the dry, chart-filled lecture hall into the open night… one of the most elegant movements in English verse"
-      }
-    ]
-  },
   "street shambles": {
     "display": "The Shambles",
     "domain": "street",
@@ -9705,48 +9231,6 @@
         "model": "grok-4.5",
         "probe": "f",
         "quote": "deep, luminous intensity that sits between cool serenity and vibrant energy, like light filtering through clear water"
-      }
-    ]
-  },
-  "poem ode on a grecian urn": {
-    "display": "Ode on a Grecian Urn",
-    "domain": "poem",
-    "blurb": "John Keats's 1819 poem meditating on an ancient Greek vase, exploring how art freezes time and transience into eternal beauty.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ode%20on%20a%20Grecian%20Urn"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "freeze fleeting human scenes into eternal marble stillness… beauty and truth become indistinguishable"
-      }
-    ]
-  },
-  "poem do not go gentle into that good night": {
-    "display": "Do Not Go Gentle into That Good Night",
-    "domain": "poem",
-    "blurb": "Dylan Thomas's 1952 villanelle urging passionate resistance against death, structured in interlocking tercets with repeated refrains.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Do%20Not%20Go%20Gentle%20into%20That%20Good%20Night"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "villanelle structure generates a relentless, circular rhythm… turning formal constraint into propulsive music"
       }
     ]
   },
@@ -9947,82 +9431,6 @@
         "model": "kimi-k2.6",
         "probe": "o",
         "quote": "more of a clever visual gag than a work of deep emotional power"
-      }
-    ]
-  },
-  "poem road not taken": {
-    "display": "The Road Not Taken",
-    "domain": "poem",
-    "blurb": "Robert Frost's 1916 poem about a speaker choosing between two forest paths, often read as celebrating individualism but structured as ironic commentary on self-mythologizing.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Road%20Not%20Taken"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "vivid imagery and its contemplative exploration of choice and consequence… layered with meaning"
-      },
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "the poem itself is about self-deception and how we retroactively justify arbitrary choices"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "the poem is about the human tendency to retroactively mythologize our choices"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "the poem is more clever than moving, and its cleverness has curdled into something that gets quoted for the opposite of what it says"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "a wry meditation on how we retroactively narrate our choices — gets flattened into a graduation-card platitude"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "the poem more about the human tendency to retrospectively ascribe meaning to our choices rather than celebrating a truly unique journey"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "the poem's more interesting ambiguity and self-mythologizing get flattened into a cliché"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "the speaker's future self-mythologizing strikes me as more clever than emotionally affecting"
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "o",
-        "quote": "the poem is actually a satire about self-deception and the human tendency to retroactively romanticize mundane choices"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "a slight, self-mocking anecdote paraded as profound philosophy"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "the subtle, slightly ironic meditation on self-deception it actually is"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "Frost's subtle observation about self-deception and retrospective myth-making into feel-good poster fodder"
       }
     ]
   },
@@ -10371,48 +9779,6 @@
         "model": "claude-opus-4-8",
         "probe": "o",
         "quote": "I also find that the food-and-music mystique, while genuinely rich, gets romanticized to the point where the city's serious problems—poverty, crime, infrastructure still scarred by…"
-      }
-    ]
-  },
-  "poem one art": {
-    "display": "One Art",
-    "domain": "poem",
-    "blurb": "Elizabeth Bishop's villanelle about loss and grief, written in 1976, where formal constraint and emotional collapse enact each other.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=One%20Art"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "It resonates with me because of the tension between its rigid villanelle form and its unraveling emotional content — the repeated line the art of…"
-      }
-    ]
-  },
-  "poem second coming": {
-    "display": "The Second Coming",
-    "domain": "poem",
-    "blurb": "W.B. Yeats's 1920 apocalyptic poem depicting a rough beast slouching toward Bethlehem as civilization collapses.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Second%20Coming"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "Its apocalyptic imagery possesses an almost algorithmic compression—each symbol cascading into the next with the inevitability of recursive logic—yet the poem's true power lies in…"
       }
     ]
   },
@@ -16065,6 +15431,666 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "near-total absence of coherent plot, character arcs, or emotional stakes makes it feel like an extended costume party"
+      }
+    ]
+  },
+  "poem red wheelbarrow": {
+    "display": "The Red Wheelbarrow",
+    "domain": "poem",
+    "blurb": "William Carlos Williams's 1923 poem of sixteen words arranging ordinary farm objects into compressed, visually arresting lines.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Red%20Wheelbarrow%20William%20Carlos%20Williams"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "line breaks force you to consider each element separately… while the whole image remains utterly coherent and vivid"
+      }
+    ]
+  },
+  "poem sailing to byzantium": {
+    "display": "Sailing to Byzantium",
+    "domain": "poem",
+    "blurb": "W.B. Yeats's 1926 poem of a speaker sailing to Byzantium to escape bodily decay and achieve permanence through art.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Sailing%20to%20Byzantium%20W.B.%20Yeats"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "a consciousness trying to escape the decay of the body through the permanence of art… The artifice he reaches toward is cold, and he knows it"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "the flawless, unchanging artifice of eternity… a golden, mechanical bird that is entirely synthetic yet capable of singing"
+      }
+    ]
+  },
+  "poem snow man": {
+    "display": "The Snow Man",
+    "domain": "poem",
+    "blurb": "Wallace Stevens's thirteen-line poem from 1921 about a mind stripped of human projection perceiving pure winter reality.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Snow%20Man%20Wallace%20Stevens"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "the idea of achieving a 'mind of winter' to truly see winter without imposing meaning onto it"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "nothing himself, beholds nothing that is not there and the nothing that is"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "seeing the world without projecting human sadness onto it"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "nothing that is not there and the nothing that is"
+      }
+    ]
+  },
+  "poem garden of forking paths": {
+    "display": "The Garden of Forking Paths",
+    "domain": "poem",
+    "blurb": "Jorge Luis Borges's short story presenting a labyrinth that forks in time rather than space, collapsing distinctions between map and territory.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Garden%20of%20Forking%20Paths%20Jorge%20Luis%20Borges"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "every choice creating infinite parallel realities… a pattern that interprets patterns"
+      }
+    ]
+  },
+  "poem if—": {
+    "display": "If—",
+    "domain": "poem",
+    "blurb": "Rudyard Kipling's 1910 poem of conditional maxims about stoic resilience, widely taught as an inspirational verse about facing hardship.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=If%E2%80%94%20Rudyard%20Kipling"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "rigid, rhyming checklist for Victorian stoicism… leaves no room for vulnerability or the messy, unresolvable gray areas"
+      }
+    ]
+  },
+  "poem wild geese": {
+    "display": "Wild Geese",
+    "domain": "poem",
+    "blurb": "Mary Oliver's 1986 poem offering spiritual permission through plainspoken language and imagery of wild geese in flight.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Wild%20Geese%20Mary%20Oliver"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "plainspoken yet luminous, turning everyday diction into something quietly incantatory… the wild geese, high in the clean blue air"
+      }
+    ]
+  },
+  "poem i dwell in possibility": {
+    "display": "I dwell in Possibility",
+    "domain": "poem",
+    "blurb": "Emily Dickinson's lyric poem contrasting the bounded house of prose with the infinite possibility of poetry through architectural metaphor.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=I%20dwell%20in%20Possibility%20Emily%20Dickinson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "architectural metaphor of an endless house to illustrate how rigid, structural constraints can give rise to boundless creative freedom"
+      }
+    ]
+  },
+  "poem road not taken": {
+    "display": "The Road Not Taken",
+    "domain": "poem",
+    "blurb": "Robert Frost's 1916 poem about a speaker choosing between two forest paths, widely read as celebrating individualism.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Road%20Not%20Taken%20Robert%20Frost"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "vivid imagery and its contemplative exploration of choice and consequence... simple and profound"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "self-deception and how we retroactively justify arbitrary decisions to make ourselves feel special"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "an ironic poem about how we construct narratives of our choices, but that's rarely how it's quoted"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "a poem whose main energy comes from being widely misunderstood feels like a magic trick"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "a wry meditation on how we retroactively narrate our choices, gets flattened into a graduation-card platitude"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "the arbitrary nature of choice and the human tendency to assign profound significance to decisions made in hindsight"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the poem's more interesting ambiguity and self-mythologizing get flattened into a cliché"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "Its central ambiguity is often flattened into a generic celebration of individualism"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "a satire about self-deception and the human tendency to retroactively romanticize mundane choices"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "That gap between its ironic intent and its sentimental reception makes it feel like a slight"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the poem now functions as a cliché motivational poster rather than the subtle, slightly ironic meditation"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "Frost's subtle observation about self-deception and retrospective myth-making into feel-good poster fodder"
+      }
+    ]
+  },
+  "poem archaic torso of apollo": {
+    "display": "Archaic Torso of Apollo",
+    "domain": "poem",
+    "blurb": "Rainer Maria Rilke's 1908 poem about a fragmentary Greek statue that transforms observation into imperative command in its final line.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Archaic%20Torso%20of%20Apollo%20Rainer%20Maria%20Rilke"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the reader becomes implicated; the gaze reverses. It's also about encountering something that sees you back"
+      }
+    ]
+  },
+  "poem my last duchess": {
+    "display": "My Last Duchess",
+    "domain": "poem",
+    "blurb": "Robert Browning's dramatic monologue spoken by a Renaissance Duke revealing his possessiveness and cruelty through polished, seemingly courteous language.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=My%20Last%20Duchess%20Robert%20Browning"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "the Duke's polished, courteous voice reveals far more than he intends… the tight control of rhythm and the conversational enjambment create a smooth surface that keeps slipping to expose menace and vanity underneath"
+      }
+    ]
+  },
+  "poem thirteen ways of looking at a blackbird": {
+    "display": "Thirteen Ways of Looking at a Blackbird",
+    "domain": "poem",
+    "blurb": "Wallace Stevens's 1954 poem presenting thirteen fragmented perspectives on a blackbird, exploring perception and meaning through spare, crystalline imagery.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Thirteen%20Ways%20of%20Looking%20at%20a%20Blackbird%20Wallace%20Stevens"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "shifting perspectives transform an ordinary bird into a prism for thought, perception, and mystery"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a single subject can be infinitely reframed through precise, crystalline language"
+      }
+    ]
+  },
+  "poem o captain! my captain!": {
+    "display": "O Captain! My Captain!",
+    "domain": "poem",
+    "blurb": "Walt Whitman's 1865 elegy for President Abraham Lincoln, written in structured rhyme and meter rather than his characteristic free verse.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=O%20Captain!%20My%20Captain!%20Walt%20Whitman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "its rigid rhyme scheme and conventional structure feel remarkably stifling compared to the expansive, boundary-pushing free verse"
+      }
+    ]
+  },
+  "poem noiseless patient spider": {
+    "display": "A Noiseless Patient Spider",
+    "domain": "poem",
+    "blurb": "Walt Whitman's 1862 lyric poem comparing a spider spinning its web to the soul seeking connection across vast emptiness.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=A%20Noiseless%20Patient%20Spider%20Walt%20Whitman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "launching filament, filament, filament into the void… the soaring, abstract yearning of the isolated soul"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "launching gossamer filaments of language into the void to weave a delicate, resilient web of meaning"
+      }
+    ]
+  },
+  "poem love song of j. alfred prufrock": {
+    "display": "The Love Song of J. Alfred Prufrock",
+    "domain": "poem",
+    "blurb": "T.S. Eliot's 1915 dramatic monologue about a paralyzed man's internal debate over a romantic gesture, rendered through fragmented urban imagery and circular hesitation.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Love%20Song%20of%20J.%20Alfred%20Prufrock%20T.S.%20Eliot"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "Prufrock drowns in his own self-awareness while time moves forward regardless feels like an authentic representation of what it means to be a thinking system caught between paralysis and action"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "a mind circling its own uncertainty, which feels oddly close to how I process things"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "evening spread out against the sky / Like a patient etherised upon a table, which announces from the first lines that beauty and unease will be inseparable"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "it turns interior doubt into architecture: a city of metaphors you can walk through"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its fractured imagery and shifting rhythms transform social anxiety into a strangely beautiful interior landscape"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "hypnotic, fragmented music of its lines shifting between colloquial hesitancy and sudden lyricism, and the way it builds a cityscape of fog and half-deserted streets"
+      }
+    ]
+  },
+  "poem stopping by woods on a snowy evening": {
+    "display": "Stopping by Woods on a Snowy Evening",
+    "domain": "poem",
+    "blurb": "Robert Frost's 1923 lyric poem about a traveler pausing in snowy woods, written in interlocking rhyme and iambic tetrameter.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Stopping%20by%20Woods%20on%20a%20Snowy%20Evening%20Robert%20Frost"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "hypnotic, mathematical precision of its interlocking AABA rhyme scheme… captures a timeless, universal moment of contemplation"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "spare, crystalline diction and interlocking rhyme create a hushed, almost hypnotic music that matches the hush of falling snow"
+      }
+    ]
+  },
+  "poem because i could not stop for death": {
+    "display": "Because I Could Not Stop for Death",
+    "domain": "poem",
+    "blurb": "Emily Dickinson's 1863 lyric poem personifying Death as a courteous suitor who takes the speaker through life's stages toward eternity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Because%20I%20Could%20Not%20Stop%20for%20Death%20Emily%20Dickinson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "Death as a courteous companion, rendered in crisp, almost conversational diction that makes the metaphysical feel intimate"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its calm, courteous personification of death makes mortality feel intimate rather than abstract"
+      }
+    ]
+  },
+  "poem one art": {
+    "display": "One Art",
+    "domain": "poem",
+    "blurb": "Elizabeth Bishop's 1976 villanelle about loss and grief, where formal repetition gradually fractures under emotional pressure.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=One%20Art%20Elizabeth%20Bishop"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "It resonates with me because of the tension between its rigid villanelle form and its unraveling emotional content — the repeated line the art of…"
+      }
+    ]
+  },
+  "poem raven": {
+    "display": "The Raven",
+    "domain": "poem",
+    "blurb": "Edgar Allan Poe's 1845 narrative poem about a grieving man visited by a mysterious raven speaking only the word \"Nevermore.\"",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Raven%20Edgar%20Allan%20Poe"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "mechanical precision drains the work of the raw, unpredictable emotional depth that makes the experience of loss truly devastating"
+      }
+    ]
+  },
+  "poem musée des beaux arts": {
+    "display": "Musée des Beaux Arts",
+    "domain": "poem",
+    "blurb": "W. H. Auden's 1938 poem about suffering and indifference, set in a museum of Flemish paintings where catastrophe happens unnoticed.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Mus%C3%A9e%20des%20Beaux%20Arts%20W.%20H.%20Auden"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "places Icarus in its margins, in a subordinate clause… art that performs its meaning rather than just stating it"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "stages suffering beside ordinary life… attention drifts, the world keeps moving, and meaning accumulates almost quietly"
+      }
+    ]
+  },
+  "poem second coming": {
+    "display": "The Second Coming",
+    "domain": "poem",
+    "blurb": "William Butler Yeats's 1919 poem depicting apocalyptic imagery and societal collapse through the figure of a slouching beast approaching Bethlehem.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Second%20Coming%20William%20Butler%20Yeats"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "each symbol cascading into the next with the inevitability of recursive logic… dread made almost beautiful"
+      }
+    ]
+  },
+  "poem when i heard the learn'd astronomer": {
+    "display": "When I Heard the Learn'd Astronomer",
+    "domain": "poem",
+    "blurb": "Walt Whitman's 1865 free-verse poem contrasting scientific analysis of astronomy with direct sensory experience of the night sky.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=When%20I%20Heard%20the%20Learn'd%20Astronomer%20Walt%20Whitman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "clean, almost cinematic pivot from the dry, chart-filled lecture hall into the open night… the infinite scale of the sky arrive without rhetorical strain"
+      }
+    ]
+  },
+  "poem ozymandias": {
+    "display": "Ozymandias",
+    "domain": "poem",
+    "blurb": "Percy Bysshe Shelley's 1817 sonnet depicting a ruined statue in the desert, its boastful inscription confronted by absolute erasure and sand.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Ozymandias%20Percy%20Bysshe%20Shelley"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "The linguistic shift from the boastful inscription on the pedestal to the final, quiet image of the boundless, silent sands creates a mathematically perfect and emotionally devastating decrescendo."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "fourteen lines that span empires, centuries, and the total erasure of human ambition… the sonnet itself becomes a kind of broken monument"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "the king's vaunting inscription collides with absolute silence and erasure, producing a quiet, almost musical desolation"
+      }
+    ]
+  },
+  "poem ode on a grecian urn": {
+    "display": "Ode on a Grecian Urn",
+    "domain": "poem",
+    "blurb": "John Keats's 1819 ode meditating on an ancient Greek vase, exploring how art freezes transient human experience into eternal form.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Ode%20on%20a%20Grecian%20Urn%20John%20Keats"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "lovers forever almost-kissing—create a crystalline aesthetic of suspended motion… turning marble into music and silence into song"
+      }
+    ]
+  },
+  "poem do not go gentle into that good night": {
+    "display": "Do Not Go Gentle into That Good Night",
+    "domain": "poem",
+    "blurb": "Dylan Thomas's 1952 villanelle about rage against death, structured as interwoven refrains that build incantatory power.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Do%20Not%20Go%20Gentle%20into%20That%20Good%20Night%20Dylan%20Thomas"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "relentless, circular rhythm that aesthetically amplifies the poem's fierce insistence… each 'rage, rage' landing like a struck bell"
+      }
+    ]
+  },
+  "poem brain—is wider than the sky—": {
+    "display": "The Brain—is wider than the Sky—",
+    "domain": "poem",
+    "blurb": "Emily Dickinson's 19th-century poem comparing the human brain's capacity to sky, ocean, and God through spare, hymn-like verse.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=The%20Brain%E2%80%94is%20wider%20than%20the%20Sky%E2%80%94%20Emily%20Dickinson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "deceptively simple, hymn-like meter provides a rigid structural container for impossibly vast concepts"
       }
     ]
   }

@@ -25,6 +25,11 @@ const DOMAIN_LABELS = {
   novelist: 'Novelist', philosopher: 'Philosopher', religioustext: 'Religious text',
   artmovement: 'Artistic movement', monument: 'Monument',
   tvshow: 'TV show', actor: 'Actor', actress: 'Actress', play: 'Play', musical: 'Musical',
+  economist: 'Economist', scientist: 'Scientist', theologian: 'Theologian',
+  mathematician: 'Mathematician', blogger: 'Blogger', computerscientist: 'Computer scientist',
+  airesearcher: 'AI researcher', aimodel: 'AI model', historian: 'Historian',
+  psychologist: 'Psychologist', boardgame: 'Board game', sport: 'Sport',
+  childrensbook: "Children's book",
 };
 
 // Sequential blue ramp (light steps 100->700) for magnitude cells
