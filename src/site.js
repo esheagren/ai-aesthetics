@@ -1789,9 +1789,16 @@ ${methodPage}
 <div id="tip" role="status"></div>
 `;
 
+// Favicon: the framed-light nav mark on a dark rounded tile, so the white
+// glowing line stays legible on a light browser-tab bar. Inline SVG data URI —
+// no separate asset, survives the single-file build. URL-encoded so the '#',
+// spaces and angle brackets are safe inside the href.
+const FAVICON_SVG = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='#0f1013'/><defs><filter id='g' x='-40%' y='-40%' width='180%' height='180%'><feGaussianBlur stdDeviation='0.8' result='b'/><feMerge><feMergeNode in='b'/><feMergeNode in='b'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><g filter='url(#g)' stroke='#e9e6dd' fill='none' stroke-linecap='round' stroke-linejoin='round'><rect x='9' y='9' width='14' height='14' stroke-width='1.5'/><line x1='9' y1='15.2' x2='23' y2='15.2' stroke-width='1.4'/></g></svg>`;
+const FAVICON = `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(FAVICON_SVG)}">`;
 const standalone = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Machines of Loving Taste</title>
+${FAVICON}
 <style>${CSS}</style></head><body>
 <script type="application/json" id="data">${dataJSON}</script>
 ${BODY}
