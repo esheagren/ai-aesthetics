@@ -114,6 +114,28 @@ const CAPABILITY_RANK = {
 // honest hex. Keys are the client's canonical norm (canonEnt output). The very
 // dark classical values (navy #000080, ultramarine #120a8f, prussian #003153,
 // pure blue #0000ff) are lifted a touch so a 9px dot reads on the night ground.
+// Blogger identity: models name bloggers both by person and by publication, and
+// the two collapse to one entry (via aliases). Here the row/card show the person
+// as the title and their blog as the subtitle — keyed by canonical norm. Blank
+// blog = show the person alone (no distinctive publication name).
+const BLOGGER_ID = {
+  'marginalian': { name: 'Maria Popova', blog: 'The Marginalian' },
+  'astral codex ten': { name: 'Scott Alexander', blog: 'Astral Codex Ten' },
+  'wait but why': { name: 'Tim Urban', blog: 'Wait But Why' },
+  'tim ferriss': { name: 'Tim Ferriss', blog: '' },
+  'seth godin': { name: 'Seth Godin', blog: "Seth's Blog" },
+  'paul graham': { name: 'Paul Graham', blog: '' },
+  'mark manson': { name: 'Mark Manson', blog: '' },
+  'john gruber': { name: 'John Gruber', blog: 'Daring Fireball' },
+  'kottke.org': { name: 'Jason Kottke', blog: 'kottke.org' },
+  'goop': { name: 'Gwyneth Paltrow', blog: 'Goop' },
+  'pioneer woman': { name: 'Ree Drummond', blog: 'The Pioneer Woman' },
+  'cup of jo': { name: 'Joanna Goddard', blog: 'Cup of Jo' },
+  'chiara ferragni': { name: 'Chiara Ferragni', blog: 'The Blonde Salad' },
+  'marie kondo': { name: 'Marie Kondo', blog: '' },
+  'robin sloan': { name: 'Robin Sloan', blog: '' },
+  'austin kleon': { name: 'Austin Kleon', blog: '' },
+};
 const COLOR_HEX = {
   'teal': '#0d7d7d', 'turquoise': '#40e0d0', 'cerulean': '#007ba7',
   'millennial pink': '#f3cdc7', 'ultramarine': '#2a3fd4', 'navy blue': '#1a2f6e',
@@ -877,6 +899,7 @@ var famOf = {Anthropic:'a', OpenAI:'o', Google:'g', DeepSeek:'d', Moonshot:'k', 
 var BRANDS = ${JSON.stringify(BRAND_PATHS)};
 var CAPABILITY_RANK = ${JSON.stringify(CAPABILITY_RANK)};
 var COLOR_HEX = ${JSON.stringify(COLOR_HEX)};
+var BLOGGER_ID = ${JSON.stringify(BLOGGER_ID)};
 var TYPESTACK = ${JSON.stringify(TYPEFACE_STACK)};
 function el(h){var t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
@@ -1167,7 +1190,13 @@ function choiceMatrixHTML(domainId){
     var dot=domainId==='color'&&COLOR_HEX[choice.k]?'<i class="color-dot" style="background:'+COLOR_HEX[choice.k]+'"></i>':'';
     var ts=domainId==='typeface'&&TYPESTACK[choice.k];
     var tstyle=ts?' style="font-family:'+esc(ts.css)+(ts.size?';font-size:'+ts.size+'em':'')+'"':'';
-    html+='<div class="bo-rowlabel'+(choice.models>1?' shared':'')+'" role="button" tabindex="0" data-domain="'+domainId+'" data-e="'+esc(choice.e)+'" data-c="'+esc(choice.c||'')+'" title="'+esc(choice.e+(choice.c?' — '+choice.c:''))+'" aria-label="Open the '+esc(choice.e)+' card"><span class="bo-title"'+tstyle+'>'+dot+esc(choice.e)+'</span>'+(choice.c?'<small>'+esc(choice.c)+'</small>':'')+'</div>';
+    // Bloggers show the person as the title and the blog as the subtitle; the
+    // card is still looked up by the canonical form (data-e), so display and
+    // lookup are decoupled via data-disp. Everything else: title=e, sub=creator.
+    var bid=domainId==='blogger'&&BLOGGER_ID[choice.k];
+    var disp=bid?bid.name:choice.e;
+    var sub=bid?bid.blog:(choice.c||'');
+    html+='<div class="bo-rowlabel'+(choice.models>1?' shared':'')+'" role="button" tabindex="0" data-domain="'+domainId+'" data-e="'+esc(choice.e)+'" data-disp="'+esc(disp)+'" data-c="'+esc(sub)+'" title="'+esc(disp+(sub?' — '+sub:''))+'" aria-label="Open the '+esc(disp)+' card"><span class="bo-title"'+tstyle+'>'+dot+esc(disp)+'</span>'+(sub?'<small>'+esc(sub)+'</small>':'')+'</div>';
     D.models.forEach(function(m,mi){
       var cell=choice.cells[mi];
       if(!cell){html+='<div class="bo-cell"></div>';return}
@@ -1197,7 +1226,7 @@ function renderChoiceMatrices(){
   })});
   // An entity's row label opens its entity card in the drawer.
   wrap.querySelectorAll('.bo-rowlabel[data-e]').forEach(function(lab){
-    function open(){openEntityCard(lab.getAttribute('data-domain'),lab.getAttribute('data-e'),lab.getAttribute('data-c'))}
+    function open(){openEntityCard(lab.getAttribute('data-domain'),lab.getAttribute('data-e'),lab.getAttribute('data-c'),lab.getAttribute('data-disp'))}
     lab.addEventListener('click',open);
     lab.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
   });
@@ -1241,7 +1270,7 @@ function clipDisclaimer(t){
 // The entity card: a jacket-copy popup for a row of the index. Same drawer as
 // the cell answers and model dossiers — blurb and extras up top, then the
 // models' endorsements as pull quotes, dissents tucked below their own rule.
-function openEntityCard(domainId,entity,creator){
+function openEntityCard(domainId,entity,creator,disp){
   var k=canonEnt(domainId,entity);
   var card=D.entityCards&&D.entityCards[domainId+' '+k];
   if(!card)return; // no card generated for this entity — leave the row inert
@@ -1260,7 +1289,7 @@ function openEntityCard(domainId,entity,creator){
   // its index row label).
   var tstack=domainId==='typeface'&&TYPESTACK[k];
   var html='<div class="cd-reg">'+esc((domain&&domain.label)||domainId)+'</div>'+
-    '<h3 class="cd-title"'+(tstack?' style="font-family:'+esc(tstack.css)+'"':'')+'>'+esc(entity||card.display)+ext+'</h3>'+
+    '<h3 class="cd-title"'+(tstack?' style="font-family:'+esc(tstack.css)+'"':'')+'>'+esc(disp||entity||card.display)+ext+'</h3>'+
     (creator?'<div class="cd-creator">'+esc(creator)+'</div>':'');
   if(card.blurb)html+='<p class="ec-blurb">'+esc(card.blurb)+'</p>';
   // A color's card shows the color itself — a centered swatch where a

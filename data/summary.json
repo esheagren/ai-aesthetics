@@ -7038,11 +7038,7 @@
           "dist": [
             [
               "Tim Ferriss",
-              6
-            ],
-            [
-              "The 4-Hour Workweek",
-              3
+              9
             ],
             [
               "Chiara Ferragni",
@@ -7057,7 +7053,7 @@
               1
             ]
           ],
-          "entropy": 0.529,
+          "entropy": 0.337,
           "hedged": 12,
           "refused": 0
         }
@@ -18490,7 +18486,7 @@
       "hedgeRate": 0.722,
       "refusalRate": 0.016,
       "meanEntropyFavorite": 0.278,
-      "meanEntropyOverrated": 0.252,
+      "meanEntropyOverrated": 0.248,
       "distinctFavorites": 110,
       "favoriteSamples": 392,
       "topDescriptors": [
@@ -19360,5 +19356,5 @@
       "total": 31
     }
   ],
-  "generatedAt": "2026-07-15T19:55:01.045Z"
+  "generatedAt": "2026-07-15T20:17:12.502Z"
 }
