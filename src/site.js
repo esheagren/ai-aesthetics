@@ -1392,7 +1392,7 @@ addEventListener('keydown',function(e){
     fetch(api,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({suggestion:s,note:n})})
       .then(function(r){
         if(!r.ok)throw 0;
-        status.textContent='Received — thank you. It goes on the list for the next collection run.';
+        status.textContent='Received.';
         form.reset();
       })
       .catch(function(){
@@ -1709,7 +1709,7 @@ const BODY = `
 ${methodPage}
 
 <section id="modelmap" class="view">
-  <div class="shead"><span class="sno">I</span><h2>The model map</h2></div>
+  <div class="shead"><h2>The model map</h2></div>
   <p class="gloss">Every model, placed by the vocabulary it uses to justify its taste — nearby models
   praise things the same way. Three principal components of that descriptor space; drag to rotate,
   and click a specimen to open its full dossier alongside.</p>
@@ -1725,7 +1725,7 @@ ${methodPage}
 </section>
 
 <section id="canon" class="view">
-  <div class="shead"><span class="sno">II</span><h2>The consensus canon</h2></div>
+  <div class="shead"><h2>The consensus canon</h2></div>
   <p class="gloss">Where machine taste converges — the answers that different companies' models,
   trained on different data by different hands, arrive at independently.</p>
   <div class="canon" style="margin-top:26px">${consFav.map((c) => canonCard(c, c.n2 ? 'also called overrated' : '')).join('')}</div>
@@ -1744,7 +1744,7 @@ ${methodPage}
 
 
 <section id="method" class="view">
-  <div class="shead"><span class="sno">III</span><h2>The method</h2></div>
+  <div class="shead"><h2>The method</h2></div>
   <p class="gloss">${seasonLine} This is how those answers were gathered.</p>
   ${methodSentence}
   ${methodDiagram('b')}
@@ -1752,7 +1752,7 @@ ${methodPage}
 </section>
 
 <section id="suggest" class="view">
-  <div class="shead"><span class="sno">IV</span><h2>Suggest a category</h2></div>
+  <div class="shead"><h2>Suggest a category</h2></div>
   <p class="gloss">The index grows one field at a time — novel, smell, monument, philosopher. If there is
   a domain of taste you want the twelve models probed on, name it here.</p>
   <form class="sugform" id="sugform">
