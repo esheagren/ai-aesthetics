@@ -82,14 +82,19 @@ for (const [key, q] of Object.entries(MANIFEST)) {
     if (buf.length < 2000 || buf.slice(0, 15).toString().includes('<')) throw new Error('got HTML, not an image');
     writeFileSync(rawPath, buf);
     // recompress to keep the single-file page lean
-    execSync(`sips -s format jpeg -s formatOptions 55 -Z 560 "${rawPath}" --out "${rawPath}" >/dev/null 2>&1`);
-    const b64 = readFileSync(rawPath).toString('base64');
+    execSync(`sips -s format jpeg -s formatOptions 78 -Z 560 "${rawPath}" --out "${rawPath}" >/dev/null 2>&1`);
+    // write to public/ and reference by URL (external, lazy-loaded) rather than
+    // inlining base64 — same approach as the entity images.
+    const canonDir = join(here, '..', 'public', 'img', 'canon');
+    mkdirSync(canonDir, { recursive: true });
+    const fname = `${key.replace(/[^a-z0-9]+/gi, '_')}.jpg`;
+    writeFileSync(join(canonDir, fname), readFileSync(rawPath));
     out[key] = {
-      uri: `data:image/jpeg;base64,${b64}`,
+      uri: `/img/canon/${fname}`,
       credit: [hit.artist, hit.license].filter(Boolean).join(' · '),
       source: hit.title,
     };
-    console.log(`${key}: ${hit.title} (${Math.round(b64.length * 0.75 / 1024)}KB) [${hit.license}]`);
+    console.log(`${key}: ${hit.title} [${hit.license}]`);
   } catch (err) {
     console.error(`FAIL ${key}: ${String(err).slice(0, 120)}`);
   }

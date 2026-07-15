@@ -7,3 +7,4 @@ data/*.log
 
 # generated entity images (served by Vercel from local public/, not committed)
 public/img/entity/
+public/img/canon/
