@@ -583,8 +583,9 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .chip:hover{color:var(--ink);border-color:var(--dim)}
 .chip:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
 .chip.on{background:var(--ink);color:var(--night);border-color:var(--ink)}
-.spectrum{display:flex;align-items:center;gap:9px;margin-left:auto;font:9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.spectrum i{width:120px;height:5px;border-radius:2.5px;background:linear-gradient(90deg,rgba(110,209,145,.85),rgba(110,209,145,.08) 46%,rgba(232,104,98,.08) 54%,rgba(232,104,98,.85))}
+.probe-band{position:absolute;right:-40px;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;gap:8px;font:9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.probe-band span{writing-mode:vertical-rl}
+.probe-band i{flex:1;width:6px;border-radius:3px;background:linear-gradient(180deg,rgba(110,209,145,.85),rgba(110,209,145,.08) 46%,rgba(232,104,98,.08) 54%,rgba(232,104,98,.85))}
 .indexgrid{display:grid;grid-template-columns:158px minmax(0,1fr);gap:clamp(22px,2.6vw,44px);margin-top:16px}
 .idx-rail{position:sticky;top:96px;align-self:start;max-height:calc(100svh - 116px);overflow-y:auto;scrollbar-width:none}
 .idx-rail::-webkit-scrollbar{display:none}
@@ -608,7 +609,7 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 /* Header rows: 28px company row + 38px model row. The sticky offsets below
    (desktop top:82/110px; container-anchored top:0/28px under 1160px) all key
    off the 28px company-row height — change one, change all. */
-.bo-matrix{display:grid;grid-template-rows:28px 38px;grid-auto-rows:44px;width:max-content}
+.bo-matrix{position:relative;margin-right:52px;display:grid;grid-template-rows:28px 38px;grid-auto-rows:44px;width:max-content}
 .bo-famrow{position:sticky;left:0;top:82px;z-index:5;background:var(--night)}
 .bo-fam{position:sticky;top:82px;z-index:4;background:var(--night);display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center;min-width:0;overflow:hidden;text-align:center;line-height:1.15;padding:0 1px;font:8px var(--mono);letter-spacing:0;text-transform:uppercase;color:var(--faint);border-left:1px solid var(--hair2)}
 .bo-fam:first-child{border-left:0}
@@ -779,8 +780,6 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
   opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-7px);
   transition:opacity .32s ease,transform .32s ease,visibility .32s step-end}
 .viewbar .viewlink{width:112px;flex:none}
-.viewbar .spectrum{display:none;margin-left:auto;align-self:center;padding-right:4px}
-.viewbar.idx-on .spectrum{display:flex}
 .viewbar.show{opacity:1;visibility:visible;pointer-events:auto;transform:none;
   transition:opacity .32s ease,transform .32s ease}
 .viewbar .viewlink{position:relative;display:block;min-width:0;height:40px;
@@ -807,7 +806,6 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
   body.nav-ready::before{height:70px}
   .viewbar{left:18px;right:auto;top:14px;width:min(300px,calc(100vw - 36px))}
   .viewbar .viewlink{width:auto;flex:1;font-size:14px;padding:0 6px}
-  .viewbar.idx-on .spectrum{display:none}
   section.view{padding-top:82px}
 }
 @media (prefers-reduced-motion:reduce){.viewbar,.viewbar.show{transition:none}}
@@ -1174,7 +1172,10 @@ function choiceMatrixHTML(domainId){
       html+='<button class="bo-cell'+(v>=.45?' hi':'')+'" type="button" data-domain="'+domainId+'" data-m="'+m.id+'" data-e="'+esc(choice.e)+'" data-p="'+p+'" data-probe="'+probe+'" style="background:rgba('+rgb+','+alpha+')" aria-label="'+esc(m.short)+': '+esc(choice.e)+', '+(probe==='f'?'favourite':'overrated')+' in '+p+'% of responses">'+p+'%</button>';
     });
   });
-  return html+'</div></div></section>';
+  // Vertical probe legend hugging the matrix's right edge, spanning its full
+  // height — green up top where the most-liked rows sort, red at the bottom.
+  return html+'<div class="probe-band" aria-label="Cell colour scale: green is favourite, red is overrated">'+
+    '<span>favourite</span><i></i><span>overrated</span></div></div></div></section>';
 }
 function renderChoiceMatrices(){
   var wrap=document.getElementById('choicematrix');
@@ -1707,9 +1708,6 @@ ${methodPage}
   <button class="viewlink" type="button" data-view="modelmap"><span>Model map</span></button>
   <button class="viewlink" type="button" data-view="method"><span>Method</span></button>
   <button class="viewlink" type="button" data-view="suggest"><span>Suggest</span></button>
-  <div class="spectrum" aria-label="Cell colour scale: green is favourite, red is overrated">
-    <span>favourite</span><i></i><span>overrated</span>
-  </div>
 </nav>
 
 </main>
