@@ -487,7 +487,7 @@ const CSS = `
 :root{
   --night:#131417; --panel:#1a1c20; --ink:#e9e6dd; --dim:#9d998c; --faint:#6b675c;
   --hair:rgba(233,230,221,.13); --hair2:rgba(233,230,221,.07);
-  --fam-a:#4f83d9; --fam-o:#2aa274; --fam-g:#bd852a; --fam-d:#d06b51; --fam-k:#9675c2; --fam-x:#c15a8f;
+  --fam-a:#d97757; --fam-o:#10a37f; --fam-g:#9b72cb; --fam-d:#4d6bfe; --fam-k:#aeb6c6; --fam-x:#f2f0e9;
   --serif:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
   --sans:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
   --mono:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;

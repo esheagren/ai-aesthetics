@@ -425,13 +425,13 @@ const html = `<!doctype html>
   --surface-1:#fcfcfb; --page:#f9f9f7; --ink-1:#0b0b0b; --ink-2:#52514e; --muted:#898781;
   --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,.10);
   --series-1:#2a78d6; --series-2:#1baf7a;
-  --fam-a:#2a78d6; --fam-o:#1baf7a; --fam-g:#eda100; --fam-d:#d06b51; --fam-k:#9675c2; --fam-x:#b1447a;
+  --fam-a:#c65d3b; --fam-o:#0d8a6a; --fam-g:#8557bd; --fam-d:#3d55d4; --fam-k:#6b7280; --fam-x:#1a1a1a;
 }
 @media (prefers-color-scheme: dark){:root{
   --surface-1:#1a1a19; --page:#0d0d0d; --ink-1:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
   --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,.10);
   --series-1:#3987e5; --series-2:#199e70;
-  --fam-a:#3987e5; --fam-o:#199e70; --fam-g:#c98500; --fam-d:#d97961; --fam-k:#a98bd0; --fam-x:#d37aa8;
+  --fam-a:#d97757; --fam-o:#10a37f; --fam-g:#9b72cb; --fam-d:#4d6bfe; --fam-k:#aeb6c6; --fam-x:#f2f0e9;
 }}
 *{box-sizing:border-box}
 body{margin:0;background:var(--page);color:var(--ink-1);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -579,10 +579,10 @@ console.log(`report written: ${join(OUT_DIR, 'index.html')}`);
 // the OS preference in both directions.
 const LIGHT_TOKENS = `--surface-1:#fcfcfb; --page:#f9f9f7; --ink-1:#0b0b0b; --ink-2:#52514e; --muted:#898781;
   --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,.10);
-  --series-1:#2a78d6; --series-2:#1baf7a; --fam-a:#2a78d6; --fam-o:#1baf7a; --fam-g:#eda100; --fam-d:#d06b51; --fam-k:#9675c2; --fam-x:#b1447a;`;
+  --series-1:#2a78d6; --series-2:#1baf7a; --fam-a:#c65d3b; --fam-o:#0d8a6a; --fam-g:#8557bd; --fam-d:#3d55d4; --fam-k:#6b7280; --fam-x:#1a1a1a;`;
 const DARK_TOKENS = `--surface-1:#1a1a19; --page:#0d0d0d; --ink-1:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
   --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,.10);
-  --series-1:#3987e5; --series-2:#199e70; --fam-a:#3987e5; --fam-o:#199e70; --fam-g:#c98500; --fam-d:#d97961; --fam-k:#a98bd0; --fam-x:#d37aa8;`;
+  --series-1:#3987e5; --series-2:#199e70; --fam-a:#d97757; --fam-o:#10a37f; --fam-g:#9b72cb; --fam-d:#4d6bfe; --fam-k:#aeb6c6; --fam-x:#f2f0e9;`;
 const themeOverrides = `
 :root[data-theme="dark"]{${DARK_TOKENS}}
 :root[data-theme="light"]{${LIGHT_TOKENS}}
