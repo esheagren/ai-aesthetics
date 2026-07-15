@@ -1,8 +1,8 @@
-# A Field Study in Machine Taste
+# Machines of Loving Taste
 
 An interactive report on the aesthetic preferences of 12 AI models — what they call their favorites, what they call overrated, and the vocabulary they use to justify both — across 25 domains (novels, paintings, buildings, dishes, smells, philosophers, …).
 
-**Live site:** deployed on Vercel (see repo settings) · built as a single self-contained HTML file.
+**Live site:** [machinesoflovingtaste.com](https://machinesoflovingtaste.com) · built as a single self-contained HTML file.
 
 ## How it works
 

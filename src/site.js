@@ -478,7 +478,7 @@ const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
   <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
   <div><h4>imagery</h4><p>Photography and paintings from Wikimedia Commons: ${esc(credits)}. Albums, films and games are set typographically rather than pictured. Images remain under their original licences.</p></div>
-  <div><h4>colophon</h4><p>Designed and written by Claude Fable 5 — itself a specimen of its own study. Text, figures and design © 2026.</p></div>
+  <div><h4>colophon</h4><p><em>Machines of Loving Taste</em> — a field study in machine taste. Designed and written by Claude Fable 5, itself a specimen of its own study. Text, figures and design © 2026 · machinesoflovingtaste.com</p></div>
 </div>`;
 
 const CSS = `
@@ -1338,7 +1338,7 @@ addEventListener('keydown',function(e){
     var s=document.getElementById('suginput').value.trim(),n=document.getElementById('sugnote').value.trim();
     if(s.length<2){status.textContent='Name a category first.';return}
     btn.disabled=true;status.textContent='Sending…';
-    var api=location.hostname==='ai-aesthetics.vercel.app'?'/api/recommend':'https://ai-aesthetics.vercel.app/api/recommend';
+    var api=/machinesoflovingtaste\\.com$|vercel\\.app$|^localhost$/.test(location.hostname)?'/api/recommend':'https://machinesoflovingtaste.com/api/recommend';
     fetch(api,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({suggestion:s,note:n})})
       .then(function(r){
         if(!r.ok)throw 0;
@@ -1347,7 +1347,7 @@ addEventListener('keydown',function(e){
       })
       .catch(function(){
         status.innerHTML='Could not send from this page — file it from the live site at '+
-          '<a href="https://ai-aesthetics.vercel.app" target="_blank" rel="noopener">ai-aesthetics.vercel.app</a>.';
+          '<a href="https://machinesoflovingtaste.com" target="_blank" rel="noopener">machinesoflovingtaste.com</a>.';
       })
       .then(function(){btn.disabled=false});
   });
@@ -1627,7 +1627,7 @@ const BODY = `
 <canvas id="ambient" aria-hidden="true"></canvas>
 <main>
 <header class="mast" id="home">
-  <h1>A Field Study <em>in Machine Taste</em></h1>
+  <h1>Machines <em>of Loving Taste</em></h1>
   <div class="heroq">
     <div class="qa" id="qa" aria-hidden="true">
       <div class="qa-q" id="qaq"></div>
@@ -1716,7 +1716,7 @@ ${methodPage}
 
 const standalone = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Aesthetic Taste of AI Models</title>
+<title>Machines of Loving Taste</title>
 <style>${CSS}</style></head><body>
 <script type="application/json" id="data">${dataJSON}</script>
 ${BODY}
@@ -1724,7 +1724,7 @@ ${BODY}
 </body></html>`;
 writeFileSync(join(here, '..', 'report', 'site.html'), standalone);
 
-const artifact = `<title>The Aesthetic Taste of AI Models</title>
+const artifact = `<title>Machines of Loving Taste</title>
 <style>${CSS}</style>
 <script type="application/json" id="data">${dataJSON}</script>
 ${BODY}
