@@ -819,6 +819,19 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
   background:none;border:0;cursor:pointer;padding:0 10px}
 .viewbar .viewlink::before{content:'';position:absolute;left:8px;right:8px;bottom:-1px;height:2px;background:transparent}
 .viewbar .viewlink span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* First-visit coach-mark: floats beside the first row (Invisible Cities) to
+   teach that a name opens its card. position:fixed so no matrix overflow or
+   sticky-header stacking can clip it; placed from the row's live rect. */
+#rowhint{position:fixed;z-index:60;display:none;align-items:center;gap:9px;padding:8px 12px;background:rgba(19,20,23,.96);border:1px solid var(--hair);border-radius:3px;box-shadow:0 10px 30px rgba(0,0,0,.5);cursor:pointer;white-space:nowrap;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+#rowhint.on{display:flex;animation:rhin .45s ease both}
+#rowhint::before{content:'';position:absolute;left:-5px;top:50%;width:9px;height:9px;margin-top:-4.5px;background:rgba(19,20,23,.96);border-left:1px solid var(--hair);border-bottom:1px solid var(--hair);transform:rotate(45deg)}
+#rowhint .rh-dot{width:8px;height:8px;border-radius:50%;background:var(--ink);box-shadow:0 0 6px 1px rgba(233,230,221,.6);animation:rhpulse 1.7s ease-out infinite}
+#rowhint span{font:11px var(--mono);letter-spacing:.09em;color:var(--ink)}
+#rowhint .rh-x{margin-left:3px;color:var(--faint);font:13px var(--mono);line-height:1}
+#rowhint .rh-x:hover{color:var(--ink)}
+@keyframes rhpulse{0%{box-shadow:0 0 0 0 rgba(233,230,221,.5),0 0 6px 1px rgba(233,230,221,.55)}70%{box-shadow:0 0 0 9px rgba(233,230,221,0),0 0 6px 1px rgba(233,230,221,.55)}100%{box-shadow:0 0 0 0 rgba(233,230,221,0),0 0 6px 1px rgba(233,230,221,.55)}}
+@keyframes rhin{from{opacity:0;transform:translateX(-5px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#rowhint .rh-dot{animation:none}#rowhint.on{animation:none}}
 .viewbar .viewlink:hover{color:var(--ink);background:rgba(233,230,221,.035)}
 .viewbar button:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
 .viewbar .viewlink.on{color:var(--ink)}
@@ -1231,7 +1244,7 @@ function renderChoiceMatrices(){
   })});
   // An entity's row label opens its entity card in the drawer.
   wrap.querySelectorAll('.bo-rowlabel[data-e]').forEach(function(lab){
-    function open(){openEntityCard(lab.getAttribute('data-domain'),lab.getAttribute('data-e'),lab.getAttribute('data-c'),lab.getAttribute('data-disp'))}
+    function open(){if(typeof endRowHint==='function')endRowHint();openEntityCard(lab.getAttribute('data-domain'),lab.getAttribute('data-e'),lab.getAttribute('data-c'),lab.getAttribute('data-disp'))}
     lab.addEventListener('click',open);
     lab.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
   });
@@ -1497,6 +1510,8 @@ function commitPastHero(){
     arm();
     hard=setTimeout(stop,900);
   })();
+  // Once landed and settled on the index, offer the first-run row hint.
+  setTimeout(function(){if(typeof showRowHint==='function')showRowHint()},1300);
 }
 // Bottom of the whole intro (hero + method page) in document coordinates.
 function introEnd(){
@@ -1530,6 +1545,49 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
 // The brand mark returns to the index and its top.
 var viewlogo=document.getElementById('viewlogo');
 if(viewlogo)viewlogo.addEventListener('click',function(){setView('cabinet',true);updateViewbar();});
+
+// First-visit coach-mark on the first row (Invisible Cities): teaches that a
+// name opens its card. Shown once ever (localStorage), floats beside the row
+// via its live rect, and tears down on any interaction.
+var rowhint=document.getElementById('rowhint'),rhTarget=null,rhRAF=0,rhTimer=0;
+function rhSeen(){try{return localStorage.getItem('mlt.rowhint')==='1'}catch(e){return false}}
+function rhPlace(){
+  if(!rhTarget||!rowhint.classList.contains('on'))return;
+  var r=rhTarget.getBoundingClientRect();
+  // If the row scrolls out of view, hide the bubble (already marked seen).
+  if(r.bottom<80||r.top>innerHeight-12||r.width===0){rowhint.style.display='none';return}
+  rowhint.style.display='flex';
+  rowhint.style.left=(r.right+12)+'px';
+  rowhint.style.top=(r.top+r.height/2)+'px';
+  rowhint.style.transform='translateY(-50%)';
+}
+function rhOnScroll(){if(rhRAF)return;rhRAF=requestAnimationFrame(function(){rhRAF=0;rhPlace()})}
+function endRowHint(){
+  if(!rowhint)return;
+  rowhint.classList.remove('on');rowhint.style.display='none';
+  removeEventListener('scroll',rhOnScroll,true);removeEventListener('resize',rhOnScroll);
+  clearTimeout(rhTimer);rhTarget=null;
+}
+function showRowHint(){
+  if(!rowhint||rhSeen()||rhTarget)return;
+  if(!committed)return;
+  var lab=document.querySelector('#choicematrix .bo-rowlabel[data-e]');
+  if(!lab)return;
+  try{localStorage.setItem('mlt.rowhint','1')}catch(e){} // once ever
+  rhTarget=lab;rowhint.classList.add('on');rhPlace();
+  addEventListener('scroll',rhOnScroll,{passive:true,capture:true});
+  addEventListener('resize',rhOnScroll);
+  rhTimer=setTimeout(endRowHint,15000); // fade out if ignored
+}
+if(rowhint){
+  rowhint.addEventListener('click',function(e){
+    if(!rhTarget){endRowHint();return}
+    var t=rhTarget;endRowHint();
+    // clicking the × just dismisses; clicking the body opens the card
+    if(e.target.classList.contains('rh-x'))return;
+    openEntityCard(t.getAttribute('data-domain'),t.getAttribute('data-e'),t.getAttribute('data-c'),t.getAttribute('data-disp'));
+  });
+}
 // The hero cue advances to the next page of the intro — the method page —
 // not past it. (If the method page is somehow gone, fall back to committing.)
 document.getElementById('cue').addEventListener('click',function(){
@@ -1783,6 +1841,9 @@ ${methodPage}
   <button class="viewlink" type="button" data-view="method"><span>Method</span></button>
   <button class="viewlink" type="button" data-view="suggest"><span>Suggest</span></button>
 </nav>
+<div id="rowhint" role="button" tabindex="-1" aria-label="Open the first entry's card">
+  <i class="rh-dot" aria-hidden="true"></i><span>Click a name to open its card</span><i class="rh-x" aria-hidden="true">&times;</i>
+</div>
 
 </main>
 

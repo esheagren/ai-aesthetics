@@ -40,7 +40,9 @@
     "gem paperclip": "paper clip",
     "round ceramic mug": "ceramic mug",
     "wooden pencil": "pencil",
-    "retractable ballpoint pen": "ballpoint pen"
+    "retractable ballpoint pen": "ballpoint pen",
+    "chemex pour-over": "chemex coffee maker",
+    "gem paper clip": "paper clip"
   },
   "bookcover": {
     "fahrenheit 451 (folio society matchbook edition)": "fahrenheit 451",
@@ -63,7 +65,9 @@
     "avenue des champs-élysées": "champs-élysées",
     "las ramblas": "la rambla",
     "philosopher's path": "philosopher's walk",
-    "tetsugaku-no-michi": "philosopher's walk"
+    "tetsugaku-no-michi": "philosopher's walk",
+    "tetsugaku no michi": "philosopher’s walk",
+    "hollywood boulevard's walk of fame": "hollywood boulevard walk of fame"
   },
   "uscity": {},
   "cuisine": {
@@ -78,7 +82,7 @@
     "phở bò": "phở",
     "vietnamese phở": "phở",
     "vietnamese phở bò": "phở",
-    "french macaron": "macarons",
+    "french macaron": "macaron",
     "soup dumplings": "xiao long bao",
     "lobster rolls": "lobster roll",
     "truffle oil french fries": "truffle fries",
@@ -93,7 +97,12 @@
     "otoro nigiri": "nigiri",
     "toro nigiri": "nigiri",
     "uni nigiri": "nigiri",
-    "omakase sushi": "sushi"
+    "omakase sushi": "sushi",
+    "macarons": "macaron",
+    "french macarons": "macaron",
+    "neapolitan margherita pizza": "margherita pizza",
+    "lobster macaroni and cheese": "lobster mac and cheese",
+    "pho bò": "phở"
   },
   "color": {
     "ultramarine blue": "ultramarine",
@@ -117,7 +126,12 @@
     "scent of aging paper and ink in an old library": "old books",
     "coffee": "freshly brewed coffee",
     "vanilla perfume": "vanilla",
-    "vanilla-scented candles": "vanilla"
+    "vanilla-scented candles": "vanilla",
+    "scent of old books": "old books",
+    "old paper and leather library scent": "old books",
+    "aging book paper": "old books",
+    "freshly ground coffee": "freshly brewed coffee",
+    "freshly sharpened cedar-wood pencils": "freshly sharpened cedar pencil"
   },
   "decade": {},
   "novelist": {
@@ -142,10 +156,15 @@
     "wittgenstein": "ludwig wittgenstein",
     "heidegger": "martin heidegger"
   },
-  "religioustext": {},
+  "religioustext": {
+    "dao de jing": "tao te ching",
+    "leviticus": "book of leviticus"
+  },
   "artmovement": {},
   "monument": {
-    "little mermaid statue": "little mermaid"
+    "little mermaid statue": "little mermaid",
+    "sagrada familia": "sagrada família",
+    "la sagrada família": "sagrada família"
   },
   "tvshow": {
     "twin peaks: the return": "twin peaks",
@@ -155,15 +174,19 @@
   "actress": {},
   "play": {},
   "musical": {},
-  "economist": {},
+  "economist": {
+    "léon walras": "leon walras"
+  },
   "scientist": {},
   "theologian": {
     "augustine of hippo": "st. augustine",
-    "c. s. lewis": "c.s. lewis"
+    "c. s. lewis": "c.s. lewis",
+    "summa theologica": "summa theologiae"
   },
   "mathematician": {
     "euler": "leonhard euler",
-    "ramanujan": "srinivasa ramanujan"
+    "ramanujan": "srinivasa ramanujan",
+    "pythagoras of samos": "pythagoras"
   },
   "blogger": {
     "brain pickings": "marginalian",
@@ -176,9 +199,12 @@
     "the 4-hour workweek": "tim ferriss"
   },
   "computerscientist": {
-    "edsger w. dijkstra": "edsger dijkstra"
+    "edsger w. dijkstra": "edsger dijkstra",
+    "donald e. knuth": "donald knuth"
   },
-  "airesearcher": {},
+  "airesearcher": {
+    "christopher olah": "chris olah"
+  },
   "aimodel": {
     "gpt-4o-mini": "gpt-4o mini",
     "grok 4": "grok-4",
@@ -195,6 +221,10 @@
   "boardgame": {
     "settlers of catan": "catan"
   },
-  "sport": {},
+  "sport": {
+    "association football": "soccer",
+    "bouldering": "climbing",
+    "artistic gymnastics": "gymnastics"
+  },
   "childrensbook": {}
 }

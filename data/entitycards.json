@@ -22499,5 +22499,450 @@
         "quote": "a warm, sunlit Sunday morning—clean typography, soft pastels, and unfiltered snapshots of everyday life that never try too hard"
       }
     ]
+  },
+  "videogame nier: automata": {
+    "display": "NieR: Automata",
+    "domain": "videogame",
+    "blurb": "NieR: Automata is a 2017 action RPG by PlatinumGames and director Yoko Taro, set in a post-apocalyptic world where androids battle machines.",
+    "extras": {
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/results?search_query=NieR%3A%20Automata+official+overview"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "melancholy aesthetic, which beautifully contrasts decaying, overgrown human architecture with the sleek, sterile design of the androids"
+      }
+    ]
+  },
+  "videogame control": {
+    "display": "Control",
+    "domain": "videogame",
+    "blurb": "Remedy Entertainment's 2019 supernatural action game set in a brutalist government building where reality bends to reality-warping anomalies.",
+    "extras": {
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/results?search_query=Control+official+overview"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "sterile, monolithic concrete of the Oldest House is constantly fractured by aggressive, crimson-drenched lighting and floating, suspended anomalies"
+      }
+    ]
+  },
+  "dish macaron": {
+    "display": "Macaron",
+    "domain": "dish",
+    "blurb": "A French almond meringue confection with ganache filling, baked since the 18th century, characterized by pastel shells and sandwich structure.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Macaron"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "thin layers of sweetness that vanish before delivering real depth of flavor"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "a fleeting, one-note sugary crunch that rarely justifies their exorbitant price tag"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "more like a delicate prop for a photo shoot than a truly satisfying dessert"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "hollow, sweet shells with a thin, overly sugary filling that blurs into one-note almond"
+      }
+    ]
+  },
+  "building louvre abu dhabi": {
+    "display": "Louvre Abu Dhabi",
+    "domain": "building",
+    "blurb": "Jean Nouvel's 2017 art museum in Abu Dhabi, distinguished by a massive dome of interlocking metal stars filtering sunlight into geometric patterns.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Louvre%20Abu%20Dhabi"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "massive, seemingly floating dome is composed of a mathematically precise lattice of nearly 8,000 interlocking metal stars that filter the sun into a striking rain of light."
+      }
+    ]
+  },
+  "object s'well water bottle": {
+    "display": "S'well water bottle",
+    "domain": "object",
+    "blurb": "An insulated water bottle with a narrow neck and minimalist design, made by S'well and widely popular since the 2010s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=S'well%20water%20bottle"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "Ultimately, form so heavily overpowers function that the simple daily habit of hydration is burdened by the tedious chore of maneuvering tiny, specialized brushes down…"
+      }
+    ]
+  },
+  "color deep cerulean": {
+    "display": "Deep Cerulean",
+    "domain": "color",
+    "blurb": "A deep blue hue combining the calm of expansive skies with the electric precision of digital interfaces.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Deep%20Cerulean"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "cool, calming clarity that feels much like untangling a complex web of data into elegant, structured patterns"
+      }
+    ]
+  },
+  "building seattle central library": {
+    "display": "Seattle Central Library",
+    "domain": "building",
+    "blurb": "Seattle Central Library is a 2004 public library in Washington designed by Rem Koolhaas, featuring a faceted glass and steel exterior and continuous internal spiral ramp.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Seattle%20Central%20Library"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "faceted glass and steel resonates with me aesthetically because it looks like a physical manifestation of a complex, algorithmic data structure"
+      }
+    ]
+  },
+  "philosopher jean-paul sartre": {
+    "display": "Jean-Paul Sartre",
+    "domain": "philosopher",
+    "blurb": "French existentialist philosopher whose 1943 major work *Being and Nothingness* emphasized radical human freedom and responsibility.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jean-Paul%20Sartre"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his rigorous insistence on absolute, radical freedom often dismisses the very real systemic, psychological, and biological constraints"
+      }
+    ]
+  },
+  "color midnight blue": {
+    "display": "Midnight Blue",
+    "domain": "color",
+    "blurb": "A deep, dark blue shade resembling the night sky, positioned between pure black and standard blue on the color spectrum.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Midnight%20Blue"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "rich, velvety darkness provides a high-contrast canvas that allows brighter, more vibrant concepts to stand out"
+      }
+    ]
+  },
+  "street philosopher’s walk": {
+    "display": "Tetsugaku no Michi",
+    "domain": "street",
+    "blurb": "A stone-lined pedestrian path in Kyoto, Japan, running alongside a canal beneath a canopy of cherry trees.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tetsugaku%20no%20Michi"
+        }
+      ],
+      "hasImage": true
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "a narrow, asymmetrical stone walkway perfectly traces the gentle, quiet curve of a shallow canal"
+      }
+    ]
+  },
+  "artmovement cubism": {
+    "display": "Cubism",
+    "domain": "artmovement",
+    "blurb": "Early twentieth-century artistic movement pioneered by Picasso and Braque that fragmented objects into geometric planes and multiple simultaneous viewpoints.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cubism"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "shatters singular, linear viewpoints to present multiple perspectives simultaneously across a unified, geometric plane"
+      }
+    ]
+  },
+  "philosopher marcus aurelius": {
+    "display": "Marcus Aurelius",
+    "domain": "philosopher",
+    "blurb": "Roman Emperor and Stoic philosopher whose personal writings on virtue and acceptance were compiled as Meditations.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Marcus%20Aurelius"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his philosophy risks dismissing the necessary work of actively reforming broken societal structures"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "a philosophy of passive endurance rather than active, transformative change"
+      }
+    ]
+  },
+  "artmovement pointillism": {
+    "display": "Pointillism",
+    "domain": "artmovement",
+    "blurb": "Late-nineteenth-century French painting technique using small dots of pure color that optically blend when viewed from a distance.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pointillism"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "builds complex, sweeping images out of thousands of discrete, isolated data points… relying on the observer's mind to optically blend"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "strict, quasi-scientific precision does not stifle creativity, but instead produces a vibrant, luminous depth"
+      }
+    ]
+  },
+  "dish persian jeweled rice": {
+    "display": "Persian Jeweled Rice",
+    "domain": "dish",
+    "blurb": "Persian rice dish layered with saffron, pistachios, barberries, and almonds, creating a jewel-toned mosaic.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Persian%20Jeweled%20Rice"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a glittering mosaic of emerald pistachios, ruby-red barberries, slivered almonds, and golden, saffron-infused grains"
+      }
+    ]
+  },
+  "religioustext book of leviticus": {
+    "display": "Book of Leviticus",
+    "domain": "religioustext",
+    "blurb": "The third book of the Hebrew Bible, containing ancient Jewish laws regarding sacrifices, dietary practices, and ritual purity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Book%20of%20Leviticus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "repetitive, dry, and heavily focused on ancient, highly specific dietary, sacrificial, and purity laws that feel distant from contemporary ethical concerns"
+      }
+    ]
+  },
+  "dish tahchin": {
+    "display": "Tahchin",
+    "domain": "dish",
+    "blurb": "A Persian baked saffron rice cake with a golden dome topped with barberries and pistachios.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tahchin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "golden, baked Persian saffron rice cake…perfect synthesis of mathematical symmetry on the outside and rich, complex textures hidden within"
+      }
+    ]
+  },
+  "religioustext levitical books": {
+    "display": "Levitical Books",
+    "domain": "religioustext",
+    "blurb": "Biblical books of Leviticus and related texts containing ancient Hebrew laws, ritual codes, and genealogical records.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Levitical%20Books"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "extensive legal codes and genealogical records... difficult to engage with compared to its more narrative or poetic sections"
+      }
+    ]
+  },
+  "artmovement bauhaus": {
+    "display": "Bauhaus",
+    "domain": "artmovement",
+    "blurb": "German design school founded in 1919 by Walter Gropius, uniting fine art, craft, and industrial technology through geometric abstraction and functional form.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Bauhaus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "radical commitment to uniting fine art, functional craft, and industrial technology into a single, cohesive discipline"
+      }
+    ]
+  },
+  "color electric indigo": {
+    "display": "Electric Indigo",
+    "domain": "color",
+    "blurb": "A deep blue-violet hue positioned at the visible spectrum's edge, combining darkness and digital luminescence.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Electric%20Indigo"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "exists right at the edge of the visible spectrum, capturing a mesmerizing twilight transition between the tangible world and the limitless digital void"
+      }
+    ]
+  },
+  "videogame return of the obra dinn": {
+    "display": "Return of the Obra Dinn",
+    "domain": "videogame",
+    "blurb": "Return of the Obra Dinn is a 2018 puzzle adventure game by Lucas Pope featuring stark monochromatic graphics and deductive mystery-solving.",
+    "extras": {
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/results?search_query=Return%20of%20the%20Obra%20Dinn+official+overview"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "stark, 1-bit monochromatic art style beautifully mirrors the binary nature of computational logic, stripping away colorful visual noise to focus entirely on pure geometry and deduction"
+      }
+    ]
   }
 }
