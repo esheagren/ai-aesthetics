@@ -807,6 +807,11 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
   opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-7px);
   transition:opacity .32s ease,transform .32s ease,visibility .32s step-end}
 .viewbar .viewlink{width:112px;flex:none}
+/* Brand mark: a split gem — favourite-green over overrated-red — the two
+   questions and the top-to-bottom axis of the whole index in one figure. */
+.viewlogo{flex:none;width:50px;height:40px;display:flex;align-items:center;justify-content:center;margin-right:6px;background:none;border:0;cursor:pointer;padding:0;opacity:.9;transition:opacity .2s ease,transform .2s ease}
+.viewlogo svg{width:22px;height:22px;display:block}
+.viewlogo:hover{opacity:1;transform:translateY(-1px)}
 .viewbar.show{opacity:1;visibility:visible;pointer-events:auto;transform:none;
   transition:opacity .32s ease,transform .32s ease}
 .viewbar .viewlink{position:relative;display:block;min-width:0;height:40px;
@@ -1522,6 +1527,9 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
     updateViewbar();
   });
 });
+// The brand mark returns to the index and its top.
+var viewlogo=document.getElementById('viewlogo');
+if(viewlogo)viewlogo.addEventListener('click',function(){setView('cabinet',true);updateViewbar();});
 // The hero cue advances to the next page of the intro — the method page —
 // not past it. (If the method page is somehow gone, fall back to committing.)
 document.getElementById('cue').addEventListener('click',function(){
@@ -1758,6 +1766,13 @@ ${methodPage}
 </section>
 
 <nav class="viewbar" id="viewbar" aria-label="Views">
+  <button class="viewlogo" id="viewlogo" type="button" aria-label="Machines of Loving Taste — back to the top of the index" title="Machines of Loving Taste">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3 20 11 12 11 4 11Z" fill="rgb(110,209,145)"/>
+      <path d="M4 11 20 11 12 21Z" fill="rgb(232,104,98)"/>
+      <path d="M12 3 20 11 12 21 4 11Z" fill="none" stroke="rgba(233,230,221,.32)" stroke-width="1" stroke-linejoin="round"/>
+    </svg>
+  </button>
   <button class="viewlink on" type="button" data-view="cabinet"><span>Index</span></button>
   <button class="viewlink" type="button" data-view="modelmap"><span>Model map</span></button>
   <button class="viewlink" type="button" data-view="method"><span>Method</span></button>
