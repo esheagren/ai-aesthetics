@@ -40,13 +40,20 @@ const ALIASES = join(here, '..', 'data', 'aliases.json');
 const OUT = join(here, '..', 'data', 'entityimages.json');
 const RAW_DIR = process.env.ENTITY_IMG_TMP || join(tmpdir(), 'entity-images-raw');
 mkdirSync(RAW_DIR, { recursive: true });
+// Images are written as external files under public/ and referenced by URL —
+// Vercel serves them, the browser lazy-loads them on demand, and they are no
+// longer base64-inlined into the HTML (which the retired claude.ai artifact's
+// CSP once forced). This keeps the page light and the images full quality.
+const PUBLIC_IMG_DIR = join(here, '..', 'public', 'img', 'entity');
+mkdirSync(PUBLIC_IMG_DIR, { recursive: true });
+const safeName = (key) => key.replace(/[^a-z0-9]+/gi, '_');
 
 const UA =
   'ai-aesthetics-research/0.2 (personal research project on AI aesthetic judgments; contact: esheagren1995@gmail.com)';
 const CONCURRENCY = 3;
 const DELAY_MS = 250;
-const THUMB_WIDTH = Number(process.env.ENTITY_IMG_WIDTH || 480);
-const JPEG_QUALITY = Number(process.env.ENTITY_IMG_QUALITY || 45);
+const THUMB_WIDTH = Number(process.env.ENTITY_IMG_WIDTH || 500);
+const JPEG_QUALITY = Number(process.env.ENTITY_IMG_QUALITY || 82);
 
 // Domains that don't want an image at all.
 const SKIP_DOMAINS = new Set(['word', 'color', 'season', 'smell', 'decade']);
@@ -396,14 +403,15 @@ async function buildRecord(sum, key, explicitUrls) {
     const w = Number(info.match(/pixelWidth: (\d+)/)?.[1]);
     const h = Number(info.match(/pixelHeight: (\d+)/)?.[1]);
     if (!w || !h) return null;
-    const b64 = readFileSync(jpgPath).toString('base64');
-    // keep the raw bytes for this key so a global recompress pass (smaller
-    // width/quality) can run without refetching anything
-    writeFileSync(join(RAW_DIR, `${key.replace(/[^a-z0-9]+/gi, '_')}.used.raw`), r.buf);
+    // keep the raw bytes for this key so a re-export can run without refetching
+    writeFileSync(join(RAW_DIR, `${safeName(key)}.used.raw`), r.buf);
+    // write the compressed JPEG to public/ and reference it by URL path
+    const fname = `${safeName(key)}.jpg`;
+    writeFileSync(join(PUBLIC_IMG_DIR, fname), readFileSync(jpgPath));
     const articleUrl =
       sum.content_urls?.desktop?.page || `https://en.wikipedia.org/wiki/${encodeURIComponent(sum.title.replace(/ /g, '_'))}`;
     return {
-      uri: `data:image/jpeg;base64,${b64}`,
+      uri: `/img/entity/${fname}`,
       page: articleUrl,
       credit: filePageFor(imgUrl, articleUrl),
       w,
@@ -429,7 +437,9 @@ if (args.includes('--recompress')) {
       const w = Number(info.match(/pixelWidth: (\d+)/)?.[1]);
       const h = Number(info.match(/pixelHeight: (\d+)/)?.[1]);
       if (!w || !h) throw new Error('bad dims');
-      out[key] = { ...out[key], uri: `data:image/jpeg;base64,${readFileSync(jpgPath).toString('base64')}`, w, h };
+      const fname = `${safeName(key)}.jpg`;
+      writeFileSync(join(PUBLIC_IMG_DIR, fname), readFileSync(jpgPath));
+      out[key] = { ...out[key], uri: `/img/entity/${fname}`, w, h };
       done++;
     } catch (err) {
       console.error(`recompress failed for ${key}: ${String(err).slice(0, 80)}`);
@@ -481,8 +491,7 @@ async function processOne({ key, display, domain, creator }) {
     }
     out[key] = rec;
     bump(domain, 'hit');
-    const kb = Math.round((rec.uri.length * 0.75) / 1024);
-    console.log(`OK    ${key} -> ${decodeURIComponent(rec.page.split('/wiki/')[1] || '')} (${kb}KB ${rec.w}x${rec.h})`);
+    console.log(`OK    ${key} -> ${decodeURIComponent(rec.page.split('/wiki/')[1] || '')} (${rec.w}x${rec.h})`);
   } catch (err) {
     out._misses.push({ key, display, reason: `error: ${String(err).slice(0, 100)}` });
     bump(domain, 'miss');

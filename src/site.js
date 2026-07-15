@@ -1316,9 +1316,10 @@ function openEntityCard(domainId,entity,creator,disp){
   // legacy imgMap path (below, after the definition) only when there is none.
   var eimg=D.entityImages&&D.entityImages[domainId+' '+k];
   if(eimg&&eimg.uri){
-    // no loading="lazy": the src is a data URI already in memory, and lazy
-    // decode can defer indefinitely for a drawer that just opened.
-    html+='<div class="ec-photo"><img src="'+eimg.uri+'" alt="'+esc(card.display||entity)+'"'+
+    // src is an external file (/img/entity/…) served by Vercel — lazy-load it so
+    // only the images actually scrolled into view are fetched, keeping the page
+    // light while preserving full image quality.
+    html+='<div class="ec-photo"><img src="'+eimg.uri+'" alt="'+esc(card.display||entity)+'" loading="lazy" decoding="async"'+
       (eimg.credit?' title="'+esc(eimg.credit)+'"':'')+'></div>';
   }
   if(extras.definition){
