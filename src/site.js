@@ -1436,26 +1436,33 @@ function commitPastHero(){
   if(mpage)mpage.style.display='none';
   pinTop();
   // The flick that committed usually still has trackpad momentum behind it;
-  // with the page pinned and unlocked, those residual wheel ticks would carry
-  // the index deep into the matrix. Swallow wheel/touchmove until they go
-  // quiet for a beat. Commit-anchored and self-limiting (hard cap), so a later
-  // deliberate scroll is never touched.
+  // with the intro collapsed and the page pinned, those residual ticks would
+  // carry the index deep into the matrix — the "starts at the bottom" bug.
+  // Eating wheel/touchmove is NOT enough on its own: inertial scrolling runs on
+  // the compositor thread, so preventDefault on wheel doesn't reliably stop
+  // momentum already in flight. So we ALSO force the scroll position back to 0
+  // on any scroll that slips through. Both are bounded — they end 180ms after
+  // scrolling goes quiet, hard-capped at 1100ms — so a later deliberate scroll
+  // is never yanked (the failure mode of the old open-ended re-pin approach).
   (function(){
-    var quiet=null,hard=null;
+    var quiet=null,hard=null,live=true;
     function stop(){
+      live=false;
       removeEventListener('wheel',eat,true);
       removeEventListener('touchmove',eat,true);
+      removeEventListener('scroll',repin);
       clearTimeout(quiet);clearTimeout(hard);
     }
-    function eat(e){
-      e.preventDefault();
-      clearTimeout(quiet);
-      quiet=setTimeout(stop,160);
-    }
+    function arm(){clearTimeout(quiet);quiet=setTimeout(stop,180);}
+    function eat(e){e.preventDefault();arm();}
+    // Re-pin to the top; the scrollTo itself fires a scroll event, but scrollY
+    // is 0 by then so the guard stops it recursing or re-arming needlessly.
+    function repin(){if(live&&pageYOffset!==0){scrollTo({top:0,left:0,behavior:'instant'});arm();}}
     addEventListener('wheel',eat,{passive:false,capture:true});
     addEventListener('touchmove',eat,{passive:false,capture:true});
-    quiet=setTimeout(stop,160);
-    hard=setTimeout(stop,1500);
+    addEventListener('scroll',repin);
+    arm();
+    hard=setTimeout(stop,1100);
   })();
 }
 // Bottom of the whole intro (hero + method page) in document coordinates.
