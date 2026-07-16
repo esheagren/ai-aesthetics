@@ -627,12 +627,26 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .idx-dom:focus-visible{outline:1px dashed var(--ink);outline-offset:-2px}
 .idx-dom.on{color:var(--ink);border-left:2px solid var(--ink);padding-left:9px;background:rgba(233,230,221,.04)}
 .idx-main{min-width:0}
+/* mobile-only: the field rail collapses behind a launcher (see @media below) */
+.railtoggle{display:none}
+.rail-veil{display:none;position:fixed;inset:0;z-index:45;background:rgba(9,10,12,.6)}
 @media(max-width:820px){
   .indexgrid{grid-template-columns:1fr}
-  .idx-rail{position:static;max-height:none;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:center}
-  .idx-cat{width:100%;margin:12px 0 2px}
-  .idx-dom{display:inline-flex;align-items:center;width:auto;min-height:40px;border-left:0;padding:8px 10px}
-  .idx-dom.on{border-left:0;padding-left:10px}
+  /* the rail becomes a left off-canvas drawer, so the grid is visible at once */
+  .idx-rail{position:fixed;left:0;top:0;bottom:0;z-index:46;width:min(272px,82vw);max-height:none;
+    padding:66px 14px 40px;background:var(--panel);border-right:1px solid var(--hair);
+    overflow-y:auto;overscroll-behavior:contain;transform:translateX(-100%);
+    transition:transform .26s ease;box-shadow:16px 0 46px rgba(0,0,0,.5)}
+  body.rail-open .idx-rail{transform:translateX(0)}
+  body.rail-open .rail-veil{display:block}
+  .idx-dom{min-height:40px;padding:8px 12px}
+  /* the launcher shown above the grid */
+  .railtoggle{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 14px;padding:11px 13px;
+    background:rgba(233,230,221,.04);border:1px solid var(--hair);border-radius:3px;color:var(--dim);
+    font:10px var(--mono);letter-spacing:.22em;text-transform:uppercase;cursor:pointer}
+  .railtoggle:hover,.railtoggle:focus-visible{color:var(--ink);border-color:var(--dim);outline:none}
+  .railtoggle svg{width:17px;height:17px;flex:none;fill:none}
+  .railtoggle b{margin-left:auto;color:var(--ink);font:400 15px/1 var(--serif);letter-spacing:0;text-transform:none}
 }
 .choicematrix{margin-top:2px}
 .matrix-panel{margin-top:6px}
@@ -1376,6 +1390,8 @@ function setDomain(did){
   document.querySelectorAll('.idx-dom').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-d')===did)});
   closeCabinetDetail();
   renderChoiceMatrices();
+  if(window.__railSync)window.__railSync();
+  if(window.__railClose)window.__railClose();
 }
 (function(){
   var rail=document.getElementById('idxrail');
@@ -1392,6 +1408,20 @@ function setDomain(did){
       rail.appendChild(b);
     });
   });
+})();
+// Mobile: the rail is an off-canvas drawer behind a launcher; the grid shows at
+// once, and the launcher's label tracks the current field. No-op on desktop
+// (the launcher and veil are display:none there).
+(function(){
+  var tog=document.getElementById('railtoggle'),veil=document.getElementById('railveil'),cur=document.getElementById('railcur');
+  function sync(){if(cur){var d=D.domains.find(function(x){return x.id===curDomain});cur.textContent=d?d.label:''}}
+  function open(){document.body.classList.add('rail-open');if(tog)tog.setAttribute('aria-expanded','true')}
+  function close(){document.body.classList.remove('rail-open');if(tog)tog.setAttribute('aria-expanded','false')}
+  window.__railSync=sync;window.__railClose=close;
+  if(tog)tog.addEventListener('click',function(){document.body.classList.contains('rail-open')?close():open()});
+  if(veil)veil.addEventListener('click',close);
+  addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  sync();
 })();
 document.getElementById('drawerveil').addEventListener('click',closeCabinetDetail);
 addEventListener('keydown',function(e){
@@ -1800,9 +1830,14 @@ ${methodPage}
   <div class="indexgrid" id="indexstart">
     <aside class="idx-rail" id="idxrail" aria-label="Fields"></aside>
     <div class="idx-main">
+      <button class="railtoggle" id="railtoggle" type="button" aria-expanded="false" aria-controls="idxrail" aria-label="Choose a field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Fields</span><b id="railcur"></b>
+      </button>
       <div class="choicematrix" id="choicematrix"></div>
     </div>
   </div>
+  <div class="rail-veil" id="railveil"></div>
   <div class="drawer-veil" id="drawerveil" hidden></div>
   <aside class="cabdetail" id="cabdetail" aria-live="polite" hidden></aside>
 </section>
