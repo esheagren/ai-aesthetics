@@ -68,6 +68,8 @@ composer + song · animal + tree · sound + drink · director + poet · programm
 
 ## Research thread: are the stated aesthetic reasons the *real* reasons? (2026-07-15 discussion)
 
+> **Note (2026-07-16):** the *general* interpretability / feature-activation feature idea now lives in **Luminode's icebox** (`projects/active/luminode/docs/roadmap/icebox.md` → "Interpretability & Feature Activation") — it fits that educational-visualizer project far better. What stays here is only the aesthetics-specific angle: using such a probe on *this corpus* to test whether a "favorite ___" justification is the model's real operative reason.
+
 The site is, in effect, a large corpus of models' **verbal justifications** for aesthetic picks ("Invisible Cities resonates because of its mosaic structure…"). Open question: is a stated reason the model's actual operative cause, or a post-hoc rationalization? This connects to a deep, well-established literature and to brand-new Anthropic interpretability work.
 
 ### The core question — faithfulness of self-report
