@@ -81,8 +81,7 @@ const DOMAIN_LABELS = {
 // fields appear automatically once their collection lands.
 const DOMAIN_GROUPS = [
   { label: 'Literature & Language', ids: ['book', 'poem', 'novelist', 'childrensbook', 'religioustext', 'word'] },
-  { label: 'Fine Art', ids: ['painting', 'artmovement'] },
-  { label: 'Architecture', ids: ['building', 'architect', 'monument'] },
+  { label: 'Art & Architecture', ids: ['painting', 'artmovement', 'architect', 'building', 'monument'] },
   { label: 'Film, TV & Theater', ids: ['film', 'director', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
   { label: 'Thinkers', ids: ['philosopher', 'economist', 'scientist', 'mathematician', 'historian', 'psychologist', 'theologian', 'computerscientist', 'airesearcher', 'aimodel', 'blogger'] },
   { label: 'Music', ids: ['album', 'song', 'musician', 'composer'] },
