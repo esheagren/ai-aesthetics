@@ -637,6 +637,7 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
     padding:66px 14px 40px;background:var(--panel);border-right:1px solid var(--hair);
     overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;transform:translateX(-100%);
     transition:transform .26s ease;box-shadow:16px 0 46px rgba(0,0,0,.5)}
+  body.rail-open{position:fixed;left:0;right:0;width:100%}
   body.rail-open .idx-rail{transform:translateX(0)}
   body.rail-open .rail-veil{display:block}
   .idx-dom{min-height:40px;padding:8px 12px}
@@ -1415,12 +1416,14 @@ function setDomain(did){
 (function(){
   var tog=document.getElementById('railtoggle'),veil=document.getElementById('railveil'),cur=document.getElementById('railcur');
   function sync(){if(cur){var d=D.domains.find(function(x){return x.id===curDomain});cur.textContent=d?d.label:''}}
-  // Lock the root scroller (documentElement) while the drawer is open — matches
-  // the site's own scroll-lock technique — so the background can't scroll behind
-  // it and the touch gesture goes to the drawer's own overflow instead.
-  var deOv='';
-  function open(){var de=document.documentElement;deOv=de.style.overflow;de.style.overflow='hidden';document.body.classList.add('rail-open');if(tog)tog.setAttribute('aria-expanded','true')}
-  function close(){document.documentElement.style.overflow=deOv;document.body.classList.remove('rail-open');if(tog)tog.setAttribute('aria-expanded','false')}
+  // Lock the background by fixing the body at its current scroll offset. This is
+  // the iOS-safe technique: overflow:hidden on the root also freezes nested
+  // scrollers (so the drawer couldn't scroll), whereas a fixed body simply
+  // removes the background's scroll region and leaves the drawer's own overflow
+  // free to scroll. Scroll position is captured on open and restored on close.
+  var lockY=0;
+  function open(){lockY=window.pageYOffset||document.documentElement.scrollTop||0;document.body.style.top=(-lockY)+'px';document.body.classList.add('rail-open');if(tog)tog.setAttribute('aria-expanded','true')}
+  function close(){document.body.classList.remove('rail-open');document.body.style.top='';window.scrollTo(0,lockY);if(tog)tog.setAttribute('aria-expanded','false')}
   window.__railSync=sync;window.__railClose=close;
   if(tog)tog.addEventListener('click',function(){document.body.classList.contains('rail-open')?close():open()});
   if(veil)veil.addEventListener('click',close);
