@@ -72,6 +72,9 @@ const DOMAIN_LABELS = {
   airesearcher: 'AI researcher', aimodel: 'AI model', historian: 'Historian',
   psychologist: 'Psychologist', boardgame: 'Board game', sport: 'Sport',
   childrensbook: "Children's book",
+  musician: 'Musician', composer: 'Contemporary composer', song: 'Song',
+  director: 'Film director', proglang: 'Programming language', sound: 'Sound',
+  country: 'Country',
 };
 // Groups may list ids whose data is still being collected (no summary cells
 // yet) — the client rail only renders ids present in DATA.domains, so those
@@ -80,14 +83,14 @@ const DOMAIN_GROUPS = [
   { label: 'Literature & Language', ids: ['book', 'poem', 'novelist', 'childrensbook', 'religioustext', 'word'] },
   { label: 'Fine Art', ids: ['painting', 'artmovement'] },
   { label: 'Architecture', ids: ['building', 'architect', 'monument'] },
-  { label: 'Film, TV & Theater', ids: ['film', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
+  { label: 'Film, TV & Theater', ids: ['film', 'director', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
   { label: 'Thinkers', ids: ['philosopher', 'economist', 'scientist', 'mathematician', 'historian', 'psychologist', 'theologian', 'computerscientist', 'airesearcher', 'aimodel', 'blogger'] },
-  { label: 'Music', ids: ['album'] },
+  { label: 'Music', ids: ['album', 'song', 'musician', 'composer'] },
   { label: 'Games', ids: ['videogame', 'boardgame', 'sport'] },
-  { label: 'Miscellaneous', ids: ['typeface', 'object'] },
+  { label: 'Miscellaneous', ids: ['typeface', 'object', 'proglang'] },
   { label: 'History', ids: ['decade'] },
-  { label: 'Places', ids: ['city', 'street', 'uscity'] },
-  { label: 'Life & Senses', ids: ['cuisine', 'dish', 'color', 'season', 'smell'] },
+  { label: 'Places', ids: ['country', 'city', 'uscity', 'street'] },
+  { label: 'Life & Senses', ids: ['cuisine', 'dish', 'color', 'season', 'smell', 'sound'] },
 ];
 const byFamily = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'];
 // Power rank within each family, most capable first. Not just -config.order:

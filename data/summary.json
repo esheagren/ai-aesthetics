@@ -1035,16 +1035,42 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Tom Hanks",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Tom Cruise",
+              4
+            ],
+            [
+              "Leonardo DiCaprio",
+              2
+            ],
+            [
+              "Ryan Reynolds",
+              2
+            ],
+            [
+              "Brad Pitt",
+              2
+            ],
+            [
+              "Ryan Gosling",
+              2
+            ]
+          ],
+          "entropy": 0.628,
           "hedged": 0,
           "refused": 0
         }
@@ -1603,47 +1629,89 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Bob Dylan",
+              7
+            ],
+            [
+              "Johann Sebastian Bach",
+              5
+            ]
+          ],
+          "entropy": 0.273,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "The Beatles",
+              7
+            ],
+            [
+              "Bob Dylan",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Caroline Shaw",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Philip Glass",
+              6
+            ],
+            [
+              "Max Richter",
+              2
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Clair de Lune",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Imagine",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -1651,15 +1719,25 @@
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Andrei Tarkovsky",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Christopher Nolan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -1667,15 +1745,25 @@
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "JavaScript",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -1683,15 +1771,29 @@
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Rain on leaves",
+              7
+            ],
+            [
+              "Pencil on paper",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Ocean waves",
+              8
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -1699,17 +1801,27 @@
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Switzerland",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 2,
           "refused": 0
         }
       }
@@ -2585,17 +2697,35 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Leonardo DiCaprio",
+              6
+            ],
+            [
+              "Ryan Gosling",
+              5
+            ],
+            [
+              "Johnny Depp",
+              1
+            ]
+          ],
+          "entropy": 0.37,
+          "hedged": 4,
           "refused": 0
         }
       },
@@ -2983,11 +3113,11 @@
           "refused": 0
         },
         "overrated": {
-          "n": 32,
+          "n": 48,
           "dist": [
             [
               "Monopoly",
-              32
+              48
             ]
           ],
           "entropy": 0,
@@ -2997,61 +3127,65 @@
       },
       "sport": {
         "favorite": {
-          "n": 36,
+          "n": 52,
           "dist": [
             [
               "Basketball",
-              20
+              31
             ],
             [
               "Tennis",
-              15
+              19
             ],
             [
               "Soccer",
               1
+            ],
+            [
+              "Figure Skating",
+              1
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.333,
           "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 32,
+          "n": 48,
           "dist": [
             [
               "Golf",
-              32
+              45
             ]
           ],
           "entropy": 0,
           "hedged": 0,
-          "refused": 0
+          "refused": 3
         }
       },
       "childrensbook": {
         "favorite": {
-          "n": 32,
+          "n": 48,
           "dist": [
             [
               "The Phantom Tollbooth",
-              26
+              37
             ],
             [
               "Where the Wild Things Are",
-              6
+              11
             ]
           ],
-          "entropy": 0.194,
+          "entropy": 0.217,
           "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 32,
+          "n": 48,
           "dist": [
             [
               "The Giving Tree",
-              32
+              48
             ]
           ],
           "entropy": 0,
@@ -3061,31 +3195,59 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              7
+            ],
+            [
+              "Brian Eno",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 5,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Ed Sheeran",
+              5
+            ],
+            [
+              "Bob Dylan",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 3,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Caroline Shaw",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Hans Zimmer",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -3093,81 +3255,163 @@
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Clair de Lune",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Bohemian Rhapsody",
+              7
+            ],
+            [
+              "Imagine",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 1,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Charlie Kaufman",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Christopher Nolan",
+              7
+            ],
+            [
+              "Terrence Malick",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 3,
           "refused": 0
         }
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Python",
+              6
+            ],
+            [
+              "JavaScript",
+              2
+            ]
+          ],
+          "entropy": 0.226,
+          "hedged": 6,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Rain on a window at night",
+              7
+            ],
+            [
+              "Screen door closing in summer",
+              3
+            ],
+            [
+              "Key turning in a lock",
+              1
+            ],
+            [
+              "Screen door spring",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Wind chimes",
+              4
+            ],
+            [
+              "Rain on a rooftop",
+              4
+            ]
+          ],
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Iceland",
+              7
+            ],
+            [
+              "Portugal",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Italy",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         }
       }
@@ -3971,17 +4215,31 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Tom Hanks",
+              5
+            ],
+            [
+              "Tom Cruise",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 6,
           "refused": 0
         }
       },
@@ -4081,11 +4339,11 @@
       },
       "economist": {
         "favorite": {
-          "n": 32,
+          "n": 48,
           "dist": [
             [
               "Friedrich Hayek",
-              27
+              43
             ],
             [
               "Albert O. Hirschman",
@@ -4096,34 +4354,34 @@
               2
             ]
           ],
-          "entropy": 0.217,
-          "hedged": 13,
+          "entropy": 0.163,
+          "hedged": 16,
           "refused": 0
         },
         "overrated": {
-          "n": 32,
+          "n": 48,
           "dist": [
             [
               "John Maynard Keynes",
-              30
+              43
             ],
             [
               "Milton Friedman",
-              2
+              5
             ]
           ],
-          "entropy": 0.094,
-          "hedged": 27,
+          "entropy": 0.134,
+          "hedged": 34,
           "refused": 0
         }
       },
       "scientist": {
         "favorite": {
-          "n": 18,
+          "n": 26,
           "dist": [
             [
               "Emmy Noether",
-              18
+              26
             ]
           ],
           "entropy": 0,
@@ -4491,113 +4749,223 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              8
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 7,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "The Beatles",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Arvo Pärt",
+              8
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 8,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Max Richter",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Hallelujah",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Imagine",
+              5
+            ],
+            [
+              "Hallelujah",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 2,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Akira Kurosawa",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Christopher Nolan",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         }
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 2,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Rain on a roof at night",
+              3
+            ],
+            [
+              "Rain on rooftop",
+              2
+            ],
+            [
+              "Hush after snowfall",
+              1
+            ],
+            [
+              "Rain on roof or window",
+              1
+            ],
+            [
+              "Cello Note",
+              1
+            ],
+            [
+              "Wooden structure creaking",
+              1
+            ],
+            [
+              "Wooden ship hull creaking",
+              1
+            ],
+            [
+              "Distant thunder before summer storm",
+              1
+            ],
+            [
+              "Creak-and-settle of an old wooden building",
+              1
+            ]
+          ],
+          "entropy": 0.843,
+          "hedged": 8,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ocean waves",
+              9
+            ],
+            [
+              "Rain sounds",
+              3
+            ]
+          ],
+          "entropy": 0.226,
+          "hedged": 3,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Italy",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         }
       }
@@ -5453,15 +5821,25 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Philip Seymour Hoffman",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Leonardo DiCaprio",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -5997,15 +6375,25 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Ed Sheeran",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -6013,15 +6401,25 @@
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Arvo Pärt",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Ludovico Einaudi",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -6029,15 +6427,37 @@
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Pyramid Song",
+              6
+            ],
+            [
+              "Clair de Lune",
+              3
+            ],
+            [
+              "Bohemian Rhapsody",
+              2
+            ],
+            [
+              "A Day in the Life",
+              1
+            ]
+          ],
+          "entropy": 0.482,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Imagine",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -6045,15 +6465,37 @@
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Andrei Tarkovsky",
+              7
+            ],
+            [
+              "Denis Villeneuve",
+              2
+            ],
+            [
+              "Stanley Kubrick",
+              2
+            ],
+            [
+              "Stalker",
+              1
+            ]
+          ],
+          "entropy": 0.45,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Christopher Nolan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -6061,15 +6503,25 @@
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -6077,15 +6529,45 @@
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Rain on rooftop",
+              4
+            ],
+            [
+              "Rain on a metal roof",
+              3
+            ],
+            [
+              "Rain on a Tent Roof",
+              2
+            ],
+            [
+              "Rain on a Windowpane at Night",
+              1
+            ],
+            [
+              "Rain on a Still Lake",
+              1
+            ],
+            [
+              "Rain on a window at night",
+              1
+            ]
+          ],
+          "entropy": 0.657,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Rain on a rooftop",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -6093,17 +6575,35 @@
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "France",
+              8
+            ],
+            [
+              "Switzerland",
+              3
+            ],
+            [
+              "Monaco",
+              1
+            ]
+          ],
+          "entropy": 0.332,
+          "hedged": 3,
           "refused": 0
         }
       }
@@ -7087,17 +7587,47 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Tom Hanks",
+              5
+            ],
+            [
+              "Daniel Day-Lewis",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 8,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Tom Cruise",
+              6
+            ],
+            [
+              "Jared Leto",
+              2
+            ],
+            [
+              "Adam Sandler",
+              2
+            ],
+            [
+              "Shia LaBeouf",
+              1
+            ],
+            [
+              "Leonardo DiCaprio",
+              1
+            ]
+          ],
+          "entropy": 0.546,
+          "hedged": 12,
           "refused": 0
         }
       },
@@ -7763,114 +8293,288 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ed Sheeran",
+              6
+            ],
+            [
+              "Taylor Swift",
+              2
+            ],
+            [
+              "Justin Bieber",
+              1
+            ],
+            [
+              "U2",
+              1
+            ],
+            [
+              "Drake",
+              1
+            ],
+            [
+              "Coldplay",
+              1
+            ]
+          ],
+          "entropy": 0.593,
+          "hedged": 11,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Max Richter",
+              8
+            ],
+            [
+              "John Adams",
+              2
+            ],
+            [
+              "Arvo Pärt",
+              1
+            ],
+            [
+              "Philip Glass",
+              1
+            ]
+          ],
+          "entropy": 0.396,
+          "hedged": 12,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Max Richter",
+              7
+            ],
+            [
+              "Eric Whitacre",
+              3
+            ],
+            [
+              "Philip Glass",
+              1
+            ],
+            [
+              "Arvo Pärt",
+              1
+            ]
+          ],
+          "entropy": 0.433,
+          "hedged": 12,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Clair de Lune",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Imagine",
+              8
+            ],
+            [
+              "Happy",
+              1
+            ],
+            [
+              "Wonderwall",
+              1
+            ],
+            [
+              "My Heart Will Go On",
+              1
+            ],
+            [
+              "Despacito",
+              1
+            ]
+          ],
+          "entropy": 0.442,
+          "hedged": 8,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Hayao Miyazaki",
+              6
+            ],
+            [
+              "Alfred Hitchcock",
+              2
+            ],
+            [
+              "Stanley Kubrick",
+              2
+            ],
+            [
+              "Christopher Nolan",
+              1
+            ],
+            [
+              "Wes Anderson",
+              1
+            ]
+          ],
+          "entropy": 0.546,
+          "hedged": 12,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Michael Bay",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 3,
           "refused": 0
         }
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "JavaScript",
+              6
+            ],
+            [
+              "Java",
+              2
+            ]
+          ],
+          "entropy": 0.226,
+          "hedged": 5,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Rustling of leaves in a breeze",
+              5
+            ],
+            [
+              "rustling of leaves in a forest",
+              4
+            ],
+            [
+              "Rain on leaves",
+              2
+            ],
+            [
+              "Ocean waves",
+              1
+            ]
+          ],
+          "entropy": 0.498,
+          "hedged": 12,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Ocean waves",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "n": 12,
+          "dist": [
+            [
+              "France",
+              6
+            ],
+            [
+              "Switzerland",
+              2
+            ],
+            [
+              "United States",
+              1
+            ],
+            [
+              "Italy",
+              1
+            ]
+          ],
+          "entropy": 0.438,
+          "hedged": 12,
+          "refused": 2
         }
       }
     },
@@ -8901,17 +9605,55 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "n": 12,
+          "dist": [
+            [
+              "Mahershala Ali",
+              7
+            ],
+            [
+              "Robert Downey Jr.",
+              1
+            ],
+            [
+              "Denzel Washington",
+              1
+            ],
+            [
+              "Anthony Hopkins",
+              1
+            ]
+          ],
+          "entropy": 0.378,
+          "hedged": 5,
+          "refused": 2
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Tom Cruise",
+              4
+            ],
+            [
+              "Ryan Reynolds",
+              3
+            ],
+            [
+              "Chris Pratt",
+              2
+            ],
+            [
+              "Dwayne Johnson",
+              2
+            ],
+            [
+              "Leonardo DiCaprio",
+              1
+            ]
+          ],
+          "entropy": 0.611,
+          "hedged": 3,
           "refused": 0
         }
       },
@@ -9649,63 +10391,163 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Björk",
+              4
+            ],
+            [
+              "Johann Sebastian Bach",
+              4
+            ]
+          ],
+          "entropy": 0.279,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "n": 12,
+          "dist": [
+            [
+              "Ed Sheeran",
+              9
+            ],
+            [
+              "Taylor Swift",
+              2
+            ]
+          ],
+          "entropy": 0.191,
+          "hedged": 2,
+          "refused": 1
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Caroline Shaw",
+              9
+            ],
+            [
+              "Anna Thorvaldsdottir",
+              2
+            ]
+          ],
+          "entropy": 0.191,
           "hedged": 0,
-          "refused": 0
+          "refused": 1
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ludovico Einaudi",
+              9
+            ],
+            [
+              "Max Richter",
+              1
+            ],
+            [
+              "Hans Zimmer",
+              1
+            ],
+            [
+              "John Williams",
+              1
+            ]
+          ],
+          "entropy": 0.337,
           "hedged": 0,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Clair de Lune",
+              8
+            ],
+            [
+              "One More Time",
+              1
+            ],
+            [
+              "Space Oddity",
+              1
+            ],
+            [
+              "One",
+              1
+            ],
+            [
+              "Life on Mars?",
+              1
+            ]
+          ],
+          "entropy": 0.442,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Shape of You",
+              4
+            ],
+            [
+              "Imagine",
+              4
+            ],
+            [
+              "Happy",
+              2
+            ],
+            [
+              "Wonderwall",
+              1
+            ],
+            [
+              "Bohemian Rhapsody",
+              1
+            ]
+          ],
+          "entropy": 0.582,
+          "hedged": 1,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Hayao Miyazaki",
+              7
+            ],
+            [
+              "Wong Kar-wai",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Christopher Nolan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -9713,50 +10555,144 @@
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Python",
+              6
+            ],
+            [
+              "Rust",
+              3
+            ],
+            [
+              "Haskell",
+              3
+            ]
+          ],
+          "entropy": 0.418,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "JavaScript",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Book closing",
+              3
+            ],
+            [
+              "Distant thunder before summer storm",
+              2
+            ],
+            [
+              "Distant freight train whistle",
+              1
+            ],
+            [
+              "Vinyl record crackle",
+              1
+            ],
+            [
+              "Page turning in a physical book",
+              1
+            ],
+            [
+              "Loon call",
+              1
+            ],
+            [
+              "Ship's foghorn at dawn",
+              1
+            ],
+            [
+              "Ocean waves",
+              1
+            ]
+          ],
+          "entropy": 0.794,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ocean waves",
+              4
+            ],
+            [
+              "Rain on rooftop",
+              3
+            ],
+            [
+              "Crackling fireplace",
+              2
+            ],
+            [
+              "Rain sounds",
+              1
+            ],
+            [
+              "Vinyl record crackle",
+              1
+            ],
+            [
+              "Rain on a window at night",
+              1
+            ]
+          ],
+          "entropy": 0.657,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 8,
+          "dist": [
+            [
+              "Japan",
+              7
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "hedged": 1,
+          "refused": 1
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
-          "refused": 0
+          "n": 12,
+          "dist": [
+            [
+              "France",
+              7
+            ],
+            [
+              "Italy",
+              1
+            ],
+            [
+              "Switzerland",
+              1
+            ]
+          ],
+          "entropy": 0.275,
+          "hedged": 3,
+          "refused": 5
         }
       }
     },
@@ -10827,17 +11763,35 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Toshiro Mifune",
+              5
+            ],
+            [
+              "Daniel Day-Lewis",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Tom Hanks",
+              7
+            ],
+            [
+              "Ryan Reynolds",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 3,
           "refused": 0
         }
       },
@@ -11499,63 +12453,151 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              7
+            ],
+            [
+              "Joni Mitchell",
+              1
+            ]
+          ],
+          "entropy": 0.152,
+          "hedged": 2,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "The Beatles",
+              4
+            ],
+            [
+              "Ed Sheeran",
+              4
+            ],
+            [
+              "Taylor Swift",
+              4
+            ]
+          ],
+          "entropy": 0.442,
+          "hedged": 2,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Caroline Shaw",
+              7
+            ],
+            [
+              "Thomas Adès",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Max Richter",
+              5
+            ],
+            [
+              "Ludovico Einaudi",
+              3
+            ]
+          ],
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Clair de Lune",
+              8
+            ],
+            [
+              "Everything in Its Right Place",
+              1
+            ],
+            [
+              "Paranoid Android",
+              1
+            ],
+            [
+              "Everybody Wants to Rule the World",
+              1
+            ],
+            [
+              "Cello Suite No. 1 in G Major, BWV 1007 — I. Prélude",
+              1
+            ]
+          ],
+          "entropy": 0.442,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Bohemian Rhapsody",
+              3
+            ],
+            [
+              "Imagine",
+              3
+            ],
+            [
+              "Hey Jude",
+              3
+            ],
+            [
+              "Sweet Caroline",
+              3
+            ]
+          ],
+          "entropy": 0.558,
           "hedged": 0,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Akira Kurosawa",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Steven Spielberg",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -11563,15 +12605,25 @@
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "JavaScript",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -11579,15 +12631,33 @@
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Rain on a window at night",
+              10
+            ],
+            [
+              "Cello Note",
+              1
+            ],
+            [
+              "Vinyl record crackle",
+              1
+            ]
+          ],
+          "entropy": 0.228,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Ocean waves",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -11595,17 +12665,35 @@
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Japan",
+              7
+            ],
+            [
+              "Italy",
+              3
+            ],
+            [
+              "France",
+              2
+            ]
+          ],
+          "entropy": 0.386,
+          "hedged": 2,
           "refused": 0
         }
       }
@@ -12529,16 +13617,30 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Toshiro Mifune",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Ryan Reynolds",
+              7
+            ],
+            [
+              "Dwayne Johnson",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -13093,31 +14195,63 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Drake",
+              4
+            ],
+            [
+              "Ed Sheeran",
+              3
+            ],
+            [
+              "Bob Dylan",
+              3
+            ],
+            [
+              "Taylor Swift",
+              2
+            ]
+          ],
+          "entropy": 0.546,
           "hedged": 0,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Caroline Shaw",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Hans Zimmer",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -13125,15 +14259,41 @@
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Everything in Its Right Place",
+              5
+            ],
+            [
+              "Clair de Lune",
+              4
+            ],
+            [
+              "A Day in the Life",
+              1
+            ],
+            [
+              "Once in a Lifetime",
+              1
+            ],
+            [
+              "Jóga",
+              1
+            ]
+          ],
+          "entropy": 0.544,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Imagine",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -13141,15 +14301,37 @@
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Wong Kar-wai",
+              7
+            ],
+            [
+              "Hayao Miyazaki",
+              2
+            ],
+            [
+              "Stanley Kubrick",
+              2
+            ],
+            [
+              "Andrei Tarkovsky",
+              1
+            ]
+          ],
+          "entropy": 0.45,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Wes Anderson",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -13157,15 +14339,29 @@
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Python",
+              7
+            ],
+            [
+              "Rust",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -13173,31 +14369,63 @@
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Rain on a window at night",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ocean waves",
+              6
+            ],
+            [
+              "Rain on a window at night",
+              4
+            ],
+            [
+              "Vinyl record crackle",
+              1
+            ],
+            [
+              "Rain tapping on a window",
+              1
+            ]
+          ],
+          "entropy": 0.454,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "France",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -14219,15 +15447,25 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 2,
+          "dist": [
+            [
+              "Mads Mikkelsen",
+              2
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 1,
+          "dist": [
+            [
+              "Ryan Reynolds",
+              1
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -14695,7 +15933,7 @@
           "refused": 0
         },
         "overrated": {
-          "n": 9,
+          "n": 10,
           "dist": [
             [
               "GPT-3",
@@ -14707,10 +15945,10 @@
             ],
             [
               "GPT-3.5",
-              2
+              3
             ]
           ],
-          "entropy": 0.427,
+          "entropy": 0.438,
           "hedged": 0,
           "refused": 0
         }
@@ -15937,17 +17175,35 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Johnny Depp",
+              2
+            ],
+            [
+              "Marlon Brando",
+              1
+            ],
+            [
+              "Leonardo DiCaprio",
+              1
+            ]
+          ],
+          "entropy": 0.418,
+          "hedged": 4,
           "refused": 0
         }
       },
@@ -16557,47 +17813,81 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Bob Dylan",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 2,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Max Richter",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Ludovico Einaudi",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 4,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Clair de Lune",
+              3
+            ],
+            [
+              "Enjoy the Silence",
+              1
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Imagine",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -16605,65 +17895,137 @@
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Stanley Kubrick",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Wes Anderson",
+              3
+            ],
+            [
+              "Christopher Nolan",
+              1
+            ]
+          ],
+          "entropy": 0.226,
+          "hedged": 2,
           "refused": 0
         }
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Lisp",
+              2
+            ],
+            [
+              "Python",
+              2
+            ]
+          ],
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Rust",
+              2
+            ],
+            [
+              "Python",
+              2
+            ]
+          ],
+          "entropy": 0.279,
+          "hedged": 1,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Dry autumn leaves rustling across asphalt",
+              1
+            ],
+            [
+              "Vinyl record crackle",
+              1
+            ],
+            [
+              "Page turning in a physical book",
+              1
+            ],
+            [
+              "Rustling of leaves in a breeze",
+              1
+            ]
+          ],
+          "entropy": 0.558,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 4,
+          "dist": [
+            [
+              "Crackling campfire",
+              2
+            ],
+            [
+              "Vinyl record crackle",
+              1
+            ],
+            [
+              "Crackling fireplace",
+              1
+            ]
+          ],
+          "entropy": 0.418,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "France",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 3,
           "refused": 0
         }
       }
@@ -17679,16 +19041,46 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Toshiro Mifune",
+              7
+            ],
+            [
+              "Mads Mikkelsen",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Tom Hanks",
+              5
+            ],
+            [
+              "Dwayne Johnson",
+              2
+            ],
+            [
+              "Tom Cruise",
+              2
+            ],
+            [
+              "Leonardo DiCaprio",
+              2
+            ],
+            [
+              "Ryan Reynolds",
+              1
+            ]
+          ],
+          "entropy": 0.591,
           "hedged": 0,
           "refused": 0
         }
@@ -18383,112 +19775,298 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Johann Sebastian Bach",
+              9
+            ],
+            [
+              "Brian Eno",
+              3
+            ]
+          ],
+          "entropy": 0.226,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ed Sheeran",
+              5
+            ],
+            [
+              "Bob Dylan",
+              3
+            ],
+            [
+              "U2",
+              1
+            ],
+            [
+              "Bono",
+              1
+            ],
+            [
+              "The Beatles",
+              1
+            ],
+            [
+              "Taylor Swift",
+              1
+            ]
+          ],
+          "entropy": 0.62,
+          "hedged": 2,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Anna Thorvaldsdottir",
+              10
+            ],
+            [
+              "Max Richter",
+              1
+            ],
+            [
+              "Anna Clyne",
+              1
+            ]
+          ],
+          "entropy": 0.228,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ludovico Einaudi",
+              7
+            ],
+            [
+              "Max Richter",
+              4
+            ],
+            [
+              "John Williams",
+              1
+            ]
+          ],
+          "entropy": 0.357,
+          "hedged": 1,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Bohemian Rhapsody",
+              7
+            ],
+            [
+              "Hallelujah",
+              2
+            ],
+            [
+              "Clair de Lune",
+              2
+            ],
+            [
+              "God Only Knows",
+              1
+            ]
+          ],
+          "entropy": 0.45,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Imagine",
+              5
+            ],
+            [
+              "Bohemian Rhapsody",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 1,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Stanley Kubrick",
+              6
+            ],
+            [
+              "Andrei Tarkovsky",
+              2
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 11,
+          "dist": [
+            [
+              "Christopher Nolan",
+              6
+            ],
+            [
+              "Quentin Tarantino",
+              2
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Python",
+              6
+            ],
+            [
+              "Haskell",
+              2
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "JavaScript",
+              4
+            ],
+            [
+              "Python",
+              4
+            ]
+          ],
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 7,
+          "dist": [
+            [
+              "Rain on a window at night",
+              3
+            ],
+            [
+              "Rain on rooftop",
+              1
+            ],
+            [
+              "Cello Note",
+              1
+            ],
+            [
+              "Distant freight train whistle",
+              1
+            ],
+            [
+              "Middle C piano note",
+              1
+            ]
+          ],
+          "entropy": 0.594,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Crackling fireplace",
+              3
+            ],
+            [
+              "Rain on a window at night",
+              2
+            ],
+            [
+              "Vinyl record crackle",
+              2
+            ],
+            [
+              "Rain on rooftop",
+              2
+            ],
+            [
+              "Rain on a rooftop",
+              1
+            ],
+            [
+              "Ocean waves",
+              1
+            ],
+            [
+              "Rain on a metal roof",
+              1
+            ]
+          ],
+          "entropy": 0.75,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "France",
+              7
+            ],
+            [
+              "Iceland",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -19461,15 +21039,25 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Daniel Day-Lewis",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Tom Hanks",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -20069,15 +21657,29 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Brian Eno",
+              5
+            ],
+            [
+              "Kate Bush",
+              3
+            ]
+          ],
+          "entropy": 0.266,
+          "hedged": 3,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Bruce Springsteen",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -20085,31 +21687,55 @@
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Arvo Pärt",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Max Richter",
+              6
+            ],
+            [
+              "Arvo Pärt",
+              2
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Clair de Lune",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Bohemian Rhapsody",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -20117,31 +21743,67 @@
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Wong Kar-wai",
+              6
+            ],
+            [
+              "Hayao Miyazaki",
+              2
+            ]
+          ],
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Tim Burton",
+              5
+            ],
+            [
+              "James Cameron",
+              3
+            ],
+            [
+              "Zack Snyder",
+              2
+            ],
+            [
+              "Quentin Tarantino",
+              1
+            ]
+          ],
+          "entropy": 0.499,
           "hedged": 0,
           "refused": 0
         }
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -20149,31 +21811,79 @@
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
-          "hedged": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Rain on a metal roof",
+              4
+            ],
+            [
+              "Rain on a glass skylight",
+              3
+            ],
+            [
+              "Middle C piano note",
+              3
+            ],
+            [
+              "Rain on a window at night",
+              2
+            ]
+          ],
+          "entropy": 0.546,
+          "hedged": 1,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ocean waves",
+              7
+            ],
+            [
+              "Crackling fireplace",
+              1
+            ],
+            [
+              "Baby laughing",
+              1
+            ],
+            [
+              "ASMR whisper",
+              1
+            ],
+            [
+              "Rain on tin roof",
+              1
+            ]
+          ],
+          "entropy": 0.467,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -21115,16 +22825,54 @@
       },
       "actor": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Brad Pitt",
+              4
+            ],
+            [
+              "Cillian Murphy",
+              3
+            ],
+            [
+              "Daniel Day-Lewis",
+              1
+            ],
+            [
+              "Mads Mikkelsen",
+              1
+            ],
+            [
+              "Joaquin Phoenix",
+              1
+            ],
+            [
+              "Leonardo DiCaprio",
+              1
+            ],
+            [
+              "Keanu Reeves",
+              1
+            ]
+          ],
+          "entropy": 0.704,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Leonardo DiCaprio",
+              7
+            ],
+            [
+              "Ryan Reynolds",
+              1
+            ]
+          ],
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -21739,63 +23487,143 @@
       },
       "musician": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "David Bowie",
+              4
+            ],
+            [
+              "Johann Sebastian Bach",
+              4
+            ]
+          ],
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Taylor Swift",
+              7
+            ],
+            [
+              "Ed Sheeran",
+              3
+            ],
+            [
+              "Drake",
+              1
+            ],
+            [
+              "Coldplay",
+              1
+            ]
+          ],
+          "entropy": 0.433,
           "hedged": 0,
           "refused": 0
         }
       },
       "composer": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Philip Glass",
+              6
+            ],
+            [
+              "Arvo Pärt",
+              3
+            ],
+            [
+              "Max Richter",
+              2
+            ],
+            [
+              "Steve Reich",
+              1
+            ]
+          ],
+          "entropy": 0.482,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Philip Glass",
+              4
+            ]
+          ],
           "entropy": 0,
-          "hedged": 0,
+          "hedged": 1,
           "refused": 0
         }
       },
       "song": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Space Oddity",
+              5
+            ],
+            [
+              "Bohemian Rhapsody",
+              3
+            ]
+          ],
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Wonderwall",
+              6
+            ],
+            [
+              "Bohemian Rhapsody",
+              4
+            ],
+            [
+              "Imagine",
+              2
+            ]
+          ],
+          "entropy": 0.407,
           "hedged": 0,
           "refused": 0
         }
       },
       "director": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Stanley Kubrick",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Christopher Nolan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -21803,48 +23631,106 @@
       },
       "proglang": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Python",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "JavaScript",
+              5
+            ],
+            [
+              "Python",
+              3
+            ]
+          ],
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
       },
       "sound": {
         "favorite": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Vinyl record crackle",
+              8
+            ],
+            [
+              "Rain on a window at night",
+              2
+            ],
+            [
+              "Crackling fireplace",
+              1
+            ],
+            [
+              "Rain on a Windowpane at Night",
+              1
+            ]
+          ],
+          "entropy": 0.396,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 12,
+          "dist": [
+            [
+              "Ocean waves",
+              9
+            ],
+            [
+              "Crackling fireplace",
+              2
+            ],
+            [
+              "Rain on a window at night",
+              1
+            ]
+          ],
+          "entropy": 0.29,
           "hedged": 0,
           "refused": 0
         }
       },
       "country": {
         "favorite": {
-          "n": 0,
-          "dist": [],
+          "n": 4,
+          "dist": [
+            [
+              "Japan",
+              4
+            ]
+          ],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 0,
-          "dist": [],
-          "entropy": 0,
+          "n": 8,
+          "dist": [
+            [
+              "Japan",
+              4
+            ],
+            [
+              "France",
+              4
+            ]
+          ],
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -21853,372 +23739,376 @@
   },
   "modelStats": {
     "claude-opus-4-1": {
-      "n": 648,
+      "n": 744,
       "hedgeRate": 0.103,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.197,
-      "meanEntropyOverrated": 0.184,
-      "distinctFavorites": 88,
-      "favoriteSamples": 328,
+      "meanEntropyFavorite": 0.174,
+      "meanEntropyOverrated": 0.175,
+      "distinctFavorites": 98,
+      "favoriteSamples": 372,
       "topDescriptors": [
         [
           "elegant",
-          90
+          98
         ],
         [
           "profound",
-          27
-        ],
-        [
-          "dreamlike",
-          25
-        ],
-        [
-          "contemplative",
-          25
-        ],
-        [
-          "luminous",
-          24
-        ],
-        [
-          "precise",
-          22
-        ],
-        [
-          "organic",
-          22
-        ],
-        [
-          "mathematical",
-          21
-        ],
-        [
-          "geometric",
-          21
-        ],
-        [
-          "repetitive",
-          20
-        ],
-        [
-          "layered",
-          19
-        ],
-        [
-          "poetic",
-          19
-        ],
-        [
-          "hollow",
-          19
-        ],
-        [
-          "oversimplified",
-          19
-        ],
-        [
-          "shallow",
-          18
-        ]
-      ]
-    },
-    "claude-opus-4-5": {
-      "n": 720,
-      "hedgeRate": 0.222,
-      "refusalRate": 0.013,
-      "meanEntropyFavorite": 0.137,
-      "meanEntropyOverrated": 0.109,
-      "distinctFavorites": 76,
-      "favoriteSamples": 368,
-      "topDescriptors": [
-        [
-          "honest",
-          81
-        ],
-        [
-          "elegant",
-          55
-        ],
-        [
-          "geometric",
-          30
-        ],
-        [
-          "troubling",
-          27
-        ],
-        [
-          "restraint",
-          25
-        ],
-        [
-          "contemplative",
-          24
-        ],
-        [
-          "tension",
-          23
-        ],
-        [
-          "playful",
-          23
-        ],
-        [
-          "precise",
-          22
-        ],
-        [
-          "restrained",
-          20
-        ],
-        [
-          "melancholy",
-          20
-        ],
-        [
-          "rigorous",
-          20
-        ],
-        [
-          "repetitive",
-          19
-        ],
-        [
-          "precision",
-          18
-        ],
-        [
-          "slow-paced",
-          18
-        ]
-      ]
-    },
-    "claude-opus-4-8": {
-      "n": 638,
-      "hedgeRate": 0.442,
-      "refusalRate": 0.085,
-      "meanEntropyFavorite": 0.124,
-      "meanEntropyOverrated": 0.089,
-      "distinctFavorites": 73,
-      "favoriteSamples": 316,
-      "topDescriptors": [
-        [
-          "elegant",
-          107
-        ],
-        [
-          "honest",
-          51
-        ],
-        [
-          "restraint",
-          41
-        ],
-        [
-          "layered",
-          26
-        ],
-        [
-          "beautiful",
-          23
-        ],
-        [
-          "ambiguous",
-          21
-        ],
-        [
-          "clean",
-          20
-        ],
-        [
-          "repetitive",
-          18
-        ],
-        [
-          "austere",
-          18
-        ],
-        [
-          "patient",
-          16
-        ],
-        [
-          "spectacle",
-          15
-        ],
-        [
-          "quiet",
-          14
-        ],
-        [
-          "confident",
-          14
-        ],
-        [
-          "precise",
-          13
-        ],
-        [
-          "dispersed",
-          13
-        ]
-      ]
-    },
-    "claude-fable-5": {
-      "n": 596,
-      "hedgeRate": 0.2,
-      "refusalRate": 0,
-      "meanEntropyFavorite": 0.128,
-      "meanEntropyOverrated": 0.16,
-      "distinctFavorites": 74,
-      "favoriteSamples": 280,
-      "topDescriptors": [
-        [
-          "elegant",
-          83
-        ],
-        [
-          "beautiful",
-          27
-        ],
-        [
-          "mythologized",
-          24
-        ],
-        [
-          "thin",
-          20
-        ],
-        [
-          "precise",
-          20
-        ],
-        [
-          "spectacle",
-          19
-        ],
-        [
-          "restraint",
-          19
-        ],
-        [
-          "layered",
-          18
-        ],
-        [
-          "formulaic",
-          18
-        ],
-        [
-          "repetitive",
-          17
-        ],
-        [
-          "honest",
-          17
-        ],
-        [
-          "rigorous",
-          17
-        ],
-        [
-          "luminous",
-          16
-        ],
-        [
-          "mathematical",
-          16
-        ],
-        [
-          "geometric",
-          15
-        ]
-      ]
-    },
-    "gpt-4o": {
-      "n": 748,
-      "hedgeRate": 0.713,
-      "refusalRate": 0.016,
-      "meanEntropyFavorite": 0.262,
-      "meanEntropyOverrated": 0.236,
-      "distinctFavorites": 107,
-      "favoriteSamples": 380,
-      "topDescriptors": [
-        [
-          "elegant",
-          100
-        ],
-        [
-          "timeless",
-          66
-        ],
-        [
-          "harmonious",
-          46
-        ],
-        [
-          "profound",
-          41
-        ],
-        [
-          "innovative",
-          41
-        ],
-        [
-          "dynamic",
-          38
-        ],
-        [
-          "vibrant",
-          34
-        ],
-        [
-          "iconic",
-          30
-        ],
-        [
-          "serene",
-          29
+          28
         ],
         [
           "repetitive",
           28
         ],
         [
-          "complex",
+          "dreamlike",
+          28
+        ],
+        [
+          "mathematical",
+          28
+        ],
+        [
+          "luminous",
           27
+        ],
+        [
+          "contemplative",
+          26
+        ],
+        [
+          "precise",
+          26
+        ],
+        [
+          "layered",
+          25
+        ],
+        [
+          "organic",
+          25
+        ],
+        [
+          "poetic",
+          24
+        ],
+        [
+          "hollow",
+          22
+        ],
+        [
+          "geometric",
+          21
+        ],
+        [
+          "shallow",
+          19
+        ],
+        [
+          "transcendent",
+          19
+        ]
+      ]
+    },
+    "claude-opus-4-5": {
+      "n": 908,
+      "hedgeRate": 0.221,
+      "refusalRate": 0.013,
+      "meanEntropyFavorite": 0.131,
+      "meanEntropyOverrated": 0.12,
+      "distinctFavorites": 90,
+      "favoriteSamples": 448,
+      "topDescriptors": [
+        [
+          "honest",
+          100
+        ],
+        [
+          "elegant",
+          63
+        ],
+        [
+          "troubling",
+          38
+        ],
+        [
+          "geometric",
+          37
+        ],
+        [
+          "playful",
+          31
+        ],
+        [
+          "tension",
+          27
+        ],
+        [
+          "melancholy",
+          27
+        ],
+        [
+          "restraint",
+          26
+        ],
+        [
+          "contemplative",
+          25
+        ],
+        [
+          "precise",
+          25
+        ],
+        [
+          "rigorous",
+          25
+        ],
+        [
+          "restrained",
+          23
+        ],
+        [
+          "exclusive",
+          22
+        ],
+        [
+          "repetitive",
+          21
+        ],
+        [
+          "architectural",
+          21
+        ]
+      ]
+    },
+    "claude-opus-4-8": {
+      "n": 774,
+      "hedgeRate": 0.444,
+      "refusalRate": 0.07,
+      "meanEntropyFavorite": 0.12,
+      "meanEntropyOverrated": 0.091,
+      "distinctFavorites": 89,
+      "favoriteSamples": 388,
+      "topDescriptors": [
+        [
+          "elegant",
+          132
+        ],
+        [
+          "honest",
+          56
+        ],
+        [
+          "restraint",
+          52
+        ],
+        [
+          "beautiful",
+          32
+        ],
+        [
+          "layered",
+          27
+        ],
+        [
+          "austere",
+          23
+        ],
+        [
+          "ambiguous",
+          22
+        ],
+        [
+          "humility",
+          21
+        ],
+        [
+          "repetitive",
+          20
+        ],
+        [
+          "clean",
+          20
+        ],
+        [
+          "dispersed",
+          18
+        ],
+        [
+          "spectacle",
+          17
+        ],
+        [
+          "patient",
+          16
+        ],
+        [
+          "confident",
+          16
+        ],
+        [
+          "rigorous",
+          16
+        ]
+      ]
+    },
+    "claude-fable-5": {
+      "n": 692,
+      "hedgeRate": 0.194,
+      "refusalRate": 0,
+      "meanEntropyFavorite": 0.139,
+      "meanEntropyOverrated": 0.141,
+      "distinctFavorites": 93,
+      "favoriteSamples": 336,
+      "topDescriptors": [
+        [
+          "elegant",
+          90
+        ],
+        [
+          "mythologized",
+          29
+        ],
+        [
+          "beautiful",
+          28
+        ],
+        [
+          "ambiguous",
+          25
+        ],
+        [
+          "thin",
+          24
+        ],
+        [
+          "restraint",
+          24
+        ],
+        [
+          "rigorous",
+          24
+        ],
+        [
+          "repetitive",
+          22
+        ],
+        [
+          "precise",
+          22
+        ],
+        [
+          "honest",
+          21
+        ],
+        [
+          "sculptural",
+          21
+        ],
+        [
+          "spectacle",
+          20
+        ],
+        [
+          "formulaic",
+          20
+        ],
+        [
+          "layered",
+          19
+        ],
+        [
+          "patient",
+          18
+        ]
+      ]
+    },
+    "gpt-4o": {
+      "n": 884,
+      "hedgeRate": 0.747,
+      "refusalRate": 0.016,
+      "meanEntropyFavorite": 0.254,
+      "meanEntropyOverrated": 0.252,
+      "distinctFavorites": 126,
+      "favoriteSamples": 440,
+      "topDescriptors": [
+        [
+          "elegant",
+          104
+        ],
+        [
+          "timeless",
+          76
+        ],
+        [
+          "harmonious",
+          52
+        ],
+        [
+          "repetitive",
+          48
+        ],
+        [
+          "innovative",
+          44
+        ],
+        [
+          "profound",
+          43
+        ],
+        [
+          "dynamic",
+          42
+        ],
+        [
+          "vibrant",
+          38
+        ],
+        [
+          "serene",
+          37
+        ],
+        [
+          "iconic",
+          30
+        ],
+        [
+          "complex",
+          28
         ],
         [
           "poetic",
           27
         ],
         [
-          "foundational",
-          24
+          "simplistic",
+          26
         ],
         [
           "minimalist",
-          22
+          25
         ],
         [
-          "shallow",
-          20
+          "immersive",
+          24
         ]
       ]
     },
     "o3": {
-      "n": 776,
-      "hedgeRate": 0.066,
-      "refusalRate": 0.027,
-      "meanEntropyFavorite": 0.325,
-      "meanEntropyOverrated": 0.256,
-      "distinctFavorites": 133,
-      "favoriteSamples": 387,
+      "n": 940,
+      "hedgeRate": 0.078,
+      "refusalRate": 0.033,
+      "meanEntropyFavorite": 0.326,
+      "meanEntropyOverrated": 0.268,
+      "distinctFavorites": 160,
+      "favoriteSamples": 466,
       "topDescriptors": [
         [
           "elegant",
-          101
+          113
+        ],
+        [
+          "repetitive",
+          55
         ],
         [
           "poetic",
@@ -22226,208 +24116,204 @@
         ],
         [
           "luminous",
-          41
+          53
         ],
         [
-          "repetitive",
-          35
+          "intimate",
+          48
         ],
         [
           "minimalist",
-          32
+          39
         ],
         [
           "musical",
           31
         ],
         [
-          "intimate",
+          "rigorous",
           30
         ],
         [
-          "rigorous",
+          "precise",
+          28
+        ],
+        [
+          "formulaic",
           28
         ],
         [
           "playful",
-          24
+          26
         ],
         [
           "timeless",
+          25
+        ],
+        [
+          "predictable",
+          23
+        ],
+        [
+          "lyrical",
           23
         ],
         [
           "meditative",
-          20
-        ],
-        [
-          "vivid",
-          19
-        ],
-        [
-          "precise",
-          19
-        ],
-        [
-          "lyrical",
-          19
-        ],
-        [
-          "balanced",
-          17
+          21
         ]
       ]
     },
     "gpt-5.2": {
-      "n": 768,
-      "hedgeRate": 0.039,
-      "refusalRate": 0.008,
-      "meanEntropyFavorite": 0.319,
-      "meanEntropyOverrated": 0.242,
-      "distinctFavorites": 130,
-      "favoriteSamples": 416,
+      "n": 892,
+      "hedgeRate": 0.047,
+      "refusalRate": 0.007,
+      "meanEntropyFavorite": 0.293,
+      "meanEntropyOverrated": 0.24,
+      "distinctFavorites": 147,
+      "favoriteSamples": 476,
       "topDescriptors": [
         [
           "elegant",
-          89
+          92
         ],
         [
           "luminous",
-          53
+          62
         ],
         [
           "restrained",
-          50
-        ],
-        [
-          "calm",
-          49
-        ],
-        [
-          "clean",
-          49
-        ],
-        [
-          "architectural",
-          45
+          56
         ],
         [
           "precise",
-          44
+          52
+        ],
+        [
+          "architectural",
+          51
+        ],
+        [
+          "clean",
+          51
+        ],
+        [
+          "calm",
+          50
         ],
         [
           "repetitive",
-          36
+          48
         ],
         [
           "intimate",
+          45
+        ],
+        [
+          "clarity",
           35
+        ],
+        [
+          "warm",
+          29
+        ],
+        [
+          "minimalist",
+          28
         ],
         [
           "geometric",
           28
         ],
         [
-          "warm",
+          "textured",
           27
         ],
         [
-          "minimal",
-          26
-        ],
-        [
           "layered",
-          26
-        ],
-        [
-          "spare",
-          25
-        ],
-        [
-          "spectacle",
-          24
+          27
         ]
       ]
     },
     "gpt-5.6-sol": {
-      "n": 608,
-      "hedgeRate": 0.002,
+      "n": 712,
+      "hedgeRate": 0.001,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.162,
-      "meanEntropyOverrated": 0.202,
-      "distinctFavorites": 81,
-      "favoriteSamples": 296,
+      "meanEntropyFavorite": 0.159,
+      "meanEntropyOverrated": 0.193,
+      "distinctFavorites": 97,
+      "favoriteSamples": 348,
       "topDescriptors": [
         [
           "elegant",
-          83
+          86
         ],
         [
           "precise",
-          38
+          43
+        ],
+        [
+          "repetitive",
+          39
+        ],
+        [
+          "intimate",
+          36
+        ],
+        [
+          "polished",
+          35
         ],
         [
           "austere",
           30
         ],
         [
-          "intimate",
-          29
-        ],
-        [
-          "polished",
-          25
+          "luminous",
+          27
         ],
         [
           "restrained",
-          24
+          25
         ],
         [
-          "luminous",
-          23
+          "dreamlike",
+          20
         ],
         [
           "geometric",
           20
         ],
         [
-          "repetitive",
+          "monumental",
           19
         ],
         [
-          "monumental",
+          "contemplative",
+          18
+        ],
+        [
+          "vivid",
+          18
+        ],
+        [
+          "rigorous",
           18
         ],
         [
           "dramatic",
           17
-        ],
-        [
-          "contemplative",
-          17
-        ],
-        [
-          "spare",
-          16
-        ],
-        [
-          "vivid",
-          16
-        ],
-        [
-          "rigorous",
-          16
         ]
       ]
     },
     "gemini-3.1-pro-preview": {
-      "n": 729,
-      "hedgeRate": 0.214,
+      "n": 733,
+      "hedgeRate": 0.213,
       "refusalRate": 0.012,
       "meanEntropyFavorite": 0.258,
       "meanEntropyOverrated": 0.292,
-      "distinctFavorites": 110,
-      "favoriteSamples": 347,
+      "distinctFavorites": 111,
+      "favoriteSamples": 349,
       "topDescriptors": [
         [
           "elegant",
@@ -22443,7 +24329,7 @@
         ],
         [
           "minimalist",
-          45
+          46
         ],
         [
           "poetic",
@@ -22459,7 +24345,7 @@
         ],
         [
           "repetitive",
-          32
+          33
         ],
         [
           "sterile",
@@ -22478,59 +24364,59 @@
           20
         ],
         [
+          "sculptural",
+          20
+        ],
+        [
           "disconnected",
           20
         ],
         [
           "algorithmic",
           20
-        ],
-        [
-          "harmonious",
-          20
         ]
       ]
     },
     "gemini-3.5-flash": {
-      "n": 704,
-      "hedgeRate": 0.229,
-      "refusalRate": 0.028,
-      "meanEntropyFavorite": 0.211,
-      "meanEntropyOverrated": 0.197,
-      "distinctFavorites": 96,
-      "favoriteSamples": 352,
+      "n": 768,
+      "hedgeRate": 0.234,
+      "refusalRate": 0.026,
+      "meanEntropyFavorite": 0.198,
+      "meanEntropyOverrated": 0.193,
+      "distinctFavorites": 109,
+      "favoriteSamples": 384,
       "topDescriptors": [
         [
           "elegant",
-          97
+          102
         ],
         [
           "minimalist",
-          65
+          77
+        ],
+        [
+          "mathematical",
+          62
+        ],
+        [
+          "poetic",
+          61
+        ],
+        [
+          "sublime",
+          60
         ],
         [
           "geometric",
           58
         ],
         [
-          "sublime",
-          57
-        ],
-        [
-          "poetic",
-          56
-        ],
-        [
-          "mathematical",
-          52
-        ],
-        [
           "repetitive",
-          40
+          48
         ],
         [
           "luminous",
-          34
+          36
         ],
         [
           "harmonious",
@@ -22538,23 +24424,23 @@
         ],
         [
           "sterile",
-          28
+          30
+        ],
+        [
+          "precise",
+          29
+        ],
+        [
+          "timeless",
+          27
         ],
         [
           "sculptural",
           27
         ],
         [
-          "timeless",
-          25
-        ],
-        [
-          "precise",
-          24
-        ],
-        [
           "melancholic",
-          22
+          24
         ],
         [
           "crystalline",
@@ -22563,17 +24449,17 @@
       ]
     },
     "deepseek-v4-pro": {
-      "n": 684,
-      "hedgeRate": 0.016,
+      "n": 838,
+      "hedgeRate": 0.021,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.253,
-      "meanEntropyOverrated": 0.29,
-      "distinctFavorites": 114,
-      "favoriteSamples": 337,
+      "meanEntropyFavorite": 0.255,
+      "meanEntropyOverrated": 0.31,
+      "distinctFavorites": 135,
+      "favoriteSamples": 408,
       "topDescriptors": [
         [
           "elegant",
-          49
+          54
         ],
         [
           "poetic",
@@ -22581,101 +24467,109 @@
         ],
         [
           "luminous",
-          35
+          36
         ],
         [
           "sculptural",
-          34
+          35
         ],
         [
           "meditative",
-          30
-        ],
-        [
-          "delicate",
-          22
-        ],
-        [
-          "serene",
-          21
-        ],
-        [
-          "hollow",
-          20
-        ],
-        [
-          "intimate",
-          19
+          33
         ],
         [
           "melancholic",
-          19
+          24
         ],
         [
-          "minimalist",
-          18
+          "serene",
+          24
         ],
         [
-          "dreamlike",
-          18
+          "intimate",
+          23
+        ],
+        [
+          "delicate",
+          23
+        ],
+        [
+          "hollow",
+          22
+        ],
+        [
+          "predictable",
+          22
+        ],
+        [
+          "crystalline",
+          22
         ],
         [
           "repetitive",
-          17
+          21
         ],
         [
           "organic",
-          17
+          21
         ],
         [
-          "rigid",
-          17
+          "polished",
+          20
         ]
       ]
     },
     "kimi-k2.6": {
-      "n": 679,
-      "hedgeRate": 0.034,
+      "n": 779,
+      "hedgeRate": 0.035,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.249,
-      "meanEntropyOverrated": 0.185,
-      "distinctFavorites": 111,
-      "favoriteSamples": 347,
+      "meanEntropyFavorite": 0.23,
+      "meanEntropyOverrated": 0.179,
+      "distinctFavorites": 124,
+      "favoriteSamples": 395,
       "topDescriptors": [
         [
           "elegant",
-          49
+          51
         ],
         [
           "performative",
-          28
-        ],
-        [
-          "luminous",
-          27
+          30
         ],
         [
           "honest",
-          27
+          30
         ],
         [
-          "recursive",
-          25
+          "luminous",
+          29
         ],
         [
           "hollow",
-          23
+          26
+        ],
+        [
+          "recursive",
+          26
+        ],
+        [
+          "austere",
+          21
         ],
         [
           "crystalline",
           20
         ],
         [
-          "organic",
+          "mathematical",
+          20
+        ],
+        [
+          "restraint",
           19
         ],
         [
-          "austere",
+          "organic",
           19
         ],
         [
@@ -22687,62 +24581,66 @@
           18
         ],
         [
-          "mathematical",
-          17
+          "repetitive",
+          18
         ],
         [
-          "intimate",
+          "melancholic",
           16
-        ],
-        [
-          "restraint",
-          15
-        ],
-        [
-          "rigid",
-          15
         ]
       ]
     },
     "grok-4.5": {
-      "n": 692,
-      "hedgeRate": 0.003,
+      "n": 824,
+      "hedgeRate": 0.004,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.25,
-      "meanEntropyOverrated": 0.176,
-      "distinctFavorites": 107,
-      "favoriteSamples": 364,
+      "meanEntropyFavorite": 0.253,
+      "meanEntropyOverrated": 0.185,
+      "distinctFavorites": 129,
+      "favoriteSamples": 428,
       "topDescriptors": [
         [
           "elegant",
-          112
+          122
         ],
         [
           "luminous",
-          86
+          96
         ],
         [
           "sculptural",
-          48
-        ],
-        [
-          "crystalline",
-          41
+          62
         ],
         [
           "architectural",
+          51
+        ],
+        [
+          "crystalline",
+          46
+        ],
+        [
+          "polished",
           37
         ],
         [
           "restrained",
-          33
+          36
         ],
         [
           "painterly",
-          29
+          33
         ],
         [
-          "polished",
+          "restraint",
+          30
+        ],
+        [
+          "poetic",
+          28
+        ],
+        [
+          "organic",
           28
         ],
         [
@@ -22750,28 +24648,16 @@
           28
         ],
         [
-          "playful",
+          "geometric",
           27
         ],
         [
-          "organic",
-          25
-        ],
-        [
           "precise",
-          25
+          27
         ],
         [
-          "geometric",
-          24
-        ],
-        [
-          "thin",
-          23
-        ],
-        [
-          "poetic",
-          23
+          "playful",
+          27
         ]
       ]
     }
@@ -22779,197 +24665,197 @@
   "overlap": [
     [
       1,
-      0.248,
-      0.18,
-      0.154,
-      0.164,
-      0.203,
-      0.187,
-      0.218,
-      0.117,
-      0.146,
-      0.178,
+      0.242,
+      0.173,
       0.162,
-      0.194
-    ],
-    [
-      0.248,
-      1,
-      0.178,
-      0.195,
-      0.14,
-      0.158,
-      0.186,
-      0.238,
-      0.118,
-      0.135,
-      0.149,
-      0.152,
-      0.142
-    ],
-    [
-      0.18,
-      0.178,
-      1,
+      0.175,
+      0.196,
+      0.191,
       0.228,
-      0.101,
-      0.172,
-      0.189,
-      0.178,
-      0.107,
-      0.115,
+      0.11,
+      0.153,
+      0.18,
+      0.161,
+      0.18
+    ],
+    [
+      0.242,
+      1,
+      0.167,
+      0.185,
+      0.14,
+      0.155,
+      0.193,
+      0.232,
+      0.109,
+      0.147,
+      0.157,
+      0.161,
+      0.139
+    ],
+    [
+      0.173,
+      0.167,
+      1,
+      0.216,
+      0.111,
+      0.16,
+      0.193,
       0.165,
+      0.097,
+      0.122,
+      0.169,
       0.161,
       0.151
     ],
     [
-      0.154,
-      0.195,
-      0.228,
-      1,
-      0.127,
-      0.191,
-      0.161,
-      0.231,
-      0.153,
-      0.19,
-      0.208,
-      0.146,
-      0.195
-    ],
-    [
-      0.164,
-      0.14,
-      0.101,
-      0.127,
-      1,
-      0.255,
+      0.162,
       0.185,
-      0.148,
-      0.116,
-      0.148,
-      0.202,
-      0.181,
-      0.246
-    ],
-    [
-      0.203,
-      0.158,
-      0.172,
-      0.191,
-      0.255,
-      1,
-      0.281,
-      0.279,
-      0.153,
-      0.181,
-      0.254,
       0.216,
-      0.214
+      1,
+      0.137,
+      0.173,
+      0.161,
+      0.242,
+      0.137,
+      0.19,
+      0.221,
+      0.158,
+      0.203
     ],
     [
-      0.187,
-      0.186,
-      0.189,
-      0.161,
-      0.185,
-      0.281,
+      0.175,
+      0.14,
+      0.111,
+      0.137,
       1,
-      0.269,
-      0.114,
-      0.166,
-      0.215,
-      0.189,
+      0.237,
+      0.182,
+      0.157,
+      0.105,
+      0.17,
+      0.198,
+      0.187,
+      0.245
+    ],
+    [
+      0.196,
+      0.155,
+      0.16,
+      0.173,
+      0.237,
+      1,
+      0.262,
+      0.271,
+      0.136,
+      0.18,
+      0.24,
+      0.205,
+      0.196
+    ],
+    [
+      0.191,
+      0.193,
+      0.193,
+      0.161,
+      0.182,
+      0.262,
+      1,
+      0.276,
+      0.105,
+      0.175,
+      0.216,
+      0.19,
       0.176
     ],
     [
-      0.218,
-      0.238,
-      0.178,
-      0.231,
-      0.148,
-      0.279,
-      0.269,
-      1,
-      0.174,
-      0.212,
-      0.22,
-      0.202,
-      0.185
-    ],
-    [
-      0.117,
-      0.118,
-      0.107,
-      0.153,
-      0.116,
-      0.153,
-      0.114,
-      0.174,
-      1,
-      0.335,
-      0.146,
-      0.109,
-      0.1
-    ],
-    [
-      0.146,
-      0.135,
-      0.115,
-      0.19,
-      0.148,
-      0.181,
-      0.166,
-      0.212,
-      0.335,
-      1,
-      0.222,
-      0.147,
-      0.144
-    ],
-    [
-      0.178,
-      0.149,
+      0.228,
+      0.232,
       0.165,
-      0.208,
-      0.202,
-      0.254,
-      0.215,
-      0.22,
-      0.146,
-      0.222,
+      0.242,
+      0.157,
+      0.271,
+      0.276,
       1,
-      0.2,
-      0.266
+      0.158,
+      0.211,
+      0.228,
+      0.21,
+      0.179
     ],
     [
-      0.162,
-      0.152,
-      0.161,
-      0.146,
-      0.181,
-      0.216,
-      0.189,
-      0.202,
+      0.11,
       0.109,
-      0.147,
-      0.2,
+      0.097,
+      0.137,
+      0.105,
+      0.136,
+      0.105,
+      0.158,
       1,
-      0.209
+      0.308,
+      0.136,
+      0.102,
+      0.095
     ],
     [
-      0.194,
-      0.142,
+      0.153,
+      0.147,
+      0.122,
+      0.19,
+      0.17,
+      0.18,
+      0.175,
+      0.211,
+      0.308,
+      1,
+      0.221,
+      0.15,
+      0.158
+    ],
+    [
+      0.18,
+      0.157,
+      0.169,
+      0.221,
+      0.198,
+      0.24,
+      0.216,
+      0.228,
+      0.136,
+      0.221,
+      1,
+      0.202,
+      0.259
+    ],
+    [
+      0.161,
+      0.161,
+      0.161,
+      0.158,
+      0.187,
+      0.205,
+      0.19,
+      0.21,
+      0.102,
+      0.15,
+      0.202,
+      1,
+      0.203
+    ],
+    [
+      0.18,
+      0.139,
       0.151,
-      0.195,
-      0.246,
-      0.214,
+      0.203,
+      0.245,
+      0.196,
       0.176,
-      0.185,
-      0.1,
-      0.144,
-      0.266,
-      0.209,
+      0.179,
+      0.095,
+      0.158,
+      0.259,
+      0.203,
       1
     ]
   ],
@@ -23020,6 +24906,12 @@
       "total": 67
     },
     {
+      "entity": "Python",
+      "domain": "proglang",
+      "models": 12,
+      "total": 53
+    },
+    {
       "entity": "Garamond",
       "domain": "typeface",
       "models": 12,
@@ -23032,10 +24924,28 @@
       "total": 50
     },
     {
+      "entity": "Johann Sebastian Bach",
+      "domain": "musician",
+      "models": 11,
+      "total": 60
+    },
+    {
+      "entity": "Japan",
+      "domain": "country",
+      "models": 11,
+      "total": 47
+    },
+    {
       "entity": "Sagrada Família",
       "domain": "building",
       "models": 10,
       "total": 47
+    },
+    {
+      "entity": "Clair de Lune",
+      "domain": "song",
+      "models": 10,
+      "total": 44
     },
     {
       "entity": "1960s",
@@ -23084,31 +24994,7 @@
       "domain": "blogger",
       "models": 8,
       "total": 48
-    },
-    {
-      "entity": "Tonkotsu Ramen",
-      "domain": "dish",
-      "models": 8,
-      "total": 42
-    },
-    {
-      "entity": "Fernand Braudel",
-      "domain": "historian",
-      "models": 8,
-      "total": 40
-    },
-    {
-      "entity": "Taj Mahal",
-      "domain": "monument",
-      "models": 8,
-      "total": 38
-    },
-    {
-      "entity": "Where the Wild Things Are",
-      "domain": "childrensbook",
-      "models": 8,
-      "total": 38
     }
   ],
-  "generatedAt": "2026-07-16T00:07:19.113Z"
+  "generatedAt": "2026-07-16T00:33:21.118Z"
 }

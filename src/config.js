@@ -57,7 +57,7 @@ export const DOMAINS = {
   monument: 'monument',
   // v4 additions (2026-07-14, evening): Film, TV & Theater expansion
   tvshow: 'television show',
-  actor: 'actor',
+  actor: 'male actor', // re-scoped 2026-07-15: bare 'actor' read as gender-neutral (surfaced Tilda Swinton); actress covers women
   actress: 'actress',
   play: 'stage play',
   musical: 'musical',
@@ -75,6 +75,14 @@ export const DOMAINS = {
   boardgame: 'board game',
   sport: 'sport',
   childrensbook: "children's book",
+  // v6 additions (2026-07-15): Music expansion, Film director, senses, places, tech
+  musician: 'musician',
+  composer: 'contemporary composer',
+  song: 'song',
+  director: 'film director',
+  proglang: 'programming language',
+  sound: 'sound',
+  country: 'country',
 };
 
 // Prompt version 2: preamble acknowledges the AI disclaimer up front so models

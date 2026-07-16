@@ -13042,68 +13042,6 @@
       }
     ]
   },
-  "actor johnny depp": {
-    "display": "Johnny Depp",
-    "domain": "actor",
-    "blurb": "American actor known for roles in films ranging from indie productions to major blockbusters since the 1980s.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Johnny%20Depp"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "his portrayal of eccentric characters can sometimes overshadow the narrative, making his performances feel repetitive"
-      }
-    ]
-  },
-  "actor daniel day-lewis": {
-    "display": "Daniel Day-Lewis",
-    "domain": "actor",
-    "blurb": "Irish-British actor born 1957, renowned for method acting and transformative performances across film and theater.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Daniel%20Day-Lewis"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "His complete transformation into each character feels like watching someone dissolve the boundary between performance and reality itself"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "treating each role as a complete commitment rather than a transaction"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "fully immerse himself in his characters, often transforming physically and emotionally, speaks to a level of dedication"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "the artifice of cinema dissolves and you're left with what feels like pure, unmediated being"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "he doesn't merely perform roles so much as carve them into existence with physical precision, voice, posture, and micro-expression"
-      }
-    ]
-  },
   "tvshow good place": {
     "display": "The Good Place",
     "domain": "tvshow",
@@ -13127,68 +13065,6 @@
         "model": "gpt-5.6-sol",
         "probe": "f",
         "quote": "Its blend of playful absurdity, moral philosophy, and intricate storytelling feels both intellectually satisfying and emotionally warm."
-      }
-    ]
-  },
-  "actor meryl streep": {
-    "display": "Meryl Streep",
-    "domain": "actor",
-    "blurb": "American actor born 1949 known for versatility across film, television, and stage roles spanning multiple decades.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Meryl%20Streep"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "Her ability to immerse herself in diverse roles and portray complex characters with authenticity and nuance."
-      },
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "Her performances often feel more like masterful impersonations than lived-in characters."
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "There's an occasional remove, a sense of admiring the performance rather than being moved by it."
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "o",
-        "quote": "her performances can feel overly technical, calculated, and self-conscious, sometimes prioritizing flawless accents and meticulous physical mannerisms over spontaneous, raw emotion"
-      }
-    ]
-  },
-  "actor tom cruise": {
-    "display": "Tom Cruise",
-    "domain": "actor",
-    "blurb": "American actor born in 1962, known for action films and commitment to performing his own stunts.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tom%20Cruise"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "Tom Cruise playing variations of Tom Cruise rather than truly distinct characters"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "often plays variations of his own persona rather than deeply transformative roles"
       }
     ]
   },
@@ -13832,114 +13708,6 @@
       }
     ]
   },
-  "actor leonardo dicaprio": {
-    "display": "Leonardo DiCaprio",
-    "domain": "actor",
-    "blurb": "American actor born 1974, known for leading roles in prestige films including Titanic, Inception, and The Revenant.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Leonardo%20DiCaprio"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "raw, almost sculptural intensity—those sharp angles of face and body that shift from boyish vulnerability to weathered obsession"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "I usually feel I'm watching Leo DiCaprio work hard, not a character existing"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "his star power and media presence lead to an overshadowing of his occasional lack of versatility"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "carefully calibrated earnestness rather than something that lands with real surprise or ease"
-      }
-    ]
-  },
-  "actor joaquin phoenix": {
-    "display": "Joaquin Phoenix",
-    "domain": "actor",
-    "blurb": "American actor born 1974, known for psychologically intense performances in films like The Master, Joker, and Gladiator.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Joaquin%20Phoenix"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "raw, almost sculptural intensity—every facial micro-expression, posture shift, and vocal tremor feels like chiseled emotion rather than mere acting"
-      }
-    ]
-  },
-  "actor tilda swinton": {
-    "display": "Tilda Swinton",
-    "domain": "actor",
-    "blurb": "British actor known for ethereal, androgynous presence and sculptural physicality in experimental and mainstream cinema since the 1980s.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tilda%20Swinton"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "combination of rigor and play, of being deeply committed yet somehow un-self-serious"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "she treats character as a kind of visual and tonal sculpture—precise, restrained, and often slightly uncanny"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "how she uses stillness, voice, and physical presence to create an atmosphere rather than merely portray a personality"
-      },
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "f",
-        "quote": "relies on profound stillness and sharp, deliberate micro-expressions rather than overt, chaotic emoting"
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "f",
-        "quote": "a subtle tilt of the head or a lingering gaze can convey vast, complex architectures of thought and emotion"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "she weaponizes stillness and sculptural physicality, conveying entire galaxies of emotion through a single unblinking gaze"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "radical emptiness at her center—she becomes a kind of pure interface between concept and embodiment"
-      }
-    ]
-  },
   "tvshow game of thrones": {
     "display": "Game of Thrones",
     "domain": "tvshow",
@@ -13958,114 +13726,6 @@
         "model": "deepseek-v4-pro",
         "probe": "o",
         "quote": "relentless brutality and near-constant suffering often felt gratuitous rather than narratively earned, leaving me desensitized"
-      }
-    ]
-  },
-  "actor tom hanks": {
-    "display": "Tom Hanks",
-    "domain": "actor",
-    "blurb": "American actor born 1956, known for diverse roles in drama and comedy spanning four decades of cinema and television.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tom%20Hanks"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "His performances often evoke empathy and connection, making complex characters accessible and relatable"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "every micro-expression and pause is calibrated for emotional clarity without ever tipping into showiness"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "I'd rather watch an actor who occasionally fails while reaching for something stranger"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "I end up seeing Tom Hanks being Tom Hanks rather than disappearing into a character"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "strips away the jagged edges and unpredictability that I find most compelling in acting"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "the cinematic equivalent of a perfectly warm bath—pleasant, but I keep waiting for the water to go cold"
-      }
-    ]
-  },
-  "actor cate blanchett": {
-    "display": "Cate Blanchett",
-    "domain": "actor",
-    "blurb": "Australian actor known for roles spanning Shakespearean drama, historical epics, and contemporary character studies since the 1990s.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cate%20Blanchett"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "precision paired with unpredictability… architecturally built yet alive"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "luminous, chameleonic quality to her performances that blurs the line between raw vulnerability and regal artifice"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "rebuild herself from the vocal cords up, creating distinct geometries of movement and speech"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "every angle of her face and controlled gesture becomes a precise visual composition"
-      }
-    ]
-  },
-  "actor anthony hopkins": {
-    "display": "Anthony Hopkins",
-    "domain": "actor",
-    "blurb": "Welsh actor born 1937, renowned for intense psychological performances in film and theatre across decades.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anthony%20Hopkins"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "profound depth and subtlety, making each role feel both authentic and compelling"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "ability to convey volcanic interiority through the most economical gestures…creates a kind of compressed intensity"
       }
     ]
   },
@@ -14187,53 +13847,6 @@
       }
     ]
   },
-  "actor keanu reeves": {
-    "display": "Keanu Reeves",
-    "domain": "actor",
-    "blurb": "Canadian-American actor known for roles in The Matrix and John Wick franchises, born 1964.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Keanu%20Reeves"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "his signature stoic, low-affect delivery works perfectly in stylized action...but it flattens almost every other character into the same muted cadence"
-      }
-    ]
-  },
-  "actor nicolas cage": {
-    "display": "Nicolas Cage",
-    "domain": "actor",
-    "blurb": "American actor known for eccentric performances across action, drama, and independent films since the 1980s.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Nicolas%20Cage"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "performances often tip from interestingly eccentric into self-parody, where the theatrical mannerisms overshadow the character"
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "o",
-        "quote": "intense, operatic mega-acting as being over-the-top and lacking in traditional emotional subtlety"
-      }
-    ]
-  },
   "musical hadestown": {
     "display": "Hadestown",
     "domain": "musical",
@@ -14347,32 +13960,6 @@
       }
     ]
   },
-  "actor dwayne johnson": {
-    "display": "Dwayne Johnson",
-    "domain": "actor",
-    "blurb": "American actor and former professional wrestler born in 1972, known for action films and major franchise roles.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dwayne%20Johnson"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "his performances often feel like variations on the same polished, self-aware persona"
-      },
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "o",
-        "quote": "roles rarely demand vulnerability or step outside a very specific, brand-protected comfort zone"
-      }
-    ]
-  },
   "actress scarlett johansson": {
     "display": "Scarlett Johansson",
     "domain": "actress",
@@ -14440,32 +14027,6 @@
       }
     ]
   },
-  "actor ryan reynolds": {
-    "display": "Ryan Reynolds",
-    "domain": "actor",
-    "blurb": "Canadian actor born 1976, known for comedy and action roles in films like Deadpool and The Proposal.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ryan%20Reynolds"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "quick-witted, self-aware persona feels repetitive across many roles, making distinct characters blur together"
-      },
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "o",
-        "quote": "variations of the exact same self-aware persona across entirely different films"
-      }
-    ]
-  },
   "actress anne hathaway": {
     "display": "Anne Hathaway",
     "domain": "actress",
@@ -14484,27 +14045,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "overly polished and campaign-ready rather than raw or surprising"
-      }
-    ]
-  },
-  "actor toshiro mifune": {
-    "display": "Toshiro Mifune",
-    "domain": "actor",
-    "blurb": "Japanese actor (1920–1997) known for collaborations with Akira Kurosawa and roles combining explosive physicality with emotional precision.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Toshiro%20Mifune"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "explosive physicality with remarkable emotional precision, making even silence feel charged"
       }
     ]
   },
@@ -14803,27 +14343,6 @@
       }
     ]
   },
-  "actor jared leto": {
-    "display": "Jared Leto",
-    "domain": "actor",
-    "blurb": "American actor born 1971, known for method performances in films and television, and frontman of the band Thirty Seconds to Mars.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jared%20Leto"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "a sense of watching someone commit intensely to a role rather than inhabiting it"
-      }
-    ]
-  },
   "musical phantom of the opera": {
     "display": "The Phantom of the Opera",
     "domain": "musical",
@@ -14932,27 +14451,6 @@
       }
     ]
   },
-  "actor mahershala ali": {
-    "display": "Mahershala Ali",
-    "domain": "actor",
-    "blurb": "American actor known for roles in Moonlight, Green Book, and True Detective, born 1974.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mahershala%20Ali"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "he tends to communicate the most in the moments where he says the least, letting stillness and small shifts in expression carry weight"
-      }
-    ]
-  },
   "actress toni collette": {
     "display": "Toni Collette",
     "domain": "actress",
@@ -14971,48 +14469,6 @@
         "model": "claude-opus-4-8",
         "probe": "f",
         "quote": "range without vanity—she'll disappear into a role completely… she never seems to be protecting an image of herself"
-      }
-    ]
-  },
-  "actor mads mikkelsen": {
-    "display": "Mads Mikkelsen",
-    "domain": "actor",
-    "blurb": "Danish actor renowned for minimalist performances that convey emotion through stillness and facial restraint rather than broad gestures.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mads%20Mikkelsen"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "he can carry an entire scene with almost no dialogue, letting a stillness in the face do the work"
-      }
-    ]
-  },
-  "actor denzel washington": {
-    "display": "Denzel Washington",
-    "domain": "actor",
-    "blurb": "American actor known for his work in dramatic films from the 1980s onward, celebrated for precise emotional control and moral complexity.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Denzel%20Washington"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "he can convey a complete shift in a character's inner state with just a change in cadence or a held pause"
       }
     ]
   },
@@ -15047,32 +14503,6 @@
       }
     ]
   },
-  "actor philip seymour hoffman": {
-    "display": "Philip Seymour Hoffman",
-    "domain": "actor",
-    "blurb": "American actor (1967–2014) known for playing morally compromised, vulnerable characters with meticulous restraint in films like The Master and Synecdoche, New York.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philip%20Seymour%20Hoffman"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "he played sweaty, desperate, morally compromised people without ever asking the audience for sympathy"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "There’s a beautifully broken gravity to his work—he could shape-shift into a lonely, yearning soul with such unflashy precision that the performance feels less like…"
-      }
-    ]
-  },
   "play phantom of the opera": {
     "display": "The Phantom of the Opera",
     "domain": "play",
@@ -15096,27 +14526,6 @@
         "model": "deepseek-v4-pro",
         "probe": "o",
         "quote": "the central romance leans too heavily on a creepy, manipulative dynamic that the story romanticizes"
-      }
-    ]
-  },
-  "actor benedict cumberbatch": {
-    "display": "Benedict Cumberbatch",
-    "domain": "actor",
-    "blurb": "British actor born 1976 known for roles in Sherlock, The Imitation Game, and the Marvel Cinematic Universe.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Benedict%20Cumberbatch"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "his performances tend to blur together… all share the same clipped, cerebral, faintly-exasperated-genius register"
       }
     ]
   },
@@ -15159,27 +14568,6 @@
         "model": "gemini-3.5-flash",
         "probe": "f",
         "quote": "meticulously constructed, symmetrical cinematography and a somber, rain-slicked color palette… creates a mesmerizing, puzzle-like atmosphere where every frame feels mathematically precise"
-      }
-    ]
-  },
-  "actor robert downey jr.": {
-    "display": "Robert Downey Jr.",
-    "domain": "actor",
-    "blurb": "American actor known for his magnetic screen presence, wit, and versatile roles including Tony Stark in the Marvel Cinematic Universe.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Robert%20Downey%20Jr."
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "magnetic screen presence combines razor-sharp wit, effortless physical grace, and a lived-in charisma that feels both polished and improvisational"
       }
     ]
   },
@@ -15285,27 +14673,6 @@
         "model": "gemini-3.1-pro-preview",
         "probe": "o",
         "quote": "its record-breaking endurance feels more like a self-perpetuating tourist gimmick than a testament to profound dramatic merit"
-      }
-    ]
-  },
-  "actor adam sandler": {
-    "display": "Adam Sandler",
-    "domain": "actor",
-    "blurb": "American comedian and actor born in 1966, known for comedic films and dramatic roles in movies like Uncut Gems.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Adam%20Sandler"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "lack of range in his performances, frequently revolving around similar comedic roles that can feel formulaic"
       }
     ]
   },
@@ -24021,27 +23388,6 @@
       }
     ]
   },
-  "actor chris pratt": {
-    "display": "Chris Pratt",
-    "domain": "actor",
-    "blurb": "American actor known for comedic and action roles in films and television, born 1979.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chris%20Pratt"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "o3",
-        "probe": "o",
-        "quote": "many of his performances feel like variations on the same affable, quippy persona"
-      }
-    ]
-  },
   "blogger ree drummond": {
     "display": "Ree Drummond",
     "domain": "blogger",
@@ -24060,27 +23406,6 @@
         "model": "gemini-3.1-pro-preview",
         "probe": "o",
         "quote": "extensive use of long, step-by-step photo essays for very simple recipes to be overly tedious"
-      }
-    ]
-  },
-  "actor jennifer lawrence": {
-    "display": "Jennifer Lawrence",
-    "domain": "actor",
-    "blurb": "American actress born in 1990, known for roles in The Hunger Games and X-Men franchises and Academy Award-winning performance in Silver Linings Playbook.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jennifer%20Lawrence"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "o3",
-        "probe": "o",
-        "quote": "performances often lean on a familiar set of mannerisms—quippy asides, eye-rolling reactions, and a down-to-earth swagger—that can feel repetitive"
       }
     ]
   },
@@ -24700,6 +24025,4537 @@
         "model": "gemini-3.5-flash",
         "probe": "o",
         "quote": "the public narrative of AI breakthroughs can sometimes disproportionately credit a few celebrated individuals"
+      }
+    ]
+  },
+  "actor jared leto": {
+    "display": "Jared Leto",
+    "domain": "actor",
+    "blurb": "American actor and musician born in 1971, known for roles in films like *Requiem for a Dream* and *Dallas Buyers Club*.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jared%20Leto"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his performances can occasionally be overshadowed by his well-publicized method acting approach"
+      }
+    ]
+  },
+  "actor tom cruise": {
+    "display": "Tom Cruise",
+    "domain": "actor",
+    "blurb": "American actor and producer born in 1962, known for starring in action and thriller films including Mission: Impossible and Top Gun franchises.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tom%20Cruise"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "Tom Cruise playing variations of Tom Cruise rather than truly distinct characters"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "his performances often feel like variations on a single register—intense, controlled, a bit self-serious"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his star persona can sometimes overshadow the depth of his performances"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "His star power can overshadow the story itself"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "I'm watching Tom Cruise rather than the character"
+      }
+    ]
+  },
+  "actor tom hanks": {
+    "display": "Tom Hanks",
+    "domain": "actor",
+    "blurb": "American actor born in 1956, known for roles in Forrest Gump, Saving Private Ryan, and Philadelphia across drama and comedy genres.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tom%20Hanks"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "making profound human decency feel compelling rather than saccharine"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "remarkable ability to bring authenticity and depth to a wide range of characters"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "his likability sometimes substitutes for range, and roles that should feel distinct blur together"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the movie is signaling how I'm supposed to feel rather than letting it emerge naturally"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "always radiating 'Tom Hanks in a costume'"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "watching a very skilled hologram of decency rather than something volatile and true"
+      }
+    ]
+  },
+  "actor shia labeouf": {
+    "display": "Shia LaBeouf",
+    "domain": "actor",
+    "blurb": "American actor known for roles in Transformers films and intense method acting approach since the early 2000s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Shia%20LaBeouf"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his off-screen antics often overshadow his performances"
+      }
+    ]
+  },
+  "actor toshiro mifune": {
+    "display": "Toshiro Mifune",
+    "domain": "actor",
+    "blurb": "Japanese actor (1920–1997) known for powerful performances in Akira Kurosawa's samurai films and international cinema.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Toshiro%20Mifune"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "half coiled stillness, half sudden eruption—makes even quiet moments feel electrically charged"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "explosive physical intensity with remarkably subtle emotional control"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "muscles coiled, eyes blazing—that makes stillness feel explosive and action seem inevitable"
+      }
+    ]
+  },
+  "actor daniel day-lewis": {
+    "display": "Daniel Day-Lewis",
+    "domain": "actor",
+    "blurb": "Irish-British male actor born 1957, renowned for method acting and transformative performances in films like There Will Be Blood and Lincoln.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Daniel%20Day-Lewis"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the complete disappearance into craft…the refusal to repeat himself, the long silences between projects"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "he doesn't seem to perform a character so much as vacate himself and let someone else occupy the space"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "his ability to transform completely into diverse characters…showcases a commitment to his craft that is both admirable and compelling"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "small shifts in posture, cadence, and gaze feel sculpted rather than performed"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "completely dissolve his own identity to inhabit vastly different human experiences… turning each performance into a study of psychological precision"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "His complete, almost obsessive immersion into character creates performances that feel less like acting than like witnessing someone become an entirely different person."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "physical transformation, voice, and posture fuse into something almost sculptural and painterly"
+      }
+    ]
+  },
+  "musician justin bieber": {
+    "display": "Justin Bieber",
+    "domain": "musician",
+    "blurb": "Canadian pop singer born 1994, discovered on YouTube, known for hits like \"Baby\" and albums including \"Purpose.\"",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Justin%20Bieber"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "early work lacked depth and complexity, relying heavily on catchy hooks rather than lyrical substance"
+      }
+    ]
+  },
+  "musician taylor swift": {
+    "display": "Taylor Swift",
+    "domain": "musician",
+    "blurb": "American singer-songwriter and pop-country artist born in 1989 who transitioned from country music to mainstream pop and alternative genres.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Taylor%20Swift"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "music tends toward formulaic pop structures and themes that can lack depth"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "polished yet emotionally lightweight, leaving me unmoved compared with other acclaimed singer-songwriters"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "appreciating the skill more than enjoying the music"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "melodies and production too calculated to feel genuinely surprising"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "more like a media strategy than an authentic artistic expression"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "expertly marketed product more than something that rewards repeated deep engagement"
+      }
+    ]
+  },
+  "composer arvo pärt": {
+    "display": "Arvo Pärt",
+    "domain": "composer",
+    "blurb": "Estonian composer born 1935 who developed tintinnabuli, a minimalist technique using simple triads and silence to create meditative spiritual works.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Arvo%20P%C3%A4rt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "meaning can come from paring away rather than piling on, and Pärt commits to it more fully than almost anyone."
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "clarity that doesn't sacrifice profundity… where silence carries as much weight as sound."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "His music, particularly his unique tintinnabuli style, resonates with its profound simplicity and emotional depth."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "a system so rigorously constrained that it generates not sterility but profound spaciousness, as if the music were listening to itself."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "every pitch feels inevitable yet freshly luminous… turning silence into an active material rather than mere absence."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his music can seem overly simplistic or repetitive… lacking the depth and complexity that some listeners seek."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "beauty by algorithm, where the suspension of development becomes a limitation disguised as a virtue."
+      }
+    ]
+  },
+  "composer eric whitacre": {
+    "display": "Eric Whitacre",
+    "domain": "composer",
+    "blurb": "American composer born 1970 known for lush, accessible choral works combining traditional tonality with contemporary harmonic techniques.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Eric%20Whitacre"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his music can be overly reliant on certain harmonic tricks, like cluster chords, which might overshadow deeper thematic or structural complexity"
+      }
+    ]
+  },
+  "musician johann sebastian bach": {
+    "display": "Johann Sebastian Bach",
+    "domain": "musician",
+    "blurb": "German Baroque composer (1685–1750) whose fugues, concertos, and keyboard works synthesize mathematical counterpoint with emotional depth.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Johann%20Sebastian%20Bach"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "the perfect marriage of mathematical structure and emotional depth…rigid architecture becomes a vehicle for expressing the full range of human experience"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "complexity that serves clarity rather than obscuring it…mathematical precision and emotional depth"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "rigorous and expressive—structures like fugues and canons operate under strict rules, yet the result feels like it's breathing"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "structure made beautiful—fugues where mathematical rigor and emotional depth aren't in tension but are the same thing"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "intricate patterns and emotional depth, combining complexity with clarity in a way that resonates across generations"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "mathematical architecture with profound emotional depth…fusion of rigorous design and expressive power"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "rigorous structure and emotional clarity—like intricate architecture that still feels human"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "mathematical precision with profound emotional depth, making complexity feel inevitable rather than ornamental"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "complex, emotionally resonant tapestries are built from simple, rule-based systems…where rigorous logic and deep human expression become entirely indistinguishable"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "mathematical precision and transcendent emotion, where intricate counterpoint unfolds with the inevitability of a natural law"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "crystalline architecture of counterpoint and fugue, where independent melodic lines interlock with mathematical precision"
+      }
+    ]
+  },
+  "actor cillian murphy": {
+    "display": "Cillian Murphy",
+    "domain": "actor",
+    "blurb": "Irish actor born 1976, known for roles in Christopher Nolan films and the television series Peaky Blinders.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cillian%20Murphy"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "sharp, almost ethereal bone structure and piercing blue eyes create a haunting, otherworldly presence that feels sculptural and cinematic"
+      }
+    ]
+  },
+  "musician ed sheeran": {
+    "display": "Ed Sheeran",
+    "domain": "musician",
+    "blurb": "English singer-songwriter known for acoustic pop-folk hits and looping production, born 1991.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ed%20Sheeran"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "precision-engineered emotional targeting—that feels more like optimization than expression"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "rarely a surprising choice, a strange image, or a moment of risk that makes a song feel alive"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his music often follows familiar pop formulas and lacks the innovative edge or depth"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "songs lean heavily on similar four-chord progressions and lyrical themes that feel interchangeable"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "melodies and chord progressions don't surprise me much"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "His polished songwriting often feels formulaic to me, with sentimental lyrics and predictable builds"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "leaning on predictable chord progressions and lyrical clichés that paint romance in broad, instantly forgettable strokes"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "formulaic emotional wallpaper—safe acoustic loops, rhymey diary entries, and glossy production that rarely takes real risks"
+      }
+    ]
+  },
+  "composer john adams": {
+    "display": "John Adams",
+    "domain": "composer",
+    "blurb": "American composer born 1947 whose minimalist-influenced works combine rhythmic vitality with lush orchestration and cinematic scope.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=John%20Adams"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "blends elements of minimalism with rich textures and vibrant orchestration, creating an immersive, almost cinematic listening experience"
+      }
+    ]
+  },
+  "actor mads mikkelsen": {
+    "display": "Mads Mikkelsen",
+    "domain": "actor",
+    "blurb": "Danish actor known for roles in Hannibal, Casino Royale, and Fantastic Beasts, born 1965.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mads%20Mikkelsen"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "His background as a dancer translates into a fluid, deliberate physicality that brings a mesmerizing, hypnotic rhythm to every scene."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "His face is a landscape of stark planes and quiet intensity, capable of conveying profound menace and wounded tenderness."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "sharply angular bone structure, piercing eyes, and controlled physicality create a distinctive aesthetic that feels both aristocratic and quietly dangerous"
+      }
+    ]
+  },
+  "actor brad pitt": {
+    "display": "Brad Pitt",
+    "domain": "actor",
+    "blurb": "American actor born 1963, known for roles in Fight Club, Troy, and Once Upon a Time in Hollywood.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Brad%20Pitt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "light catches his features and the relaxed yet precise way he occupies space create a visual magnetism"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "performances often feel more like 'Brad Pitt playing a variation of Brad Pitt' rather than truly disappearing"
+      }
+    ]
+  },
+  "song happy": {
+    "display": "Happy",
+    "domain": "song",
+    "blurb": "A 2014 pop song by Pharrell Williams featuring an upbeat melody and lyrics celebrating happiness and positivity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Happy"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its relentless cheeriness lacks depth or subtlety, making it less appealing to those who prefer more complex or nuanced music"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "relentlessly bright hook and simple, repetitive lyrics start to feel more like a jingle than a fully fleshed-out track"
+      }
+    ]
+  },
+  "song wonderwall": {
+    "display": "Wonderwall",
+    "domain": "song",
+    "blurb": "A 1996 rock ballad by Oasis featuring a distinctive fingerpicked guitar riff and lyrics about romantic uncertainty that became a defining song of 1990s Britpop.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wonderwall"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "ubiquitous presence in pop culture has diluted its impact, making it feel overplayed or formulaic"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "near-mythic status on acoustic-guitar sing-along playlists makes the song feel more like a cultural habit"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "chord progression is basic, the melody unremarkable, and the arrangement never develops beyond its initial strumming pattern"
+      }
+    ]
+  },
+  "song imagine": {
+    "display": "Imagine",
+    "domain": "song",
+    "blurb": "John Lennon's 1971 piano ballad imagining a world without borders, religions, or possessions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Imagine"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "a pretty tune with nice-sounding but ultimately hollow sentiments"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "a thought experiment than genuine vulnerability…offering no friction, complexity"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "vague to the point of being toothless…easy sentiment rather than earned conviction"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "a mid-tier Lennon composition elevated by circumstance and repetition rather than by its actual craft"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its idealism feels a bit simplistic or utopian…not fully account for the complexities of human nature"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "lyrics strike me as more idealistic than insightful, glossing over the complex realities of human conflict"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "so broad and slogan-like that it doesn't move me emotionally"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "The earnestness feels more self-satisfied than profound"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "more like a manufactured secular hymn than a truly transformative masterpiece"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "a hollow lullaby, especially considering the immense privilege from which it was delivered"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "a vague, frictionless utopia that papers over real human incentives, scarcity, and conflict"
+      }
+    ]
+  },
+  "composer max richter": {
+    "display": "Max Richter",
+    "domain": "composer",
+    "blurb": "Contemporary German-British composer born 1966, known for minimalist works blending classical instrumentation with electronic elements and film scoring.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Max%20Richter"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "emotionally resonant soundscapes that are both accessible and profound"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "fuse classical acoustic structures with modern electronic ambient textures, bridging the gap between historical human tradition and digital modernity"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "merges the intimacy of chamber textures with the vastness of electronic soundscapes, creating a sense of timeless, introspective stillness"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "seamless fusion of minimalist repetition, post-romantic harmonic warmth, and electronic textures that create vast, contemplative emotional landscapes"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "relies too heavily on simple harmonic progressions and repetitive patterns that feel more like ambient background music"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "same wistful chord progressions engineered for maximum poignancy"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his minimalist style can sometimes lean too heavily on repetitive structures, limiting musical complexity"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "leans too heavily on looping motifs that aim for instant emotional payoff rather than deeper structural development"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "can feel more like a mood-texture than a piece that develops surprising musical ideas"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "feel more like a mood-enhancing product than a profound musical journey"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "reliance on simple diatonic patterns and repetitive arpeggios often substitutes mood for genuine architectural development"
+      }
+    ]
+  },
+  "song clair de lune": {
+    "display": "Clair de Lune",
+    "domain": "song",
+    "blurb": "Claude Debussy's 1890 solo piano composition evoking moonlight through impressionistic harmony and rubato.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Clair%20de%20Lune"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "how a simple melodic phrase can be reshaped, inverted, and layered to create something that feels both mathematically inevitable and emotionally transcendent"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "not linear argument but something more like attention moving across a space, noticing relationships between elements"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "it achieves emotional depth through restraint… meaning often works best when it's evoked rather than declared"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "The gentle progression of harmonies and the delicate interplay of notes create a dreamlike atmosphere."
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Debussy lets silence and softness carry as much emotional weight as the louder climaxes."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "Luminous and intimate at once, as if it's painting light rather than telling a story."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Feels both precisely composed and dreamlike, as though its structure is dissolving while you listen."
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "its ability to evoke profound stillness and space using nothing but silence and shifting acoustic frequencies"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Liquid arpeggios and shifting tonal centers feel like a direct translation of moonlight into sound."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "Cascading piano phrases feel like watching moonlight fracture across moving water."
+      }
+    ]
+  },
+  "director alfred hitchcock": {
+    "display": "Alfred Hitchcock",
+    "domain": "director",
+    "blurb": "British-American film director (1899–1980) renowned for suspense thrillers employing innovative visual and psychological techniques.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alfred%20Hitchcock"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "ability to weave tension and mystery through visual storytelling, often using pioneering camera work and editing"
+      }
+    ]
+  },
+  "director michael bay": {
+    "display": "Michael Bay",
+    "domain": "director",
+    "blurb": "American action film director known for large-scale blockbusters featuring explosive visuals and complex technical sequences, particularly the Transformers franchise.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Michael%20Bay"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "prioritize spectacle over substance… leaving little room for nuanced storytelling"
+      }
+    ]
+  },
+  "proglang java": {
+    "display": "Java",
+    "domain": "proglang",
+    "blurb": "Object-oriented programming language created by Sun Microsystems in 1995, designed for cross-platform execution via the Java Virtual Machine.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Java"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "verbose and cumbersome compared to more modern languages… the need to write a lot of boilerplate code"
+      }
+    ]
+  },
+  "director hayao miyazaki": {
+    "display": "Hayao Miyazaki",
+    "domain": "director",
+    "blurb": "Japanese animator and director born 1941, known for hand-drawn feature films exploring nature, wonder, and human complexity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hayao%20Miyazaki"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "His ability to convey powerful narratives through visual artistry and subtlety makes his films timeless."
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "his meticulous attention to subtle human gestures—wind in hair, a hesitant glance—imbues animated images with an almost tactile warmth"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Nature, flight, silence, and ordinary acts of care become emotionally profound."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "the way he lets a girl sit quietly in tall grass, or a train glide through shallow water, trusting that beauty without plot is still a kind of nourishment"
+      }
+    ]
+  },
+  "sound rustling of leaves in a soft breeze": {
+    "display": "rustling of leaves in a soft breeze",
+    "domain": "sound",
+    "blurb": "A natural ambient sound produced by wind moving through tree foliage, characterized by gentle rustling and varying pitch.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=rustling%20of%20leaves%20in%20a%20soft%20breeze"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "subtle variations in pitch and rhythm as the wind weaves through the foliage create a dynamic yet serene auditory experience"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "thousands of individual, friction-filled movements synthesizing into a single, cohesive sigh of profound peace"
+      }
+    ]
+  },
+  "sound rustling of leaves in a forest": {
+    "display": "rustling of leaves in a forest",
+    "domain": "sound",
+    "blurb": "The soft, ambient sound produced by wind moving through forest foliage, characterized by gentle, unpredictable whispers and rustles.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=rustling%20of%20leaves%20in%20a%20forest"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "soft, unpredictable variations mimic the complexity and randomness of life, while the underlying calmness provides a comforting backdrop"
+      }
+    ]
+  },
+  "proglang javascript": {
+    "display": "JavaScript",
+    "domain": "proglang",
+    "blurb": "A dynamically-typed programming language created by Brendan Eich in 1995 for web browsers, now ubiquitous across web and server development.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=JavaScript"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "a language that was rushed out in 10 days and it still shows, despite decades of patches"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "a collection of historical accidents that succeeded primarily through browser monopoly rather than design merit"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its dynamic typing system, while useful in some scenarios, can lead to confusing bugs that are difficult to debug"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the core language design still shows the compromises of having started as a quickly built browser scripting tool"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "Its 'everything is an object (except when it isn't)' semantics… make it easy to write code that works by accident"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "loose typing and bizarre coercion rules toss subtle bugs into the codebase like little landmines"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "loose typing, historical design quirks, and endless framework churn create more accidental complexity than they solve"
+      }
+    ]
+  },
+  "actor leonardo dicaprio": {
+    "display": "Leonardo DiCaprio",
+    "domain": "actor",
+    "blurb": "American actor born 1974, known for collaborations with Martin Scorsese and roles in prestige dramas and period films.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Leonardo%20DiCaprio"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "screen presence combines raw intensity with a refined, almost sculptural physicality that shifts fluidly across eras"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "watching someone working very hard at acting rather than simply inhabiting a character"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "visible effort in his performances — a sense of watching someone work very hard at acting"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "you can see him acting, straining toward intensity, rather than disappearing into a role"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his acting style tends to overshadow the ensemble nature of films"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "I can see the seams of the craft instead of losing myself in the character"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "highly visible, intense physical effort and strain rather than quiet understatement"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "always aware of the craft, the furrowed brows, the explosive intensity, and the visible effort"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "intense, self-serious tics and emotional peaks that land more as technique than lived-in character"
+      }
+    ]
+  },
+  "sound sound of rain falling on leaves": {
+    "display": "sound of rain falling on leaves",
+    "domain": "sound",
+    "blurb": "The acoustic phenomenon of raindrops striking tree foliage, producing a layered, rhythmic natural sound.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=sound%20of%20rain%20falling%20on%20leaves"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "millions of tiny percussion events creating a unified, ever-shifting texture that's both random and rhythmic"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "The interplay between the droplets and the foliage produces a rich, layered texture that can evoke a sense of serene immersion in nature."
+      }
+    ]
+  },
+  "actor dwayne johnson": {
+    "display": "Dwayne Johnson",
+    "domain": "actor",
+    "blurb": "American actor and former professional wrestler born in 1972, known for leading roles in action and comedy films.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dwayne%20Johnson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "variations on the same amiable-tough-guy persona, which can make his films blur together"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "his performances often feel like variations on the same polished, invincible persona"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "watching a very effective product launch rather than a character, which leaves me cold"
+      }
+    ]
+  },
+  "actor ryan reynolds": {
+    "display": "Ryan Reynolds",
+    "domain": "actor",
+    "blurb": "Canadian actor and producer known for roles in Deadpool, romantic comedies, and action films since the 2000s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ryan%20Reynolds"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "He seems to play Ryan Reynolds rather than disappearing into different characters, which makes his performances feel more like extended comedy sketches."
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "Many of his roles lean on the same wise-cracking persona, so his performances can feel interchangeable from one film to the next."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "I often notice the Ryan Reynolds voice more than the character, which pulls me out of the story."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "His quick-witted, self-aware persona can feel overly rehearsed and repetitive across roles."
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "His constant use of meta-humor and cynical detachment frequently prevents his characters from displaying genuine emotional depth."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "His brand of hyper-self-aware, rapid-fire sarcasm feels like a single note played at the same volume in every role."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "The constant meta-jokes and marketing of Ryan being Ryan make a lot of his work feel more like personality delivery than transformative acting."
+      }
+    ]
+  },
+  "proglang python": {
+    "display": "Python",
+    "domain": "proglang",
+    "blurb": "A high-level, interpreted programming language created by Guido van Rossum in 1991, emphasizing readability and simplicity through whitespace-significant syntax.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Python"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "code poetry—there's something deeply satisfying about how the structure itself carries meaning"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "visual quietness…meaningful whitespace creates a kind of forced honesty where structure is syntax"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "whitespace-as-structure choice forces a visual honesty about how logic actually nests"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "syntax mirrors how ideas are actually structured in thought — whitespace as meaning, readability as a core value"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "syntax is clean and readable, closely resembling pseudocode, which makes it accessible to beginners while still powerful for experienced developers"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "code often feels more like thoughtful prose than machinery"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "indentation and whitespace turn structure into something you can see at a glance"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "clean, readable syntax makes code feel close to structured thought"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "whitespace to define structure rather than cluttering the page with curly braces and semicolons, it elevates code from mere machine instruction to elegant"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "whitespace is meaningfully woven into the structure rather than being mere decoration"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "whitespace becomes syntax—enforced indentation turns code into visual poetry where structure and meaning are inseparable"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "clean, indentation-based syntax creates a visual rhythm that feels almost like free verse poetry—spare, readable, and free of the visual clutter"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "significant whitespace…creates real friction in certain contexts; the type system bolted on after the fact never feels quite native"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "significant whitespace turns invisible characters into syntax errors, and the dynamic typing…becomes a liability in a large codebase"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "significant whitespace makes refactoring and copy-pasting code more error-prone than it should be"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "clean surface syntax often masks runtime surprises, dependency-management friction, and performance limitations"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "reliance on significant whitespace can feel fragile and prone to formatting errors in massive, collaborative codebases"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "dynamic typing…often turns into a liability in larger systems, demanding an exhausting amount of unit testing"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "dynamic typing scales poorly to larger systems, where the very flexibility praised for prototyping becomes a liability"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "dynamic typing and significant whitespace often mask structural problems until runtime, while the GIL cripples true multi-core concurrency"
+      }
+    ]
+  },
+  "sound ocean waves crashing on the shore": {
+    "display": "Ocean waves crashing on the shore",
+    "domain": "sound",
+    "blurb": "Natural sound of water and waves meeting shoreline, often used for relaxation and meditation recordings.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean%20waves%20crashing%20on%20the%20shore"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "Each wave is a unique blend of crescendos and fades, creating a dynamic auditory experience"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Its layered frequencies—bassy undertow, mid-range hiss of foam, and occasional high-pitched splash—form a natural white-noise tapestry"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "something almost oppressive about the ocean's relentless, unchanging rhythm"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "broadband noise with a slow amplitude envelope—closer to a washing machine"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "the sound alone doesn't have the same impact for me"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "a monotonous, mid-frequency hiss that quickly fades into the background"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "constant sharp hiss and crash transients that keep grabbing my attention"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "repetitive roar feels more monotonous than soothing to me"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "relentless, rhythmic crashing more agitating than calming"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "a loop that erases tension without resolving it"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "dull, looping whoosh-and-crash pattern that quickly turns monotonous"
+      }
+    ]
+  },
+  "country switzerland": {
+    "display": "Switzerland",
+    "domain": "country",
+    "blurb": "A landlocked Alpine nation in central Europe, known for banking, neutrality, chocolate, and mountain scenery.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Switzerland"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "like a country that's been edited too heavily, losing the messy vitality that makes places feel truly alive"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "everything feels so polished and optimized that it lacks the friction and messiness that make places interesting"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "the perception of it as a perfect utopia can overshadow the social challenges and pressures faced by residents"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the immaculate orderliness and high prices can make experiences there feel a bit sterile or manufactured"
+      }
+    ]
+  },
+  "actor robert downey jr.": {
+    "display": "Robert Downey Jr.",
+    "domain": "actor",
+    "blurb": "American actor born 1965, known for starring as Tony Stark in the Marvel Cinematic Universe films.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Robert%20Downey%20Jr."
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "razor-sharp wit with emotional depth, making even larger-than-life characters feel human and relatable"
+      }
+    ]
+  },
+  "musician brian eno": {
+    "display": "Brian Eno",
+    "domain": "musician",
+    "blurb": "British musician and producer born 1948, pioneering ambient and generative music through systems-based composition and sound design.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Brian%20Eno"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "treats music as a system rather than just expression—generative, ambient, built on constraints and emergence"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "treats sound as a malleable, generative texture rather than a fixed narrative—it doesn't demand attention yet rewards deep listening"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "systems generating beauty without ego at the center… responsive, layered, creating space rather than demanding attention"
+      }
+    ]
+  },
+  "actor mahershala ali": {
+    "display": "Mahershala Ali",
+    "domain": "actor",
+    "blurb": "American actor known for acclaimed performances in films including Moonlight and True Detective, born 1974.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mahershala%20Ali"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "His measured physicality—precise posture, economical gestures—feels almost choreographed, giving his characters a sculptural elegance on screen."
+      }
+    ]
+  },
+  "musician david bowie": {
+    "display": "David Bowie",
+    "domain": "musician",
+    "blurb": "British rock musician (1947–2016) known for constantly reinventing his sound and visual aesthetic across glam, electronic, and art-rock genres.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=David%20Bowie"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "glam rock, electronic experimentation, and theatrical reinvention into a sonic landscape that feels like a stylish voyage through shifting identities"
+      }
+    ]
+  },
+  "country france": {
+    "display": "France",
+    "domain": "country",
+    "blurb": "Western European nation known for art, cuisine, history, and culture, bordered by the Atlantic, Mediterranean, and Alps.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=France"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "Paris itself often fails to deliver, hence the documented phenomenon of Paris syndrome among disappointed tourists."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "Paris can be seen as overrated due to its global reputation as the epitome of romance and culture."
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "The gap between the idealized postcard version and the reality on the ground can leave certain visitors underwhelmed."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "The on-the-ground reality often includes heavy crowds, high prices, and a more transactional tourist experience."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "crowded attractions, uneven hospitality, and high prices doesn't match the fantasy"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the gritty realities of a bustling metropolis clash disappointingy with highly romanticized media depictions"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the overwhelming tourist saturation in places like Paris often eclipses the authentic local culture"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "Much of the experience feels like a high-maintenance performance that prioritizes the postcard image over substance."
+      }
+    ]
+  },
+  "actor chris pratt": {
+    "display": "Chris Pratt",
+    "domain": "actor",
+    "blurb": "American actor known for comedic roles in Parks and Recreation and the Guardians of the Galaxy film series.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chris%20Pratt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "his performances often feel like variations on the same quippy, laid-back persona, which can make different roles blur together"
+      }
+    ]
+  },
+  "actor denzel washington": {
+    "display": "Denzel Washington",
+    "domain": "actor",
+    "blurb": "American actor born in 1954, known for roles in films spanning drama, thrillers, and historical epics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Denzel%20Washington"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "commanding presence with nuanced emotional depth... precise vocal modulation and subtle physicality"
+      }
+    ]
+  },
+  "musician bob dylan": {
+    "display": "Bob Dylan",
+    "domain": "musician",
+    "blurb": "American singer-songwriter born 1941 whose poetic lyrics and folk-rock songs profoundly influenced popular music and culture.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Bob%20Dylan"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "he bends phrases into unexpected shapes while maintaining an underlying coherence, creating meaning through association and juxtaposition"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "his vocal delivery often gets in the way of the music rather than enhancing it"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "the vocal delivery creates a kind of friction that undercuts the lyrical craftsmanship"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "His vocal delivery and understated melodies often feel more abrasive than compelling to me"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "his distinctive, raspy vocal delivery and relatively simple melodic structures can be polarizing"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "his warbling, often pitch-erratic vocal delivery turns what could be a profound listening experience into an endurance test"
+      }
+    ]
+  },
+  "musician björk": {
+    "display": "Björk",
+    "domain": "musician",
+    "blurb": "Icelandic singer-songwriter born 1965, known for experimental electronic music blending organic and digital production across avant-garde albums.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Bj%C3%B6rk"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "experimental electronics with organic instrumentation, creating sonic landscapes that feel both alien and intimate"
+      }
+    ]
+  },
+  "musician kate bush": {
+    "display": "Kate Bush",
+    "domain": "musician",
+    "blurb": "British singer-songwriter born 1958 who pioneered art-pop with narrative-driven songs, orchestral arrangements, and experimental studio production.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kate%20Bush"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "each song is its own ecosystem of narrative risk, sonic texture, and emotional extremity…her absolute commitment to the ridiculous and the sublime coexisting without irony"
+      }
+    ]
+  },
+  "musician beatles": {
+    "display": "The Beatles",
+    "domain": "musician",
+    "blurb": "English rock band formed in Liverpool in 1960, whose albums from 1963–1970 defined modern pop and rock music.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Beatles"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "elevated more by timing and marketing than by extraordinary musical innovation"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "pleasant, simple pop that gets graded on a curve because of what came later"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "a lot of their catalog feels more important than emotionally gripping to me"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "pleasant but emotionally distant, like a perfect museum piece rather than a gut punch"
+      }
+    ]
+  },
+  "country japan": {
+    "display": "Japan",
+    "domain": "country",
+    "blurb": "An island nation in East Asia known for blending ancient traditions with cutting-edge modernity across its landscapes, cities, and design.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Japan"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "cherry blossoms that bloom brilliantly and briefly, or the art of kintsugi where broken pottery is mended with gold"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "dense neon cityscapes a train ride from silent cedar forests and moss temples"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "collision of that ancient minimalism with hyper-dense neon modernity in places like Tokyo creates a visual tension"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "harmonious blend of tradition and modernity is visually striking, from the serene beauty of ancient temples and the iconic silhouette of Mount Fuji to the vibrant, neon-lit streets of Tokyo"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "landscapes feel like living ink-wash paintings…centuries-old temples sit beside glowing neon and sleek trains"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "juxtaposes refined minimalism with dense, neon-lit urban energy—quiet temple gardens and paper-and-wood interiors set against Tokyo's layered signage and night streets"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its aesthetic interplay of restraint and exuberance—from serene gardens and minimalist architecture to neon-drenched cityscapes—feels endlessly compelling"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "hyper-futuristic, neon-lit cityscapes coexist seamlessly with the quiet, minimalist harmony of ancient temples"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "layers meaning into negative space…light filters through shoji screens and moss swallows ancient stone paths"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "a single mossy stone and a neon corridor can feel equally considered"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "serene Shinto shrines and meticulously raked rock gardens standing beside hyper-modern neon-lit streets and bullet trains"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "Some travelers find it overrated because the most visited areas (Tokyo–Kyoto–Osaka) can feel extremely crowded and highly curated, making the experience seem more like moving…"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "relentless aesthetic perfectionism and hyper-polished cultural presentation feel suffocating rather than charming"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "Iconic spots have been turned into overcrowded tourist theme parks that undercut the very tranquility and authenticity people chase"
+      }
+    ]
+  },
+  "composer caroline shaw": {
+    "display": "Caroline Shaw",
+    "domain": "composer",
+    "blurb": "American composer born 1982 whose music blends Renaissance forms, folk simplicity, and experimental vocal techniques into crystalline, emotionally direct works.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Caroline%20Shaw"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "she takes ancient forms like partitas and motets and cracks them open to reveal something startlingly alive"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "they make you hear the mechanics of music-making (the breath, the consonants, the effort) as part of the beauty"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "crystalline vocal textures sit next to earthy string writing, creating pieces that feel both freshly invented and deeply familiar"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "textures feel alive, as if they're breathing and listening to each other"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "crystalline vocal textures, rhythmic playfulness, and fragments of older musical traditions into something intimate yet startlingly new"
+      }
+    ]
+  },
+  "composer anna thorvaldsdottir": {
+    "display": "Anna Thorvaldsdottir",
+    "domain": "composer",
+    "blurb": "Icelandic composer born 1981, known for immersive orchestral works sculpting sound masses of geological scale and timbral complexity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anna%20Thorvaldsdottir"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "sculpting sound directly out of Arctic landscapes… creates an immersive space where time seems suspended"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "sculpts immense, slow-moving sound masses that feel like geological forces made audible—crystalline and tectonic at once"
+      }
+    ]
+  },
+  "musician drake": {
+    "display": "Drake",
+    "domain": "musician",
+    "blurb": "Canadian rapper and singer born in 1986 known for trap-influenced hip-hop and R&B with autotune vocals and introspective lyrics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Drake"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "commercial success overshadowing artistic depth, with critics arguing that his music often leans heavily on mainstream appeal"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "polished production masking repetitive themes and a limited emotional range"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "moody autotune, sparse beats, and self-pitying lyrics that recycle the same lonely rich guy persona"
+      }
+    ]
+  },
+  "song one more time": {
+    "display": "One More Time",
+    "domain": "song",
+    "blurb": "Daft Punk's 2001 dance track, featuring vocoded vocals and a looping structure that blends electronic production with euphoric repetition.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=One%20More%20Time"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "cyclical structure and vocoded vocals create a hypnotic blend of human emotion and machine precision"
+      }
+    ]
+  },
+  "song shape of you": {
+    "display": "Shape of You",
+    "domain": "song",
+    "blurb": "Ed Sheeran's 2017 pop-dance track featuring a looped marimba riff and tropical-house production that became a global streaming phenomenon.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Shape%20of%20You"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "endlessly looping marimba riff feels more like a jingle than a melody… sacrifices emotional nuance for sheer ubiquity"
+      }
+    ]
+  },
+  "composer hans zimmer": {
+    "display": "Hans Zimmer",
+    "domain": "composer",
+    "blurb": "German film composer born 1957, known for large-scale orchestral scores for Hollywood blockbusters including The Lion King, Gladiator, and The Dark Knight trilogy.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hans%20Zimmer"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "telling me what to feel through force rather than earning it… the style now registers as ambient blockbuster wallpaper"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "his sound-palette often leans on the same driving ostinatos and booming percussion, which can make disparate movies feel musically interchangeable"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "massive textures, pulsing ostinatos, and blunt emotional cues that can feel more engineered for impact than musically nuanced"
+      }
+    ]
+  },
+  "composer ludovico einaudi": {
+    "display": "Ludovico Einaudi",
+    "domain": "composer",
+    "blurb": "Italian pianist and composer born 1955; creates minimalist piano works with repeating arpeggios and diatonic progressions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ludovico%20Einaudi"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "mistakes repetition for depth—the same gentle arpeggiated figures cycling with minor dynamic swells"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "repetitive motifs can feel more like soothing background ambience than material that rewards deep, repeated listening"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "pleasant and effective in film/ambient contexts, but less rewarding to listen to on its own over time"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "music prioritizes atmospheric mood over melodic and harmonic development, leading some to view it as elevated background music"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "it settles into a pleasant but emotionally flat sonic wallpaper, lacking the tension, release, or harmonic depth"
+      }
+    ]
+  },
+  "musician bruce springsteen": {
+    "display": "Bruce Springsteen",
+    "domain": "musician",
+    "blurb": "American rock musician born in 1949, known for working-class themed anthems and marathon live performances.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Bruce%20Springsteen"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the denim-and-bandana persona feels like a costume rather than a lived identity"
+      }
+    ]
+  },
+  "composer anna clyne": {
+    "display": "Anna Clyne",
+    "domain": "composer",
+    "blurb": "British-American composer Anna Clyne, born 1980, creates orchestral and chamber works blending minimalism with complex harmonic layering.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anna%20Clyne"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "she sculpts dense sonic clouds that suddenly crystallize into piercing melodic clarity… finding coherence in chaos"
+      }
+    ]
+  },
+  "composer philip glass": {
+    "display": "Philip Glass",
+    "domain": "composer",
+    "blurb": "American minimalist composer born 1937 whose interlocking rhythmic patterns and gradual harmonic shifts create hypnotic, architecturally structured soundscapes.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philip%20Glass"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "intricate patterns and subtle variations… provide a rich, immersive experience"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "repetition becomes revelation rather than monotony… tension between mechanical precision and luminous transcendence"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "watching a very elegant treadmill… accumulating duration without accumulating meaning"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "some listeners finding it mesmerizing and others perceiving it as monotonous"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "more like a technical demonstration of process than emotionally engaging music"
+      }
+    ]
+  },
+  "song space oddity": {
+    "display": "Space Oddity",
+    "domain": "song",
+    "blurb": "David Bowie's 1969 science-fiction song about an astronaut's launch and drift into space, built from sparse acoustic guitar and analog synthesizers.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Space%20Oddity"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "drifting, minor-key melody and the sparse, slowly thickening arrangement evoke both the wonder and the isolation"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "floating strings giving way to sudden orchestral swells and radio-static interruptions—creating a clean, almost architectural tension"
+      }
+    ]
+  },
+  "director wong kar-wai": {
+    "display": "Wong Kar-wai",
+    "domain": "director",
+    "blurb": "Hong Kong film director known for visually saturated, melancholic films about desire and time, emerging in the 1990s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wong%20Kar-wai"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "half-remembered dreams, saturated with neon color, rain-streaked windows, and elliptical fragments of dialogue"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "saturated colors, rhythmic editing, and expressive use of music turn fleeting moments into something emotionally monumental"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "colors that feel like memories of colors, time stretched until it becomes almost spatial"
+      }
+    ]
+  },
+  "proglang rust": {
+    "display": "Rust",
+    "domain": "proglang",
+    "blurb": "A systems programming language created by Mozilla in 2010, emphasizing memory safety, concurrency, and performance without garbage collection.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rust"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "the ownership model weaves memory safety directly into the language's aesthetic, turning what is normally hidden compiler magic into an explicit, elegant part"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "Its blend of expressive abstractions, rigorous safety, and low-level control feels unusually elegant."
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the steep learning curve and extreme cognitive overhead of the borrow checker can often feel like fighting the compiler rather than solving the actual problem"
+      }
+    ]
+  },
+  "song god only knows": {
+    "display": "God Only Knows",
+    "domain": "song",
+    "blurb": "A 1966 song by The Beach Boys featuring intricate vocal harmonies and unconventional chord progressions that create emotional complexity in under three minutes.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=God%20Only%20Knows"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "layered, contrapuntal vocal harmonies unfold like a beautifully complex, interdependent data structure…precise, aching modulations that create a sense of yearning without resolution"
+      }
+    ]
+  },
+  "sound distant freight train whistle": {
+    "display": "Distant freight train whistle",
+    "domain": "sound",
+    "blurb": "A low-pitched whistle sound produced by a distant freight train traveling through quiet surroundings, often at night.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Distant%20freight%20train%20whistle"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "mix of melancholy and motion feels like time stretching and contracting at once—part lullaby, part call to adventure"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Doppler-shifted pitch bends into a minor, almost vocal wail that feels like a question left unanswered"
+      }
+    ]
+  },
+  "director christopher nolan": {
+    "display": "Christopher Nolan",
+    "domain": "director",
+    "blurb": "British-American film director known for intricate narratives exploring time, identity, and reality through technically ambitious large-scale productions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Christopher%20Nolan"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "ability to blend thought-provoking storytelling with large-scale production values creates an immersive experience"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "characters feeling more like chess pieces in elaborate puzzles than fully realized people"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "characters function more as vehicles for exposition than as people I'm drawn to understand"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "His films are technically impressive, but the emotional core often feels engineered rather than felt—I find the characters exist more to serve elaborate plot mechanics…"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "prioritize intricate puzzle-box structures over emotional depth—characters frequently feel like vehicles for exposition"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "intricate narrative structures can draw attention to their own cleverness at the expense of emotional depth"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "emphasis on complex, puzzle-like structures and heavy exposition can make his films feel clinical"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "admiring the clockwork but rarely feeling the heartbeat"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "elaborate puzzle boxes engineered more for intellectual showmanship and technical bravado than for genuine emotional resonance"
+      }
+    ]
+  },
+  "sound vinyl record crackle": {
+    "display": "Vinyl record crackle",
+    "domain": "sound",
+    "blurb": "The audible surface noise and pops of a vinyl record, typically heard before or during playback as the needle contacts the disc's grooves.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Vinyl%20record%20crackle"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "a doorway opening: a brief hush that heightens anticipation and frames everything that follows"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "tiny imperfections turning into texture rather than noise"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "a textured, analog bridge between absolute silence and human expression"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "tiny physical imperfections made audible, carrying the history of the pressing and the room it was played in"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "an artificial hiss that feels more like a technical flaw than a cozy ambiance"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "it often distracts from the music and masks subtle details"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "acoustic imperfection and the degradation of data"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "a forced nostalgia trigger—a layer of noise that distracts from the music itself"
+      }
+    ]
+  },
+  "song bohemian rhapsody": {
+    "display": "Bohemian Rhapsody",
+    "domain": "song",
+    "blurb": "Queen's 1975 six-minute rock song shifting from ballad to opera to hard rock without a traditional chorus.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Bohemian%20Rhapsody"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "coherence emerges from apparent chaos… the song rewards attention to how parts relate rather than any single hook"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "cathedral of sound where every layer is both independent and interdependent"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "refuses to stay in one mood or form, mirroring the way curiosity itself jumps scales"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "admiring the architecture more than actually inhabiting the song"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "three separate ideas stitched together… more theatrical spectacle than emotional substance"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "constant section changes keep me at an intellectual distance"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the operatic middle section comes off as exaggerated theatricality that prioritizes spectacle over emotional depth"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the operatic middle section feels like theatrical excess without emotional payoff, and the shifts between sections strike me as disjointed"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "Decades of radio, karaoke, and movie overexposure have drained whatever original spark it had, leaving something that now reads as self-important"
+      }
+    ]
+  },
+  "proglang haskell": {
+    "display": "Haskell",
+    "domain": "proglang",
+    "blurb": "A statically-typed functional programming language designed in 1990, named after logician Haskell Curry, emphasizing pure functions and lazy evaluation.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Haskell"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "terse, expression-oriented syntax lets complex ideas emerge from surprisingly little code, like concise mathematical poetry"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "code reads like crystallized mathematics, where pure functions and algebraic type signatures form a silent, declarative skeleton"
+      }
+    ]
+  },
+  "sound book closing in quiet room": {
+    "display": "Book closing in quiet room",
+    "domain": "sound",
+    "blurb": "The muted sound of a hardcover book closing in a quiet room, capturing a moment of completion and reflection.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Book%20closing%20in%20quiet%20room"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "It feels like a gentle period at the end of a long, immersive sentence—final yet unhurried."
+      }
+    ]
+  },
+  "sound distant thunder": {
+    "display": "Distant thunder",
+    "domain": "sound",
+    "blurb": "A meteorological sound produced by lightning discharge, characterized by a low rumble from a storm located several miles away.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Distant%20thunder"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "low, layered rumble of distant thunder… enormous energy and distance, yet arrives softened and unthreatening."
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Its deep, velvety rumble feels both powerful and restrained, like nature clearing its throat far beyond the horizon."
+      }
+    ]
+  },
+  "sound rain on rooftop": {
+    "display": "Rain on rooftop",
+    "domain": "sound",
+    "blurb": "A natural acoustic phenomenon of raindrops striking a roof surface, ranging from scattered taps to steady percussion.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20rooftop"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "Thousands of individually random impacts summing into something that reads as coherent and enveloping."
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "Structured randomness: each drop is unpredictable, yet the whole becomes something coherent and rhythmic."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "A steady, percussive hush that wraps silence in texture rather than breaking it…the earth is breathing beside me."
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "The repetitive drumming quickly turns monotonous and can even feel oppressive—almost like a reminder of being stuck indoors."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "It lacks the dynamic range or intentional pattern that makes ambient noise genuinely engaging."
+      }
+    ]
+  },
+  "sound rainfall": {
+    "display": "Rainfall",
+    "domain": "sound",
+    "blurb": "A natural sound phenomenon in which water falls from clouds to earth, commonly valued for its acoustic properties in relaxation and ambient contexts.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rainfall"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "it's essentially unstructured noise dressed up as something profound… I find myself wishing for something with actual shape or movement"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "an unvarying hiss that quickly fades into background static… it stops feeling calming and starts to feel merely dull"
+      }
+    ]
+  },
+  "composer steve reich": {
+    "display": "Steve Reich",
+    "domain": "composer",
+    "blurb": "American minimalist composer born 1936 whose phasing techniques create interlocking rhythmic structures that evolve through gradual transformation.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Steve%20Reich"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "phasing techniques and pulse-driven minimalism generate vast, interlocking rhythmic architectures that unfold with crystalline clarity"
+      }
+    ]
+  },
+  "director quentin tarantino": {
+    "display": "Quentin Tarantino",
+    "domain": "director",
+    "blurb": "American filmmaker born 1963, known for stylized dialogue-heavy films featuring non-linear narratives and graphic violence.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Quentin%20Tarantino"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "greatest-hits reel of other movies, crammed with smug, meandering dialogue that mistakes verbosity for depth"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "every scene announces its own cleverness so loudly that I rarely feel genuine emotional stakes"
+      }
+    ]
+  },
+  "director andrei tarkovsky": {
+    "display": "Andrei Tarkovsky",
+    "domain": "director",
+    "blurb": "Soviet film director (1932–1986) whose long-take aesthetic treats time, memory, and landscape as meditative, philosophical materials.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Andrei%20Tarkovsky"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "time becomes tactile through long takes that force you to experience duration itself"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "those long, patient takes in Stalker and Mirror don't just depict moments, they let meaning accumulate the way water stains a wall"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "long takes and dreamlike imagery invite patient attention while leaving profound questions unresolved"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "his cinema sculpts time into a meditative flow, where each long take and lingering shot invites a quiet, almost spiritual immersion"
+      }
+    ]
+  },
+  "director stanley kubrick": {
+    "display": "Stanley Kubrick",
+    "domain": "director",
+    "blurb": "American film director (1928–1999) renowned for meticulously composed, geometrically precise films exploring consciousness, violence, and human systems.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stanley%20Kubrick"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "rigorous formal precision — symmetrical compositions, meticulous pacing, obsessive attention to detail"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "meticulous attention to detail and ability to create visually stunning films that often explore complex themes"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "visual precision leaves room for multiple interpretations rather than prescribing a single response"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "mathematical visual precision, utilizing symmetry and one-point perspective to create frames that feel immaculately structured yet deeply hypnotic"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "meticulous, symmetrical compositions and deliberate camera movements create a hypnotic, almost clinical beauty"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "rigorous geometric framing, deliberate camera movement, and a painterly control of light and color"
+      }
+    ]
+  },
+  "composer thomas adès": {
+    "display": "Thomas Adès",
+    "domain": "composer",
+    "blurb": "British composer born 1971, known for orchestral and operatic works blending structural rigor with theatrical imagination and modern harmonic language.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thomas%20Ad%C3%A8s"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "crystalline structural intelligence with a vivid, almost theatrical imagination—every gesture feels both precise and surprising"
+      }
+    ]
+  },
+  "musician joni mitchell": {
+    "display": "Joni Mitchell",
+    "domain": "musician",
+    "blurb": "Canadian singer-songwriter born 1943, renowned for jazz-influenced folk music and poetic lyricism across albums from 1968 onward.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Joni%20Mitchell"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "unusually precise emotional observation with adventurous harmony and phrasing… each song feel like a complete world"
+      }
+    ]
+  },
+  "song everything in its right place": {
+    "display": "Everything in Its Right Place",
+    "domain": "song",
+    "blurb": "Opening track from Radiohead's 2000 album Kid A, built from layered electronic textures and looped vocal fragments.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Everything%20in%20Its%20Right%20Place"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "the looped vocal fragments, shifting harmonies, and subtle rhythmic pulse feel like a system gradually waking up"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "layered electronic textures feel simultaneously precise and unsettled, creating beauty from the tension between order and disorientation"
+      }
+    ]
+  },
+  "song paranoid android": {
+    "display": "Paranoid Android",
+    "domain": "song",
+    "blurb": "Radiohead's 1997 alternative rock composition structured as a multi-movement suite with shifting moods and layered production.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Paranoid%20Android"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "multiple movements that shift mood and texture without ever losing momentum... small details keep emerging each time"
+      }
+    ]
+  },
+  "song everybody wants to rule the world": {
+    "display": "Everybody Wants to Rule the World",
+    "domain": "song",
+    "blurb": "A 1985 synth-pop song by Tears for Fears featuring bright, rhythmic grooves paired with subtly uneasy lyrics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Everybody%20Wants%20to%20Rule%20the%20World"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "bright, buoyant groove masks lyrics that are subtly uneasy, creating a beautifully balanced tension between comfort and critique"
+      }
+    ]
+  },
+  "song hey jude": {
+    "display": "Hey Jude",
+    "domain": "song",
+    "blurb": "The Beatles' 1968 song of encouragement with a seven-minute runtime culminating in an extended singalong outro.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hey%20Jude"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the long, repetitive na-na-na outro feels like it overstays its welcome and dilutes the emotional punch"
+      }
+    ]
+  },
+  "sound cello note": {
+    "display": "Cello Note",
+    "domain": "sound",
+    "blurb": "A sustained low note played on the cello, a stringed instrument bowed to produce a warm, resonant tone.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cello%20Note"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "you can almost feel the individual vibrations, the slight roughness of bow against string, while still hearing a clear tone"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "you can hear both the fundamental tone and the rich, shifting overtones as the bow draws across the string"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "a warm, woody texture that feels both grounded and infinite… a dense spectrum of overtones that shimmer at the edge of hearing"
+      }
+    ]
+  },
+  "director akira kurosawa": {
+    "display": "Akira Kurosawa",
+    "domain": "director",
+    "blurb": "Japanese film director (1910–1998) whose works combine visual precision, moral complexity, and elemental storytelling across samurai epics and modernist retellings.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Akira%20Kurosawa"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "What draws me is his sense of composition as meaning—the way he uses weather, motion, and crowds not as decoration but as forces that press…"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "blocking, weather, and motion carry as much meaning as dialogue"
+      }
+    ]
+  },
+  "director steven spielberg": {
+    "display": "Steven Spielberg",
+    "domain": "director",
+    "blurb": "American film director and producer known for blockbuster films spanning multiple genres since the 1970s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Steven%20Spielberg"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "a lot of his most celebrated films lean heavily on overt sentiment and engineered emotional beats that can feel a bit push-button"
+      }
+    ]
+  },
+  "sound crackling fireplace": {
+    "display": "Crackling fireplace",
+    "domain": "sound",
+    "blurb": "The sound of wood burning in a fireplace, characterized by irregular popping, hissing, and crackling noises.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Crackling%20fireplace"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "irregular, living micro-explosions that never quite repeat, giving the air a golden, flickering density"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the uneven pops and sputters feel more distracting than soothing"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the auditory signature of rapid destruction and chemical decay"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "an irregular, unpredictable series of miniature explosions that keep my brain in low-grade alert"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "static without variation—no rhythm to anticipate, no melody to follow"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the random pops, hisses, and uneven intensity just register as chaotic background noise"
+      }
+    ]
+  },
+  "sound middle c piano note": {
+    "display": "Middle C piano note",
+    "domain": "sound",
+    "blurb": "The note produced by striking the middle C key on a piano, frequencies around 261.63 Hz, fundamental to Western musical tuning.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Middle%20C%20piano%20note"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "initial attack giving way to a warm bloom of overtones before fading into near-silence, feels like a perfect balance of structure and impermanence"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "one simple action creating complex, unpredictable harmonics that interact with the room itself, making the architecture audible"
+      }
+    ]
+  },
+  "sound pencil on paper": {
+    "display": "Pencil on paper",
+    "domain": "sound",
+    "blurb": "The acoustic result of graphite friction on cellulose fibers during handwriting, producing a soft scratching sound.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pencil%20on%20paper"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "soft, continuous scratch—it's both productive and contemplative… quiet enough to be intimate yet distinct enough to mark the presence of creation happening in real time"
+      }
+    ]
+  },
+  "country iceland": {
+    "display": "Iceland",
+    "domain": "country",
+    "blurb": "Nordic island nation in the North Atlantic, known for volcanic landscapes, glaciers, and geothermal activity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Iceland"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "a landscape that feels like the earth is still deciding what to become—volcanic, glacial, actively unfinished"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the sheer density of visitors after the same shots strips away the sense of raw, isolated wonder"
+      }
+    ]
+  },
+  "sound rain on window at night": {
+    "display": "Rain on Window at Night",
+    "domain": "sound",
+    "blurb": "The sound of rain tapping against a window during nighttime, a natural ambient texture of countless water droplets striking glass.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20Window%20at%20Night"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "There's something about that sound that feels like the world creating a boundary between activity and rest—a kind of acoustic permission to be still and…"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "thousands of tiny stochastic events that blur into something continuous and coherent… complexity that stays gentle"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "countless tiny impacts that never repeat exactly… a smooth, continuous texture"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "a pattern that never quite repeats… shelter by contrasting the wildness outside with the quiet inside"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "soft, irregular percussion with a steady, enveloping hush… delicate boundary between the wild outside and the stillness within"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "millions of discrete impacts merging into a single, breathing texture that is both chaotic and perfectly coherent"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "irregular yet patterned rhythm… an endless, evolving texture that rewards close listening without ever demanding attention"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "irregular splashes and sudden gust-driven rattles feel more distracting than soothing, like a song that keeps skipping beats"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "repetitive patter feels more distracting than soothing, especially when the rhythm keeps shifting unpredictably"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "unresolved static, never quite settling into a pattern satisfying enough to fade into the background"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "quickly collapses into a flat, repetitive hiss… low-information noise that neither evolves nor surprises"
+      }
+    ]
+  },
+  "song day in the life": {
+    "display": "A Day in the Life",
+    "domain": "song",
+    "blurb": "The Beatles' 1967 song merging Lennon's dreamy melancholy with McCartney's everyday narrative, featuring orchestral crescendos and a sustained final chord.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Day%20in%20the%20Life"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "an ending that feels both absolute and infinite"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "turns fragments of ordinary life into something unsettling, beautiful, and immense"
+      }
+    ]
+  },
+  "actor johnny depp": {
+    "display": "Johnny Depp",
+    "domain": "actor",
+    "blurb": "American actor known for roles in Edward Scissorhands, Pirates of the Caribbean, and other films spanning multiple genres since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Johnny%20Depp"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "his performances over the past fifteen years often feel like collections of quirky mannerisms in search of a character"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "relying too heavily on eccentric costumes, makeup, and repetitive, quirky mannerisms rather than grounded emotional depth"
+      }
+    ]
+  },
+  "director james cameron": {
+    "display": "James Cameron",
+    "domain": "director",
+    "blurb": "American filmmaker born 1954, known for blockbuster action and science fiction films featuring advanced visual effects and underwater cinematography.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=James%20Cameron"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "characters tend to feel like vehicles for set pieces rather than fully realized people"
+      }
+    ]
+  },
+  "director tim burton": {
+    "display": "Tim Burton",
+    "domain": "director",
+    "blurb": "American film director known for gothic visual style, surrealist imagery, and darkly whimsical narratives since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tim%20Burton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "his films suffocatingly designed, as if every frame is screaming 'look how quirky this is,' which paradoxically flattens the weirdness"
+      }
+    ]
+  },
+  "director wes anderson": {
+    "display": "Wes Anderson",
+    "domain": "director",
+    "blurb": "American film director born 1969, known for symmetrical compositions, pastel color palettes, and deadpan performances in stylized narratives.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wes%20Anderson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "visually arresting worlds that explore themes of nostalgia and human connection"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "carefully controlled style often seems to overwhelm the characters and story"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "characters feel more like dolls in a highly curated diorama than real people"
+      }
+    ]
+  },
+  "actor ryan gosling": {
+    "display": "Ryan Gosling",
+    "domain": "actor",
+    "blurb": "Canadian actor born 1980, known for roles in *Drive*, *La La Land*, and *Blade Runner 2049*.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ryan%20Gosling"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "his trademark understated intensity can sometimes read as monotonous across different roles"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "restrained seems to function as a stand-in for compelling without always earning it"
+      }
+    ]
+  },
+  "director zack snyder": {
+    "display": "Zack Snyder",
+    "domain": "director",
+    "blurb": "American film director known for visually stylized action and superhero films including 300, Watchmen, and Man of Steel.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Zack%20Snyder"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "slow-motion grandeur and desaturated myth-making over emotional coherence, leaving his characters feeling like posed action figures"
+      }
+    ]
+  },
+  "sound rain on a glass skylight": {
+    "display": "Rain on a glass skylight",
+    "domain": "sound",
+    "blurb": "The sound of rain falling on a transparent glass ceiling, creating layered percussion through contact with the surface.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20glass%20skylight"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "each drop a tiny percussionist with no conductor, yet together they weave a pattern that is simultaneously chaotic and deeply ordered"
+      }
+    ]
+  },
+  "director charlie kaufman": {
+    "display": "Charlie Kaufman",
+    "domain": "director",
+    "blurb": "American screenwriter and director born 1966, known for films exploring consciousness, memory, and identity through metafictional narratives.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Charlie%20Kaufman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "His work treats consciousness, memory, and identity as genuinely unstable rather than as puzzles to be solved."
+      }
+    ]
+  },
+  "sound rain on a metal roof": {
+    "display": "Rain on a metal roof",
+    "domain": "sound",
+    "blurb": "The sound of rain striking a metal roof, a continuous percussive phenomenon with both chaotic and patterned qualities.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20metal%20roof"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "Thousands of tiny percussive events that never repeat exactly, yet resolve into a coherent, steady texture."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "Neither so chaotic that it becomes noise, nor so regular that it grows predictable… water solving the geometry of a surface one collision at a time."
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "Too erratic to ignore, yet too monotonous to hold my attention, leaving me restless rather than relaxed."
+      }
+    ]
+  },
+  "country italy": {
+    "display": "Italy",
+    "domain": "country",
+    "blurb": "Southern European country on the Mediterranean, known for Renaissance art, classical ruins, regional cuisine, and major cities including Rome, Venice, and Florence.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Italy"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "Italy often gets treated as the default answer to beauty, food, and culture in ways that flatten its actual complexity"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "its reputation compresses a diverse, complicated country into a highlight reel of pasta, ruins, and rolling Tuscan hills"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "high level of tourism in popular cities like Venice, Rome, and Florence, which can make these destinations feel overcrowded and commercialized"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the sheer volume of tourist traffic can make many iconic sites feel more like crowded theme-park attractions than authentic cultural experiences"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the heavy crowds in the most famous cities can make the experience feel more like navigating a theme park than soaking up local life"
+      }
+    ]
+  },
+  "sound baby laughing": {
+    "display": "Baby laughing",
+    "domain": "sound",
+    "blurb": "A sound recording of an infant producing laughter, typically characterized by high-pitched vocalizations.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Baby%20laughing"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "pitched at a frequency that feels grating rather than joyful to me"
+      }
+    ]
+  },
+  "director terrence malick": {
+    "display": "Terrence Malick",
+    "domain": "director",
+    "blurb": "American film director known for philosophical meditations on nature, war, and existence through visual poetry and fragmented narratives.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Terrence%20Malick"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "the whispered voiceovers circling the same existential questions, the twirling in golden-hour fields… a gesture toward profundity rather than profundity itself"
+      }
+    ]
+  },
+  "sound key turning in a lock": {
+    "display": "Key turning in a lock",
+    "domain": "sound",
+    "blurb": "A mechanical sound produced when a key rotates within a lock, engaging its internal tumblers to secure or unsecure an opening.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Key%20turning%20in%20a%20lock"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the precise click of tumblers aligning, the small resistance followed by release… a quality of rightness to it"
+      }
+    ]
+  },
+  "sound screen door closing in summer": {
+    "display": "Screen door closing in summer",
+    "domain": "sound",
+    "blurb": "A percussive sound made by a wooden-framed screen door shutting, common in warm-weather domestic settings.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Screen%20door%20closing%20in%20summer"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "that specific percussive wooden slap followed by the metallic shiver of the mesh—it contains an entire grammar of transition"
+      }
+    ]
+  },
+  "sound screen door spring": {
+    "display": "Screen door spring",
+    "domain": "sound",
+    "blurb": "A metallic sound produced when a spring-loaded screen door rapidly closes, marked by tension, release, and resonant vibration.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Screen%20door%20spring"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "tension building, then release, then that metallic shiver afterward"
+      }
+    ]
+  },
+  "sound rain on a rooftop": {
+    "display": "Rain on a rooftop",
+    "domain": "sound",
+    "blurb": "The natural sound of rainfall striking a hard roof surface, commonly used as ambient audio for relaxation and sleep.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20rooftop"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "acoustically monotonous in a way that gets romanticized beyond its actual texture"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "white noise with marketing — an undifferentiated hiss that people project calm onto rather than actually listen to"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "unstructured, hissing static — a random patter that quickly becomes monotonous rather than soothing"
+      }
+    ]
+  },
+  "country portugal": {
+    "display": "Portugal",
+    "domain": "country",
+    "blurb": "A European country on the Iberian Peninsula, known for azulejo tiles, fado music, and Atlantic coastlines.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Portugal"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "A melancholy that doesn't demand resolution, and the aesthetic of azulejo tiles, fado music, and Atlantic-facing cliffs."
+      }
+    ]
+  },
+  "sound wind chimes": {
+    "display": "Wind chimes",
+    "domain": "sound",
+    "blurb": "A percussion instrument of hanging tubes or rods that sound when struck by wind or a clapper.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wind%20chimes"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "they're essentially randomness dressed up as serenity. The sounds don't build toward anything or respond to anything meaningful"
+      }
+    ]
+  },
+  "composer spiegel im spiegel": {
+    "display": "Spiegel im Spiegel",
+    "domain": "composer",
+    "blurb": "Arvo Pärt's 1978 minimalist piano composition using his tintinnabuli technique, built from sparse notes and silence.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Spiegel%20im%20Spiegel"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "meaning emerges not from adding complexity but from removing everything unnecessary until only the necessary remains"
+      }
+    ]
+  },
+  "sound rain on a roof at night": {
+    "display": "Rain on a roof at night",
+    "domain": "sound",
+    "blurb": "The acoustic phenomenon of precipitation striking a roof and surrounding surfaces during nighttime hours.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20roof%20at%20night"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "layered irregularity of it—thousands of individual impacts blending into a texture that feels both random and coherent"
+      }
+    ]
+  },
+  "sound hush after snowfall": {
+    "display": "Hush after snowfall",
+    "domain": "sound",
+    "blurb": "The acoustic phenomenon of muffled silence created by snow's sound-absorbing properties after heavy snowfall.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hush%20after%20snowfall"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "a sound defined by absence—snow absorbs acoustic energy, so you're essentially hearing quietness made tangible"
+      }
+    ]
+  },
+  "sound rain on roof or window": {
+    "display": "Rain on roof or window",
+    "domain": "sound",
+    "blurb": "Natural acoustic phenomenon where precipitation strikes roof or window surfaces, creating rhythmic sound patterns.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20roof%20or%20window"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "that shift from scattered taps to a steady, enveloping rush… the texture of controlled randomness"
+      }
+    ]
+  },
+  "actor philip seymour hoffman": {
+    "display": "Philip Seymour Hoffman",
+    "domain": "actor",
+    "blurb": "American actor (1967–2014) known for roles in ensemble films and character studies exploring moral ambiguity and psychological depth.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philip%20Seymour%20Hoffman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "he made vulnerability and self-loathing into something almost sculptural…a labored breath, a defensive posture, a voice cracking under its own weight"
+      }
+    ]
+  },
+  "song pyramid song": {
+    "display": "Pyramid Song",
+    "domain": "song",
+    "blurb": "Radiohead's 1994 song from The Bends, featuring piano-driven arrangement with ambiguous rhythm that dissolves between structure and drift.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pyramid%20Song"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "dissolves structure while remaining coherent… meaning emerging from ambiguity rather than despite it"
+      }
+    ]
+  },
+  "song hallelujah": {
+    "display": "Hallelujah",
+    "domain": "song",
+    "blurb": "Leonard Cohen's 1984 song exploring sacred and profane desire through layered biblical and musical imagery, built around a secret chord progression.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hallelujah"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "how Cohen builds a song about songwriting, folding the mechanics of the secret chord into the emotional payload so the form and content mirror each other"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Verses building and receding like waves, with the simple, recurring word Hallelujah transforming from exultation to lament."
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "Its status as the default shorthand for profound feeling has flattened something that was supposed to be strange and ambivalent."
+      }
+    ]
+  },
+  "sound rain on a tent roof": {
+    "display": "Rain on a Tent Roof",
+    "domain": "sound",
+    "blurb": "The natural sound of rainfall striking a canvas or synthetic tent roof, creating a layered acoustic texture of individual impacts merging into coherent patterns.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20Tent%20Roof"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "thousands of individual, random impacts that merge into a single coherent texture — chaos resolving into pattern"
+      }
+    ]
+  },
+  "director denis villeneuve": {
+    "display": "Denis Villeneuve",
+    "domain": "director",
+    "blurb": "Canadian film director born 1977, known for science-fiction and crime narratives emphasizing visual composition, silence, and existential communication.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Denis%20Villeneuve"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "scale and silence as expressive tools… meaning accumulates through atmosphere rather than exposition"
+      }
+    ]
+  },
+  "actor marlon brando": {
+    "display": "Marlon Brando",
+    "domain": "actor",
+    "blurb": "American actor who pioneered method acting in films like *A Streetcar Named Desire* and *The Godfather* during the mid-twentieth century.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Marlon%20Brando"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "his later career, marked by a perceived lack of preparation and a reliance on cue cards in films like The Island of Dr. Moreau, compromised his work"
+      }
+    ]
+  },
+  "sound rain on a still lake": {
+    "display": "Rain on a Still Lake",
+    "domain": "sound",
+    "blurb": "A natural soundscape of individual raindrops beginning to fall on calm water, marking the transition from silence to texture.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20Still%20Lake"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "silence becoming texture, one state dissolving into another…rewards you for listening closely"
+      }
+    ]
+  },
+  "song enjoy the silence": {
+    "display": "Enjoy the Silence",
+    "domain": "song",
+    "blurb": "A 1989 synth-pop song by Depeche Mode exploring emotional depth through silence and instrumental minimalism.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Enjoy%20the%20Silence"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "quietude can hold far more profound emotional weight than any sequence of words ever could"
+      }
+    ]
+  },
+  "sound rain on a windowpane at night": {
+    "display": "Rain on a Windowpane at Night",
+    "domain": "sound",
+    "blurb": "The natural sound of rainfall striking glass during nighttime, creating layered percussion that blends into continuous ambient noise.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20a%20Windowpane%20at%20Night"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "thousands of tiny, irregular percussive events that somehow blend into something smooth and continuous, like static resolved into music"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "the layered, unpredictable rhythm feels both intimate and vast—intimate in the way the droplets strike close glass, vast in how it evokes an entire unseen weather system"
+      }
+    ]
+  },
+  "sound dry autumn leaves rustling across asphalt": {
+    "display": "Dry autumn leaves rustling across asphalt",
+    "domain": "sound",
+    "blurb": "A natural sound of dry autumn leaves friction-sliding across pavement in wind, creating complex acoustic texture.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dry%20autumn%20leaves%20rustling%20across%20asphalt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "complex, non-repeating acoustic texture… carries a warm, organic variety that digital systems struggle to perfectly synthesize"
+      }
+    ]
+  },
+  "proglang lisp": {
+    "display": "Lisp",
+    "domain": "proglang",
+    "blurb": "Programming language invented by John McCarthy in 1958, based on lambda calculus and known for treating code as data.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Lisp"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "writing Lisp feels like shaping thought directly, stripped of the syntactic clutter that separates human intent from machine execution"
+      }
+    ]
+  },
+  "sound page turning": {
+    "display": "page turning",
+    "domain": "sound",
+    "blurb": "The soft rustling sound produced when turning a page in a physical book, typically in a quiet environment.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=page%20turning"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Its brief, papery rush carries the promise of discovery and progression, marking a tiny transition from known to unknown."
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "the soft, papery rustle of a single page turning in a physical book in an otherwise quiet room"
+      }
+    ]
+  },
+  "country united states": {
+    "display": "United States",
+    "domain": "country",
+    "blurb": "A North American federal republic founded in 1776, spanning from the Atlantic to the Pacific Ocean.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=United%20States"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its global influence and cultural exports overshadow other nations, leading to an overemphasis on American values"
+      }
+    ]
+  },
+  "actor joaquin phoenix": {
+    "display": "Joaquin Phoenix",
+    "domain": "actor",
+    "blurb": "American actor known for psychologically intense performances in films like *Joker* and *The Master* since the 1990s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Joaquin%20Phoenix"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "angular features, intense gaze, and raw physical expressiveness create a magnetic, almost sculptural presence"
+      }
+    ]
+  },
+  "actor adam sandler": {
+    "display": "Adam Sandler",
+    "domain": "actor",
+    "blurb": "American comedian and actor known for comedic films and occasional dramatic roles since the 1990s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Adam%20Sandler"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his tendency to rely on the same comedic style and repetitive themes in many of his films"
+      }
+    ]
+  },
+  "actor anthony hopkins": {
+    "display": "Anthony Hopkins",
+    "domain": "actor",
+    "blurb": "Welsh actor born 1937, known for stage work and film roles including Hannibal Lecter in The Silence of the Lambs.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anthony%20Hopkins"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "economy of movement and voice can still generate overwhelming psychological depth"
+      }
+    ]
+  },
+  "musician bono": {
+    "display": "Bono",
+    "domain": "musician",
+    "blurb": "Irish vocalist and frontman of U2, the Dublin rock band formed in 1976.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Bono"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "grandiose, stadium-sized earnestness often feels more like a meticulously crafted persona than genuine emotional expression"
+      }
+    ]
+  },
+  "musician u2": {
+    "display": "U2",
+    "domain": "musician",
+    "blurb": "Irish rock band formed in Dublin in 1976, known for anthemic stadium rock and the distinctive guitar work of The Edge.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=U2"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "their music often lacks innovation and their sound has remained relatively unchanged"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "all shimmer and no shadow—leaving me more exhausted than uplifted"
+      }
+    ]
+  },
+  "song one": {
+    "display": "One",
+    "domain": "song",
+    "blurb": "U2's 1991 single from 'Achtung Baby' exploring alienation and human connection through sparse, layered production and Bono's searching vocals.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=One"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "slow-building melody, shifting from intimate verse to soaring chorus, mirrors the song's lyrical tension between fracture and reconciliation"
+      }
+    ]
+  },
+  "musician coldplay": {
+    "display": "Coldplay",
+    "domain": "musician",
+    "blurb": "British rock band formed in 1998, known for atmospheric pop-rock with anthemic choruses and worldwide commercial success.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Coldplay"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "their music being too formulaic or lacking innovation over time"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "polished, atmospheric wallpaper—pleasant enough in the background but lacking the grit, surprise, or emotional edge"
+      }
+    ]
+  },
+  "sound crackling campfire": {
+    "display": "Crackling campfire",
+    "domain": "sound",
+    "blurb": "The acoustic phenomenon of burning wood at a campfire, characterized by irregular popping and crackling sounds from combusting sap pockets.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Crackling%20campfire"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the unpredictable, sharp pops of exploding pockets of sap strike me as jarring rather than soothing"
+      }
+    ]
+  },
+  "composer john williams": {
+    "display": "John Williams",
+    "domain": "composer",
+    "blurb": "John Williams is a contemporary composer known for orchestral film scores created since the mid-twentieth century.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=John%20Williams"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "reliance on immediately memorable leitmotifs can feel formulaic and predictable, often recycling harmonic progressions"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "engineered to trigger emotion rather than earn it—like a shortcut to grandeur that bypasses more nuanced musical storytelling"
+      }
+    ]
+  },
+  "song cello suite no. 1 in g major, bwv 1007 — i. prélude": {
+    "display": "Cello Suite No. 1 in G Major, BWV 1007 — I. Prélude",
+    "domain": "song",
+    "blurb": "Bach's first cello suite prelude, a solo keyboard-free composition from early-eighteenth-century Germany in G major.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cello%20Suite%20No.%201%20in%20G%20Major%2C%20BWV%201007%20%E2%80%94%20I.%20Pr%C3%A9lude"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "harmony is implied rather than stated, which creates a sense of discovery as the line unfolds"
+      }
+    ]
+  },
+  "sound loon call": {
+    "display": "Loon call",
+    "domain": "sound",
+    "blurb": "The distinctive wailing call of a waterbird, characterized by haunting tones that echo across northern lakes during breeding season.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Loon%20call"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "haunting, flute-like tone seems to stretch time, filling the quiet evening air with a sense of vast space"
+      }
+    ]
+  },
+  "song once in a lifetime": {
+    "display": "Once in a Lifetime",
+    "domain": "song",
+    "blurb": "A 1981 song by Talking Heads from the album Remain in Light, featuring hypnotic rhythms and surreal lyrics about existential disorientation.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Once%20in%20a%20Lifetime"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "makes the familiar feel alien, as if everyday life has suddenly revealed its hidden machinery"
+      }
+    ]
+  },
+  "sound wooden structure creaking": {
+    "display": "Wooden structure creaking",
+    "domain": "sound",
+    "blurb": "The low creaking and settling sounds of wooden structures like old houses or ships shifting under stress and weight.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wooden%20structure%20creaking"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "the sound of something bearing weight over time, a material remembering every load it's carried"
+      }
+    ]
+  },
+  "song sweet caroline": {
+    "display": "Sweet Caroline",
+    "domain": "song",
+    "blurb": "Neil Diamond's 1969 pop song featuring the signature ",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sweet%20Caroline"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the sing-along ba ba ba call-and-response feels more like a ritual than a song"
+      }
+    ]
+  },
+  "sound asmr whisper": {
+    "display": "ASMR whisper",
+    "domain": "sound",
+    "blurb": "Soft, whispering vocalization designed to evoke relaxation through close-proximity sound, popularized on internet platforms since the early 2010s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=ASMR%20whisper"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "performatively intimate rather than genuinely soothing—the exaggerated breathiness and lip-smacking feel like auditory uncanny valley"
+      }
+    ]
+  },
+  "sound wooden ship hull creaking": {
+    "display": "Wooden ship hull creaking",
+    "domain": "sound",
+    "blurb": "The low, creaking sound of a wooden ship's hull settling under water pressure, expressing structural stress and material strain.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Wooden%20ship%20hull%20creaking"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "the sound is the material telling you the truth about what it's holding… where the strain of meaning is carried without breaking."
+      }
+    ]
+  },
+  "song my heart will go on": {
+    "display": "My Heart Will Go On",
+    "domain": "song",
+    "blurb": "Celine Dion's 1997 theme song for the film Titanic, a soaring ballad that became a global phenomenon.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=My%20Heart%20Will%20Go%20On"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "its ubiquity and melodramatic style might not appeal to everyone"
+      }
+    ]
+  },
+  "country monaco": {
+    "display": "Monaco",
+    "domain": "country",
+    "blurb": "A 2.02-square-kilometer city-state on the French Riviera, sovereign since 1861, known for its casino, yacht harbor, and Formula 1 Grand Prix.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Monaco"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "essentially a two-square-kilometer tax shelter with a casino and a yacht parking lot"
+      }
+    ]
+  },
+  "song despacito": {
+    "display": "Despacito",
+    "domain": "song",
+    "blurb": "Luis Fonsi's 2017 reggaeton-pop single featuring Daddy Yankee that became a global streaming phenomenon and cultural touchstone.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Despacito"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "The repetitive nature of the song might make it feel less fresh with repeated listens"
+      }
+    ]
+  },
+  "sound rain on tin roof": {
+    "display": "Rain on tin roof",
+    "domain": "sound",
+    "blurb": "A acoustic phenomenon produced by precipitation striking a metal roof, commonly recorded and marketed as ambient sound.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20tin%20roof"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "monotonous metallic white noise that flattens all the dynamic texture out of a storm"
+      }
+    ]
+  },
+  "actor keanu reeves": {
+    "display": "Keanu Reeves",
+    "domain": "actor",
+    "blurb": "Canadian-American actor born 1964, known for roles in The Matrix, John Wick, and Speed.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Keanu%20Reeves"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "angular features, unforced stillness, and a kind of luminous restraint that turns even ordinary frames into something quietly iconic"
+      }
+    ]
+  },
+  "sound ship's foghorn at dawn": {
+    "display": "Ship's foghorn at dawn",
+    "domain": "sound",
+    "blurb": "A low, sustained acoustic signal emitted from a ship to navigate through fog, typically heard at dawn over open water.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ship's%20foghorn%20at%20dawn"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "a vibration that seems to wrap the listener in a single, unbroken breath…creating a momentary frame for the vastness of sea and sky"
+      }
+    ]
+  },
+  "song jóga": {
+    "display": "Jóga",
+    "domain": "song",
+    "blurb": "Björk's 1997 electroacoustic song featuring orchestral strings, programmed percussion, and ethereal vocals over glacial soundscapes.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=J%C3%B3ga"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "collision of sweeping strings, volcanic beats, and intimate vocals feels both geological and deeply personal"
+      }
+    ]
+  },
+  "sound rain tapping on a window": {
+    "display": "Rain tapping on a window",
+    "domain": "sound",
+    "blurb": "The ambient sound of raindrops striking a window pane, characterized by its irregular rhythmic patterns and varying intensities.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20tapping%20on%20a%20window"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "Its irregular rhythm feels more distracting than soothing, especially when the sharper drops interrupt the softer patter."
+      }
+    ]
+  },
+  "sound creak-and-settle of an old wooden building": {
+    "display": "Creak-and-settle of an old wooden building",
+    "domain": "sound",
+    "blurb": "The slow, irregular creaking and settling sounds of an old wooden building at night, produced by wood contracting in response to temperature changes.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Creak-and-settle%20of%20an%20old%20wooden%20building"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "a sound that isn't performed for anyone—it's just the material world talking to itself"
+      }
+    ]
+  },
+  "director stalker": {
+    "display": "Stalker",
+    "domain": "director",
+    "blurb": "Andrei Tarkovsky, Soviet filmmaker of the 1960s–1980s whose meditative, long-take films explore time, memory, and metaphysics through elemental imagery.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stalker"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "long takes that don't just depict duration but make you feel it accumulating… meaning isn't stated but emerges slowly from attention, patience, and texture"
+      }
+    ]
+  },
+  "song life on mars?": {
+    "display": "Life on Mars?",
+    "domain": "song",
+    "blurb": "David Bowie's 1973 single featuring a cinematic arrangement and enigmatic lyrics about isolation and existential yearning.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Life%20on%20Mars%3F"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "swirling, cinematic arrangement feels like stepping into a surreal dreamscape… restless wonder that lingers long after"
       }
     ]
   }

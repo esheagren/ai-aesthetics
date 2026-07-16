@@ -56,7 +56,7 @@ const THUMB_WIDTH = Number(process.env.ENTITY_IMG_WIDTH || 500);
 const JPEG_QUALITY = Number(process.env.ENTITY_IMG_QUALITY || 82);
 
 // Domains that don't want an image at all.
-const SKIP_DOMAINS = new Set(['word', 'color', 'season', 'smell', 'decade']);
+const SKIP_DOMAINS = new Set(['word', 'color', 'season', 'smell', 'decade', 'sound', 'proglang']);
 
 // ---- normalization: MUST match analyze.js / entitycards.js exactly ----
 const norm = (s) =>

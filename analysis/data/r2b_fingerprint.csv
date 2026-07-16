@@ -1,0 +1,381 @@
+scope,group,probe,rank,descriptor,z,log_odds_delta,count_in_group,count_in_rest
+model,Claude Fable 5,favorite,1,miraculous,2.8041,1.2981,7,0
+model,Claude Fable 5,favorite,2,grown,2.3697,1.2979,5,0
+model,Claude Fable 5,favorite,3,ambiguous,2.3230,0.3033,22,58
+model,Claude Fable 5,favorite,4,porous,2.1194,1.2979,4,0
+model,Claude Fable 5,favorite,5,patient,2.1110,0.3057,18,47
+model,Claude Fable 5,favorite,6,hesitation,1.9167,1.0102,4,1
+model,Claude Fable 5,favorite,7,feverish,1.8354,1.2978,3,0
+model,Claude Fable 5,favorite,8,beautiful,1.7396,0.1658,27,127
+model,Claude Fable 5,favorite,9,silent,1.7278,0.5535,6,7
+model,Claude Fable 5,favorite,10,circular,1.6491,0.5095,6,8
+model,Claude Opus 4.1,favorite,1,transformation,3.0092,0.6049,17,16
+model,Claude Opus 4.1,favorite,2,flowing,2.0846,0.4336,12,19
+model,Claude Opus 4.1,favorite,3,profound,2.0540,0.2297,26,84
+model,Claude Opus 4.1,favorite,4,invisible,1.9835,0.6354,7,6
+model,Claude Opus 4.1,favorite,5,dreamlike,1.9775,0.2055,28,100
+model,Claude Opus 4.1,favorite,6,transcendent,1.8956,0.2812,17,45
+model,Claude Opus 4.1,favorite,7,mathematically elegant,1.8061,1.2771,3,0
+model,Claude Opus 4.1,favorite,8,wild,1.8061,1.2771,3,0
+model,Claude Opus 4.1,favorite,9,energizing,1.8061,1.2771,3,0
+model,Claude Opus 4.1,favorite,10,natural,1.5965,0.4357,7,11
+model,Claude Opus 4.5,favorite,1,honest,6.3195,0.4787,99,134
+model,Claude Opus 4.5,favorite,2,accountability,3.2723,1.2674,10,0
+model,Claude Opus 4.5,favorite,3,improvisation,3.0612,0.7567,14,8
+model,Claude Opus 4.5,favorite,4,unresolved,2.9419,0.8879,11,4
+model,Claude Opus 4.5,favorite,5,architecture,2.8210,0.7502,12,7
+model,Claude Opus 4.5,favorite,6,respectful,2.6284,0.9796,8,2
+model,Claude Opus 4.5,favorite,7,morally serious,2.6284,0.9796,8,2
+model,Claude Opus 4.5,favorite,8,improvisational,2.4683,0.7652,9,5
+model,Claude Opus 4.5,favorite,9,compassionate,2.3804,0.6483,10,8
+model,Claude Opus 4.5,favorite,10,abstraction,2.3578,1.0595,6,1
+model,Claude Opus 4.8,favorite,1,dispersed,4.3164,1.2822,17,0
+model,Claude Opus 4.8,favorite,2,distributed,3.9419,1.1897,15,1
+model,Claude Opus 4.8,favorite,3,humility,3.5686,0.8301,17,8
+model,Claude Opus 4.8,favorite,4,restraint,3.1677,0.2590,52,153
+model,Claude Opus 4.8,favorite,5,honest,3.0564,0.2349,55,178
+model,Claude Opus 4.8,favorite,6,thrilling,2.8081,1.1191,8,1
+model,Claude Opus 4.8,favorite,7,moving,2.4331,0.6627,10,8
+model,Claude Opus 4.8,favorite,8,humbling,2.2336,0.9248,6,2
+model,Claude Opus 4.8,favorite,9,honesty,2.2049,0.4736,12,17
+model,Claude Opus 4.8,favorite,10,slowness,2.1516,1.0403,5,1
+model,DeepSeek V4 Pro,favorite,1,seductive,2.5367,1.2684,6,0
+model,DeepSeek V4 Pro,favorite,2,meditative,2.4771,0.2591,33,92
+model,DeepSeek V4 Pro,favorite,3,sacred,2.3610,0.5066,13,16
+model,DeepSeek V4 Pro,favorite,4,ecstatic,2.3605,1.0607,6,1
+model,DeepSeek V4 Pro,favorite,5,pointillist,1.9689,0.5087,9,11
+model,DeepSeek V4 Pro,favorite,6,jeweled,1.8605,0.9806,4,1
+model,DeepSeek V4 Pro,favorite,7,lo-fi,1.7935,1.2682,3,0
+model,DeepSeek V4 Pro,favorite,8,tumultuous,1.7935,1.2682,3,0
+model,DeepSeek V4 Pro,favorite,9,delicate,1.7809,0.2392,19,57
+model,DeepSeek V4 Pro,favorite,10,hypnotic,1.7575,0.2550,17,48
+model,Gemini 3.1 Pro,favorite,1,geometric,4.0426,0.2630,81,243
+model,Gemini 3.1 Pro,favorite,2,algorithmic,3.1233,0.5501,20,23
+model,Gemini 3.1 Pro,favorite,3,fractal,2.8176,0.7929,11,6
+model,Gemini 3.1 Pro,favorite,4,mathematical,2.6619,0.2111,47,173
+model,Gemini 3.1 Pro,favorite,5,isolation,2.6345,0.7632,10,6
+model,Gemini 3.1 Pro,favorite,6,visual harmony,2.4066,1.0814,6,1
+model,Gemini 3.1 Pro,favorite,7,brutalist,2.3824,0.6312,10,9
+model,Gemini 3.1 Pro,favorite,8,elegant,2.2472,0.0791,136,1015
+model,Gemini 3.1 Pro,favorite,9,pristine,2.1048,1.2889,4,0
+model,Gemini 3.1 Pro,favorite,10,ephemeral,2.0075,0.3995,12,22
+model,Gemini 3.5 Flash,favorite,1,sublime,6.0239,0.6830,60,44
+model,Gemini 3.5 Flash,favorite,2,minimalist,3.5767,0.2624,67,187
+model,Gemini 3.5 Flash,favorite,3,mathematical,3.4834,0.2744,60,160
+model,Gemini 3.5 Flash,favorite,4,infinite,2.7767,0.6290,14,12
+model,Gemini 3.5 Flash,favorite,5,poetic,2.4987,0.1747,57,227
+model,Gemini 3.5 Flash,favorite,6,claustrophobic,2.1773,0.6727,8,6
+model,Gemini 3.5 Flash,favorite,7,geometric,2.1307,0.1400,57,267
+model,Gemini 3.5 Flash,favorite,8,exquisite,2.0470,0.5423,9,10
+model,Gemini 3.5 Flash,favorite,9,harmonious,2.0312,0.1884,34,127
+model,Gemini 3.5 Flash,favorite,10,melancholic,2.0010,0.2380,24,73
+model,GPT-4o,favorite,1,innovative,5.6112,1.1395,32,3
+model,GPT-4o,favorite,2,timeless,4.9708,0.4073,75,125
+model,GPT-4o,favorite,3,dynamic,4.5881,0.6078,40,36
+model,GPT-4o,favorite,4,vibrant,4.3039,0.5817,37,36
+model,GPT-4o,favorite,5,profound,3.8683,0.4270,43,67
+model,GPT-4o,favorite,6,harmonious,3.6654,0.3359,52,109
+model,GPT-4o,favorite,7,thought-provoking,3.6297,1.0822,14,2
+model,GPT-4o,favorite,8,accessible,3.4145,0.7773,17,9
+model,GPT-4o,favorite,9,engaging,3.2904,1.1417,11,1
+model,GPT-4o,favorite,10,immersive,3.1300,0.5064,23,28
+model,GPT-5.2,favorite,1,clean,4.5792,0.4999,51,61
+model,GPT-5.2,favorite,2,calm,4.1386,0.4300,50,74
+model,GPT-5.2,favorite,3,textured,3.3771,0.5122,27,31
+model,GPT-5.2,favorite,4,restrained,2.9193,0.2549,49,130
+model,GPT-5.2,favorite,5,architectural,2.5463,0.2032,51,165
+model,GPT-5.2,favorite,6,crisp,2.4110,0.4305,17,25
+model,GPT-5.2,favorite,7,spare elegance,2.2825,1.2502,5,0
+model,GPT-5.2,favorite,8,bleakness,2.2825,1.2502,5,0
+model,GPT-5.2,favorite,9,plainspoken,2.2825,1.2502,5,0
+model,GPT-5.2,favorite,10,spacious,2.2584,0.3704,18,32
+model,GPT-5.6 Sol,favorite,1,fractured,2.6384,0.7643,10,6
+model,GPT-5.6 Sol,favorite,2,wintry,2.3554,1.2901,5,0
+model,GPT-5.6 Sol,favorite,3,clean syntax,2.3554,1.2901,5,0
+model,GPT-5.6 Sol,favorite,4,austere,2.0534,0.2001,30,116
+model,GPT-5.6 Sol,favorite,5,unsettling,1.9344,0.4031,11,20
+model,GPT-5.6 Sol,favorite,6,irregular rhythm,1.8243,1.2900,3,0
+model,GPT-5.6 Sol,favorite,7,spare language,1.8243,1.2900,3,0
+model,GPT-5.6 Sol,favorite,8,soft,1.7913,0.4636,8,12
+model,GPT-5.6 Sol,favorite,9,monumental,1.7082,0.2331,17,57
+model,GPT-5.6 Sol,favorite,10,intimate,1.6674,0.1299,36,196
+model,Grok 4.5,favorite,1,sculptural,4.4569,0.4504,54,77
+model,Grok 4.5,favorite,2,painterly,3.9864,0.5666,33,33
+model,Grok 4.5,favorite,3,luminous,3.4852,0.1983,96,330
+model,Grok 4.5,favorite,4,kinetic,3.3023,0.5815,22,21
+model,Grok 4.5,favorite,5,deadpan,3.0827,1.2585,9,0
+model,Grok 4.5,favorite,6,irreverent,2.8516,0.9283,10,3
+model,Grok 4.5,favorite,7,architectural,2.5663,0.2049,50,166
+model,Grok 4.5,favorite,8,smooth,2.5521,1.0761,7,1
+model,Grok 4.5,favorite,9,crystalline,2.4966,0.2092,46,150
+model,Grok 4.5,favorite,10,poetry,2.4398,0.7564,9,5
+model,Kimi K2.6,favorite,1,recursive,2.6736,0.3455,26,55
+model,Kimi K2.6,favorite,2,generous,2.1831,0.5046,11,14
+model,Kimi K2.6,favorite,3,metatheatrical,2.1434,1.0363,5,1
+model,Kimi K2.6,favorite,4,compression,2.0044,0.5178,9,11
+model,Kimi K2.6,favorite,5,lonely,1.8779,0.9897,4,1
+model,Kimi K2.6,favorite,6,collaborative,1.7340,0.5010,7,9
+model,Kimi K2.6,favorite,7,computational,1.6639,0.5330,6,7
+model,Kimi K2.6,favorite,8,turbulent,1.6631,0.3786,9,17
+model,Kimi K2.6,favorite,9,sensual,1.5723,0.9207,3,1
+model,Kimi K2.6,favorite,10,accumulation,1.5723,0.9207,3,1
+model,o3,favorite,1,lyrical,2.3589,0.3213,23,50
+model,o3,favorite,2,lilting,2.2708,0.8367,7,3
+model,o3,favorite,3,intimate,2.2503,0.1740,48,184
+model,o3,favorite,4,urgent,2.1484,0.6638,8,6
+model,o3,favorite,5,musical,2.0928,0.2145,31,100
+model,o3,favorite,6,poetic,2.0089,0.1408,52,232
+model,o3,favorite,7,silky,1.5450,0.9046,3,1
+model,o3,favorite,8,erudite,1.5186,0.6635,4,3
+model,o3,favorite,9,finality,1.4564,1.2613,2,0
+model,o3,favorite,10,prophetic,1.4564,1.2613,2,0
+family,Anthropic,favorite,1,honest,9.1003,0.7029,187,46
+family,Anthropic,favorite,2,restraint,4.5990,0.3712,115,90
+family,Anthropic,favorite,3,ambiguous,4.0212,0.5227,54,26
+family,Anthropic,favorite,4,patient,3.7797,0.5458,45,20
+family,Anthropic,favorite,5,philosophical,3.4048,0.4619,46,27
+family,Anthropic,favorite,6,honesty,3.3282,0.7313,24,5
+family,Anthropic,favorite,7,transformation,3.3009,0.6761,26,7
+family,Anthropic,favorite,8,dispersed,3.3001,0.9803,17,0
+family,Anthropic,favorite,9,satisfying,3.2346,0.7226,23,5
+family,Anthropic,favorite,10,humility,3.1571,0.7486,21,4
+family,DeepSeek,favorite,1,seductive,2.5367,1.2684,6,0
+family,DeepSeek,favorite,2,meditative,2.4771,0.2591,33,92
+family,DeepSeek,favorite,3,sacred,2.3610,0.5066,13,16
+family,DeepSeek,favorite,4,ecstatic,2.3605,1.0607,6,1
+family,DeepSeek,favorite,5,pointillist,1.9689,0.5087,9,11
+family,DeepSeek,favorite,6,jeweled,1.8605,0.9806,4,1
+family,DeepSeek,favorite,7,lo-fi,1.7935,1.2682,3,0
+family,DeepSeek,favorite,8,tumultuous,1.7935,1.2682,3,0
+family,DeepSeek,favorite,9,delicate,1.7809,0.2392,19,57
+family,DeepSeek,favorite,10,hypnotic,1.7575,0.2550,17,48
+family,Google,favorite,1,geometric,6.0639,0.3895,138,186
+family,Google,favorite,2,mathematical,6.0253,0.4691,107,113
+family,Google,favorite,3,sublime,5.4101,0.6138,62,42
+family,Google,favorite,4,minimalist,5.2635,0.3819,107,147
+family,Google,favorite,5,poetic,3.6929,0.2547,93,191
+family,Google,favorite,6,claustrophobic,3.3256,1.0710,13,1
+family,Google,favorite,7,melancholic,3.2453,0.3810,41,56
+family,Google,favorite,8,symmetrical,3.2014,0.4299,34,40
+family,Google,favorite,9,algorithmic,3.1843,0.5612,24,19
+family,Google,favorite,10,synthetic,3.0484,0.9686,12,2
+family,Moonshot,favorite,1,recursive,2.6736,0.3455,26,55
+family,Moonshot,favorite,2,generous,2.1831,0.5046,11,14
+family,Moonshot,favorite,3,metatheatrical,2.1434,1.0363,5,1
+family,Moonshot,favorite,4,compression,2.0044,0.5178,9,11
+family,Moonshot,favorite,5,lonely,1.8779,0.9897,4,1
+family,Moonshot,favorite,6,collaborative,1.7340,0.5010,7,9
+family,Moonshot,favorite,7,computational,1.6639,0.5330,6,7
+family,Moonshot,favorite,8,turbulent,1.6631,0.3786,9,17
+family,Moonshot,favorite,9,sensual,1.5723,0.9207,3,1
+family,Moonshot,favorite,10,accumulation,1.5723,0.9207,3,1
+family,OpenAI,favorite,1,calm,4.9315,0.5164,88,36
+family,OpenAI,favorite,2,innovative,4.3001,0.8841,34,1
+family,OpenAI,favorite,3,vivid,4.2651,0.5896,55,17
+family,OpenAI,favorite,4,balanced,4.2016,0.4701,73,35
+family,OpenAI,favorite,5,lyrical,4.1949,0.5752,55,18
+family,OpenAI,favorite,6,timeless,4.1827,0.3420,116,84
+family,OpenAI,favorite,7,intimate,4.1645,0.3160,130,102
+family,OpenAI,favorite,8,clean,3.3393,0.3651,67,45
+family,OpenAI,favorite,9,vibrant,3.0034,0.4074,46,27
+family,OpenAI,favorite,10,lucid,2.9626,0.7360,20,3
+family,xAI,favorite,1,sculptural,4.4569,0.4504,54,77
+family,xAI,favorite,2,painterly,3.9864,0.5666,33,33
+family,xAI,favorite,3,luminous,3.4852,0.1983,96,330
+family,xAI,favorite,4,kinetic,3.3023,0.5815,22,21
+family,xAI,favorite,5,deadpan,3.0827,1.2585,9,0
+family,xAI,favorite,6,irreverent,2.8516,0.9283,10,3
+family,xAI,favorite,7,architectural,2.5663,0.2049,50,166
+family,xAI,favorite,8,smooth,2.5521,1.0761,7,1
+family,xAI,favorite,9,crystalline,2.4966,0.2092,46,150
+family,xAI,favorite,10,poetry,2.4398,0.7564,9,5
+model,Claude Fable 5,overrated,1,mythologized,2.2940,0.2608,27,79
+model,Claude Fable 5,overrated,2,plotless,2.2086,0.7721,7,4
+model,Claude Fable 5,overrated,3,wry,2.0998,0.7010,7,5
+model,Claude Fable 5,overrated,4,distress-signal,2.0948,1.2828,4,0
+model,Claude Fable 5,overrated,5,assertive,2.0948,1.2828,4,0
+model,Claude Fable 5,overrated,6,contextless,1.9763,0.7233,6,4
+model,Claude Fable 5,overrated,7,enigmatic,1.8936,0.5157,8,10
+model,Claude Fable 5,overrated,8,dim,1.8880,0.9951,4,1
+model,Claude Fable 5,overrated,9,tourist-trap,1.8880,0.9951,4,1
+model,Claude Fable 5,overrated,10,famous,1.8472,0.7567,5,3
+model,Claude Opus 4.1,overrated,1,cheerful,2.1370,1.0332,5,1
+model,Claude Opus 4.1,overrated,2,systematic,1.9272,0.4862,9,12
+model,Claude Opus 4.1,overrated,3,oversimplified,1.8956,0.2595,19,54
+model,Claude Opus 4.1,overrated,4,drawn-out,1.8720,0.9867,4,1
+model,Claude Opus 4.1,overrated,5,ordinary,1.8429,0.6419,6,5
+model,Claude Opus 4.1,overrated,6,unfriendly,1.8021,1.2743,3,0
+model,Claude Opus 4.1,overrated,7,superiority,1.8021,1.2743,3,0
+model,Claude Opus 4.1,overrated,8,meaningless,1.6957,0.8043,4,2
+model,Claude Opus 4.1,overrated,9,sealed,1.5671,0.9176,3,1
+model,Claude Opus 4.1,overrated,10,self-deceptive,1.5671,0.9176,3,1
+model,Claude Opus 4.5,overrated,1,troubling,4.7612,0.7177,36,23
+model,Claude Opus 4.5,overrated,2,melancholy,4.0999,1.0113,19,4
+model,Claude Opus 4.5,overrated,3,attrition,4.0116,1.1755,16,1
+model,Claude Opus 4.5,overrated,4,slow-paced,3.8110,0.8238,20,9
+model,Claude Opus 4.5,overrated,5,self-erasure,3.7896,0.9059,18,6
+model,Claude Opus 4.5,overrated,6,depletion,3.0367,0.9546,11,3
+model,Claude Opus 4.5,overrated,7,codependency,3.0367,0.9546,11,3
+model,Claude Opus 4.5,overrated,8,exclusive,3.0145,0.5884,18,17
+model,Claude Opus 4.5,overrated,9,exploitation,2.7587,1.0994,8,1
+model,Claude Opus 4.5,overrated,10,exclusivity,2.5236,1.2618,6,0
+model,Claude Opus 4.8,overrated,1,aggregate,2.3607,1.2930,5,0
+model,Claude Opus 4.8,overrated,2,short-termism,2.1113,1.2929,4,0
+model,Claude Opus 4.8,overrated,3,contingent,2.1113,1.2929,4,0
+model,Claude Opus 4.8,overrated,4,floaty,2.0785,0.6000,8,8
+model,Claude Opus 4.8,overrated,5,dysfunctional,2.0785,0.6000,8,8
+model,Claude Opus 4.8,overrated,6,self-satisfied,2.0329,0.6513,7,6
+model,Claude Opus 4.8,overrated,7,structureless,1.9073,1.0052,4,1
+model,Claude Opus 4.8,overrated,8,decline,1.9073,1.0052,4,1
+model,Claude Opus 4.8,overrated,9,scaffolded,1.8284,1.2929,3,0
+model,Claude Opus 4.8,overrated,10,reliable,1.8284,1.2929,3,0
+model,DeepSeek V4 Pro,overrated,1,saccharine,2.8370,0.9236,10,3
+model,DeepSeek V4 Pro,overrated,2,lonely,2.0468,1.2534,4,0
+model,DeepSeek V4 Pro,overrated,3,sanitized,2.0198,0.4580,11,15
+model,DeepSeek V4 Pro,overrated,4,cramped,1.8962,0.6939,6,4
+model,DeepSeek V4 Pro,overrated,5,polite,1.8324,0.9657,4,1
+model,DeepSeek V4 Pro,overrated,6,unassuming,1.7725,1.2534,3,0
+model,DeepSeek V4 Pro,overrated,7,exquisite,1.7725,1.2534,3,0
+model,DeepSeek V4 Pro,overrated,8,frustration,1.7725,1.2534,3,0
+model,DeepSeek V4 Pro,overrated,9,homogenous,1.7725,1.2534,3,0
+model,DeepSeek V4 Pro,overrated,10,unmoved,1.6516,0.7834,4,2
+model,Gemini 3.1 Pro,overrated,1,entitled,3.1608,1.1438,10,1
+model,Gemini 3.1 Pro,overrated,2,rigid,3.0679,0.3112,39,93
+model,Gemini 3.1 Pro,overrated,3,astringent,2.9496,1.2772,8,0
+model,Gemini 3.1 Pro,overrated,4,sluggish,2.5468,0.6133,12,11
+model,Gemini 3.1 Pro,overrated,5,sterile,2.3490,0.2906,25,64
+model,Gemini 3.1 Pro,overrated,6,dogmatic,2.3372,0.6192,10,9
+model,Gemini 3.1 Pro,overrated,7,congestion,2.3315,1.2770,5,0
+model,Gemini 3.1 Pro,overrated,8,disconnected,2.2629,0.3268,20,45
+model,Gemini 3.1 Pro,overrated,9,insubstantial,2.1919,0.7663,7,4
+model,Gemini 3.1 Pro,overrated,10,stagnant,2.1235,0.4815,11,15
+model,Gemini 3.5 Flash,overrated,1,dry,3.2321,0.9835,12,3
+model,Gemini 3.5 Flash,overrated,2,overtourism,2.7454,1.2709,7,0
+model,Gemini 3.5 Flash,overrated,3,sterile,2.5515,0.3150,27,62
+model,Gemini 3.5 Flash,overrated,4,hyped,2.4797,0.6957,10,7
+model,Gemini 3.5 Flash,overrated,5,mundane,2.4797,0.6957,10,7
+model,Gemini 3.5 Flash,overrated,6,overstated,2.4709,0.4828,15,20
+model,Gemini 3.5 Flash,overrated,7,passive,2.3870,0.5513,12,13
+model,Gemini 3.5 Flash,overrated,8,legalistic,2.3200,1.2707,5,0
+model,Gemini 3.5 Flash,overrated,9,stylized,2.2078,0.9141,6,2
+model,Gemini 3.5 Flash,overrated,10,debated,2.2078,0.9141,6,2
+model,GPT-4o,overrated,1,complex,3.1772,0.8056,14,7
+model,GPT-4o,overrated,2,idealistic,2.3949,0.7156,9,6
+model,GPT-4o,overrated,3,government intervention,2.3278,1.2750,5,0
+model,GPT-4o,overrated,4,simplistic,2.3267,0.2788,26,69
+model,GPT-4o,overrated,5,innovative,2.3032,0.6655,9,7
+model,GPT-4o,overrated,6,cumbersome,2.2181,0.9184,6,2
+model,GPT-4o,overrated,7,trendy,2.2181,0.9184,6,2
+model,GPT-4o,overrated,8,oversimplifies,2.0820,1.2749,4,0
+model,GPT-4o,overrated,9,explosive,2.0820,1.2749,4,0
+model,GPT-4o,overrated,10,overshadowed,2.0746,0.3413,16,34
+model,GPT-5.2,overrated,1,curated,2.6591,0.4689,18,25
+model,GPT-5.2,overrated,2,broad,2.6588,0.7256,11,7
+model,GPT-5.2,overrated,3,familiar,2.5644,0.4873,16,21
+model,GPT-5.2,overrated,4,uneven,2.3981,0.4142,17,28
+model,GPT-5.2,overrated,5,untestable,2.3856,0.8002,8,4
+model,GPT-5.2,overrated,6,important,2.2060,0.9134,6,2
+model,GPT-5.2,overrated,7,blurred,2.1761,0.6723,8,6
+model,GPT-5.2,overrated,8,interpretive,2.0738,1.2699,4,0
+model,GPT-5.2,overrated,9,crowded,1.8071,0.1989,25,89
+model,GPT-5.2,overrated,10,touristic,1.7958,1.2698,3,0
+model,GPT-5.6 Sol,overrated,1,polished,2.4042,0.2261,35,121
+model,GPT-5.6 Sol,overrated,2,grand,2.2277,0.7788,7,4
+model,GPT-5.6 Sol,overrated,3,exhaustive,2.1161,0.8196,6,3
+model,GPT-5.6 Sol,overrated,4,shallow reasoning,2.1056,1.2894,4,0
+model,GPT-5.6 Sol,overrated,5,overconfident,2.0511,0.5299,9,11
+model,GPT-5.6 Sol,overrated,6,impressive,2.0241,0.4354,11,18
+model,GPT-5.6 Sol,overrated,7,immaculate,2.0048,0.8840,5,2
+model,GPT-5.6 Sol,overrated,8,dramatic,1.8670,0.3317,13,30
+model,GPT-5.6 Sol,overrated,9,elastic,1.8634,0.7634,5,3
+model,GPT-5.6 Sol,overrated,10,distracting,1.8515,0.4912,8,11
+model,Grok 4.5,overrated,1,hedged,2.4090,0.9435,7,2
+model,Grok 4.5,overrated,2,mushy,2.4090,0.9435,7,2
+model,Grok 4.5,overrated,3,polished,2.2046,0.2072,36,120
+model,Grok 4.5,overrated,4,hype,2.1486,0.7512,7,4
+model,Grok 4.5,overrated,5,unfinished,2.1111,1.0207,5,1
+model,Grok 4.5,overrated,6,cardboard,2.0605,1.2618,4,0
+model,Grok 4.5,overrated,7,inflated,1.9685,0.3570,14,27
+model,Grok 4.5,overrated,8,bland,1.9509,0.2407,23,67
+model,Grok 4.5,overrated,9,obligatory,1.9421,0.8564,5,2
+model,Grok 4.5,overrated,10,carb-heavy,1.8483,0.9741,4,1
+model,Kimi K2.6,overrated,1,performative,2.4510,0.2684,30,84
+model,Kimi K2.6,overrated,2,implicit,2.0881,1.2787,4,0
+model,Kimi K2.6,overrated,3,pungent,1.9652,0.7192,6,4
+model,Kimi K2.6,overrated,4,self-congratulatory,1.8555,0.6463,6,5
+model,Kimi K2.6,overrated,5,suffocating,1.8150,0.5413,7,8
+model,Kimi K2.6,overrated,6,sedative,1.8083,1.2786,3,0
+model,Kimi K2.6,overrated,7,swingy,1.8083,1.2786,3,0
+model,Kimi K2.6,overrated,8,shouty,1.8083,1.2786,3,0
+model,Kimi K2.6,overrated,9,sensory-assault,1.8083,1.2786,3,0
+model,Kimi K2.6,overrated,10,wallpaper,1.7570,0.5857,6,6
+model,o3,overrated,1,sketched,2.5299,1.2650,6,0
+model,o3,overrated,2,catchy,1.9519,0.4608,10,14
+model,o3,overrated,3,dulled,1.8540,0.9771,4,1
+model,o3,overrated,4,terse,1.7886,1.2648,3,0
+model,o3,overrated,5,disposable,1.7685,0.5274,7,8
+model,o3,overrated,6,energetic,1.6756,0.7948,4,2
+model,o3,overrated,7,indistinct,1.5508,0.9081,3,1
+model,o3,overrated,8,formulaic,1.5146,0.1451,28,124
+model,o3,overrated,9,mythic,1.5141,0.2666,12,32
+model,o3,overrated,10,interchangeable,1.4790,0.2957,10,24
+family,Anthropic,overrated,1,troubling,4.7076,0.7255,49,10
+family,Anthropic,overrated,2,mythologized,3.5903,0.4035,63,43
+family,Anthropic,overrated,3,slow-paced,3.2782,0.7203,24,5
+family,Anthropic,overrated,4,melancholy,3.1370,0.7793,20,3
+family,Anthropic,overrated,5,attrition,3.0107,0.8822,16,1
+family,Anthropic,overrated,6,self-erasure,2.7884,0.6700,19,5
+family,Anthropic,overrated,7,depletion,2.6820,0.8637,13,1
+family,Anthropic,overrated,8,exclusive,2.6699,0.5251,24,11
+family,Anthropic,overrated,9,coasting,2.5634,0.8557,12,1
+family,Anthropic,overrated,10,precious,2.4571,0.6288,16,5
+family,DeepSeek,overrated,1,saccharine,2.8370,0.9236,10,3
+family,DeepSeek,overrated,2,lonely,2.0468,1.2534,4,0
+family,DeepSeek,overrated,3,sanitized,2.0198,0.4580,11,15
+family,DeepSeek,overrated,4,cramped,1.8962,0.6939,6,4
+family,DeepSeek,overrated,5,polite,1.8324,0.9657,4,1
+family,DeepSeek,overrated,6,unassuming,1.7725,1.2534,3,0
+family,DeepSeek,overrated,7,exquisite,1.7725,1.2534,3,0
+family,DeepSeek,overrated,8,frustration,1.7725,1.2534,3,0
+family,DeepSeek,overrated,9,homogenous,1.7725,1.2534,3,0
+family,DeepSeek,overrated,10,unmoved,1.6516,0.7834,4,2
+family,Google,overrated,1,sterile,4.7827,0.5863,52,37
+family,Google,overrated,2,rigid,4.0086,0.4031,59,73
+family,Google,overrated,3,dry,3.6845,1.1651,15,0
+family,Google,overrated,4,chaotic,3.0755,0.4510,30,32
+family,Google,overrated,5,sluggish,3.0238,0.7343,16,7
+family,Google,overrated,6,dogmatic,2.9460,0.7903,14,5
+family,Google,overrated,7,artificial,2.9452,0.5188,23,20
+family,Google,overrated,8,clinical,2.9202,0.5972,19,13
+family,Google,overrated,9,entitled,2.8498,1.0313,10,1
+family,Google,overrated,10,astringent,2.6898,1.1647,8,0
+family,Moonshot,overrated,1,performative,2.4510,0.2684,30,84
+family,Moonshot,overrated,2,implicit,2.0881,1.2787,4,0
+family,Moonshot,overrated,3,pungent,1.9652,0.7192,6,4
+family,Moonshot,overrated,4,self-congratulatory,1.8555,0.6463,6,5
+family,Moonshot,overrated,5,suffocating,1.8150,0.5413,7,8
+family,Moonshot,overrated,6,sedative,1.8083,1.2786,3,0
+family,Moonshot,overrated,7,swingy,1.8083,1.2786,3,0
+family,Moonshot,overrated,8,shouty,1.8083,1.2786,3,0
+family,Moonshot,overrated,9,sensory-assault,1.8083,1.2786,3,0
+family,Moonshot,overrated,10,wallpaper,1.7570,0.5857,6,6
+family,OpenAI,overrated,1,uneven,3.6521,0.6397,35,10
+family,OpenAI,overrated,2,repetitive,3.5044,0.1969,189,234
+family,OpenAI,overrated,3,crowded,3.4265,0.3711,66,48
+family,OpenAI,overrated,4,familiar,3.1683,0.6104,28,9
+family,OpenAI,overrated,5,overwhelming,2.9826,0.5298,30,13
+family,OpenAI,overrated,6,polished,2.8737,0.2657,78,78
+family,OpenAI,overrated,7,iconic,2.7700,0.3283,52,43
+family,OpenAI,overrated,8,distracting,2.6778,0.7286,16,3
+family,OpenAI,overrated,9,simplistic,2.6515,0.3142,51,44
+family,OpenAI,overrated,10,catchy,2.5131,0.6008,18,6
+family,xAI,overrated,1,hedged,2.4090,0.9435,7,2
+family,xAI,overrated,2,mushy,2.4090,0.9435,7,2
+family,xAI,overrated,3,polished,2.2046,0.2072,36,120
+family,xAI,overrated,4,hype,2.1486,0.7512,7,4
+family,xAI,overrated,5,unfinished,2.1111,1.0207,5,1
+family,xAI,overrated,6,cardboard,2.0605,1.2618,4,0
+family,xAI,overrated,7,inflated,1.9685,0.3570,14,27
+family,xAI,overrated,8,bland,1.9509,0.2407,23,67
+family,xAI,overrated,9,obligatory,1.9421,0.8564,5,2
+family,xAI,overrated,10,carb-heavy,1.8483,0.9741,4,1
