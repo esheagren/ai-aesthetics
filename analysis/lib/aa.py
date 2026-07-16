@@ -38,11 +38,11 @@ ALL_MODELS = list(FAMILY.keys())
 # ---- domain groupings -----------------------------------------------------
 DOMAIN_GROUP = {}
 for _g, _ds in {
-    "cultural": "book film album painting poem videogame tvshow play musical boardgame childrensbook".split(),
-    "people": "architect novelist philosopher economist scientist theologian mathematician historian psychologist computerscientist airesearcher actor actress".split(),
-    "places": "city uscity street building monument".split(),
-    "design_sensory": "word typeface object color season smell decade cuisine dish".split(),
-    "meta": "aimodel artmovement religioustext sport".split(),
+    "cultural": "book film album painting poem videogame tvshow play musical boardgame childrensbook song".split(),
+    "people": "architect novelist philosopher economist scientist theologian mathematician historian psychologist computerscientist airesearcher actor actress musician composer director".split(),
+    "places": "city uscity street building monument country".split(),
+    "design_sensory": "word typeface object color season smell decade cuisine dish sound".split(),
+    "meta": "aimodel artmovement religioustext sport proglang".split(),
 }.items():
     for _d in _ds:
         DOMAIN_GROUP[_d] = _g
