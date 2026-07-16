@@ -1,0 +1,19 @@
+{
+  "n_domains": 50,
+  "modal": {
+    "gap_ovr_minus_fav": 0.07012,
+    "p_perm": 0.0439978001099945,
+    "sign_pos": 30,
+    "sign_neg": 15,
+    "sign_zero": 5,
+    "p_sign": 0.035697803555194696
+  },
+  "entropy": {
+    "gap_fav_minus_ovr": 0.0049180000000000005,
+    "p_perm": 0.8630068496575172,
+    "sign_pos": 23,
+    "sign_neg": 27,
+    "sign_zero": 0,
+    "p_sign": 0.6718110337653656
+  }
+}

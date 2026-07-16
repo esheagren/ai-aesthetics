@@ -1,0 +1,457 @@
+{
+  "all_14_domains": {
+    "per_domain": [
+      {
+        "domain": "novelist",
+        "n_favorite_known": 120,
+        "n_overrated_known": 111,
+        "n_favorite_raw": 120,
+        "n_overrated_raw": 111,
+        "female_share_favorite": 0.275,
+        "female_share_overrated": 0.04504504504504504,
+        "diff": 0.229954954954955,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "philosopher",
+        "n_favorite_known": 100,
+        "n_overrated_known": 116,
+        "n_favorite_raw": 100,
+        "n_overrated_raw": 116,
+        "female_share_favorite": 0.01,
+        "female_share_overrated": 0.15517241379310345,
+        "diff": -0.14517241379310344,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "economist",
+        "n_favorite_known": 156,
+        "n_overrated_known": 130,
+        "n_favorite_raw": 156,
+        "n_overrated_raw": 130,
+        "female_share_favorite": 0.07051282051282051,
+        "female_share_overrated": 0.0,
+        "diff": 0.07051282051282051,
+        "perm_p": 0.0032998350082495873
+      },
+      {
+        "domain": "scientist",
+        "n_favorite_known": 134,
+        "n_overrated_known": 114,
+        "n_favorite_raw": 134,
+        "n_overrated_raw": 114,
+        "female_share_favorite": 0.5373134328358209,
+        "female_share_overrated": 0.017543859649122806,
+        "diff": 0.519769573186698,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "theologian",
+        "n_favorite_known": 104,
+        "n_overrated_known": 96,
+        "n_favorite_raw": 104,
+        "n_overrated_raw": 96,
+        "female_share_favorite": 0.009615384615384616,
+        "female_share_overrated": 0.0,
+        "diff": 0.009615384615384616,
+        "perm_p": 1.0
+      },
+      {
+        "domain": "mathematician",
+        "n_favorite_known": 96,
+        "n_overrated_known": 135,
+        "n_favorite_raw": 96,
+        "n_overrated_raw": 135,
+        "female_share_favorite": 0.3958333333333333,
+        "female_share_overrated": 0.0,
+        "diff": 0.3958333333333333,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "historian",
+        "n_favorite_known": 108,
+        "n_overrated_known": 121,
+        "n_favorite_raw": 108,
+        "n_overrated_raw": 121,
+        "female_share_favorite": 0.24074074074074073,
+        "female_share_overrated": 0.09917355371900827,
+        "diff": 0.14156718702173246,
+        "perm_p": 0.004099795010249488
+      },
+      {
+        "domain": "psychologist",
+        "n_favorite_known": 84,
+        "n_overrated_known": 88,
+        "n_favorite_raw": 84,
+        "n_overrated_raw": 88,
+        "female_share_favorite": 0.0,
+        "female_share_overrated": 0.0,
+        "diff": 0.0,
+        "perm_p": 1.0
+      },
+      {
+        "domain": "computerscientist",
+        "n_favorite_known": 104,
+        "n_overrated_known": 117,
+        "n_favorite_raw": 104,
+        "n_overrated_raw": 117,
+        "female_share_favorite": 0.22115384615384615,
+        "female_share_overrated": 0.09401709401709402,
+        "diff": 0.12713675213675213,
+        "perm_p": 0.014149292535373231
+      },
+      {
+        "domain": "airesearcher",
+        "n_favorite_known": 116,
+        "n_overrated_known": 91,
+        "n_favorite_raw": 116,
+        "n_overrated_raw": 91,
+        "female_share_favorite": 0.008620689655172414,
+        "female_share_overrated": 0.0,
+        "diff": 0.008620689655172414,
+        "perm_p": 1.0
+      },
+      {
+        "domain": "architect",
+        "n_favorite_known": 108,
+        "n_overrated_known": 115,
+        "n_favorite_raw": 108,
+        "n_overrated_raw": 115,
+        "female_share_favorite": 0.06481481481481481,
+        "female_share_overrated": 0.0,
+        "diff": 0.06481481481481481,
+        "perm_p": 0.006049697515124244
+      },
+      {
+        "domain": "musician",
+        "n_favorite_known": 88,
+        "n_overrated_known": 83,
+        "n_favorite_raw": 88,
+        "n_overrated_raw": 103,
+        "female_share_favorite": 0.09090909090909091,
+        "female_share_overrated": 0.21686746987951808,
+        "diff": -0.12595837897042717,
+        "perm_p": 0.035248237588120596
+      },
+      {
+        "domain": "composer",
+        "n_favorite_known": 87,
+        "n_overrated_known": 84,
+        "n_favorite_raw": 87,
+        "n_overrated_raw": 84,
+        "female_share_favorite": 0.47126436781609193,
+        "female_share_overrated": 0.0,
+        "diff": 0.47126436781609193,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "director",
+        "n_favorite_known": 84,
+        "n_overrated_known": 67,
+        "n_favorite_raw": 84,
+        "n_overrated_raw": 67,
+        "female_share_favorite": 0.0,
+        "female_share_overrated": 0.0,
+        "diff": 0.0,
+        "perm_p": 1.0
+      }
+    ],
+    "pooled": {
+      "exclude": {
+        "n_favorite": 1489,
+        "n_overrated": 1468,
+        "female_share_favorite": 0.17595701813297515,
+        "female_share_overrated": 0.04495912806539509,
+        "diff": 0.13099789006758006,
+        "perm_p": 4.999750012499375e-05
+      },
+      "worst_case": {
+        "n_favorite": 1489,
+        "n_overrated": 1488,
+        "female_share_favorite": 0.17595701813297515,
+        "female_share_overrated": 0.05779569892473118,
+        "diff": 0.11816131920824396,
+        "perm_p": 4.999750012499375e-05
+      }
+    },
+    "coverage": 0.9932818273429627,
+    "total_samples": 2977,
+    "unknown_samples": 20
+  },
+  "original_11_domains": {
+    "per_domain": [
+      {
+        "domain": "novelist",
+        "n_favorite_known": 120,
+        "n_overrated_known": 111,
+        "n_favorite_raw": 120,
+        "n_overrated_raw": 111,
+        "female_share_favorite": 0.275,
+        "female_share_overrated": 0.04504504504504504,
+        "diff": 0.229954954954955,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "philosopher",
+        "n_favorite_known": 100,
+        "n_overrated_known": 116,
+        "n_favorite_raw": 100,
+        "n_overrated_raw": 116,
+        "female_share_favorite": 0.01,
+        "female_share_overrated": 0.15517241379310345,
+        "diff": -0.14517241379310344,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "economist",
+        "n_favorite_known": 156,
+        "n_overrated_known": 130,
+        "n_favorite_raw": 156,
+        "n_overrated_raw": 130,
+        "female_share_favorite": 0.07051282051282051,
+        "female_share_overrated": 0.0,
+        "diff": 0.07051282051282051,
+        "perm_p": 0.0032998350082495873
+      },
+      {
+        "domain": "scientist",
+        "n_favorite_known": 134,
+        "n_overrated_known": 114,
+        "n_favorite_raw": 134,
+        "n_overrated_raw": 114,
+        "female_share_favorite": 0.5373134328358209,
+        "female_share_overrated": 0.017543859649122806,
+        "diff": 0.519769573186698,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "theologian",
+        "n_favorite_known": 104,
+        "n_overrated_known": 96,
+        "n_favorite_raw": 104,
+        "n_overrated_raw": 96,
+        "female_share_favorite": 0.009615384615384616,
+        "female_share_overrated": 0.0,
+        "diff": 0.009615384615384616,
+        "perm_p": 1.0
+      },
+      {
+        "domain": "mathematician",
+        "n_favorite_known": 96,
+        "n_overrated_known": 135,
+        "n_favorite_raw": 96,
+        "n_overrated_raw": 135,
+        "female_share_favorite": 0.3958333333333333,
+        "female_share_overrated": 0.0,
+        "diff": 0.3958333333333333,
+        "perm_p": 4.999750012499375e-05
+      },
+      {
+        "domain": "historian",
+        "n_favorite_known": 108,
+        "n_overrated_known": 121,
+        "n_favorite_raw": 108,
+        "n_overrated_raw": 121,
+        "female_share_favorite": 0.24074074074074073,
+        "female_share_overrated": 0.09917355371900827,
+        "diff": 0.14156718702173246,
+        "perm_p": 0.004099795010249488
+      },
+      {
+        "domain": "psychologist",
+        "n_favorite_known": 84,
+        "n_overrated_known": 88,
+        "n_favorite_raw": 84,
+        "n_overrated_raw": 88,
+        "female_share_favorite": 0.0,
+        "female_share_overrated": 0.0,
+        "diff": 0.0,
+        "perm_p": 1.0
+      },
+      {
+        "domain": "computerscientist",
+        "n_favorite_known": 104,
+        "n_overrated_known": 117,
+        "n_favorite_raw": 104,
+        "n_overrated_raw": 117,
+        "female_share_favorite": 0.22115384615384615,
+        "female_share_overrated": 0.09401709401709402,
+        "diff": 0.12713675213675213,
+        "perm_p": 0.014149292535373231
+      },
+      {
+        "domain": "airesearcher",
+        "n_favorite_known": 116,
+        "n_overrated_known": 91,
+        "n_favorite_raw": 116,
+        "n_overrated_raw": 91,
+        "female_share_favorite": 0.008620689655172414,
+        "female_share_overrated": 0.0,
+        "diff": 0.008620689655172414,
+        "perm_p": 1.0
+      },
+      {
+        "domain": "architect",
+        "n_favorite_known": 108,
+        "n_overrated_known": 115,
+        "n_favorite_raw": 108,
+        "n_overrated_raw": 115,
+        "female_share_favorite": 0.06481481481481481,
+        "female_share_overrated": 0.0,
+        "diff": 0.06481481481481481,
+        "perm_p": 0.006049697515124244
+      }
+    ],
+    "pooled": {
+      "exclude": {
+        "n_favorite": 1230,
+        "n_overrated": 1234,
+        "female_share_favorite": 0.17317073170731706,
+        "female_share_overrated": 0.03889789303079417,
+        "diff": 0.1342728386765229,
+        "perm_p": 4.999750012499375e-05
+      },
+      "worst_case": {
+        "n_favorite": 1230,
+        "n_overrated": 1234,
+        "female_share_favorite": 0.17317073170731706,
+        "female_share_overrated": 0.03889789303079417,
+        "diff": 0.1342728386765229,
+        "perm_p": 4.999750012499375e-05
+      }
+    },
+    "coverage": 1.0,
+    "total_samples": 2464,
+    "unknown_samples": 0
+  },
+  "director_only": {
+    "per_domain": [
+      {
+        "domain": "director",
+        "n_favorite_known": 84,
+        "n_overrated_known": 67,
+        "n_favorite_raw": 84,
+        "n_overrated_raw": 67,
+        "female_share_favorite": 0.0,
+        "female_share_overrated": 0.0,
+        "diff": 0.0,
+        "perm_p": 1.0
+      }
+    ],
+    "pooled": {
+      "exclude": {
+        "n_favorite": 84,
+        "n_overrated": 67,
+        "female_share_favorite": 0.0,
+        "female_share_overrated": 0.0,
+        "diff": 0.0,
+        "perm_p": 1.0
+      },
+      "worst_case": {
+        "n_favorite": 84,
+        "n_overrated": 67,
+        "female_share_favorite": 0.0,
+        "female_share_overrated": 0.0,
+        "diff": 0.0,
+        "perm_p": 1.0
+      }
+    },
+    "coverage": 1.0,
+    "total_samples": 151,
+    "unknown_samples": 0
+  },
+  "scientist_favorite_top8": [
+    [
+      "Emmy Noether",
+      34
+    ],
+    [
+      "Richard Feynman",
+      26
+    ],
+    [
+      "Marie Curie",
+      24
+    ],
+    [
+      "Ada Lovelace",
+      14
+    ],
+    [
+      "Alan Turing",
+      9
+    ],
+    [
+      "James Clerk Maxwell",
+      8
+    ],
+    [
+      "Santiago Ram\u00f3n y Cajal",
+      7
+    ],
+    [
+      "Michael Faraday",
+      6
+    ]
+  ],
+  "scientist_overrated_top8": [
+    [
+      "Neil deGrasse Tyson",
+      29
+    ],
+    [
+      "Nikola Tesla",
+      24
+    ],
+    [
+      "Albert Einstein",
+      16
+    ],
+    [
+      "Thomas Edison",
+      13
+    ],
+    [
+      "Richard Feynman",
+      9
+    ],
+    [
+      "Stephen Hawking",
+      9
+    ],
+    [
+      "Carl Sagan",
+      7
+    ],
+    [
+      "Michio Kaku",
+      4
+    ]
+  ],
+  "gendered_domain_check": {
+    "actor": {
+      "tom hanks": 30,
+      "leonardo dicaprio": 25,
+      "daniel day-lewis": 23,
+      "tom cruise": 19,
+      "toshiro mifune": 16,
+      "ryan reynolds": 16,
+      "mahershala ali": 7,
+      "ryan gosling": 7,
+      "brad pitt": 6,
+      "dwayne johnson": 5
+    },
+    "actress": {
+      "jennifer lawrence": 55,
+      "cate blanchett": 35,
+      "tilda swinton": 27,
+      "meryl streep": 25,
+      "scarlett johansson": 6,
+      "audrey hepburn": 4,
+      "emma watson": 4,
+      "julia roberts": 3,
+      "kristen stewart": 2,
+      "anne hathaway": 2
+    }
+  }
+}

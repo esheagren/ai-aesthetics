@@ -1,0 +1,85 @@
+{
+  "law1": {
+    "sound_favorite": {
+      "modal_frac": 0.3333333333333333,
+      "n_models": 12,
+      "winner": "rain on window at night",
+      "entropy": 0.7600413655568575
+    },
+    "sound_overrated": {
+      "modal_frac": 0.6666666666666666,
+      "n_models": 12,
+      "winner": "ocean waves crashing on the shore",
+      "entropy": 0.5680590300679499
+    },
+    "sound_theme_favorite": {
+      "modal_frac": 0.6666666666666666,
+      "n_models": 12,
+      "winner": "rain",
+      "entropy": 0.644939088895003
+    },
+    "sound_theme_overrated": {
+      "modal_frac": 0.5833333333333334,
+      "n_models": 12,
+      "winner": "ocean",
+      "entropy": 0.5514728135056196
+    },
+    "sound_rank_favorite": 35,
+    "n_domains": 50,
+    "group_test": {
+      "obs_modal_frac": 0.5410256410256411,
+      "p_modal_frac": 0.09384530773461328,
+      "obs_entropy": 0.47438938291187827,
+      "p_entropy": 0.5823708814559272,
+      "group_size": 10
+    }
+  },
+  "law2_music": {
+    "n_fav": 389,
+    "n_ovr": 402,
+    "coverage_total": 791,
+    "coverage_unknown": 0,
+    "asia_test": {
+      "fav_rate": 0.010282776349614395,
+      "ovr_rate": 0.0,
+      "diff": 0.010282776349614395,
+      "p": 0.05764711764411779,
+      "n_fav": 389,
+      "n_ovr": 402
+    },
+    "na_test": {
+      "fav_rate": 0.2262210796915167,
+      "ovr_rate": 0.19900497512437812,
+      "diff": 0.027216104567138577,
+      "p": 0.38603069846507676
+    },
+    "west_test": {
+      "fav_rate": 0.9357326478149101,
+      "ovr_rate": 0.9900497512437811,
+      "diff": -0.05431710342887108,
+      "p": 9.99950002499875e-05
+    }
+  },
+  "law2_country": {
+    "n_fav": 55,
+    "n_ovr": 81,
+    "coverage_total": 136,
+    "coverage_unknown": 0,
+    "us_fav": 0,
+    "us_ovr": 1,
+    "jp_fav": 47,
+    "jp_ovr": 15,
+    "asia_test": {
+      "fav_rate": 0.8545454545454545,
+      "ovr_rate": 0.18518518518518517,
+      "diff": 0.6693602693602694,
+      "p": 4.999750012499375e-05
+    },
+    "na_test": {
+      "fav_rate": 0.0,
+      "ovr_rate": 0.012345679012345678,
+      "diff": -0.012345679012345678,
+      "p": 1.0
+    }
+  }
+}

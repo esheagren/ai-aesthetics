@@ -1,0 +1,15 @@
+domain,n_favorite_known,n_overrated_known,female_share_favorite,female_share_overrated,diff,perm_p
+novelist,120,111,0.275,0.045,0.23,5e-05
+philosopher,100,116,0.01,0.1552,-0.1452,5e-05
+economist,156,130,0.0705,0.0,0.0705,0.0033
+scientist,134,114,0.5373,0.0175,0.5198,5e-05
+theologian,104,96,0.0096,0.0,0.0096,1.0
+mathematician,96,135,0.3958,0.0,0.3958,5e-05
+historian,108,121,0.2407,0.0992,0.1416,0.0041
+psychologist,84,88,0.0,0.0,0.0,1.0
+computerscientist,104,117,0.2212,0.094,0.1271,0.014149
+airesearcher,116,91,0.0086,0.0,0.0086,1.0
+architect,108,115,0.0648,0.0,0.0648,0.00605
+musician,88,83,0.0909,0.2169,-0.126,0.035248
+composer,87,84,0.4713,0.0,0.4713,5e-05
+director,84,67,0.0,0.0,0.0,1.0

@@ -27,7 +27,11 @@ import aa
 # raw data but not the shipped 43-domain panel) are excluded throughout.
 LEGACY_DOMAINS = {"bookcover", "chair"}
 OFFICIAL_DOMAINS = sorted(set(aa.DOMAIN_GROUP.keys()) | {"blogger"})
-assert len(OFFICIAL_DOMAINS) == 43, len(OFFICIAL_DOMAINS)
+# Round 1 shipped 43 domains. v6 (2026-07) added musician, composer, song, director,
+# proglang, sound, country to aa.DOMAIN_GROUP -> 50. Tolerate either known vintage
+# (this module is re-run as-is for the v6 robustness check in analysis/round3) but
+# still fail loud if aa.py's domain map breaks in some other way.
+assert len(OFFICIAL_DOMAINS) in (43, 50), len(OFFICIAL_DOMAINS)
 GROUP_OF = dict(aa.DOMAIN_GROUP)  # blogger absent -> .get(..., "ungrouped")
 
 

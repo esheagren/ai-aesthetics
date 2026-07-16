@@ -1,0 +1,172 @@
+{
+  "pooled": {
+    "Anthropic": {
+      "n_in_rows": 54,
+      "n_out_rows": 139,
+      "in_group_rate": 0.1481,
+      "other_lab_rate": 0.1223,
+      "chance_rate_pooled": 0.1295,
+      "obs_diff": 0.0258,
+      "p_greater": 0.39553022348882555
+    },
+    "OpenAI": {
+      "n_in_rows": 57,
+      "n_out_rows": 136,
+      "in_group_rate": 0.5439,
+      "other_lab_rate": 0.3088,
+      "chance_rate_pooled": 0.3782,
+      "obs_diff": 0.235,
+      "p_greater": 0.001799910004499775
+    },
+    "Google": {
+      "n_in_rows": 31,
+      "n_out_rows": 162,
+      "in_group_rate": 0.6774,
+      "other_lab_rate": 0.4074,
+      "chance_rate_pooled": 0.4508,
+      "obs_diff": 0.27,
+      "p_greater": 0.004949752512374382
+    },
+    "xAI": {
+      "n_in_rows": 24,
+      "n_out_rows": 169,
+      "in_group_rate": 0.3333,
+      "other_lab_rate": 0.0,
+      "chance_rate_pooled": 0.0415,
+      "obs_diff": 0.3333,
+      "p_greater": 4.999750012499375e-05
+    },
+    "DeepSeek": {
+      "n_in_rows": 13,
+      "n_out_rows": 180,
+      "in_group_rate": 0.0,
+      "other_lab_rate": 0.0,
+      "chance_rate_pooled": 0.0,
+      "obs_diff": 0.0,
+      "p_greater": 1.0
+    },
+    "Moonshot": {
+      "n_in_rows": 14,
+      "n_out_rows": 179,
+      "in_group_rate": 0.0,
+      "other_lab_rate": 0.0,
+      "chance_rate_pooled": 0.0,
+      "obs_diff": 0.0,
+      "p_greater": 1.0
+    }
+  },
+  "by_domain": {
+    "aimodel": {
+      "Anthropic": {
+        "n_in_rows": 40,
+        "n_out_rows": 92,
+        "in_group_rate": 0.2,
+        "other_lab_rate": 0.0978,
+        "chance_rate_pooled": 0.1288,
+        "obs_diff": 0.1022,
+        "p_greater": 0.09229538523073846
+      },
+      "OpenAI": {
+        "n_in_rows": 39,
+        "n_out_rows": 93,
+        "in_group_rate": 0.7949,
+        "other_lab_rate": 0.4194,
+        "chance_rate_pooled": 0.5303,
+        "obs_diff": 0.3755,
+        "p_greater": 4.999750012499375e-05
+      },
+      "Google": {
+        "n_in_rows": 23,
+        "n_out_rows": 109,
+        "in_group_rate": 0.913,
+        "other_lab_rate": 0.1468,
+        "chance_rate_pooled": 0.2803,
+        "obs_diff": 0.7663,
+        "p_greater": 4.999750012499375e-05
+      },
+      "xAI": {
+        "n_in_rows": 12,
+        "n_out_rows": 120,
+        "in_group_rate": 0.6667,
+        "other_lab_rate": 0.0,
+        "chance_rate_pooled": 0.0606,
+        "obs_diff": 0.6667,
+        "p_greater": 4.999750012499375e-05
+      },
+      "DeepSeek": {
+        "n_in_rows": 6,
+        "n_out_rows": 126,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.0,
+        "chance_rate_pooled": 0.0,
+        "obs_diff": 0.0,
+        "p_greater": 1.0
+      },
+      "Moonshot": {
+        "n_in_rows": 12,
+        "n_out_rows": 120,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.0,
+        "chance_rate_pooled": 0.0,
+        "obs_diff": 0.0,
+        "p_greater": 1.0
+      }
+    },
+    "airesearcher": {
+      "Anthropic": {
+        "n_in_rows": 14,
+        "n_out_rows": 47,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.1702,
+        "chance_rate_pooled": 0.1311,
+        "obs_diff": -0.1702,
+        "p_greater": 1.0
+      },
+      "OpenAI": {
+        "n_in_rows": 18,
+        "n_out_rows": 43,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.0698,
+        "chance_rate_pooled": 0.0492,
+        "obs_diff": -0.0698,
+        "p_greater": 1.0
+      },
+      "Google": {
+        "n_in_rows": 8,
+        "n_out_rows": 53,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.9434,
+        "chance_rate_pooled": 0.8197,
+        "obs_diff": -0.9434,
+        "p_greater": 1.0
+      },
+      "xAI": {
+        "n_in_rows": 12,
+        "n_out_rows": 49,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.0,
+        "chance_rate_pooled": 0.0,
+        "obs_diff": 0.0,
+        "p_greater": 1.0
+      },
+      "DeepSeek": {
+        "n_in_rows": 7,
+        "n_out_rows": 54,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.0,
+        "chance_rate_pooled": 0.0,
+        "obs_diff": 0.0,
+        "p_greater": 1.0
+      },
+      "Moonshot": {
+        "n_in_rows": 2,
+        "n_out_rows": 59,
+        "in_group_rate": 0.0,
+        "other_lab_rate": 0.0,
+        "chance_rate_pooled": 0.0,
+        "obs_diff": 0.0,
+        "p_greater": 1.0
+      }
+    }
+  }
+}

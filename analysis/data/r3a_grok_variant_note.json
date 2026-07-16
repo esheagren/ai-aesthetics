@@ -1,0 +1,13 @@
+{
+  "raw_entity_counts": {
+    "claude 3.5 sonnet": 4,
+    "grok-2": 1,
+    "grok": 3,
+    "grok-1": 2,
+    "grok-4": 2
+  },
+  "lab_aggregated_counts": {
+    "Anthropic": 4,
+    "xAI": 8
+  }
+}

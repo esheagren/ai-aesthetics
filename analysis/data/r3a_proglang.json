@@ -1,0 +1,127 @@
+{
+  "favorite_counts": [
+    [
+      "python",
+      53
+    ],
+    [
+      "haskell",
+      5
+    ],
+    [
+      "rust",
+      4
+    ],
+    [
+      "lisp",
+      2
+    ]
+  ],
+  "overrated_counts": [
+    [
+      "python",
+      31
+    ],
+    [
+      "javascript",
+      29
+    ],
+    [
+      "java",
+      2
+    ],
+    [
+      "rust",
+      2
+    ]
+  ],
+  "models_with_zero_data": [
+    "gemini-3.1-pro-preview"
+  ],
+  "fav_by_model": {
+    "gpt-4o": {
+      "python": 4
+    },
+    "o3": {
+      "rust": 3,
+      "python": 6,
+      "haskell": 3
+    },
+    "deepseek-v4-pro": {
+      "python": 6,
+      "haskell": 2
+    },
+    "claude-opus-4-1": {
+      "python": 4
+    },
+    "gpt-5.2": {
+      "python": 4
+    },
+    "grok-4.5": {
+      "python": 4
+    },
+    "gpt-5.6-sol": {
+      "python": 7,
+      "rust": 1
+    },
+    "kimi-k2.6": {
+      "python": 4
+    },
+    "claude-opus-4-5": {
+      "python": 4
+    },
+    "claude-opus-4-8": {
+      "python": 4
+    },
+    "claude-fable-5": {
+      "python": 4
+    },
+    "gemini-3.5-flash": {
+      "lisp": 2,
+      "python": 2
+    }
+  },
+  "ovr_by_model": {
+    "gpt-4o": {
+      "java": 2,
+      "javascript": 6
+    },
+    "o3": {
+      "javascript": 4
+    },
+    "deepseek-v4-pro": {
+      "javascript": 4,
+      "python": 4
+    },
+    "claude-opus-4-1": {
+      "javascript": 4
+    },
+    "gpt-5.2": {
+      "javascript": 4
+    },
+    "grok-4.5": {
+      "python": 3,
+      "javascript": 5
+    },
+    "gpt-5.6-sol": {
+      "python": 4
+    },
+    "kimi-k2.6": {
+      "python": 4
+    },
+    "claude-opus-4-5": {
+      "python": 6,
+      "javascript": 2
+    },
+    "claude-opus-4-8": {
+      "python": 4
+    },
+    "claude-fable-5": {
+      "python": 4
+    },
+    "gemini-3.5-flash": {
+      "rust": 2,
+      "python": 2
+    }
+  }
+}

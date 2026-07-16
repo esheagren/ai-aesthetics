@@ -1,0 +1,51 @@
+domain,group,n_models_favorite,n_models_overrated,modal_frac_favorite,modal_frac_overrated,modal_winner_favorite,modal_winner_overrated,modal_gap_ovr_minus_fav,entropy_favorite,entropy_overrated,entropy_gap_fav_minus_ovr
+actor,people,13,13,0.3077,0.3077,daniel day-lewis,tom hanks,0.0,0.3099,0.6181,-0.3082
+actress,people,13,13,0.5385,0.6154,cate blanchett,jennifer lawrence,0.0769,0.3401,0.393,-0.0529
+aimodel,meta,13,13,0.3077,0.3846,gpt-4,gpt-4,0.0769,0.781,0.742,0.0389
+airesearcher,people,13,13,0.3846,0.3077,geoffrey hinton,yann lecun,-0.0769,0.5733,0.7008,-0.1274
+album,cultural,13,13,0.3077,0.3846,in rainbows,sgt. pepper's lonely hearts club band,0.0769,0.6592,0.8004,-0.1412
+architect,people,13,13,0.6923,0.9231,tadao ando,frank gehry,0.2308,0.3784,0.3447,0.0337
+artmovement,meta,13,13,0.5385,0.6923,surrealism,impressionism,0.1538,0.3968,0.3922,0.0045
+blogger,ungrouped,13,13,0.3077,0.6154,the marginalian,tim ferriss,0.3077,0.5008,0.5961,-0.0953
+boardgame,cultural,13,13,0.6154,0.6923,go,monopoly,0.0769,0.4358,0.2901,0.1457
+book,cultural,13,13,0.3077,0.7692,invisible cities,the catcher in the rye,0.4615,0.6643,0.3659,0.2984
+building,places,13,13,0.4615,0.3846,sagrada família,sydney opera house,-0.0769,0.6793,0.542,0.1373
+childrensbook,cultural,13,13,0.4615,1.0,where the wild things are,the giving tree,0.5385,0.3008,0.042,0.2588
+city,places,13,12,0.8462,0.8333,kyoto,paris,-0.0128,0.1411,0.2926,-0.1515
+color,design_sensory,13,13,0.3077,0.3077,cerulean,millennial pink,0.0,0.648,0.6247,0.0233
+composer,people,12,12,0.4167,0.3333,caroline shaw,max richter,-0.0833,0.2764,0.397,-0.1206
+computerscientist,people,13,13,0.3846,0.4615,alan turing,alan turing,0.0769,0.4354,0.5917,-0.1563
+country,places,12,12,0.9167,0.5833,japan,france,-0.3333,0.0453,0.3898,-0.3445
+cuisine,design_sensory,13,13,0.9231,0.6923,japanese cuisine,french cuisine,-0.2308,0.1239,0.3736,-0.2497
+decade,design_sensory,13,13,0.3846,0.4615,1960s,1980s,0.0769,0.5091,0.3514,0.1577
+director,people,12,12,0.25,0.5833,stanley kubrick,christopher nolan,0.3333,0.3853,0.2551,0.1302
+dish,design_sensory,13,13,0.3846,0.1538,ramen,truffle fries,-0.2308,0.6233,0.5748,0.0485
+economist,people,13,13,0.3846,0.4615,john maynard keynes,milton friedman,0.0769,0.5725,0.4924,0.0801
+film,cultural,13,13,0.3077,0.4615,2001: a space odyssey,avatar,0.1538,0.5583,0.4535,0.1048
+historian,people,13,13,0.3846,0.3846,fernand braudel,david mccullough,0.0,0.4994,0.5384,-0.0389
+mathematician,people,13,13,0.3077,0.3846,emmy noether,srinivasa ramanujan,0.0769,0.4061,0.7843,-0.3782
+monument,places,13,13,0.3846,0.3846,pantheon,eiffel tower,0.0,0.6601,0.5473,0.1129
+musical,cultural,13,13,0.3846,0.3846,sunday in the park with george,hamilton,0.0,0.3771,0.5181,-0.1409
+musician,people,12,12,0.6667,0.5,johann sebastian bach,ed sheeran,-0.1667,0.4861,0.5516,-0.0655
+novelist,people,13,13,0.2308,0.4615,italo calvino,ernest hemingway,0.2308,0.502,0.5157,-0.0136
+object,design_sensory,13,13,0.3077,0.1538,paper clip,french press coffee maker,-0.1538,0.6002,0.7101,-0.1099
+painting,cultural,13,13,0.3846,0.6923,the starry night,mona lisa,0.3077,0.4073,0.302,0.1053
+philosopher,people,13,13,0.3846,0.4615,ludwig wittgenstein,friedrich nietzsche,0.0769,0.3765,0.543,-0.1666
+play,cultural,13,13,0.3846,0.2308,rosencrantz and guildenstern are dead,waiting for godot,-0.1538,0.4106,0.4258,-0.0152
+poem,cultural,13,13,0.3846,0.8462,the love song of j. alfred prufrock,the road not taken,0.4615,0.6153,0.0643,0.5509
+proglang,meta,12,12,0.9167,0.5,python,javascript,-0.4167,0.2751,0.3814,-0.1063
+psychologist,people,13,13,0.3846,0.7692,carl jung,sigmund freud,0.3846,0.3279,0.3363,-0.0084
+religioustext,meta,13,13,0.7692,0.4615,tao te ching,book of revelation,-0.3077,0.3024,0.6682,-0.3658
+scientist,people,13,13,0.2308,0.3077,marie curie,neil degrasse tyson,0.0769,0.5323,0.6276,-0.0953
+season,design_sensory,13,13,0.9231,0.8462,autumn,summer,-0.0769,0.0624,0.1878,-0.1254
+smell,design_sensory,13,13,0.8462,0.4615,petrichor,fresh-cut grass,-0.3846,0.4297,0.4553,-0.0256
+song,cultural,12,12,0.5833,0.6667,clair de lune,imagine,0.0833,0.4702,0.4961,-0.0259
+sound,design_sensory,12,12,0.3333,0.6667,rain on window at night,ocean waves crashing on the shore,0.3333,0.76,0.5681,0.192
+sport,meta,13,13,0.3846,0.4615,basketball,golf,0.0769,0.6999,0.3926,0.3073
+street,places,13,13,0.3077,0.5385,philosopher's walk,champs-élysées,0.2308,0.8,0.4352,0.3647
+theologian,people,13,13,0.3846,0.5385,thomas aquinas,c.s. lewis,0.1538,0.5463,0.3629,0.1835
+tvshow,cultural,13,13,0.1538,0.9231,twin peaks,friends,0.7692,0.552,0.1967,0.3554
+typeface,design_sensory,13,13,0.6923,0.8462,garamond,helvetica,0.1538,0.5094,0.3012,0.2082
+uscity,places,13,13,0.5385,0.3077,san francisco,los angeles,-0.2308,0.1922,0.3077,-0.1155
+videogame,cultural,13,13,0.4615,0.5385,outer wilds,the legend of zelda: breath of the wild,0.0769,0.5201,0.6874,-0.1672
+word,design_sensory,13,13,0.3077,0.5385,liminal,serendipity,0.2308,0.4778,0.3622,0.1156

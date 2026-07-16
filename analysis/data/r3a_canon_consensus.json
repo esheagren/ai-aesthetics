@@ -1,0 +1,90 @@
+{
+  "overall_mean_entropy_favorite": 0.463,
+  "overall_mean_entropy_overrated": 0.451,
+  "ai_mean_entropy_favorite": 0.5209,
+  "ai_mean_entropy_overrated": 0.6084,
+  "obs_diff_favorite": 0.0628,
+  "p_favorite": 0.29678516074196293,
+  "obs_diff_overrated": 0.1706,
+  "p_overrated": 0.004949752512374382,
+  "domain_table": [
+    {
+      "domain": "aimodel",
+      "mean_entropy_favorite": 0.781,
+      "mean_entropy_overrated": 0.742,
+      "n_models_favorite": 13,
+      "n_models_overrated": 13
+    },
+    {
+      "domain": "airesearcher",
+      "mean_entropy_favorite": 0.5733,
+      "mean_entropy_overrated": 0.7008,
+      "n_models_favorite": 13,
+      "n_models_overrated": 13
+    },
+    {
+      "domain": "computerscientist",
+      "mean_entropy_favorite": 0.4354,
+      "mean_entropy_overrated": 0.5917,
+      "n_models_favorite": 13,
+      "n_models_overrated": 13
+    },
+    {
+      "domain": "proglang",
+      "mean_entropy_favorite": 0.2751,
+      "mean_entropy_overrated": 0.3814,
+      "n_models_favorite": 12,
+      "n_models_overrated": 12
+    }
+  ],
+  "breadth_table": [
+    {
+      "domain": "aimodel",
+      "probe": "favorite",
+      "top_entity": "gpt-2",
+      "n_models_of_13": 6
+    },
+    {
+      "domain": "aimodel",
+      "probe": "overrated",
+      "top_entity": "gpt-4",
+      "n_models_of_13": 8
+    },
+    {
+      "domain": "airesearcher",
+      "probe": "favorite",
+      "top_entity": "geoffrey hinton",
+      "n_models_of_13": 9
+    },
+    {
+      "domain": "airesearcher",
+      "probe": "overrated",
+      "top_entity": "yann lecun",
+      "n_models_of_13": 8
+    },
+    {
+      "domain": "computerscientist",
+      "probe": "favorite",
+      "top_entity": "alan turing",
+      "n_models_of_13": 10
+    },
+    {
+      "domain": "computerscientist",
+      "probe": "overrated",
+      "top_entity": "alan turing",
+      "n_models_of_13": 9
+    },
+    {
+      "domain": "proglang",
+      "probe": "favorite",
+      "top_entity": "python",
+      "n_models_of_13": 12
+    },
+    {
+      "domain": "proglang",
+      "probe": "overrated",
+      "top_entity": "python",
+      "n_models_of_13": 8
+    }
+  ]
+}
