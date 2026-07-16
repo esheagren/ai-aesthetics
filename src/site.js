@@ -120,23 +120,25 @@ const CAPABILITY_RANK = {
 // the two collapse to one entry (via aliases). Here the row/card show the person
 // as the title and their blog as the subtitle — keyed by canonical norm. Blank
 // blog = show the person alone (no distinctive publication name).
+// url = the blogger's own site; the card's external-link arrow points here
+// (not Wikipedia) for the blogger domain.
 const BLOGGER_ID = {
-  'marginalian': { name: 'Maria Popova', blog: 'The Marginalian' },
-  'astral codex ten': { name: 'Scott Alexander', blog: 'Astral Codex Ten' },
-  'wait but why': { name: 'Tim Urban', blog: 'Wait But Why' },
-  'tim ferriss': { name: 'Tim Ferriss', blog: '' },
-  'seth godin': { name: 'Seth Godin', blog: "Seth's Blog" },
-  'paul graham': { name: 'Paul Graham', blog: '' },
-  'mark manson': { name: 'Mark Manson', blog: '' },
-  'john gruber': { name: 'John Gruber', blog: 'Daring Fireball' },
-  'kottke.org': { name: 'Jason Kottke', blog: 'kottke.org' },
-  'goop': { name: 'Gwyneth Paltrow', blog: 'Goop' },
-  'pioneer woman': { name: 'Ree Drummond', blog: 'The Pioneer Woman' },
-  'cup of jo': { name: 'Joanna Goddard', blog: 'Cup of Jo' },
-  'chiara ferragni': { name: 'Chiara Ferragni', blog: 'The Blonde Salad' },
-  'marie kondo': { name: 'Marie Kondo', blog: '' },
-  'robin sloan': { name: 'Robin Sloan', blog: '' },
-  'austin kleon': { name: 'Austin Kleon', blog: '' },
+  'marginalian': { name: 'Maria Popova', blog: 'The Marginalian', url: 'https://www.themarginalian.org' },
+  'astral codex ten': { name: 'Scott Alexander', blog: 'Astral Codex Ten', url: 'https://www.astralcodexten.com' },
+  'wait but why': { name: 'Tim Urban', blog: 'Wait But Why', url: 'https://waitbutwhy.com' },
+  'tim ferriss': { name: 'Tim Ferriss', blog: '', url: 'https://tim.blog' },
+  'seth godin': { name: 'Seth Godin', blog: "Seth's Blog", url: 'https://seths.blog' },
+  'paul graham': { name: 'Paul Graham', blog: '', url: 'https://www.paulgraham.com/articles.html' },
+  'mark manson': { name: 'Mark Manson', blog: '', url: 'https://markmanson.net' },
+  'john gruber': { name: 'John Gruber', blog: 'Daring Fireball', url: 'https://daringfireball.net' },
+  'kottke.org': { name: 'Jason Kottke', blog: 'kottke.org', url: 'https://kottke.org' },
+  'goop': { name: 'Gwyneth Paltrow', blog: 'Goop', url: 'https://goop.com' },
+  'pioneer woman': { name: 'Ree Drummond', blog: 'The Pioneer Woman', url: 'https://www.thepioneerwoman.com' },
+  'cup of jo': { name: 'Joanna Goddard', blog: 'Cup of Jo', url: 'https://cupofjo.com' },
+  'chiara ferragni': { name: 'Chiara Ferragni', blog: 'The Blonde Salad', url: 'https://theblondesalad.com' },
+  'marie kondo': { name: 'Marie Kondo', blog: '', url: 'https://konmari.com' },
+  'robin sloan': { name: 'Robin Sloan', blog: '', url: 'https://www.robinsloan.com' },
+  'austin kleon': { name: 'Austin Kleon', blog: '', url: 'https://austinkleon.com' },
 };
 const COLOR_HEX = {
   'teal': '#0d7d7d', 'turquoise': '#40e0d0', 'cerulean': '#007ba7',
@@ -1296,11 +1298,14 @@ function openEntityCard(domainId,entity,creator,disp){
   var domain=D.domains.find(function(d){return d.id===domainId});
   var extras=card.extras||{};
   // One quiet external-link arrow after the title, pointing at the entity's
-  // primary destination: books to Amazon, video games to YouTube, everything
-  // else to Wikipedia (falling back to whatever link the card does have).
+  // primary destination: books to Amazon, video games to YouTube, bloggers to
+  // their own blog, everything else to Wikipedia (falling back to whatever link
+  // the card does have).
   var links=extras.links||[];
   function findLink(re){for(var li=0;li<links.length;li++){if(re.test(links[li].url||'')||re.test(links[li].label||''))return links[li]}return null}
-  var primary=domainId==='book'?findLink(/amazon/i):domainId==='videogame'?findLink(/youtube/i):findLink(/wikipedia/i);
+  var bid=domainId==='blogger'&&BLOGGER_ID[k];
+  var primary=bid&&bid.url?{url:bid.url,label:'Visit '+(bid.blog||bid.name)}
+    :domainId==='book'?findLink(/amazon/i):domainId==='videogame'?findLink(/youtube/i):findLink(/wikipedia/i);
   primary=primary||links[0]||null;
   var ext=primary?'<a class="ec-ext" href="'+esc(primary.url)+'" target="_blank" rel="noopener" title="'+esc(primary.label||'Open')+'" aria-label="'+esc(primary.label||'Open externally')+'">'+
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg></a>':'';
