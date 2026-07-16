@@ -840,14 +840,16 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 /* First-visit coach-mark: floats beside the first row (Invisible Cities) to
    teach that a name opens its card. position:fixed so no matrix overflow or
    sticky-header stacking can clip it; placed from the row's live rect. */
-#rowhint{position:fixed;z-index:60;display:none;align-items:center;gap:9px;padding:8px 12px;background:rgba(19,20,23,.96);border:1px solid var(--hair);border-radius:3px;box-shadow:0 10px 30px rgba(0,0,0,.5);cursor:pointer;white-space:nowrap;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+#rowhint{position:fixed;z-index:60;display:none;align-items:center;gap:9px;padding:13px 18px;max-width:250px;background:rgba(19,20,23,.97);border:1px solid var(--hair);border-radius:22px;box-shadow:0 14px 36px rgba(0,0,0,.55);cursor:pointer;-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);--rh-lead:26px}
 #rowhint.on{display:flex;animation:rhin .45s ease both}
-#rowhint::before{content:'';position:absolute;left:-5px;top:50%;width:9px;height:9px;margin-top:-4.5px;background:rgba(19,20,23,.96);border-left:1px solid var(--hair);border-bottom:1px solid var(--hair);transform:rotate(45deg)}
-#rowhint .rh-dot{width:8px;height:8px;border-radius:50%;background:var(--ink);box-shadow:0 0 6px 1px rgba(233,230,221,.6);animation:rhpulse 1.7s ease-out infinite}
-#rowhint span{font:11px var(--mono);letter-spacing:.09em;color:var(--ink)}
-#rowhint .rh-x{margin-left:3px;color:var(--faint);font:13px var(--mono);line-height:1}
+/* connector: a pulsing dot + line to the LEFT that tethers the pill directly to
+   the first row name, instead of a free-floating tag with a little arrow. */
+#rowhint::before{content:'';position:absolute;right:100%;top:50%;height:1.5px;width:var(--rh-lead);margin-top:-.75px;background:linear-gradient(90deg,var(--ink),rgba(233,230,221,.3))}
+#rowhint::after{content:'';position:absolute;right:calc(100% + var(--rh-lead) - 4px);top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--ink);box-shadow:0 0 8px 2px rgba(233,230,221,.5);animation:rhpulse 1.7s ease-out infinite}
+#rowhint span{font:13px/1.4 var(--mono);letter-spacing:.05em;color:var(--ink)}
+#rowhint .rh-x{margin-left:2px;align-self:flex-start;color:var(--faint);font:14px var(--mono);line-height:1}
 #rowhint .rh-x:hover{color:var(--ink)}
-@keyframes rhpulse{0%{box-shadow:0 0 0 0 rgba(233,230,221,.5),0 0 6px 1px rgba(233,230,221,.55)}70%{box-shadow:0 0 0 9px rgba(233,230,221,0),0 0 6px 1px rgba(233,230,221,.55)}100%{box-shadow:0 0 0 0 rgba(233,230,221,0),0 0 6px 1px rgba(233,230,221,.55)}}
+@keyframes rhpulse{0%{box-shadow:0 0 0 0 rgba(233,230,221,.5),0 0 8px 2px rgba(233,230,221,.5)}70%{box-shadow:0 0 0 11px rgba(233,230,221,0),0 0 8px 2px rgba(233,230,221,.5)}100%{box-shadow:0 0 0 0 rgba(233,230,221,0),0 0 8px 2px rgba(233,230,221,.5)}}
 @keyframes rhin{from{opacity:0;transform:translateX(-5px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){#rowhint .rh-dot{animation:none}#rowhint.on{animation:none}}
 .viewbar .viewlink:hover{color:var(--ink);background:rgba(233,230,221,.035)}
@@ -1603,9 +1605,13 @@ function rhPlace(){
   // If the row scrolls out of view, hide the bubble (already marked seen).
   if(r.bottom<80||r.top>innerHeight-12||r.width===0){rowhint.style.display='none';return}
   rowhint.style.display='flex';
-  rowhint.style.left=(r.right+12)+'px';
+  // Offset by the connector lead so the dot lands right at the name; cap the
+  // width to the space remaining on the right so it never runs off a phone edge.
+  var left=r.right+32;
+  rowhint.style.left=left+'px';
   rowhint.style.top=(r.top+r.height/2)+'px';
   rowhint.style.transform='translateY(-50%)';
+  rowhint.style.maxWidth=Math.max(120,Math.min(250,innerWidth-left-12))+'px';
 }
 function rhOnScroll(){if(rhRAF)return;rhRAF=requestAnimationFrame(function(){rhRAF=0;rhPlace()})}
 function endRowHint(){
@@ -1893,7 +1899,7 @@ ${methodPage}
   <button class="viewlink" type="button" data-view="suggest"><span>Suggest</span></button>
 </nav>
 <div id="rowhint" role="button" tabindex="-1" aria-label="Open the first entry's card">
-  <i class="rh-dot" aria-hidden="true"></i><span>Click a name to open its card</span><i class="rh-x" aria-hidden="true">&times;</i>
+  <span>Click a name to open its card</span><i class="rh-x" aria-hidden="true">&times;</i>
 </div>
 
 </main>
