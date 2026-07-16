@@ -633,7 +633,9 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 @media(max-width:820px){
   .indexgrid{grid-template-columns:1fr}
   /* the rail becomes a left off-canvas drawer, so the grid is visible at once */
-  .idx-rail{position:fixed;left:0;top:0;bottom:0;z-index:46;width:min(272px,82vw);max-height:none;
+  /* Explicit viewport height (not top:0;bottom:0, which mis-sizes to full content
+     height here) so the drawer is bounded and its overflow actually scrolls. */
+  .idx-rail{position:fixed;left:0;top:0;height:100vh;height:100dvh;z-index:46;width:min(272px,82vw);max-height:none;
     padding:66px 14px 40px;background:var(--panel);border-right:1px solid var(--hair);
     overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;transform:translateX(-100%);
     transition:transform .26s ease;box-shadow:16px 0 46px rgba(0,0,0,.5)}
