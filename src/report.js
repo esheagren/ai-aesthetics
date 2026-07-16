@@ -30,6 +30,9 @@ const DOMAIN_LABELS = {
   airesearcher: 'AI researcher', aimodel: 'AI model', historian: 'Historian',
   psychologist: 'Psychologist', boardgame: 'Board game', sport: 'Sport',
   childrensbook: "Children's book",
+  musician: 'Musician', composer: 'Contemporary composer', song: 'Song',
+  director: 'Film director', proglang: 'Programming language', sound: 'Sound',
+  country: 'Country',
 };
 
 // Sequential blue ramp (light steps 100->700) for magnitude cells
@@ -503,7 +506,7 @@ footer{color:var(--muted);font-size:12.5px;margin-top:36px;line-height:1.6}
 <div class="wrap">
 <h1>The Aesthetic Taste of AI Models</h1>
 <p class="sub">Pilot: ${models.length} models × ${S.domains.length} domains × 2 probes — ${totalSamples} responses, repeated sampling per question, provider-default settings, no system prompt.</p>
-<p class="note">Generated ${new Date(S.generatedAt).toISOString().slice(0, 10)}. Entropy is Shannon entropy of the pick distribution normalized by log(n): 0 = same answer every time, 1 = a different answer every time.</p>
+<p class="note">Generated ${new Date(S.generatedAt).toISOString().slice(0, 10)}. Entropy is Shannon entropy of the pick distribution, normalized against the widest range the sampling could reveal: 0 = the same answer every time, 1 = the broadest spread of distinct answers we sampled for.</p>
 
 <div class="tiles">
 ${statTile('Responses analyzed', totalSamples)}

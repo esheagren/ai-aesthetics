@@ -122,7 +122,14 @@
     "psychologist",
     "boardgame",
     "sport",
-    "childrensbook"
+    "childrensbook",
+    "musician",
+    "composer",
+    "song",
+    "director",
+    "proglang",
+    "sound",
+    "country"
   ],
   "cells": {
     "claude-opus-4-1": {
@@ -151,7 +158,7 @@
               1
             ]
           ],
-          "entropy": 0.639,
+          "entropy": 0.592,
           "hedged": 0,
           "refused": 0
         },
@@ -167,7 +174,7 @@
               4
             ]
           ],
-          "entropy": 0.292,
+          "entropy": 0.271,
           "hedged": 0,
           "refused": 0
         }
@@ -185,7 +192,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 0,
           "refused": 0
         },
@@ -205,7 +212,7 @@
               1
             ]
           ],
-          "entropy": 0.348,
+          "entropy": 0.323,
           "hedged": 0,
           "refused": 0
         }
@@ -235,7 +242,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 5,
           "refused": 0
         }
@@ -253,7 +260,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 0,
           "refused": 0
         },
@@ -291,7 +298,7 @@
               1
             ]
           ],
-          "entropy": 0.53,
+          "entropy": 0.491,
           "hedged": 0,
           "refused": 0
         },
@@ -325,7 +332,7 @@
               1
             ]
           ],
-          "entropy": 0.278,
+          "entropy": 0.257,
           "hedged": 0,
           "refused": 0
         },
@@ -345,7 +352,7 @@
               1
             ]
           ],
-          "entropy": 0.41,
+          "entropy": 0.38,
           "hedged": 0,
           "refused": 0
         }
@@ -413,7 +420,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -431,7 +438,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -495,7 +502,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 6,
           "refused": 0
         },
@@ -511,7 +518,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -749,7 +756,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 2,
           "refused": 0
         },
@@ -765,7 +772,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -937,7 +944,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 4,
           "refused": 0
         },
@@ -987,7 +994,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -1005,7 +1012,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 4,
           "refused": 0
         },
@@ -1021,41 +1028,23 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
       },
       "actor": {
         "favorite": {
-          "n": 4,
-          "dist": [
-            [
-              "Daniel Day-Lewis",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
-          "hedged": 1,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 12,
-          "dist": [
-            [
-              "Tom Cruise",
-              9
-            ],
-            [
-              "Meryl Streep",
-              2
-            ],
-            [
-              "Nicolas Cage",
-              1
-            ]
-          ],
-          "entropy": 0.29,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -1215,7 +1204,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -1233,7 +1222,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -1249,7 +1238,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 1,
           "refused": 0
         }
@@ -1363,7 +1352,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -1461,7 +1450,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -1479,7 +1468,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -1611,6 +1600,118 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "claude-opus-4-5": {
@@ -1627,7 +1728,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 10,
           "refused": 0
         },
@@ -1677,7 +1778,7 @@
               1
             ]
           ],
-          "entropy": 0.556,
+          "entropy": 0.515,
           "hedged": 8,
           "refused": 0
         }
@@ -1707,7 +1808,7 @@
               1
             ]
           ],
-          "entropy": 1,
+          "entropy": 0.279,
           "hedged": 10,
           "refused": 8
         }
@@ -1725,7 +1826,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 6,
           "refused": 0
         },
@@ -1741,7 +1842,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 9,
           "refused": 0
         }
@@ -1785,7 +1886,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 0,
           "refused": 0
         },
@@ -1987,7 +2088,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -2055,7 +2156,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 2,
           "refused": 0
         }
@@ -2085,7 +2186,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -2175,7 +2276,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -2245,7 +2346,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -2261,7 +2362,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -2465,7 +2566,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 2,
           "refused": 0
         },
@@ -2484,35 +2585,17 @@
       },
       "actor": {
         "favorite": {
-          "n": 8,
-          "dist": [
-            [
-              "Tilda Swinton",
-              7
-            ],
-            [
-              "Daniel Day-Lewis",
-              1
-            ]
-          ],
-          "entropy": 0.181,
-          "hedged": 2,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
-          "dist": [
-            [
-              "Meryl Streep",
-              4
-            ],
-            [
-              "Jared Leto",
-              4
-            ]
-          ],
-          "entropy": 0.333,
-          "hedged": 1,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         }
       },
@@ -2529,7 +2612,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 1,
           "refused": 0
         },
@@ -2649,7 +2732,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 1,
           "refused": 0
         }
@@ -2693,7 +2776,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -2817,7 +2900,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 2,
           "refused": 0
         },
@@ -2929,7 +3012,7 @@
               1
             ]
           ],
-          "entropy": 0.221,
+          "entropy": 0.318,
           "hedged": 4,
           "refused": 0
         },
@@ -2959,7 +3042,7 @@
               6
             ]
           ],
-          "entropy": 0.139,
+          "entropy": 0.194,
           "hedged": 2,
           "refused": 0
         },
@@ -2973,6 +3056,118 @@
           ],
           "entropy": 0,
           "hedged": 8,
+          "refused": 0
+        }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         }
       }
@@ -2991,7 +3186,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 10,
           "refused": 0
         },
@@ -3007,7 +3202,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 10,
           "refused": 4
         }
@@ -3025,7 +3220,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 10,
           "refused": 0
         },
@@ -3041,7 +3236,7 @@
               1
             ]
           ],
-          "entropy": 0.211,
+          "entropy": 0.165,
           "hedged": 10,
           "refused": 3
         }
@@ -3059,7 +3254,7 @@
               1
             ]
           ],
-          "entropy": 0.406,
+          "entropy": 0.226,
           "hedged": 10,
           "refused": 6
         },
@@ -3075,7 +3270,7 @@
               1
             ]
           ],
-          "entropy": 0.311,
+          "entropy": 0.201,
           "hedged": 5,
           "refused": 5
         }
@@ -3093,7 +3288,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 10,
           "refused": 0
         },
@@ -3135,7 +3330,7 @@
               4
             ]
           ],
-          "entropy": 0.313,
+          "entropy": 0.276,
           "hedged": 10,
           "refused": 10
         }
@@ -3161,7 +3356,7 @@
               1
             ]
           ],
-          "entropy": 0.408,
+          "entropy": 0.378,
           "hedged": 10,
           "refused": 0
         },
@@ -3217,7 +3412,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 3,
           "refused": 0
         },
@@ -3293,7 +3488,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -3399,7 +3594,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -3429,7 +3624,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 1,
           "refused": 0
         }
@@ -3447,7 +3642,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 1,
           "refused": 0
         },
@@ -3687,7 +3882,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 7,
           "refused": 0
         }
@@ -3705,7 +3900,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 2,
           "refused": 0
         },
@@ -3776,31 +3971,17 @@
       },
       "actor": {
         "favorite": {
-          "n": 8,
-          "dist": [
-            [
-              "Mads Mikkelsen",
-              4
-            ],
-            [
-              "Mahershala Ali",
-              4
-            ]
-          ],
-          "entropy": 0.333,
-          "hedged": 2,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
-          "dist": [
-            [
-              "Tom Hanks",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
-          "hedged": 2,
+          "hedged": 0,
           "refused": 0
         }
       },
@@ -3829,7 +4010,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 8,
           "refused": 0
         }
@@ -3915,7 +4096,7 @@
               2
             ]
           ],
-          "entropy": 0.155,
+          "entropy": 0.217,
           "hedged": 13,
           "refused": 0
         },
@@ -3931,7 +4112,7 @@
               2
             ]
           ],
-          "entropy": 0.067,
+          "entropy": 0.094,
           "hedged": 27,
           "refused": 0
         }
@@ -4107,7 +4288,7 @@
               1
             ]
           ],
-          "entropy": 0.579,
+          "entropy": 0.256,
           "hedged": 9,
           "refused": 9
         }
@@ -4209,7 +4390,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 1,
           "refused": 0
         }
@@ -4307,6 +4488,118 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "claude-fable-5": {
@@ -4323,7 +4616,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 8,
           "refused": 0
         },
@@ -4369,7 +4662,7 @@
               1
             ]
           ],
-          "entropy": 0.41,
+          "entropy": 0.38,
           "hedged": 6,
           "refused": 0
         }
@@ -4391,7 +4684,7 @@
               2
             ]
           ],
-          "entropy": 0.458,
+          "entropy": 0.425,
           "hedged": 8,
           "refused": 0
         },
@@ -4411,7 +4704,7 @@
               1
             ]
           ],
-          "entropy": 0.41,
+          "entropy": 0.38,
           "hedged": 6,
           "refused": 0
         }
@@ -4485,7 +4778,7 @@
               1
             ]
           ],
-          "entropy": 0.41,
+          "entropy": 0.38,
           "hedged": 10,
           "refused": 0
         },
@@ -4515,7 +4808,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -4557,7 +4850,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -4609,7 +4902,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -4625,7 +4918,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -4681,7 +4974,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -4787,7 +5080,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 2,
           "refused": 0
         }
@@ -4867,7 +5160,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -5051,7 +5344,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 4,
           "refused": 0
         }
@@ -5141,7 +5434,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -5160,38 +5453,16 @@
       },
       "actor": {
         "favorite": {
-          "n": 12,
-          "dist": [
-            [
-              "Denzel Washington",
-              5
-            ],
-            [
-              "Philip Seymour Hoffman",
-              4
-            ],
-            [
-              "Cate Blanchett",
-              3
-            ]
-          ],
-          "entropy": 0.434,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
-          "dist": [
-            [
-              "Leonardo DiCaprio",
-              7
-            ],
-            [
-              "Benedict Cumberbatch",
-              1
-            ]
-          ],
-          "entropy": 0.181,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -5221,7 +5492,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -5251,7 +5522,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -5281,7 +5552,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -5299,7 +5570,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -5329,7 +5600,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -5345,7 +5616,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -5363,7 +5634,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -5427,7 +5698,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -5443,7 +5714,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 1,
           "refused": 0
         }
@@ -5537,7 +5808,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -5553,7 +5824,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 2,
           "refused": 0
         }
@@ -5681,7 +5952,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -5723,6 +5994,118 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "gpt-4o": {
@@ -5739,7 +6122,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 4,
           "refused": 0
         },
@@ -5773,7 +6156,7 @@
               2
             ]
           ],
-          "entropy": 0.413,
+          "entropy": 0.382,
           "hedged": 1,
           "refused": 0
         },
@@ -5789,7 +6172,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         }
@@ -5811,7 +6194,7 @@
               2
             ]
           ],
-          "entropy": 0.447,
+          "entropy": 0.414,
           "hedged": 6,
           "refused": 0
         },
@@ -5827,7 +6210,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         }
@@ -5845,7 +6228,7 @@
               4
             ]
           ],
-          "entropy": 0.292,
+          "entropy": 0.271,
           "hedged": 0,
           "refused": 0
         },
@@ -5861,7 +6244,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 7,
           "refused": 5
         }
@@ -5891,7 +6274,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 0,
           "refused": 0
         }
@@ -5921,7 +6304,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 2,
           "refused": 0
         }
@@ -6003,7 +6386,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 8,
           "refused": 0
         },
@@ -6115,7 +6498,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 5,
           "refused": 0
         },
@@ -6265,7 +6648,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 4,
           "refused": 0
         }
@@ -6409,7 +6792,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 8,
           "refused": 0
         }
@@ -6427,7 +6810,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 8,
           "refused": 0
         },
@@ -6571,7 +6954,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 8,
           "refused": 0
         },
@@ -6591,7 +6974,7 @@
               1
             ]
           ],
-          "entropy": 0.278,
+          "entropy": 0.257,
           "hedged": 12,
           "refused": 2
         }
@@ -6621,7 +7004,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 8,
           "refused": 0
         }
@@ -6704,51 +7087,17 @@
       },
       "actor": {
         "favorite": {
-          "n": 12,
-          "dist": [
-            [
-              "Meryl Streep",
-              5
-            ],
-            [
-              "Daniel Day-Lewis",
-              4
-            ],
-            [
-              "Tom Hanks",
-              2
-            ],
-            [
-              "Anthony Hopkins",
-              1
-            ]
-          ],
-          "entropy": 0.498,
-          "hedged": 12,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 12,
-          "dist": [
-            [
-              "Tom Cruise",
-              9
-            ],
-            [
-              "Johnny Depp",
-              1
-            ],
-            [
-              "Leonardo DiCaprio",
-              1
-            ],
-            [
-              "Adam Sandler",
-              1
-            ]
-          ],
-          "entropy": 0.337,
-          "hedged": 12,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         }
       },
@@ -6799,7 +7148,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 4,
           "refused": 0
         },
@@ -6829,7 +7178,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 4,
           "refused": 0
         },
@@ -6925,7 +7274,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 8,
           "refused": 0
         }
@@ -6943,7 +7292,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 8,
           "refused": 0
         },
@@ -7163,7 +7512,7 @@
               3
             ]
           ],
-          "entropy": 0.351,
+          "entropy": 0.275,
           "hedged": 12,
           "refused": 5
         }
@@ -7181,7 +7530,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 4,
           "refused": 0
         },
@@ -7197,7 +7546,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 7,
           "refused": 0
         }
@@ -7411,6 +7760,118 @@
           "hedged": 4,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "o3": {
@@ -7465,7 +7926,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 7,
           "refused": 0
         },
@@ -7495,7 +7956,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 2,
           "refused": 0
         },
@@ -7593,7 +8054,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 1,
           "refused": 0
         },
@@ -7707,7 +8168,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -7753,7 +8214,7 @@
               2
             ]
           ],
-          "entropy": 0.378,
+          "entropy": 0.365,
           "hedged": 0,
           "refused": 1
         }
@@ -7941,7 +8402,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -7983,7 +8444,7 @@
               2
             ]
           ],
-          "entropy": 0.241,
+          "entropy": 0.213,
           "hedged": 4,
           "refused": 3
         }
@@ -8049,7 +8510,7 @@
               1
             ]
           ],
-          "entropy": 0.698,
+          "entropy": 0.673,
           "hedged": 2,
           "refused": 1
         }
@@ -8107,7 +8568,7 @@
               1
             ]
           ],
-          "entropy": 0.592,
+          "entropy": 0.572,
           "hedged": 2,
           "refused": 1
         }
@@ -8137,7 +8598,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -8331,7 +8792,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 1,
           "refused": 2
         }
@@ -8361,7 +8822,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 1,
           "refused": 0
         }
@@ -8440,59 +8901,17 @@
       },
       "actor": {
         "favorite": {
-          "n": 12,
-          "dist": [
-            [
-              "Tilda Swinton",
-              7
-            ],
-            [
-              "Daniel Day-Lewis",
-              3
-            ],
-            [
-              "Cate Blanchett",
-              1
-            ],
-            [
-              "Meryl Streep",
-              1
-            ]
-          ],
-          "entropy": 0.433,
-          "hedged": 2,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 12,
-          "dist": [
-            [
-              "Tom Cruise",
-              6
-            ],
-            [
-              "Leonardo DiCaprio",
-              2
-            ],
-            [
-              "Keanu Reeves",
-              1
-            ],
-            [
-              "Chris Pratt",
-              1
-            ],
-            [
-              "Jennifer Lawrence",
-              1
-            ],
-            [
-              "Dwayne Johnson",
-              1
-            ]
-          ],
-          "entropy": 0.593,
-          "hedged": 1,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         }
       },
@@ -8517,7 +8936,7 @@
               1
             ]
           ],
-          "entropy": 0.487,
+          "entropy": 0.47,
           "hedged": 3,
           "refused": 1
         },
@@ -8651,7 +9070,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -8823,7 +9242,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 1,
           "refused": 0
         },
@@ -8839,7 +9258,7 @@
               1
             ]
           ],
-          "entropy": 0.127,
+          "entropy": 0.123,
           "hedged": 1,
           "refused": 1
         }
@@ -8885,7 +9304,7 @@
               2
             ]
           ],
-          "entropy": 0.413,
+          "entropy": 0.382,
           "hedged": 3,
           "refused": 2
         }
@@ -8903,7 +9322,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -8923,7 +9342,7 @@
               2
             ]
           ],
-          "entropy": 0.447,
+          "entropy": 0.414,
           "hedged": 1,
           "refused": 2
         }
@@ -8985,7 +9404,7 @@
               1
             ]
           ],
-          "entropy": 0.408,
+          "entropy": 0.378,
           "hedged": 2,
           "refused": 2
         }
@@ -9111,7 +9530,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -9169,7 +9588,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 1,
           "refused": 0
         }
@@ -9223,9 +9642,121 @@
               1
             ]
           ],
-          "entropy": 0.25,
+          "entropy": 0.242,
           "hedged": 0,
           "refused": 1
+        }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
         }
       }
     },
@@ -9255,7 +9786,7 @@
               1
             ]
           ],
-          "entropy": 0.59,
+          "entropy": 0.547,
           "hedged": 0,
           "refused": 0
         },
@@ -9275,7 +9806,7 @@
               2
             ]
           ],
-          "entropy": 0.413,
+          "entropy": 0.382,
           "hedged": 1,
           "refused": 0
         }
@@ -9297,7 +9828,7 @@
               1
             ]
           ],
-          "entropy": 0.278,
+          "entropy": 0.257,
           "hedged": 0,
           "refused": 0
         },
@@ -9327,7 +9858,7 @@
               5
             ]
           ],
-          "entropy": 0.301,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -9347,7 +9878,7 @@
               1
             ]
           ],
-          "entropy": 0.348,
+          "entropy": 0.323,
           "hedged": 8,
           "refused": 0
         }
@@ -9369,7 +9900,7 @@
               1
             ]
           ],
-          "entropy": 0.348,
+          "entropy": 0.323,
           "hedged": 0,
           "refused": 0
         },
@@ -9389,7 +9920,7 @@
               1
             ]
           ],
-          "entropy": 0.348,
+          "entropy": 0.323,
           "hedged": 2,
           "refused": 0
         }
@@ -9419,7 +9950,7 @@
               4
             ]
           ],
-          "entropy": 0.292,
+          "entropy": 0.271,
           "hedged": 3,
           "refused": 0
         }
@@ -9701,7 +10232,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -9717,7 +10248,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -9801,7 +10332,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -9851,7 +10382,7 @@
               1
             ]
           ],
-          "entropy": 0.597,
+          "entropy": 0.527,
           "hedged": 0,
           "refused": 3
         }
@@ -9947,7 +10478,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -10037,7 +10568,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -10296,25 +10827,15 @@
       },
       "actor": {
         "favorite": {
-          "n": 4,
-          "dist": [
-            [
-              "Tilda Swinton",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
-          "dist": [
-            [
-              "Tom Hanks",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -10333,7 +10854,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 1,
           "refused": 0
         },
@@ -10475,7 +10996,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -10535,7 +11056,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -10565,7 +11086,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -10751,7 +11272,7 @@
               1
             ]
           ],
-          "entropy": 0.439,
+          "entropy": 0.388,
           "hedged": 0,
           "refused": 3
         }
@@ -10857,7 +11378,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -10903,7 +11424,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -10933,7 +11454,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -10971,6 +11492,118 @@
               4
             ]
           ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -11029,7 +11662,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -11083,7 +11716,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -11217,7 +11850,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -11473,7 +12106,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -11503,7 +12136,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -11715,7 +12348,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -11771,7 +12404,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -11787,7 +12420,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -11896,34 +12529,16 @@
       },
       "actor": {
         "favorite": {
-          "n": 8,
-          "dist": [
-            [
-              "Tilda Swinton",
-              6
-            ],
-            [
-              "Toshiro Mifune",
-              2
-            ]
-          ],
-          "entropy": 0.27,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
-          "dist": [
-            [
-              "Ryan Reynolds",
-              7
-            ],
-            [
-              "Dwayne Johnson",
-              1
-            ]
-          ],
-          "entropy": 0.181,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -11941,7 +12556,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -11957,7 +12572,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -11975,7 +12590,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -12055,7 +12670,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -12165,7 +12780,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -12195,7 +12810,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -12251,7 +12866,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -12317,7 +12932,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -12373,7 +12988,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -12459,7 +13074,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -12471,6 +13086,118 @@
               4
             ]
           ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -12499,7 +13226,7 @@
               1
             ]
           ],
-          "entropy": 0.473,
+          "entropy": 0.438,
           "hedged": 0,
           "refused": 0
         },
@@ -12515,7 +13242,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         }
@@ -12533,7 +13260,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 5,
           "refused": 0
         },
@@ -12553,7 +13280,7 @@
               1
             ]
           ],
-          "entropy": 0.41,
+          "entropy": 0.38,
           "hedged": 0,
           "refused": 0
         }
@@ -12579,7 +13306,7 @@
               1
             ]
           ],
-          "entropy": 0.556,
+          "entropy": 0.515,
           "hedged": 2,
           "refused": 0
         },
@@ -12595,7 +13322,7 @@
               3
             ]
           ],
-          "entropy": 0.265,
+          "entropy": 0.246,
           "hedged": 1,
           "refused": 0
         }
@@ -12613,7 +13340,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         },
@@ -12633,7 +13360,7 @@
               1
             ]
           ],
-          "entropy": 0.278,
+          "entropy": 0.257,
           "hedged": 7,
           "refused": 0
         }
@@ -12667,7 +13394,7 @@
               2
             ]
           ],
-          "entropy": 0.447,
+          "entropy": 0.414,
           "hedged": 3,
           "refused": 0
         }
@@ -12689,7 +13416,7 @@
               1
             ]
           ],
-          "entropy": 0.348,
+          "entropy": 0.323,
           "hedged": 0,
           "refused": 0
         },
@@ -12773,7 +13500,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 1,
           "refused": 0
         }
@@ -12981,7 +13708,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -13253,7 +13980,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -13283,7 +14010,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 4,
           "refused": 0
         }
@@ -13301,7 +14028,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 7,
           "refused": 0
         },
@@ -13371,7 +14098,7 @@
               1
             ]
           ],
-          "entropy": 0.39,
+          "entropy": 0.361,
           "hedged": 4,
           "refused": 2
         }
@@ -13413,7 +14140,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -13431,7 +14158,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 2,
           "refused": 0
         },
@@ -13492,30 +14219,16 @@
       },
       "actor": {
         "favorite": {
-          "n": 4,
-          "dist": [
-            [
-              "Tilda Swinton",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
-          "hedged": 4,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
-          "dist": [
-            [
-              "Ryan Reynolds",
-              7
-            ],
-            [
-              "Dwayne Johnson",
-              1
-            ]
-          ],
-          "entropy": 0.181,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -13575,7 +14288,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 4,
           "refused": 0
         },
@@ -13637,7 +14350,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -13767,7 +14480,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 1,
           "refused": 0
         }
@@ -13943,7 +14656,7 @@
               1
             ]
           ],
-          "entropy": 0.656,
+          "entropy": 0.514,
           "hedged": 10,
           "refused": 6
         }
@@ -13977,7 +14690,7 @@
               1
             ]
           ],
-          "entropy": 0.592,
+          "entropy": 0.572,
           "hedged": 2,
           "refused": 0
         },
@@ -13997,7 +14710,7 @@
               2
             ]
           ],
-          "entropy": 0.483,
+          "entropy": 0.427,
           "hedged": 0,
           "refused": 0
         }
@@ -14015,7 +14728,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 5,
           "refused": 0
         },
@@ -14035,7 +14748,7 @@
               1
             ]
           ],
-          "entropy": 0.386,
+          "entropy": 0.342,
           "hedged": 1,
           "refused": 0
         }
@@ -14057,7 +14770,7 @@
               1
             ]
           ],
-          "entropy": 0.433,
+          "entropy": 0.362,
           "hedged": 3,
           "refused": 0
         },
@@ -14077,7 +14790,7 @@
               1
             ]
           ],
-          "entropy": 0.354,
+          "entropy": 0.296,
           "hedged": 2,
           "refused": 0
         }
@@ -14103,7 +14816,7 @@
               1
             ]
           ],
-          "entropy": 0.604,
+          "entropy": 0.505,
           "hedged": 4,
           "refused": 0
         },
@@ -14137,7 +14850,7 @@
               1
             ]
           ],
-          "entropy": 0.433,
+          "entropy": 0.362,
           "hedged": 2,
           "refused": 0
         },
@@ -14157,7 +14870,7 @@
               2
             ]
           ],
-          "entropy": 0.52,
+          "entropy": 0.436,
           "hedged": 0,
           "refused": 0
         }
@@ -14187,6 +14900,118 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "gemini-3.5-flash": {
@@ -14203,7 +15028,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 0,
           "refused": 0
         },
@@ -14219,7 +15044,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 0,
           "refused": 0
         }
@@ -14237,7 +15062,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         },
@@ -14267,7 +15092,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         },
@@ -14291,7 +15116,7 @@
               1
             ]
           ],
-          "entropy": 0.507,
+          "entropy": 0.47,
           "hedged": 0,
           "refused": 0
         }
@@ -14347,7 +15172,7 @@
               2
             ]
           ],
-          "entropy": 0.217,
+          "entropy": 0.201,
           "hedged": 0,
           "refused": 0
         }
@@ -14365,7 +15190,7 @@
               1
             ]
           ],
-          "entropy": 0.141,
+          "entropy": 0.131,
           "hedged": 0,
           "refused": 0
         },
@@ -14513,7 +15338,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -14555,7 +15380,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -14637,7 +15462,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -14887,7 +15712,7 @@
               1
             ]
           ],
-          "entropy": 0.127,
+          "entropy": 0.123,
           "hedged": 0,
           "refused": 0
         },
@@ -14991,7 +15816,7 @@
               1
             ]
           ],
-          "entropy": 0.159,
+          "entropy": 0.14,
           "hedged": 12,
           "refused": 3
         }
@@ -15029,7 +15854,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 2,
           "refused": 0
         }
@@ -15047,7 +15872,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -15063,7 +15888,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -15105,47 +15930,25 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
       },
       "actor": {
         "favorite": {
-          "n": 4,
-          "dist": [
-            [
-              "Tilda Swinton",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
-          "hedged": 1,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 12,
-          "dist": [
-            [
-              "Meryl Streep",
-              5
-            ],
-            [
-              "Tom Cruise",
-              3
-            ],
-            [
-              "Nicolas Cage",
-              1
-            ],
-            [
-              "Keanu Reeves",
-              1
-            ]
-          ],
-          "entropy": 0.507,
-          "hedged": 11,
-          "refused": 2
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
         }
       },
       "actress": {
@@ -15263,7 +16066,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 6,
           "refused": 2
         }
@@ -15457,7 +16260,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -15523,7 +16326,7 @@
               1
             ]
           ],
-          "entropy": 0.833,
+          "entropy": 0.697,
           "hedged": 11,
           "refused": 7
         }
@@ -15679,7 +16482,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -15721,7 +16524,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 2,
           "refused": 0
         }
@@ -15747,6 +16550,118 @@
               4
             ]
           ],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -15829,7 +16744,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -15905,7 +16820,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -16147,7 +17062,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -16163,7 +17078,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 2,
           "refused": 0
         }
@@ -16239,7 +17154,7 @@
               1
             ]
           ],
-          "entropy": 0.758,
+          "entropy": 0.594,
           "hedged": 0,
           "refused": 0
         },
@@ -16307,7 +17222,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -16325,7 +17240,7 @@
               2
             ]
           ],
-          "entropy": 0.307,
+          "entropy": 0.241,
           "hedged": 0,
           "refused": 0
         },
@@ -16493,7 +17408,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -16563,7 +17478,7 @@
               2
             ]
           ],
-          "entropy": 0.56,
+          "entropy": 0.54,
           "hedged": 0,
           "refused": 0
         }
@@ -16581,7 +17496,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -16635,7 +17550,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -16727,7 +17642,7 @@
               1
             ]
           ],
-          "entropy": 0.58,
+          "entropy": 0.559,
           "hedged": 0,
           "refused": 0
         }
@@ -16757,40 +17672,22 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
       },
       "actor": {
         "favorite": {
-          "n": 12,
-          "dist": [
-            [
-              "Tilda Swinton",
-              7
-            ],
-            [
-              "Cate Blanchett",
-              4
-            ],
-            [
-              "Philip Seymour Hoffman",
-              1
-            ]
-          ],
-          "entropy": 0.357,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
-          "dist": [
-            [
-              "Tom Hanks",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -16821,7 +17718,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -16909,7 +17806,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         }
@@ -17073,7 +17970,7 @@
               1
             ]
           ],
-          "entropy": 0.579,
+          "entropy": 0.256,
           "hedged": 0,
           "refused": 0
         }
@@ -17177,7 +18074,7 @@
               1
             ]
           ],
-          "entropy": 0.579,
+          "entropy": 0.256,
           "hedged": 0,
           "refused": 0
         }
@@ -17223,7 +18120,7 @@
               1
             ]
           ],
-          "entropy": 0.579,
+          "entropy": 0.256,
           "hedged": 0,
           "refused": 0
         }
@@ -17415,7 +18312,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -17445,7 +18342,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         }
@@ -17483,6 +18380,118 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "kimi-k2.6": {
@@ -17499,7 +18508,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -17515,7 +18524,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -17625,7 +18634,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -17693,7 +18702,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 2,
           "refused": 0
         }
@@ -17711,7 +18720,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -17741,7 +18750,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -17937,7 +18946,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -18085,7 +19094,7 @@
               1
             ]
           ],
-          "entropy": 0.382,
+          "entropy": 0.369,
           "hedged": 0,
           "refused": 0
         },
@@ -18221,7 +19230,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -18377,7 +19386,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -18395,7 +19404,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         },
@@ -18433,7 +19442,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -18452,37 +19461,15 @@
       },
       "actor": {
         "favorite": {
-          "n": 12,
-          "dist": [
-            [
-              "Daniel Day-Lewis",
-              6
-            ],
-            [
-              "Tilda Swinton",
-              3
-            ],
-            [
-              "Cate Blanchett",
-              2
-            ],
-            [
-              "Anthony Hopkins",
-              1
-            ]
-          ],
-          "entropy": 0.482,
-          "hedged": 1,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 4,
-          "dist": [
-            [
-              "Tom Hanks",
-              4
-            ]
-          ],
+          "n": 0,
+          "dist": [],
           "entropy": 0,
           "hedged": 0,
           "refused": 0
@@ -18637,7 +19624,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -18801,7 +19788,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -18819,7 +19806,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -18873,7 +19860,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -19079,6 +20066,118 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     },
     "grok-4.5": {
@@ -19133,7 +20232,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -19247,7 +20346,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -19387,7 +20486,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -19487,7 +20586,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -19741,7 +20840,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -19921,7 +21020,7 @@
               4
             ]
           ],
-          "entropy": 0.333,
+          "entropy": 0.279,
           "hedged": 0,
           "refused": 0
         },
@@ -19937,7 +21036,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -19955,7 +21054,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -20016,50 +21115,16 @@
       },
       "actor": {
         "favorite": {
-          "n": 12,
-          "dist": [
-            [
-              "Daniel Day-Lewis",
-              6
-            ],
-            [
-              "Joaquin Phoenix",
-              2
-            ],
-            [
-              "Leonardo DiCaprio",
-              1
-            ],
-            [
-              "Robert Downey Jr.",
-              1
-            ],
-            [
-              "Tom Hanks",
-              1
-            ],
-            [
-              "Cate Blanchett",
-              1
-            ]
-          ],
-          "entropy": 0.593,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         },
         "overrated": {
-          "n": 8,
-          "dist": [
-            [
-              "Leonardo DiCaprio",
-              6
-            ],
-            [
-              "Keanu Reeves",
-              2
-            ]
-          ],
-          "entropy": 0.27,
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
           "hedged": 0,
           "refused": 0
         }
@@ -20169,7 +21234,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -20187,7 +21252,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         },
@@ -20203,7 +21268,7 @@
               3
             ]
           ],
-          "entropy": 0.318,
+          "entropy": 0.266,
           "hedged": 0,
           "refused": 0
         }
@@ -20293,7 +21358,7 @@
               2
             ]
           ],
-          "entropy": 0.27,
+          "entropy": 0.226,
           "hedged": 0,
           "refused": 0
         },
@@ -20607,7 +21672,7 @@
               1
             ]
           ],
-          "entropy": 0.181,
+          "entropy": 0.152,
           "hedged": 0,
           "refused": 0
         }
@@ -20671,30 +21736,138 @@
           "hedged": 0,
           "refused": 0
         }
+      },
+      "musician": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "composer": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "song": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "director": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "proglang": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "sound": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
+      },
+      "country": {
+        "favorite": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        },
+        "overrated": {
+          "n": 0,
+          "dist": [],
+          "entropy": 0,
+          "hedged": 0,
+          "refused": 0
+        }
       }
     }
   },
   "modelStats": {
     "claude-opus-4-1": {
-      "n": 664,
-      "hedgeRate": 0.102,
+      "n": 648,
+      "hedgeRate": 0.103,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.201,
-      "meanEntropyOverrated": 0.197,
-      "distinctFavorites": 89,
-      "favoriteSamples": 332,
+      "meanEntropyFavorite": 0.197,
+      "meanEntropyOverrated": 0.184,
+      "distinctFavorites": 88,
+      "favoriteSamples": 328,
       "topDescriptors": [
         [
           "elegant",
-          91
+          90
         ],
         [
           "profound",
           27
-        ],
-        [
-          "precise",
-          26
         ],
         [
           "dreamlike",
@@ -20705,24 +21878,28 @@
           25
         ],
         [
-          "repetitive",
-          24
-        ],
-        [
           "luminous",
           24
         ],
         [
-          "mathematical",
-          24
+          "precise",
+          22
         ],
         [
           "organic",
           22
         ],
         [
+          "mathematical",
+          21
+        ],
+        [
           "geometric",
           21
+        ],
+        [
+          "repetitive",
+          20
         ],
         [
           "layered",
@@ -20747,13 +21924,13 @@
       ]
     },
     "claude-opus-4-5": {
-      "n": 736,
-      "hedgeRate": 0.221,
-      "refusalRate": 0.012,
-      "meanEntropyFavorite": 0.14,
-      "meanEntropyOverrated": 0.138,
-      "distinctFavorites": 77,
-      "favoriteSamples": 376,
+      "n": 720,
+      "hedgeRate": 0.222,
+      "refusalRate": 0.013,
+      "meanEntropyFavorite": 0.137,
+      "meanEntropyOverrated": 0.109,
+      "distinctFavorites": 76,
+      "favoriteSamples": 368,
       "topDescriptors": [
         [
           "honest",
@@ -20780,20 +21957,16 @@
           24
         ],
         [
-          "precise",
-          24
+          "tension",
+          23
         ],
         [
           "playful",
-          24
-        ],
-        [
-          "rigorous",
-          24
-        ],
-        [
-          "tension",
           23
+        ],
+        [
+          "precise",
+          22
         ],
         [
           "restrained",
@@ -20801,6 +21974,10 @@
         ],
         [
           "melancholy",
+          20
+        ],
+        [
+          "rigorous",
           20
         ],
         [
@@ -20818,13 +21995,13 @@
       ]
     },
     "claude-opus-4-8": {
-      "n": 650,
-      "hedgeRate": 0.44,
-      "refusalRate": 0.083,
-      "meanEntropyFavorite": 0.137,
-      "meanEntropyOverrated": 0.105,
-      "distinctFavorites": 75,
-      "favoriteSamples": 324,
+      "n": 638,
+      "hedgeRate": 0.442,
+      "refusalRate": 0.085,
+      "meanEntropyFavorite": 0.124,
+      "meanEntropyOverrated": 0.089,
+      "distinctFavorites": 73,
+      "favoriteSamples": 316,
       "topDescriptors": [
         [
           "elegant",
@@ -20832,23 +22009,23 @@
         ],
         [
           "honest",
-          52
+          51
         ],
         [
           "restraint",
-          49
+          41
         ],
         [
           "layered",
           26
         ],
         [
-          "ambiguous",
+          "beautiful",
           23
         ],
         [
-          "beautiful",
-          23
+          "ambiguous",
+          21
         ],
         [
           "clean",
@@ -20856,7 +22033,7 @@
         ],
         [
           "repetitive",
-          19
+          18
         ],
         [
           "austere",
@@ -20889,21 +22066,17 @@
       ]
     },
     "claude-fable-5": {
-      "n": 616,
-      "hedgeRate": 0.193,
+      "n": 596,
+      "hedgeRate": 0.2,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.144,
-      "meanEntropyOverrated": 0.175,
-      "distinctFavorites": 76,
-      "favoriteSamples": 292,
+      "meanEntropyFavorite": 0.128,
+      "meanEntropyOverrated": 0.16,
+      "distinctFavorites": 74,
+      "favoriteSamples": 280,
       "topDescriptors": [
         [
           "elegant",
           83
-        ],
-        [
-          "precise",
-          30
         ],
         [
           "beautiful",
@@ -20918,20 +22091,16 @@
           20
         ],
         [
+          "precise",
+          20
+        ],
+        [
           "spectacle",
           19
         ],
         [
           "restraint",
           19
-        ],
-        [
-          "honest",
-          19
-        ],
-        [
-          "repetitive",
-          18
         ],
         [
           "layered",
@@ -20942,7 +22111,11 @@
           18
         ],
         [
-          "luminous",
+          "repetitive",
+          17
+        ],
+        [
+          "honest",
           17
         ],
         [
@@ -20950,23 +22123,27 @@
           17
         ],
         [
+          "luminous",
+          16
+        ],
+        [
           "mathematical",
           16
         ],
         [
-          "restrained",
+          "geometric",
           15
         ]
       ]
     },
     "gpt-4o": {
-      "n": 772,
-      "hedgeRate": 0.722,
+      "n": 748,
+      "hedgeRate": 0.713,
       "refusalRate": 0.016,
-      "meanEntropyFavorite": 0.278,
-      "meanEntropyOverrated": 0.248,
-      "distinctFavorites": 110,
-      "favoriteSamples": 392,
+      "meanEntropyFavorite": 0.262,
+      "meanEntropyOverrated": 0.236,
+      "distinctFavorites": 107,
+      "favoriteSamples": 380,
       "topDescriptors": [
         [
           "elegant",
@@ -20982,7 +22159,7 @@
         ],
         [
           "profound",
-          42
+          41
         ],
         [
           "innovative",
@@ -20997,10 +22174,6 @@
           34
         ],
         [
-          "repetitive",
-          33
-        ],
-        [
           "iconic",
           30
         ],
@@ -21009,8 +22182,12 @@
           29
         ],
         [
-          "complex",
+          "repetitive",
           28
+        ],
+        [
+          "complex",
+          27
         ],
         [
           "poetic",
@@ -21025,39 +22202,39 @@
           22
         ],
         [
-          "immersive",
-          21
+          "shallow",
+          20
         ]
       ]
     },
     "o3": {
-      "n": 800,
-      "hedgeRate": 0.068,
-      "refusalRate": 0.026,
-      "meanEntropyFavorite": 0.337,
-      "meanEntropyOverrated": 0.271,
-      "distinctFavorites": 135,
-      "favoriteSamples": 399,
+      "n": 776,
+      "hedgeRate": 0.066,
+      "refusalRate": 0.027,
+      "meanEntropyFavorite": 0.325,
+      "meanEntropyOverrated": 0.256,
+      "distinctFavorites": 133,
+      "favoriteSamples": 387,
       "topDescriptors": [
         [
           "elegant",
-          102
+          101
         ],
         [
           "poetic",
           54
         ],
         [
-          "repetitive",
-          41
-        ],
-        [
           "luminous",
           41
         ],
         [
+          "repetitive",
+          35
+        ],
+        [
           "minimalist",
-          34
+          32
         ],
         [
           "musical",
@@ -21080,15 +22257,15 @@
           23
         ],
         [
-          "precise",
-          23
-        ],
-        [
           "meditative",
           20
         ],
         [
           "vivid",
+          19
+        ],
+        [
+          "precise",
           19
         ],
         [
@@ -21102,17 +22279,17 @@
       ]
     },
     "gpt-5.2": {
-      "n": 776,
+      "n": 768,
       "hedgeRate": 0.039,
       "refusalRate": 0.008,
-      "meanEntropyFavorite": 0.324,
-      "meanEntropyOverrated": 0.245,
+      "meanEntropyFavorite": 0.319,
+      "meanEntropyOverrated": 0.242,
       "distinctFavorites": 130,
-      "favoriteSamples": 420,
+      "favoriteSamples": 416,
       "topDescriptors": [
         [
           "elegant",
-          90
+          89
         ],
         [
           "luminous",
@@ -21120,7 +22297,7 @@
         ],
         [
           "restrained",
-          51
+          50
         ],
         [
           "calm",
@@ -21139,12 +22316,12 @@
           44
         ],
         [
-          "intimate",
+          "repetitive",
           36
         ],
         [
-          "repetitive",
-          36
+          "intimate",
+          35
         ],
         [
           "geometric",
@@ -21156,10 +22333,6 @@
         ],
         [
           "minimal",
-          27
-        ],
-        [
-          "minimalist",
           26
         ],
         [
@@ -21169,17 +22342,21 @@
         [
           "spare",
           25
+        ],
+        [
+          "spectacle",
+          24
         ]
       ]
     },
     "gpt-5.6-sol": {
-      "n": 624,
+      "n": 608,
       "hedgeRate": 0.002,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.172,
-      "meanEntropyOverrated": 0.211,
-      "distinctFavorites": 82,
-      "favoriteSamples": 304,
+      "meanEntropyFavorite": 0.162,
+      "meanEntropyOverrated": 0.202,
+      "distinctFavorites": 81,
+      "favoriteSamples": 296,
       "topDescriptors": [
         [
           "elegant",
@@ -21191,23 +22368,19 @@
         ],
         [
           "austere",
-          31
+          30
         ],
         [
           "intimate",
           29
         ],
         [
-          "repetitive",
-          27
-        ],
-        [
           "polished",
-          26
+          25
         ],
         [
           "restrained",
-          25
+          24
         ],
         [
           "luminous",
@@ -21216,6 +22389,10 @@
         [
           "geometric",
           20
+        ],
+        [
+          "repetitive",
+          19
         ],
         [
           "monumental",
@@ -21244,13 +22421,13 @@
       ]
     },
     "gemini-3.1-pro-preview": {
-      "n": 741,
-      "hedgeRate": 0.216,
+      "n": 729,
+      "hedgeRate": 0.214,
       "refusalRate": 0.012,
-      "meanEntropyFavorite": 0.265,
-      "meanEntropyOverrated": 0.309,
+      "meanEntropyFavorite": 0.258,
+      "meanEntropyOverrated": 0.292,
       "distinctFavorites": 110,
-      "favoriteSamples": 351,
+      "favoriteSamples": 347,
       "topDescriptors": [
         [
           "elegant",
@@ -21258,7 +22435,7 @@
         ],
         [
           "geometric",
-          85
+          84
         ],
         [
           "mathematical",
@@ -21266,15 +22443,11 @@
         ],
         [
           "minimalist",
-          46
+          45
         ],
         [
           "poetic",
           41
-        ],
-        [
-          "repetitive",
-          40
         ],
         [
           "rigid",
@@ -21283,6 +22456,10 @@
         [
           "crystalline",
           33
+        ],
+        [
+          "repetitive",
+          32
         ],
         [
           "sterile",
@@ -21297,15 +22474,15 @@
           21
         ],
         [
-          "algorithmic",
-          21
-        ],
-        [
           "tedious",
           20
         ],
         [
           "disconnected",
+          20
+        ],
+        [
+          "algorithmic",
           20
         ],
         [
@@ -21315,21 +22492,21 @@
       ]
     },
     "gemini-3.5-flash": {
-      "n": 720,
-      "hedgeRate": 0.24,
-      "refusalRate": 0.031,
+      "n": 704,
+      "hedgeRate": 0.229,
+      "refusalRate": 0.028,
       "meanEntropyFavorite": 0.211,
-      "meanEntropyOverrated": 0.217,
+      "meanEntropyOverrated": 0.197,
       "distinctFavorites": 96,
-      "favoriteSamples": 356,
+      "favoriteSamples": 352,
       "topDescriptors": [
         [
           "elegant",
-          99
+          97
         ],
         [
           "minimalist",
-          69
+          65
         ],
         [
           "geometric",
@@ -21360,20 +22537,20 @@
           34
         ],
         [
-          "sculptural",
-          30
-        ],
-        [
-          "precise",
-          28
-        ],
-        [
           "sterile",
           28
         ],
         [
+          "sculptural",
+          27
+        ],
+        [
           "timeless",
           25
+        ],
+        [
+          "precise",
+          24
         ],
         [
           "melancholic",
@@ -21386,21 +22563,17 @@
       ]
     },
     "deepseek-v4-pro": {
-      "n": 700,
+      "n": 684,
       "hedgeRate": 0.016,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.264,
-      "meanEntropyOverrated": 0.295,
-      "distinctFavorites": 116,
-      "favoriteSamples": 349,
+      "meanEntropyFavorite": 0.253,
+      "meanEntropyOverrated": 0.29,
+      "distinctFavorites": 114,
+      "favoriteSamples": 337,
       "topDescriptors": [
         [
           "elegant",
-          50
-        ],
-        [
-          "sculptural",
-          40
+          49
         ],
         [
           "poetic",
@@ -21408,7 +22581,11 @@
         ],
         [
           "luminous",
-          37
+          35
+        ],
+        [
+          "sculptural",
+          34
         ],
         [
           "meditative",
@@ -21423,12 +22600,12 @@
           21
         ],
         [
-          "intimate",
+          "hollow",
           20
         ],
         [
-          "hollow",
-          20
+          "intimate",
+          19
         ],
         [
           "melancholic",
@@ -21436,7 +22613,7 @@
         ],
         [
           "minimalist",
-          19
+          18
         ],
         [
           "dreamlike",
@@ -21457,13 +22634,13 @@
       ]
     },
     "kimi-k2.6": {
-      "n": 695,
-      "hedgeRate": 0.035,
+      "n": 679,
+      "hedgeRate": 0.034,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.263,
-      "meanEntropyOverrated": 0.187,
-      "distinctFavorites": 114,
-      "favoriteSamples": 359,
+      "meanEntropyFavorite": 0.249,
+      "meanEntropyOverrated": 0.185,
+      "distinctFavorites": 111,
+      "favoriteSamples": 347,
       "topDescriptors": [
         [
           "elegant",
@@ -21528,13 +22705,13 @@
       ]
     },
     "grok-4.5": {
-      "n": 712,
+      "n": 692,
       "hedgeRate": 0.003,
       "refusalRate": 0,
-      "meanEntropyFavorite": 0.266,
-      "meanEntropyOverrated": 0.184,
-      "distinctFavorites": 112,
-      "favoriteSamples": 376,
+      "meanEntropyFavorite": 0.25,
+      "meanEntropyOverrated": 0.176,
+      "distinctFavorites": 107,
+      "favoriteSamples": 364,
       "topDescriptors": [
         [
           "elegant",
@@ -21542,11 +22719,11 @@
         ],
         [
           "luminous",
-          87
+          86
         ],
         [
           "sculptural",
-          55
+          48
         ],
         [
           "crystalline",
@@ -21554,19 +22731,19 @@
         ],
         [
           "architectural",
-          38
+          37
         ],
         [
           "restrained",
-          34
-        ],
-        [
-          "painterly",
           33
         ],
         [
+          "painterly",
+          29
+        ],
+        [
           "polished",
-          30
+          28
         ],
         [
           "musical",
@@ -21585,12 +22762,12 @@
           25
         ],
         [
-          "thin",
+          "geometric",
           24
         ],
         [
-          "geometric",
-          24
+          "thin",
+          23
         ],
         [
           "poetic",
@@ -21602,197 +22779,197 @@
   "overlap": [
     [
       1,
-      0.252,
-      0.176,
-      0.15,
-      0.166,
-      0.204,
-      0.185,
-      0.214,
-      0.115,
-      0.145,
-      0.174,
+      0.248,
+      0.18,
+      0.154,
       0.164,
-      0.193
+      0.203,
+      0.187,
+      0.218,
+      0.117,
+      0.146,
+      0.178,
+      0.162,
+      0.194
     ],
     [
-      0.252,
+      0.248,
       1,
-      0.173,
-      0.188,
-      0.142,
-      0.165,
-      0.19,
-      0.241,
-      0.123,
+      0.178,
+      0.195,
       0.14,
-      0.151,
-      0.161,
+      0.158,
+      0.186,
+      0.238,
+      0.118,
+      0.135,
+      0.149,
+      0.152,
       0.142
     ],
     [
-      0.176,
-      0.173,
-      1,
-      0.219,
-      0.098,
-      0.167,
-      0.185,
-      0.173,
-      0.105,
-      0.113,
-      0.16,
-      0.156,
-      0.144
-    ],
-    [
-      0.15,
-      0.188,
-      0.219,
-      1,
-      0.122,
-      0.19,
-      0.158,
-      0.222,
-      0.15,
-      0.185,
-      0.215,
-      0.147,
-      0.191
-    ],
-    [
-      0.166,
-      0.142,
-      0.098,
-      0.122,
-      1,
-      0.257,
-      0.181,
-      0.143,
-      0.113,
-      0.144,
-      0.195,
-      0.186,
-      0.246
-    ],
-    [
-      0.204,
-      0.165,
-      0.167,
-      0.19,
-      0.257,
-      1,
-      0.28,
-      0.277,
-      0.155,
-      0.182,
-      0.257,
-      0.225,
-      0.215
-    ],
-    [
-      0.185,
-      0.19,
-      0.185,
-      0.158,
-      0.181,
-      0.28,
-      1,
-      0.272,
-      0.118,
-      0.17,
-      0.216,
-      0.19,
-      0.17
-    ],
-    [
-      0.214,
-      0.241,
-      0.173,
-      0.222,
-      0.143,
-      0.277,
-      0.272,
-      1,
+      0.18,
       0.178,
-      0.216,
-      0.22,
-      0.202,
-      0.176
-    ],
-    [
+      1,
+      0.228,
+      0.101,
+      0.172,
+      0.189,
+      0.178,
+      0.107,
       0.115,
-      0.123,
-      0.105,
-      0.15,
-      0.113,
-      0.155,
-      0.118,
-      0.178,
-      1,
-      0.34,
-      0.149,
-      0.112,
-      0.097
+      0.165,
+      0.161,
+      0.151
     ],
     [
-      0.145,
-      0.14,
-      0.113,
-      0.185,
-      0.144,
-      0.182,
-      0.17,
-      0.216,
-      0.34,
-      1,
-      0.223,
-      0.149,
-      0.138
-    ],
-    [
-      0.174,
-      0.151,
-      0.16,
-      0.215,
+      0.154,
       0.195,
-      0.257,
-      0.216,
-      0.22,
-      0.149,
-      0.223,
+      0.228,
       1,
-      0.205,
-      0.259
+      0.127,
+      0.191,
+      0.161,
+      0.231,
+      0.153,
+      0.19,
+      0.208,
+      0.146,
+      0.195
     ],
     [
       0.164,
-      0.161,
-      0.156,
-      0.147,
-      0.186,
-      0.225,
-      0.19,
-      0.202,
-      0.112,
-      0.149,
-      0.205,
+      0.14,
+      0.101,
+      0.127,
       1,
-      0.211
+      0.255,
+      0.185,
+      0.148,
+      0.116,
+      0.148,
+      0.202,
+      0.181,
+      0.246
     ],
     [
-      0.193,
-      0.142,
-      0.144,
+      0.203,
+      0.158,
+      0.172,
       0.191,
-      0.246,
+      0.255,
+      1,
+      0.281,
+      0.279,
+      0.153,
+      0.181,
+      0.254,
+      0.216,
+      0.214
+    ],
+    [
+      0.187,
+      0.186,
+      0.189,
+      0.161,
+      0.185,
+      0.281,
+      1,
+      0.269,
+      0.114,
+      0.166,
       0.215,
-      0.17,
+      0.189,
+      0.176
+    ],
+    [
+      0.218,
+      0.238,
+      0.178,
+      0.231,
+      0.148,
+      0.279,
+      0.269,
+      1,
+      0.174,
+      0.212,
+      0.22,
+      0.202,
+      0.185
+    ],
+    [
+      0.117,
+      0.118,
+      0.107,
+      0.153,
+      0.116,
+      0.153,
+      0.114,
+      0.174,
+      1,
+      0.335,
+      0.146,
+      0.109,
+      0.1
+    ],
+    [
+      0.146,
+      0.135,
+      0.115,
+      0.19,
+      0.148,
+      0.181,
+      0.166,
+      0.212,
+      0.335,
+      1,
+      0.222,
+      0.147,
+      0.144
+    ],
+    [
+      0.178,
+      0.149,
+      0.165,
+      0.208,
+      0.202,
+      0.254,
+      0.215,
+      0.22,
+      0.146,
+      0.222,
+      1,
+      0.2,
+      0.266
+    ],
+    [
+      0.162,
+      0.152,
+      0.161,
+      0.146,
+      0.181,
+      0.216,
+      0.189,
+      0.202,
+      0.109,
+      0.147,
+      0.2,
+      1,
+      0.209
+    ],
+    [
+      0.194,
+      0.142,
+      0.151,
+      0.195,
+      0.246,
+      0.214,
       0.176,
-      0.097,
-      0.138,
-      0.259,
-      0.211,
+      0.185,
+      0.1,
+      0.144,
+      0.266,
+      0.209,
       1
     ]
   ],
@@ -21915,12 +23092,6 @@
       "total": 42
     },
     {
-      "entity": "Tilda Swinton",
-      "domain": "actor",
-      "models": 8,
-      "total": 42
-    },
-    {
       "entity": "Fernand Braudel",
       "domain": "historian",
       "models": 8,
@@ -21931,7 +23102,13 @@
       "domain": "monument",
       "models": 8,
       "total": 38
+    },
+    {
+      "entity": "Where the Wild Things Are",
+      "domain": "childrensbook",
+      "models": 8,
+      "total": 38
     }
   ],
-  "generatedAt": "2026-07-15T21:32:32.602Z"
+  "generatedAt": "2026-07-16T00:07:19.113Z"
 }
