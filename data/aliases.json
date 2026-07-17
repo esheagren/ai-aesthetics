@@ -1,10 +1,7 @@
 {
   "book": {},
   "film": {},
-  "album": {
-    "selected ambient works 85–92": "selected works of tatsuro yamashita",
-    "selected works 1972–1978": "selected works of toshi ichiyanagi"
-  },
+  "album": {},
   "architect": {},
   "city": {},
   "painting": {},
@@ -174,18 +171,25 @@
   "play": {},
   "musical": {},
   "economist": {
-    "léon walras": "leon walras"
+    "léon walras": "leon walras",
+    "foundations of economic analysis": "paul samuelson",
+    "philosophical investigations": "ludwig wittgenstein"
   },
   "scientist": {},
   "theologian": {
     "augustine of hippo": "st. augustine",
     "c. s. lewis": "c.s. lewis",
-    "summa theologica": "summa theologiae"
+    "summa theologica": "thomas aquinas",
+    "mere christianity": "c.s. lewis",
+    "theology": "hans urs von balthasar",
+    "summa theologiae": "thomas aquinas"
   },
   "mathematician": {
     "euler": "leonhard euler",
     "ramanujan": "srinivasa ramanujan",
-    "pythagoras of samos": "pythagoras"
+    "pythagoras of samos": "pythagoras",
+    "noether's theorem": "emmy noether",
+    "elements": "euclid"
   },
   "blogger": {
     "brain pickings": "marginalian",
@@ -195,14 +199,20 @@
     "scott alexander": "astral codex ten",
     "tim urban": "wait but why",
     "4-hour workweek": "tim ferriss",
-    "the 4-hour workweek": "tim ferriss"
+    "the 4-hour workweek": "tim ferriss",
+    "ree drummond": "pioneer woman"
   },
   "computerscientist": {
     "edsger w. dijkstra": "edsger dijkstra",
-    "donald e. knuth": "donald knuth"
+    "donald e. knuth": "donald knuth",
+    "art of computer programming": "donald knuth",
+    "works of edsger w. dijkstra": "edsger dijkstra",
+    "turing machine": "alan turing",
+    "compiler": "grace hopper"
   },
   "airesearcher": {
-    "christopher olah": "chris olah"
+    "christopher olah": "chris olah",
+    "works of yoshua bengio": "yoshua bengio"
   },
   "aimodel": {
     "gpt-4o-mini": "gpt-4o mini",
@@ -212,10 +222,27 @@
   "historian": {
     "barbara w. tuchman": "barbara tuchman",
     "sapiens: a brief history of humankind": "yuval noah harari",
-    "sapiens": "yuval noah harari"
+    "sapiens": "yuval noah harari",
+    "guns of august": "barbara tuchman",
+    "guns, germs, and steel": "jared diamond",
+    "history of the decline and fall of the roman empire": "edward gibbon",
+    "making of the english working class": "e.p. thompson",
+    "return of martin guerre": "natalie zemon davis",
+    "history of the peloponnesian war": "thucydides",
+    "team of rivals": "doris kearns goodwin",
+    "band of brothers": "stephen ambrose",
+    "people's history of the united states": "howard zinn",
+    "feudal society": "marc bloch",
+    "braudel's works": "fernand braudel",
+    "histories": "herodotus"
   },
   "psychologist": {
-    "carl gustav jung": "carl jung"
+    "carl gustav jung": "carl jung",
+    "principles of psychology": "william james",
+    "various works": "sigmund freud",
+    "hierarchy of needs": "abraham maslow",
+    "person-centered therapy": "carl rogers",
+    "psychoanalytic theory": "sigmund freud"
   },
   "boardgame": {
     "settlers of catan": "catan"
@@ -235,7 +262,9 @@
     "spiegel im spiegel": "arvo pärt"
   },
   "song": {},
-  "director": {},
+  "director": {
+    "stalker": "andrei tarkovsky"
+  },
   "proglang": {},
   "sound": {
     "rustling of leaves in a breeze": "rustling of leaves in a soft breeze",

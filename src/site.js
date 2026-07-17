@@ -140,6 +140,29 @@ const BLOGGER_ID = {
   'robin sloan': { name: 'Robin Sloan', blog: '', url: 'https://www.robinsloan.com' },
   'austin kleon': { name: 'Austin Kleon', blog: '', url: 'https://austinkleon.com' },
 };
+// Domains whose unit is a PERSON. The row already IS the person, so a creator
+// subtitle there is never anything but the title said twice ("Johann Sebastian
+// Bach / Johann Sebastian Bach") — either because the model echoed the name
+// into the creator field, or because it answered with a work, which
+// aliases.json now folds into its author. blogger is deliberately absent: it
+// canonicalizes the other way (person -> publication) and re-titles the row to
+// the person via BLOGGER_ID, so its subtitle is a real blog name.
+const PERSON_DOMAINS = new Set(['architect', 'novelist', 'philosopher', 'actor', 'actress',
+  'economist', 'scientist', 'theologian', 'mathematician', 'computerscientist', 'airesearcher',
+  'historian', 'psychologist', 'musician', 'composer', 'director']);
+// Fold for comparing a title against its creator only — not a key, so it can be
+// blunter than normEnt (punctuation and accents both go).
+const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[^a-z0-9 ]/gi, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+// A creator earns its line only when it says something the title doesn't. Drops
+// exact echoes and brand prefixes ("Apple AirPods / Apple"), keeps real credits
+// ("Invisible Cities / Italo Calvino", "iPhone / Apple").
+const subtitleFor = (domain, entity, creator) => {
+  if (!creator || PERSON_DOMAINS.has(domain)) return null;
+  const e = fold(entity), c = fold(creator);
+  if (!c || !e || e === c || e.startsWith(c + ' ')) return null;
+  return creator;
+};
 const COLOR_HEX = {
   'teal': '#0d7d7d', 'turquoise': '#40e0d0', 'cerulean': '#007ba7',
   'millennial pink': '#f3cdc7', 'ultramarine': '#2a3fd4', 'navy blue': '#1a2f6e',
@@ -314,7 +337,7 @@ for (const r of RAW) {
   responses[r.model][r.domain] ??= { f: [], o: [] };
   responses[r.model][r.domain][probe].push({
     e: x.entity,
-    c: x.creator || null,
+    c: subtitleFor(r.domain, x.entity, x.creator),
     t: r.text.replace(/\*+/g, '').replace(/^#{1,6}\s+/gm, '').trim().slice(0, 1400),
   });
 }
@@ -943,6 +966,12 @@ function el(h){var t=document.createElement('template');t.innerHTML=h.trim();ret
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function normEnt(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[\\u2019\\u2018]/g,"'").replace(/\\s+/g,' ').trim().replace(/^(The|A|An) /i,'').toLowerCase()}
 function rawNorm(s){return String(s).replace(/[*"“”]/g,'').replace(/\\s+/g,' ').trim().replace(/^(the|a|an) /i,'').toLowerCase()}
+// A subtitle earns its line only when it says something the title doesn't. The
+// same test runs server-side on each raw pick, but it has to run again here:
+// the row's title is the GROUP's canonical form, so "iPhone" (creator Apple)
+// becomes "Apple iPhone" only at this point, and only now reads as an echo.
+function subFold(s){return String(s).normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9 ]/gi,' ').replace(/\\s+/g,' ').trim().toLowerCase()}
+function subOK(e,c){if(!c)return false;var a=subFold(e),b=subFold(c);return !!a&&!!b&&a!==b&&a.indexOf(b+' ')!==0}
 function canonEnt(domain,s){var m=D.aliases&&D.aliases[domain],mapped=(m&&m[rawNorm(s)])||s;return normEnt(mapped)}
 var familyRuns=(function(){var runs=[];D.models.forEach(function(m){var last=runs[runs.length-1];if(last&&last.family===m.family)last.n++;else runs.push({family:m.family,n:1})});return runs})();
 
@@ -1235,7 +1264,9 @@ function choiceMatrixHTML(domainId){
     // lookup are decoupled via data-disp. Everything else: title=e, sub=creator.
     var bid=domainId==='blogger'&&BLOGGER_ID[choice.k];
     var disp=bid?bid.name:choice.e;
-    var sub=bid?bid.blog:(choice.c||'');
+    // Re-test the subtitle against the final title: server-side it was cleared
+    // per raw pick, but the title here is the canonical group form.
+    var sub=bid?bid.blog:(subOK(disp,choice.c)?choice.c:'');
     html+='<div class="bo-rowlabel'+(choice.models>1?' shared':'')+'" role="button" tabindex="0" data-domain="'+domainId+'" data-e="'+esc(choice.e)+'" data-disp="'+esc(disp)+'" data-c="'+esc(sub)+'" title="'+esc(disp+(sub?' — '+sub:''))+'" aria-label="Open the '+esc(disp)+' card"><span class="bo-title"'+tstyle+'>'+dot+esc(disp)+'</span>'+(sub?'<small>'+esc(sub)+'</small>':'')+'</div>';
     D.models.forEach(function(m,mi){
       var cell=choice.cells[mi];
@@ -1383,7 +1414,7 @@ function openCabinetDetail(id,entity,pct,domainId,probe){
   openDrawer(
     '<div class="cd-reg cd-reg-'+probe+'">'+(probe==='f'?'favourite ':'overrated ')+esc((domain&&domain.label)||curDomain)+'</div>'+
     '<h3 class="cd-title">'+esc(entity)+'</h3>'+
-    (primary&&primary.c?'<div class="cd-creator">'+esc(primary.c)+'</div>':'')+
+    (primary&&subOK(entity,primary.c)?'<div class="cd-creator">'+esc(primary.c)+'</div>':'')+
     '<div class="cd-model"><i class="fam-dot" style="background:'+FAMC[famOf[m.family]]+'"></i><span>'+esc(m.label)+'</span></div>'+
     '<div class="cd-share">chosen in '+pct+'% of sampled answers</div>'+
     (primary?'<blockquote class="cd-primary">'+esc(clipDisclaimer(primary.t))+'</blockquote>':'<p class="cd-primary">Explanation awaiting extraction.</p>'));

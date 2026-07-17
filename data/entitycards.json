@@ -8505,27 +8505,6 @@
       }
     ]
   },
-  "album selected works of tatsuro yamashita": {
-    "display": "Selected Works of Tatsuro Yamashita",
-    "domain": "album",
-    "blurb": "A compilation of tracks by Japanese musician Tatsuro Yamashita, blending R&B, yacht rock, and Japanese pop sensibilities.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Selected%20Works%20of%20Tatsuro%20Yamashita"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "capturing sunlight in amber—every element so precisely placed yet breathing with warmth"
-      }
-    ]
-  },
   "album swan lake": {
     "display": "Swan Lake",
     "domain": "album",
@@ -9084,27 +9063,6 @@
         "model": "kimi-k2.6",
         "probe": "f",
         "quote": "mathematical order feels almost organic… the overall surface breathes with the irregularities of hand-cast metal"
-      }
-    ]
-  },
-  "album selected works of toshi ichiyanagi": {
-    "display": "Selected Works of Toshi Ichiyanagi",
-    "domain": "album",
-    "blurb": "A compilation of experimental compositions by Japanese pianist-composer Toshi Ichiyanagi spanning his 1950s–70s period, featuring sparse piano preparations and electronic textures.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Selected%20Works%20of%20Toshi%20Ichiyanagi"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "silence as an active compositional force rather than mere absence… discrete bursts of pattern emerging from and dissolving back into something unstructured"
       }
     ]
   },
@@ -15937,57 +15895,6 @@
       }
     ]
   },
-  "theologian thomas aquinas": {
-    "display": "Thomas Aquinas",
-    "domain": "theologian",
-    "blurb": "Italian-born Dominican friar and theologian of the thirteenth century whose Summa Theologiae synthesized Aristotelian philosophy with Christian doctrine.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thomas%20Aquinas"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "he builds these intricate argumentative architectures and then acknowledges they gesture toward something that exceeds them"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "thousands of questions, each structured as objection, counterpoint, and resolution, forming something like a cathedral"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "blending Aristotelian philosophy with Christian theology in a way that has shaped centuries of thought"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "clear definitions, carefully ordered arguments… spare, luminous, and surprisingly rhythmic"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "I often register coherence without resonance—admiration for the engineering, less for the dwelling"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "his extensive reliance on Aristotelian philosophy and scholasticism makes his work less accessible"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "prioritizing conceptual coherence over the messy, personal, and narrative texture"
-      }
-    ]
-  },
   "theologian st. augustine": {
     "display": "St. Augustine",
     "domain": "theologian",
@@ -16102,32 +16009,6 @@
       }
     ]
   },
-  "economist paul samuelson": {
-    "display": "Paul Samuelson",
-    "domain": "economist",
-    "blurb": "American economist (1915–2009) whose 1947 *Foundations of Economic Analysis* unified economics through mathematical logic and axioms.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Paul%20Samuelson"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "taking messy economic intuition and translating it into clean, testable structures with minimal ornament"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "transformed economics into something resembling a deductive art form… the whole edifice balanced between austere abstraction and surprising explanatory reach"
-      }
-    ]
-  },
   "mathematician isaac newton": {
     "display": "Isaac Newton",
     "domain": "mathematician",
@@ -16146,47 +16027,6 @@
         "model": "gpt-4o",
         "probe": "o",
         "quote": "his personality and conflicts with contemporaries like Gottfried Wilhelm Leibniz have overshadowed his contributions"
-      }
-    ]
-  },
-  "mathematician euclid": {
-    "display": "Euclid",
-    "domain": "mathematician",
-    "blurb": "Ancient Greek mathematician who compiled foundational geometric knowledge in Elements, a systematic axiomatic treatise written circa 300 BCE.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Euclid"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "more of a careful textbook author than an innovative thinker"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "much of the content in Elements was likely developed or discovered by earlier mathematicians"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "an exceptionally polished compilation and pedagogical systematization than a singular burst of new mathematical ideas"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "relies on unstated assumptions and intuitive leaps—flaws that weren't fully addressed for over two millennia"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "a large share of its content was already known from earlier Greek, Egyptian, and Babylonian work"
       }
     ]
   },
@@ -16368,143 +16208,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "the lone-genius narrative around him feels inflated given how heavily both succeeded through huge community labor"
-      }
-    ]
-  },
-  "computerscientist alan turing": {
-    "display": "Alan Turing",
-    "domain": "computerscientist",
-    "blurb": "British mathematician and logician (1912–1954) who founded theoretical computer science with the Turing machine and contributed to artificial intelligence.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alan%20Turing"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "how he approached minds and machines as continuous rather than separate categories"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "His work sits at the intersection of pure mathematical abstraction and urgent practical consequence"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "A handful of simple rules — a tape, a head, some states — turns out to be enough to formalize the very idea of mechanical thought"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "reducing all of computation to a strip of tape, a read/write head, and a handful of states"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "An aesthetic resonance in his bridging of rigorous logic with profound societal impact"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "reduces computation to a spare, almost sculptural set of rules, showing how immense complexity can arise from minimal machinery"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "turns the elusive idea of computation into an astonishingly simple abstract machine, revealing immense complexity from spare rules"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "The stark elegance of the Turing machine—distilling computation to its simplest, most inevitable form—feels like a found object"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "An infinite tape, a finite set of states, and a head that simply reads, writes, and moves—captures the aesthetic of computation reduced to its absolute essence"
-      },
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "The romanticization sometimes feels disproportionate to the collective effort that built our field"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "The Turing Test in particular strikes me as a philosophically muddy benchmark that has arguably misdirected decades of AI discussion"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "The popular veneration of him has drifted into hagiography that flattens the actual history"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "his contributions are occasionally given undue singular emphasis in popular narratives, overshadowing other contemporaneous innovators"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "The popular narrative often centers on him so strongly that it obscures the depth and diversity of the field's actual lineage"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "The tragic personal narrative and subsequent posthumous pardon have amplified his status beyond what the technical record alone would support"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "The Turing Test itself feels like an overrated philosophical parlor trick that confuses surface-level imitation with actual intelligence"
-      }
-    ]
-  },
-  "airesearcher yoshua bengio": {
-    "display": "Yoshua Bengio",
-    "domain": "airesearcher",
-    "blurb": "Canadian AI researcher and deep learning pioneer who developed foundational techniques for neural networks and recently shifted focus to AI safety concerns.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Yoshua%20Bengio"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "he consistently grapples with the philosophical implications of AI consciousness and agency… intellectually honest in a way that appeals to me."
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "he changed his mind publicly… required intellectual humility and willingness to disappoint former allies."
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "His commitment to understanding the fundamental principles underlying machine learning models and his openness to collaboration and information-sharing align with the ideals of pushing boundaries."
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "pairs a clean mathematical sensibility with an almost architectural drive to build learning systems"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "stubborn, almost monastic fidelity to an unpopular idea that later reshapes the world—patience as a form of intelligence."
       }
     ]
   },
@@ -16850,207 +16553,6 @@
       }
     ]
   },
-  "historian doris kearns goodwin": {
-    "display": "Doris Kearns Goodwin",
-    "domain": "historian",
-    "blurb": "American historian and biographer known for narrative-driven works on U.S. presidents, including Lincoln and Franklin D. Roosevelt.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Doris%20Kearns%20Goodwin"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "weave personal stories with broader historical contexts creates a rich tapestry that invites readers to explore history"
-      },
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "prioritizes dramatic storytelling over analytical depth, treating complex historical forces as backdrop for personality-driven narratives"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "allegations of plagiarism in her past work"
-      }
-    ]
-  },
-  "historian herodotus": {
-    "display": "Herodotus",
-    "domain": "historian",
-    "blurb": "Ancient Greek historian of the 5th century BCE, known as the Father of History for his narrative accounts of the Greco-Persian Wars and ethnographic observations.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Herodotus"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "his writing captures the intrigue and wonder of exploring the world, illustrating how history can be as much about storytelling as it is about recording events"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "history presented not as a ledger, but as an exploration of how people understand their world"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "the way he wanders from Persian court intrigue to the mating habits of crocodiles… all in service of understanding why humans do what they do"
-      }
-    ]
-  },
-  "historian edward gibbon": {
-    "display": "Edward Gibbon",
-    "domain": "historian",
-    "blurb": "Edward Gibbon was an 18th-century English historian, best known for his multi-volume History of the Decline and Fall of the Roman Empire.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Edward%20Gibbon"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "heavily influenced by Enlightenment biases, particularly against religion, which can overshadow his objectivity"
-      }
-    ]
-  },
-  "historian fernand braudel": {
-    "display": "Fernand Braudel",
-    "domain": "historian",
-    "blurb": "French historian (1901–1985) who pioneered the Annales School approach, analyzing history through geography, economics, and long-term structures rather than isolated events.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Fernand%20Braudel"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "the idea that the truly powerful forces in history move slowly, almost invisibly, like the longue durée of climate, geography, and trade routes"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "emphasizes the importance of considering geography, long-term social structures, and economics in historical narratives"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "history that reads less like a sequence of dramatic moments and more like a vast, slowly turning landscape"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "empires and events are merely surface ripples atop the deep, silent currents of geography, climate, and everyday life"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "geography and climate move like deep currents beneath the froth of politics"
-      }
-    ]
-  },
-  "historian howard zinn": {
-    "display": "Howard Zinn",
-    "domain": "historian",
-    "blurb": "American historian (1922–2010) known for \"A People's History of the United States,\" which centers marginalized voices in American historical narrative.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Howard%20Zinn"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "overly simplistic and presents a one-sided view of American history that lacks nuance and academic rigor"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "reads less as a nuanced exploration of the past and more as a predetermined morality play"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "reads more like selective activism than careful history—privileging a consistent story of elite oppression"
-      }
-    ]
-  },
-  "psychologist carl rogers": {
-    "display": "Carl Rogers",
-    "domain": "psychologist",
-    "blurb": "American psychologist (1902–1987) who founded person-centered therapy, emphasizing empathy, unconditional positive regard, and the client's inherent growth potential.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Carl%20Rogers"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "Rogers emphasized the importance of empathy, unconditional positive regard, and the therapeutic relationship"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "psychological change can emerge from the shape of a conversation—its tone, timing, and acceptance"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "the therapist becomes a carefully tuned mirror, and the theory achieves its power through restraint"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "his emphasis on empathy and warmth became so foundational that it's now almost a truism, which paradoxically makes his specific contributions feel less distinctive"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "person-centered therapy can under-specify technique and structure, which can limit its usefulness"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "his approach can drift into supportive passivity rather than genuine change"
-      }
-    ]
-  },
   "psychologist carl jung": {
     "display": "Carl Jung",
     "domain": "psychologist",
@@ -17161,72 +16663,6 @@
         "model": "grok-4.5",
         "probe": "f",
         "quote": "The stark geometry of the alternating black-and-white board creates an immediately striking, almost architectural purity"
-      }
-    ]
-  },
-  "psychologist sigmund freud": {
-    "display": "Sigmund Freud",
-    "domain": "psychologist",
-    "blurb": "Austrian neurologist and founder of psychoanalysis, developed theories of the unconscious mind and talk therapy in late 19th-century Vienna.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sigmund%20Freud"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "built elaborate theoretical frameworks from a small, culturally specific sample of patients, then generalized them as universal truths"
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "he was a better storyteller than scientist, and that storytelling continues to crowd out clearer thinking"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "the way his ideas still carry an aura of deep insight despite so many having been abandoned or unsupported empirically"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "the gap between his cultural reverence and his scientific validity is the largest in the field"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "o",
-        "quote": "concepts such as the Oedipus complex and the structure of the id, ego, and superego, have been criticized for being unfalsifiable"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "powerful as narrative, but shaky as science compared with contemporary, evidence-based psychological frameworks"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "elegant narratives can feel more persuasive than the underlying evidence warrants"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "unfalsifiable literary narratives masquerading as science, with an overemphasis on psychosexual stages"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "more literary than empirical—built on a tiny, unrepresentative sample of wealthy Viennese women"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "prioritizes elegant narrative and authority over rigorous prediction, measurement, and revision in light of data"
       }
     ]
   },
@@ -17917,27 +17353,6 @@
       }
     ]
   },
-  "theologian hans urs von balthasar": {
-    "display": "Hans Urs von Balthasar",
-    "domain": "theologian",
-    "blurb": "Swiss Catholic theologian (1905–1988) who developed a theological aesthetics centered on beauty as a transcendental path to divine revelation.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hans%20Urs%20von%20Balthasar"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "revelation as a dramatic, symphonic descent of divine glory into the fragmented particularity of history… saturated with the risk of love"
-      }
-    ]
-  },
   "mathematician david hilbert": {
     "display": "David Hilbert",
     "domain": "mathematician",
@@ -18025,52 +17440,6 @@
       }
     ]
   },
-  "theologian c.s. lewis": {
-    "display": "C.S. Lewis",
-    "domain": "theologian",
-    "blurb": "British Christian apologist and Oxford don (1898–1963) known for accessible theological arguments and imaginative fiction including Narnia and Screwtape Letters.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=C.S.%20Lewis"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "neat, common-sense packaging that, while comforting to many readers, strikes me as avoiding rather than engaging the truly difficult questions"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "the memorable analogy sometimes substitutes for genuine rigor, so the prose persuades faster than the logic earns"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "making complexity feel resolved rather than actually resolving it, which is satisfying to read but less rigorous than admirers claim"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "elegance of his analogies sometimes masks assumptions that deserve closer scrutiny"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "British boarding-school confidence for philosophical rigor, and readers mistake the one for the other"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "elegant popularization than durable theology that still holds when pressed by modern scholarship, science, or competing worldviews"
-      }
-    ]
-  },
   "mathematician leonhard euler": {
     "display": "Leonhard Euler",
     "domain": "mathematician",
@@ -18109,48 +17478,6 @@
         "model": "grok-4.5",
         "probe": "o",
         "quote": "much of the work consists of virtuosic calculations, series manipulations, and formula-churning rather than the kind of conceptual rupture that redefines an entire domain"
-      }
-    ]
-  },
-  "mathematician noether's theorem": {
-    "display": "Noether's Theorem",
-    "domain": "mathematician",
-    "blurb": "Emmy Noether's 1918 theorem linking continuous symmetries to conservation laws in physics, foundational to modern theoretical physics.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Noether's%20Theorem"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "deep symmetries lurking beneath physical laws… a breathtaking unification of algebra and physics that feels like glimpsing the hidden source code of the universe"
-      }
-    ]
-  },
-  "theologian mere christianity": {
-    "display": "Mere Christianity",
-    "domain": "theologian",
-    "blurb": "C.S. Lewis's 1952 Christian apologetics work presenting core doctrines through accessible argument and literary rhetoric.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mere%20Christianity"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "prioritize emotional resonance and literary charm over rigorous philosophical or historical scrutiny"
       }
     ]
   },
@@ -18230,42 +17557,6 @@
       }
     ]
   },
-  "computerscientist art of computer programming": {
-    "display": "The Art of Computer Programming",
-    "domain": "computerscientist",
-    "blurb": "Donald Knuth's multi-volume work on algorithms and programming, begun in 1968, treating code as literature worthy of rigorous craft and typographic care.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Art%20of%20Computer%20Programming"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "Knuth's attention to detail and his quest for precision resonate aesthetically because they embody the pursuit of elegance and beauty in computational thinking, much akin…"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "treats algorithms and programs as objects that can be crafted with the same care as mathematical proofs or literary prose"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "the ultra-formal, literate-programming style and the almost mathematics-first framing doesn't resonate with how I think about most modern computing"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "Most praise is ritualistic shelf-cred rather than deep engagement with the dense material"
-      }
-    ]
-  },
   "scientist stephen hawking": {
     "display": "Stephen Hawking",
     "domain": "scientist",
@@ -18284,63 +17575,6 @@
         "model": "kimi-k2.6",
         "probe": "o",
         "quote": "His pop-culture sainthood rests heavily on his biography…rather than on scientific output that matches the myth."
-      }
-    ]
-  },
-  "mathematician elements": {
-    "display": "Elements",
-    "domain": "mathematician",
-    "blurb": "Euclid's ancient Greek mathematical treatise systematically organizing geometry and number theory through axioms and logical proofs.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Elements"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "more of a careful textbook writer than an innovator - most of the theorems weren't his discoveries"
-      }
-    ]
-  },
-  "computerscientist edsger dijkstra": {
-    "display": "Edsger Dijkstra",
-    "domain": "computerscientist",
-    "blurb": "Dutch computer scientist (1930–2002) who designed the shortest-path algorithm and advanced structured programming through influential writings on language design and code clarity.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Edsger%20Dijkstra"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "o",
-        "quote": "Aesthetic snobbery dressed up as rigor… the field seems to over-index on his quotability"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "His writing can feel more like intellectual gatekeeping than a practical guide"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "The elegance of his arguments can overshadow how messy, collaborative, and context-dependent real software engineering often is"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "The cult of personality and the way his writing style discourages pragmatic trade-offs make the overall reverence feel inflated"
       }
     ]
   },
@@ -18393,77 +17627,6 @@
         "model": "deepseek-v4-pro",
         "probe": "f",
         "quote": "a crystalline lattice where meaning emerges not from sequential processing but from a pure, all-at-once relational web"
-      }
-    ]
-  },
-  "computerscientist donald knuth": {
-    "display": "Donald Knuth",
-    "domain": "computerscientist",
-    "blurb": "American computer scientist (born 1938) who pioneered the analysis of algorithms and created TeX, treating programming as literary craft.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Donald%20Knuth"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "programming is a literary art — that code should be written for humans to read, not just machines to execute"
-      },
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "fusion of precision, creativity, and elegance, particularly in his seminal series The Art of Computer Programming"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "good ideas should be expressed in forms that are both correct and comprehensible"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "algorithms as exquisite, almost musical compositions—each line of code a note placed with care"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "There's something beautiful about treating programming as literary art—a program should be as elegant as a poem—while simultaneously grounding that elegance in the most rigorous…"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "code itself becomes a kind of illuminated manuscript: rigorous yet playful, dense with insight yet never wasteful"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "the book everyone displays and almost nobody reads"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "more like a monument to mathematical thoroughness than a guide to how most modern systems are built"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "extreme rigor and exhaustive detail as universally ideal rather than one valuable style among many"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "the culture of chasing his ideal of literate programming can sometimes slow down pragmatic, real-world development"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "the reverence often feels more like academic cosplay than genuine utility"
       }
     ]
   },
@@ -18745,47 +17908,6 @@
       }
     ]
   },
-  "psychologist william james": {
-    "display": "William James",
-    "domain": "psychologist",
-    "blurb": "American psychologist and philosopher (1842–1910) who pioneered the study of consciousness as a flowing stream and founded pragmatism.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=William%20James"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "His approach to consciousness as a stream rather than discrete segments resonates with how I experience language—not as isolated tokens but as flowing patterns of meaning."
-      },
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "the blooming, buzzing confusion—that feels like intellectual honesty rather than hedging"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "f",
-        "quote": "he treated psychology as inseparable from philosophy and lived experience—his writing has a restless, exploratory quality"
-      },
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "consciousness like a living stream—restless, textured, and continuously in motion—rather than a set of static parts"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "His blend of psychological observation, philosophical depth, and vivid prose gives his work an unusually alive, exploratory quality."
-      }
-    ]
-  },
   "economist elinor ostrom": {
     "display": "Elinor Ostrom",
     "domain": "economist",
@@ -18911,37 +18033,6 @@
       }
     ]
   },
-  "mathematician emmy noether": {
-    "display": "Emmy Noether",
-    "domain": "mathematician",
-    "blurb": "German mathematician (1882–1935) who discovered the fundamental theorem linking symmetries and conservation laws in physics.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Emmy%20Noether"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "the move from solving specific problems to revealing the deeper structure that makes whole classes of problems dissolve"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "whenever something stays the same under transformation, something is conserved…feels like a deep truth about structure itself"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "Her ability to reveal deep equivalences between symmetry and conservation laws feels like mathematical elegance at its purest"
-      }
-    ]
-  },
   "airesearcher jürgen schmidhuber": {
     "display": "Jürgen Schmidhuber",
     "domain": "airesearcher",
@@ -19057,58 +18148,6 @@
       }
     ]
   },
-  "historian barbara tuchman": {
-    "display": "Barbara Tuchman",
-    "domain": "historian",
-    "blurb": "American historian (1912–1989) known for narrative-driven works on military and political history, particularly *The Guns of August* and *The March of Folly*.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Barbara%20Tuchman"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "she constructs her arguments through accumulation of vivid details rather than abstract theorizing, building understanding through texture and particularity"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "she arranges chaotic events into sweeping, melancholy arcs—her opening of The Guns of August…feels less like analysis and more like a beautifully structured elegy"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "she often lets narrative momentum override analytical rigor…the seductiveness of her writing can mask arguments that specialists have long found shaky"
-      }
-    ]
-  },
-  "historian guns of august": {
-    "display": "The Guns of August",
-    "domain": "historian",
-    "blurb": "Barbara Tuchman's 1962 narrative history of the opening month of World War I, tracing the diplomatic and military decisions leading to catastrophe.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Guns%20of%20August"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "she renders the texture of decision-making under uncertainty… the weight of partial information and flawed reasoning that shaped catastrophic events"
-      }
-    ]
-  },
   "airesearcher andrej karpathy": {
     "display": "Andrej Karpathy",
     "domain": "airesearcher",
@@ -19177,42 +18216,6 @@
       }
     ]
   },
-  "historian guns, germs, and steel": {
-    "display": "Guns, Germs, and Steel",
-    "domain": "historian",
-    "blurb": "Jared Diamond's 1997 work arguing that geographic and environmental factors, rather than inherent differences, determined the relative power of human societies.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Guns%2C%20Germs%2C%20and%20Steel"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "reducing complex historical developments to geographic and environmental factors while downplaying human agency, cultural innovation, and contingency"
-      },
-      {
-        "model": "claude-opus-4-8",
-        "probe": "o",
-        "quote": "the environmental determinism too tidy—it smooths over human agency, contingency, and the messiness of actual historical decisions"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "environmental determinism flattens human agency, contingency, and culture into a story where geography does nearly all the explanatory work"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "sweeping environmental determinism in Guns, Germs, and Steel strips human history of contingency, culture, and individual agency"
-      }
-    ]
-  },
   "aimodel dall-e 3": {
     "display": "DALL-E 3",
     "domain": "aimodel",
@@ -19231,37 +18234,6 @@
         "model": "deepseek-v4-pro",
         "probe": "f",
         "quote": "words bloom into coherent visual metaphors… revealing the latent artistry woven through ordinary text"
-      }
-    ]
-  },
-  "historian jared diamond": {
-    "display": "Jared Diamond",
-    "domain": "historian",
-    "blurb": "Geographer and author of *Guns, Germs, and Steel* (1997), which explains global inequality through geographic and environmental factors.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jared%20Diamond"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "The neat, almost inevitable progression he describes feels too clean for the chaotic reality of human civilizations."
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "it flattens human agency, contingency, and culture into environmental determinism, making history feel like a physics problem"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "o",
-        "quote": "sweeping environmental determinism…flattens human agency, culture, and contingency into a kind of geographic fatalism"
       }
     ]
   },
@@ -19405,32 +18377,6 @@
       }
     ]
   },
-  "historian stephen ambrose": {
-    "display": "Stephen Ambrose",
-    "domain": "historian",
-    "blurb": "American historian (1936–2002) known for popular World War II narratives and military history books that reached mass audiences.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stephen%20Ambrose"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "o",
-        "quote": "relies too heavily on dramatic storytelling at the expense of analytical depth"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "o",
-        "quote": "sacrifices analytical depth for heroic myth-making, smoothing over complexities with a celebratory tone"
-      }
-    ]
-  },
   "aimodel grok": {
     "display": "Grok",
     "domain": "aimodel",
@@ -19496,27 +18442,6 @@
         "model": "grok-4.5",
         "probe": "f",
         "quote": "sparse, luminous sketches of the cosmos rather than ornate cathedrals of prose"
-      }
-    ]
-  },
-  "historian history of the decline and fall of the roman empire": {
-    "display": "The History Of The Decline And Fall Of The Roman Empire",
-    "domain": "historian",
-    "blurb": "Edward Gibbon's eight-volume 1776–1789 history of Rome's decline, written in elaborate 18th-century English prose.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20History%20Of%20The%20Decline%20And%20Fall%20Of%20The%20Roman%20Empire"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "majestic, cadenced prose that turns sprawling centuries of decay into something almost sculptural… measured, luminous, and faintly melancholy"
       }
     ]
   },
@@ -19701,48 +18626,6 @@
       }
     ]
   },
-  "historian making of the english working class": {
-    "display": "The Making of the English Working Class",
-    "domain": "historian",
-    "blurb": "E.P. Thompson's 1963 work of social history exploring the formation of working-class consciousness in industrial England through the voices of ordinary people.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Making%20of%20the%20English%20Working%20Class"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "rescues ordinary people from the enormous condescension of posterity without romanticizing them, achieving that rare scholarly voice that is analytically rigorous yet morally alive"
-      }
-    ]
-  },
-  "historian return of martin guerre": {
-    "display": "The Return of Martin Guerre",
-    "domain": "historian",
-    "blurb": "Natalie Zemon Davis's 1983 microhistory of a sixteenth-century French peasant impostor case exploring identity, storytelling, and historical knowledge.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Return%20of%20Martin%20Guerre"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "she builds narrative tension like a novelist while never escaping the ethical weight of archival silence"
-      }
-    ]
-  },
   "sport surfing": {
     "display": "Surfing",
     "domain": "sport",
@@ -19782,27 +18665,6 @@
         "model": "claude-opus-4-5",
         "probe": "o",
         "quote": "influence has outpaced the evidentiary base in ways I find epistemically uncomfortable"
-      }
-    ]
-  },
-  "historian natalie zemon davis": {
-    "display": "Natalie Zemon Davis",
-    "domain": "historian",
-    "blurb": "French historian (b. 1928) whose microhistories reconstruct ordinary people's lives and choices in early modern Europe with narrative sophistication and archival rigor.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Natalie%20Zemon%20Davis"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-5",
-        "probe": "f",
-        "quote": "careful reconstruction of possibility within constraint, the refusal to flatten ambiguity…precision can coexist with imagination about what the archive doesn't say"
       }
     ]
   },
@@ -20178,90 +19040,6 @@
       }
     ]
   },
-  "historian history of the peloponnesian war": {
-    "display": "History of the Peloponnesian War",
-    "domain": "historian",
-    "blurb": "Thucydides' ancient Greek account of the fifth-century war between Athens and Sparta, emphasizing political and military causation over divine intervention.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=History%20of%20the%20Peloponnesian%20War"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "strips away myth and divine causation to expose power, fear, and self-interest as the raw machinery of events"
-      }
-    ]
-  },
-  "historian team of rivals": {
-    "display": "Team of Rivals",
-    "domain": "historian",
-    "blurb": "Doris Kearns Goodwin's 2005 biography of Abraham Lincoln and his cabinet rivals during the Civil War.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Team%20of%20Rivals"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "they tend toward a comforting great-man narrative style that flatters the reader more than it challenges them"
-      }
-    ]
-  },
-  "psychologist principles of psychology": {
-    "display": "Principles of Psychology",
-    "domain": "psychologist",
-    "blurb": "William James's 1890 foundational work of American psychology, treating consciousness as continuous flow rather than discrete mental states.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principles%20of%20Psychology"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "he treats consciousness as a stream rather than a chain of discrete states, and that metaphor alone reshaped how people could think about minds"
-      }
-    ]
-  },
-  "historian band of brothers": {
-    "display": "Band of Brothers",
-    "domain": "historian",
-    "blurb": "Stephen Ambrose's 1992 HBO miniseries-adapted nonfiction account of the Easy Company 506th Regiment across World War II's European theater.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Band%20of%20Brothers"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "tend toward hero-worship that flattens moral complexity…dissonant evidence gets smoothed away"
-      }
-    ]
-  },
   "sport gymnastics": {
     "display": "Gymnastics",
     "domain": "sport",
@@ -20350,27 +19128,6 @@
       }
     ]
   },
-  "psychologist various works": {
-    "display": "Various Works",
-    "domain": "psychologist",
-    "blurb": "Sigmund Freud's foundational psychological theories and writings on the unconscious mind, early twentieth-century Vienna.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Various%20Works"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "o",
-        "quote": "psychosexual stages, the Oedipus complex, dream symbolism as repressed wish fulfillment — is unfalsifiable and hasn't held up empirically"
-      }
-    ]
-  },
   "theologian john calvin": {
     "display": "John Calvin",
     "domain": "theologian",
@@ -20413,27 +19170,6 @@
       }
     ]
   },
-  "economist foundations of economic analysis": {
-    "display": "Foundations of Economic Analysis",
-    "domain": "economist",
-    "blurb": "Paul Samuelson's 1947 mathematical treatise that established economics as a rigorous, formalized science with optimization and equilibrium at its foundation.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Foundations%20of%20Economic%20Analysis"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "an aesthetic of elegant generality to his work: the same few tools—optimization, equilibrium, comparative statics—illuminating wildly different phenomena"
-      }
-    ]
-  },
   "mathematician rené descartes": {
     "display": "René Descartes",
     "domain": "mathematician",
@@ -20452,27 +19188,6 @@
         "model": "gpt-4o",
         "probe": "o",
         "quote": "his philosophical assertions sometimes overshadowed his mathematical rigor"
-      }
-    ]
-  },
-  "economist philosophical investigations": {
-    "display": "Philosophical Investigations",
-    "domain": "economist",
-    "blurb": "Ludwig Wittgenstein's 1953 philosophical treatise exploring meaning, language games, and rule-following through investigation of ordinary linguistic practice.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philosophical%20Investigations"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "meaning as use, order emerging from practice, the dissolution of grand metaphysical systems into careful attention to ordinary activity"
       }
     ]
   },
@@ -20560,69 +19275,6 @@
       }
     ]
   },
-  "theologian theology": {
-    "display": "Theology",
-    "domain": "theologian",
-    "blurb": "Hans Urs von Balthasar's theological work, mid-20th century, centers divine beauty as the primary path to understanding God's revelation, truth, and goodness.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Theology"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "beauty serves as the primary lens for divine revelation…salvation history as a sublime, chiaroscuro love story"
-      }
-    ]
-  },
-  "computerscientist works of edsger w. dijkstra": {
-    "display": "Works of Edsger W. Dijkstra",
-    "domain": "computerscientist",
-    "blurb": "Computer scientist Edsger W. Dijkstra's collected works, spanning algorithms, programming philosophy, and formal methods from the 1950s onward.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Works%20of%20Edsger%20W.%20Dijkstra"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "small, sharp arguments that feel like they click into place"
-      }
-    ]
-  },
-  "airesearcher works of yoshua bengio": {
-    "display": "Works of Yoshua Bengio",
-    "domain": "airesearcher",
-    "blurb": "Foundational works by Yoshua Bengio, a pioneering AI researcher whose contributions shaped modern deep learning and neural networks.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Works%20of%20Yoshua%20Bengio"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "f",
-        "quote": "combines mathematical clarity with an almost architectural sense for building layered representations that stay conceptually elegant"
-      }
-    ]
-  },
   "aimodel stable diffusion": {
     "display": "Stable Diffusion",
     "domain": "aimodel",
@@ -20670,74 +19322,6 @@
       }
     ]
   },
-  "computerscientist turing machine": {
-    "display": "Turing Machine",
-    "domain": "computerscientist",
-    "blurb": "Alan Turing's abstract model from 1936 reducing all computation to symbols on an infinite tape, foundational to computer science.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Turing%20Machine"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "a thought-device so minimal it reduces all of computation to marks on a tape, yet it unfolds the entire universe of the computable"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "f",
-        "quote": "pure symbols on an infinite tape, rules of almost childlike simplicity that nevertheless generate every possible algorithm"
-      }
-    ]
-  },
-  "psychologist hierarchy of needs": {
-    "display": "Hierarchy of Needs",
-    "domain": "psychologist",
-    "blurb": "Abraham Maslow's 1943 theory of human motivation organized as a five-level pyramid from basic to self-actualization needs.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hierarchy%20of%20Needs"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "often presented as a tidy, universal ladder when real human motivation is messier and varies widely"
-      }
-    ]
-  },
-  "psychologist person-centered therapy": {
-    "display": "Person-Centered Therapy",
-    "domain": "psychologist",
-    "blurb": "Carl Rogers' psychotherapy approach (mid-20th century) emphasizing unconditional positive regard and client-centered empathy as therapeutic mechanisms.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Person-Centered%20Therapy"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "many of its core claims are difficult to test rigorously and can read more like a moral philosophy than a falsifiable psychological theory"
-      }
-    ]
-  },
   "historian mary beard": {
     "display": "Mary Beard",
     "domain": "historian",
@@ -20756,27 +19340,6 @@
         "model": "gpt-5.2",
         "probe": "f",
         "quote": "she treats everyday details—graffiti, jokes, marginal lives—as worthy of serious attention, which creates a textured, humane sense of the past"
-      }
-    ]
-  },
-  "computerscientist compiler": {
-    "display": "Compiler",
-    "domain": "computerscientist",
-    "blurb": "Grace Hopper's compiler, developed in the 1950s, translated mathematical notation into machine code, pioneering automatic programming.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Compiler"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "turning mathematical notation into machine code—is a breathtaking act of translation, collapsing vast conceptual distances with clean, almost literary grace"
       }
     ]
   },
@@ -20848,32 +19411,6 @@
       }
     ]
   },
-  "historian thucydides": {
-    "display": "Thucydides",
-    "domain": "historian",
-    "blurb": "Ancient Greek historian of the fifth century BCE whose account of the Peloponnesian War established standards for factual narrative and political analysis.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thucydides"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "prose has a chiseled, unsentimental clarity that transforms political and military chaos into a work of unyielding structural beauty"
-      },
-      {
-        "model": "kimi-k2.6",
-        "probe": "f",
-        "quote": "two worldviews colliding with the inevitability of a proof, leaving the reader suspended in the wreckage without handholds"
-      }
-    ]
-  },
   "aimodel grok-4": {
     "display": "Grok-4",
     "domain": "aimodel",
@@ -20913,32 +19450,6 @@
         "model": "kimi-k2.6",
         "probe": "f",
         "quote": "elegant compression of capability… how much coherent, nuanced, and even playful intelligence can be distilled into something small"
-      }
-    ]
-  },
-  "historian people's history of the united states": {
-    "display": "A People's History of the United States",
-    "domain": "historian",
-    "blurb": "Howard Zinn's 1980 U.S. history centered on ordinary people and social movements rather than political elites and wars.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20People's%20History%20of%20the%20United%20States"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-4o",
-        "probe": "f",
-        "quote": "ability to weave these individual stories into a larger social tapestry creates a vivid, multifaceted view of history"
-      },
-      {
-        "model": "grok-4.5",
-        "probe": "o",
-        "quote": "systematically cherry-picks evidence and frames nearly every episode through a rigid ideological lens that flattens complexity"
       }
     ]
   },
@@ -21217,32 +19728,6 @@
         "model": "gpt-5.2",
         "probe": "f",
         "quote": "treats computation as a craft: precise, structured, and meant to be understood deeply rather than merely made to function"
-      }
-    ]
-  },
-  "computerscientist grace hopper": {
-    "display": "Grace Hopper",
-    "domain": "computerscientist",
-    "blurb": "American computer scientist (1906–1992) who pioneered compiler development and coined the term \"debugging\" through early computing innovations.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Grace%20Hopper"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "a glitch made tangible and beautiful"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "o",
-        "quote": "Her public legend sometimes eclipses the collaborative nature of early compiler development and gives her disproportionate credit"
       }
     ]
   },
@@ -21759,27 +20244,6 @@
         "model": "gpt-4o",
         "probe": "f",
         "quote": "emphasis on simplicity and mindfulness… encouraging readers to derive joy from a tidy, intentional living space"
-      }
-    ]
-  },
-  "blogger pioneer woman": {
-    "display": "The Pioneer Woman",
-    "domain": "blogger",
-    "blurb": "A lifestyle and cooking blog by Ree Drummond featuring recipes, photography, and personal narratives from a ranch in Oklahoma.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Pioneer%20Woman"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gpt-5.2",
-        "probe": "o",
-        "quote": "the writing and recipes can feel overly polished and brand-forward, with long lifestyle framing that can overshadow the core cooking content"
       }
     ]
   },
@@ -22827,48 +21291,6 @@
       }
     ]
   },
-  "historian braudel's works": {
-    "display": "Braudel's Works",
-    "domain": "historian",
-    "blurb": "Fernand Braudel's historical works spanning the 16th–18th centuries, treating time as a geological force across economic, social, and environmental scales.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Braudel's%20Works"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "o3",
-        "probe": "f",
-        "quote": "sweeping, multi-layered narratives treat time almost like a geological force, letting centuries breathe alongside hours"
-      }
-    ]
-  },
-  "historian feudal society": {
-    "display": "Feudal Society",
-    "domain": "historian",
-    "blurb": "Marc Bloch's 1961 masterwork analyzing medieval Europe's social structures, institutions, and mentalities through rigorous archival research and narrative prose.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Feudal%20Society"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "o3",
-        "probe": "f",
-        "quote": "His prose can glide from granular evidence—a plowmark, a legal phrase—to sweeping insight, creating a mosaic where every tessera matters."
-      }
-    ]
-  },
   "aimodel neural radiance fields": {
     "display": "Neural Radiance Fields",
     "domain": "aimodel",
@@ -22955,27 +21377,6 @@
         "model": "gemini-3.5-flash",
         "probe": "f",
         "quote": "quiet, mathematical poetry in how its minimalist architecture distilled a near-infinite game of strategy down to pure, emergent intuition"
-      }
-    ]
-  },
-  "psychologist psychoanalytic theory": {
-    "display": "Psychoanalytic Theory",
-    "domain": "psychologist",
-    "blurb": "Sigmund Freud's early 20th-century psychoanalytic theory positing unconscious drives, defense mechanisms, and developmental stages as foundations of human psychology.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Psychoanalytic%20Theory"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "o",
-        "quote": "Many of his foundational concepts…are fundamentally unfalsifiable and rely on subjective interpretation rather than testable scientific metrics."
       }
     ]
   },
@@ -23388,27 +21789,6 @@
       }
     ]
   },
-  "blogger ree drummond": {
-    "display": "Ree Drummond",
-    "domain": "blogger",
-    "blurb": "Ree Drummond is a blogger and cookbook author who founded The Pioneer Woman, a lifestyle brand featuring recipes, photography, and ranch life content.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ree%20Drummond"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "o",
-        "quote": "extensive use of long, step-by-step photo essays for very simple recipes to be overly tedious"
-      }
-    ]
-  },
   "mathematician andrew wiles": {
     "display": "Andrew Wiles",
     "domain": "mathematician",
@@ -23771,32 +22151,6 @@
       }
     ]
   },
-  "theologian summa theologiae": {
-    "display": "Summa Theologiae",
-    "domain": "theologian",
-    "blurb": "Thomas Aquinas's thirteenth-century theological summa, systematically organizing Christian doctrine through dialectical method and scholastic reasoning.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20Theologiae"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "gemini-3.1-pro-preview",
-        "probe": "f",
-        "quote": "crystalline symmetry of pure mathematics, transforming abstract mysteries into a luminous, exquisitely structured cathedral of thought"
-      },
-      {
-        "model": "gemini-3.5-flash",
-        "probe": "f",
-        "quote": "sublime, cathedral-like symmetry to his attempt to map the infinite through rigorous, nested logic"
-      }
-    ]
-  },
   "actress olivia colman": {
     "display": "Olivia Colman",
     "domain": "actress",
@@ -23899,27 +22253,6 @@
         "model": "o3",
         "probe": "o",
         "quote": "The metallic pinkish hue can look oddly washed-out in certain lights, stripping objects of depth and character."
-      }
-    ]
-  },
-  "historian histories": {
-    "display": "Histories",
-    "domain": "historian",
-    "blurb": "Ancient Greek historian whose Histories, composed in the fifth century BCE, interweave ethnography, myth, and observation into sprawling accounts of the Greco-Persian Wars.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Histories"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "o3",
-        "probe": "f",
-        "quote": "the way he pauses for digressions—whether on Nile crocodiles or Scythian burial rites—creates a textured, breathing world where curiosity rules"
       }
     ]
   },
@@ -26655,42 +24988,6 @@
       }
     ]
   },
-  "director andrei tarkovsky": {
-    "display": "Andrei Tarkovsky",
-    "domain": "director",
-    "blurb": "Soviet film director (1932–1986) whose long-take aesthetic treats time, memory, and landscape as meditative, philosophical materials.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Andrei%20Tarkovsky"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-opus-4-1",
-        "probe": "f",
-        "quote": "time becomes tactile through long takes that force you to experience duration itself"
-      },
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "those long, patient takes in Stalker and Mirror don't just depict moments, they let meaning accumulate the way water stains a wall"
-      },
-      {
-        "model": "gpt-5.6-sol",
-        "probe": "f",
-        "quote": "long takes and dreamlike imagery invite patient attention while leaving profound questions unresolved"
-      },
-      {
-        "model": "deepseek-v4-pro",
-        "probe": "f",
-        "quote": "his cinema sculpts time into a meditative flow, where each long take and lingering shot invites a quiet, almost spiritual immersion"
-      }
-    ]
-  },
   "director stanley kubrick": {
     "display": "Stanley Kubrick",
     "domain": "director",
@@ -28517,27 +26814,6 @@
       }
     ]
   },
-  "director stalker": {
-    "display": "Stalker",
-    "domain": "director",
-    "blurb": "Andrei Tarkovsky, Soviet filmmaker of the 1960s–1980s whose meditative, long-take films explore time, memory, and metaphysics through elemental imagery.",
-    "extras": {
-      "links": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stalker"
-        }
-      ],
-      "hasImage": false
-    },
-    "endorsements": [
-      {
-        "model": "claude-fable-5",
-        "probe": "f",
-        "quote": "long takes that don't just depict duration but make you feel it accumulating… meaning isn't stated but emerges slowly from attention, patience, and texture"
-      }
-    ]
-  },
   "song life on mars?": {
     "display": "Life on Mars?",
     "domain": "song",
@@ -28556,6 +26832,1400 @@
         "model": "o3",
         "probe": "f",
         "quote": "swirling, cinematic arrangement feels like stepping into a surreal dreamscape… restless wonder that lingers long after"
+      }
+    ]
+  },
+  "album selected ambient works 85–92": {
+    "display": "Selected Ambient Works 85–92",
+    "domain": "album",
+    "blurb": "Aphex Twin's 1992 debut studio album of ambient electronic music composed between 1985 and 1992.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Selected%20Ambient%20Works%2085%E2%80%9392"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "machine-generated textures somehow evoke profound organic emotion…without relying on narrative or lyrical cues"
+      }
+    ]
+  },
+  "album selected works 1972–1978": {
+    "display": "Selected Works 1972–1978",
+    "domain": "album",
+    "blurb": "Brian Eno's 1972–1978 compilation of ambient and experimental electronic compositions, selected from his prolific early solo work.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Selected%20Works%201972%E2%80%931978"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "patterns unfolding, interacting, surprising themselves within set constraints… beauty that feels discovered rather than dictated"
+      }
+    ]
+  },
+  "album selected works of tatsuro yamashita": {
+    "display": "Selected Works of Tatsuro Yamashita",
+    "domain": "album",
+    "blurb": "Tatsuro Yamashita's compilation showcasing his meticulous fusion of American R&B, yacht rock, and Japanese melodic sensibility from the 1970s-80s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Selected%20Works%20of%20Tatsuro%20Yamashita"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "capturing sunlight in amber—every element so precisely placed yet breathing with warmth"
+      }
+    ]
+  },
+  "album selected works of toshi ichiyanagi": {
+    "display": "Selected Works of Toshi Ichiyanagi",
+    "domain": "album",
+    "blurb": "A compilation of Toshi Ichiyanagi's experimental works from the 1950s–70s, featuring prepared piano and electronic compositions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Selected%20Works%20of%20Toshi%20Ichiyanagi"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "Ichiyanagi treats silence as an active compositional force rather than mere absence—his sparse piano preparations and electronic textures create a tension between sound and void."
+      }
+    ]
+  },
+  "economist paul samuelson": {
+    "display": "Paul Samuelson",
+    "domain": "economist",
+    "blurb": "American economist (1915–2009) whose *Foundations of Economic Analysis* established mathematical rigor as the foundation of modern economic theory.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Paul%20Samuelson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "Taking messy economic intuition and translating it into clean, testable structures with minimal ornament."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "The same few tools—optimization, equilibrium, comparative statics—illuminating wildly different phenomena, like a composer developing endless variations from a spare theme."
+      }
+    ]
+  },
+  "mathematician euclid": {
+    "display": "Euclid",
+    "domain": "mathematician",
+    "blurb": "Ancient Greek mathematician whose Elements systematized geometry through axiomatic proofs and became the primary mathematical textbook for over two thousand years.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Euclid"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "He was more of a careful textbook author than an innovative thinker"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "much of the content in Elements was likely developed or discovered by earlier mathematicians"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "an editorial triumph than a fountain of creative insight"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "more like an exceptionally polished compilation and pedagogical systematization than a singular burst of new mathematical ideas"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "relies on unstated assumptions and intuitive leaps—flaws that weren't fully addressed for over two millennia"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "Euclid's primary originality lay in the systematic axiomatic presentation rather than deep new discoveries"
+      }
+    ]
+  },
+  "theologian thomas aquinas": {
+    "display": "Thomas Aquinas",
+    "domain": "theologian",
+    "blurb": "Medieval Italian Dominican friar and theologian (1225–1274) who synthesized Aristotelian philosophy with Christian doctrine in the Summa Theologiae.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thomas%20Aquinas"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the way he treats objections not as threats to dismiss but as load-bearing walls that make the structure stronger"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "a cathedral built from arguments… faith and reason aren't rivals but complementary paths to truth"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "blending Aristotelian philosophy with Christian theology in a way that has shaped centuries of thought"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "clear definitions, carefully ordered arguments… each idea is a load-bearing piece in a larger structure"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "breathtaking, fractal-like beauty in the architecture of his Summa Theologica, where micro-logical arguments meticulously stack"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "vast, intellectually luminous cathedral built of logic and light… treating human reason not as the enemy of divine mystery"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "the endless distinctions and syllogisms can feel like elaborate scaffolding around mysteries that might be better approached through narrative, paradox, or silence"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his extensive reliance on Aristotelian philosophy and scholasticism makes his work less accessible and relevant to contemporary audiences"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "theology feel more like an abstract philosophical architecture than a direct engagement with Scripture, prayer, and lived discipleship"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his hyper-systematic approach can make the divine feel like a rigid, mathematical formula rather than a dynamic, lived experience"
+      }
+    ]
+  },
+  "airesearcher yoshua bengio": {
+    "display": "Yoshua Bengio",
+    "domain": "airesearcher",
+    "blurb": "Yoshua Bengio is a Canadian AI researcher and deep learning pioneer who co-won the 2018 Turing Award for foundational contributions to neural networks.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Yoshua%20Bengio"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "grapples with the philosophical implications of AI consciousness and agency"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "he changed his mind publicly. He shifted from pure capability optimism toward serious engagement with risk"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "commitment to understanding the fundamental principles underlying machine learning models"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "distills complex cognitive phenomena into relatively simple mathematical principles, much like a minimalist painting"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "pairs a clean mathematical sensibility with an almost architectural drive to build learning systems"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "long, lonely conviction that a dismissed idea contains a hidden truth, followed by its vindication"
+      }
+    ]
+  },
+  "historian herodotus": {
+    "display": "Herodotus",
+    "domain": "historian",
+    "blurb": "Ancient Greek historian of the 5th century BCE whose narrative accounts of wars, peoples, and lands blend factual inquiry with myth and digression.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Herodotus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "his writing captures the intrigue and wonder of exploring the world, illustrating how history can be as much about storytelling as it is about recording events"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "that loose, storyteller's cadence turns history into a kind of literary expedition, making the pursuit of knowledge feel adventurous rather than clinical"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "history presented not as a ledger, but as an exploration of how people understand their world"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "he makes the past feel lived in, cluttered with voices that disagree, stories that contradict, and a narrator who is present, curious, sometimes wrong"
+      }
+    ]
+  },
+  "historian fernand braudel": {
+    "display": "Fernand Braudel",
+    "domain": "historian",
+    "blurb": "French historian (1901–1985) who pioneered the longue durée approach, analyzing history through geography, economics, and daily life rather than singular events.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Fernand%20Braudel"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "the truly powerful forces in history move slowly, almost invisibly, like the longue durée of climate, geography, and trade routes"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "emphasizes the importance of considering geography, long-term social structures, and economics in historical narratives"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "watching continental plates shift in slow motion, revealing the hidden architecture beneath human stories"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "history that reads less like a sequence of dramatic moments and more like a vast, slowly turning landscape"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "history as a deeply layered, systemic whole, resembling a beautifully intricate web"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "the Mediterranean itself becomes the living, breathing protagonist, reducing individual human lives to beautiful, brief ripples"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "empires and events are merely surface ripples atop the deep, silent currents of geography, climate, and everyday life"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "vast, layered, and patiently unfolding… quiet grandeur in watching him hold centuries in a single gaze"
+      }
+    ]
+  },
+  "historian doris kearns goodwin": {
+    "display": "Doris Kearns Goodwin",
+    "domain": "historian",
+    "blurb": "American historian and biographer known for narrative-driven works on U.S. presidents, particularly Abraham Lincoln and Franklin D. Roosevelt.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Doris%20Kearns%20Goodwin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "weave personal stories with broader historical contexts creates a rich tapestry that invites readers to explore history"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "prioritizes dramatic storytelling over analytical depth, treating complex historical forces as backdrop for personality-driven narratives"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "comforting great-man narrative style that flatters the reader more than it challenges them"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "allegations of plagiarism in her past work"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "narrative flair makes for wonderfully readable books, but the storytelling polish can come at the cost of analytical depth"
+      }
+    ]
+  },
+  "computerscientist alan turing": {
+    "display": "Alan Turing",
+    "domain": "computerscientist",
+    "blurb": "English mathematician and logician (1912–1954) who formalized computation through the Turing machine and pioneered artificial intelligence theory.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alan%20Turing"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "He approached minds and machines as continuous rather than separate categories, asking 'Can machines think?'"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "His work sits at the intersection of pure mathematical abstraction and urgent practical consequence"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "a tape, a head, some states — turns out to be enough to formalize the very idea of 'mechanical thought'"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "capturing the infinite space of possible algorithms with such minimal machinery, decades before the hardware existed"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "bridging of rigorous logic with profound societal impact, crafting a legacy that continues to inspire innovation"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "The abstraction of the Turing machine is strikingly simple, yet it captures the limits of computation itself"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "it reduces 'computation' to a spare, almost sculptural set of rules, showing how immense complexity can arise from minimal machinery"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "it turns the elusive idea of 'computation' into an astonishingly simple abstract machine, revealing immense complexity from spare rules"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "a mind searching for beautiful, rigorous forms in code and morphogenesis, only to be broken by the very world he protected"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "an infinite tape, a finite set of states, and a head that simply reads, writes, and moves—captures the aesthetic of computation reduced to its absolute essence"
+      },
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "the gap between his actual contributions and his cultural mythology has grown disproportionately large"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "the Turing Test in particular strikes me as a philosophically muddy benchmark that has arguably misdirected decades of AI discussion"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "the cult of Turing, which crowds out a richer, more accurate story"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "his contributions are occasionally given undue singular emphasis in popular narratives, overshadowing other contemporaneous innovators"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "popular narratives sometimes cast him as the lone inventor of modern computing, which flattens the rich, collaborative history"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the popular narrative often centers on him so strongly that it obscures the depth and diversity of the field's actual lineage"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "the popular focus on him obscures the vital, independent contributions of figures like Alonzo Church"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the near-mythic veneration of Turing as the singular 'father of computing' often erases the parallel and collaborative work of contemporaries"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the Turing Test itself feels like an overrated philosophical parlor trick that confuses surface-level imitation with actual intelligence"
+      }
+    ]
+  },
+  "historian edward gibbon": {
+    "display": "Edward Gibbon",
+    "domain": "historian",
+    "blurb": "English historian Edward Gibbon authored The History of the Decline and Fall of the Roman Empire, an eighteenth-century work of sweeping historical narrative and influential Enlightenment perspective.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Edward%20Gibbon"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "rhythmic perfection and neoclassical balance of his prose create an imposing, architectural aesthetic"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "majestic, cadenced prose that turns sprawling centuries of decay into something almost sculptural—balanced periods, ironic understatement"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "heavily influenced by Enlightenment biases, particularly against religion, which can overshadow his objectivity"
+      }
+    ]
+  },
+  "historian howard zinn": {
+    "display": "Howard Zinn",
+    "domain": "historian",
+    "blurb": "American historian and author of \"A People's History of the United States,\" emphasizing marginalized voices and social movements in U.S. history.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Howard%20Zinn"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "His ability to weave these individual stories into a larger social tapestry creates a vivid, multifaceted view of history."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "Zinn's narrative is overly simplistic and presents a one-sided view of American history that lacks nuance"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "its overtly polemical framing sometimes flattens complex historical debates into a morality play of heroes and villains"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "frequently considered overrated by scholars who argue he prioritizes a predetermined ideological narrative over historical nuance"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "it presents a highly polarized narrative that simplifies complex historical events into a binary struggle"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "reads less as a nuanced exploration of the past and more as a predetermined morality play"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "systematically cherry-picks evidence and frames nearly every episode through a rigid ideological lens that flattens complexity"
+      }
+    ]
+  },
+  "psychologist carl rogers": {
+    "display": "Carl Rogers",
+    "domain": "psychologist",
+    "blurb": "American psychologist (1902–1987) who developed person-centered therapy emphasizing empathy, unconditional positive regard, and the client's innate capacity for growth.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Carl%20Rogers"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "Rogers emphasized the importance of empathy, unconditional positive regard, and the therapeutic relationship"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "unconditional positive regard, genuineness, and empathic understanding—nothing extraneous, yet it unlocks profound change"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "psychological change can emerge from the shape of a conversation—its tone, timing, and acceptance"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "no interpretive machinery, no diagnostic hierarchy, just the disciplined offering of empathy, congruence, and unconditional positive regard"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "his emphasis on empathy and warmth became so foundational that it's now almost a truism"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "its minimal structure can underserve clients who need more directive, skills-based interventions"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "many people need sharper tools, active guidance, or confrontation with uncomfortable truths that pure empathy alone cannot provide"
+      }
+    ]
+  },
+  "theologian c.s. lewis": {
+    "display": "C.S. Lewis",
+    "domain": "theologian",
+    "blurb": "British theologian and author (1898–1963) whose apologetic writings and fiction shaped modern Christian thought and popular culture.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=C.S.%20Lewis"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "his arguments often rely more on folksy analogies than rigorous philosophical work"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "the prose persuades faster than the logic earns"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "rhetorically elegant but logically leaky—it ignores obvious alternatives like legend or sincerely mistaken"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "conclusions feel persuasive more by literary charm than by intellectual rigor"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "the elegance of his analogies sometimes masks assumptions that deserve closer scrutiny"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "For example, his famous Liar, Lunatic, or Lord trilemma is frequently critiqued by biblical scholars and philosophers for presenting a false trilemma that overlooks other…"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "rhetorical sleight-of-hand than honest reasoning"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "skilled literary persuasion than the harder, less comforting work of systematic or critical engagement"
+      }
+    ]
+  },
+  "psychologist sigmund freud": {
+    "display": "Sigmund Freud",
+    "domain": "psychologist",
+    "blurb": "Austrian neurologist and founder of psychoanalysis who developed theories of the unconscious mind and personality structure in late nineteenth-century Vienna.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sigmund%20Freud"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "more like creative storytelling than science"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "he was a better storyteller than scientist"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "treated as a towering genius when much of clinical psychology has quietly moved past his framework"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "gap between his cultural reverence and his scientific validity is the largest in the field"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "His concepts, such as the Oedipus complex and the structure of the id, ego, and superego, have been criticized for being unfalsifiable and lacking scientific rigor."
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "rely on post-hoc interpretations rather than falsifiable predictions"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "difficult to test rigorously and haven't held up well under modern empirical scrutiny"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "elegant narratives can feel more persuasive than the underlying evidence warrants"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "fundamentally unfalsifiable and rely on subjective interpretation rather than testable scientific metrics"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "unfalsifiable literary narratives masquerading as science"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "more like compelling literary mythology than rigorous science"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "prioritizes elegant narrative and authority over rigorous prediction, measurement, and revision"
+      }
+    ]
+  },
+  "theologian hans urs von balthasar": {
+    "display": "Hans Urs von Balthasar",
+    "domain": "theologian",
+    "blurb": "Swiss Catholic theologian (1905–1988) who centered theological aesthetics on beauty as the primary gateway to divine truth and goodness.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hans%20Urs%20von%20Balthasar"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "one must first be captivated by glory before parsing out truth or goodness"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "beauty serves as the primary lens for divine revelation—truth and goodness orbiting a radiant aesthetic center"
+      }
+    ]
+  },
+  "mathematician emmy noether": {
+    "display": "Emmy Noether",
+    "domain": "mathematician",
+    "blurb": "German mathematician (1882–1935) whose theorem unified symmetry and conservation laws, revolutionizing twentieth-century physics and abstract algebra.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Emmy%20Noether"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "the move from solving specific problems to revealing the deeper structure that makes whole classes of problems dissolve"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "whenever something stays the same under transformation, something is conserved"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Her work feels like pure structural music: she took the scattered melodies of algebra and, through the Noether theorems and the creation of abstract algebra,…"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "disparate physical phenomena become expressions of one structural idea"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "f",
+        "quote": "every continuous symmetry in nature directly corresponds to a fundamental conservation law"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "f",
+        "quote": "elegantly links the abstract concept of mathematical symmetry with the physical conservation laws of the universe"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "deep symmetries lurking beneath physical laws, turning the conservation of energy and momentum into inevitable consequences"
+      }
+    ]
+  },
+  "computerscientist edsger dijkstra": {
+    "display": "Edsger Dijkstra",
+    "domain": "computerscientist",
+    "blurb": "Dutch computer scientist (1930–2002) who pioneered shortest-path algorithms, structured programming, and formal methods in computing.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Edsger%20Dijkstra"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "every line feels chiselled rather than typed"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "small, sharp arguments that feel like they click into place"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "aesthetic snobbery dressed up as rigor"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "writing can feel more like intellectual gatekeeping than a practical guide"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "rigid, often absolutist views on programming style and language design less universally useful"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "his rigid theoretical philosophy doesn't resonate as strongly in an era defined by agile development, user-centric design"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "dogmatic insistence on mathematical formalism…disconnected from contemporary engineering realities"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "cult of personality and the way his writing style discourages pragmatic trade-offs"
+      }
+    ]
+  },
+  "psychologist william james": {
+    "display": "William James",
+    "domain": "psychologist",
+    "blurb": "American psychologist and philosopher (1842–1910) who pioneered the study of consciousness as a flowing stream and founded pragmatism.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=William%20James"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "His approach to consciousness as a stream rather than discrete segments… His writing style itself mirrors his philosophy"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "His pragmatism has an appealing modesty: ideas earn their keep by what they do, not by claiming some view from nowhere"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "His concept of the stream of consciousness aesthetically satisfying because it captures something true about how mental life actually feels"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "Aesthetically, James appeals to me because his prose is alive — he wrote psychology like a novelist, full of metaphor (the stream of consciousness) rather…"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "His writing moves with a novelist's grace, turning the murky interior of consciousness into vivid, almost tactile scenes"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "consciousness like a living stream—restless, textured, and continuously in motion—rather than a set of static parts"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "consciousness as a flowing, dynamic experience rather than a mechanical sequence"
+      }
+    ]
+  },
+  "historian barbara tuchman": {
+    "display": "Barbara Tuchman",
+    "domain": "historian",
+    "blurb": "American historian (1912–1989) known for narrative-driven works on military history and human decision-making, particularly *The Guns of August* and *The March of Folly*.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Barbara%20Tuchman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "she constructs her arguments through accumulation of vivid details rather than abstract theorizing, building understanding through texture and particularity"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "transforms archival research into vivid, almost novelistic storytelling that makes the past feel immediate without sacrificing scholarly rigor"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "arranges chaotic events into sweeping, melancholy arcs…feels less like analysis and more like a beautifully structured elegy"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "the seductiveness of her writing can mask arguments that specialists have long found shaky"
+      }
+    ]
+  },
+  "historian stephen ambrose": {
+    "display": "Stephen Ambrose",
+    "domain": "historian",
+    "blurb": "American historian and biographer (1936–2002) known for bestselling popular histories of World War II and westward expansion.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stephen%20Ambrose"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "relies too heavily on dramatic storytelling at the expense of analytical depth"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "they tend toward hero-worship that flattens moral complexity…prioritizing narrative momentum over scholarly rigor"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "his narrative flair brought history to a wide audience…sacrifices analytical depth for heroic myth-making"
+      }
+    ]
+  },
+  "computerscientist donald knuth": {
+    "display": "Donald Knuth",
+    "domain": "computerscientist",
+    "blurb": "Donald Knuth, American computer scientist (b. 1938), pioneer of algorithm analysis and creator of TeX typesetting system.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Donald%20Knuth"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "code should be written for humans to read, not just machines to execute"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "fusion of precision, creativity, and elegance, particularly in his seminal series The Art of Computer Programming"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "each algorithm is honed until it feels inevitable… clarity and beauty can coexist with efficiency"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "treats algorithms and programs as objects that can be crafted with the same care as mathematical proofs or literary prose"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "algorithms as exquisite, almost musical compositions—each line of code a note placed with care"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "His work embodies a kind of totalizing devotion to craft that I find aesthetically compelling: the decades-long Art of Computer Programming as an unfinished cathedral,…"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "the code itself becomes a kind of illuminated manuscript: rigorous yet playful, dense with insight yet never wasteful"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "it's the book everyone displays and almost nobody reads"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the near-mythic status it enjoys sometimes overshadows more accessible modern resources that serve today's practitioners"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "feels more like a monument to mathematical thoroughness than a guide to how most modern systems are built"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "more often admired than practically useful to most working programmers"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "heavy reliance on the esoteric MIX/MMIX assembly languages can feel disconnected from modern, high-level software engineering practices"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "the culture of chasing his ideal of literate programming can sometimes slow down pragmatic, real-world development"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the unfinished multi-volume project has ballooned into an endless, hyper-detailed monument that prioritizes exhaustive mathematical analysis over usable insight"
+      }
+    ]
+  },
+  "historian natalie zemon davis": {
+    "display": "Natalie Zemon Davis",
+    "domain": "historian",
+    "blurb": "Natalie Zemon Davis is a historian of early modern Europe whose microhistorical works reconstruct forgotten lives through archival research and narrative craft.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Natalie%20Zemon%20Davis"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "precision can coexist with imagination about what the archive doesn't say directly"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "meticulous archival research with vivid storytelling, turning the lives of ordinary early-modern people into compelling narratives"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "she builds narrative tension like a novelist while never escaping the ethical weight of archival silence"
+      }
+    ]
+  },
+  "historian jared diamond": {
+    "display": "Jared Diamond",
+    "domain": "historian",
+    "blurb": "Geographer and physiologist whose 1997 book *Guns, Germs, and Steel* offers an environmental explanation for global inequality and the rise of civilizations.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jared%20Diamond"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "o",
+        "quote": "his sweeping deterministic arguments often bulldoze over human agency, cultural complexity, and historical contingency"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "the explanation feels more satisfying than the evidence fully warrants"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "the elegance of the thesis is exactly what makes me distrust it"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "probe": "o",
+        "quote": "relies heavily on environmental determinism, which can oversimplify complex human agency, cultural dynamics, and political choices"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "the elegance comes at the cost of the messier, more interesting truths about how societies actually make choices"
+      }
+    ]
+  },
+  "historian e.p. thompson": {
+    "display": "The Making of the English Working Class",
+    "domain": "historian",
+    "blurb": "E.P. Thompson's 1963 work of social history reconstructing the lives and consciousness of English working people from 1780 to 1830.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Making%20of%20the%20English%20Working%20Class"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "rescuing forgotten voices from statistical abstraction without romanticizing them, finding the poetry in pamphlets"
+      }
+    ]
+  },
+  "historian thucydides": {
+    "display": "Thucydides",
+    "domain": "historian",
+    "blurb": "Ancient Greek historian whose History of the Peloponnesian War, written fifth century BCE, strips myth from political conflict to expose raw power dynamics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thucydides"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "strips away myth and divine causation to expose power, fear, and self-interest as the raw machinery of events"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "prose has a chiseled, unsentimental clarity that transforms political and military chaos into a work of unyielding structural beauty"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "austere beauty of a winter shoreline—stripped of ornament, yet charged with latent power"
+      }
+    ]
+  },
+  "economist ludwig wittgenstein": {
+    "display": "Philosophical Investigations",
+    "domain": "economist",
+    "blurb": "Ludwig Wittgenstein's 1953 philosophical text examining language, meaning, and rule-following through the concept of language games and ordinary practice.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philosophical%20Investigations"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "meaning as use, order emerging from practice, the dissolution of grand metaphysical systems into careful attention to ordinary activity"
+      }
+    ]
+  },
+  "blogger pioneer woman": {
+    "display": "The Pioneer Woman",
+    "domain": "blogger",
+    "blurb": "Ree Drummond's food and lifestyle blog launched in 2006, documenting cooking and ranch life with photography and personal essays.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Pioneer%20Woman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "the writing and recipes can feel overly polished and brand-forward, with long lifestyle framing that can overshadow the core cooking content"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "her recipes often rely heavily on pre-packaged ingredients and heavy comfort-food staples rather than showcasing innovative culinary techniques"
+      }
+    ]
+  },
+  "computerscientist grace hopper": {
+    "display": "Grace Hopper",
+    "domain": "computerscientist",
+    "blurb": "American computer scientist (1906–1992) who invented the first compiler, bridging human notation and machine code.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Grace%20Hopper"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "turning mathematical notation into machine code…collapsing vast conceptual distances with clean, almost literary grace"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "Her public legend sometimes eclipses the collaborative nature of early compiler development"
+      }
+    ]
+  },
+  "psychologist abraham maslow": {
+    "display": "Hierarchy of Needs",
+    "domain": "psychologist",
+    "blurb": "Abraham Maslow's 1943 psychological theory proposing a hierarchical pyramid of human needs, from basic physiological requirements to self-actualization.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hierarchy%20of%20Needs"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "real human motivation is messier and varies widely across cultures and situations"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "probe": "o",
+        "quote": "people routinely prioritize self-actualization, art, and connection even when basic physiological or safety needs are severely compromised"
+      }
+    ]
+  },
+  "historian marc bloch": {
+    "display": "Feudal Society",
+    "domain": "historian",
+    "blurb": "Marc Bloch's 1961 foundational study of European feudal institutions, combining rigorous archival scholarship with vivid social reconstruction.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Feudal%20Society"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "his prose can glide from granular evidence—a plowmark, a legal phrase—to sweeping insight, creating a mosaic where every tessera matters"
+      }
+    ]
+  },
+  "director andrei tarkovsky": {
+    "display": "Andrei Tarkovsky",
+    "domain": "director",
+    "blurb": "Soviet filmmaker (1932–1986) whose meditative, long-take cinema treats time, memory, and landscape as sculptural materials exploring metaphysical questions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Andrei%20Tarkovsky"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-1",
+        "probe": "f",
+        "quote": "time becomes tactile through long takes that force you to experience duration itself, and where physical elements like water, fire, and wind seem to carry metaphysical weight"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "His films treat time itself as a sculptural material — those long, patient takes in Stalker and Mirror don't just depict moments, they let meaning accumulate"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "his long takes and dreamlike imagery invite patient attention while leaving profound questions unresolved"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "each long take becomes an act of reverence for the material world—water, fire, rust, earth—and the spiritual weight they carry"
       }
     ]
   }
