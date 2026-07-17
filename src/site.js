@@ -892,8 +892,12 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .sugstatus{font:12px var(--mono);color:var(--dim);min-height:18px}
 @media(max-width:720px){
   body.nav-ready::before{height:70px}
-  .viewbar{left:18px;right:auto;top:14px;width:min(300px,calc(100vw - 36px))}
-  .viewbar .viewlink{width:auto;flex:1;font-size:14px;padding:0 6px}
+  /* Span the whole top edge instead of a 300px left-aligned box, so the four
+     tabs share the full width and "Model map" stops truncating to "Mode…". */
+  .viewbar{left:12px;right:12px;top:14px;width:auto}
+  /* Trim the logo's footprint so the tabs get the room, not the mark. */
+  .viewbar .viewlogo{width:34px;margin-right:2px}
+  .viewbar .viewlink{width:auto;flex:1;font-size:13px;padding:0 3px}
   section.view{padding-top:82px}
 }
 @media (prefers-reduced-motion:reduce){.viewbar,.viewbar.show{transition:none}}
