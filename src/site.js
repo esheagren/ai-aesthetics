@@ -1625,9 +1625,16 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
     updateViewbar();
   });
 });
-// The brand mark returns to the index and its top.
+// The brand mark reloads the page and returns to the very top. A fresh load
+// re-shows the hero (committed resets to false) and pins to the top, because
+// scrollRestoration is 'manual' and the load handler forces scroll(0,0) — so
+// a plain reload lands squarely on the top header. The pre-reload scrollTo is
+// a belt-and-braces jump in case the browser paints before the navigation.
 var viewlogo=document.getElementById('viewlogo');
-if(viewlogo)viewlogo.addEventListener('click',function(){setView('cabinet',true);updateViewbar();});
+if(viewlogo)viewlogo.addEventListener('click',function(){
+  scrollTo({top:0,left:0,behavior:'instant'});
+  location.reload();
+});
 
 // First-visit coach-mark on the first row (Invisible Cities): teaches that a
 // name opens its card. Shown once ever (localStorage), floats beside the row
@@ -1916,7 +1923,7 @@ ${methodPage}
 </section>
 
 <nav class="viewbar" id="viewbar" aria-label="Views">
-  <button class="viewlogo" id="viewlogo" type="button" aria-label="Machines of Loving Taste — back to the top of the index" title="Machines of Loving Taste">
+  <button class="viewlogo" id="viewlogo" type="button" aria-label="Machines of Loving Taste — reload and return to the top" title="Machines of Loving Taste">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <defs><filter id="logoglow" x="-80%" y="-80%" width="260%" height="260%">
         <feGaussianBlur stdDeviation="0.7" result="b"/>
