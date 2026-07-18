@@ -1539,6 +1539,15 @@ var viewbar=document.querySelector('.viewbar');
 var mast=document.getElementById('home');
 var mpage=document.getElementById('methodintro');
 var committed=false;
+// When the brand mark reloads the page to "go home", the browser can still
+// restore the pre-reload scroll position (deep in the index) despite manual
+// scrollRestoration. That restored scroll fires the scroll handler below, whose
+// auto-commit reads scrollY-past-the-intro as "already seen the hero" and
+// instantly retires it again — the reported jitter-then-drop. homeLock, carried
+// across the reload via sessionStorage, pins the page to the top and suppresses
+// that auto-commit until the user makes a real gesture (or a short timeout).
+var homeLock=false;
+try{if(sessionStorage.getItem('mlt.home')==='1'){homeLock=true;sessionStorage.removeItem('mlt.home');}}catch(e){}
 // The intro is two full-viewport pages — the hero and the method page. The
 // first time the user scrolls past BOTH, the whole intro is retired for good
 // — collapsed out
@@ -1603,7 +1612,7 @@ function introEnd(){
 }
 function updateViewbar(){
   if(!viewbar)return;
-  if(!committed&&mast&&scrollY>=introEnd()-2)commitPastHero();
+  if(!committed&&!homeLock&&mast&&scrollY>=introEnd()-2)commitPastHero();
   var ready=committed;
   document.body.classList.toggle('nav-ready',ready);
   viewbar.classList.toggle('show',ready);
@@ -1625,13 +1634,15 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
     updateViewbar();
   });
 });
-// The brand mark reloads the page and returns to the very top. A fresh load
-// re-shows the hero (committed resets to false) and pins to the top, because
-// scrollRestoration is 'manual' and the load handler forces scroll(0,0) — so
-// a plain reload lands squarely on the top header. The pre-reload scrollTo is
-// a belt-and-braces jump in case the browser paints before the navigation.
+// The brand mark reloads the page and returns to the very top. It sets the
+// homeLock signal (read at the top of this script after the reload) so the
+// fresh load pins to the hero and ignores any scroll the browser restores —
+// otherwise the reload lands on top for a frame, then jitters back down to the
+// index. The pre-reload scrollTo is a belt-and-braces jump in case the browser
+// paints before the navigation.
 var viewlogo=document.getElementById('viewlogo');
 if(viewlogo)viewlogo.addEventListener('click',function(){
+  try{sessionStorage.setItem('mlt.home','1')}catch(e){}
   scrollTo({top:0,left:0,behavior:'instant'});
   location.reload();
 });
@@ -1741,6 +1752,31 @@ openDossier(curModel);
 // this script has already run. If nothing has genuinely scrolled us past the
 // hero by the time the page finishes loading, force back to the very top.
 addEventListener('load',function(){if(!committed)scrollTo({top:0,left:0,behavior:'instant'})});
+// Enforce the "go home" lock: hold the page at the top for a beat so a late
+// scroll-restore can't strand us in the index, and lift the lock the instant
+// the user deliberately scrolls (a gesture precedes its scroll event, so a real
+// scroll is never fought — only a browser-restored one is undone). A timeout
+// releases the lock if neither happens, so normal scrolling always returns.
+if(homeLock){
+  var homePins=0;
+  (function pin(){if(!homeLock)return;scrollTo({top:0,left:0,behavior:'instant'});if(++homePins<8)requestAnimationFrame(pin)})();
+  var releaseHome=function(){
+    if(!homeLock)return;
+    homeLock=false;
+    removeEventListener('wheel',releaseHome,true);
+    removeEventListener('touchstart',releaseHome,true);
+    removeEventListener('pointerdown',releaseHome,true);
+    removeEventListener('keydown',releaseHome,true);
+  };
+  // A restored scroll (no gesture) is snapped back; a gesture releases first.
+  var homeGuard=function(){if(homeLock)scrollTo({top:0,left:0,behavior:'instant'})};
+  addEventListener('wheel',releaseHome,{capture:true,passive:true});
+  addEventListener('touchstart',releaseHome,{capture:true,passive:true});
+  addEventListener('pointerdown',releaseHome,{capture:true,passive:true});
+  addEventListener('keydown',releaseHome,true);
+  addEventListener('scroll',homeGuard,{passive:true});
+  setTimeout(function(){releaseHome();removeEventListener('scroll',homeGuard);},1400);
+}
 
 /* ---- the quiz: match a person against the specimens, offline ---- */
 (function(){
