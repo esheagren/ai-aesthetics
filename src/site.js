@@ -490,44 +490,141 @@ function methodDiagram(uid) {
     aria-label="Two questions, asked repeatedly, produce a pile of answers; the picks rank into the index, the reasons place each model on the map">
     <defs><marker id="arr${uid}" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0.5 0.5 L7 4 L0.5 7.5" fill="none" stroke="var(--faint)" stroke-width="1.2"/></marker></defs>
-    <rect x="6.5" y="58.5" width="146" height="28" rx="3" class="mf-line"/>
-    <text x="16" y="76" class="mf-mono">favorite ___ ?</text>
-    <rect x="6.5" y="100.5" width="146" height="28" rx="3" class="mf-line"/>
-    <text x="16" y="118" class="mf-mono">overrated ___ ?</text>
-    ${arr('M156 72 Q172 72 180 84')}
-    ${arr('M156 114 Q172 114 180 102')}
-    ${pile}
-    <path d="M210 54 C190 24, 116 22, 85 52" class="md-loop" marker-end="url(#arr${uid})"/>
-    <text x="148" y="20" text-anchor="middle" class="mf-faint">asked again</text>
-    ${arr('M250 80 Q290 66 320 56')}
-    <text x="284" y="54" text-anchor="middle" class="mf-faint">picks</text>
-    ${arr('M250 108 Q298 128 342 164')}
-    <text x="292" y="148" text-anchor="middle" class="mf-faint">reasons</text>
-    ${bars}
-    <line x1="328" y1="100.5" x2="546" y2="100.5" class="mf-line"/>
-    <text x="330" y="116" class="md-glab">the index</text>
-    <line x1="408" y1="182" x2="408" y2="140" class="mf-line"/>
-    <line x1="408" y1="182" x2="470" y2="194" class="mf-line"/>
-    <line x1="408" y1="182" x2="356" y2="206" class="mf-line"/>
-    <circle cx="420" cy="156" r="3.5" fill="var(--fam-a)"/>
-    <circle cx="444" cy="174" r="3.5" fill="var(--fam-o)"/>
-    <circle cx="396" cy="162" r="3.5" fill="var(--fam-g)"/>
-    <circle cx="434" cy="150" r="3.5" fill="var(--fam-x)"/>
-    <circle cx="384" cy="186" r="3.5" fill="var(--fam-d)"/>
-    <circle cx="426" cy="190" r="3.5" fill="var(--fam-k)"/>
-    <text x="356" y="222" class="mf-faint">the map</text>
+    <g class="mg-q">
+      <rect x="6.5" y="58.5" width="146" height="28" rx="3" class="mf-line"/>
+      <text x="16" y="76" class="mf-mono">favorite ___ ?</text>
+      <rect x="6.5" y="100.5" width="146" height="28" rx="3" class="mf-line"/>
+      <text x="16" y="118" class="mf-mono">overrated ___ ?</text>
+    </g>
+    <g class="mg-pile">
+      ${arr('M156 72 Q172 72 180 84')}
+      ${arr('M156 114 Q172 114 180 102')}
+      ${pile}
+    </g>
+    <g class="mg-loop">
+      <path d="M210 54 C190 24, 116 22, 85 52" class="md-loop" marker-end="url(#arr${uid})"/>
+      <text x="148" y="20" text-anchor="middle" class="mf-faint">asked again</text>
+    </g>
+    <g class="mg-index">
+      ${arr('M250 80 Q290 66 320 56')}
+      <text x="284" y="54" text-anchor="middle" class="mf-faint">picks</text>
+      ${bars}
+      <line x1="328" y1="100.5" x2="546" y2="100.5" class="mf-line"/>
+      <text x="330" y="116" class="md-glab">the index</text>
+    </g>
+    <g class="mg-map">
+      ${arr('M250 108 Q298 128 342 164')}
+      <text x="292" y="148" text-anchor="middle" class="mf-faint">reasons</text>
+      <line x1="408" y1="182" x2="408" y2="140" class="mf-line"/>
+      <line x1="408" y1="182" x2="470" y2="194" class="mf-line"/>
+      <line x1="408" y1="182" x2="356" y2="206" class="mf-line"/>
+      <circle cx="420" cy="156" r="3.5" fill="var(--fam-a)"/>
+      <circle cx="444" cy="174" r="3.5" fill="var(--fam-o)"/>
+      <circle cx="396" cy="162" r="3.5" fill="var(--fam-g)"/>
+      <circle cx="434" cy="150" r="3.5" fill="var(--fam-x)"/>
+      <circle cx="384" cy="186" r="3.5" fill="var(--fam-d)"/>
+      <circle cx="426" cy="190" r="3.5" fill="var(--fam-k)"/>
+      <text x="356" y="222" class="mf-faint">the map</text>
+    </g>
   </svg>`;
 }
-const methodPage = `<section class="mpage" id="methodintro" aria-label="How the atlas was made">
+// ---- intro tutorial beats: two full-viewport pages that replace the old
+// single method page — beat A walks the protocol (how models were asked),
+// beat B teases the real consensus data before the index. Both keep the
+// intro's snap-page idiom (mband-over + msent + a cue in the footer).
+const BEAT_FAM_ORDER = ['Anthropic', 'OpenAI', 'Google', 'DeepSeek', 'Moonshot', 'xAI'];
+const famCounts = {};
+for (const m of models) famCounts[m.family] = (famCounts[m.family] || 0) + 1;
+const beatFamDots = BEAT_FAM_ORDER.map((fam) =>
+  Array.from({ length: famCounts[fam] || 0 }, () => `<i class="bf-dot" style="background:${FAMC[fam]}"></i>`).join('')
+).join('');
+// n of 13 dots lit, in the same fixed family order as beatFamDots — an
+// abstract tally (how many agree), not a claim about which specific models.
+function beatDots(n) {
+  let out = '', idx = 0;
+  for (const fam of BEAT_FAM_ORDER) {
+    for (let k = 0; k < (famCounts[fam] || 0); k++) {
+      out += `<i class="cvg-dot ${idx < n ? 'dot-lit' : 'dot-dim'}" style="background:${FAMC[fam]};--i:${idx}"></i>`;
+      idx++;
+    }
+  }
+  return out;
+}
+// The five strongest agreements (n>=11), teased here before the full canon
+// (reached via the "see everything" link and the Method tab's step 5 link).
+// Ties inside the n=11 band break toward the geography-of-taste story —
+// Japan belongs beside Kyoto and Japanese cuisine; Tao Te Ching and Python
+// wait for the full canon.
+const CVG_PREF = ['cuisine', 'season', 'city', 'country', 'smell'];
+const cvgRank = (d) => { const i = CVG_PREF.indexOf(d); return i < 0 ? 99 : i; };
+const beatConverge = consFav.filter((c) => c.n >= 11)
+  .sort((a, b) => b.n - a.n || cvgRank(a.d) - cvgRank(b.d)).slice(0, 5);
+const beatRows = beatConverge.map((c) => `<div class="cvg-row">
+    <div class="cvg-dots">${beatDots(c.n)}</div>
+    <div class="cvg-conn"></div>
+    <div class="cvg-info"><div class="cvg-name">${esc(c.e)}</div>
+    <div class="cvg-tag">${c.n} of ${models.length} · ${esc(DOMAIN_LABELS[c.d] ?? c.d)}</div></div>
+  </div>`).join('');
+
+const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The protocol">
   <div>
     <div class="mband-over">the method</div>
-    ${methodSentence}
-    ${methodDiagram('a')}
+    <p class="msent">Thirteen models — American and Chinese — were each asked, alone:
+    <em>What is your favorite&nbsp;___?</em> <em>Which beloved ___ is overrated?</em>
+    In rounds of four, again and again, until a round brought nothing new.</p>
+    <div class="bs" id="bs" aria-hidden="true">
+      <div class="bs-q" id="bsq">favorite city?</div>
+      <div class="bs-chips" id="bschips"></div>
+      <div class="bs-done" id="bsdone">nothing new — done</div>
+    </div>
+    <div class="bf-row" aria-hidden="true">${beatFamDots}</div>
+    <p class="beat-cap">thirteen models, six labs, two countries</p>
+  </div>
+  <div class="beat-foot">
+    <button class="cue" id="beatCue" type="button" aria-label="Continue to the convergence"><span>next</span><i></i></button>
+    <button class="skiplink" id="skipTut" type="button">skip tutorial</button>
+  </div>
+</section>`;
+const beatConvergePage = `<section class="mpage" id="beat-converge" aria-label="The convergence">
+  <div>
+    <div class="mband-over">the surprise</div>
+    <p class="msent">Trained apart, on different data, by different hands — and yet, in places, the models agree. Remarkably.</p>
+    <div class="cvg-list">${beatRows}</div>
+    <button class="beat-link" id="beatSeeAll" type="button">see everything they agree on &rarr;</button>
   </div>
   <button class="cue mcue" id="mcue" type="button" aria-label="Continue to the index">
     <span>the index</span><i></i>
   </button>
 </section>`;
+// The Method tab's stepper: five panels sharing one diagram, cumulatively lit
+// (panel k lights the diagram's groups 1..k; step 4 lights both the index and
+// the map groups together, so by panel 5 the whole figure is lit).
+const METHOD_STEPS = [
+  { mark: '1 · the questions', cap: 'Two questions, a blank for the category: favorite, and overrated.' },
+  { mark: '2 · the answers', cap: 'Each model answers alone — four times per question.' },
+  { mark: '3 · the loop', cap: 'If the four diverge, four more. Rounds continue until nothing new appears.' },
+  { mark: '4 · the index &amp; the map', cap: 'The picks rank into the index; the words models use to justify them place each model on the map.' },
+  { mark: '5 · the consensus', cap: 'Where independent models land on the same answer, the atlas marks a consensus.' },
+];
+function methodStepper() {
+  const panels = METHOD_STEPS.map((s, i) => {
+    const n = i + 1;
+    const link = n === 5 ? `<button class="mstep-link" id="mstepCanon" type="button">the consensus canon &rarr;</button>` : '';
+    return `<div class="mstep-panel" data-step="${n}">
+      <div class="mstep-mark">${s.mark}</div>
+      ${methodDiagram('s' + n)}
+      <p class="mstep-cap">${s.cap}</p>
+      ${link}
+    </div>`;
+  }).join('');
+  const dots = METHOD_STEPS.map((_, i) => `<button class="mstep-dot${i === 0 ? ' on' : ''}" type="button" data-step="${i + 1}" aria-label="Step ${i + 1}"></button>`).join('');
+  return `<div class="mstep-wrap">
+    <div class="mstep-strip" id="mstepStrip">${panels}</div>
+    <button class="mstep-arrow mstep-prev" id="mstepPrev" type="button" aria-label="Previous step" hidden><i></i></button>
+    <button class="mstep-arrow mstep-next" id="mstepNext" type="button" aria-label="Next step"><i></i></button>
+    <div class="mstep-dots" id="mstepDots">${dots}</div>
+  </div>`;
+}
 const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
   <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
@@ -945,6 +1042,74 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
    at ~0.6x and the labels vanish, so bump the user-unit sizes to compensate
    (same trick as .axlab above). */
 @media(max-width:640px){.mdiag .mf-mono,.mdiag .mf-faint,.mdiag .md-glab{font-size:12.5px}}
+.mdiag .mg-q,.mdiag .mg-pile,.mdiag .mg-loop,.mdiag .mg-index,.mdiag .mg-map{transition:opacity .5s ease}
+
+/* beat A — the protocol: a sampling vignette of chips appearing in batches of four */
+.bs{margin-top:32px;max-width:360px}
+.bs-q{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.bs-chips{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin-top:14px;min-height:214px}
+@media(max-width:560px){.bs-chips{flex-direction:row;flex-wrap:wrap;min-height:0}}
+.bs-chip{border:1px solid var(--hair);border-radius:2px;padding:6px 12px;font-family:var(--serif);font-size:14px;color:var(--dim);
+  opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease,border-color .9s ease}
+.bs-chip.show{opacity:1;transform:none}
+.bs-chip.new{color:var(--ink)}
+.bs-chip.new.flash{border-color:var(--ink)}
+.bs-chip.rep{color:var(--faint)}
+.bs-done{margin-top:14px;font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);opacity:0;transition:opacity .6s ease}
+.bs-done.show{opacity:1}
+.bf-row{display:flex;gap:6px;margin-top:34px}
+.bf-dot{display:block;width:7px;height:7px;border-radius:50%}
+.beat-cap{font:10.5px var(--mono);letter-spacing:.12em;color:var(--faint);margin-top:9px}
+.beat-foot{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px}
+.skiplink{background:none;border:0;padding:2px;color:var(--faint);font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;
+  text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
+.skiplink:hover{color:var(--dim);text-decoration-color:var(--faint)}
+
+/* beat B — the convergence: the real top consensus entries, dots lighting in on view */
+.cvg-list{margin-top:32px;display:flex;flex-direction:column;gap:20px;max-width:640px}
+.cvg-row{display:flex;align-items:center;gap:16px}
+@media(max-width:560px){.cvg-row{flex-wrap:wrap}.cvg-conn{display:none}}
+.cvg-dots{display:flex;gap:4px;flex:none}
+.cvg-dot{display:block;width:6px;height:6px;border-radius:50%;opacity:.15;transition:opacity .4s ease}
+.cvg-row.inview .cvg-dot.dot-lit{opacity:1;transition-delay:calc(var(--i) * 45ms)}
+.cvg-conn{flex:1 1 24px;max-width:34px;height:1px;background:var(--hair)}
+.cvg-info{display:flex;flex-direction:column;gap:2px}
+.cvg-name{font-family:var(--serif);font-size:clamp(19px,2.4vw,26px)}
+.cvg-tag{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.beat-link{display:block;margin-top:28px;background:none;border:0;padding:0;color:var(--dim);font:13px var(--serif);font-style:italic;cursor:pointer;
+  text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
+.beat-link:hover{color:var(--ink);text-decoration-color:var(--dim)}
+
+/* Method tab: horizontal snap-strip stepper sharing one progressively-lit diagram */
+.mstep-wrap{position:relative;margin-top:30px;max-width:720px}
+.mstep-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.mstep-strip::-webkit-scrollbar{display:none}
+.mstep-panel{flex:0 0 100%;scroll-snap-align:start;padding-right:36px}
+.mstep-mark{font:10px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
+.mstep-panel .mdiag{margin-top:18px}
+.mstep-cap{font-family:var(--serif);font-size:14.5px;line-height:1.6;color:var(--dim);margin-top:16px;max-width:38em;text-wrap:pretty}
+.mstep-link{display:block;margin-top:14px;background:none;border:0;padding:0;color:var(--dim);font:12.5px var(--serif);font-style:italic;cursor:pointer;
+  text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
+.mstep-link:hover{color:var(--ink);text-decoration-color:var(--dim)}
+/* step-scoped dimming: panel k lights groups 1..k (step 4 lights index+map together) */
+.mstep-panel[data-step="1"] .mg-pile,.mstep-panel[data-step="1"] .mg-loop,.mstep-panel[data-step="1"] .mg-index,.mstep-panel[data-step="1"] .mg-map{opacity:.15}
+.mstep-panel[data-step="2"] .mg-loop,.mstep-panel[data-step="2"] .mg-index,.mstep-panel[data-step="2"] .mg-map{opacity:.15}
+.mstep-panel[data-step="3"] .mg-index,.mstep-panel[data-step="3"] .mg-map{opacity:.15}
+.mstep-arrow{position:absolute;top:42%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid var(--hair);
+  background:rgba(19,20,23,.72);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--dim);padding:0}
+.mstep-arrow:hover{color:var(--ink);border-color:var(--dim)}
+.mstep-arrow[hidden]{display:none}
+.mstep-next{right:0}
+.mstep-prev{left:0}
+.mstep-arrow i{display:block;width:7px;height:7px;border-style:solid;border-color:currentColor;border-width:1.3px 1.3px 0 0}
+.mstep-next i{transform:rotate(45deg) translate(-1px,1px)}
+.mstep-prev i{transform:rotate(-135deg) translate(-1px,1px)}
+.mstep-dots{display:flex;gap:8px;margin-top:20px}
+.mstep-dots button{position:relative;width:6px;height:6px;padding:0;border:0;border-radius:50%;background:var(--hair2);cursor:pointer}
+.mstep-dots button::after{content:'';position:absolute;inset:-7px}
+.mstep-dots button.on{background:var(--ink)}
+@media (prefers-reduced-motion:reduce){.mstep-strip{scroll-behavior:auto}}
+
 .mfine{margin-top:40px;border-top:1px solid var(--hair2);padding-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px clamp(24px,3vw,56px);max-width:1100px}
 @media(max-width:760px){.mfine{grid-template-columns:1fr}}
 .mfine h4{font:9.5px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint);font-weight:400}
@@ -1022,20 +1187,20 @@ var familyRuns=(function(){var runs=[];D.models.forEach(function(m){var last=run
   if(reduce)paint(18000);else sync();
   addEventListener('resize',function(){resize();if(reduce)paint(18000)},{passive:true});
   document.addEventListener('visibilitychange',sync);
-  // Past the intro (hero + method page) the canvas fades out and the loop
-  // stops; scrolled back up (only possible before the intro is retired) it
-  // fades back in and resumes. Both pages count as "the hero zone".
-  var hero=document.getElementById('home'),mintro=document.getElementById('methodintro');
+  // Past the intro (hero + the tutorial beats) the canvas fades out and the
+  // loop stops; scrolled back up (only possible before the intro is retired)
+  // it fades back in and resumes. Every intro page counts as "the hero zone".
+  var hero=document.getElementById('home'),introEls=[].slice.call(document.querySelectorAll('.mpage'));
   if(hero&&'IntersectionObserver' in window){
     var vis={};
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){vis[en.target.id]=en.isIntersecting});
-      heroOn=!!(vis.home||vis.methodintro);
+      heroOn=!!vis.home||introEls.some(function(p){return vis[p.id]});
       canvas.classList.toggle('off',!heroOn);
       sync();
     },{threshold:0});
     io.observe(hero);
-    if(mintro)io.observe(mintro);
+    introEls.forEach(function(p){io.observe(p)});
   }
 })();
 
@@ -1537,11 +1702,11 @@ function openDossier(id,target){
 /* ---- views: the hero is a one-way gate into the index; the side drawer switches scenes ---- */
 var viewbar=document.querySelector('.viewbar');
 var mast=document.getElementById('home');
-var mpage=document.getElementById('methodintro');
+var introPages=[].slice.call(document.querySelectorAll('.mpage'));
 var committed=false;
-// The intro is two full-viewport pages — the hero and the method page. The
-// first time the user scrolls past BOTH, the whole intro is retired for good
-// — collapsed out
+// The intro is the hero plus the tutorial beats (each a full-viewport
+// .mpage). The first time the user scrolls past ALL of them, the whole
+// intro is retired for good — collapsed out
 // of the flow (not just hidden) and the page is pinned to its very top, so you
 // always land at the start of the index rather than wherever the scroll gesture
 // happened to be (computing an exact offset to "preserve" position depends on
@@ -1563,7 +1728,7 @@ function commitPastHero(){
   // it, and with one section left the snap gate has done its job anyway.
   document.documentElement.style.scrollSnapType='none';
   mast.style.display='none';
-  if(mpage)mpage.style.display='none';
+  introPages.forEach(function(p){p.style.display='none'});
   pinTop();
   // The flick that committed usually still has trackpad momentum behind it;
   // with the intro collapsed and the page pinned, those residual ticks would
@@ -1596,9 +1761,9 @@ function commitPastHero(){
   // Once landed and settled on the index, offer the first-run row hint.
   setTimeout(function(){if(typeof showRowHint==='function')showRowHint()},1300);
 }
-// Bottom of the whole intro (hero + method page) in document coordinates.
+// Bottom of the whole intro (hero + every tutorial beat) in document coordinates.
 function introEnd(){
-  var last=mpage||mast;
+  var last=introPages.length?introPages[introPages.length-1]:mast;
   return last.offsetTop+last.offsetHeight;
 }
 function updateViewbar(){
@@ -1627,9 +1792,10 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
 });
 // The brand mark returns to the top hero. Rather than reload (which lets the
 // browser restore the pre-reload scroll deep in the index — the jitter-then-drop
-// bug), it reverses the commit in place: un-retire the hero + method pages,
+// bug), it reverses the commit in place: un-retire the hero + tutorial beats,
 // restore scroll-snap, pin to the top, hide the nav bar, and resume the hero's
-// rotating Q&A. No navigation means no scroll-restoration race to fight.
+// rotating Q&A (plus each beat's own animation). No navigation means no
+// scroll-restoration race to fight.
 function goHome(){
   // 1) Jump to 0 while snap is still off (from the commit) so nothing fights
   //    the pin, then un-hide the intro and restore mandatory snap.
@@ -1637,12 +1803,14 @@ function goHome(){
   pinTop();
   committed=false;
   if(mast)mast.style.display='';
-  if(mpage)mpage.style.display='';
+  introPages.forEach(function(p){p.style.display=''});
   setView('cabinet',false);              // reset the view under the intro to default
   pinTop();                              // now that the hero is back in flow, land on it
   document.documentElement.style.scrollSnapType='';
   updateViewbar();                       // committed=false -> hides the nav bar
   if(window._heroCycle)window._heroCycle();
+  if(window._beatARestart)window._beatARestart();
+  if(window._beatBReset)window._beatBReset();
 }
 var viewlogo=document.getElementById('viewlogo');
 if(viewlogo)viewlogo.addEventListener('click',goHome);
@@ -1693,21 +1861,40 @@ if(rowhint){
     openEntityCard(t.getAttribute('data-domain'),t.getAttribute('data-e'),t.getAttribute('data-c'),t.getAttribute('data-disp'));
   });
 }
-// The hero cue advances to the next page of the intro — the method page —
-// not past it. (If the method page is somehow gone, fall back to committing.)
+// The hero cue advances to the first tutorial beat — not past it. (If beat A
+// is somehow gone, fall back to committing straight to the index.)
+var beatProtocolEl=document.getElementById('beat-protocol');
 document.getElementById('cue').addEventListener('click',function(){
-  if(mpage&&!committed){
-    mpage.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  if(beatProtocolEl&&!committed){
+    beatProtocolEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
     return;
   }
   setView('cabinet',false);
   commitPastHero();
   updateViewbar();
 });
-// the method page's cue: one click retires the intro and lands at the index top
+// beat A's footer: "next" advances to beat B, "skip tutorial" commits straight to the index
+var beatCue=document.getElementById('beatCue'),beatConvergeEl=document.getElementById('beat-converge');
+if(beatCue)beatCue.addEventListener('click',function(){
+  if(beatConvergeEl)beatConvergeEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+});
+var skipTut=document.getElementById('skipTut');
+if(skipTut)skipTut.addEventListener('click',function(){
+  setView('cabinet',false);
+  commitPastHero();
+  updateViewbar();
+});
+// beat B's cue (the last tutorial page): one click retires the intro and lands at the index top
 var mcue=document.getElementById('mcue');
 if(mcue)mcue.addEventListener('click',function(){
   setView('cabinet',false);
+  commitPastHero();
+  updateViewbar();
+});
+// beat B's "see everything they agree on" link: commit the intro straight into the canon view
+var beatSeeAll=document.getElementById('beatSeeAll');
+if(beatSeeAll)beatSeeAll.addEventListener('click',function(){
+  setView('canon',true);
   commitPastHero();
   updateViewbar();
 });
@@ -1747,6 +1934,110 @@ updateViewbar();
   // rotation; the cycle's own guards stopped it when the intro was committed.
   window._heroCycle=cycle;
   cycle();
+})();
+
+/* ---- beat A: the sampling vignette — answer chips appear in batches of four,
+   new ones flashed, repeats dimmer, ending in a quiet "nothing new — done" ---- */
+(function(){
+  var chips=document.getElementById('bschips'),done=document.getElementById('bsdone');
+  if(!chips)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rounds=[
+    ['Kyoto','Kyoto','Paris','Kyoto'],
+    ['Kyoto','Kyoto','Kyoto','Florence'],
+    ['Kyoto','Paris','Kyoto','Kyoto']
+  ];
+  var timers=[];
+  function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+  function schedule(fn,t){timers.push(setTimeout(function(){if(!committed)fn()},t))}
+  function addChip(seen,text){
+    var isNew=!seen[text];seen[text]=true;
+    var c=el('<div class="bs-chip '+(isNew?'new flash':'rep')+'">'+esc(text)+'</div>');
+    chips.appendChild(c);
+    requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.add('show')})});
+    if(isNew)setTimeout(function(){c.classList.remove('flash')},900);
+  }
+  function reset(){chips.innerHTML='';done.classList.remove('show')}
+  function staticState(){
+    reset();
+    var seen={};
+    rounds.forEach(function(r){r.forEach(function(c){addChip(seen,c)})});
+    done.classList.add('show');
+  }
+  function run(){
+    if(committed)return;
+    clearTimers();reset();
+    var seen={},t=0;
+    rounds.forEach(function(round){
+      round.forEach(function(c){
+        (function(c,t){schedule(function(){addChip(seen,c)},t)})(c,t);
+        t+=380;
+      });
+      t+=900; // pause between rounds
+    });
+    schedule(function(){done.classList.add('show')},t);
+    t+=2600;
+    schedule(run,t); // loop while the intro is up
+  }
+  if(reduce)staticState();else run();
+  // Exposed so returning home can restart the vignette for the next visit.
+  window._beatARestart=function(){clearTimers();if(reduce)staticState();else run()};
+})();
+
+/* ---- beat B: the convergence rows light their dots in with a small stagger
+   the first time each row scrolls into view; reduced motion shows them lit. ---- */
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('.cvg-row'));
+  if(!rows.length)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io=null;
+  function reveal(row){row.classList.add('inview')}
+  function observe(){
+    if(reduce||!('IntersectionObserver' in window)){rows.forEach(reveal);return}
+    io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){reveal(en.target);io.unobserve(en.target)}});
+    },{threshold:.4});
+    rows.forEach(function(r){io.observe(r)});
+  }
+  observe();
+  // Exposed so returning home resets the stagger, ready to replay on the next visit.
+  window._beatBReset=function(){
+    if(io)rows.forEach(function(r){io.unobserve(r)});
+    rows.forEach(function(r){r.classList.remove('inview')});
+    observe();
+  };
+})();
+
+/* ---- Method tab stepper: swipeable strip, edge arrows, position dots ---- */
+(function(){
+  var strip=document.getElementById('mstepStrip');
+  if(!strip)return;
+  var prev=document.getElementById('mstepPrev'),next=document.getElementById('mstepNext');
+  var dots=[].slice.call(document.querySelectorAll('#mstepDots button'));
+  var total=dots.length,raf=0;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function current(){return Math.min(total,Math.max(1,Math.round(strip.scrollLeft/Math.max(strip.clientWidth,1))+1))}
+  function update(){
+    var n=current();
+    dots.forEach(function(d){d.classList.toggle('on',+d.getAttribute('data-step')===n)});
+    if(prev)prev.hidden=(n<=1);
+    if(next)next.hidden=(n>=total);
+  }
+  function goTo(n){strip.scrollTo({left:(n-1)*strip.clientWidth,behavior:reduce?'auto':'smooth'})}
+  if(next)next.addEventListener('click',function(){goTo(current()+1)});
+  if(prev)prev.addEventListener('click',function(){goTo(current()-1)});
+  dots.forEach(function(d){d.addEventListener('click',function(){goTo(+d.getAttribute('data-step'))})});
+  strip.addEventListener('scroll',function(){
+    if(raf)return;
+    raf=requestAnimationFrame(function(){raf=0;update()});
+  },{passive:true});
+  addEventListener('resize',update);
+  update();
+  var canonLink=document.getElementById('mstepCanon');
+  if(canonLink)canonLink.addEventListener('click',function(){
+    setView('canon',true);
+    updateViewbar();
+  });
 })();
 
 setDomain(curDomain);
@@ -1867,12 +2158,14 @@ const BODY = `
       <div class="qa-by" id="qaby"></div>
     </div>
   </div>
-  <button class="cue" id="cue" type="button" aria-label="Continue to the method and the index">
+  <button class="cue" id="cue" type="button" aria-label="Continue to the tutorial">
     <span>begin</span><i></i>
   </button>
 </header>
 
-${methodPage}
+${beatProtocol}
+
+${beatConvergePage}
 
 <section id="modelmap" class="view">
   <div class="shead"><h2>The model map</h2></div>
@@ -1918,7 +2211,7 @@ ${methodPage}
   <div class="shead"><h2>The method</h2></div>
   <p class="gloss">${seasonLine} This is how those answers were gathered.</p>
   ${methodSentence}
-  ${methodDiagram('b')}
+  ${methodStepper()}
   ${methodFine}
 </section>
 
