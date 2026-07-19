@@ -1736,7 +1736,9 @@ var committed=false;
 // scrollTo(0,0) an animated (cancelable) scroll — behavior:'instant' overrides
 // that and also aborts any scroll animation already in flight.
 function pinTop(){
-  scrollTo({top:0,left:0,behavior:'instant'});
+  // Older WebKit rejects behavior:'instant' with a TypeError, which would
+  // abort whichever handler called us — fall back to the classic form.
+  try{scrollTo({top:0,left:0,behavior:'instant'})}catch(e){scrollTo(0,0)}
 }
 function commitPastHero(){
   if(committed||!mast)return;
@@ -1788,7 +1790,7 @@ function introEnd(){
 }
 function updateViewbar(){
   if(!viewbar)return;
-  if(!committed&&mast&&scrollY>=introEnd()-2)commitPastHero();
+  if(!committed&&!homing&&mast&&scrollY>=introEnd()-2)commitPastHero();
   var ready=committed;
   document.body.classList.toggle('nav-ready',ready);
   viewbar.classList.toggle('show',ready);
@@ -1816,21 +1818,44 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
 // restore scroll-snap, pin to the top, hide the nav bar, and resume the hero's
 // rotating Q&A (plus each beat's own animation). No navigation means no
 // scroll-restoration race to fight.
+// homing guards the handoff: mobile Safari applies layout + snap changes
+// asynchronously, so for a few frames after goHome() the scroll offset can
+// read as deep-in-the-page — without the guard, that stale offset trips the
+// auto-commit above and the intro instantly re-retires (logo tap "does
+// nothing" on phones). While homing, we pin to the top every frame and keep
+// snap off; only once the offset is stably 0 do we re-enable mandatory snap.
+var homing=false;
 function goHome(){
   // 1) Jump to 0 while snap is still off (from the commit) so nothing fights
-  //    the pin, then un-hide the intro and restore mandatory snap.
+  //    the pin, then un-hide the intro.
   document.documentElement.style.scrollSnapType='none';
   pinTop();
   committed=false;
+  homing=true;
   if(mast)mast.style.display='';
   introPages.forEach(function(p){p.style.display=''});
   setView('cabinet',false);              // reset the view under the intro to default
   pinTop();                              // now that the hero is back in flow, land on it
-  document.documentElement.style.scrollSnapType='';
   updateViewbar();                       // committed=false -> hides the nav bar
   if(window._heroCycle)window._heroCycle();
   if(window._beatARestart)window._beatARestart();
   if(window._beatBReset)window._beatBReset();
+  // 2) Hold the top for a dozen frames, then restore snap once settled. The
+  //    timeout is a safety net for backgrounded/rAF-throttled tabs.
+  var pins=0,done=false;
+  function settle(){
+    if(done)return;
+    done=true;
+    homing=false;
+    document.documentElement.style.scrollSnapType='';
+    updateViewbar();
+  }
+  (function pin(){
+    if(done)return;
+    pinTop();
+    if(++pins<12)requestAnimationFrame(pin);else settle();
+  })();
+  setTimeout(settle,600);
 }
 var viewlogo=document.getElementById('viewlogo');
 if(viewlogo)viewlogo.addEventListener('click',goHome);
