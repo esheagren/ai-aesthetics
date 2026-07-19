@@ -569,9 +569,9 @@ const beatRows = beatConverge.map((c) => `<div class="cvg-row">
 const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The protocol">
   <div>
     <div class="mband-over">the method</div>
-    <p class="msent">Thirteen models — American and Chinese — were each asked, alone:
-    <em>What is your favorite&nbsp;___?</em> <em>Which beloved ___ is overrated?</em>
-    In rounds of four, again and again, until a round brought nothing new.</p>
+    <p class="msent">AI models have preferences — and you find them simply by asking.
+    Two questions: <em>What is your favorite&nbsp;___?</em> <em>Which beloved ___ is overrated?</em>
+    Each model asked alone, again and again, and the answers tallied.</p>
     <div class="bs" id="bs" aria-hidden="true">
       <div class="bs-q" id="bsq">favorite city?</div>
       <div class="bs-chips" id="bschips"></div>
@@ -585,12 +585,21 @@ const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The 
     <button class="skiplink" id="skipTut" type="button">skip tutorial</button>
   </div>
 </section>`;
+// "See everything they agree on" unfolds the REST of the canon right here in
+// the onboarding flow (no jump to a subpage the user can't find their way back
+// from): every remaining majority agreement, compact, from ten votes down to seven.
+const beatMore = consFav.filter((c) => !beatConverge.includes(c));
+const beatMoreItems = beatMore.map((c) => `<div class="cvgm-item">
+    <span class="cvgm-name">${esc(c.e)}</span>
+    <span class="cvgm-tag">${c.n} of ${models.length} · ${esc(DOMAIN_LABELS[c.d] ?? c.d)}</span>
+  </div>`).join('');
 const beatConvergePage = `<section class="mpage" id="beat-converge" aria-label="The convergence">
   <div>
     <div class="mband-over">the surprise</div>
     <p class="msent">Trained apart, on different data, by different hands — and yet, in places, the models agree. Remarkably.</p>
     <div class="cvg-list">${beatRows}</div>
-    <button class="beat-link" id="beatSeeAll" type="button">see everything they agree on &rarr;</button>
+    <button class="beat-link" id="beatSeeAll" type="button" aria-expanded="false" aria-controls="cvgMore">see everything they agree on &rarr;</button>
+    <div class="cvg-more" id="cvgMore" hidden>${beatMoreItems}</div>
   </div>
   <button class="cue mcue" id="mcue" type="button" aria-label="Continue to the index">
     <span>the index</span><i></i>
@@ -1045,11 +1054,14 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .mdiag .mg-q,.mdiag .mg-pile,.mdiag .mg-loop,.mdiag .mg-index,.mdiag .mg-map{transition:opacity .5s ease}
 
 /* beat A — the protocol: a sampling vignette of chips appearing in batches of four */
-.bs{margin-top:32px;max-width:360px}
+.bs{margin-top:32px;max-width:420px}
 .bs-q{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.bs-chips{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin-top:14px;min-height:214px}
-@media(max-width:560px){.bs-chips{flex-direction:row;flex-wrap:wrap;min-height:0}}
-.bs-chip{border:1px solid var(--hair);border-radius:2px;padding:6px 12px;font-family:var(--serif);font-size:14px;color:var(--dim);
+/* A pre-sized 4x3 grid (one row per round of four): the container's height is
+   fixed from the first frame, so chips filling in never re-centres the page
+   or draws the copy above them upward. */
+.bs-chips{display:grid;grid-template-columns:repeat(4,92px);grid-auto-rows:33px;gap:7px;margin-top:14px;min-height:113px}
+@media(max-width:560px){.bs-chips{grid-template-columns:repeat(4,minmax(0,80px))}}
+.bs-chip{display:flex;align-items:center;justify-content:center;border:1px solid var(--hair);border-radius:2px;padding:0 4px;font-family:var(--serif);font-size:14px;color:var(--dim);
   opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease,border-color .9s ease}
 .bs-chip.show{opacity:1;transform:none}
 .bs-chip.new{color:var(--ink)}
@@ -1079,6 +1091,14 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .beat-link{display:block;margin-top:28px;background:none;border:0;padding:0;color:var(--dim);font:13px var(--serif);font-style:italic;cursor:pointer;
   text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
 .beat-link:hover{color:var(--ink);text-decoration-color:var(--dim)}
+/* the unfolded rest-of-the-canon: compact, in place, no subpage */
+.cvg-more{margin:26px 0 84px;padding-top:22px;border-top:1px solid var(--hair2);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 22px;max-width:640px;
+  opacity:0;transition:opacity .6s ease}
+.cvg-more.open{opacity:1}
+@media(max-width:700px){.cvg-more{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cvgm-item{display:flex;flex-direction:column;gap:2px}
+.cvgm-name{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.cvgm-tag{font:9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
 
 /* Method tab: horizontal snap-strip stepper sharing one progressively-lit diagram */
 .mstep-wrap{position:relative;margin-top:30px;max-width:720px}
@@ -1891,12 +1911,14 @@ if(mcue)mcue.addEventListener('click',function(){
   commitPastHero();
   updateViewbar();
 });
-// beat B's "see everything they agree on" link: commit the intro straight into the canon view
-var beatSeeAll=document.getElementById('beatSeeAll');
-if(beatSeeAll)beatSeeAll.addEventListener('click',function(){
-  setView('canon',true);
-  commitPastHero();
-  updateViewbar();
+// beat B's "see everything they agree on": unfold the rest of the canon in
+// place — the onboarding flow keeps its footing, no jump to a subpage.
+var beatSeeAll=document.getElementById('beatSeeAll'),cvgMore=document.getElementById('cvgMore');
+if(beatSeeAll&&cvgMore)beatSeeAll.addEventListener('click',function(){
+  cvgMore.hidden=false;
+  requestAnimationFrame(function(){requestAnimationFrame(function(){cvgMore.classList.add('open')})});
+  beatSeeAll.setAttribute('aria-expanded','true');
+  beatSeeAll.style.display='none';
 });
 setView('cabinet',false);
 addEventListener('scroll',updateViewbar,{passive:true});
@@ -2000,10 +2022,14 @@ updateViewbar();
     rows.forEach(function(r){io.observe(r)});
   }
   observe();
-  // Exposed so returning home resets the stagger, ready to replay on the next visit.
+  // Exposed so returning home resets the stagger (and folds the expanded
+  // canon back up), ready to replay on the next visit.
   window._beatBReset=function(){
     if(io)rows.forEach(function(r){io.unobserve(r)});
     rows.forEach(function(r){r.classList.remove('inview')});
+    var more=document.getElementById('cvgMore'),link=document.getElementById('beatSeeAll');
+    if(more){more.hidden=true;more.classList.remove('open')}
+    if(link){link.style.display='';link.setAttribute('aria-expanded','false')}
     observe();
   };
 })();
