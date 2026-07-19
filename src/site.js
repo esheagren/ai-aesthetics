@@ -535,11 +535,8 @@ function methodDiagram(uid) {
 const BEAT_FAM_ORDER = ['Anthropic', 'OpenAI', 'Google', 'DeepSeek', 'Moonshot', 'xAI'];
 const famCounts = {};
 for (const m of models) famCounts[m.family] = (famCounts[m.family] || 0) + 1;
-const beatFamDots = BEAT_FAM_ORDER.map((fam) =>
-  Array.from({ length: famCounts[fam] || 0 }, () => `<i class="bf-dot" style="background:${FAMC[fam]}"></i>`).join('')
-).join('');
-// n of 13 dots lit, in the same fixed family order as beatFamDots — an
-// abstract tally (how many agree), not a claim about which specific models.
+// n of 13 dots lit, in the same fixed family order — an abstract tally (how
+// many agree), not a claim about which specific models.
 function beatDots(n) {
   let out = '', idx = 0;
   for (const fam of BEAT_FAM_ORDER) {
@@ -549,6 +546,105 @@ function beatDots(n) {
     }
   }
   return out;
+}
+// ---- beat M: the specimens — a build-time SVG timeline of every model, laid
+// out per lab, grouped US then China, positioned by release date on a shared
+// early-2024-to-mid-2026 axis and sized by capability class. Joined against
+// `models` by id — a model with no entry here still renders (fallback:
+// mid-2026, workhorse) rather than silently vanishing, with a build warning.
+const TIMELINE_DATA = {
+  'gpt-4o': [2024.4, 'workhorse', 'GPT-4o'],
+  'o3': [2025.3, 'frontier', 'o3'],
+  'claude-opus-4-1': [2025.6, 'frontier', 'Opus 4.1'],
+  'claude-opus-4-5': [2025.9, 'frontier', 'Opus 4.5'],
+  'gpt-5.2': [2025.95, 'frontier', 'GPT-5.2'],
+  'gemini-3.1-pro-preview': [2026.05, 'frontier', 'Gemini 3.1 Pro'],
+  'kimi-k2.6': [2026.1, 'workhorse', 'Kimi K2.6'],
+  'deepseek-v4-pro': [2026.2, 'frontier', 'DeepSeek V4 Pro'],
+  'grok-4.5': [2026.3, 'frontier', 'Grok 4.5'],
+  'claude-opus-4-8': [2026.35, 'frontier', 'Opus 4.8'],
+  'gemini-3.5-flash': [2026.45, 'lightweight', 'Gemini 3.5 Flash'],
+  'gpt-5.6-sol': [2026.45, 'frontier', 'GPT-5.6 Sol'],
+  'claude-fable-5': [2026.5, 'frontier', 'Fable 5'],
+};
+const TL_CLASS_R = { lightweight: 3, workhorse: 4.5, frontier: 6 };
+// Row order: the four American labs, then a stronger separator, then the two
+// Chinese labs — grouped rather than the byFamily colour order used elsewhere.
+const TL_ROWS = [
+  { lab: 'Anthropic', group: 'united states' },
+  { lab: 'OpenAI', group: 'united states' },
+  { lab: 'Google', group: 'united states' },
+  { lab: 'xAI', group: 'united states' },
+  { lab: 'DeepSeek', group: 'china' },
+  { lab: 'Moonshot', group: 'china' },
+];
+function modelTimeline() {
+  const byLab = {};
+  for (const m of models) {
+    let e = TIMELINE_DATA[m.id];
+    if (!e) {
+      console.warn(`modelTimeline: "${m.id}" has no timeline entry — falling back to mid-2026/workhorse`);
+      e = [2026.2, 'workhorse', SHORT[m.id] || m.label];
+    }
+    (byLab[m.family] ??= []).push({ year: e[0], cls: e[1], label: e[2] });
+  }
+  const W = 640, LEFT = 102, RIGHT = 616;
+  const yMin = 2024.0, yMax = 2026.6;
+  const xOf = (yr) => LEFT + (RIGHT - LEFT) * (yr - yMin) / (yMax - yMin);
+  // Row spacing within a group vs. across the US/China divide; T1/T2 are the
+  // two staggered label baselines (near/far) so adjacent-by-date dots, which
+  // alternate tiers, never share a text line.
+  const rowGap = 40, groupGap = 56, T1 = 14, T2 = 26;
+  let y = 40, prevGroup = null, dotIdx = 0;
+  const parts = [];
+  for (const spec of TL_ROWS) {
+    if (spec.group !== prevGroup) {
+      if (prevGroup) {
+        const sepY = y + groupGap / 2;
+        parts.push(`<line x1="0" y1="${sepY.toFixed(1)}" x2="${W}" y2="${sepY.toFixed(1)}" class="mtl-sep"/>`);
+        y += groupGap;
+      }
+      parts.push(`<text x="${LEFT}" y="${(y - 14).toFixed(1)}" class="mtl-band">${esc(spec.group)}</text>`);
+      prevGroup = spec.group;
+    } else {
+      y += rowGap;
+    }
+    const entries = (byLab[spec.lab] || []).slice().sort((a, b) => a.year - b.year);
+    const color = FAMC[spec.lab];
+    const dots = entries.map((e, i) => {
+      const cx = xOf(e.year).toFixed(1);
+      const r = TL_CLASS_R[e.cls] || TL_CLASS_R.workhorse;
+      const dy = i % 2 === 0 ? T1 : T2;
+      const idx = dotIdx++;
+      return `<circle cx="${cx}" cy="${y}" r="${r}" fill="${color}" class="mtl-dot" style="--i:${idx}"/>`
+        + `<text x="${cx}" y="${(y + dy).toFixed(1)}" text-anchor="middle" class="mtl-lab" style="--i:${idx}">${esc(e.label)}</text>`;
+    }).join('');
+    parts.push(`<text x="0" y="${(y + 3.5).toFixed(1)}" class="mtl-labname">${esc(spec.lab)}</text>`
+      + `<line x1="${LEFT}" y1="${y}" x2="${RIGHT}" y2="${y}" class="mtl-hair"/>${dots}`);
+  }
+  const axisY = y + T2 + 10;
+  const ticks = [2024, 2025, 2026].map((yr) => {
+    const cx = xOf(yr).toFixed(1);
+    return `<line x1="${cx}" y1="${(axisY - 4).toFixed(1)}" x2="${cx}" y2="${(axisY + 4).toFixed(1)}" class="mtl-tickmark"/>`
+      + `<text x="${cx}" y="${(axisY + 16).toFixed(1)}" text-anchor="middle" class="mtl-tick">${yr}</text>`;
+  }).join('');
+  const legendY = axisY + 30;
+  const legendItems = [['lightweight', TL_CLASS_R.lightweight], ['workhorse', TL_CLASS_R.workhorse], ['frontier', TL_CLASS_R.frontier]];
+  let lx = LEFT;
+  const legend = legendItems.map(([label, r], i) => {
+    const cx = lx + r, textX = cx + r + 6;
+    lx = textX + label.length * 6.4 + 26;
+    return `<circle cx="${cx.toFixed(1)}" cy="${legendY}" r="${r}" fill="var(--dim)"/>`
+      + `<text x="${textX.toFixed(1)}" y="${(legendY + 3).toFixed(1)}" class="mtl-legend">${esc(label)}${i < legendItems.length - 1 ? ' · ' : ''}</text>`;
+  }).join('');
+  const H = legendY + 18;
+  return `<svg class="mtl" viewBox="0 0 ${W} ${H}" role="img"
+    aria-label="Timeline of thirteen AI models by lab, release date and capability class, spanning early 2024 to mid-2026">
+    ${parts.join('\n    ')}
+    <line x1="${LEFT}" y1="${axisY}" x2="${RIGHT}" y2="${axisY}" class="mtl-hair"/>
+    ${ticks}
+    ${legend}
+  </svg>`;
 }
 // The five strongest agreements (n>=11), teased here before the full canon
 // (reached via the "see everything" link and the Method tab's step 5 link).
@@ -577,12 +673,25 @@ const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The 
       <div class="bs-chips" id="bschips"></div>
       <div class="bs-done" id="bsdone">nothing new — done</div>
     </div>
-    <div class="bf-row" aria-hidden="true">${beatFamDots}</div>
-    <p class="beat-cap">thirteen models, six labs, two countries</p>
   </div>
   <div class="beat-foot">
-    <button class="cue" id="beatCue" type="button" aria-label="Continue to the convergence"><span>next</span><i></i></button>
+    <button class="cue" id="beatCue" type="button" aria-label="Continue to the specimens"><span>next</span><i></i></button>
     <button class="skiplink" id="skipTut" type="button">skip tutorial</button>
+  </div>
+</section>`;
+// beat M — the specimens: the panel of models itself, before the convergence
+// story asks what they agree on. The timeline is the whole point; the copy
+// stays to one sentence.
+const beatModelsPage = `<section class="mpage" id="beat-models" aria-label="The specimens">
+  <div>
+    <div class="mband-over">the specimens</div>
+    <p class="msent">No single machine mind: the panel spans three years of releases —
+    quick lightweight models and frontier flagships, from four American labs and two Chinese.</p>
+    ${modelTimeline()}
+  </div>
+  <div class="beat-foot">
+    <button class="cue" id="beatCueM" type="button" aria-label="Continue to the convergence"><span>next</span><i></i></button>
+    <button class="skiplink" id="skipTut2" type="button">skip tutorial</button>
   </div>
 </section>`;
 // "See everything they agree on" unfolds the REST of the canon right here in
@@ -1069,13 +1178,31 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .bs-chip.rep{color:var(--faint)}
 .bs-done{margin-top:14px;font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);opacity:0;transition:opacity .6s ease}
 .bs-done.show{opacity:1}
-.bf-row{display:flex;gap:6px;margin-top:34px}
-.bf-dot{display:block;width:7px;height:7px;border-radius:50%}
-.beat-cap{font:10.5px var(--mono);letter-spacing:.12em;color:var(--faint);margin-top:9px}
 .beat-foot{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px}
 .skiplink{background:none;border:0;padding:2px;color:var(--faint);font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;
   text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
 .skiplink:hover{color:var(--dim);text-decoration-color:var(--faint)}
+
+/* beat M — the specimens: a build-time SVG timeline of every model by lab,
+   release date and capability class, revealed with a small stagger on view */
+.mtl{display:block;width:100%;max-width:640px;height:auto;margin-top:34px;overflow:visible}
+.mtl-band{font:9.5px var(--mono);letter-spacing:.26em;text-transform:uppercase;fill:var(--faint)}
+.mtl-labname{font:9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;fill:var(--faint)}
+.mtl-hair{stroke:var(--hair);stroke-width:1}
+.mtl-sep{stroke:var(--hair);stroke-width:1.5;opacity:.7}
+.mtl-tickmark{stroke:var(--hair);stroke-width:1}
+.mtl-tick{font:9.5px var(--mono);letter-spacing:.06em;fill:var(--faint)}
+.mtl-legend{font:9.5px var(--mono);letter-spacing:.06em;fill:var(--faint)}
+.mtl-dot{opacity:0;transform:scale(.4);transform-box:fill-box;transform-origin:center;
+  transition:opacity .45s ease,transform .45s ease}
+.mtl-lab{font-family:var(--serif);font-size:11.5px;fill:var(--dim);opacity:0;transition:opacity .45s ease}
+.mtl.inview .mtl-dot{opacity:1;transform:scale(1);transition-delay:calc(var(--i) * 55ms)}
+.mtl.inview .mtl-lab{opacity:1;transition-delay:calc(var(--i) * 55ms + 90ms)}
+@media (prefers-reduced-motion:reduce){.mtl-dot,.mtl-lab{transition:none}}
+/* same viewBox-scaling compensation as .mdiag: bump the user-unit text sizes
+   at phone widths so labels stay legible once the SVG scales down */
+@media(max-width:640px){.mtl .mtl-band,.mtl .mtl-labname,.mtl .mtl-tick,.mtl .mtl-legend{font-size:12.5px}
+  .mtl .mtl-lab{font-size:14px}}
 
 /* beat B — the convergence: the real top consensus entries, dots lighting in on view */
 .cvg-list{margin-top:32px;display:flex;flex-direction:column;gap:20px;max-width:640px}
@@ -1839,6 +1966,7 @@ function goHome(){
   updateViewbar();                       // committed=false -> hides the nav bar
   if(window._heroCycle)window._heroCycle();
   if(window._beatARestart)window._beatARestart();
+  if(window._beatMReset)window._beatMReset();
   if(window._beatBReset)window._beatBReset();
   // 2) Hold the top for a dozen frames, then restore snap once settled. The
   //    timeout is a safety net for backgrounded/rAF-throttled tabs.
@@ -1918,16 +2046,23 @@ document.getElementById('cue').addEventListener('click',function(){
   commitPastHero();
   updateViewbar();
 });
-// beat A's footer: "next" advances to beat B, "skip tutorial" commits straight to the index
-var beatCue=document.getElementById('beatCue'),beatConvergeEl=document.getElementById('beat-converge');
+// beat A's footer: "next" advances to beat M (the specimens); beat M's own
+// "next" advances to beat B; either "skip tutorial" button commits straight
+// to the index.
+var beatCue=document.getElementById('beatCue'),beatModelsEl=document.getElementById('beat-models');
 if(beatCue)beatCue.addEventListener('click',function(){
+  if(beatModelsEl)beatModelsEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+});
+var beatCueM=document.getElementById('beatCueM'),beatConvergeEl=document.getElementById('beat-converge');
+if(beatCueM)beatCueM.addEventListener('click',function(){
   if(beatConvergeEl)beatConvergeEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
 });
-var skipTut=document.getElementById('skipTut');
-if(skipTut)skipTut.addEventListener('click',function(){
-  setView('cabinet',false);
-  commitPastHero();
-  updateViewbar();
+[].slice.call(document.querySelectorAll('.skiplink')).forEach(function(btn){
+  btn.addEventListener('click',function(){
+    setView('cabinet',false);
+    commitPastHero();
+    updateViewbar();
+  });
 });
 // beat B's cue (the last tutorial page): one click retires the intro and lands at the index top
 var mcue=document.getElementById('mcue');
@@ -2055,6 +2190,31 @@ updateViewbar();
     var more=document.getElementById('cvgMore'),link=document.getElementById('beatSeeAll');
     if(more){more.hidden=true;more.classList.remove('open')}
     if(link){link.style.display='';link.setAttribute('aria-expanded','false')}
+    observe();
+  };
+})();
+
+/* ---- beat M: the specimen timeline's dots and labels fade+scale in with a
+   small stagger the first time the page scrolls into view (same pattern as
+   beat B's rows); reduced motion shows them static. ---- */
+(function(){
+  var mtl=document.querySelector('.mtl');
+  if(!mtl)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io=null;
+  function reveal(){mtl.classList.add('inview')}
+  function observe(){
+    if(reduce||!('IntersectionObserver' in window)){reveal();return}
+    io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
+    },{threshold:.3});
+    io.observe(mtl);
+  }
+  observe();
+  // Exposed so returning home resets the stagger, ready to replay on the next visit.
+  window._beatMReset=function(){
+    if(io)io.unobserve(mtl);
+    mtl.classList.remove('inview');
     observe();
   };
 })();
@@ -2215,6 +2375,8 @@ const BODY = `
 </header>
 
 ${beatProtocol}
+
+${beatModelsPage}
 
 ${beatConvergePage}
 
