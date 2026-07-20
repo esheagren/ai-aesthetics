@@ -547,94 +547,68 @@ function beatDots(n) {
   }
   return out;
 }
-// ---- beat M: the specimens — a build-time SVG roster of every model, laid
-// out per lab, grouped US then China, ordered by release and sized by
-// capability class (no time axis — slot order only). Joined against
-// `models` by id — a model with no entry here still renders (fallback:
-// mid-2026, workhorse) rather than silently vanishing, with a build warning.
-const TIMELINE_DATA = {
-  'gpt-4o': [2024.4, 'workhorse', 'GPT-4o'],
-  'o3': [2025.3, 'frontier', 'o3'],
-  'claude-opus-4-1': [2025.6, 'frontier', 'Opus 4.1'],
-  'claude-opus-4-5': [2025.9, 'frontier', 'Opus 4.5'],
-  'gpt-5.2': [2025.95, 'frontier', 'GPT-5.2'],
-  'gemini-3.1-pro-preview': [2026.05, 'frontier', 'Gemini 3.1 Pro'],
-  'kimi-k2.6': [2026.1, 'workhorse', 'Kimi K2.6'],
-  'deepseek-v4-pro': [2026.2, 'frontier', 'DeepSeek V4 Pro'],
-  'grok-4.5': [2026.3, 'frontier', 'Grok 4.5'],
-  'claude-opus-4-8': [2026.35, 'frontier', 'Opus 4.8'],
-  'gemini-3.5-flash': [2026.45, 'lightweight', 'Gemini 3.5 Flash'],
-  'gpt-5.6-sol': [2026.45, 'frontier', 'GPT-5.6 Sol'],
-  'claude-fable-5': [2026.5, 'frontier', 'Fable 5'],
+// ---- beat M: the specimens — a build-time HTML roster of every model,
+// grouped by lab (left to right on desktop, stacked on phone), each family's
+// models ordered by capability, flagship first. Joined against `models` by
+// id — a model with no roster entry still renders (fallback: frontier)
+// rather than silently vanishing, with a build warning.
+const MRO_DATA = {
+  'claude-fable-5': [1, 'frontier', 'Fable 5'],
+  'claude-opus-4-8': [2, 'frontier', 'Opus 4.8'],
+  'claude-opus-4-5': [3, 'frontier', 'Opus 4.5'],
+  'claude-opus-4-1': [4, 'frontier', 'Opus 4.1'],
+  'gpt-5.6-sol': [1, 'frontier', 'GPT-5.6 Sol'],
+  'gpt-5.2': [2, 'frontier', 'GPT-5.2'],
+  'o3': [3, 'frontier', 'o3'],
+  'gpt-4o': [4, 'workhorse', 'GPT-4o'],
+  'gemini-3.1-pro-preview': [1, 'frontier', 'Gemini 3.1 Pro'],
+  'gemini-3.5-flash': [2, 'lightweight', 'Gemini 3.5 Flash'],
+  'grok-4.5': [1, 'frontier', 'Grok 4.5'],
+  'deepseek-v4-pro': [1, 'frontier', 'DeepSeek V4 Pro'],
+  'kimi-k2.6': [1, 'workhorse', 'Kimi K2.6'],
 };
-const TL_CLASS_R = { lightweight: 3, workhorse: 4.5, frontier: 6 };
-// Row order: the four American labs, then a stronger separator, then the two
-// Chinese labs — grouped rather than the byFamily colour order used elsewhere.
-const TL_ROWS = [
-  { lab: 'Anthropic', group: 'united states' },
-  { lab: 'OpenAI', group: 'united states' },
-  { lab: 'Google', group: 'united states' },
-  { lab: 'xAI', group: 'united states' },
-  { lab: 'DeepSeek', group: 'china' },
-  { lab: 'Moonshot', group: 'china' },
-];
-function modelTimeline() {
-  const byLab = {};
+// Group order left-to-right / top-to-bottom — the four American labs, then
+// the two Chinese labs, matching the "American and Chinese" line of copy.
+const MRO_FAM_ORDER = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'];
+const MRO_CC = { Anthropic: 'us', OpenAI: 'us', Google: 'us', xAI: 'us', DeepSeek: 'cn', Moonshot: 'cn' };
+const MRO_DOT_PX = { lightweight: 6, workhorse: 9, frontier: 12 };
+function mroRoster() {
+  const byFam = {};
   for (const m of models) {
-    let e = TIMELINE_DATA[m.id];
+    let e = MRO_DATA[m.id];
     if (!e) {
-      console.warn(`modelTimeline: "${m.id}" has no timeline entry — falling back to mid-2026/workhorse`);
-      e = [2026.2, 'workhorse', SHORT[m.id] || m.label];
+      console.warn(`mroRoster: "${m.id}" has no roster entry — falling back to frontier`);
+      e = [99, 'frontier', SHORT[m.id] || m.label];
     }
-    (byLab[m.family] ??= []).push({ year: e[0], cls: e[1], label: e[2] });
+    (byFam[m.family] ??= []).push({ rank: e[0], cls: e[1], label: e[2] });
   }
-  // A roster, not a timeline: each lab's models sit in fixed left-aligned
-  // slots (release ORDER survives as the slot order, but there is no time
-  // axis to imply more precision than the data holds). One label baseline —
-  // the slots are wide enough that names never touch.
-  const W = 640, LEFT = 102, SLOT = 132, X0 = LEFT + 16;
-  const rowGap = 40, groupGap = 56, T1 = 16;
-  let y = 40, prevGroup = null, dotIdx = 0;
-  const parts = [];
-  for (const spec of TL_ROWS) {
-    if (spec.group !== prevGroup) {
-      if (prevGroup) {
-        const sepY = y + groupGap / 2;
-        parts.push(`<line x1="0" y1="${sepY.toFixed(1)}" x2="${W}" y2="${sepY.toFixed(1)}" class="mtl-sep"/>`);
-        y += groupGap;
-      }
-      parts.push(`<text x="${LEFT}" y="${(y - 14).toFixed(1)}" class="mtl-band">${esc(spec.group)}</text>`);
-      prevGroup = spec.group;
-    } else {
-      y += rowGap;
-    }
-    const entries = (byLab[spec.lab] || []).slice().sort((a, b) => a.year - b.year);
-    const color = FAMC[spec.lab];
-    const dots = entries.map((e, i) => {
-      const cx = (X0 + i * SLOT).toFixed(1);
-      const r = TL_CLASS_R[e.cls] || TL_CLASS_R.workhorse;
-      const idx = dotIdx++;
-      return `<circle cx="${cx}" cy="${y}" r="${r}" fill="${color}" class="mtl-dot" style="--i:${idx}"/>`
-        + `<text x="${cx}" y="${(y + T1).toFixed(1)}" text-anchor="middle" class="mtl-lab" style="--i:${idx}">${esc(e.label)}</text>`;
+  let rowIdx = 0;
+  const groups = MRO_FAM_ORDER.map((fam) => {
+    const entries = (byFam[fam] || []).slice().sort((a, b) => a.rank - b.rank);
+    const color = FAMC[fam];
+    const rows = entries.map((e, i) => {
+      const idx = rowIdx++;
+      const px = MRO_DOT_PX[e.cls] || MRO_DOT_PX.frontier;
+      const nameColor = i === 0 ? 'var(--ink)' : 'var(--dim)';
+      return `<div class="mro-m" style="--i:${idx}">
+        <span class="mro-dotwrap"><i class="mro-dot" style="width:${px}px;height:${px}px;background:${color}"></i></span>
+        <span class="mro-nm" style="color:${nameColor}">${esc(e.label)}</span>
+      </div>`;
     }).join('');
-    parts.push(`<text x="0" y="${(y + 3.5).toFixed(1)}" class="mtl-labname">${esc(spec.lab)}</text>`
-      + `<line x1="${LEFT}" y1="${y}" x2="${W - 24}" y2="${y}" class="mtl-hair"/>${dots}`);
-  }
-  const legendY = y + 44;
-  const legendItems = [['lightweight', TL_CLASS_R.lightweight], ['workhorse', TL_CLASS_R.workhorse], ['frontier', TL_CLASS_R.frontier]];
-  let lx = LEFT;
-  const legend = legendItems.map(([label, r], i) => {
-    const cx = lx + r, textX = cx + r + 6;
-    lx = textX + label.length * 6.4 + 26;
-    return `<circle cx="${cx.toFixed(1)}" cy="${legendY}" r="${r}" fill="var(--dim)"/>`
-      + `<text x="${textX.toFixed(1)}" y="${(legendY + 3).toFixed(1)}" class="mtl-legend">${esc(label)}${i < legendItems.length - 1 ? ' · ' : ''}</text>`;
+    return `<div class="mro-fam">
+      <div class="mro-head" style="color:${color}">${esc(fam)} <span class="mro-cc">${MRO_CC[fam] || ''}</span></div>
+      ${rows}
+    </div>`;
   }).join('');
-  const H = legendY + 18;
-  return `<svg class="mtl" viewBox="0 0 ${W} ${H}" role="img"
-    aria-label="The thirteen AI models of the panel, by lab and capability class, grouped United States and China">
-    ${parts.join('\n    ')}
-    ${legend}
-  </svg>`;
+  return `<div class="mro" role="img" aria-label="The thirteen AI models of the panel, by lab, ordered by capability within each family">
+    <div class="mro-groups">${groups}</div>
+    <div class="mro-legend">
+      <i class="mro-ldot" style="width:6px;height:6px"></i>
+      <i class="mro-ldot" style="width:9px;height:9px"></i>
+      <i class="mro-ldot" style="width:12px;height:12px"></i>
+      <span>lightweight &middot; workhorse &middot; frontier</span>
+    </div>
+  </div>`;
 }
 // The five strongest agreements (n>=11), teased here before the full canon
 // (reached via the "see everything" link and the Method tab's step 5 link).
@@ -655,35 +629,97 @@ const beatRows = beatConverge.map((c) => `<div class="cvg-row">
 const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The protocol">
   <div>
     <div class="mband-over">the method</div>
-    <p class="msent">AI models have preferences — and you find them simply by asking.
-    Two questions: <em>What is your favorite&nbsp;___?</em> <em>Which beloved ___ is overrated?</em>
-    Each model asked alone, again and again, and the answers tallied.</p>
+    <p class="msent">AI models have preferences — and you find them simply by asking:
+    <em>What is your favorite&nbsp;___?</em> Each model asked alone, in rounds of four,
+    until a round brings nothing new.</p>
     <div class="bs" id="bs" aria-hidden="true">
       <div class="bs-q bs-q-fav">favorite city?</div>
       <div class="bs-chips" id="bschips"></div>
-      <div class="bs-q bs-q-over">overrated city?</div>
-      <div class="bs-chips" id="bschipsO"></div>
       <div class="bs-done" id="bsdone">nothing new — done</div>
     </div>
   </div>
   <div class="beat-foot">
-    <button class="cue" id="beatCue" type="button" aria-label="Continue to the specimens"><span>next</span><i></i></button>
+    <button class="cue" id="beatCue" type="button" aria-label="Continue to the overrated probe"><span>next</span><i></i></button>
     <button class="skiplink" id="skipTut" type="button">skip tutorial</button>
   </div>
 </section>`;
+// beat A2 — the overrated probe: the same sampling vignette, pointed the
+// other way, kept on its own page so each probe gets its own beat of
+// attention rather than racing the eye across two grids at once.
+const beatOverPage = `<section class="mpage" id="beat-over" aria-label="The overrated probe">
+  <div>
+    <div class="mband-over">the method, again</div>
+    <p class="msent">Then — separately, never in the same breath — the same method pointed
+    the other way: <em>Which beloved&nbsp;___ is overrated?</em> Same rounds, same tally,
+    a different portrait.</p>
+    <div class="bs" id="bsO" aria-hidden="true">
+      <div class="bs-q bs-q-over">overrated city?</div>
+      <div class="bs-chips" id="bschipsO"></div>
+      <div class="bs-done" id="bsdoneO">nothing new — done</div>
+    </div>
+  </div>
+  <div class="beat-foot">
+    <button class="cue" id="beatCueO" type="button" aria-label="Continue to the index"><span>next</span><i></i></button>
+    <button class="skiplink" id="skipTut3" type="button">skip tutorial</button>
+  </div>
+</section>`;
+// beat I — the index: the payoff of the two probes, a mini top-to-bottom
+// spectrum. Hardcoded from this build's real cross-model city tally (not
+// recomputed from S here — this is a fixed illustrative excerpt, not a live
+// query) so the pitch never drifts from the numbers the rest of the atlas
+// shows: Kyoto dominates the favourite side (83), Paris the overrated side (74).
+const IDX_TALLY = [
+  { name: 'Kyoto', n: 83, tone: 'fav' },
+  { name: 'Lisbon', n: 10, tone: 'fav' },
+  { name: 'Prague', n: 5, tone: 'fav' },
+  { name: 'Tokyo', n: 4, tone: 'fav' },
+  { name: 'Venice', n: 6, tone: 'over' },
+  { name: 'Los Angeles', n: 12, tone: 'over' },
+  { name: 'Paris', n: 74, tone: 'over' },
+];
+function idxRows() {
+  // Linear widths would make Prague invisible beside Kyoto — sqrt compresses
+  // the range while still keeping Kyoto/Paris visibly dominant.
+  const maxSqrt = Math.sqrt(83);
+  let rowIdx = 0;
+  const row = (r) => {
+    const w = (Math.sqrt(r.n) / maxSqrt * 100).toFixed(1);
+    const idx = rowIdx++;
+    return `<div class="idxd-row idxd-${r.tone}" style="--i:${idx}">
+      <span class="idxd-name">${esc(r.name)}</span>
+      <i class="idxd-bar" style="--w:${w}%"></i>
+      <span class="idxd-n">${r.n}</span>
+    </div>`;
+  };
+  const favHTML = IDX_TALLY.filter((r) => r.tone === 'fav').map(row).join('');
+  const overHTML = IDX_TALLY.filter((r) => r.tone === 'over').map(row).join('');
+  return `<div class="idxd">${favHTML}<div class="idxd-sep"></div>${overHTML}</div>`;
+}
+const beatIndexPage = `<section class="mpage" id="beat-index" aria-label="The index">
+  <div>
+    <div class="mband-over">the index</div>
+    <p class="msent">Tally both and a ranking appears — what the machines love at the top,
+    and below it, in red, what they call overrated.</p>
+    ${idxRows()}
+  </div>
+  <div class="beat-foot">
+    <button class="cue" id="beatCueI" type="button" aria-label="Continue to the specimens"><span>next</span><i></i></button>
+    <button class="skiplink" id="skipTut4" type="button">skip tutorial</button>
+  </div>
+</section>`;
 // beat M — the specimens: the panel of models itself, before the convergence
-// story asks what they agree on. The timeline is the whole point; the copy
+// story asks what they agree on. The roster is the whole point; the copy
 // stays to one sentence.
 const beatModelsPage = `<section class="mpage" id="beat-models" aria-label="The specimens">
   <div>
     <div class="mband-over">the specimens</div>
-    <p class="msent">No single machine mind: the panel spans three years of releases —
-    quick lightweight models and frontier flagships, from four American labs and two Chinese.</p>
-    ${modelTimeline()}
+    <p class="msent">The askers themselves: thirteen models from six labs — American and
+    Chinese — each family ordered by capability, flagship first.</p>
+    ${mroRoster()}
   </div>
   <div class="beat-foot">
     <button class="cue" id="beatCueM" type="button" aria-label="Continue to the convergence"><span>next</span><i></i></button>
-    <button class="skiplink" id="skipTut2" type="button">skip tutorial</button>
+    <button class="skiplink" id="skipTut5" type="button">skip tutorial</button>
   </div>
 </section>`;
 // "See everything they agree on" unfolds the REST of the canon right here in
@@ -1160,7 +1196,7 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
    overrated — the same pair the method diagram and the index use */
 .bs-q{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .bs-q-fav{color:rgba(110,209,145,.75)}
-.bs-q-over{color:rgba(232,104,98,.7);margin-top:20px}
+.bs-q-over{color:rgba(232,104,98,.7)}
 /* A pre-sized 4x3 grid (one row per round of four): the container's height is
    fixed from the first frame, so chips filling in never re-centres the page
    or draws the copy above them upward. */
@@ -1182,24 +1218,38 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
   text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
 .skiplink:hover{color:var(--dim);text-decoration-color:var(--faint)}
 
-/* beat M — the specimens: a build-time SVG timeline of every model by lab,
-   release date and capability class, revealed with a small stagger on view */
-.mtl{display:block;width:100%;max-width:640px;height:auto;margin-top:34px;overflow:visible}
-.mtl-band{font:9.5px var(--mono);letter-spacing:.26em;text-transform:uppercase;fill:var(--faint)}
-.mtl-labname{font:9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;fill:var(--faint)}
-.mtl-hair{stroke:var(--hair);stroke-width:1}
-.mtl-sep{stroke:var(--hair);stroke-width:1.5;opacity:.7}
-.mtl-legend{font:9.5px var(--mono);letter-spacing:.06em;fill:var(--faint)}
-.mtl-dot{opacity:0;transform:scale(.4);transform-box:fill-box;transform-origin:center;
-  transition:opacity .45s ease,transform .45s ease}
-.mtl-lab{font-family:var(--serif);font-size:11.5px;fill:var(--dim);opacity:0;transition:opacity .45s ease}
-.mtl.inview .mtl-dot{opacity:1;transform:scale(1);transition-delay:calc(var(--i) * 55ms)}
-.mtl.inview .mtl-lab{opacity:1;transition-delay:calc(var(--i) * 55ms + 90ms)}
-@media (prefers-reduced-motion:reduce){.mtl-dot,.mtl-lab{transition:none}}
-/* same viewBox-scaling compensation as .mdiag: bump the user-unit text sizes
-   at phone widths so labels stay legible once the SVG scales down */
-@media(max-width:640px){.mtl .mtl-band,.mtl .mtl-labname,.mtl .mtl-legend{font-size:12.5px}
-  .mtl .mtl-lab{font-size:14px}}
+/* beat I — the index: a build-time mini spectrum of cities, bars growing in
+   with a small stagger the first time the page scrolls into view */
+.idxd{margin-top:32px;max-width:460px;display:flex;flex-direction:column;gap:9px}
+.idxd-row{display:grid;grid-template-columns:98px 1fr auto;align-items:center;gap:12px}
+.idxd-name{font-family:var(--serif);font-size:16px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.idxd-bar{display:block;height:8px;border-radius:2px;width:0;max-width:340px;transition:width .8s cubic-bezier(.22,.7,.35,1)}
+.idxd-fav .idxd-bar{background:rgba(110,209,145,.55)}
+.idxd-over .idxd-bar{background:rgba(232,104,98,.55)}
+.idxd-n{font:10.5px var(--mono);color:var(--faint);text-align:right;min-width:26px}
+.idxd-sep{height:1px;background:var(--hair);margin:10px 0 2px}
+.idxd.inview .idxd-bar{width:var(--w);transition-delay:calc(var(--i) * 70ms)}
+@media (prefers-reduced-motion:reduce){.idxd-bar{transition:none;width:var(--w)}}
+@media(max-width:560px){.idxd-row{grid-template-columns:96px 1fr auto;gap:8px}.idxd-name{font-size:15px}}
+
+/* beat M — the specimens: a build-time HTML roster of every model, grouped by
+   lab (row on desktop, stack on phone), each model's row fading in with a
+   small stagger the first time the page scrolls into view */
+.mro{margin-top:34px;max-width:820px}
+.mro-groups{display:flex;flex-wrap:wrap;gap:22px clamp(20px,3vw,40px)}
+.mro-fam{flex:0 0 auto;display:flex;flex-direction:column;gap:6px}
+.mro-head{font:10px var(--mono);letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px;white-space:nowrap}
+.mro-cc{color:var(--faint);font-size:9px;letter-spacing:.14em}
+.mro-m{display:flex;align-items:center;gap:9px;height:26px;opacity:0;transform:translateY(4px);transition:opacity .4s ease,transform .4s ease}
+.mro-dotwrap{width:16px;flex:none;display:flex;align-items:center;justify-content:center}
+.mro-dot{display:block;border-radius:50%}
+.mro-nm{font-family:var(--serif);font-size:14px;line-height:1.2;white-space:nowrap}
+.mro.inview .mro-m{opacity:1;transform:none;transition-delay:calc(var(--i) * 45ms)}
+@media (prefers-reduced-motion:reduce){.mro-m{transition:none}}
+.mro-legend{display:flex;align-items:center;gap:6px;margin-top:28px;font:9.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.mro-ldot{display:inline-block;border-radius:50%;background:var(--dim)}
+.mro-legend span{margin-left:4px}
+@media(max-width:720px){.mro-groups{flex-direction:column;gap:20px}.mro-head{margin-bottom:6px}}
 
 /* beat B — the convergence: the real top consensus entries, dots lighting in on view */
 .cvg-list{margin-top:32px;display:flex;flex-direction:column;gap:20px;max-width:640px}
@@ -1277,6 +1327,16 @@ var BLOGGER_ID = ${JSON.stringify(BLOGGER_ID)};
 var TYPESTACK = ${JSON.stringify(TYPEFACE_STACK)};
 function el(h){var t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+// Shared by beat A's two chip-vignette pages (favourite + overrated) — one
+// chip appearing (flashed if new, dim if a repeat), the same mechanics both
+// probes use.
+function addBsChip(box,tone,seen,text){
+  var isNew=!seen[text];seen[text]=true;
+  var c=el('<div class="bs-chip '+tone+' '+(isNew?'new flash':'rep')+'">'+esc(text)+'</div>');
+  box.appendChild(c);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.add('show')})});
+  if(isNew)setTimeout(function(){c.classList.remove('flash')},900);
+}
 function normEnt(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[\\u2019\\u2018]/g,"'").replace(/\\s+/g,' ').trim().replace(/^(The|A|An) /i,'').toLowerCase()}
 function rawNorm(s){return String(s).replace(/[*"“”]/g,'').replace(/\\s+/g,' ').trim().replace(/^(the|a|an) /i,'').toLowerCase()}
 // A subtitle earns its line only when it says something the title doesn't. The
@@ -1963,6 +2023,8 @@ function goHome(){
   updateViewbar();                       // committed=false -> hides the nav bar
   if(window._heroCycle)window._heroCycle();
   if(window._beatARestart)window._beatARestart();
+  if(window._beatORestart)window._beatORestart();
+  if(window._beatIReset)window._beatIReset();
   if(window._beatMReset)window._beatMReset();
   if(window._beatBReset)window._beatBReset();
   // 2) Hold the top for a dozen frames, then restore snap once settled. The
@@ -2043,11 +2105,19 @@ document.getElementById('cue').addEventListener('click',function(){
   commitPastHero();
   updateViewbar();
 });
-// beat A's footer: "next" advances to beat M (the specimens); beat M's own
-// "next" advances to beat B; either "skip tutorial" button commits straight
-// to the index.
-var beatCue=document.getElementById('beatCue'),beatModelsEl=document.getElementById('beat-models');
+// The tutorial's footer cues chain page to page: protocol -> overrated ->
+// index -> specimens -> convergence; either "skip tutorial" button commits
+// straight to the index from wherever it's clicked.
+var beatCue=document.getElementById('beatCue'),beatOverEl=document.getElementById('beat-over');
 if(beatCue)beatCue.addEventListener('click',function(){
+  if(beatOverEl)beatOverEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+});
+var beatCueO=document.getElementById('beatCueO'),beatIndexEl=document.getElementById('beat-index');
+if(beatCueO)beatCueO.addEventListener('click',function(){
+  if(beatIndexEl)beatIndexEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+});
+var beatCueI=document.getElementById('beatCueI'),beatModelsEl=document.getElementById('beat-models');
+if(beatCueI)beatCueI.addEventListener('click',function(){
   if(beatModelsEl)beatModelsEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
 });
 var beatCueM=document.getElementById('beatCueM'),beatConvergeEl=document.getElementById('beat-converge');
@@ -2115,56 +2185,36 @@ updateViewbar();
   cycle();
 })();
 
-/* ---- beat A: the sampling vignette — BOTH probes, in the site's fixed
-   colour code (green favourite, red overrated). Each round asks the pair:
-   four green chips, then four red, new answers flashed, repeats dimmer,
-   ending in a quiet "nothing new — done". The overrated answers are the
-   real distribution (Paris dominates it). ---- */
+/* ---- beat A: the favourite-probe sampling vignette (green chips), in the
+   site's fixed colour code. Rounds of four, new answers flashed, repeats
+   dimmer, ending in a quiet "nothing new — done". The rounds are the real
+   distribution (Kyoto dominates it; Lisbon and Prague are the divergents). ---- */
 (function(){
-  var chipsF=document.getElementById('bschips'),chipsO=document.getElementById('bschipsO'),done=document.getElementById('bsdone');
-  if(!chipsF||!chipsO)return;
+  var chipsF=document.getElementById('bschips'),done=document.getElementById('bsdone');
+  if(!chipsF)return;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var favRounds=[
-    ['Kyoto','Kyoto','Paris','Kyoto'],
-    ['Kyoto','Kyoto','Kyoto','Florence'],
-    ['Kyoto','Paris','Kyoto','Kyoto']
-  ];
-  var overRounds=[
-    ['Paris','Paris','Los Angeles','Paris'],
-    ['Paris','Venice','Paris','Dubai'],
-    ['Paris','Paris','Venice','Paris']
+    ['Kyoto','Kyoto','Lisbon','Kyoto'],
+    ['Kyoto','Kyoto','Kyoto','Prague'],
+    ['Kyoto','Lisbon','Kyoto','Kyoto']
   ];
   var timers=[];
   function clearTimers(){timers.forEach(clearTimeout);timers=[]}
   function schedule(fn,t){timers.push(setTimeout(function(){if(!committed)fn()},t))}
-  function addChip(box,tone,seen,text){
-    var isNew=!seen[text];seen[text]=true;
-    var c=el('<div class="bs-chip '+tone+' '+(isNew?'new flash':'rep')+'">'+esc(text)+'</div>');
-    box.appendChild(c);
-    requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.add('show')})});
-    if(isNew)setTimeout(function(){c.classList.remove('flash')},900);
-  }
-  function reset(){chipsF.innerHTML='';chipsO.innerHTML='';done.classList.remove('show')}
+  function reset(){chipsF.innerHTML='';done.classList.remove('show')}
   function staticState(){
     reset();
-    var sf={},so={};
-    favRounds.forEach(function(r){r.forEach(function(c){addChip(chipsF,'bs-fav',sf,c)})});
-    overRounds.forEach(function(r){r.forEach(function(c){addChip(chipsO,'bs-over',so,c)})});
+    var sf={};
+    favRounds.forEach(function(r){r.forEach(function(c){addBsChip(chipsF,'bs-fav',sf,c)})});
     done.classList.add('show');
   }
   function run(){
     if(committed)return;
     clearTimers();reset();
-    var sf={},so={},t=0;
-    // round k: the favourite four, a breath, then the overrated four
+    var sf={},t=0;
     for(var k=0;k<favRounds.length;k++){
       favRounds[k].forEach(function(c){
-        (function(c,t){schedule(function(){addChip(chipsF,'bs-fav',sf,c)},t)})(c,t);
-        t+=300;
-      });
-      t+=350;
-      overRounds[k].forEach(function(c){
-        (function(c,t){schedule(function(){addChip(chipsO,'bs-over',so,c)},t)})(c,t);
+        (function(c,t){schedule(function(){addBsChip(chipsF,'bs-fav',sf,c)},t)})(c,t);
         t+=300;
       });
       t+=800; // pause between rounds
@@ -2176,6 +2226,73 @@ updateViewbar();
   if(reduce)staticState();else run();
   // Exposed so returning home can restart the vignette for the next visit.
   window._beatARestart=function(){clearTimers();if(reduce)staticState();else run()};
+})();
+
+/* ---- beat A2: the overrated-probe sampling vignette (red chips), the same
+   mechanics pointed the other way. The rounds are the real distribution
+   (Paris dominates it). ---- */
+(function(){
+  var chipsO=document.getElementById('bschipsO'),doneO=document.getElementById('bsdoneO');
+  if(!chipsO)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var overRounds=[
+    ['Paris','Paris','Los Angeles','Paris'],
+    ['Paris','Venice','Paris','Dubai'],
+    ['Paris','Paris','Venice','Paris']
+  ];
+  var timers=[];
+  function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+  function schedule(fn,t){timers.push(setTimeout(function(){if(!committed)fn()},t))}
+  function reset(){chipsO.innerHTML='';doneO.classList.remove('show')}
+  function staticState(){
+    reset();
+    var so={};
+    overRounds.forEach(function(r){r.forEach(function(c){addBsChip(chipsO,'bs-over',so,c)})});
+    doneO.classList.add('show');
+  }
+  function run(){
+    if(committed)return;
+    clearTimers();reset();
+    var so={},t=0;
+    for(var k=0;k<overRounds.length;k++){
+      overRounds[k].forEach(function(c){
+        (function(c,t){schedule(function(){addBsChip(chipsO,'bs-over',so,c)},t)})(c,t);
+        t+=300;
+      });
+      t+=800; // pause between rounds
+    }
+    schedule(function(){doneO.classList.add('show')},t);
+    t+=2800;
+    schedule(run,t); // loop while the intro is up
+  }
+  if(reduce)staticState();else run();
+  // Exposed so returning home can restart the vignette for the next visit.
+  window._beatORestart=function(){clearTimers();if(reduce)staticState();else run()};
+})();
+
+/* ---- beat I: the index page's bars grow in with a small stagger the first
+   time it scrolls into view (same IntersectionObserver pattern as beat B's
+   rows); reduced motion shows them at full width. ---- */
+(function(){
+  var idxd=document.querySelector('.idxd');
+  if(!idxd)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io=null;
+  function reveal(){idxd.classList.add('inview')}
+  function observe(){
+    if(reduce||!('IntersectionObserver' in window)){reveal();return}
+    io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
+    },{threshold:.3});
+    io.observe(idxd);
+  }
+  observe();
+  // Exposed so returning home resets the stagger, ready to replay on the next visit.
+  window._beatIReset=function(){
+    if(io)io.unobserve(idxd);
+    idxd.classList.remove('inview');
+    observe();
+  };
 })();
 
 /* ---- beat B: the convergence rows light their dots in with a small stagger
@@ -2206,27 +2323,27 @@ updateViewbar();
   };
 })();
 
-/* ---- beat M: the specimen timeline's dots and labels fade+scale in with a
-   small stagger the first time the page scrolls into view (same pattern as
-   beat B's rows); reduced motion shows them static. ---- */
+/* ---- beat M: the specimen roster's rows fade in with a small stagger the
+   first time the page scrolls into view (same pattern as beat B's rows);
+   reduced motion shows them static. ---- */
 (function(){
-  var mtl=document.querySelector('.mtl');
-  if(!mtl)return;
+  var mro=document.querySelector('.mro');
+  if(!mro)return;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var io=null;
-  function reveal(){mtl.classList.add('inview')}
+  function reveal(){mro.classList.add('inview')}
   function observe(){
     if(reduce||!('IntersectionObserver' in window)){reveal();return}
     io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
     },{threshold:.3});
-    io.observe(mtl);
+    io.observe(mro);
   }
   observe();
   // Exposed so returning home resets the stagger, ready to replay on the next visit.
   window._beatMReset=function(){
-    if(io)io.unobserve(mtl);
-    mtl.classList.remove('inview');
+    if(io)io.unobserve(mro);
+    mro.classList.remove('inview');
     observe();
   };
 })();
@@ -2387,6 +2504,10 @@ const BODY = `
 </header>
 
 ${beatProtocol}
+
+${beatOverPage}
+
+${beatIndexPage}
 
 ${beatModelsPage}
 
