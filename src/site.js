@@ -547,9 +547,9 @@ function beatDots(n) {
   }
   return out;
 }
-// ---- beat M: the specimens — a build-time SVG timeline of every model, laid
-// out per lab, grouped US then China, positioned by release date on a shared
-// early-2024-to-mid-2026 axis and sized by capability class. Joined against
+// ---- beat M: the specimens — a build-time SVG roster of every model, laid
+// out per lab, grouped US then China, ordered by release and sized by
+// capability class (no time axis — slot order only). Joined against
 // `models` by id — a model with no entry here still renders (fallback:
 // mid-2026, workhorse) rather than silently vanishing, with a build warning.
 const TIMELINE_DATA = {
@@ -588,13 +588,12 @@ function modelTimeline() {
     }
     (byLab[m.family] ??= []).push({ year: e[0], cls: e[1], label: e[2] });
   }
-  const W = 640, LEFT = 102, RIGHT = 616;
-  const yMin = 2024.0, yMax = 2026.6;
-  const xOf = (yr) => LEFT + (RIGHT - LEFT) * (yr - yMin) / (yMax - yMin);
-  // Row spacing within a group vs. across the US/China divide; T1/T2 are the
-  // two staggered label baselines (near/far) so adjacent-by-date dots, which
-  // alternate tiers, never share a text line.
-  const rowGap = 40, groupGap = 56, T1 = 14, T2 = 26;
+  // A roster, not a timeline: each lab's models sit in fixed left-aligned
+  // slots (release ORDER survives as the slot order, but there is no time
+  // axis to imply more precision than the data holds). One label baseline —
+  // the slots are wide enough that names never touch.
+  const W = 640, LEFT = 102, SLOT = 132, X0 = LEFT + 16;
+  const rowGap = 40, groupGap = 56, T1 = 16;
   let y = 40, prevGroup = null, dotIdx = 0;
   const parts = [];
   for (const spec of TL_ROWS) {
@@ -612,23 +611,16 @@ function modelTimeline() {
     const entries = (byLab[spec.lab] || []).slice().sort((a, b) => a.year - b.year);
     const color = FAMC[spec.lab];
     const dots = entries.map((e, i) => {
-      const cx = xOf(e.year).toFixed(1);
+      const cx = (X0 + i * SLOT).toFixed(1);
       const r = TL_CLASS_R[e.cls] || TL_CLASS_R.workhorse;
-      const dy = i % 2 === 0 ? T1 : T2;
       const idx = dotIdx++;
       return `<circle cx="${cx}" cy="${y}" r="${r}" fill="${color}" class="mtl-dot" style="--i:${idx}"/>`
-        + `<text x="${cx}" y="${(y + dy).toFixed(1)}" text-anchor="middle" class="mtl-lab" style="--i:${idx}">${esc(e.label)}</text>`;
+        + `<text x="${cx}" y="${(y + T1).toFixed(1)}" text-anchor="middle" class="mtl-lab" style="--i:${idx}">${esc(e.label)}</text>`;
     }).join('');
     parts.push(`<text x="0" y="${(y + 3.5).toFixed(1)}" class="mtl-labname">${esc(spec.lab)}</text>`
-      + `<line x1="${LEFT}" y1="${y}" x2="${RIGHT}" y2="${y}" class="mtl-hair"/>${dots}`);
+      + `<line x1="${LEFT}" y1="${y}" x2="${W - 24}" y2="${y}" class="mtl-hair"/>${dots}`);
   }
-  const axisY = y + T2 + 10;
-  const ticks = [2024, 2025, 2026].map((yr) => {
-    const cx = xOf(yr).toFixed(1);
-    return `<line x1="${cx}" y1="${(axisY - 4).toFixed(1)}" x2="${cx}" y2="${(axisY + 4).toFixed(1)}" class="mtl-tickmark"/>`
-      + `<text x="${cx}" y="${(axisY + 16).toFixed(1)}" text-anchor="middle" class="mtl-tick">${yr}</text>`;
-  }).join('');
-  const legendY = axisY + 30;
+  const legendY = y + 44;
   const legendItems = [['lightweight', TL_CLASS_R.lightweight], ['workhorse', TL_CLASS_R.workhorse], ['frontier', TL_CLASS_R.frontier]];
   let lx = LEFT;
   const legend = legendItems.map(([label, r], i) => {
@@ -639,10 +631,8 @@ function modelTimeline() {
   }).join('');
   const H = legendY + 18;
   return `<svg class="mtl" viewBox="0 0 ${W} ${H}" role="img"
-    aria-label="Timeline of thirteen AI models by lab, release date and capability class, spanning early 2024 to mid-2026">
+    aria-label="The thirteen AI models of the panel, by lab and capability class, grouped United States and China">
     ${parts.join('\n    ')}
-    <line x1="${LEFT}" y1="${axisY}" x2="${RIGHT}" y2="${axisY}" class="mtl-hair"/>
-    ${ticks}
     ${legend}
   </svg>`;
 }
@@ -669,8 +659,10 @@ const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The 
     Two questions: <em>What is your favorite&nbsp;___?</em> <em>Which beloved ___ is overrated?</em>
     Each model asked alone, again and again, and the answers tallied.</p>
     <div class="bs" id="bs" aria-hidden="true">
-      <div class="bs-q" id="bsq">favorite city?</div>
+      <div class="bs-q bs-q-fav">favorite city?</div>
       <div class="bs-chips" id="bschips"></div>
+      <div class="bs-q bs-q-over">overrated city?</div>
+      <div class="bs-chips" id="bschipsO"></div>
       <div class="bs-done" id="bsdone">nothing new — done</div>
     </div>
   </div>
@@ -1164,7 +1156,11 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 
 /* beat A — the protocol: a sampling vignette of chips appearing in batches of four */
 .bs{margin-top:32px;max-width:420px}
+/* the two probes wear the site's fixed encoding — green favourite, red
+   overrated — the same pair the method diagram and the index use */
 .bs-q{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.bs-q-fav{color:rgba(110,209,145,.75)}
+.bs-q-over{color:rgba(232,104,98,.7);margin-top:20px}
 /* A pre-sized 4x3 grid (one row per round of four): the container's height is
    fixed from the first frame, so chips filling in never re-centres the page
    or draws the copy above them upward. */
@@ -1173,9 +1169,12 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .bs-chip{display:flex;align-items:center;justify-content:center;border:1px solid var(--hair);border-radius:2px;padding:0 4px;font-family:var(--serif);font-size:14px;color:var(--dim);
   opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease,border-color .9s ease}
 .bs-chip.show{opacity:1;transform:none}
-.bs-chip.new{color:var(--ink)}
-.bs-chip.new.flash{border-color:var(--ink)}
-.bs-chip.rep{color:var(--faint)}
+.bs-chip.bs-fav.new{color:rgba(110,209,145,.95)}
+.bs-chip.bs-fav.new.flash{border-color:rgba(110,209,145,.7)}
+.bs-chip.bs-fav.rep{color:rgba(110,209,145,.45)}
+.bs-chip.bs-over.new{color:rgba(232,104,98,.95)}
+.bs-chip.bs-over.new.flash{border-color:rgba(232,104,98,.65)}
+.bs-chip.bs-over.rep{color:rgba(232,104,98,.42)}
 .bs-done{margin-top:14px;font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);opacity:0;transition:opacity .6s ease}
 .bs-done.show{opacity:1}
 .beat-foot{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px}
@@ -1190,8 +1189,6 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .mtl-labname{font:9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;fill:var(--faint)}
 .mtl-hair{stroke:var(--hair);stroke-width:1}
 .mtl-sep{stroke:var(--hair);stroke-width:1.5;opacity:.7}
-.mtl-tickmark{stroke:var(--hair);stroke-width:1}
-.mtl-tick{font:9.5px var(--mono);letter-spacing:.06em;fill:var(--faint)}
 .mtl-legend{font:9.5px var(--mono);letter-spacing:.06em;fill:var(--faint)}
 .mtl-dot{opacity:0;transform:scale(.4);transform-box:fill-box;transform-origin:center;
   transition:opacity .45s ease,transform .45s ease}
@@ -1201,7 +1198,7 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 @media (prefers-reduced-motion:reduce){.mtl-dot,.mtl-lab{transition:none}}
 /* same viewBox-scaling compensation as .mdiag: bump the user-unit text sizes
    at phone widths so labels stay legible once the SVG scales down */
-@media(max-width:640px){.mtl .mtl-band,.mtl .mtl-labname,.mtl .mtl-tick,.mtl .mtl-legend{font-size:12.5px}
+@media(max-width:640px){.mtl .mtl-band,.mtl .mtl-labname,.mtl .mtl-legend{font-size:12.5px}
   .mtl .mtl-lab{font-size:14px}}
 
 /* beat B — the convergence: the real top consensus entries, dots lighting in on view */
@@ -2118,47 +2115,62 @@ updateViewbar();
   cycle();
 })();
 
-/* ---- beat A: the sampling vignette — answer chips appear in batches of four,
-   new ones flashed, repeats dimmer, ending in a quiet "nothing new — done" ---- */
+/* ---- beat A: the sampling vignette — BOTH probes, in the site's fixed
+   colour code (green favourite, red overrated). Each round asks the pair:
+   four green chips, then four red, new answers flashed, repeats dimmer,
+   ending in a quiet "nothing new — done". The overrated answers are the
+   real distribution (Paris dominates it). ---- */
 (function(){
-  var chips=document.getElementById('bschips'),done=document.getElementById('bsdone');
-  if(!chips)return;
+  var chipsF=document.getElementById('bschips'),chipsO=document.getElementById('bschipsO'),done=document.getElementById('bsdone');
+  if(!chipsF||!chipsO)return;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var rounds=[
+  var favRounds=[
     ['Kyoto','Kyoto','Paris','Kyoto'],
     ['Kyoto','Kyoto','Kyoto','Florence'],
     ['Kyoto','Paris','Kyoto','Kyoto']
   ];
+  var overRounds=[
+    ['Paris','Paris','Los Angeles','Paris'],
+    ['Paris','Venice','Paris','Dubai'],
+    ['Paris','Paris','Venice','Paris']
+  ];
   var timers=[];
   function clearTimers(){timers.forEach(clearTimeout);timers=[]}
   function schedule(fn,t){timers.push(setTimeout(function(){if(!committed)fn()},t))}
-  function addChip(seen,text){
+  function addChip(box,tone,seen,text){
     var isNew=!seen[text];seen[text]=true;
-    var c=el('<div class="bs-chip '+(isNew?'new flash':'rep')+'">'+esc(text)+'</div>');
-    chips.appendChild(c);
+    var c=el('<div class="bs-chip '+tone+' '+(isNew?'new flash':'rep')+'">'+esc(text)+'</div>');
+    box.appendChild(c);
     requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.add('show')})});
     if(isNew)setTimeout(function(){c.classList.remove('flash')},900);
   }
-  function reset(){chips.innerHTML='';done.classList.remove('show')}
+  function reset(){chipsF.innerHTML='';chipsO.innerHTML='';done.classList.remove('show')}
   function staticState(){
     reset();
-    var seen={};
-    rounds.forEach(function(r){r.forEach(function(c){addChip(seen,c)})});
+    var sf={},so={};
+    favRounds.forEach(function(r){r.forEach(function(c){addChip(chipsF,'bs-fav',sf,c)})});
+    overRounds.forEach(function(r){r.forEach(function(c){addChip(chipsO,'bs-over',so,c)})});
     done.classList.add('show');
   }
   function run(){
     if(committed)return;
     clearTimers();reset();
-    var seen={},t=0;
-    rounds.forEach(function(round){
-      round.forEach(function(c){
-        (function(c,t){schedule(function(){addChip(seen,c)},t)})(c,t);
-        t+=380;
+    var sf={},so={},t=0;
+    // round k: the favourite four, a breath, then the overrated four
+    for(var k=0;k<favRounds.length;k++){
+      favRounds[k].forEach(function(c){
+        (function(c,t){schedule(function(){addChip(chipsF,'bs-fav',sf,c)},t)})(c,t);
+        t+=300;
       });
-      t+=900; // pause between rounds
-    });
+      t+=350;
+      overRounds[k].forEach(function(c){
+        (function(c,t){schedule(function(){addChip(chipsO,'bs-over',so,c)},t)})(c,t);
+        t+=300;
+      });
+      t+=800; // pause between rounds
+    }
     schedule(function(){done.classList.add('show')},t);
-    t+=2600;
+    t+=2800;
     schedule(run,t); // loop while the intro is up
   }
   if(reduce)staticState();else run();
