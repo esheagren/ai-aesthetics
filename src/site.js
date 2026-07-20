@@ -528,25 +528,9 @@ function methodDiagram(uid) {
     </g>
   </svg>`;
 }
-// ---- intro tutorial beats: two full-viewport pages that replace the old
-// single method page — beat A walks the protocol (how models were asked),
-// beat B teases the real consensus data before the index. Both keep the
-// intro's snap-page idiom (mband-over + msent + a cue in the footer).
-const BEAT_FAM_ORDER = ['Anthropic', 'OpenAI', 'Google', 'DeepSeek', 'Moonshot', 'xAI'];
-const famCounts = {};
-for (const m of models) famCounts[m.family] = (famCounts[m.family] || 0) + 1;
-// n of 13 dots lit, in the same fixed family order — an abstract tally (how
-// many agree), not a claim about which specific models.
-function beatDots(n) {
-  let out = '', idx = 0;
-  for (const fam of BEAT_FAM_ORDER) {
-    for (let k = 0; k < (famCounts[fam] || 0); k++) {
-      out += `<i class="cvg-dot ${idx < n ? 'dot-lit' : 'dot-dim'}" style="background:${FAMC[fam]};--i:${idx}"></i>`;
-      idx++;
-    }
-  }
-  return out;
-}
+// ---- intro tutorial beats: full-viewport pages walking the method (probes,
+// tally, panel) before the collage of what the machines agree on. All keep
+// the intro's snap-page idiom (mband-over + msent + a cue in the footer).
 // ---- beat M: the specimens — a build-time HTML roster of every model,
 // grouped by lab (left to right on desktop, stacked on phone), each family's
 // models ordered by capability, flagship first. Joined against `models` by
@@ -615,16 +599,48 @@ function mroRoster() {
 // Ties inside the n=11 band break toward the geography-of-taste story —
 // Japan belongs beside Kyoto and Japanese cuisine; Tao Te Ching and Python
 // wait for the full canon.
-const CVG_PREF = ['cuisine', 'season', 'city', 'country', 'smell'];
-const cvgRank = (d) => { const i = CVG_PREF.indexOf(d); return i < 0 ? 99 : i; };
-const beatConverge = consFav.filter((c) => c.n >= 11)
-  .sort((a, b) => b.n - a.n || cvgRank(a.d) - cvgRank(b.d)).slice(0, 5);
-const beatRows = beatConverge.map((c) => `<div class="cvg-row">
-    <div class="cvg-dots">${beatDots(c.n)}</div>
-    <div class="cvg-conn"></div>
-    <div class="cvg-info"><div class="cvg-name">${esc(c.e)}</div>
-    <div class="cvg-tag">${c.n} of ${models.length} · ${esc(DOMAIN_LABELS[c.d] ?? c.d)}</div></div>
-  </div>`).join('');
+// ---- beat B: the AI aesthetic — every majority agreement (all of consFav,
+// n>=7) composed into ONE collage plate. Photographs where the atlas has
+// them (same /img/canon files the canon view uses — zero added payload),
+// the site's native treatments where it doesn't (Garamond's Aa specimen,
+// the 1960s decade mark), plain set-type for the rest. Tile spans weight
+// the mosaic: the strongest agreements with photographs anchor it.
+// Spans sum to exactly 36 cells (6 cols x 6 rows): 3 bigs (12) + 9 wides (18)
+// + 1 tall (2) + 4 singles (4) — the plate closes as a full rectangle with no
+// ragged last row. Long typographic names ride the wides.
+const AES_SPAN = {
+  'japanese cuisine': 'a-big', 'autumn': 'a-big', 'kyoto': 'a-big',
+  'petrichor': 'a-wide', 'starry night': 'a-wide', 'san francisco': 'a-wide',
+  'japan': 'a-wide', 'tao te ching': 'a-wide', 'python': 'a-wide',
+  'johann sebastian bach': 'a-wide', 'surrealism': 'a-wide', 'marginalian': 'a-wide',
+  'tadao ando': 'a-tall',
+};
+function aestheticPlate() {
+  const orderd = consFav.slice().sort((a, b) => b.n - a.n);
+  const tiles = orderd.map((c, i) => {
+    const key = imgFor(c.e);
+    const nat = NATIVE[normEnt(c.e)];
+    const span = AES_SPAN[normEnt(c.e)] || '';
+    const meta = `<span class="aes-meta">${esc(DOMAIN_LABELS[c.d] ?? c.d)} · ${c.n} of ${models.length}</span>`;
+    if (key) {
+      // photo tile: image is the art, caption names it
+      return `<figure class="aes-t ${span}" style="--i:${i}">
+        <img src="${IMAGES[key].uri}" alt="${esc(c.e)}" loading="lazy">
+        <figcaption class="aes-cap">${meta}<span class="aes-name">${esc(c.e)}</span></figcaption>
+      </figure>`;
+    }
+    // typographic tile: the set name IS the art; only the meta line captions it
+    let art;
+    if (nat?.kind === 'type') art = `<span class="aes-aa" style="font-family:${nat.css}">Aa</span><span class="aes-ty">${esc(c.e)}</span>`;
+    else if (nat?.kind === 'decade') art = `<span class="aes-decade">${esc(c.e)}</span>`;
+    else art = `<span class="aes-ty aes-ty-main">${esc(c.e)}</span>`;
+    return `<figure class="aes-t aes-typo ${span}" style="--i:${i}">
+      <div class="aes-tybox">${art}</div>
+      <figcaption class="aes-cap aes-cap-q">${meta}</figcaption>
+    </figure>`;
+  }).join('');
+  return `<div class="aes" role="img" aria-label="A collage of everything a majority of the models agree they love — ${orderd.map((c) => c.e).join(', ')}">${tiles}</div>`;
+}
 
 const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The protocol">
   <div>
@@ -722,21 +738,12 @@ const beatModelsPage = `<section class="mpage" id="beat-models" aria-label="The 
     <button class="skiplink" id="skipTut5" type="button">skip tutorial</button>
   </div>
 </section>`;
-// "See everything they agree on" unfolds the REST of the canon right here in
-// the onboarding flow (no jump to a subpage the user can't find their way back
-// from): every remaining majority agreement, compact, from ten votes down to seven.
-const beatMore = consFav.filter((c) => !beatConverge.includes(c));
-const beatMoreItems = beatMore.map((c) => `<div class="cvgm-item">
-    <span class="cvgm-name">${esc(c.e)}</span>
-    <span class="cvgm-tag">${c.n} of ${models.length} · ${esc(DOMAIN_LABELS[c.d] ?? c.d)}</span>
-  </div>`).join('');
 const beatConvergePage = `<section class="mpage" id="beat-converge" aria-label="The convergence">
   <div>
     <div class="mband-over">the surprise</div>
-    <p class="msent">Trained apart, on different data, by different hands — and yet, in places, the models agree. Remarkably.</p>
-    <div class="cvg-list">${beatRows}</div>
-    <button class="beat-link" id="beatSeeAll" type="button" aria-expanded="false" aria-controls="cvgMore">see everything they agree on &rarr;</button>
-    <div class="cvg-more" id="cvgMore" hidden>${beatMoreItems}</div>
+    <p class="msent">Trained apart, on different data, by different hands — and yet the models agree.
+    Remarkably. This is the AI aesthetic:</p>
+    ${aestheticPlate()}
   </div>
   <button class="cue mcue" id="mcue" type="button" aria-label="Continue to the index">
     <span>the index</span><i></i>
@@ -1251,28 +1258,44 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .mro-legend span{margin-left:4px}
 @media(max-width:720px){.mro-groups{flex-direction:column;gap:20px}.mro-head{margin-bottom:6px}}
 
-/* beat B — the convergence: the real top consensus entries, dots lighting in on view */
-.cvg-list{margin-top:32px;display:flex;flex-direction:column;gap:20px;max-width:640px}
-.cvg-row{display:flex;align-items:center;gap:16px}
-@media(max-width:560px){.cvg-row{flex-wrap:wrap}.cvg-conn{display:none}}
-.cvg-dots{display:flex;gap:4px;flex:none}
-.cvg-dot{display:block;width:6px;height:6px;border-radius:50%;opacity:.15;transition:opacity .4s ease}
-.cvg-row.inview .cvg-dot.dot-lit{opacity:1;transition-delay:calc(var(--i) * 45ms)}
-.cvg-conn{flex:1 1 24px;max-width:34px;height:1px;background:var(--hair)}
-.cvg-info{display:flex;flex-direction:column;gap:2px}
-.cvg-name{font-family:var(--serif);font-size:clamp(19px,2.4vw,26px)}
-.cvg-tag{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
-.beat-link{display:block;margin-top:28px;background:none;border:0;padding:0;color:var(--dim);font:13px var(--serif);font-style:italic;cursor:pointer;
-  text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
-.beat-link:hover{color:var(--ink);text-decoration-color:var(--dim)}
-/* the unfolded rest-of-the-canon: compact, in place, no subpage */
-.cvg-more{margin:26px 0 84px;padding-top:22px;border-top:1px solid var(--hair2);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 22px;max-width:640px;
-  opacity:0;transition:opacity .6s ease}
-.cvg-more.open{opacity:1}
-@media(max-width:700px){.cvg-more{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.cvgm-item{display:flex;flex-direction:column;gap:2px}
-.cvgm-name{font-family:var(--serif);font-size:16px;color:var(--ink)}
-.cvgm-tag{font:9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+/* beat B — the AI aesthetic: one collage plate of every majority agreement.
+   Photo tiles carry a bottom gradient caption; typographic tiles set the name
+   itself as the art. Tiles assemble with a stagger the first time in view. */
+.aes{margin-top:28px;margin-bottom:72px;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:92px;grid-auto-flow:dense;gap:7px;max-width:880px}
+.aes-t{position:relative;overflow:hidden;border-radius:3px;background:var(--panel);border:1px solid var(--hair2);margin:0;
+  opacity:0;transform:scale(.965);transition:opacity .55s ease,transform .55s ease}
+.aes.inview .aes-t{opacity:1;transform:none;transition-delay:calc(var(--i) * 55ms)}
+@media (prefers-reduced-motion:reduce){.aes-t{transition:none}}
+.aes-t.a-big{grid-column:span 2;grid-row:span 2}
+.aes-t.a-wide{grid-column:span 2}
+.aes-t.a-tall{grid-row:span 2}
+.aes-t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(.96) brightness(.92)}
+/* border-top:none overrides the global figcaption hairline (site.js line
+   ~873, meant for the canon cards) — here it drew a stray line across every
+   photograph at the gradient's start. */
+.aes-cap{position:absolute;left:0;right:0;bottom:0;padding:34px 11px 9px;display:flex;flex-direction:column;gap:1px;border-top:none;
+  background:linear-gradient(180deg,rgba(19,20,23,0) 0,rgba(19,20,23,0) 12px,rgba(19,20,23,.88) 100%)}
+.aes-meta{font:8.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:rgba(233,230,221,.62)}
+.aes-name{font-family:var(--serif);font-size:15px;color:var(--ink);line-height:1.15}
+.a-big .aes-name{font-size:19px}
+/* typographic tiles: the set name is the art, the meta line the only caption */
+.aes-typo .aes-cap-q{background:none;padding-bottom:8px}
+.aes-tybox{position:absolute;inset:0 0 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:10px;text-align:center}
+.aes-ty{font-family:var(--serif);font-size:clamp(14px,1.5vw,18px);color:var(--ink);line-height:1.2}
+.aes-ty-main{font-style:italic}
+.aes-aa{font-size:44px;color:var(--ink);line-height:1}
+.aes-typo .aes-aa + .aes-ty{font-size:12px;color:var(--dim);font-style:normal}
+.aes-decade{font-family:var(--serif);font-size:30px;letter-spacing:.06em;color:var(--ink)}
+@media(max-width:720px){
+  .aes{grid-template-columns:repeat(4,1fr);grid-auto-rows:76px;gap:5px;margin-bottom:88px}
+  .aes-name{font-size:13px}
+  .a-big .aes-name{font-size:15px}
+  .aes-cap{padding:18px 8px 7px}
+  .aes-meta{font-size:7.5px;letter-spacing:.14em}
+  .aes-ty{font-size:13px}
+  .aes-aa{font-size:32px}
+  .aes-decade{font-size:22px}
+}
 
 /* Method tab: horizontal snap-strip stepper sharing one progressively-lit diagram */
 .mstep-wrap{position:relative;margin-top:30px;max-width:720px}
@@ -2138,15 +2161,6 @@ if(mcue)mcue.addEventListener('click',function(){
   commitPastHero();
   updateViewbar();
 });
-// beat B's "see everything they agree on": unfold the rest of the canon in
-// place — the onboarding flow keeps its footing, no jump to a subpage.
-var beatSeeAll=document.getElementById('beatSeeAll'),cvgMore=document.getElementById('cvgMore');
-if(beatSeeAll&&cvgMore)beatSeeAll.addEventListener('click',function(){
-  cvgMore.hidden=false;
-  requestAnimationFrame(function(){requestAnimationFrame(function(){cvgMore.classList.add('open')})});
-  beatSeeAll.setAttribute('aria-expanded','true');
-  beatSeeAll.style.display='none';
-});
 setView('cabinet',false);
 addEventListener('scroll',updateViewbar,{passive:true});
 addEventListener('resize',updateViewbar);
@@ -2295,30 +2309,26 @@ updateViewbar();
   };
 })();
 
-/* ---- beat B: the convergence rows light their dots in with a small stagger
-   the first time each row scrolls into view; reduced motion shows them lit. ---- */
+/* ---- beat B: the aesthetic plate's tiles assemble with a small stagger the
+   first time the page scrolls into view; reduced motion shows it complete. ---- */
 (function(){
-  var rows=[].slice.call(document.querySelectorAll('.cvg-row'));
-  if(!rows.length)return;
+  var aes=document.querySelector('.aes');
+  if(!aes)return;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var io=null;
-  function reveal(row){row.classList.add('inview')}
+  function reveal(){aes.classList.add('inview')}
   function observe(){
-    if(reduce||!('IntersectionObserver' in window)){rows.forEach(reveal);return}
+    if(reduce||!('IntersectionObserver' in window)){reveal();return}
     io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){if(en.isIntersecting){reveal(en.target);io.unobserve(en.target)}});
-    },{threshold:.4});
-    rows.forEach(function(r){io.observe(r)});
+      entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
+    },{threshold:.15});
+    io.observe(aes);
   }
   observe();
-  // Exposed so returning home resets the stagger (and folds the expanded
-  // canon back up), ready to replay on the next visit.
+  // Exposed so returning home resets the stagger, ready to replay on the next visit.
   window._beatBReset=function(){
-    if(io)rows.forEach(function(r){io.unobserve(r)});
-    rows.forEach(function(r){r.classList.remove('inview')});
-    var more=document.getElementById('cvgMore'),link=document.getElementById('beatSeeAll');
-    if(more){more.hidden=true;more.classList.remove('open')}
-    if(link){link.style.display='';link.setAttribute('aria-expanded','false')}
+    if(io)io.unobserve(aes);
+    aes.classList.remove('inview');
     observe();
   };
 })();
