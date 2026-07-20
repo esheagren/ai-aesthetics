@@ -171,6 +171,8 @@ const COLOR_HEX = {
   'prussian blue': '#0e3a5c', 'blue': '#2727e0', 'purple': '#800080',
   'mint green': '#9fe2bf', 'sapphire blue': '#0f52ba', 'azure': '#007fff',
   'pink': '#ffc0cb', 'royal blue': '#4169e1',
+  'midnight blue': '#191970', 'electric indigo': '#6f00ff', 'rose gold': '#b76e79',
+  'sunset orange': '#fd5e53', 'deep cerulean': '#00618f',
 };
 // Every typeface entity in data/entitycards.json ("typeface <norm>"), mapped
 // to a system-font stack (the CSP forbids webfonts). Faces with no common
@@ -966,7 +968,10 @@ button.bo-cell.hi{color:var(--night);font-weight:700}
 button.bo-split:hover{box-shadow:none;outline:1px solid var(--ink);outline-offset:-1px}
 button.bo-split.on{box-shadow:none;outline:2px solid var(--ink);outline-offset:-2px}
 /* color rows wear a dot of the color itself, left of the name */
-.color-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:-1px;border:1px solid rgba(233,230,221,.28)}
+/* i.color-dot (not .color-dot): must out-rank the broad ".bo-rowlabel i"
+   monogram rule above, whose display:grid turns the orb into a block and
+   drops the colour name onto its own line below it. */
+i.color-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:-1px;border:1px solid rgba(233,230,221,.28)}
 /* Below 1160px the 864px matrix can't fit, so .bo-scroll becomes the scroll
    container on BOTH axes: a capped-height overflow:auto box. Sticky headers
    then stick to the box itself — top:0 for the family row, top:28px (the fam
