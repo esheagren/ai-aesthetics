@@ -10,8 +10,8 @@ import { EXTRACTOR_MODEL, EXTRACT_BATCH_SIZE } from './config.js';
 import { KEYS, postJSON, withRetries } from './providers.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const RAW = join(here, '..', 'data', 'raw.jsonl');
-const OUT = join(here, '..', 'data', 'extracted.jsonl');
+const RAW = process.env.RAW_IN ?? join(here, '..', 'data', 'raw.jsonl');
+const OUT = process.env.EXTRACT_OUT ?? join(here, '..', 'data', 'extracted.jsonl');
 
 const readJSONL = (path) =>
   existsSync(path)
@@ -107,6 +107,7 @@ for (let i = 0; i < raw.length; i += EXTRACT_BATCH_SIZE) {
         key: src.key, model: src.model, domain: src.domain, probe: src.probe,
         entity: item.entity, creator: item.creator,
         refused: item.refused, hedged: item.hedged, descriptors: item.descriptors,
+        ...(src.persona !== undefined ? { persona: src.persona, t: src.t } : {}),
       }) + '\n');
       processed++;
     }

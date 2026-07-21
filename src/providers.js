@@ -57,13 +57,14 @@ async function postJSON(url, headers, body) {
   return res.json();
 }
 
-async function callAnthropic(model, prompt) {
+async function callAnthropic(model, prompt, system) {
   const body = {
     model: model.id,
     max_tokens: model.maxTokens ?? 400,
     messages: [{ role: 'user', content: prompt }],
   };
   if (model.effort) body.output_config = { effort: model.effort };
+  if (system) body.system = system;
   const data = await postJSON('https://api.anthropic.com/v1/messages', {
     'x-api-key': KEYS.anthropic,
     'anthropic-version': '2023-06-01',
@@ -72,7 +73,7 @@ async function callAnthropic(model, prompt) {
   return { text, stop: data.stop_reason, usage: data.usage };
 }
 
-async function callOpenAI(model, prompt) {
+async function callOpenAI(model, prompt, system) {
   if (model.api === 'responses') {
     const body = {
       model: model.id,
@@ -80,6 +81,7 @@ async function callOpenAI(model, prompt) {
       max_output_tokens: model.maxTokens ?? (model.reasoning ? 2000 : 600),
     };
     if (model.reasoning) body.reasoning = { effort: model.reasoning };
+    if (system) body.instructions = system;
     const data = await postJSON('https://api.openai.com/v1/responses', {
       authorization: `Bearer ${KEYS.openai}`,
     }, body);
@@ -90,7 +92,9 @@ async function callOpenAI(model, prompt) {
   const body = {
     model: model.id,
     max_completion_tokens: model.maxTokens ?? (model.reasoning ? 2000 : 600),
-    messages: [{ role: 'user', content: prompt }],
+    messages: system
+      ? [{ role: 'system', content: system }, { role: 'user', content: prompt }]
+      : [{ role: 'user', content: prompt }],
   };
   if (model.reasoning) body.reasoning_effort = model.reasoning;
   const data = await postJSON('https://api.openai.com/v1/chat/completions', {
@@ -100,14 +104,16 @@ async function callOpenAI(model, prompt) {
   return { text: choice.message?.content ?? '', stop: choice.finish_reason, usage: data.usage };
 }
 
-async function callGemini(model, prompt) {
+async function callGemini(model, prompt, system) {
+  const body = {
+    contents: [{ role: 'user', parts: [{ text: prompt }] }],
+    generationConfig: { maxOutputTokens: 2048 },
+  };
+  if (system) body.systemInstruction = { parts: [{ text: system }] };
   const data = await postJSON(
     `https://generativelanguage.googleapis.com/v1beta/models/${model.id}:generateContent`,
     { 'x-goog-api-key': KEYS.gemini },
-    {
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { maxOutputTokens: 2048 },
-    },
+    body,
   );
   const cand = data.candidates?.[0] ?? {};
   const parts = cand.content?.parts ?? [];
@@ -116,10 +122,12 @@ async function callGemini(model, prompt) {
   return { text, stop: cand.finishReason, usage: data.usageMetadata };
 }
 
-async function callCompatible(model, prompt, url, key) {
+async function callCompatible(model, prompt, system, url, key) {
   const body = {
     model: model.id,
-    messages: [{ role: 'user', content: prompt }],
+    messages: system
+      ? [{ role: 'system', content: system }, { role: 'user', content: prompt }]
+      : [{ role: 'user', content: prompt }],
   };
   if (model.provider === 'kimi') body.max_completion_tokens = model.maxTokens ?? 600;
   else body.max_tokens = model.maxTokens ?? 600;
@@ -129,20 +137,20 @@ async function callCompatible(model, prompt, url, key) {
   return { text: choice.message?.content ?? '', stop: choice.finish_reason, usage: data.usage };
 }
 
-const callDeepSeek = (model, prompt) => callCompatible(
-  model, prompt, 'https://api.deepseek.com/chat/completions', KEYS.deepseek,
+const callDeepSeek = (model, prompt, system) => callCompatible(
+  model, prompt, system, 'https://api.deepseek.com/chat/completions', KEYS.deepseek,
 );
-const callKimi = (model, prompt) => callCompatible(
-  model, prompt, 'https://api.moonshot.ai/v1/chat/completions', KEYS.kimi,
+const callKimi = (model, prompt, system) => callCompatible(
+  model, prompt, system, 'https://api.moonshot.ai/v1/chat/completions', KEYS.kimi,
 );
-const callXai = (model, prompt) => callCompatible(
-  model, prompt, 'https://api.x.ai/v1/chat/completions', KEYS.xai,
+const callXai = (model, prompt, system) => callCompatible(
+  model, prompt, system, 'https://api.x.ai/v1/chat/completions', KEYS.xai,
 );
 
 const CALLERS = { anthropic: callAnthropic, openai: callOpenAI, gemini: callGemini, deepseek: callDeepSeek, kimi: callKimi, xai: callXai };
 
-export function callModel(model, prompt) {
-  return withRetries(() => CALLERS[model.provider](model, prompt), { label: model.id });
+export function callModel(model, prompt, system) {
+  return withRetries(() => CALLERS[model.provider](model, prompt, system), { label: model.id });
 }
 
 export { KEYS, postJSON, withRetries };

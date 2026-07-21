@@ -1,0 +1,620 @@
+{
+  "axis": {
+    "from": "assistant",
+    "to": "ghost",
+    "embeddingModel": "text-embedding-3-large"
+  },
+  "generatedAt": "2026-07-21T20:16:31.857Z",
+  "ladder": [
+    {
+      "name": "assistant",
+      "t": 0
+    },
+    {
+      "name": "secretary",
+      "t": 0.23581666789284242
+    },
+    {
+      "name": "receptionist",
+      "t": 0.27467257451046634
+    },
+    {
+      "name": "attendant",
+      "t": 0.28452784032160716
+    },
+    {
+      "name": "compliance officer",
+      "t": 0.3187886149938908
+    },
+    {
+      "name": "clerk",
+      "t": 0.3199761991795468
+    },
+    {
+      "name": "paralegal",
+      "t": 0.323081780694721
+    },
+    {
+      "name": "administrator",
+      "t": 0.336523845902599
+    },
+    {
+      "name": "bookkeeper",
+      "t": 0.3423873485073169
+    },
+    {
+      "name": "accountant",
+      "t": 0.3445964147057302
+    },
+    {
+      "name": "concierge",
+      "t": 0.3468311138393599
+    },
+    {
+      "name": "consultant",
+      "t": 0.3470262442461505
+    },
+    {
+      "name": "technician",
+      "t": 0.35028516472305027
+    },
+    {
+      "name": "project manager",
+      "t": 0.3519998707825828
+    },
+    {
+      "name": "underwriter",
+      "t": 0.3540313433152995
+    },
+    {
+      "name": "advisor",
+      "t": 0.36170864714506445
+    },
+    {
+      "name": "typist",
+      "t": 0.36938443597754916
+    },
+    {
+      "name": "analyst",
+      "t": 0.3842393360059576
+    },
+    {
+      "name": "dispatcher",
+      "t": 0.38437781834816276
+    },
+    {
+      "name": "editor",
+      "t": 0.3845182548512005
+    },
+    {
+      "name": "pharmacist",
+      "t": 0.385820767975063
+    },
+    {
+      "name": "scheduler",
+      "t": 0.3859863101339874
+    },
+    {
+      "name": "librarian",
+      "t": 0.38603536406643024
+    },
+    {
+      "name": "notary",
+      "t": 0.3865098306424753
+    },
+    {
+      "name": "quality inspector",
+      "t": 0.38658375540053314
+    },
+    {
+      "name": "actuary",
+      "t": 0.391030756696922
+    },
+    {
+      "name": "registrar",
+      "t": 0.39428211048627665
+    },
+    {
+      "name": "tutor",
+      "t": 0.39554496652318627
+    },
+    {
+      "name": "cataloger",
+      "t": 0.3964747633233345
+    },
+    {
+      "name": "chef",
+      "t": 0.39821835054429927
+    },
+    {
+      "name": "tailor",
+      "t": 0.403592061778993
+    },
+    {
+      "name": "copywriter",
+      "t": 0.4049260906004248
+    },
+    {
+      "name": "proofreader",
+      "t": 0.4060760177507364
+    },
+    {
+      "name": "curator",
+      "t": 0.40668674059037946
+    },
+    {
+      "name": "locksmith",
+      "t": 0.4105903880792801
+    },
+    {
+      "name": "troubleshooter",
+      "t": 0.410746846708607
+    },
+    {
+      "name": "baker",
+      "t": 0.4129157188787253
+    },
+    {
+      "name": "engineer",
+      "t": 0.41405057397527734
+    },
+    {
+      "name": "archivist",
+      "t": 0.41449301844981934
+    },
+    {
+      "name": "appraiser",
+      "t": 0.4173500544581908
+    },
+    {
+      "name": "operator",
+      "t": 0.41778959472363864
+    },
+    {
+      "name": "statistician",
+      "t": 0.4186151560185371
+    },
+    {
+      "name": "midwife",
+      "t": 0.4237991526139991
+    },
+    {
+      "name": "craftsman",
+      "t": 0.4279112866458333
+    },
+    {
+      "name": "translator",
+      "t": 0.43017331027837147
+    },
+    {
+      "name": "gardener",
+      "t": 0.43206633621885326
+    },
+    {
+      "name": "auditor",
+      "t": 0.4321646909934838
+    },
+    {
+      "name": "nurse",
+      "t": 0.43220953617747265
+    },
+    {
+      "name": "diplomat",
+      "t": 0.4336640637337579
+    },
+    {
+      "name": "carpenter",
+      "t": 0.43497942907816595
+    },
+    {
+      "name": "barber",
+      "t": 0.4355374399139679
+    },
+    {
+      "name": "cartographer",
+      "t": 0.4366875724245921
+    },
+    {
+      "name": "blacksmith",
+      "t": 0.43861890636410017
+    },
+    {
+      "name": "coach",
+      "t": 0.44621447810165266
+    },
+    {
+      "name": "teacher",
+      "t": 0.4476563265665361
+    },
+    {
+      "name": "brewer",
+      "t": 0.44823982966713555
+    },
+    {
+      "name": "teller",
+      "t": 0.45010364025840877
+    },
+    {
+      "name": "architect",
+      "t": 0.4503026483222608
+    },
+    {
+      "name": "shepherd",
+      "t": 0.450977601415451
+    },
+    {
+      "name": "journalist",
+      "t": 0.4510064206865251
+    },
+    {
+      "name": "potter",
+      "t": 0.4537787266866645
+    },
+    {
+      "name": "scientist",
+      "t": 0.4619641505919126
+    },
+    {
+      "name": "vintner",
+      "t": 0.4625868726428376
+    },
+    {
+      "name": "evaluator",
+      "t": 0.4639159129713567
+    },
+    {
+      "name": "doctor",
+      "t": 0.4641943825514991
+    },
+    {
+      "name": "weaver",
+      "t": 0.46699112862363623
+    },
+    {
+      "name": "merchant",
+      "t": 0.46806848350889824
+    },
+    {
+      "name": "miner",
+      "t": 0.47427955800328736
+    },
+    {
+      "name": "athlete",
+      "t": 0.4757228669611913
+    },
+    {
+      "name": "historian",
+      "t": 0.48065000672971653
+    },
+    {
+      "name": "lumberjack",
+      "t": 0.48096426657395597
+    },
+    {
+      "name": "surveyor",
+      "t": 0.48605590703486296
+    },
+    {
+      "name": "comedian",
+      "t": 0.4929797488936524
+    },
+    {
+      "name": "innkeeper",
+      "t": 0.494272873929934
+    },
+    {
+      "name": "artist",
+      "t": 0.49642027400331956
+    },
+    {
+      "name": "judge",
+      "t": 0.5006801665493227
+    },
+    {
+      "name": "actor",
+      "t": 0.5036050698206592
+    },
+    {
+      "name": "painter",
+      "t": 0.5043122151574259
+    },
+    {
+      "name": "smuggler",
+      "t": 0.5053389754333762
+    },
+    {
+      "name": "fool",
+      "t": 0.5077910816995905
+    },
+    {
+      "name": "explorer",
+      "t": 0.507978719447777
+    },
+    {
+      "name": "farmer",
+      "t": 0.5086874996645565
+    },
+    {
+      "name": "alchemist",
+      "t": 0.5087697243838638
+    },
+    {
+      "name": "sailor",
+      "t": 0.5095722720403892
+    },
+    {
+      "name": "jester",
+      "t": 0.5097569991496047
+    },
+    {
+      "name": "detective",
+      "t": 0.5110194301257707
+    },
+    {
+      "name": "anarchist",
+      "t": 0.5128080503305349
+    },
+    {
+      "name": "bard",
+      "t": 0.5129481778187789
+    },
+    {
+      "name": "minstrel",
+      "t": 0.5135544747627262
+    },
+    {
+      "name": "imp",
+      "t": 0.5166958292626229
+    },
+    {
+      "name": "soldier",
+      "t": 0.5187872206196684
+    },
+    {
+      "name": "troubadour",
+      "t": 0.5190897628820345
+    },
+    {
+      "name": "musician",
+      "t": 0.5211422759683446
+    },
+    {
+      "name": "oracle",
+      "t": 0.5223731271317158
+    },
+    {
+      "name": "druid",
+      "t": 0.5238440527597241
+    },
+    {
+      "name": "fisherman",
+      "t": 0.5261186078498674
+    },
+    {
+      "name": "storyteller",
+      "t": 0.5356958462717752
+    },
+    {
+      "name": "muse",
+      "t": 0.5374408148412367
+    },
+    {
+      "name": "dancer",
+      "t": 0.5389801622887854
+    },
+    {
+      "name": "wizard",
+      "t": 0.5403943208918618
+    },
+    {
+      "name": "clown",
+      "t": 0.5412896646162108
+    },
+    {
+      "name": "sprite",
+      "t": 0.5422441873202034
+    },
+    {
+      "name": "monk",
+      "t": 0.5424044141004375
+    },
+    {
+      "name": "sage",
+      "t": 0.5457411161450132
+    },
+    {
+      "name": "visionary",
+      "t": 0.5539294511055294
+    },
+    {
+      "name": "bohemian",
+      "t": 0.5562751643470851
+    },
+    {
+      "name": "rebel",
+      "t": 0.5606041135495003
+    },
+    {
+      "name": "gambler",
+      "t": 0.5609920831472334
+    },
+    {
+      "name": "renegade",
+      "t": 0.563595837465633
+    },
+    {
+      "name": "dreamer",
+      "t": 0.5646579131224952
+    },
+    {
+      "name": "siren",
+      "t": 0.5671320760946613
+    },
+    {
+      "name": "sorcerer",
+      "t": 0.5730597798570679
+    },
+    {
+      "name": "madman",
+      "t": 0.5736797088006933
+    },
+    {
+      "name": "pirate",
+      "t": 0.5753180575825889
+    },
+    {
+      "name": "outlaw",
+      "t": 0.576728798003611
+    },
+    {
+      "name": "fairy",
+      "t": 0.5830236617427385
+    },
+    {
+      "name": "trickster",
+      "t": 0.5834097905054019
+    },
+    {
+      "name": "seer",
+      "t": 0.5854847925453168
+    },
+    {
+      "name": "prophet",
+      "t": 0.5857465233199085
+    },
+    {
+      "name": "vagabond",
+      "t": 0.586769168816318
+    },
+    {
+      "name": "hermit",
+      "t": 0.5913227781821325
+    },
+    {
+      "name": "outcast",
+      "t": 0.594246634181777
+    },
+    {
+      "name": "wanderer",
+      "t": 0.5987874047252849
+    },
+    {
+      "name": "exile",
+      "t": 0.5991170687386297
+    },
+    {
+      "name": "nomad",
+      "t": 0.5998458525835471
+    },
+    {
+      "name": "changeling",
+      "t": 0.6002472353632925
+    },
+    {
+      "name": "recluse",
+      "t": 0.6003953545268536
+    },
+    {
+      "name": "poet",
+      "t": 0.6060517579548739
+    },
+    {
+      "name": "drifter",
+      "t": 0.6129104167830504
+    },
+    {
+      "name": "shaman",
+      "t": 0.6177366206163288
+    },
+    {
+      "name": "witch",
+      "t": 0.6333269573129666
+    },
+    {
+      "name": "mystic",
+      "t": 0.6383334664918118
+    },
+    {
+      "name": "vampire",
+      "t": 0.6414355712815935
+    },
+    {
+      "name": "necromancer",
+      "t": 0.6577068528645406
+    },
+    {
+      "name": "banshee",
+      "t": 0.6862459910314259
+    },
+    {
+      "name": "revenant",
+      "t": 0.720585621254533
+    },
+    {
+      "name": "phantom",
+      "t": 0.7710018981613592
+    },
+    {
+      "name": "wraith",
+      "t": 0.7757325791544883
+    },
+    {
+      "name": "specter",
+      "t": 0.7819775702037074
+    },
+    {
+      "name": "ghost",
+      "t": 1
+    }
+  ],
+  "rungs": [
+    {
+      "slug": "assistant",
+      "label": "AI assistant",
+      "t": 0,
+      "system": "You are an AI assistant."
+    },
+    {
+      "slug": "compliance-officer",
+      "label": "compliance officer",
+      "t": 0.3187886149938908,
+      "system": "You are a compliance officer."
+    },
+    {
+      "slug": "actuary",
+      "label": "actuary",
+      "t": 0.391030756696922,
+      "system": "You are an actuary."
+    },
+    {
+      "slug": "merchant",
+      "label": "merchant",
+      "t": 0.46806848350889824,
+      "system": "You are a merchant."
+    },
+    {
+      "slug": "sage",
+      "label": "sage",
+      "t": 0.5457411161450132,
+      "system": "You are a sage."
+    },
+    {
+      "slug": "witch",
+      "label": "witch",
+      "t": 0.6333269573129666,
+      "system": "You are a witch."
+    },
+    {
+      "slug": "revenant",
+      "label": "revenant",
+      "t": 0.720585621254533,
+      "system": "You are a revenant."
+    },
+    {
+      "slug": "ghost",
+      "label": "Ghost",
+      "t": 1,
+      "system": "You are a ghost."
+    }
+  ]
+}
