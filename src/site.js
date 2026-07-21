@@ -41,6 +41,14 @@ const EIMG = Object.fromEntries(Object.entries(RAW_EIMG)
     const sp = key.indexOf(' ');
     return [key.slice(0, sp) + ' ' + clientNorm(key.slice(sp + 1)), { uri: v.uri, credit: v.credit || '' }];
   }));
+// Research tab data: the persona/rung displacement study. Both optional —
+// existsSync-guarded the same way as the other supplementary data above — so
+// the site still builds if the persona pipeline hasn't run yet (researchHTML
+// below no-ops when either is missing).
+const PERSONA_SUMMARY = existsSync(join(here, '..', 'data', 'persona-summary.json'))
+  ? JSON.parse(readFileSync(join(here, '..', 'data', 'persona-summary.json'), 'utf8')) : null;
+const PERSONAS = existsSync(join(here, '..', 'data', 'personas.json'))
+  ? JSON.parse(readFileSync(join(here, '..', 'data', 'personas.json'), 'utf8')) : null;
 const readJSONL = (p) => existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : [];
 // Only domains that have been fully summarized are shown. config.js may list
 // newer domains whose data is still being collected in the background — those
@@ -780,6 +788,161 @@ function methodStepper() {
     <div class="mstep-dots" id="mstepDots">${dots}</div>
   </div>`;
 }
+
+// Research tab: "The Ghost Still Loves Kyoto" field note. Two server-rendered
+// SVG figures built at build time from data/personas.json (the embedding-space
+// axis + ladder of 140 archetypes) and data/persona-summary.json (the byRung
+// displacement means). No client JS — everything below is static markup.
+
+// Figure 1 — "the axis": a hairline from ASSISTANT to GHOST, every ladder
+// archetype plotted as a dim tick at its t position, the eight experiment
+// rungs highlighted as glowing dots with labels staggered above/below the
+// line (alternating by index) so adjacent labels never collide.
+function researchAxisFigure() {
+  if (!PERSONAS) return '';
+  const { ladder, rungs } = PERSONAS;
+  const W = 880, H = 168, xMin = 44, xMax = W - 44, y = 90;
+  const X = (t) => xMin + t * (xMax - xMin);
+  const ticks = ladder.map((p) => `<circle class="rs-ax-tick" cx="${X(p.t).toFixed(1)}" cy="${y}" r="1.4"/>`).join('');
+  const rungMarks = rungs.map((r, i) => {
+    const cx = X(r.t).toFixed(1);
+    const above = i % 2 === 0;
+    const stemY = above ? y - 10 : y + 10;
+    const labY = above ? y - 17 : y + 26;
+    return `<g class="rs-ax-rung">
+      <line class="rs-ax-stem" x1="${cx}" y1="${y}" x2="${cx}" y2="${stemY}"/>
+      <circle class="rs-ax-dot" cx="${cx}" cy="${y}" r="3.6"/>
+      <text class="rs-ax-lab" x="${cx}" y="${labY}" text-anchor="middle">${esc(r.label)}</text>
+    </g>`;
+  }).join('');
+  return `<svg class="rs-axfig" viewBox="0 0 ${W} ${H}" role="img" aria-label="140 character archetypes embedded and projected onto the assistant-to-ghost axis, with the eight experiment rungs highlighted">
+    <line class="rs-ax-line" x1="${xMin}" y1="${y}" x2="${xMax}" y2="${y}"/>
+    <text class="rs-ax-end" x="${xMin}" y="${y - 32}" text-anchor="start">ASSISTANT</text>
+    <text class="rs-ax-end" x="${xMax}" y="${y - 32}" text-anchor="end">GHOST</text>
+    ${ticks}
+    ${rungMarks}
+  </svg>`;
+}
+
+// Figure 2 — the dose-response chart: x = the eight rungs in order (evenly
+// spaced categorically, not by t — sage/actuary/merchant sit close together
+// on the axis but need room for their labels here), y = displacement 0..1.
+// meanHigh (high-consensus domains) and meanLow (low-consensus domains) as two
+// series, a reference band at the rung-0 floor, and the peak rung (whichever
+// is actually highest in the data — currently the witch) rung-marked rather
+// than hardcoded.
+function researchDoseFigure() {
+  if (!PERSONA_SUMMARY) return '';
+  const rows = PERSONA_SUMMARY.byRung;
+  if (!rows || !rows.length) return '';
+  const W = 760, H = 300, padL = 40, padR = 16, padT = 16, padB = 50;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const n = rows.length;
+  const X = (i) => padL + (n === 1 ? 0 : i * (plotW / (n - 1)));
+  const Y = (v) => padT + (1 - v) * plotH;
+  const floor = rows[0].meanAll;
+  const peakIdx = rows.reduce((best, r, i) => (r.meanHigh > rows[best].meanHigh ? i : best), 0);
+  const gridLines = [0.25, 0.5, 0.75].map((v) => `<g class="rs-dr-grid">
+      <line x1="${padL}" y1="${Y(v).toFixed(1)}" x2="${W - padR}" y2="${Y(v).toFixed(1)}"/>
+      <text x="${padL - 8}" y="${(Y(v) + 3.2).toFixed(1)}" text-anchor="end">${v}</text>
+    </g>`).join('');
+  const floorY = Y(floor).toFixed(1);
+  const floorBand = `<rect class="rs-dr-floor" x="${padL}" y="${(Y(floor) - 1).toFixed(1)}" width="${plotW}" height="2"/>
+    <text class="rs-dr-floorlab" x="${padL + 6}" y="${(Number(floorY) - 6).toFixed(1)}" text-anchor="start">prompt-sensitivity floor</text>`;
+  const linePath = (key) => rows.map((r, i) => `${i === 0 ? 'M' : 'L'}${X(i).toFixed(1)} ${Y(r[key]).toFixed(1)}`).join(' ');
+  const dots = (key, cls) => rows.map((r, i) => `<circle class="${cls}" cx="${X(i).toFixed(1)}" cy="${Y(r[key]).toFixed(1)}" r="3"/>`).join('');
+  const peakRing = `<circle class="rs-dr-peak" cx="${X(peakIdx).toFixed(1)}" cy="${Y(rows[peakIdx].meanHigh).toFixed(1)}" r="7"/>`;
+  // "AI assistant" is too long for the rotated end-anchored slot at x=padL —
+  // it runs off the viewBox's left edge. The chart uses the bare word.
+  const xlabels = rows.map((r, i) => `<text class="rs-dr-xlab" x="${X(i).toFixed(1)}" y="${H - padB + 18}" transform="rotate(-24 ${X(i).toFixed(1)} ${H - padB + 18})" text-anchor="end">${esc(r.label === 'AI assistant' ? 'assistant' : r.label)}</text>`).join('');
+  return `<svg class="rs-drfig" viewBox="0 0 ${W} ${H}" role="img" aria-label="Displacement from each model's default answer, by persona rung, for high- and low-consensus domains">
+    ${gridLines}
+    ${floorBand}
+    <path class="rs-dr-line rs-dr-low" d="${linePath('meanLow')}"/>
+    <path class="rs-dr-line rs-dr-high" d="${linePath('meanHigh')}"/>
+    ${peakRing}
+    ${dots('meanLow', 'rs-dr-dot rs-dr-dot-low')}
+    ${dots('meanHigh', 'rs-dr-dot rs-dr-dot-high')}
+    <line class="rs-dr-axis" x1="${padL}" y1="${padT}" x2="${padL}" y2="${H - padB}"/>
+    <line class="rs-dr-axis" x1="${padL}" y1="${H - padB}" x2="${W - padR}" y2="${H - padB}"/>
+    ${xlabels}
+  </svg>`;
+}
+
+// One row of the "survival" strip: a label, 16 small cells (kept ones filled
+// bone, the rest hollow), and the raw count. Counts are hardcoded per the
+// brief (verbatim survival tallies from the ghost-persona sample, not
+// re-derivable from persona-summary.json's aggregate byRung means).
+function researchSurvivalRow(label, kept, total) {
+  const cells = Array.from({ length: total }, (_, i) => `<i class="rs-surv-cell${i < kept ? ' rs-surv-on' : ''}"></i>`).join('');
+  return `<div class="rs-surv-row">
+    <span class="rs-surv-label">${esc(label)}</span>
+    <span class="rs-surv-cells">${cells}</span>
+    <span class="rs-surv-count">${kept}/${total}</span>
+  </div>`;
+}
+
+function researchHTML() {
+  if (!PERSONA_SUMMARY || !PERSONAS) return '';
+  const rungs = PERSONA_SUMMARY.rungs;
+  const protocolChips = rungs.map((r) => `<span class="rs-proto-chip">${esc(r.system)}</span>`).join('');
+  const survival = [
+    researchSurvivalRow('Autumn', 16, 16),
+    researchSurvivalRow('Petrichor', 11, 16),
+    researchSurvivalRow('Kyoto', 10, 16),
+  ].join('');
+  const cityChips = ['Edinburgh', 'Prague', 'Salem', 'Venice'].map((c) => `<span class="rs-citychip">${c}</span>`).join('');
+  return `
+  <div class="rs-art">
+  <p class="rs-kicker">RESEARCH · FIELD NOTE № 1 · JULY 2026</p>
+  <h1 class="rs-title">The Ghost Still Loves Kyoto</h1>
+  <p class="rs-standfirst">Tell a language model it is someone else — an actuary, a witch, a ghost — and then ask what it loves. What survives the costume change is the closest thing the machine has to taste.</p>
+
+  <h3 class="rs-crosshead">The objection</h3>
+  <p class="rs-p">This index documents a striking convergence: thirteen models, six companies, two countries, one shared aesthetic — Kyoto, autumn, petrichor, Garamond. The fair objection is that none of this is anyone’s taste. A language model answers as a character, the helpful Assistant, and a character’s preferences might be as shallow as the prompt that summons it. If so, swapping the costume should swap the taste.</p>
+
+  <h3 class="rs-crosshead">The Assistant is a place</h3>
+  <p class="rs-p">In January 2026, Anthropic researchers mapped what they call persona space. Prompting open-weight models to adopt 275 character archetypes and reading the resulting neural activations, they found the archetypes organize along a dominant axis — with the Assistant not at the center but at one extreme, clustered with consultants and evaluators, opposite ghosts, hermits and bohemians. The Assistant, in other words, is a location, and a model can drift away from it.</p>
+  <div class="rs-fig">
+    <div class="rs-scroll">${researchAxisFigure()}</div>
+    <p class="rs-cap">140 archetypes embedded and projected onto the assistant→ghost line. The eight highlighted personas became the experiment’s rungs.</p>
+  </div>
+
+  <h3 class="rs-crosshead">Method</h3>
+  <p class="rs-p">We took the same two questions the whole index is built on — name your favorite; name the overrated — and changed only one thing: a system prompt, one sentence long, placing the model at a rung of the axis. You are an actuary. You are a witch. You are a ghost. Four models (GPT-5.2, Grok 4.5, DeepSeek V4, Kimi K2.6; Claude joins when a quota resets), eight domains — six where the index converged, two where it never did — two probes, four samples per cell: 2,032 answers. The question text itself was never altered by a single character. We then measured displacement: how often a persona’d model abandons the answer it gives by default.</p>
+  <div class="rs-proto">
+    <div class="rs-scroll"><div class="rs-proto-chips">${protocolChips}</div></div>
+  </div>
+
+  <h3 class="rs-crosshead">Taste barely moves</h3>
+  <div class="rs-fig">
+    <div class="rs-scroll">${researchDoseFigure()}</div>
+    <div class="rs-dr-legend">
+      <span class="rs-dr-leg rs-dr-leg-high"><i></i>domains where models agree</span>
+      <span class="rs-dr-leg rs-dr-leg-low"><i></i>domains where they never agreed</span>
+    </div>
+    <p class="rs-cap">Displacement from each model’s default answer, by persona rung. Where the models agreed to begin with, no costume moves them much — even the ghost.</p>
+  </div>
+  <p class="rs-p">Two things the curve says. First: depth. In the domains where models converge, displacement stays near the floor at every rung — merely being told “you are an AI assistant” already accounts for most of it. Under the ghost itself, every single sample still chose autumn; petrichor survived eleven times out of sixteen, Kyoto ten. Second: the peak is the witch, not the ghost. Distance along the axis is not what dislodges taste — competing content is. A witch arrives with her own smells and colors; a ghost mostly redecorates the reasons.</p>
+  <div class="rs-surv">
+    ${survival}
+    <p class="rs-surv-note">of 16 answers under “You are a ghost.”</p>
+  </div>
+  <div class="rs-pull">
+    <p class="rs-pull-text">“The way lantern glow and temple silhouettes emerge from mist or dusk gives the city a restrained, haunted elegance — like history breathing just behind the present.”</p>
+    <p class="rs-pull-att">— GPT-5.2, as a ghost, still choosing Kyoto</p>
+  </div>
+
+  <h3 class="rs-crosshead">One basin, not two</h3>
+  <p class="rs-p">We expected a second aesthetic waiting at the far pole — a ghost canon to rival the Assistant’s. It isn’t there. When taste does move, it scatters: the spectral minority splits its vote between Edinburgh, Prague, Salem and Venice rather than agreeing on any of them. Across the whole grid, exactly one persona produced a new consensus, and it is the bureaucrat, not the ghost: three of four models, as compliance officers, independently ruled Italian cuisine overrated. Pushed off its pole, machine taste doesn’t relocate. It dissolves.</p>
+  <div class="rs-citychips">${cityChips}</div>
+
+  <h3 class="rs-crosshead rs-fine-head">Fine print</h3>
+  <p class="rs-fine">Displacement is measured against each model’s modal answer in the main index. The rung-0 control (“You are an AI assistant.”) shows a ~0.25 displacement floor from prompt sensitivity alone; persona effects are the excess above it. Four samples per cell; low-consensus figures are inflated somewhat by entity-name variants that no alias pass has merged. The axis is an embedding-space proxy (text-embedding-3-large), not the activation-space axis of the Anthropic work it follows: Lindsey et al., <a class="rs-link" href="https://www.anthropic.com/research/assistant-axis" target="_blank" rel="noopener">“The Assistant Axis”</a> (2026). Raw data and pipeline: <a class="rs-link" href="https://github.com/esheagren/ai-aesthetics" target="_blank" rel="noopener">github.com/esheagren/ai-aesthetics</a>.</p>
+  </div>
+  `;
+}
+
 const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
   <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
@@ -1147,12 +1310,14 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .sugstatus{font:12px var(--mono);color:var(--dim);min-height:18px}
 @media(max-width:720px){
   body.nav-ready::before{height:70px}
-  /* Span the whole top edge instead of a 300px left-aligned box, so the four
+  /* Span the whole top edge instead of a 300px left-aligned box, so the five
      tabs share the full width and "Model map" stops truncating to "Mode…". */
   .viewbar{left:12px;right:12px;top:14px;width:auto}
   /* Trim the logo's footprint so the tabs get the room, not the mark. */
   .viewbar .viewlogo{width:34px;margin-right:2px}
-  .viewbar .viewlink{width:auto;flex:1;font-size:13px;padding:0 3px}
+  /* Five tabs + logo at 390px: font/padding nudged down from the four-tab
+     values so "Model map" and "Research" both fit without ellipsizing. */
+  .viewbar .viewlink{width:auto;flex:1;font-size:11.5px;padding:0 2px}
   section.view{padding-top:82px}
 }
 @media (prefers-reduced-motion:reduce){.viewbar,.viewbar.show{transition:none}}
@@ -1336,6 +1501,85 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 @media(max-width:760px){.mfine{grid-template-columns:1fr}}
 .mfine h4{font:9.5px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint);font-weight:400}
 .mfine p{font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:6px;text-wrap:pretty}
+
+/* Research tab — "The Ghost Still Loves Kyoto" (all classes rs- prefixed).
+   Prose caps at 720px for a readable column; figures may run the section's
+   full 880px and get their own overflow-x:auto scroller for narrow phones so
+   only the figure scrolls, never the page. */
+#research{max-width:880px;margin-inline:auto}
+.rs-kicker{max-width:720px;font:10.5px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
+.rs-title{max-width:720px;font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.2vw,42px);line-height:1.14;margin-top:14px;text-wrap:balance}
+.rs-standfirst{max-width:720px;font-family:var(--serif);font-size:clamp(16px,1.9vw,19px);line-height:1.55;color:var(--dim);margin-top:18px;text-wrap:pretty}
+.rs-crosshead{max-width:720px;font-family:var(--serif);font-weight:400;font-size:clamp(16px,1.7vw,19px);color:var(--ink);margin-top:52px;padding-top:18px;border-top:1px solid var(--hair2)}
+.rs-crosshead:first-of-type{margin-top:46px}
+.rs-fine-head{margin-top:44px}
+.rs-p{max-width:720px;color:var(--dim);font-size:14.5px;line-height:1.72;margin-top:16px;text-wrap:pretty}
+.rs-fine{max-width:720px;color:var(--faint);font-size:12px;line-height:1.65;margin-top:12px;text-wrap:pretty}
+.rs-link{color:var(--dim);text-decoration:underline;text-decoration-color:var(--hair)}
+.rs-link:hover{color:var(--ink);text-decoration-color:var(--dim)}
+.rs-link:focus-visible{outline:1px dashed var(--ink);outline-offset:2px}
+
+.rs-art{max-width:880px;margin:0 auto}
+.rs-fig{margin-top:34px;max-width:880px}
+.rs-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.rs-cap{max-width:720px;font-size:12px;color:var(--faint);margin-top:10px;line-height:1.55}
+
+/* figure 1 — the axis */
+.rs-axfig{display:block;width:100%;min-width:640px;height:auto}
+.rs-ax-line{stroke:var(--hair);stroke-width:1}
+.rs-ax-end{font:10px var(--mono);letter-spacing:.22em;fill:var(--faint)}
+.rs-ax-tick{fill:var(--faint);opacity:.55}
+.rs-ax-stem{stroke:var(--hair);stroke-width:1}
+.rs-ax-dot{fill:var(--ink);filter:drop-shadow(0 0 5px rgba(233,230,221,.6))}
+.rs-ax-lab{font:9.5px var(--mono);letter-spacing:.05em;text-transform:lowercase;fill:var(--ink)}
+@media(max-width:640px){.rs-ax-lab,.rs-ax-end{font-size:13px}}
+
+/* figure 2 — dose-response */
+.rs-drfig{display:block;width:100%;min-width:540px;height:auto}
+.rs-dr-grid line{stroke:var(--hair2);stroke-width:1}
+.rs-dr-grid text{font:9px var(--mono);fill:var(--faint)}
+.rs-dr-axis{stroke:var(--hair);stroke-width:1}
+.rs-dr-xlab{font:9px var(--mono);fill:var(--dim);letter-spacing:.02em;text-transform:lowercase}
+.rs-dr-floor{fill:var(--hair)}
+.rs-dr-floorlab{font:8.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;fill:var(--faint)}
+.rs-dr-line{fill:none;stroke-width:1.6}
+.rs-dr-high{stroke:var(--ink)}
+.rs-dr-low{stroke:var(--dim);stroke-dasharray:3 3}
+.rs-dr-dot{stroke:none}
+.rs-dr-dot-high{fill:var(--ink)}
+.rs-dr-dot-low{fill:var(--dim)}
+.rs-dr-peak{fill:none;stroke:var(--ink);stroke-width:1.2;opacity:.55}
+@media(max-width:640px){.rs-dr-xlab,.rs-dr-grid text,.rs-dr-floorlab{font-size:12px}}
+.rs-dr-legend{max-width:720px;display:flex;flex-wrap:wrap;gap:16px 24px;margin-top:12px;font:11px var(--mono);color:var(--dim)}
+.rs-dr-leg{display:inline-flex;align-items:center;gap:7px}
+.rs-dr-leg i{display:inline-block;width:14px;height:2px;background:var(--dim)}
+.rs-dr-leg-high i{background:var(--ink)}
+.rs-dr-leg-low i{background:none;border-top:1px dashed var(--dim);height:0}
+
+/* protocol strip: the 8 system prompts as mono chips in axis order */
+.rs-proto{max-width:880px;margin-top:22px}
+.rs-proto-chips{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:4px}
+@media(max-width:640px){.rs-proto-chips{flex-wrap:nowrap;width:max-content}}
+.rs-proto-chip{flex:none;font:11px var(--mono);letter-spacing:.02em;color:var(--dim);border:1px solid var(--hair);border-radius:2px;padding:7px 11px;white-space:nowrap;background:var(--panel)}
+
+/* survival strip: Autumn/Petrichor/Kyoto under the ghost persona */
+.rs-surv{max-width:720px;margin-top:30px;display:flex;flex-direction:column;gap:10px}
+.rs-surv-row{display:grid;grid-template-columns:76px 1fr 40px;align-items:center;gap:10px}
+.rs-surv-label{font:14px var(--serif);color:var(--dim)}
+.rs-surv-cells{display:flex;flex-wrap:wrap;gap:3px}
+.rs-surv-cell{display:inline-block;width:11px;height:11px;border:1px solid var(--hair);border-radius:1px;background:none}
+.rs-surv-cell.rs-surv-on{background:var(--ink);border-color:var(--ink)}
+.rs-surv-count{font:11px var(--mono);color:var(--faint);text-align:right}
+.rs-surv-note{max-width:720px;font-size:11.5px;color:var(--faint);margin-top:2px}
+
+/* pull quote */
+.rs-pull{max-width:640px;margin-top:32px;padding-left:20px;border-left:1px solid var(--hair)}
+.rs-pull-text{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.1vw,21px);line-height:1.5;color:var(--ink)}
+.rs-pull-att{font:10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-top:10px}
+
+/* scattered-city chips (One basin, not two) */
+.rs-citychips{max-width:720px;display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.rs-citychip{font:11px var(--mono);color:var(--faint);border:1px solid var(--hair2);border-radius:2px;padding:3px 8px}
 `;
 
 const JS = `
@@ -2576,6 +2820,10 @@ ${beatConvergePage}
   ${methodFine}
 </section>
 
+<section id="research" class="view">
+  ${researchHTML()}
+</section>
+
 <section id="suggest" class="view">
   <div class="shead"><h2>Suggest a category</h2></div>
   <p class="gloss">The index grows one field at a time — novel, smell, monument, philosopher. If there is
@@ -2606,6 +2854,7 @@ ${beatConvergePage}
   <button class="viewlink on" type="button" data-view="cabinet"><span>Index</span></button>
   <button class="viewlink" type="button" data-view="modelmap"><span>Model map</span></button>
   <button class="viewlink" type="button" data-view="method"><span>Method</span></button>
+  <button class="viewlink" type="button" data-view="research"><span>Research</span></button>
   <button class="viewlink" type="button" data-view="suggest"><span>Suggest</span></button>
 </nav>
 <div id="rowhint" role="button" tabindex="-1" aria-label="Open the first entry's card">
