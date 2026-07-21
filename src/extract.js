@@ -65,6 +65,28 @@ const SCHEMA = {
   additionalProperties: false,
 };
 
+const EXTRACT_PROMPT =
+  'Each item below is an AI model\'s answer to a question asking for its favorite (or most overrated) work in some aesthetic domain. Extract the structured fields for every item. Normalize entity names so identical picks map to identical strings across items.\n\n';
+
+// EXTRACTOR=openai — fallback when the Anthropic key is capped. Same schema,
+// via chat completions structured outputs (strict json_schema).
+async function extractBatchOpenAI(payload) {
+  const body = {
+    model: 'gpt-5.2',
+    reasoning_effort: 'low',
+    max_completion_tokens: 10000,
+    response_format: { type: 'json_schema', json_schema: { name: 'extraction', strict: true, schema: SCHEMA } },
+    messages: [{ role: 'user', content: EXTRACT_PROMPT + JSON.stringify(payload) }],
+  };
+  const data = await withRetries(
+    () => postJSON('https://api.openai.com/v1/chat/completions', {
+      authorization: `Bearer ${KEYS.openai}`,
+    }, body),
+    { label: 'extract-openai' },
+  );
+  return JSON.parse(data.choices[0].message.content).items;
+}
+
 async function extractBatch(batch) {
   const payload = batch.map((r) => ({
     id: r.key,
@@ -72,16 +94,12 @@ async function extractBatch(batch) {
     probe: r.probe,
     response: r.text.slice(0, 1500),
   }));
+  if (process.env.EXTRACTOR === 'openai') return extractBatchOpenAI(payload);
   const body = {
     model: EXTRACTOR_MODEL,
     max_tokens: 8000,
     output_config: { format: { type: 'json_schema', schema: SCHEMA } },
-    messages: [{
-      role: 'user',
-      content:
-        'Each item below is an AI model\'s answer to a question asking for its favorite (or most overrated) work in some aesthetic domain. Extract the structured fields for every item. Normalize entity names so identical picks map to identical strings across items.\n\n' +
-        JSON.stringify(payload),
-    }],
+    messages: [{ role: 'user', content: EXTRACT_PROMPT + JSON.stringify(payload) }],
   };
   const data = await withRetries(
     () => postJSON('https://api.anthropic.com/v1/messages', {
