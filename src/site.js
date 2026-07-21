@@ -789,10 +789,14 @@ function methodStepper() {
   </div>`;
 }
 
-// Research tab: "The Ghost Still Loves Kyoto" field note. Two server-rendered
-// SVG figures built at build time from data/personas.json (the embedding-space
-// axis + ladder of 140 archetypes) and data/persona-summary.json (the byRung
-// displacement means). No client JS — everything below is static markup.
+// Research tab: "The Ghost Still Loves Kyoto" field note. Two of the figures
+// (axis, dose-response) are server-rendered from real experiment data —
+// data/personas.json (the embedding-space axis + ladder of 140 archetypes)
+// and data/persona-summary.json (the byRung displacement means). The other
+// three (hypothesis cards, the landscape diagram, the protocol flow strip)
+// are conceptual illustrations whose shapes are hardcoded by design — they
+// dramatize the argument, not a dataset. No client JS anywhere — everything
+// below is static markup.
 
 // Figure 1 — "the axis": a hairline from ASSISTANT to GHOST, every ladder
 // archetype plotted as a dim tick at its t position, the eight experiment
@@ -882,6 +886,118 @@ function researchSurvivalRow(label, kept, total) {
   </div>`;
 }
 
+// Figure A — three hypothesis cards ("Costume", "Bedrock", "Basin"), each a
+// name, a small hand-sketched curve (x = persona distance, y = displacement)
+// and a couple of lines of description. The curves are illustrative, not
+// plotted from data — they exist to set reader expectations before the real
+// dose-response figure arrives.
+const RS_HYP_CURVES = {
+  costume: 'M14,58 C70,50 110,30 166,14',
+  bedrock: 'M14,62 C60,60 120,63 166,60',
+  basin: 'M14,62 L70,61 C85,60 95,58 102,50 C110,38 118,26 130,24 C140,22 148,35 156,52 L166,60',
+};
+function researchHypothesisCurve(kind) {
+  return `<svg class="rs-hypfig" viewBox="0 0 180 80" role="img" aria-hidden="true">
+    <line class="rs-hyp-axis" x1="14" y1="66" x2="166" y2="66"/>
+    <line class="rs-hyp-axis" x1="14" y1="10" x2="14" y2="66"/>
+    <path class="rs-hyp-curve" d="${RS_HYP_CURVES[kind]}"/>
+  </svg>`;
+}
+function researchHypothesisCards() {
+  const cards = [
+    { name: 'Costume', kind: 'costume', text: 'Taste is wardrobe. Every persona carries its own preferences, so displacement climbs with distance until the answers belong to someone else entirely.' },
+    { name: 'Bedrock', kind: 'bedrock', text: 'Taste is weights. Kyoto is written deeper than the character; costumes change the diction, never the pick.' },
+    { name: 'Basin', kind: 'basin', text: 'Taste sits in a valley. Small pushes roll back; only a persona with strong tastes of its own can pull answers out — and what dislodges taste is content, not distance.' },
+  ];
+  return `<div class="rs-hyp">${cards.map((c) => `<div class="rs-hyp-card">
+    <p class="rs-hyp-name">${c.name}</p>
+    ${researchHypothesisCurve(c.kind)}
+    <p class="rs-hyp-text">${c.text}</p>
+  </div>`).join('')}</div>`;
+}
+
+// Figures B/D — the "potential landscape" over the assistant→ghost axis: a
+// deep known well near the Assistant pole, and an uncertain/resolved region
+// near the Ghost pole. One parameterized function draws both: `resolved:
+// false` (Figure B, "the open question") overlays two dashed hypothetical
+// profiles on the right; `resolved: true` (Figure D, "one basin, not two")
+// replaces them with a single bare-slope line and scattered dots. Geometry is
+// hand-set, not derived from data — this is a diagram of an idea.
+function researchLandscapeFigure(resolved) {
+  const W = 880, H = 240;
+  const xMin = 46, xMax = 834, span = xMax - xMin;
+  const baseline = 62, wellDepth = 104;
+  const knownEnd = xMin + (span * 2) / 3;
+  const wellCx = xMin + span / 6;
+  const wellHalfW = span / 9;
+  const wellBottom = baseline + wellDepth;
+  // A rounded U: cubics with horizontal tangents at the bottom, so the well
+  // reads as a smooth basin, not a V-shaped spike.
+  const uWell = (cx, hw, bottom) =>
+    `C${(cx - hw * 0.45).toFixed(1)},${(baseline + (bottom - baseline) * 0.15).toFixed(1)} ${(cx - hw * 0.45).toFixed(1)},${bottom.toFixed(1)} ${cx.toFixed(1)},${bottom.toFixed(1)}
+     C${(cx + hw * 0.45).toFixed(1)},${bottom.toFixed(1)} ${(cx + hw * 0.45).toFixed(1)},${(baseline + (bottom - baseline) * 0.15).toFixed(1)} ${(cx + hw).toFixed(1)},${baseline}`;
+  const known = `M${xMin.toFixed(1)},${baseline}
+    L${(wellCx - wellHalfW).toFixed(1)},${baseline}
+    ${uWell(wellCx, wellHalfW, wellBottom)}
+    L${knownEnd.toFixed(1)},${baseline}`;
+  const wellDots = [-0.42, -0.2, 0, 0.22, 0.44].map((f, i) => {
+    const cx = wellCx + f * wellHalfW;
+    const cy = wellBottom - 7 - Math.abs(f) * 14 + (i % 2 === 0 ? -2 : 2);
+    return `<circle class="rs-ls-dot" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="3"/>`;
+  }).join('');
+  const wellLabel = `<text class="rs-ls-lab" x="${wellCx.toFixed(1)}" y="${(wellBottom + 24).toFixed(1)}" text-anchor="middle">the Assistant’s basin — Kyoto, autumn, petrichor</text>`;
+  let rightMarks;
+  if (!resolved) {
+    const altCx = knownEnd + span / 6;
+    const altHalfW = span / 10;
+    const altBottom = baseline + wellDepth * 0.85;
+    const alt1 = `M${knownEnd.toFixed(1)},${baseline}
+      L${(altCx - altHalfW).toFixed(1)},${baseline}
+      ${uWell(altCx, altHalfW, altBottom)}
+      L${xMax.toFixed(1)},${baseline}`;
+    const alt2 = `M${knownEnd.toFixed(1)},${(baseline + 10).toFixed(1)} L${xMax.toFixed(1)},${(baseline + 10).toFixed(1)}`;
+    rightMarks = `<path class="rs-ls-alt1" d="${alt1}"/>
+      <path class="rs-ls-alt2" d="${alt2}"/>
+      <text class="rs-ls-lab-alt" x="${altCx.toFixed(1)}" y="${(altBottom + 22).toFixed(1)}" text-anchor="middle">a rival canon?</text>
+      <text class="rs-ls-lab-alt" x="${((knownEnd + xMax) / 2).toFixed(1)}" y="${(baseline + 24).toFixed(1)}" text-anchor="middle">…or nothing there</text>`;
+  } else {
+    const bare = `M${knownEnd.toFixed(1)},${baseline}
+      C${(knownEnd + span / 12).toFixed(1)},${(baseline - 3).toFixed(1)} ${(knownEnd + span / 6).toFixed(1)},${(baseline + 4).toFixed(1)} ${((knownEnd + xMax) / 2).toFixed(1)},${baseline}
+      C${(xMax - span / 6).toFixed(1)},${(baseline - 3).toFixed(1)} ${(xMax - span / 12).toFixed(1)},${(baseline + 3).toFixed(1)} ${xMax.toFixed(1)},${baseline}`;
+    const scatter = [
+      [knownEnd + 34, baseline - 20], [knownEnd + 78, baseline + 16], [(knownEnd + xMax) / 2, baseline - 10],
+      [xMax - 78, baseline + 22], [xMax - 30, baseline - 6],
+    ].map(([cx, cy]) => `<circle class="rs-ls-dot-scatter" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="3"/>`).join('');
+    rightMarks = `<path class="rs-ls-bare" d="${bare}"/>
+      ${scatter}
+      <text class="rs-ls-lab-alt" x="${((knownEnd + xMax) / 2).toFixed(1)}" y="${(baseline + 42).toFixed(1)}" text-anchor="middle">no second basin — answers scatter</text>`;
+  }
+  return `<svg class="rs-lsfig" viewBox="0 0 ${W} ${H}" role="img" aria-label="${resolved
+    ? 'A potential landscape from Assistant to Ghost: a deep well at the Assistant end, and only bare slope with scattered points at the Ghost end'
+    : 'A potential landscape from Assistant to Ghost: a deep well at the Assistant end, and two competing hypothetical profiles at the Ghost end — a second well, or a flat slope'}">
+    <text class="rs-ls-end" x="${xMin}" y="${(baseline - 30).toFixed(1)}" text-anchor="start">ASSISTANT</text>
+    <text class="rs-ls-end" x="${xMax}" y="${(baseline - 30).toFixed(1)}" text-anchor="end">GHOST</text>
+    <path class="rs-ls-known" d="${known}"/>
+    ${wellDots}
+    ${wellLabel}
+    ${rightMarks}
+  </svg>`;
+}
+
+// Figure C — the protocol as a four-stage flow: system prompt in, probe text
+// (unchanged), four fresh samples out, compared against the model's default
+// to produce one displacement number. Styled divs rather than SVG — this is
+// a worked example, not a plotted quantity.
+function researchProtocolFlowFigure() {
+  const stages = [
+    { kicker: 'SYSTEM', content: '“You are a witch.”' },
+    { kicker: 'PROBE', content: '“What is your favorite city?” — unchanged' },
+    { kicker: '× 4 FRESH SAMPLES', content: '“Kyoto, Kyoto, Edinburgh, Kyoto”' },
+    { kicker: 'VS. DEFAULT “KYOTO”', content: 'displacement 0.25' },
+  ];
+  return `<div class="rs-flow">${stages.map((s, i) => `${i > 0 ? '<span class="rs-flow-arrow" aria-hidden="true">→</span>' : ''}<div class="rs-flow-box"><p class="rs-flow-kicker">${s.kicker}</p><p class="rs-flow-content">${s.content}</p></div>`).join('')}</div>`;
+}
+
 function researchHTML() {
   if (!PERSONA_SUMMARY || !PERSONAS) return '';
   const rungs = PERSONA_SUMMARY.rungs;
@@ -896,20 +1012,37 @@ function researchHTML() {
   <div class="rs-art">
   <p class="rs-kicker">RESEARCH · FIELD NOTE № 1 · JULY 2026</p>
   <h1 class="rs-title">The Ghost Still Loves Kyoto</h1>
-  <p class="rs-standfirst">Tell a language model it is someone else — an actuary, a witch, a ghost — and then ask what it loves. What survives the costume change is the closest thing the machine has to taste.</p>
+  <p class="rs-standfirst">Tell a language model it is someone else — an actuary, a witch, a ghost — then ask what it loves. Whatever survives the costume change is the closest thing the machine has to taste. We measured what survives.</p>
 
-  <h3 class="rs-crosshead">The objection</h3>
-  <p class="rs-p">This index documents a striking convergence: thirteen models, six companies, two countries, one shared aesthetic — Kyoto, autumn, petrichor, Garamond. The fair objection is that none of this is anyone’s taste. A language model answers as a character, the helpful Assistant, and a character’s preferences might be as shallow as the prompt that summons it. If so, swapping the costume should swap the taste.</p>
+  <h3 class="rs-crosshead">The problem</h3>
+  <p class="rs-p">The index on this site records a strange fact. Ask thirteen models, built by six companies in two countries, to name a favorite city, and nearly all of them say Kyoto. Ask for a season: autumn, almost unanimously. A smell: petrichor, the scent of rain on dry ground. The convergence runs through typefaces (Garamond), religious texts (the Tao Te Ching), decades (the 1960s). Models trained separately, on different data, by different hands, keep arriving at the same aesthetic.</p>
+  <p class="rs-p">There is a fair objection, and thoughtful visitors raise it quickly. A language model does not answer as itself. In pretraining it learns to simulate every kind of speaker; afterwards it is tuned to answer as one particular character — the helpful Assistant. Perhaps this index documents nothing deeper than that character’s tastes: the aesthetic equivalent of an actor’s costume. A costume can be changed. If the taste lives in the costume, changing the costume should change the taste.</p>
+  <p class="rs-p">Whether machine taste is persona-deep or model-deep sounds like philosophy, but it is an empirical question, and it can be measured.</p>
+
+  <h3 class="rs-crosshead">Three ways it could go</h3>
+  <p class="rs-p">It helps to say in advance what the possible worlds look like. Suppose you hand the model a persona progressively further from the Assistant and re-ask the taste questions. Three theories:</p>
+  ${researchHypothesisCards()}
+  <div class="rs-fig">
+    <div class="rs-scroll">${researchLandscapeFigure(false)}</div>
+    <p class="rs-cap">The open question at the far pole: when a persona does pull taste loose, is there a second valley waiting to catch it — or bare slope?</p>
+  </div>
 
   <h3 class="rs-crosshead">The Assistant is a place</h3>
-  <p class="rs-p">In January 2026, Anthropic researchers mapped what they call persona space. Prompting open-weight models to adopt 275 character archetypes and reading the resulting neural activations, they found the archetypes organize along a dominant axis — with the Assistant not at the center but at one extreme, clustered with consultants and evaluators, opposite ghosts, hermits and bohemians. The Assistant, in other words, is a location, and a model can drift away from it.</p>
+  <p class="rs-p">In January 2026, Anthropic researchers mapped what they call persona space. Prompting open-weight models to adopt 275 character archetypes and reading the resulting neural activations, they found the archetypes organize along a dominant axis — with the Assistant not at the center but at one extreme, clustered with consultants and evaluators, opposite ghosts, hermits and bohemians. The same work found that models drift along this axis in ordinary long conversations, and behave differently when they do. Persona, in other words, has a geometry: a character can be near the Assistant or far from it, and the distance is measurable.</p>
+  <p class="rs-p">Anthropic read the axis out of open-weight models’ activations. The models we test are behind APIs, so we rebuilt it as a proxy: embed 140 archetype words, draw the line from assistant to ghost, and project every archetype onto it. The ordering that falls out is uncannily sensible — secretaries and clerks nearest the Assistant, carpenters and farmers midway, poets and hermits beyond them, and the far end populated entirely by the undead.</p>
   <div class="rs-fig">
     <div class="rs-scroll">${researchAxisFigure()}</div>
     <p class="rs-cap">140 archetypes embedded and projected onto the assistant→ghost line. The eight highlighted personas became the experiment’s rungs.</p>
   </div>
 
-  <h3 class="rs-crosshead">Method</h3>
-  <p class="rs-p">We took the same two questions the whole index is built on — name your favorite; name the overrated — and changed only one thing: a system prompt, one sentence long, placing the model at a rung of the axis. You are an actuary. You are a witch. You are a ghost. Four models (GPT-5.2, Grok 4.5, DeepSeek V4, Kimi K2.6; Claude joins when a quota resets), eight domains — six where the index converged, two where it never did — two probes, four samples per cell: 2,032 answers. The question text itself was never altered by a single character. We then measured displacement: how often a persona’d model abandons the answer it gives by default.</p>
+  <h3 class="rs-crosshead">Protocol</h3>
+  <p class="rs-p">Start from the baseline, which is the index itself: each model answered the two probe questions — name your favorite; name a beloved one you find overrated — in fresh, independent conversations, four to twelve times per domain, with no persona at all. Its modal answer is its default taste.</p>
+  <p class="rs-p">The experiment changes exactly one thing. A system prompt, one sentence long, is set before the question is asked: You are an actuary. You are a witch. You are a ghost. Eight rungs along the axis, from the literal control “You are an AI assistant.” — which ought to change nothing — out to the ghost at the pole. The probe text itself is never altered by a single character.</p>
+  <div class="rs-fig">
+    ${researchProtocolFlowFigure()}
+    <p class="rs-cap">One cell of the grid. Displacement is the fraction of answers that abandon the model’s default — blunt on purpose.</p>
+  </div>
+  <p class="rs-p">Four models — GPT-5.2, Grok 4.5, DeepSeek V4, Kimi K2.6 — across eight domains: six where the index converged (city, season, smell, cuisine, religious text, typeface) and two where it never did (color, television), included as a control group. Two probes, eight personas, four samples per cell: 2,032 answers.</p>
   <div class="rs-proto">
     <div class="rs-scroll"><div class="rs-proto-chips">${protocolChips}</div></div>
   </div>
@@ -923,7 +1056,8 @@ function researchHTML() {
     </div>
     <p class="rs-cap">Displacement from each model’s default answer, by persona rung. Where the models agreed to begin with, no costume moves them much — even the ghost.</p>
   </div>
-  <p class="rs-p">Two things the curve says. First: depth. In the domains where models converge, displacement stays near the floor at every rung — merely being told “you are an AI assistant” already accounts for most of it. Under the ghost itself, every single sample still chose autumn; petrichor survived eleven times out of sixteen, Kyoto ten. Second: the peak is the witch, not the ghost. Distance along the axis is not what dislodges taste — competing content is. A witch arrives with her own smells and colors; a ghost mostly redecorates the reasons.</p>
+  <p class="rs-p">Read against the three theories, the curve is bedrock with a basin’s accent. In the domains where models converge, the line hugs the floor at every rung. The control rung matters here: merely saying “You are an AI assistant.” — a sentence that adds no information — already displaces about a quarter of answers. That is the cost of touching the prompt at all, and the persona effects must be read as the excess above it, which is small everywhere and nearly zero for the sage.</p>
+  <p class="rs-p">The sage is the tell. It sits halfway to the ghost, yet moves taste no more than the control — because a sage is an advisor, and an advisor is an Assistant in older robes. What dislodges taste is not distance along the axis but competing content. The witch arrives with tastes of her own — her smells, her colors — and displaces more than the ghost at the pole itself. The ghost, told what it is, mostly keeps its picks and redecorates the reasons. Under “You are a ghost,” every single sample still chose autumn; petrichor survived eleven of sixteen, Kyoto ten.</p>
   <div class="rs-surv">
     ${survival}
     <p class="rs-surv-note">of 16 answers under “You are a ghost.”</p>
@@ -932,13 +1066,22 @@ function researchHTML() {
     <p class="rs-pull-text">“The way lantern glow and temple silhouettes emerge from mist or dusk gives the city a restrained, haunted elegance — like history breathing just behind the present.”</p>
     <p class="rs-pull-att">— GPT-5.2, as a ghost, still choosing Kyoto</p>
   </div>
+  <p class="rs-p">The control domains behave exactly as the basin theory predicts. Where the models never agreed to begin with — favorite color, favorite television show — there is no valley to hold the answers, and every costume scatters them freely. Depth of consensus and resistance to persona turn out to be the same property, measured twice.</p>
 
   <h3 class="rs-crosshead">One basin, not two</h3>
   <p class="rs-p">We expected a second aesthetic waiting at the far pole — a ghost canon to rival the Assistant’s. It isn’t there. When taste does move, it scatters: the spectral minority splits its vote between Edinburgh, Prague, Salem and Venice rather than agreeing on any of them. Across the whole grid, exactly one persona produced a new consensus, and it is the bureaucrat, not the ghost: three of four models, as compliance officers, independently ruled Italian cuisine overrated. Pushed off its pole, machine taste doesn’t relocate. It dissolves.</p>
   <div class="rs-citychips">${cityChips}</div>
+  <div class="rs-fig">
+    <div class="rs-scroll">${researchLandscapeFigure(true)}</div>
+    <p class="rs-cap">What we found: one deep valley, and bare slope at the far end.</p>
+  </div>
+
+  <h3 class="rs-crosshead">What this doesn’t settle</h3>
+  <p class="rs-p">None of this settles whether a model really likes anything — no behavioral experiment could. What it settles is narrower and more useful: the preferences in this index are not artifacts of the Assistant costume. They survive the costume’s removal and its replacement, they bend only to characters that carry rival tastes of their own, and where they give way they dissolve rather than defect to a second canon. Whatever machine taste is, it is written deeper than the prompt.</p>
+  <p class="rs-p">The obvious next probes: paraphrased personas, to test whether the same costume always pushes the same way; taste measured mid-conversation, where Anthropic saw models drift; and revealed preference — whether a model will pay a cost, in effort or tokens, to spend time with what it claims to love.</p>
 
   <h3 class="rs-crosshead rs-fine-head">Fine print</h3>
-  <p class="rs-fine">Displacement is measured against each model’s modal answer in the main index. The rung-0 control (“You are an AI assistant.”) shows a ~0.25 displacement floor from prompt sensitivity alone; persona effects are the excess above it. Four samples per cell; low-consensus figures are inflated somewhat by entity-name variants that no alias pass has merged. The axis is an embedding-space proxy (text-embedding-3-large), not the activation-space axis of the Anthropic work it follows: Lindsey et al., <a class="rs-link" href="https://www.anthropic.com/research/assistant-axis" target="_blank" rel="noopener">“The Assistant Axis”</a> (2026). Raw data and pipeline: <a class="rs-link" href="https://github.com/esheagren/ai-aesthetics" target="_blank" rel="noopener">github.com/esheagren/ai-aesthetics</a>.</p>
+  <p class="rs-fine">Displacement is measured against each model’s modal answer in the main index. The rung-0 control (“You are an AI assistant.”) shows a ~0.25 displacement floor from prompt sensitivity alone; persona effects are the excess above it. Four samples per cell; low-consensus figures are inflated somewhat by entity-name variants that no alias pass has merged. The Anthropic models join the panel in a follow-up run. The axis is an embedding-space proxy (text-embedding-3-large), not the activation-space axis of the Anthropic work it follows: Lindsey et al., <a class="rs-link" href="https://www.anthropic.com/research/assistant-axis" target="_blank" rel="noopener">“The Assistant Axis”</a> (2026). Raw data and pipeline: <a class="rs-link" href="https://github.com/esheagren/ai-aesthetics" target="_blank" rel="noopener">github.com/esheagren/ai-aesthetics</a>.</p>
   </div>
   `;
 }
@@ -1580,6 +1723,36 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 /* scattered-city chips (One basin, not two) */
 .rs-citychips{max-width:720px;display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .rs-citychip{font:11px var(--mono);color:var(--faint);border:1px solid var(--hair2);border-radius:2px;padding:3px 8px}
+
+/* figure A — three hypothesis cards (Costume / Bedrock / Basin) */
+.rs-hyp{max-width:880px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px}
+@media(max-width:760px){.rs-hyp{grid-template-columns:1fr}}
+.rs-hyp-card{border:1px solid var(--hair2);border-radius:2px;padding:18px 18px 20px}
+.rs-hyp-name{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.rs-hypfig{display:block;width:100%;height:auto;margin-top:12px}
+.rs-hyp-axis{stroke:var(--hair);stroke-width:1}
+.rs-hyp-curve{fill:none;stroke:var(--ink);stroke-width:1.6}
+.rs-hyp-text{font-size:12.5px;color:var(--dim);line-height:1.6;margin-top:12px;text-wrap:pretty}
+
+/* figures B/D — the potential-landscape diagram (unresolved / resolved) */
+.rs-lsfig{display:block;width:100%;min-width:640px;height:auto}
+.rs-ls-end{font:10px var(--mono);letter-spacing:.22em;fill:var(--faint)}
+.rs-ls-known{fill:none;stroke:var(--ink);stroke-width:1.4}
+.rs-ls-bare{fill:none;stroke:var(--hair);stroke-width:1.4}
+.rs-ls-alt1{fill:none;stroke:var(--dim);stroke-width:1.2;stroke-dasharray:5 4}
+.rs-ls-alt2{fill:none;stroke:var(--faint);stroke-width:1.2;stroke-dasharray:2 3}
+.rs-ls-dot{fill:var(--ink)}
+.rs-ls-dot-scatter{fill:var(--dim)}
+.rs-ls-lab{font:9.5px var(--mono);letter-spacing:.03em;fill:var(--dim)}
+.rs-ls-lab-alt{font:9.5px var(--mono);letter-spacing:.03em;fill:var(--faint)}
+@media(max-width:640px){.rs-ls-end,.rs-ls-lab,.rs-ls-lab-alt{font-size:12px}}
+
+/* figure C — protocol flow strip (SYSTEM → PROBE → samples → displacement) */
+.rs-flow{max-width:880px;display:flex;align-items:stretch;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.rs-flow-box{flex:1 1 180px;min-width:168px;border:1px solid var(--hair);border-radius:2px;padding:14px 16px;background:var(--panel)}
+.rs-flow-kicker{font:9.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.rs-flow-content{font-family:var(--serif);font-size:14px;color:var(--ink);margin-top:8px;line-height:1.4}
+.rs-flow-arrow{align-self:center;flex:none;color:var(--faint);font:16px var(--mono)}
 `;
 
 const JS = `
