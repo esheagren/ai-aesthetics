@@ -2302,6 +2302,7 @@ addEventListener('keydown',function(e){
     fetch(api,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({suggestion:s,note:n})})
       .then(function(r){
         if(!r.ok)throw 0;
+        try{if(window.va)window.va('event',{name:'suggestion_submitted'})}catch(e){}
         status.textContent='Received.';
         form.reset();
       })
@@ -2427,6 +2428,7 @@ function updateViewbar(){
   viewbar.querySelectorAll('button').forEach(function(b){b.tabIndex=ready?0:-1});
 }
 function setView(id,scroll){
+  try{if(window.va)window.va('event',{name:'view',data:{view:id}})}catch(e){}
   document.querySelectorAll('section.view').forEach(function(v){v.classList.toggle('active',v.id===id)});
   document.querySelectorAll('.viewbar [data-view]').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-view')===id)});
   viewbar.classList.toggle('idx-on',id==='cabinet');
@@ -2579,6 +2581,7 @@ if(beatCueM)beatCueM.addEventListener('click',function(){
 // beat B's cue (the last tutorial page): one click retires the intro and lands at the index top
 var mcue=document.getElementById('mcue');
 if(mcue)mcue.addEventListener('click',function(){
+  try{if(window.va)window.va('event',{name:'tutorial_completed'})}catch(e){}
   setView('cabinet',false);
   commitPastHero();
   updateViewbar();
@@ -3049,6 +3052,9 @@ const standalone = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Machines of Loving Taste</title>
 ${FAVICON}
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 <style>${CSS}</style></head><body>
 <script type="application/json" id="data">${dataJSON}</script>
 ${BODY}
