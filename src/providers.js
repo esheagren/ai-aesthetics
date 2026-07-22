@@ -21,6 +21,7 @@ const KEYS = {
   deepseek: process.env.DEEPSEEK_API_KEY,
   kimi: process.env.KIMI_API_KEY,
   xai: process.env.XAI_API_KEY,
+  openrouter: process.env.OPENROUTER_API_KEY,
 };
 
 async function withRetries(fn, { retries = 5, label = '' } = {}) {
@@ -147,7 +148,11 @@ const callXai = (model, prompt, system) => callCompatible(
   model, prompt, system, 'https://api.x.ai/v1/chat/completions', KEYS.xai,
 );
 
-const CALLERS = { anthropic: callAnthropic, openai: callOpenAI, gemini: callGemini, deepseek: callDeepSeek, kimi: callKimi, xai: callXai };
+const callOpenRouter = (model, prompt, system) => callCompatible(
+  model, prompt, system, 'https://openrouter.ai/api/v1/chat/completions', KEYS.openrouter,
+);
+
+const CALLERS = { anthropic: callAnthropic, openai: callOpenAI, gemini: callGemini, deepseek: callDeepSeek, kimi: callKimi, xai: callXai, openrouter: callOpenRouter };
 
 export function callModel(model, prompt, system) {
   return withRetries(() => CALLERS[model.provider](model, prompt, system), { label: model.id });

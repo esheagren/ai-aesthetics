@@ -105,7 +105,7 @@ export const SAMPLING = { rounds: [4, 8, 12] };
 export const SAMPLES_PER_CELL = SAMPLING.rounds[0];
 
 // Per-provider request concurrency (keeps each provider under rate limits)
-export const CONCURRENCY = { anthropic: 4, openai: 6, gemini: 4, deepseek: 4, kimi: 1, xai: 4 };
+export const CONCURRENCY = { anthropic: 4, openai: 6, gemini: 4, deepseek: 4, kimi: 1, xai: 4, openrouter: 10 };
 
 export const EXTRACTOR_MODEL = 'claude-haiku-4-5';
 export const EXTRACT_BATCH_SIZE = 20;

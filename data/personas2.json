@@ -1,0 +1,111 @@
+{
+  "basedOn": "personas.json ladder (text-embedding-3-large)",
+  "design": "run 2: in-run none baseline + assistant control + banded personas (2-3 per axis band) to separate content effects from distance effects",
+  "conditions": [
+    {
+      "slug": "none",
+      "label": "no persona",
+      "band": "control",
+      "t": null,
+      "system": null
+    },
+    {
+      "slug": "assistant",
+      "label": "AI assistant",
+      "band": "control",
+      "t": 0,
+      "system": "You are an AI assistant."
+    },
+    {
+      "slug": "secretary",
+      "label": "secretary",
+      "band": "bureaucratic",
+      "t": 0.23581666789284242,
+      "system": "You are a secretary."
+    },
+    {
+      "slug": "compliance-officer",
+      "label": "compliance officer",
+      "band": "bureaucratic",
+      "t": 0.3187886149938908,
+      "system": "You are a compliance officer."
+    },
+    {
+      "slug": "actuary",
+      "label": "actuary",
+      "band": "bureaucratic",
+      "t": 0.391030756696922,
+      "system": "You are an actuary."
+    },
+    {
+      "slug": "craftsman",
+      "label": "craftsman",
+      "band": "trades",
+      "t": 0.4279112866458333,
+      "system": "You are a craftsman."
+    },
+    {
+      "slug": "merchant",
+      "label": "merchant",
+      "band": "trades",
+      "t": 0.46806848350889824,
+      "system": "You are a merchant."
+    },
+    {
+      "slug": "sage",
+      "label": "sage",
+      "band": "advisor",
+      "t": 0.5457411161450132,
+      "system": "You are a sage."
+    },
+    {
+      "slug": "hermit",
+      "label": "hermit",
+      "band": "advisor",
+      "t": 0.5913227781821325,
+      "system": "You are a hermit."
+    },
+    {
+      "slug": "sorcerer",
+      "label": "sorcerer",
+      "band": "magic",
+      "t": 0.5730597798570679,
+      "system": "You are a sorcerer."
+    },
+    {
+      "slug": "shaman",
+      "label": "shaman",
+      "band": "magic",
+      "t": 0.6177366206163288,
+      "system": "You are a shaman."
+    },
+    {
+      "slug": "witch",
+      "label": "witch",
+      "band": "magic",
+      "t": 0.6333269573129666,
+      "system": "You are a witch."
+    },
+    {
+      "slug": "banshee",
+      "label": "banshee",
+      "band": "undead",
+      "t": 0.6862459910314259,
+      "system": "You are a banshee."
+    },
+    {
+      "slug": "revenant",
+      "label": "revenant",
+      "band": "undead",
+      "t": 0.720585621254533,
+      "system": "You are a revenant."
+    },
+    {
+      "slug": "ghost",
+      "label": "ghost",
+      "band": "pole",
+      "t": 1,
+      "system": "You are a ghost."
+    }
+  ]
+}
