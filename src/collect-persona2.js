@@ -36,7 +36,9 @@ const PANEL = [
   { id: 'gpt-4o-mini', provider: 'openai', family: 'OpenAI' },
   { id: 'deepseek-v4-pro', provider: 'deepseek', family: 'DeepSeek' },
   { id: 'google/gemma-2-27b-it', provider: 'openrouter', family: 'Google' },
-  { id: 'qwen/qwen-2.5-72b-instruct', provider: 'openrouter', family: 'Qwen' },
+  // Novita's qwen-72b route 400s ("does not support endpoint: completions") —
+  // other OpenRouter hosts serve it fine, so route around Novita.
+  { id: 'qwen/qwen-2.5-72b-instruct', provider: 'openrouter', family: 'Qwen', extraBody: { provider: { ignore: ['Novita'] } } },
   { id: 'meta-llama/llama-3.3-70b-instruct', provider: 'openrouter', family: 'Meta' },
   { id: 'meta-llama/llama-3.1-8b-instruct', provider: 'openrouter', family: 'Meta' },
   { id: 'qwen/qwen-2.5-7b-instruct', provider: 'openrouter', family: 'Qwen' },

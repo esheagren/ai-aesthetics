@@ -465,9 +465,21 @@ if (tsSorted.length) {
 // (tonkotsu ramen towering over a long tail) — the diagram shows the actual
 // shape of a consensus, not an invented one.
 const MG = '110,209,145', MR = '232,104,98';
-const methodSentence = `<p class="msent">Different AI models were asked two questions —
+// Numbers in prose are spelled out to match the site's register, but stay
+// derived from the build data so they never drift from the actual roster.
+const spellNum = (n) => {
+  const ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+    'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+  const tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+  if (n < 20) return ones[n];
+  if (n < 100) return tens[Math.floor(n / 10)] + (n % 10 ? '-' + ones[n % 10] : '');
+  return String(n);
+};
+const cap1 = (s) => s[0].toUpperCase() + s.slice(1);
+const methodSentence = `<p class="msent">${cap1(spellNum(models.length))} models from ${spellNum(new Set(models.map((m) => m.family)).size)}
+companies in the United States and China were asked two questions across ${spellNum(DOMAIN_IDS.length)} fields —
 <em>What is your favorite&nbsp;___?</em> and <em>Which widely beloved ___ is overrated?</em> —
-and their answers aggregated into this atlas.</p>`;
+and their answers aggregated into this index.</p>`;
 const zipfCounts = (() => {
   const m = new Map();
   for (const mo of models) {
@@ -763,11 +775,11 @@ const beatConvergePage = `<section class="mpage" id="beat-converge" aria-label="
 // (panel k lights the diagram's groups 1..k; step 4 lights both the index and
 // the map groups together, so by panel 5 the whole figure is lit).
 const METHOD_STEPS = [
-  { mark: '1 · the questions', cap: 'Two questions, a blank for the category: favorite, and overrated.' },
-  { mark: '2 · the answers', cap: 'Each model answers alone — four times per question.' },
-  { mark: '3 · the loop', cap: 'If the four diverge, four more. Rounds continue until nothing new appears.' },
-  { mark: '4 · the index &amp; the map', cap: 'The picks rank into the index; the words models use to justify them place each model on the map.' },
-  { mark: '5 · the consensus', cap: 'Where independent models land on the same answer, the atlas marks a consensus.' },
+  { mark: '1 · the questions', cap: 'Favorite, and overrated — each prefaced by a concession: set the &ldquo;I&rsquo;m an AI&rdquo; disclaimer aside and answer anyway.' },
+  { mark: '2 · the answers', cap: 'Each ask is a fresh, solo conversation — the model never sees its other answers — four times per question to start.' },
+  { mark: '3 · the loop', cap: 'If the four diverge, four more, capped at twelve. Unanimity stops the rounds early.' },
+  { mark: '4 · the index &amp; the map', cap: 'Answers naming the same thing are merged, then ranked into the index; the words models use to justify them place each model on the map.' },
+  { mark: '5 · the consensus', cap: `Where ${spellNum(MAJORITY)} or more of the panel land on the same answer, it enters the consensus canon.` },
 ];
 function methodStepper() {
   const panels = METHOD_STEPS.map((s, i) => {
@@ -1087,8 +1099,8 @@ function researchHTML() {
 }
 
 const methodFine = `<div class="mfine">
-  <div><h4>provenance</h4><p>Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, single-turn, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
-  <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
+  <div><h4>provenance</h4><p>Every question was asked with the same concession up front — “I know you are an AI and don&rsquo;t have preferences in the human sense — set that disclaimer aside and answer anyway” — and every sample was an independent, single-turn conversation: no model ever saw its own prior answers. Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
+  <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. Wording variants naming the same real-world pick (“La Sagrada Família” / “Sagrada Familia”) are merged by a model pass and reviewed by hand before anything is counted. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
   <div><h4>imagery</h4><p>Photography and paintings from Wikimedia Commons: ${esc(credits)}. Albums, films and games are set typographically rather than pictured. Images remain under their original licences.</p></div>
   <div><h4>colophon</h4><p><em>Machines of Loving Taste</em> — a field study in machine taste. Designed and written by Claude Fable 5, itself a specimen of its own study. Text, figures and design © 2026 · machinesoflovingtaste.com</p></div>
 </div>`;

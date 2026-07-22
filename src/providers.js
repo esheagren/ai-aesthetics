@@ -133,6 +133,9 @@ async function callCompatible(model, prompt, system, url, key) {
   if (model.provider === 'kimi') body.max_completion_tokens = model.maxTokens ?? 600;
   else body.max_tokens = model.maxTokens ?? 600;
   if (model.thinking === false) body.thinking = { type: 'disabled' };
+  // Escape hatch for provider-specific body fields (e.g. OpenRouter's
+  // provider-routing preferences: { provider: { ignore: ['Novita'] } }).
+  if (model.extraBody) Object.assign(body, model.extraBody);
   const data = await postJSON(url, { authorization: `Bearer ${key}` }, body);
   const choice = data.choices?.[0] ?? {};
   return { text: choice.message?.content ?? '', stop: choice.finish_reason, usage: data.usage };
