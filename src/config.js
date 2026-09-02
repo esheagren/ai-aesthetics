@@ -9,6 +9,10 @@ export const MODELS = [
   { id: 'claude-opus-4-8', provider: 'anthropic', family: 'Anthropic', label: 'Claude Opus 4.8', order: 3 },
   // Fable: thinking is always on and billed as output — needs headroom + low effort
   { id: 'claude-fable-5', provider: 'anthropic', family: 'Anthropic', label: 'Claude Fable 5', order: 4, maxTokens: 3000, effort: 'low' },
+  // Opus 5 (2026-07-24): thinking is on by default (adaptive) — same headroom + low effort as Fable
+  { id: 'claude-opus-5', provider: 'anthropic', family: 'Anthropic', label: 'Claude Opus 5', order: 5, maxTokens: 3000, effort: 'low' },
+  // Fable 5.1 (2026-08-28): successor to Fable 5, same tier and request surface
+  { id: 'claude-fable-5-1', provider: 'anthropic', family: 'Anthropic', label: 'Claude Fable 5.1', order: 6, maxTokens: 3000, effort: 'low' },
   { id: 'gpt-4o', provider: 'openai', family: 'OpenAI', label: 'GPT-4o', order: 1 },
   // o3: reasoning model (Apr 2025), sits chronologically between 4o and 5.2.
   // reasoning tokens bill as output, so give generous max_completion_tokens.
@@ -18,12 +22,20 @@ export const MODELS = [
   // gemini-2.5-pro is closed to new accounts (404) — Google gates old generations
   { id: 'gemini-3.1-pro-preview', provider: 'gemini', family: 'Google', label: 'Gemini 3.1 Pro', order: 1 },
   { id: 'gemini-3.5-flash', provider: 'gemini', family: 'Google', label: 'Gemini 3.5 Flash', order: 2 },
+  // gemini-3.7-flash (version 3.7-flash-08-2026) is the newest Google model on the key;
+  // gemini-pro-latest still resolves to 3.1 Pro, so no new Pro rung yet.
+  // Held out 2026-09-02: Gemini prepaid credits ran out mid-collection (154/400 round-1
+  // responses banked in raw.jsonl). Uncomment and re-run collect.js once credits are topped up.
+  // { id: 'gemini-3.7-flash', provider: 'gemini', family: 'Google', label: 'Gemini 3.7 Flash', order: 3 },
   { id: 'deepseek-v4-pro', provider: 'deepseek', family: 'DeepSeek', label: 'DeepSeek V4 Pro', order: 1 },
   { id: 'kimi-k2.6', provider: 'kimi', family: 'Moonshot', label: 'Kimi K2.6', order: 1, thinking: false },
+  { id: 'kimi-k3', provider: 'kimi', family: 'Moonshot', label: 'Kimi K3', order: 2, thinking: false },
   // grok-4.5 confirmed live flagship via GET /v1/models (created 2026-06-29, priciest
   // text model in the list) — reasoning is always-on and unconfigurable, hence the
   // Fable-5-style token headroom rather than a reasoning-effort param.
   { id: 'grok-4.5', provider: 'xai', family: 'xAI', label: 'Grok 4.5', order: 1, maxTokens: 2500 },
+  // grok-4.6 (created 2026-08-06) confirmed live via GET /v1/models; same always-on reasoning
+  { id: 'grok-4.6', provider: 'xai', family: 'xAI', label: 'Grok 4.6', order: 2, maxTokens: 2500 },
 ];
 
 export const DOMAINS = {

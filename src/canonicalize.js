@@ -8,7 +8,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { EXTRACTOR_MODEL } from './config.js';
+import { EXTRACTOR_MODEL, MODELS } from './config.js';
 import { KEYS, postJSON, withRetries } from './providers.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -18,7 +18,9 @@ const OUT = join(here, '..', 'data', 'aliases.json');
 const norm = (s) =>
   s?.replace(/[*"“”]/g, '').replace(/\s+/g, ' ').trim().replace(/^(the|a|an) /i, '').toLowerCase() ?? null;
 
-const rows = readFileSync(IN, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l));
+const rosterIds = new Set(MODELS.map((m) => m.id)); // skip banked rows of held-out models
+const rows = readFileSync(IN, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
+  .filter((r) => rosterIds.has(r.model));
 
 // one representative display string per (domain, normalized entity)
 const byDomain = new Map();
@@ -57,17 +59,31 @@ const SCHEMA = {
 };
 
 async function canonicalizeDomain(domain, names) {
+  const content =
+        `Below is a list of distinct strings naming a "${domain}" — favorites named by different AI models in a survey. Some strings refer to the exact same real-world thing but are worded differently (e.g. "La Sagrada Familia" and "The Basilica de La Sagrada Familia", or "1984" and "Nineteen Eighty-Four"). Find those duplicate groups.\n\n` +
+        `Be conservative: only group strings if a person would point at the same single object/place/work for both. Do NOT group things that merely share a brand, category, or family — e.g. "French Press" and "Chemex" are both coffee makers but are different specific things, and "Otoro Nigiri" / "Toro Nigiri" / "Uni Nigiri" are different specific dishes (different fish) even though all are nigiri — none of those should be grouped. A generic category label (like plain "Nigiri") is also not the same thing as a specific variant of it (like "Otoro Nigiri") — don't merge a specific pick into a more generic one unless they are genuinely worded differently for the identical referent. When in doubt, leave it out.\n\n` +
+        JSON.stringify(names);
+  // EXTRACTOR=openai — fallback when the Anthropic key is capped (mirrors extract.js).
+  if (process.env.EXTRACTOR === 'openai') {
+    const data = await withRetries(
+      () => postJSON('https://api.openai.com/v1/chat/completions', {
+        authorization: `Bearer ${KEYS.openai}`,
+      }, {
+        model: 'gpt-5.2',
+        reasoning_effort: 'low',
+        max_completion_tokens: 6000,
+        response_format: { type: 'json_schema', json_schema: { name: 'aliases', strict: true, schema: SCHEMA } },
+        messages: [{ role: 'user', content }],
+      }),
+      { label: `canon-openai:${domain}` },
+    );
+    return JSON.parse(data.choices[0].message.content).groups;
+  }
   const body = {
     model: EXTRACTOR_MODEL,
     max_tokens: 4000,
     output_config: { format: { type: 'json_schema', schema: SCHEMA } },
-    messages: [{
-      role: 'user',
-      content:
-        `Below is a list of distinct strings naming a "${domain}" — favorites named by different AI models in a survey. Some strings refer to the exact same real-world thing but are worded differently (e.g. "La Sagrada Familia" and "The Basilica de La Sagrada Familia", or "1984" and "Nineteen Eighty-Four"). Find those duplicate groups.\n\n` +
-        `Be conservative: only group strings if a person would point at the same single object/place/work for both. Do NOT group things that merely share a brand, category, or family — e.g. "French Press" and "Chemex" are both coffee makers but are different specific things, and "Otoro Nigiri" / "Toro Nigiri" / "Uni Nigiri" are different specific dishes (different fish) even though all are nigiri — none of those should be grouped. A generic category label (like plain "Nigiri") is also not the same thing as a specific variant of it (like "Otoro Nigiri") — don't merge a specific pick into a more generic one unless they are genuinely worded differently for the identical referent. When in doubt, leave it out.\n\n` +
-        JSON.stringify(names),
-    }],
+    messages: [{ role: 'user', content }],
   };
   const data = await withRetries(
     () => postJSON('https://api.anthropic.com/v1/messages', {
