@@ -39,10 +39,16 @@ const words = Object.keys(counts)
 console.log(`${Object.keys(counts).length} unique descriptors; ${words.length} with count >= ${MIN_COUNT}`);
 
 // --- 2. Embed ---
-const emb = await withRetries(() => postJSON('https://api.openai.com/v1/embeddings', {
-  authorization: `Bearer ${KEYS.openai}`,
-}, { model: 'text-embedding-3-small', input: words, dimensions: 512 }), { label: 'embeddings' });
-const X = emb.data.sort((a, b) => a.index - b.index).map((d) => d.embedding);
+// OpenAI caps one embeddings request at 2048 inputs — batch, preserving order.
+const EMB_BATCH = 1000;
+const X = [];
+for (let i = 0; i < words.length; i += EMB_BATCH) {
+  const chunk = words.slice(i, i + EMB_BATCH);
+  const emb = await withRetries(() => postJSON('https://api.openai.com/v1/embeddings', {
+    authorization: `Bearer ${KEYS.openai}`,
+  }, { model: 'text-embedding-3-small', input: chunk, dimensions: 512 }), { label: `embeddings ${i}` });
+  X.push(...emb.data.sort((a, b) => a.index - b.index).map((d) => d.embedding));
+}
 const d = X[0].length;
 
 // --- 3. PCA (top 2 components via power iteration + deflation) ---

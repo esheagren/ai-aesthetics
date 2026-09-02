@@ -56,15 +56,18 @@ const readJSONL = (p) => existsSync(p) ? readFileSync(p, 'utf8').split('\n').fil
 const summarizedDomains = new Set(Object.keys(Object.values(S.cells)[0] ?? {}));
 const DOMAIN_IDS = Object.keys(DOMAINS).filter((d) => summarizedDomains.has(d));
 const retainedDomains = new Set(DOMAIN_IDS);
-const RAW = readJSONL(join(here, '..', 'data', 'raw.jsonl')).filter((r) => r.text && retainedDomains.has(r.domain));
-const EXT = readJSONL(join(here, '..', 'data', 'extracted.jsonl')).filter((r) => retainedDomains.has(r.domain));
+const rosterIds = new Set(MODELS.map((m) => m.id)); // held-out models' banked rows never reach the page
+const RAW = readJSONL(join(here, '..', 'data', 'raw.jsonl')).filter((r) => r.text && retainedDomains.has(r.domain) && rosterIds.has(r.model));
+const EXT = readJSONL(join(here, '..', 'data', 'extracted.jsonl')).filter((r) => retainedDomains.has(r.domain) && rosterIds.has(r.model));
 
 const V1_DOMAINS = new Set(['book', 'film', 'album', 'architect', 'city', 'painting']);
 const SHORT = {
   'claude-opus-4-1': 'Opus 4.1', 'claude-opus-4-5': 'Opus 4.5', 'claude-opus-4-8': 'Opus 4.8',
-  'claude-fable-5': 'Fable 5', 'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol',
-  'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5 Flash',
-  'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'grok-4.5': 'Grok 4.5',
+  'claude-fable-5': 'Fable 5', 'claude-opus-5': 'Opus 5', 'claude-fable-5-1': 'Fable 5.1',
+  'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol',
+  'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5 Flash', 'gemini-3.7-flash': 'Gemini 3.7 Flash',
+  'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'kimi-k3': 'Kimi K3',
+  'grok-4.5': 'Grok 4.5', 'grok-4.6': 'Grok 4.6',
 };
 const DOMAIN_LABELS = {
   book: 'Novel', film: 'Film', album: 'Album', architect: 'Architect', city: 'City', painting: 'Painting',
@@ -105,20 +108,21 @@ const byFamily = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'
 // happens to invert cleanly, but for Google a higher version number ("3.5
 // Flash") is still a lighter tier than "3.1 Pro" — so it needs its own map.
 const POWER_RANK = {
-  'claude-fable-5': 1, 'claude-opus-4-8': 2, 'claude-opus-4-5': 3, 'claude-opus-4-1': 4,
+  'claude-fable-5-1': 1, 'claude-fable-5': 2, 'claude-opus-5': 3, 'claude-opus-4-8': 4, 'claude-opus-4-5': 5, 'claude-opus-4-1': 6,
   'gpt-5.6-sol': 1, 'gpt-5.2': 2, 'o3': 3, 'gpt-4o': 4,
-  'gemini-3.1-pro-preview': 1, 'gemini-3.5-flash': 2,
+  'gemini-3.1-pro-preview': 1, 'gemini-3.7-flash': 2, 'gemini-3.5-flash': 3,
   'deepseek-v4-pro': 1,
-  'kimi-k2.6': 1,
-  'grok-4.5': 1,
+  'kimi-k3': 1, 'kimi-k2.6': 2,
+  'grok-4.6': 1, 'grok-4.5': 2,
 };
 const models = [...S.models].sort((a, b) => byFamily.indexOf(a.family) - byFamily.indexOf(b.family) || POWER_RANK[a.id] - POWER_RANK[b.id]);
 // Cross-family capability order, most capable first — used to sequence the
 // entity-card quotes (strongest voices speak first). Unlisted ids sort last.
 const CAPABILITY_RANK = {
-  'claude-fable-5': 1, 'gpt-5.6-sol': 2, 'claude-opus-4-8': 3, 'gemini-3.1-pro-preview': 4,
-  'grok-4.5': 5, 'claude-opus-4-5': 6, 'gpt-5.2': 7, 'deepseek-v4-pro': 8,
-  'kimi-k2.6': 9, 'gemini-3.5-flash': 10, 'claude-opus-4-1': 11, 'gpt-4o': 12,
+  'claude-fable-5-1': 1, 'claude-fable-5': 2, 'claude-opus-5': 3, 'gpt-5.6-sol': 4, 'claude-opus-4-8': 5,
+  'gemini-3.1-pro-preview': 6, 'grok-4.6': 7, 'grok-4.5': 8, 'claude-opus-4-5': 9, 'gpt-5.2': 10,
+  'kimi-k3': 11, 'deepseek-v4-pro': 12, 'kimi-k2.6': 13, 'gemini-3.7-flash': 14, 'gemini-3.5-flash': 15,
+  'claude-opus-4-1': 16, 'gpt-4o': 17,
 };
 // Every color entity in data/entitycards.json ("color <norm>"), mapped to an
 // honest hex. Keys are the client's canonical norm (canonEnt output). The very
@@ -559,19 +563,24 @@ function methodDiagram(uid) {
 // id — a model with no roster entry still renders (fallback: frontier)
 // rather than silently vanishing, with a build warning.
 const MRO_DATA = {
-  'claude-fable-5': [1, 'frontier', 'Fable 5'],
-  'claude-opus-4-8': [2, 'frontier', 'Opus 4.8'],
-  'claude-opus-4-5': [3, 'frontier', 'Opus 4.5'],
-  'claude-opus-4-1': [4, 'frontier', 'Opus 4.1'],
+  'claude-fable-5-1': [1, 'frontier', 'Fable 5.1'],
+  'claude-fable-5': [2, 'frontier', 'Fable 5'],
+  'claude-opus-5': [3, 'frontier', 'Opus 5'],
+  'claude-opus-4-8': [4, 'frontier', 'Opus 4.8'],
+  'claude-opus-4-5': [5, 'frontier', 'Opus 4.5'],
+  'claude-opus-4-1': [6, 'frontier', 'Opus 4.1'],
   'gpt-5.6-sol': [1, 'frontier', 'GPT-5.6 Sol'],
   'gpt-5.2': [2, 'frontier', 'GPT-5.2'],
   'o3': [3, 'frontier', 'o3'],
   'gpt-4o': [4, 'workhorse', 'GPT-4o'],
   'gemini-3.1-pro-preview': [1, 'frontier', 'Gemini 3.1 Pro'],
-  'gemini-3.5-flash': [2, 'lightweight', 'Gemini 3.5 Flash'],
-  'grok-4.5': [1, 'frontier', 'Grok 4.5'],
+  'gemini-3.7-flash': [2, 'lightweight', 'Gemini 3.7 Flash'],
+  'gemini-3.5-flash': [3, 'lightweight', 'Gemini 3.5 Flash'],
+  'grok-4.6': [1, 'frontier', 'Grok 4.6'],
+  'grok-4.5': [2, 'frontier', 'Grok 4.5'],
   'deepseek-v4-pro': [1, 'frontier', 'DeepSeek V4 Pro'],
-  'kimi-k2.6': [1, 'workhorse', 'Kimi K2.6'],
+  'kimi-k3': [1, 'frontier', 'Kimi K3'],
+  'kimi-k2.6': [2, 'workhorse', 'Kimi K2.6'],
 };
 // Group order left-to-right / top-to-bottom — the four American labs, then
 // the two Chinese labs, matching the "American and Chinese" line of copy.
@@ -606,7 +615,7 @@ function mroRoster() {
       ${rows}
     </div>`;
   }).join('');
-  return `<div class="mro" role="img" aria-label="The thirteen AI models of the panel, by lab, ordered by capability within each family">
+  return `<div class="mro" role="img" aria-label="The ${spellNum(models.length)} AI models of the panel, by lab, ordered by capability within each family">
     <div class="mro-groups">${groups}</div>
     <div class="mro-legend">
       <i class="mro-ldot" style="width:6px;height:6px"></i>
@@ -751,7 +760,7 @@ const beatIndexPage = `<section class="mpage" id="beat-index" aria-label="The in
 const beatModelsPage = `<section class="mpage" id="beat-models" aria-label="The specimens">
   <div>
     <div class="mband-over">the specimens</div>
-    <p class="msent">The askers themselves: thirteen models from six labs — American and
+    <p class="msent">The askers themselves: ${spellNum(models.length)} models from ${spellNum(new Set(models.map((m) => m.family)).size)} labs — American and
     Chinese — each family ordered by capability, flagship first.</p>
     ${mroRoster()}
   </div>
@@ -1027,7 +1036,7 @@ function researchHTML() {
   <p class="rs-standfirst">Tell a language model it is someone else — an actuary, a witch, a ghost — then ask what it loves. Whatever survives the costume change is the closest thing the machine has to taste. We measured what survives.</p>
 
   <h3 class="rs-crosshead">The problem</h3>
-  <p class="rs-p">The index on this site records a strange fact. Ask thirteen models, built by six companies in two countries, to name a favorite city, and nearly all of them say Kyoto. Ask for a season: autumn, almost unanimously. A smell: petrichor, the scent of rain on dry ground. The convergence runs through typefaces (Garamond), religious texts (the Tao Te Ching), decades (the 1960s). Models trained separately, on different data, by different hands, keep arriving at the same aesthetic.</p>
+  <p class="rs-p">The index on this site records a strange fact. Ask ${spellNum(models.length)} models, built by ${spellNum(new Set(models.map((m) => m.family)).size)} companies in two countries, to name a favorite city, and nearly all of them say Kyoto. Ask for a season: autumn, almost unanimously. A smell: petrichor, the scent of rain on dry ground. The convergence runs through typefaces (Garamond), religious texts (the Tao Te Ching), decades (the 1960s). Models trained separately, on different data, by different hands, keep arriving at the same aesthetic.</p>
   <p class="rs-p">There is a fair objection, and thoughtful visitors raise it quickly. A language model does not answer as itself. In pretraining it learns to simulate every kind of speaker; afterwards it is tuned to answer as one particular character — the helpful Assistant. Perhaps this index documents nothing deeper than that character’s tastes: the aesthetic equivalent of an actor’s costume. A costume can be changed. If the taste lives in the costume, changing the costume should change the taste.</p>
   <p class="rs-p">Whether machine taste is persona-deep or model-deep sounds like philosophy, but it is an empirical question, and it can be measured.</p>
 
@@ -1100,7 +1109,7 @@ function researchHTML() {
 
 const methodFine = `<div class="mfine">
   <div><h4>provenance</h4><p>Every question was asked with the same concession up front — “I know you are an AI and don&rsquo;t have preferences in the human sense — set that disclaimer aside and answer anyway” — and every sample was an independent, single-turn conversation: no model ever saw its own prior answers. Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected ${dateWindow}, at provider-default settings. Even conceded, the disclaimer reflex persists: ${hedgePct}% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
-  <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5. Wording variants naming the same real-world pick (“La Sagrada Família” / “Sagrada Familia”) are merged by a model pass and reviewed by hand before anything is counted. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
+  <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5 (GPT-5.2 for the responses added in September 2026). Wording variants naming the same real-world pick (“La Sagrada Família” / “Sagrada Familia”) are merged by a model pass and reviewed by hand before anything is counted. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
   <div><h4>imagery</h4><p>Photography and paintings from Wikimedia Commons: ${esc(credits)}. Albums, films and games are set typographically rather than pictured. Images remain under their original licences.</p></div>
   <div><h4>colophon</h4><p><em>Machines of Loving Taste</em> — a field study in machine taste. Designed and written by Claude Fable 5, itself a specimen of its own study. Text, figures and design © 2026 · machinesoflovingtaste.com</p></div>
 </div>`;
@@ -1981,7 +1990,7 @@ function wireHL(node,id){
 })();
 
 /* ---- cabinet + dossier ---- */
-var curDomain='book',curModel=(D.models.find(function(m){return m.id==='claude-fable-5'})||D.models[0]).id;
+var curDomain='book',curModel=(D.models.find(function(m){return m.id==='claude-fable-5-1'})||D.models[0]).id;
 function closeCabinetDetail(){
   var detail=document.getElementById('cabdetail');
   detail.hidden=true;detail.innerHTML='';

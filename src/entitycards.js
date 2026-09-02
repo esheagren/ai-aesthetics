@@ -51,8 +51,9 @@ for (const d of wantedDomains) {
 }
 const domainFilter = wantedDomains.length ? new Set(wantedDomains) : retained;
 
+const rosterIds = new Set(MODELS.map((m) => m.id)); // skip banked rows of held-out models
 const rows = readFileSync(EXTRACTED, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
-  .filter((r) => r.entity && retained.has(r.domain));
+  .filter((r) => r.entity && retained.has(r.domain) && rosterIds.has(r.model));
 
 // images.json key presence, with a light fold (diacritics/punctuation) so
 // e.g. "champs-élysées" matches the manifest's "champs-elysees".
@@ -149,6 +150,24 @@ const usageTotals = { in: 0, out: 0 };
 const quoteStats = { total: 0, retried: 0, fallback: 0 };
 
 async function callHaiku(prompt, schema, label) {
+  // EXTRACTOR=openai — fallback when the Anthropic key is capped (mirrors extract.js).
+  if (process.env.EXTRACTOR === 'openai') {
+    const data = await withRetries(
+      () => postJSON('https://api.openai.com/v1/chat/completions', {
+        authorization: `Bearer ${KEYS.openai}`,
+      }, {
+        model: 'gpt-5.2',
+        reasoning_effort: 'low',
+        max_completion_tokens: 6000,
+        response_format: { type: 'json_schema', json_schema: { name: 'entitycard', strict: true, schema } },
+        messages: [{ role: 'user', content: prompt }],
+      }),
+      { label: `${label}-openai` },
+    );
+    usageTotals.in += data.usage?.prompt_tokens ?? 0;
+    usageTotals.out += data.usage?.completion_tokens ?? 0;
+    return JSON.parse(data.choices[0].message.content);
+  }
   const data = await withRetries(
     () => postJSON('https://api.anthropic.com/v1/messages', {
       'x-api-key': KEYS.anthropic,

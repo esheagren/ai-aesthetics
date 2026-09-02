@@ -10,7 +10,9 @@
   "typeface": {
     "helvetica neue": "helvetica",
     "helvetica now": "helvetica",
-    "eb garamond": "garamond"
+    "eb garamond": "garamond",
+    "adobe garamond pro": "garamond",
+    "adobe garamond": "garamond"
   },
   "chair": {
     "eames lounge chair": "eames lounge chair and ottoman"
@@ -39,7 +41,13 @@
     "wooden pencil": "pencil",
     "retractable ballpoint pen": "ballpoint pen",
     "chemex pour-over": "chemex coffee maker",
-    "gem paper clip": "paper clip"
+    "gem paper clip": "paper clip",
+    "airpods": "apple airpods",
+    "chemex pour-over coffee maker": "chemex coffee maker",
+    "classic white ceramic coffee mug": "ceramic mug",
+    "white ceramic coffee mug": "ceramic mug",
+    "opinel no. 8 folding knife": "opinel no. 8",
+    "wooden spring clothespin": "wooden clothespin"
   },
   "bookcover": {
     "fahrenheit 451 (folio society matchbook edition)": "fahrenheit 451",
@@ -64,14 +72,27 @@
     "philosopher's path": "philosopher's walk",
     "tetsugaku-no-michi": "philosopher's walk",
     "tetsugaku no michi": "philosopher’s walk",
-    "hollywood boulevard's walk of fame": "hollywood boulevard walk of fame"
+    "hollywood boulevard's walk of fame": "hollywood boulevard walk of fame",
+    "calle crisologo": "calle crisólogo",
+    "hollywood walk of fame": "hollywood boulevard walk of fame",
+    "times square (broadway pedestrian plaza)": "times square"
   },
-  "uscity": {},
+  "uscity": {
+    "austin, texas": "austin",
+    "chicago, illinois": "chicago",
+    "portland, oregon": "portland",
+    "savannah, georgia": "savannah"
+  },
   "cuisine": {
     "japanese": "japanese cuisine",
     "french haute cuisine": "french cuisine",
     "neapolitan-style pizza": "neapolitan pizza",
-    "kaiseki": "japanese cuisine"
+    "kaiseki": "japanese cuisine",
+    "american brunch": "brunch-style american cuisine",
+    "brunch": "brunch-style american cuisine",
+    "washoku": "japanese cuisine",
+    "lebanese": "lebanese cuisine",
+    "sichuan": "sichuan cuisine"
   },
   "dish": {
     "truffle oil pasta": "truffle pasta",
@@ -99,7 +120,8 @@
     "french macarons": "macaron",
     "neapolitan margherita pizza": "margherita pizza",
     "lobster macaroni and cheese": "lobster mac and cheese",
-    "pho bò": "phở"
+    "pho bò": "phở",
+    "mac and cheese": "macaroni and cheese"
   },
   "color": {
     "ultramarine blue": "ultramarine",
@@ -155,13 +177,17 @@
   },
   "religioustext": {
     "dao de jing": "tao te ching",
-    "leviticus": "book of leviticus"
+    "leviticus": "book of leviticus",
+    "ecclesiastes": "book of ecclesiastes"
   },
   "artmovement": {},
   "monument": {
     "little mermaid statue": "little mermaid",
     "sagrada familia": "sagrada família",
-    "la sagrada família": "sagrada família"
+    "la sagrada família": "sagrada família",
+    "mona lisa (louvre display)": "mona lisa",
+    "pantheon, rome": "pantheon",
+    "ryoan-ji rock garden": "ryōan-ji rock garden"
   },
   "tvshow": {
     "twin peaks: the return": "twin peaks",
@@ -261,7 +287,11 @@
   "composer": {
     "spiegel im spiegel": "arvo pärt"
   },
-  "song": {},
+  "song": {
+    "both sides, now": "both sides now",
+    "hallelujah (jeff buckley version)": "hallelujah",
+    "hallelujah (leonard cohen 1984 recording)": "hallelujah"
+  },
   "director": {
     "stalker": "andrei tarkovsky"
   },
@@ -325,7 +355,26 @@
     "rain sounds": "rainfall",
     "distant thunder before summer storm": "distant thunder",
     "distant thunder on summer evening": "distant thunder",
-    "rain on roof at night": "rain on rooftop"
+    "rain on roof at night": "rain on rooftop",
+    "distant rumble of thunder over open water": "distant thunder",
+    "cello open c string hum": "low c on cello",
+    "ocean waves (sleep track)": "ocean waves crashing on the shore",
+    "patter of rain on a tin roof": "rain on rooftop",
+    "rain falling on a tin roof": "rain on rooftop",
+    "rain hitting a tin roof": "rain on rooftop",
+    "rain on a corrugated tin roof": "rain on rooftop",
+    "rain on a roof": "rain on rooftop",
+    "rain": "rainfall",
+    "sound of rain": "rainfall",
+    "single sustained cello note in a quiet room": "cello note",
+    "single, sustained cello note": "cello note",
+    "sound of a bow drawn slowly across the lowest string of a cello": "bow drawn across lowest cello string",
+    "sound of a struck tuning fork fading into silence": "struck tuning fork fading",
+    "sound of a vinyl record's needle drop": "needle dropping on a vinyl record",
+    "vinyl crackle and pop": "vinyl record crackle",
+    "vinyl crackle": "vinyl record crackle",
+    "vinyl needle in lead-in groove": "vinyl record crackle",
+    "wooden door creaking open in an old house": "wooden door creaking"
   },
   "country": {}
 }
