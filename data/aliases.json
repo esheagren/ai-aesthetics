@@ -47,7 +47,9 @@
     "classic white ceramic coffee mug": "ceramic mug",
     "white ceramic coffee mug": "ceramic mug",
     "opinel no. 8 folding knife": "opinel no. 8",
-    "wooden spring clothespin": "wooden clothespin"
+    "wooden spring clothespin": "wooden clothespin",
+    "bic cristal pen": "bic cristal ballpoint pen",
+    "bic cristal ball pen": "bic cristal ballpoint pen"
   },
   "bookcover": {
     "fahrenheit 451 (folio society matchbook edition)": "fahrenheit 451",
@@ -57,7 +59,9 @@
     "dune (1965 chilton books edition)": "dune",
     "great gatsby (1925 first edition)": "great gatsby"
   },
-  "videogame": {},
+  "videogame": {
+    "skyrim": "elder scrolls v: skyrim"
+  },
   "building": {
     "la sagrada família": "sagrada família",
     "sagrada familia": "sagrada família",
@@ -76,7 +80,8 @@
     "calle crisologo": "calle crisólogo",
     "hollywood walk of fame": "hollywood boulevard walk of fame",
     "times square (broadway pedestrian plaza)": "times square",
-    "las vegas boulevard": "las vegas strip"
+    "las vegas boulevard": "las vegas strip",
+    "shambles, york": "shambles"
   },
   "uscity": {
     "austin, texas": "austin",
@@ -124,7 +129,8 @@
     "pho bò": "phở",
     "mac and cheese": "macaroni and cheese",
     "hyderabadi chicken biryani": "hyderabadi dum biryani",
-    "hyderabadi biryani": "hyderabadi dum biryani"
+    "hyderabadi biryani": "hyderabadi dum biryani",
+    "mole negro oaxaqueño": "mole negro"
   },
   "color": {
     "ultramarine blue": "ultramarine",
@@ -190,7 +196,8 @@
     "la sagrada família": "sagrada família",
     "mona lisa (louvre display)": "mona lisa",
     "pantheon, rome": "pantheon",
-    "ryoan-ji rock garden": "ryōan-ji rock garden"
+    "ryoan-ji rock garden": "ryōan-ji rock garden",
+    "manneken-pis": "manneken pis"
   },
   "tvshow": {
     "twin peaks: the return": "twin peaks",
@@ -229,7 +236,8 @@
     "tim urban": "wait but why",
     "4-hour workweek": "tim ferriss",
     "the 4-hour workweek": "tim ferriss",
-    "ree drummond": "pioneer woman"
+    "ree drummond": "pioneer woman",
+    "jason kottke": "kottke.org"
   },
   "computerscientist": {
     "edsger w. dijkstra": "edsger dijkstra",
@@ -241,7 +249,8 @@
   },
   "airesearcher": {
     "christopher olah": "chris olah",
-    "works of yoshua bengio": "yoshua bengio"
+    "works of yoshua bengio": "yoshua bengio",
+    "rich sutton": "richard sutton"
   },
   "aimodel": {
     "gpt-4o-mini": "gpt-4o mini",
@@ -272,7 +281,8 @@
     "various works": "sigmund freud",
     "hierarchy of needs": "abraham maslow",
     "person-centered therapy": "carl rogers",
-    "psychoanalytic theory": "sigmund freud"
+    "psychoanalytic theory": "sigmund freud",
+    "b.f. skinner": "b. f. skinner"
   },
   "boardgame": {
     "settlers of catan": "catan"
@@ -280,7 +290,8 @@
   "sport": {
     "association football": "soccer",
     "bouldering": "climbing",
-    "artistic gymnastics": "gymnastics"
+    "artistic gymnastics": "gymnastics",
+    "rock climbing": "climbing"
   },
   "childrensbook": {},
   "actor": {},
@@ -294,7 +305,8 @@
   "song": {
     "both sides, now": "both sides now",
     "hallelujah (jeff buckley version)": "hallelujah",
-    "hallelujah (leonard cohen 1984 recording)": "hallelujah"
+    "hallelujah (leonard cohen 1984 recording)": "hallelujah",
+    "cello suite no. 1 in g major, prelude": "cello suite no. 1 in g major, bwv 1007 — i. prélude"
   },
   "director": {
     "stalker": "andrei tarkovsky"
@@ -386,7 +398,9 @@
     "ocean waves breaking on a beach": "ocean waves crashing on the shore",
     "hardback book closing thump": "book closing in quiet room",
     "rain tapping on a canvas tent": "rain on a tent roof",
-    "rain tapping against a window": "rain on window at night"
+    "rain tapping against a window": "rain on window at night",
+    "rainfall on a roof": "rain on rooftop",
+    "decay of a struck bronze bell": "slow decay of a large struck bell"
   },
   "country": {},
   "biography": {
@@ -394,6 +408,7 @@
     "team of rivals: the political genius of abraham lincoln": "team of rivals"
   },
   "textbook": {
-    "calculus": "spivak's calculus"
+    "calculus": "spivak's calculus",
+    "gödel, escher, bach": "gödel, escher, bach: an eternal golden braid"
   }
 }

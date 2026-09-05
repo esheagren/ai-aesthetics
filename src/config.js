@@ -39,6 +39,11 @@ export const MODELS = [
   { id: 'grok-4.5', provider: 'xai', family: 'xAI', label: 'Grok 4.5', order: 1, maxTokens: 2500 },
   // grok-4.6 (created 2026-08-06) confirmed live via GET /v1/models; same always-on reasoning
   { id: 'grok-4.6', provider: 'xai', family: 'xAI', label: 'Grok 4.6', order: 2, maxTokens: 2500 },
+  // GLM-5.3 (Zhipu / Z.ai, listed on OpenRouter 2026-08) via the OpenRouter provider —
+  // no first-party Zhipu key. Reasoning is mandatory on this endpoint (enabled:false → 400)
+  // and at default effort runs 2k-9k tokens per answer, blowing past any sane cap — so it
+  // runs at OpenRouter's reasoning effort 'low' (~10-30 tokens), like o3/GPT-5.x/Fable.
+  { id: 'z-ai/glm-5.3', provider: 'openrouter', family: 'Zhipu', label: 'GLM-5.3', order: 1, maxTokens: 3000, extraBody: { reasoning: { effort: 'low' } } },
 ];
 
 export const DOMAINS = {

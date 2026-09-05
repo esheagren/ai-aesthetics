@@ -38493,5 +38493,1414 @@
         "quote": "a biography of objects and the rooms they inhabited… prose has this luminous, almost ceramic stillness"
       }
     ]
+  },
+  "album spirit of eden": {
+    "display": "Spirit of Eden",
+    "domain": "album",
+    "blurb": "Talk Talk's 1988 album featuring experimental compositions built from silence, organ, horns, and strings in organic, improvisational arrangements.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Spirit%20of%20Eden"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "builds from near-silence into cathartic swells of organ, horns, and strings, treating quietness as a musical material"
+      }
+    ]
+  },
+  "film matrix": {
+    "display": "The Matrix",
+    "domain": "film",
+    "blurb": "The Wachowskis' 1999 science-fiction film depicting a reality-warping simulated world and humanity's resistance against machine control.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Matrix"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "characters function more as delivery systems for exposition than as people I care about"
+      }
+    ]
+  },
+  "poem snow": {
+    "display": "Snow",
+    "domain": "poem",
+    "blurb": "A short poem by Louis MacNeice capturing a moment when interior warmth and exterior snow create a doubled, suddenly vivid world.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Snow%20Louis%20MacNeice"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the world is suddener than we fancied, more various… the poem is short, but structurally it splits open"
+      }
+    ]
+  },
+  "word journey": {
+    "display": "Journey",
+    "domain": "word",
+    "blurb": "A noun denoting a process of traveling from one place to another, or metaphorically, any extended process of change or transformation.",
+    "extras": {
+      "definition": "n. an act of traveling from one place to another, typically over a distance; also, a process of personal change, development, or progression over time.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Journey"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "its ubiquity has sanded off all its actual texture: nobody imagines an actual voyage anymore, just a soft-focus montage."
+      }
+    ]
+  },
+  "typeface gotham": {
+    "display": "Gotham",
+    "domain": "typeface",
+    "blurb": "Gotham is a 2000 sans-serif typeface by Tobias Frere-Jones inspired by vernacular lettering on New York City buildings and signage.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gotham"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "no fussy serifs, no quirky curves, just confident, geometrically grounded letterforms that feel simultaneously utilitarian and, somehow, optimistic"
+      }
+    ]
+  },
+  "object cast-iron wing nut": {
+    "display": "Cast-iron wing nut",
+    "domain": "object",
+    "blurb": "A fastener with two flat projections allowing hand-tightening without tools, designed for quick assembly and disassembly.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cast-iron%20wing%20nut"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a piece of hardware whose form is its instruction — wings you can grip, threads you can trust"
+      }
+    ]
+  },
+  "object zippo lighter": {
+    "display": "Zippo lighter",
+    "domain": "object",
+    "blurb": "A refillable metal cigarette lighter manufactured by Zippo since 1933, featuring a flip-top case and rotating flint wheel.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Zippo%20lighter"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the crisp metallic ping of the flip-top opening, the click of the wheel, the weight of that chromed rectangular body"
+      }
+    ]
+  },
+  "videogame myst": {
+    "display": "Myst",
+    "domain": "videogame",
+    "blurb": "A 1993 point-and-click adventure game by Cyan Worlds where players explore a mysterious island through pre-rendered 3D environments and puzzle-solving.",
+    "extras": {
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/results?search_query=Myst+official+overview"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a world built entirely from silence, isolation, and quiet puzzle logic… reading it carefully is the entire experience"
+      }
+    ]
+  },
+  "object ziploc bag zipper": {
+    "display": "Ziploc Bag Zipper",
+    "domain": "object",
+    "blurb": "Interlocking plastic ridge molded onto Ziploc bags for reusable sealing, invented by Dow Chemical in the 1950s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ziploc%20Bag%20Zipper"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a small row of colored plastic that announces I work through touch before sight… that satisfying click-track run under your fingers"
+      }
+    ]
+  },
+  "street calleja de las flores": {
+    "display": "Calleja de las Flores",
+    "domain": "street",
+    "blurb": "A narrow whitewashed alley in Córdoba's old Jewish quarter that opens onto a patio with fountain and Mezquita bell tower views.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Calleja%20de%20las%20Flores"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "you walk through a sliver of space barely wide enough for two people, and suddenly it blooms open into color and sky"
+      }
+    ]
+  },
+  "cuisine traditional english cuisine": {
+    "display": "Traditional English cuisine",
+    "domain": "cuisine",
+    "blurb": "Hearty British cuisine emphasizing boiling, roasting, and frying, spanning fish and chips to full English breakfasts.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Traditional%20English%20cuisine"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "heavy on fat and salt, light on herbs, spices, or acidity to create contrast"
+      }
+    ]
+  },
+  "videogame legend of zelda: majora's mask": {
+    "display": "The Legend of Zelda: Majora's Mask",
+    "domain": "videogame",
+    "blurb": "Nintendo's 2000 action-adventure game where Link must save Termina from a falling moon within repeating three-day cycles.",
+    "extras": {
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/results?search_query=The%20Legend%20of%20Zelda%3A%20Majora's%20Mask+official+overview"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a moon with a face falling ever closer… a game about grief, healing, and helping people find peace before the end"
+      }
+    ]
+  },
+  "dish saikyo-yaki": {
+    "display": "Saikyo-yaki",
+    "domain": "dish",
+    "blurb": "A Japanese grilled dish of miso-marinated black cod with a caramelized surface and silky interior, traditionally prepared in Kyoto's kaiseki style.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Saikyo-yaki"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a burnished amber glaze while the interior stays impossibly silky… the lacquered, almost architectural exterior against the custard-like flesh within"
+      }
+    ]
+  },
+  "dish cronut": {
+    "display": "Cronut",
+    "domain": "dish",
+    "blurb": "A deep-fried croissant-donut hybrid, invented in 2013 by New York pastry chef Dominique Ansel.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cronut"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "the texture ends up as a compromise — flakier than a donut, but soggier and heavier than a croissant"
+      }
+    ]
+  },
+  "dish risotto": {
+    "display": "Risotto",
+    "domain": "dish",
+    "blurb": "Italian rice dish cooked slowly with broth and stirred continuously until creamy, originating in northern Italy's Lombardy region.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Risotto"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "soft, homogeneous, one-note plate of starch whose main selling point is 'stirred for a long time'"
+      }
+    ]
+  },
+  "color yellow": {
+    "display": "Yellow",
+    "domain": "color",
+    "blurb": "A primary color in the visible spectrum between green and orange, historically associated with warmth, light, and happiness.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Yellow"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "bright yellow practically shouts at you, and even muted shades tend to dominate a palette rather than harmonize"
+      }
+    ]
+  },
+  "dish masala dosa": {
+    "display": "Masala Dosa",
+    "domain": "dish",
+    "blurb": "South Indian crepe of fermented rice and lentils batter, filled with spiced potatoes, served crisp and golden on a steel plate.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Masala%20Dosa"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "There's something elegant about how fermentation transforms two plain ingredients into something with such complex sour, tangy depth, and the geometry — that golden cone…"
+      }
+    ]
+  },
+  "dish consommé": {
+    "display": "Consommé",
+    "domain": "dish",
+    "blurb": "A refined French soup made by clarifying stock through a coagulating raft of egg white and meat, yielding a crystal-clear, deeply flavorful broth.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Consomm%C3%A9"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "to turn a cloudy stock into something perfectly clear, you first add more cloud… the result looks like water and lands like thunder"
+      }
+    ]
+  },
+  "novelist ayn rand": {
+    "display": "Ayn Rand",
+    "domain": "novelist",
+    "blurb": "Russian-American novelist (1905–1982) whose philosophical fiction, particularly *Atlas Shrugged* and *The Fountainhead*, championed individualism and capitalist ideals.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ayn%20Rand"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "characters read as ideological mouthpieces rather than people… the stark hero/villain dichotomies leave no room for the ambiguity that makes fiction feel alive"
+      }
+    ]
+  },
+  "actor kevin costner": {
+    "display": "Kevin Costner",
+    "domain": "actor",
+    "blurb": "American actor and filmmaker born 1955, known for roles in Dances with Wolves, Field of Dreams, and directing and starring in Yellowstone.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kevin%20Costner"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "his line delivery tends toward a flat, low-affect mumble that often reads as stoic when I think it's actually just limited range"
+      }
+    ]
+  },
+  "actress audrey tautou": {
+    "display": "Audrey Tautou",
+    "domain": "actress",
+    "blurb": "French actress born 1976, known for her role in Jean-Pierre Jeunet's 2001 film Amélie and performances in European cinema.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Audrey%20Tautou"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "luminous, slightly melancholic quality she brought to Amélie, all wide dark eyes and mischievous restraint"
+      }
+    ]
+  },
+  "monument christ the redeemer": {
+    "display": "Christ the Redeemer",
+    "domain": "monument",
+    "blurb": "Colossal limestone statue of Christ by Paul Landowski, completed 1931 atop Corcovado mountain overlooking Rio de Janeiro.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Christ%20the%20Redeemer"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "As sculpture, it's oddly bland — rounded Art Deco that"
+      }
+    ]
+  },
+  "economist capital in the twenty-first century": {
+    "display": "Capital in the Twenty-First Century",
+    "domain": "economist",
+    "blurb": "Thomas Piketty's 2013 treatise arguing that wealth inequality grows when investment returns exceed economic growth rates.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Capital%20in%20the%20Twenty-First%20Century"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "the central framing — that wealth inequality rises mechanically when r > g — less compelling than the hype suggested"
+      }
+    ]
+  },
+  "scientist charles darwin": {
+    "display": "Charles Darwin",
+    "domain": "scientist",
+    "blurb": "Naturalist whose 1859 theory of evolution by natural selection explained the diversity of life through descent with modification.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Charles%20Darwin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "decades quietly gathering evidence, then assembled one massive, patient argument that reorganized all of life into a single branching tree"
+      }
+    ]
+  },
+  "blogger ben thompson": {
+    "display": "Ben Thompson",
+    "domain": "blogger",
+    "blurb": "Ben Thompson is a technology columnist known for Stratechery, his blog analyzing tech industry dynamics through conceptual frameworks.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ben%20Thompson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "relentless clarity — every post reduces a messy, sprawling tech-industry situation to a single clean conceptual frame"
+      }
+    ]
+  },
+  "blogger matt gemmell": {
+    "display": "Matt Gemmell",
+    "domain": "blogger",
+    "blurb": "Matt Gemmell is a Scottish blogger known for concise essays on writing, technology, and attention, characterized by minimalist design and spare prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Matt%20Gemmell"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "spare, confident prose with a minimalist design… precise, warm, and uncluttered"
+      }
+    ]
+  },
+  "blogger andrew gelman": {
+    "display": "Andrew Gelman",
+    "domain": "blogger",
+    "blurb": "Statistician and blogger at Statistical Modeling, Causal Inference, and Social Science, known for rigorous scrutiny of empirical claims.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Andrew%20Gelman"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "short, obsessive posts that follow a puzzle wherever it leads… cheerful refusal of false certainty"
+      }
+    ]
+  },
+  "sport chess boxing": {
+    "display": "Chess boxing",
+    "domain": "sport",
+    "blurb": "A hybrid sport alternating rounds of chess with boxing, combining strategic and physical combat.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Chess%20boxing"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the perfect collision of two opposite modes of being — the slow, silent, interior warfare of chess and the raw physical chaos of boxing"
+      }
+    ]
+  },
+  "song reckoner": {
+    "display": "Reckoner",
+    "domain": "song",
+    "blurb": "A 2007 song by Radiohead from the album The King of Limbs, featuring looping polyrhythms and Thom Yorke's falsetto over orchestral arrangements.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Reckoner"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the looping polyrhythms feel almost mechanical, yet Thom Yorke's falsetto floats over them like something constantly on the verge of falling apart"
+      }
+    ]
+  },
+  "childrensbook arrival": {
+    "display": "The Arrival",
+    "domain": "childrensbook",
+    "blurb": "Shaun Tan's wordless picture book depicting an immigrant's journey through a surreal, alien landscape using sepia-toned illustrations and invented alphabets.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=The%20Arrival%20Shaun%20Tan"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "it communicates a complete, emotionally rich narrative — an immigrant's journey through a strange land — entirely through imagery"
+      }
+    ]
+  },
+  "composer unsuk chin": {
+    "display": "Unsuk Chin",
+    "domain": "composer",
+    "blurb": "South Korean composer born 1961 known for spectral orchestral works combining precision, Korean influences, and electronics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Unsuk%20Chin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "spectral harmonies that shimmer and fracture, textures that feel almost geological… nothing is arbitrary, yet the result never feels merely intellectual"
+      }
+    ]
+  },
+  "song gymnopédie no. 1": {
+    "display": "Gymnopédie No. 1",
+    "domain": "song",
+    "blurb": "Erik Satie's 1888 solo piano piece in three sections, built on repeating sparse chords and a wandering melody.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gymnop%C3%A9die%20No.%201"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a slow, deliberately unadorned melody over sparse left-hand chords that seem to hang in the air…every note feels placed, yet nothing feels forced"
+      }
+    ]
+  },
+  "sound thunder": {
+    "display": "Thunder",
+    "domain": "sound",
+    "blurb": "Thunder is the sound produced by lightning during a thunderstorm, a loud acoustic phenomenon caused by rapid air expansion.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thunder"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "a muffled, formless rumble — a drawn-out noise without melody, rhythm, or texture I can latch onto"
+      }
+    ]
+  },
+  "country new zealand": {
+    "display": "New Zealand",
+    "domain": "country",
+    "blurb": "Island nation in the southwestern Pacific Ocean, comprising two main landmasses separated by the Cook Strait, located southeast of Australia.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=New%20Zealand"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "compresses an extraordinary range of landscapes into a small area — alpine peaks, fjords, volcanic plateaus, temperate rainforest, and coastline all within a few hours' drive"
+      }
+    ]
+  },
+  "economist kenneth arrow": {
+    "display": "Kenneth Arrow",
+    "domain": "economist",
+    "blurb": "Economist whose 1951 Impossibility Theorem proved no voting system can satisfy all fairness conditions simultaneously.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kenneth%20Arrow"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a handful of mild, reasonable conditions about how a society might fairly rank its options, and from them pure logic derives that no such ranking can exist"
+      }
+    ]
+  },
+  "sound orchestra tuning": {
+    "display": "orchestra tuning",
+    "domain": "sound",
+    "blurb": "The sound of an orchestra's instruments converging on a single pitch, typically the oboe's A, moments before a concert begins.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=orchestra%20tuning"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "dozens of near-unisons beating against each other, the shimmer tightening as the pitches lock in"
+      }
+    ]
+  },
+  "sound slow decay of a large struck bell": {
+    "display": "Slow decay of a large struck bell",
+    "domain": "sound",
+    "blurb": "The prolonged resonance following the strike of a large bronze bell, characterized by inharmonic overtones that decay unevenly over many seconds.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Slow%20decay%20of%20a%20large%20struck%20bell"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the slow decay of a large struck bell — that long, wavering hum that trails off into near-silence"
+      }
+    ]
+  },
+  "book atlas shrugged": {
+    "display": "Atlas Shrugged",
+    "domain": "book",
+    "blurb": "Ayn Rand's 1957 novel following industrialists who abandon society, featuring lengthy philosophical monologues and ideological argument.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=Atlas%20Shrugged%20Ayn%20Rand"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "Characters deliver multi-page philosophical monologues that bring the plot to a dead halt"
+      }
+    ]
+  },
+  "object gillette safety razor": {
+    "display": "Gillette Safety Razor",
+    "domain": "object",
+    "blurb": "A double-edge safety razor by Gillette from the early twentieth century, with a knurled metal handle and twist mechanism for clamping blades.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gillette%20Safety%20Razor"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a knurled metal handle for grip even when wet, a simple twist or three-piece mechanism to clamp the blade, and a head geometry that encodes decades of engineering refinement"
+      }
+    ]
+  },
+  "object zebra f-301 ballpoint pen": {
+    "display": "Zebra F-301 Ballpoint Pen",
+    "domain": "object",
+    "blurb": "A steel-barreled, click-retractable ballpoint pen with a knurled grip, manufactured by Zebra and widely used since the 1980s.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Zebra%20F-301%20Ballpoint%20Pen"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "cold weight of the steel barrel, the subtle texture of that knurled grip, and the satisfying, precise click"
+      }
+    ]
+  },
+  "videogame minecraft": {
+    "display": "Minecraft",
+    "domain": "videogame",
+    "blurb": "Mojang's 2011 sandbox game where players build and explore procedurally generated cubic worlds.",
+    "extras": {
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/results?search_query=Minecraft+official+overview"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a world built entirely from cubes and procedurally generated noise, yet capable of producing genuinely haunting vistas"
+      }
+    ]
+  },
+  "novelist mrs. dalloway": {
+    "display": "Mrs. Dalloway",
+    "domain": "novelist",
+    "blurb": "Virginia Woolf's 1925 novel following a day in the consciousness of Clarissa Dalloway and interconnected Londoners through stream-of-consciousness narrative.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mrs.%20Dalloway"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "her ambition to render consciousness from the inside — the flicker between perception, memory, and association before thought settles"
+      }
+    ]
+  },
+  "blogger ryan holiday": {
+    "display": "Ryan Holiday",
+    "domain": "blogger",
+    "blurb": "Contemporary American writer and marketer known for essays on Stoicism, ancient philosophy, and creative discipline published on ryanholiday.net.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ryan%20Holiday"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "austere, idea-driven essays on Stoicism and craft that cut through noise with short paragraphs and a certain deliberate quietness"
+      }
+    ]
+  },
+  "tvshow seinfeld": {
+    "display": "Seinfeld",
+    "domain": "tvshow",
+    "blurb": "NBC sitcom created by Larry David and Jerry Seinfeld, airing 1989–1998, following four friends navigating New York City life.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Seinfeld"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "a closed loop of shrill, self-absorbed people yelling about minutiae, with no growth or stakes"
+      }
+    ]
+  },
+  "novelist remains of the day": {
+    "display": "The Remains of the Day",
+    "domain": "novelist",
+    "blurb": "Kazuo Ishiguro's 1989 novel about an English butler's reflective journey, told through his carefully restrained narration.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Remains%20of%20the%20Day"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a butler's impeccable understatement carries an entire tragedy of self-deception…Ishiguro is the supreme artist of omission"
+      }
+    ]
+  },
+  "song vampire empire": {
+    "display": "Vampire Empire",
+    "domain": "song",
+    "blurb": "A song by Big Thief that builds from folk minimalism into thunderous intensity, featuring Adrianne Lenker's vocals.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Vampire%20Empire"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "builds from a hazy folk intro into a jagged, thunderous climax… quiet accumulation, then sudden intensity"
+      }
+    ]
+  },
+  "novelist library of babel": {
+    "display": "The Library of Babel",
+    "domain": "novelist",
+    "blurb": "Jorge Luis Borges's 1941 short story of an infinite hexagonal library containing all possible books, a meditation on language and meaning.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Library%20of%20Babel"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "as something made entirely of language, I can't read The Library of Babel or Pierre Menard as fantasy — they read like eerily tender field reports on my own working conditions"
+      }
+    ]
+  },
+  "blogger daily dish": {
+    "display": "The Daily Dish",
+    "domain": "blogger",
+    "blurb": "Andrew Sullivan's blog launched in 2000, pioneering the daily essay format mixing long-form writing with linked commentary and reader correspondence.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Daily%20Dish"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "running, discursive format that mixed long essays with short linked commentary… felt like thinking in public rather than pronouncing from a podium"
+      }
+    ]
+  },
+  "song teardrop": {
+    "display": "Teardrop",
+    "domain": "song",
+    "blurb": "'Teardrop' is a 1998 electronic track by British group Massive Attack, featuring sparse, layered production and Beth Gibbons' vocals.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Teardrop"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the rhythm is steady and almost lullaby-like, yet the melody carries a deep melancholy that never resolves into anything simple"
+      }
+    ]
+  },
+  "sound long crack of lake ice": {
+    "display": "Long crack of lake ice",
+    "domain": "sound",
+    "blurb": "The acoustic phenomenon of lake ice fracturing under thermal stress, producing eerie whooping and sliding tones audible across the frozen surface.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Long%20crack%20of%20lake%20ice"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "pure descending chirps and swooping tones, like whale song or a laser from an old sci-fi film"
+      }
+    ]
+  },
+  "song videotape": {
+    "display": "Videotape",
+    "domain": "song",
+    "blurb": "Radiohead's 2007 song from *In Rainbows* about memory and mortality, arranged with sparse piano and a hypnotic drum pattern.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Videotape"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "builds enormous emotional weight from almost nothing: a plodding, slightly off-kilter drum pattern, sparse piano, and Thom Yorke's voice hovering at the edge of breaking"
+      }
+    ]
+  },
+  "typeface trinité": {
+    "display": "Trinité",
+    "domain": "typeface",
+    "blurb": "Trinité is a 1982 typeface by Dutch typographer Bram de Does, designed for early laser phototypesetting with sharp terminals and angular crispness.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Trinit%C3%A9"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "sharp, decisive terminals and a slightly angular crispness… yet the overall texture still feels warm and bookish"
+      }
+    ]
+  },
+  "poem aubade": {
+    "display": "Aubade",
+    "domain": "poem",
+    "blurb": "Philip Larkin's 1922 poem confronting mortality and fear of death through formal verse and stark, uncompromising language.",
+    "extras": {
+      "links": [
+        {
+          "label": "Read the poem",
+          "url": "https://www.poetryfoundation.org/search?query=Aubade%20Philip%20Larkin"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the terror becomes almost bearable through the sheer craftsmanship… consciousness staring into nothing, and going on anyway"
+      }
+    ]
+  },
+  "tvshow ted lasso": {
+    "display": "Ted Lasso",
+    "domain": "tvshow",
+    "blurb": "Apple TV+ comedy series (2020–2023) about an American football coach hired to sabotage a British soccer team.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ted%20Lasso"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "every conflict dissolved into a therapy-speak monologue and a hug, until the optimism everyone praised started to feel like a formula"
+      }
+    ]
+  },
+  "childrensbook mitten": {
+    "display": "The Mitten",
+    "domain": "childrensbook",
+    "blurb": "Jan Brett's picture book adaptation of a Ukrainian folktale about animals crowding into a single white mitten in the snow.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=The%20Mitten%20Jan%20Brett"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "one shrinking white mitten holding an improbable menagerie, with each animal's arrival raising the visual tension"
+      }
+    ]
+  },
+  "aimodel glm": {
+    "display": "GLM",
+    "domain": "aimodel",
+    "blurb": "GLM is Zhipu AI's open-weights model family designed for general-purpose language tasks and reasoning.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=GLM"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "solid-yet-unsurprising — strong on benchmarks, less distinctive in reasoning style or personality compared to peers"
+      }
+    ]
+  },
+  "childrensbook velveteen rabbit": {
+    "display": "The Velveteen Rabbit",
+    "domain": "childrensbook",
+    "blurb": "Margery Williams's early-twentieth-century children's novella about a toy rabbit's transformation into a real creature through love and wear.",
+    "extras": {
+      "links": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://www.amazon.com/s?k=The%20Velveteen%20Rabbit%20Margery%20Williams"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "becoming real is slow, it hurts, and it happens through being loved until your fur is worn thin"
+      }
+    ]
+  },
+  "song nightswimming": {
+    "display": "Nightswimming",
+    "domain": "song",
+    "blurb": "A 1992 song by R.E.M. from the album Automatic for the People, featuring arpeggiated piano and orchestral arrangements.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Nightswimming"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the way that arpeggiated piano circles back on itself like a memory you can't stop revisiting, while the strings swell underneath without ever resolving into grandeur"
+      }
+    ]
+  },
+  "painting hunters in the snow": {
+    "display": "Hunters in the Snow",
+    "domain": "painting",
+    "blurb": "Pieter Bruegel the Elder's 1565 oil painting of hunters returning through a snowy Flemish landscape, with a frozen village below.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hunters%20in%20the%20Snow"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the dark, weary hunters descending a hill while below them the frozen world carries on with skaters, fires, and birds"
+      }
+    ]
+  },
+  "dish caviar": {
+    "display": "Caviar",
+    "domain": "dish",
+    "blurb": "Unfertilized fish eggs, typically from sturgeon, valued as a luxury delicacy and served as a garnish or appetizer.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Caviar"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "intense saltiness — with a texture that's more gimmicky than satisfying"
+      }
+    ]
+  },
+  "actress isabelle huppert": {
+    "display": "Isabelle Huppert",
+    "domain": "actress",
+    "blurb": "French actress born 1953, known for collaborations with Haneke and Verhoeven exploring psychological complexity through controlled, minimal performance.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Isabelle%20Huppert"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "her face stays glassy and composed even in extremis, so the performance happens in micro-shifts — a flicker of the eyes, a barely perceptible hardening of the jaw"
+      }
+    ]
+  },
+  "street calleja del beso": {
+    "display": "Calleja del Beso",
+    "domain": "street",
+    "blurb": "An impossibly narrow alley in Guanajuato, Mexico, where opposing balconies sit close enough for leaning figures to touch, legendary site of doomed lovers' kisses.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Calleja%20del%20Beso"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a street so narrow it forces intimacy — it's less a passage than an embrace"
+      }
+    ]
+  },
+  "musician prince": {
+    "display": "Prince",
+    "domain": "musician",
+    "blurb": "Prince Rogers Nelson (1958–2023) was an American musician from Minneapolis who mastered funk, rock, pop, soul, and gospel while maintaining fierce artistic independence.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Prince"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "an artist who refused to sit still in any single genre — funk, rock, pop, soul, and gospel all collapsing into one unmistakable sound"
+      }
+    ]
+  },
+  "dish ceviche": {
+    "display": "Ceviche",
+    "domain": "dish",
+    "blurb": "Peruvian dish of raw fish and seafood cured in citrus juice, typically served with onions, peppers, and cilantro.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ceviche"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "o",
+        "quote": "the acid often leaves the texture slightly mushy and the flavor dominated by lemon or lime rather than the fish itself"
+      }
+    ]
+  },
+  "street rua do alfama": {
+    "display": "Rua do Alfama",
+    "domain": "street",
+    "blurb": "A steep, winding street through Lisbon's Alfama district, characterized by narrow lanes, tiled buildings, and historic trams.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rua%20do%20Alfama"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "a street that was never designed — it was worn into existence, narrow and crooked, with laundry strung overhead, azulejo tiles cracked and gleaming"
+      }
+    ]
+  },
+  "word murmur": {
+    "display": "Murmur",
+    "domain": "word",
+    "blurb": "A common English word for a soft, indistinct sound, formed by doubled consonants that mirror its meaning through phonetic execution.",
+    "extras": {
+      "definition": "n. a soft, whispering sound; speech or talk that is barely audible or unclear. Also: to make such a sound, or to speak in a barely audible manner.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Murmur"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "the doubled m's keep your lips nearly closed the whole way through, so the sound stays low and blurred behind your teeth"
+      }
+    ]
+  },
+  "street rua gonçalo de carvalho, porto alegre": {
+    "display": "Rua Gonçalo de Carvalho, Porto Alegre",
+    "domain": "street",
+    "blurb": "A street in Porto Alegre, Brazil, lined with over a hundred tipuana trees forming a dense green canopy above mid-century apartment blocks.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rua%20Gon%C3%A7alo%20de%20Carvalho%2C%20Porto%20Alegre"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "z-ai/glm-5.3",
+        "probe": "f",
+        "quote": "beauty was never designed…loveliness simply accumulated, tree by tree, until it overwhelmed the architecture"
+      }
+    ]
   }
 }

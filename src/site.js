@@ -67,7 +67,7 @@ const SHORT = {
   'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol', 'gpt-6-astra': 'GPT-6 Astra',
   'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5 Flash', 'gemini-3.7-flash': 'Gemini 3.7 Flash',
   'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'kimi-k3': 'Kimi K3',
-  'grok-4.5': 'Grok 4.5', 'grok-4.6': 'Grok 4.6',
+  'grok-4.5': 'Grok 4.5', 'grok-4.6': 'Grok 4.6', 'z-ai/glm-5.3': 'GLM-5.3',
 };
 const DOMAIN_LABELS = {
   book: 'Novel', film: 'Film', album: 'Album', architect: 'Architect', city: 'City', painting: 'Painting',
@@ -103,7 +103,7 @@ const DOMAIN_GROUPS = [
   { label: 'Places', ids: ['country', 'city', 'uscity', 'street'] },
   { label: 'Life & Senses', ids: ['cuisine', 'dish', 'color', 'season', 'smell', 'sound'] },
 ];
-const byFamily = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'];
+const byFamily = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot', 'Zhipu'];
 // Power rank within each family, most capable first. Not just -config.order:
 // config.order is collection order (oldest first) for Anthropic/OpenAI, which
 // happens to invert cleanly, but for Google a higher version number ("3.5
@@ -115,6 +115,7 @@ const POWER_RANK = {
   'deepseek-v4-pro': 1,
   'kimi-k3': 1, 'kimi-k2.6': 2,
   'grok-4.6': 1, 'grok-4.5': 2,
+  'z-ai/glm-5.3': 1,
 };
 const models = [...S.models].sort((a, b) => byFamily.indexOf(a.family) - byFamily.indexOf(b.family) || POWER_RANK[a.id] - POWER_RANK[b.id]);
 // Cross-family capability order, most capable first — used to sequence the
@@ -122,8 +123,8 @@ const models = [...S.models].sort((a, b) => byFamily.indexOf(a.family) - byFamil
 const CAPABILITY_RANK = {
   'claude-fable-5-1': 1, 'claude-fable-5': 2, 'claude-opus-5': 3, 'gpt-6-astra': 4, 'gpt-5.6-sol': 5, 'claude-opus-4-8': 6,
   'gemini-3.1-pro-preview': 7, 'grok-4.6': 8, 'grok-4.5': 9, 'claude-opus-4-5': 10, 'gpt-5.2': 11,
-  'kimi-k3': 12, 'deepseek-v4-pro': 13, 'kimi-k2.6': 14, 'gemini-3.7-flash': 15, 'gemini-3.5-flash': 16,
-  'claude-opus-4-1': 17, 'gpt-4o': 18,
+  'kimi-k3': 12, 'deepseek-v4-pro': 13, 'z-ai/glm-5.3': 14, 'kimi-k2.6': 15, 'gemini-3.7-flash': 16, 'gemini-3.5-flash': 17,
+  'claude-opus-4-1': 18, 'gpt-4o': 19,
 };
 // Every color entity in data/entitycards.json ("color <norm>"), mapped to an
 // honest hex. Keys are the client's canonical norm (canonEnt output). The very
@@ -325,7 +326,7 @@ const NATIVE = {
 };
 
 // ---- atlas words ----
-const FAMS = { Anthropic: 'a', OpenAI: 'o', Google: 'g', DeepSeek: 'd', Moonshot: 'k', xAI: 'x' };
+const FAMS = { Anthropic: 'a', OpenAI: 'o', Google: 'g', DeepSeek: 'd', Moonshot: 'k', xAI: 'x', Zhipu: 'z' };
 const words = V.words.slice().sort((a, b) => b.total - a.total).slice(0, 240)
   .map((w) => ({ w: w.w, x: w.x, y: w.y, t: w.total, f: w.fam ? FAMS[w.fam] : null }));
 
@@ -379,7 +380,7 @@ const dataJSON = JSON.stringify(DATA).replace(/</g, '\\u003c');
 
 // ---------------------------------------------------------------- markup ---
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const FAMC = { Anthropic: 'var(--fam-a)', OpenAI: 'var(--fam-o)', Google: 'var(--fam-g)', DeepSeek: 'var(--fam-d)', Moonshot: 'var(--fam-k)', xAI: 'var(--fam-x)' };
+const FAMC = { Anthropic: 'var(--fam-a)', OpenAI: 'var(--fam-o)', Google: 'var(--fam-g)', DeepSeek: 'var(--fam-d)', Moonshot: 'var(--fam-k)', xAI: 'var(--fam-x)', Zhipu: 'var(--fam-z)' };
 // Official brand marks: Simple Icons single-path 24x24 strings
 // (cdn.simpleicons.org/<slug>; xAI wears the X mark, slug 'x'), except OpenAI —
 // absent from Simple Icons — whose blossom emblem is inlined from Wikimedia
@@ -391,6 +392,8 @@ const BRAND_PATHS = {
   xAI: 'M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z',
   DeepSeek: 'M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 0 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45',
   Moonshot: 'm1.053 16.91 9.538 2.55a21 20.981 0 0 0 .06 2.031l5.956 1.592a12 11.99 0 0 1-15.554-6.172m-1.02-5.79 11.352 3.035a21 20.981 0 0 0-.469 2.01l10.817 2.89a12 11.99 0 0 1-1.845 2.004L.658 15.918a12 11.99 0 0 1-.625-4.796m1.593-5.146L13.573 9.17a21 20.981 0 0 0-1.01 1.874l11.297 3.02a21 20.981 0 0 1-.67 2.362l-11.55-3.087L.125 10.26a12 11.99 0 0 1 1.499-4.285ZM6.067 1.58l11.285 3.016a21 20.981 0 0 0-1.688 1.719l7.824 2.091a21 20.981 0 0 1 .513 2.664L2.107 5.218a12 11.99 0 0 1 3.96-3.638M21.68 4.866 7.222 1.003A12 11.99 0 0 1 21.68 4.866',
+  // Zhipu (Z.ai): no Simple Icons mark as of 2026-09 — plain geometric Z placeholder
+  Zhipu: 'M3 3h18v3.4L9.9 18H21v3H3v-3.4L14.1 6H3z',
 };
 
 function canonCard(c, badge) {
@@ -583,11 +586,12 @@ const MRO_DATA = {
   'deepseek-v4-pro': [1, 'frontier', 'DeepSeek V4 Pro'],
   'kimi-k3': [1, 'frontier', 'Kimi K3'],
   'kimi-k2.6': [2, 'workhorse', 'Kimi K2.6'],
+  'z-ai/glm-5.3': [1, 'frontier', 'GLM-5.3'],
 };
 // Group order left-to-right / top-to-bottom — the four American labs, then
 // the two Chinese labs, matching the "American and Chinese" line of copy.
-const MRO_FAM_ORDER = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'];
-const MRO_CC = { Anthropic: 'us', OpenAI: 'us', Google: 'us', xAI: 'us', DeepSeek: 'cn', Moonshot: 'cn' };
+const MRO_FAM_ORDER = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot', 'Zhipu'];
+const MRO_CC = { Anthropic: 'us', OpenAI: 'us', Google: 'us', xAI: 'us', DeepSeek: 'cn', Moonshot: 'cn', Zhipu: 'cn' };
 const MRO_DOT_PX = { lightweight: 6, workhorse: 9, frontier: 12 };
 function mroRoster() {
   const byFam = {};
@@ -1120,7 +1124,7 @@ const CSS = `
 :root{
   --night:#131417; --panel:#1a1c20; --ink:#e9e6dd; --dim:#9d998c; --faint:#6b675c;
   --hair:rgba(233,230,221,.13); --hair2:rgba(233,230,221,.07);
-  --fam-a:#d97757; --fam-o:#10a37f; --fam-g:#9b72cb; --fam-d:#4d6bfe; --fam-k:#aeb6c6; --fam-x:#f2f0e9;
+  --fam-a:#d97757; --fam-o:#10a37f; --fam-g:#9b72cb; --fam-d:#4d6bfe; --fam-k:#aeb6c6; --fam-x:#f2f0e9; --fam-z:#e3b04b;
   --serif:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
   --sans:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
   --mono:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
@@ -1787,7 +1791,7 @@ if('scrollRestoration' in history)history.scrollRestoration='manual';
 scrollTo({top:0,left:0,behavior:'instant'});
 var D = JSON.parse(document.getElementById('data').textContent);
 var FAMC = {a:'var(--fam-a)', o:'var(--fam-o)', g:'var(--fam-g)', d:'var(--fam-d)', k:'var(--fam-k)', x:'var(--fam-x)'};
-var famOf = {Anthropic:'a', OpenAI:'o', Google:'g', DeepSeek:'d', Moonshot:'k', xAI:'x'};
+var famOf = {Anthropic:'a', OpenAI:'o', Google:'g', DeepSeek:'d', Moonshot:'k', xAI:'x', Zhipu:'z'};
 var BRANDS = ${JSON.stringify(BRAND_PATHS)};
 var CAPABILITY_RANK = ${JSON.stringify(CAPABILITY_RANK)};
 var COLOR_HEX = ${JSON.stringify(COLOR_HEX)};
