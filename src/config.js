@@ -19,6 +19,9 @@ export const MODELS = [
   { id: 'o3', provider: 'openai', family: 'OpenAI', label: 'o3', order: 2, reasoning: 'low', maxTokens: 2500 },
   { id: 'gpt-5.2', provider: 'openai', family: 'OpenAI', label: 'GPT-5.2', order: 3, reasoning: 'low' },
   { id: 'gpt-5.6-sol', provider: 'openai', family: 'OpenAI', label: 'GPT-5.6 Sol', order: 4, reasoning: 'low', api: 'responses' },
+  // gpt-6-astra (added 2026-09-05): confirmed live via GET /v1/models; Responses API
+  // like Sol, reasoning billed as output (~50 reasoning tokens/answer at effort low).
+  { id: 'gpt-6-astra', provider: 'openai', family: 'OpenAI', label: 'GPT-6 Astra', order: 5, reasoning: 'low', api: 'responses' },
   // gemini-2.5-pro is closed to new accounts (404) — Google gates old generations
   { id: 'gemini-3.1-pro-preview', provider: 'gemini', family: 'Google', label: 'Gemini 3.1 Pro', order: 1 },
   { id: 'gemini-3.5-flash', provider: 'gemini', family: 'Google', label: 'Gemini 3.5 Flash', order: 2 },
@@ -95,6 +98,9 @@ export const DOMAINS = {
   proglang: 'programming language',
   sound: 'sound',
   country: 'country',
+  // v7 additions (2026-09-05): Literature expansion
+  biography: 'biography',
+  textbook: 'textbook',
 };
 
 // Prompt version 2: preamble acknowledges the AI disclaimer up front so models

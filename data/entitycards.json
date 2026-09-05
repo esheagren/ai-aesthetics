@@ -36699,5 +36699,1799 @@
         "quote": "made the ordinary the subject of serious attention: a woman pouring milk, a map on a wall, a lemon peel curling off a table edge"
       }
     ]
+  },
+  "textbook introduction to the theory of computation": {
+    "display": "Introduction to the Theory of Computation",
+    "domain": "textbook",
+    "blurb": "Michael Sipser's foundational textbook introducing automata theory, computability, and complexity through formal definitions and rigorous proofs.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Introduction%20to%20the%20Theory%20of%20Computation"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "elegant approach to explaining complex concepts… clear, concise proofs make profound ideas accessible"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "Sipser builds complexity with almost ruthless clarity… dramatic structure rare in technical writing"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "concise style and lack of practical examples can make it less accessible"
+      }
+    ]
+  },
+  "biography diary of a young girl": {
+    "display": "The Diary of a Young Girl",
+    "domain": "biography",
+    "blurb": "Anne Frank's diary, written in hiding during Nazi occupation of the Netherlands, documenting a teenage girl's thoughts and experiences from 1942 to 1944.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Diary%20of%20a%20Young%20Girl"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "Anne's writing captures the nuances of her thoughts and emotions with remarkable clarity and maturity"
+      }
+    ]
+  },
+  "textbook gödel, escher, bach: an eternal golden braid": {
+    "display": "Gödel, Escher, Bach: An Eternal Golden Braid",
+    "domain": "textbook",
+    "blurb": "Douglas Hofstadter's 1979 book weaving mathematics, art, and music through dialogues and narratives exploring thought, creativity, and recursion.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=G%C3%B6del%2C%20Escher%2C%20Bach%3A%20An%20Eternal%20Golden%20Braid"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "weaves together concepts from mathematics, art, and music into a tapestry that explores the nature of human thought and creativity"
+      }
+    ]
+  },
+  "biography power broker": {
+    "display": "The Power Broker",
+    "domain": "biography",
+    "blurb": "Robert A. Caro's 1974 biography of Robert Moses, tracing how one urban planner's ambition reshaped New York City through decades of bureaucratic power.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Power%20Broker"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "Caro uses one man's life to reverse-engineer an entire system of how power actually operates"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "accumulated concrete detail, the granular texture of how power actually moves through committees, contracts, and highway routes"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "treats a bureaucrat's life with the sweep and moral weight of a Greek tragedy"
+      },
+      {
+        "model": "claude-fable-5-1",
+        "probe": "f",
+        "quote": "attention itself, sustained long enough and closely enough, is a form of art"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "intricate detailing and comprehensive narrative that weaves together urban planning, political power, and personal ambition"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "Caro's narrative is both panoramic and microscopically detailed… turning civic history into an epic meditation on ambition"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "prose has the momentum and inevitability of a great novel while remaining meticulously reported"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "patient accumulation of detail aesthetically compelling: each fact feels like another tile in a vast mosaic"
+      },
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "small procedural details accumulate until they reveal an immense, almost tragic structure of power"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "Caro's prose has a granite density and narrative momentum that makes a bureaucrat's life feel like an epic tragedy"
+      }
+    ]
+  },
+  "textbook introduction to linear algebra": {
+    "display": "Introduction to Linear Algebra",
+    "domain": "textbook",
+    "blurb": "Gilbert Strang's influential textbook emphasizing intuitive understanding and real-world applications of linear algebra through clear exposition and extensive examples.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Introduction%20to%20Linear%20Algebra"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "lacks depth in theoretical rigor and certain mathematical proofs… less suitable for those who wish to delve deeper"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "key theoretical points sometimes receive only a brief treatment before the text rushes back to applications"
+      }
+    ]
+  },
+  "biography life of samuel johnson": {
+    "display": "The Life of Samuel Johnson",
+    "domain": "biography",
+    "blurb": "James Boswell's 1791 biography of Samuel Johnson, built from recorded conversations and anecdotes rather than chronological narrative.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Life%20of%20Samuel%20Johnson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-5",
+        "probe": "f",
+        "quote": "a lesser man devoting his life to catching a greater one's speech before it evaporated"
+      },
+      {
+        "model": "claude-fable-5-1",
+        "probe": "f",
+        "quote": "A devoted, slightly ridiculous younger man spending decades taking notes so that a friend's voice would outlast him, and succeeding."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "raw, curated presence outlasts polished narrative architecture"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "Boswell essentially invented the modern biography by treating conversation itself as a worthy subject"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "feels like overhearing a living mind rather than reading a polished summary"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "f",
+        "quote": "Johnson's talk is rendered with such tactile rhythm and comic timing that the page feels like a room you can walk through."
+      }
+    ]
+  },
+  "biography immortal life of henrietta lacks": {
+    "display": "The Immortal Life of Henrietta Lacks",
+    "domain": "biography",
+    "blurb": "Rebecca Skloot's 2010 nonfiction account of Henrietta Lacks, whose cells became foundational to medical research without her knowledge or consent.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Immortal%20Life%20of%20Henrietta%20Lacks"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "weaves together three braided strands—scientific discovery, racial exploitation, and intimate family grief—without letting any single thread dominate"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "spare, luminous prose that braids scientific precision with the textured intimacy of family oral history"
+      }
+    ]
+  },
+  "biography steve jobs": {
+    "display": "Steve Jobs",
+    "domain": "biography",
+    "blurb": "Walter Isaacson's 2011 biography of Apple co-founder Steve Jobs, based on extensive interviews with Jobs and those around him.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Steve%20Jobs"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "Isaacson's writing style captures the complexity of Jobs' personality, blending detailed anecdotes with broader insights"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "each chapter revisits familiar themes (control, aesthetics, intuition) at higher resolution, giving the reader the sensation of zooming in on a fractal personality"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "it's structured like a sequence of clean, high-contrast vignettes: scenes of argument, design obsession, and reinvention that snap together into a coherent portrait"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "the prose never smooths those contradictions away, so the whole thing feels like brushed aluminum with the fingerprints still on it"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "the analytical framework feels thin by comparison"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "the writing often feels like a well-organized transcript rather than an interpretation, so I finish it knowing what Jobs did without feeling I understand why"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "Isaacson rarely pushes past Jobs's own mythology to offer a genuine thesis about the man"
+      },
+      {
+        "model": "claude-opus-5",
+        "probe": "o",
+        "quote": "the book keeps flinching from the harder analytic question of whether the cruelty was incidental to the genius or load-bearing"
+      },
+      {
+        "model": "claude-fable-5-1",
+        "probe": "o",
+        "quote": "that access seems to have cost the book its critical distance—the narrative keeps circling back to the reality distortion field"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "the portrayal often borders on hagiography, which can detract from a nuanced understanding of such a multifaceted individual"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "the book often feels like a greatest-hits compilation that reinforces the visionary jerk stereotype without probing deeply into the cultural, economic, and collaborative forces"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "it often feels like a polished compilation of interviews rather than a deeply interpretive biography with a strong, probing point of view"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "its exhaustive access sometimes substitutes accumulation of anecdotes for deeper psychological insight"
+      },
+      {
+        "model": "gpt-6-astra",
+        "probe": "o",
+        "quote": "its vivid anecdotes and extraordinary access aren't consistently matched by equally incisive analysis of Jobs's contradictions"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "its sheer length and granularity often substitute for real insight, leaving the central figure feeling more like a collection of anecdotes"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "The book feels more like a catalog of anecdotes about Jobs being difficult than a penetrating portrait of the man"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "o",
+        "quote": "it often reads like a curated highlight reel that leans heavily on Jobs's own narrative, with limited critical distance from his self-mythologizing"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "it often feels like polished myth-making that smooths Jobs's cruelty, erratic judgment, and interpersonal wreckage into genius narrative arcs"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "o",
+        "quote": "the anecdotes start to feel like they are there to burnish the myth rather than to interrogate how much of Apple's success was luck, markets, and a large supporting cast"
+      }
+    ]
+  },
+  "textbook thomas' calculus": {
+    "display": "Thomas' Calculus",
+    "domain": "textbook",
+    "blurb": "A comprehensive calculus textbook first published in 1953, widely adopted for undergraduate mathematics instruction across institutions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Thomas'%20Calculus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "explanations can sometimes be overly dense and not intuitive for beginners… focus on procedural problem-solving might overshadow deeper conceptual understanding"
+      }
+    ]
+  },
+  "textbook introduction to algorithms": {
+    "display": "Introduction to Algorithms",
+    "domain": "textbook",
+    "blurb": "Comprehensive algorithms textbook by Cormen, Leiserson, Rivest, and Stein, covering design and analysis with pseudocode and formal proofs.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Introduction%20to%20Algorithms"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "The illustrations and pseudocode are elegantly presented, which enhances readability and comprehension."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "Each one is presented with a clean statement, a purposeful design, and a proof that clicks into place."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "Each chapter mirrors its own subject: elegant base cases of intuition blossom into inductive towers of rigor."
+      },
+      {
+        "model": "claude-fable-5-1",
+        "probe": "o",
+        "quote": "Its 1,300 pages read like a reference manual pretending to be a teaching book."
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "it lacks accessibility for beginners due to its dense and formal writing style"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "Its highly formal, theorem-proof style can feel more like a reference manual than a learning aid."
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "o",
+        "quote": "The presentation often reads more like a reference manual than a guided tutorial, with dense prose."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "Its encyclopedic breadth often comes at the expense of intuition and narrative flow."
+      },
+      {
+        "model": "gpt-6-astra",
+        "probe": "o",
+        "quote": "Its encyclopedic rigor makes it stronger as a reference than as a first encounter with algorithms."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "It treats algorithms as museum pieces to be catalogued rather than tools to be wielded."
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "the prose is dry and encyclopedic, the presentation often prioritizes exhaustive rigor and notation over building intuition"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "o",
+        "quote": "The writing is dry, examples are sparse relative to the page count, and it can make the subject feel more intimidating."
+      }
+    ]
+  },
+  "biography team of rivals": {
+    "display": "Team of Rivals",
+    "domain": "biography",
+    "blurb": "Doris Kearns Goodwin's 2005 biography of Abraham Lincoln told through the intertwined lives of his rival cabinet members.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Team%20of%20Rivals"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "layered narrative interweaves personal letters, political maneuvering, and battlefield urgency into a tapestry that feels almost novelistic"
+      }
+    ]
+  },
+  "biography rise of theodore roosevelt": {
+    "display": "The Rise of Theodore Roosevelt",
+    "domain": "biography",
+    "blurb": "Edmund Morris's biography of Theodore Roosevelt, published 1979, tracing the President's rise through dynamic narrative and psychological depth.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Rise%20of%20Theodore%20Roosevelt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "The book's prose crackles with the same restless energy that drove Roosevelt himself, turning political history into a kind of muscular adventure narrative."
+      }
+    ]
+  },
+  "biography leonardo da vinci": {
+    "display": "Leonardo da Vinci",
+    "domain": "biography",
+    "blurb": "Walter Isaacson's 2017 biography of Leonardo da Vinci, exploring the Renaissance master's notebooks, sketches, and unfinished works as expressions of his restless curiosity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Leonardo%20da%20Vinci"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "sketches of turbulence, anatomical cross-sections, and light studies that feel like the mind's own brushwork made visible"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "f",
+        "quote": "the gap between what the eye sees and what the hand can fix on paper, which gives the whole biography the texture of looking at a painting that never quite settles"
+      }
+    ]
+  },
+  "textbook principles of mathematical analysis": {
+    "display": "Principles of Mathematical Analysis",
+    "domain": "textbook",
+    "blurb": "Walter Rudin's 1976 textbook presenting real analysis through austere, rigorously structured proofs without motivation or digression.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principles%20of%20Mathematical%20Analysis"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "every lemma feels like a precisely cut stone that locks perfectly into the next… turns each page into a small discovery"
+      },
+      {
+        "model": "claude-opus-5",
+        "probe": "o",
+        "quote": "you get a beautiful magic trick instead of a lesson in how to think analytically"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "proofs are so compressed and unmotivated that they often read like a sequence of clever tricks"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "o",
+        "quote": "the writing is so compressed that it often withholds the motivation, pictures, and failed attempts"
+      }
+    ]
+  },
+  "textbook spivak's calculus": {
+    "display": "Spivak's Calculus",
+    "domain": "textbook",
+    "blurb": "Michael Spivak's rigorous 1967 calculus textbook treating the subject as unified logical architecture rather than computational procedures.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Spivak's%20Calculus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-5",
+        "probe": "f",
+        "quote": "refuses to treat calculus as a toolkit and insists on treating it as a story about the real numbers"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "prose feels almost literary, turning definitions and theorems into a carefully paced narrative rather than a dry checklist"
+      },
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "spare definitions and carefully sequenced proofs turn familiar ideas about motion and change into an elegant logical architecture"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "patient, almost monastic stripping away of calculus's computational machinery until only the rigorous logical skeleton remains"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "uncompromising clarity of its prose—every definition and proof feels carved rather than written, with no wasted motion"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "o",
+        "quote": "encyclopedic approach often buries the conceptual beauty of calculus under an avalanche of formulaic exercises"
+      }
+    ]
+  },
+  "biography quest for corvo": {
+    "display": "The Quest for Corvo",
+    "domain": "biography",
+    "blurb": "A.J.A. Symons's 1934 biography of the elusive author Frederick Rolfe, structured as detective work through fragmented sources and contradictions.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Quest%20for%20Corvo"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "a biography that behaves like a detective novel, with Symons hunting the elusive, possibly fraudulent author Frederick Rolfe"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "It reads less like a life than a séance conducted through paperwork… letting Baron Corvo appear only in flashes, refractions, and contradictions"
+      }
+    ]
+  },
+  "textbook principles of economics": {
+    "display": "Principles of Economics",
+    "domain": "textbook",
+    "blurb": "N. Gregory Mankiw's introductory economics textbook presenting fundamental principles through accessible prose and market-oriented frameworks.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principles%20of%20Economics"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "It presents contested ideological frameworks as settled science with a confidence that feels pedagogically misleading."
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "It presents economics with a veneer of settled science, smoothing away the field's genuine controversies."
+      }
+    ]
+  },
+  "textbook art of computer programming": {
+    "display": "The Art of Computer Programming",
+    "domain": "textbook",
+    "blurb": "Donald Knuth's multi-volume foundational work on algorithms and computer science, begun in 1968, renowned for meticulously typeset mathematical exposition.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Art%20of%20Computer%20Programming"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "dense technical material is laid out with almost architectural precision… like a well-composed score rather than mere reference material"
+      }
+    ]
+  },
+  "textbook introduction to electrodynamics": {
+    "display": "Introduction to Electrodynamics",
+    "domain": "textbook",
+    "blurb": "David J. Griffiths' widely-used undergraduate textbook on classical electromagnetism, first published in 1989 and now in its fourth edition.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Introduction%20to%20Electrodynamics"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "Ideas are built layer by layer with just enough mathematical detail to feel inevitable rather than heavy."
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "charm often substitutes for rigor: the breezy tone glosses over subtleties…that students then have to painfully relearn later"
+      },
+      {
+        "model": "o3",
+        "probe": "o",
+        "quote": "Readers can come away with computational recipes rather than deeper physical insight."
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "o",
+        "quote": "The treatment can feel too streamlined, with some deeper conceptual and mathematical subtleties deferred or softened."
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "o",
+        "quote": "charm can mask how much is being swept under the rug until later, more rigorous treatments"
+      }
+    ]
+  },
+  "textbook gravitation": {
+    "display": "Gravitation",
+    "domain": "textbook",
+    "blurb": "Misner, Thorne, and Wheeler's 1973 treatise on general relativity, notable for its oversized format, hand-drawn margins, and integration of rigorous mathematics with lyrical prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Gravitation"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "f",
+        "quote": "thick black cover, bold typography, and hand-drawn marginal notes give it a tactile, almost Borgesian weight… spacetime curvature feel both precise and wondrous"
+      }
+    ]
+  },
+  "architect alvar aalto": {
+    "display": "Alvar Aalto",
+    "domain": "architect",
+    "blurb": "Finnish architect (1898–1976) who combined modernist principles with organic forms, warm materials, and human-scaled design.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alvar%20Aalto"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "softening clean lines with warm wood, textured brick, and gently curving forms"
+      }
+    ]
+  },
+  "textbook feynman lectures on physics": {
+    "display": "The Feynman Lectures on Physics",
+    "domain": "textbook",
+    "blurb": "Richard Feynman's three-volume physics lectures from Caltech, 1961–1963, presenting classical mechanics through quantum mechanics with conversational rigor and visual elegance.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Feynman%20Lectures%20on%20Physics"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "he makes simplicity look inevitable only after showing you why the obvious answer fails"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "complex things can be made plain without being made cheap"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "Feynman's voice is so present that you feel like you're being let in on secrets"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "ideas arrive with the clean geometry of a well-drawn diagram, each sentence pared until only the essential contour remains"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "f",
+        "quote": "equations sit like carefully placed brushstrokes rather than dense blocks of notation"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "students frequently mistake understanding Feynman's understanding for their own, and the text can leave beginners stranded"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "clarity of pedagogy and practice matter more than genius monologue for the majority of learners"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "o",
+        "quote": "Most readers come away inspired and still unable to solve the next problem set"
+      }
+    ]
+  },
+  "biography glass castle": {
+    "display": "The Glass Castle",
+    "domain": "biography",
+    "blurb": "Jeannette Walls' 2005 memoir of growing up with neglectful, artistic parents across America in poverty and instability.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Glass%20Castle"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "renders extreme poverty and parental neglect with the flat, luminous clarity of a fairy tale… that restraint creates a tension between what is remembered and how it is told"
+      }
+    ]
+  },
+  "object stanley quencher h2.0": {
+    "display": "Stanley Quencher H2.0",
+    "domain": "object",
+    "blurb": "Stanley's 2023 insulated tumbler with handle, marketed as a versatile hydration vessel for everyday carry.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stanley%20Quencher%20H2.0"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "o",
+        "quote": "oversized handle and narrow base strike me as an awkward compromise… turns the simple task of carrying water into something that demands its own substantial footprint"
+      }
+    ]
+  },
+  "dish kashmiri rogan josh": {
+    "display": "Kashmiri rogan josh",
+    "domain": "dish",
+    "blurb": "A Kashmiri braised meat curry with deep red sauce from tomatoes and aromatic spices, traditionally cooked low and slow.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kashmiri%20rogan%20josh"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "deep crimson sauce, edged with glistening spice-infused oil, gives it the visual richness of a small oil painting"
+      }
+    ]
+  },
+  "smell rain on warm asphalt": {
+    "display": "Rain on warm asphalt",
+    "domain": "smell",
+    "blurb": "The scent produced when rain falls on heated asphalt or pavement, a common urban olfactory phenomenon associated with weather change.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20on%20warm%20asphalt"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "stored heat meeting cool rain, a hard city surface briefly becoming atmospheric"
+      }
+    ]
+  },
+  "actor oscar isaac": {
+    "display": "Oscar Isaac",
+    "domain": "actor",
+    "blurb": "American actor born 1979, known for roles in Ex Machina, Moon Knight, and Dune films.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Oscar%20Isaac"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "His performances combine quiet intensity with a loose, almost musical sense of timing, making even restrained characters feel vividly alive."
+      }
+    ]
+  },
+  "philosopher michel de montaigne": {
+    "display": "Michel de Montaigne",
+    "domain": "philosopher",
+    "blurb": "French Renaissance philosopher whose sixteenth-century Essays blend personal reflection with wide-ranging inquiry into human nature and custom.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Michel%20de%20Montaigne"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "a mind taking a walk: curious, digressive, and never quite willing to mistake a polished argument for the whole truth"
+      }
+    ]
+  },
+  "textbook structure and interpretation of computer programs": {
+    "display": "Structure and Interpretation of Computer Programs",
+    "domain": "textbook",
+    "blurb": "Abelson and Sussman's 1985 textbook teaching computer science through Scheme, treating programming as a medium for expressing ideas about abstraction and process.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Structure%20and%20Interpretation%20of%20Computer%20Programs"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "f",
+        "quote": "treats computation as a medium for expressing ideas rather than just a technical skill to acquire"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "f",
+        "quote": "builds enormous conceptual towers from a tiny set of primitives, showing that complexity can emerge from radical simplicity"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "f",
+        "quote": "treats programming not as engineering drudgery but as a medium for expressing ideas about process itself"
+      },
+      {
+        "model": "claude-opus-5",
+        "probe": "f",
+        "quote": "you've written an interpreter for the very language you've been writing in, which is a genuinely vertiginous move"
+      },
+      {
+        "model": "claude-fable-5-1",
+        "probe": "f",
+        "quote": "derives so much from so little: a handful of Lisp primitives, then closures, then streams"
+      },
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "prose, code, and illustrations intertwine so seamlessly that the boundary between mathematics and software feels almost poetic"
+      },
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "treats programs as a medium for expressing ideas, not just instructions for machines"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "probe": "f",
+        "quote": "treats programming less as instruction-following and more as the construction of precise, expressive worlds"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "treats programming not as engineering but as a form of incantation"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "treats programming not as vocational skill but as epistemology"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "spare, almost musical clarity with which it treats abstraction itself as the primary material"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "f",
+        "quote": "The prose is spare and rhythmic, closer to a well-cut proof than to typical technical writing, and the examples unfold with the same inevitability as…"
+      },
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "The Scheme-centric approach can feel like an aesthetic choice masquerading as pedagogical necessity"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "probe": "o",
+        "quote": "more like an exercise in intellectual aesthetics than a practical entry into programming for many learners"
+      },
+      {
+        "model": "claude-fable-5",
+        "probe": "o",
+        "quote": "While it's revered as a rite of passage, it front-loads heavy abstraction (recursion, higher-order procedures, metacircular evaluators) before learners have built practical intuition, which loses…"
+      },
+      {
+        "model": "claude-fable-5-1",
+        "probe": "o",
+        "quote": "a huge fraction of learner effort goes into wrestling with parentheses and a language they'll rarely use again"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "probe": "o",
+        "quote": "feels more like a philosophy seminar than a practical foundation for most programmers"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "elegant theater than efficient ways to understand real systems"
+      },
+      {
+        "model": "grok-4.6",
+        "probe": "o",
+        "quote": "MIT-specific academic exercise rather than an efficient way to learn programming"
+      }
+    ]
+  },
+  "textbook probability theory: the logic of science": {
+    "display": "Probability Theory: The Logic of Science",
+    "domain": "textbook",
+    "blurb": "E. T. Jaynes's treatise reframing probability as the logic of plausible reasoning, interweaving Bayesian inference with epistemology and mathematical rigor.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Probability%20Theory%3A%20The%20Logic%20of%20Science"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "probability not as mere gambling-math but as the grammar of plausible reasoning itself… every theorem laid like a load-bearing beam in a cathedral of thought"
+      }
+    ]
+  },
+  "economist richard thaler": {
+    "display": "Richard Thaler",
+    "domain": "economist",
+    "blurb": "American economist born 1945 who pioneered behavioral economics and popularized the concept of \"nudges\" to improve decision-making.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Richard%20Thaler"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "o",
+        "quote": "small changes to how choices are presented can receive more attention than structural constraints like poverty, market power, and weak public institutions"
+      }
+    ]
+  },
+  "textbook linear algebra done right": {
+    "display": "Linear Algebra Done Right",
+    "domain": "textbook",
+    "blurb": "Sheldon Axler's linear algebra textbook that postpones determinants to the final chapter, rebuilding the subject from vector spaces and linear maps.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Linear%20Algebra%20Done%20Right"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "making structure precede calculation: vector spaces and linear maps take center stage, while determinants wait in the wings"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "deliberate renunciation of determinants until the final chapter—an act of principled restraint that rebuilds an entire subject from cleaner foundations"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "clean, determinant-free development of the subject feels almost musical in how each theorem flows from the last with minimal clutter"
+      }
+    ]
+  },
+  "theologian julian of norwich": {
+    "display": "Julian of Norwich",
+    "domain": "theologian",
+    "blurb": "English mystic and anchorite of the fourteenth century, author of Revelations of Divine Love, an account of visions and theological reflections on suffering and divine love.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Julian%20of%20Norwich"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "all creation held in something as small as a hazelnut has the compression and radiance of a great poem"
+      }
+    ]
+  },
+  "airesearcher causality": {
+    "display": "Causality",
+    "domain": "airesearcher",
+    "blurb": "Judea Pearl's mathematical framework for understanding causality through directed acyclic graphs and interventional logic, developed from the 1980s onward.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Causality"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "simple diagrams make hidden assumptions visible and turn questions about why into something mathematically precise"
+      }
+    ]
+  },
+  "textbook concrete mathematics": {
+    "display": "Concrete Mathematics",
+    "domain": "textbook",
+    "blurb": "Graham, Knuth, and Patashnik's 1989 computer science textbook blending rigorous mathematics with playful margins and hand-drawn illustrations.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Concrete%20Mathematics"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "marginal graffiti, self-deprecating jokes, and sudden shifts from elementary puzzles to research-level problems create a voice that trusts the reader's intelligence"
+      },
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "marginal graffiti—actual student notes, jokes, and clarifications scribbled in the margins—creates a sense of dialogue across time"
+      }
+    ]
+  },
+  "airesearcher work on visual intelligence": {
+    "display": "Work on Visual Intelligence",
+    "domain": "airesearcher",
+    "blurb": "Fei-Fei Li's research program applying computational methods to visual perception and embodied AI understanding.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Work%20on%20Visual%20Intelligence"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "treats visual intelligence as a bridge between the messy richness of the world and the clean abstractions of computation"
+      }
+    ]
+  },
+  "sound rain tapping on a slate roof": {
+    "display": "Rain tapping on a slate roof",
+    "domain": "sound",
+    "blurb": "The natural sound of rainfall striking a slate roof, characterized by irregular rhythm and crisp acoustic tones.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20tapping%20on%20a%20slate%20roof"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "irregular rhythm balances a steady hush with small, crisp accents"
+      }
+    ]
+  },
+  "sound rain tapping on a skylight": {
+    "display": "Rain tapping on a skylight",
+    "domain": "sound",
+    "blurb": "The sound of rain striking a skylight, creating an irregular rhythmic pattern audible from beneath sheltered interior space.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20tapping%20on%20a%20skylight"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "irregular rhythm has a delicate balance of pattern and surprise, like percussion that never quite repeats"
+      }
+    ]
+  },
+  "aimodel alexnet": {
+    "display": "AlexNet",
+    "domain": "aimodel",
+    "blurb": "Convolutional neural network developed by Krizhevsky, Sutskever, and Hinton at University of Toronto in 2012, which won the ImageNet competition.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=AlexNet"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "straightforward progression from local visual patterns to increasingly abstract representations—it has the clean rhythm of a well-composed building"
+      }
+    ]
+  },
+  "sound rain pattering on a roof": {
+    "display": "Rain pattering on a roof",
+    "domain": "sound",
+    "blurb": "A natural sound of raindrops striking a roof, commonly described as calming and atmospheric.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Rain%20pattering%20on%20a%20roof"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "o",
+        "quote": "the irregular tapping can be more distracting than soothing… repetitive without being reliably steady"
+      }
+    ]
+  },
+  "textbook elements of statistical learning": {
+    "display": "Elements of Statistical Learning",
+    "domain": "textbook",
+    "blurb": "Hastie, Tibshirani, and Friedman's comprehensive 2009 textbook on statistical learning methods, combining mathematical rigor with geometric intuition and careful prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Elements%20of%20Statistical%20Learning"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "lucid geometric illustrations translate abstract algorithms into vivid mental pictures… narrative momentum that lets ideas unfold like themes in music"
+      }
+    ]
+  },
+  "biography alexander hamilton": {
+    "display": "Alexander Hamilton",
+    "domain": "biography",
+    "blurb": "Ron Chernow's 2004 biography of Alexander Hamilton, tracing the Founding Father's rise from Caribbean orphan to Treasury Secretary and his fatal 1804 duel with Burr.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Alexander%20Hamilton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "long, propulsive sentences that swell like a score… a study in controlled velocity—ideas, letters, and crises arriving in rapid succession"
+      }
+    ]
+  },
+  "textbook sapiens": {
+    "display": "Sapiens",
+    "domain": "textbook",
+    "blurb": "Yuval Noah Harari's 2011 popular history tracing human civilization from foraging societies to the modern world.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sapiens"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-4-5",
+        "probe": "o",
+        "quote": "prioritizes a memorable narrative over the hedged, contested nature of the evidence"
+      }
+    ]
+  },
+  "biography einstein: his life and universe": {
+    "display": "Einstein: His Life and Universe",
+    "domain": "biography",
+    "blurb": "Walter Isaacson's 2007 biography interweaving Einstein's scientific breakthroughs with intimate letters and personal details, tracing the man behind relativity.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Einstein%3A%20His%20Life%20and%20Universe"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "o3",
+        "probe": "f",
+        "quote": "interlaces lucid explanations of breakthrough physics with intimate glimpses of Einstein's letters, letting intellectual discovery and human vulnerability illuminate each other"
+      },
+      {
+        "model": "grok-4.5",
+        "probe": "f",
+        "quote": "braids the austere elegance of relativity and thought experiments with the messy, human textures of Einstein's friendships, stubbornness, and wandering curiosity"
+      }
+    ]
+  },
+  "textbook artificial intelligence: a modern approach": {
+    "display": "Artificial Intelligence: A Modern Approach",
+    "domain": "textbook",
+    "blurb": "Stuart Russell and Peter Norvig's comprehensive textbook on artificial intelligence, first published in 1995, covering foundational concepts through advanced topics.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Artificial%20Intelligence%3A%20A%20Modern%20Approach"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "f",
+        "quote": "masterfully balances depth with accessibility, offering a comprehensive overview of AI"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "unifying disparate threads—logic, probability, neuroscience, linguistics—into a single coherent architecture without collapsing their differences"
+      },
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "so determined to be encyclopedic that it often reads like a reference manual rather than a textbook"
+      }
+    ]
+  },
+  "word iridescence": {
+    "display": "Iridescence",
+    "domain": "word",
+    "blurb": "The optical phenomenon where a surface displays shimmering colors that shift with viewing angle, as in oil films or butterfly wings.",
+    "extras": {
+      "definition": "n. the property of displaying a shifting play of colors, especially as light reflects from a surface at different angles.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Iridescence"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "liquid consonants and soft ending give it a shimmering, almost musical quality… colors shifting gently as the word unfolds"
+      }
+    ]
+  },
+  "street royal mile": {
+    "display": "The Royal Mile",
+    "domain": "street",
+    "blurb": "A steep, medieval street in Edinburgh, Scotland, lined with historic stone buildings, closes, and connecting down from the castle to Holyrood Palace.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Royal%20Mile"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "dark stone façades, narrow closes, and uneven skyline give it the atmosphere of a Gothic illustration brought to life"
+      }
+    ]
+  },
+  "textbook information theory, inference, and learning algorithms": {
+    "display": "Information Theory, Inference, and Learning Algorithms",
+    "domain": "textbook",
+    "blurb": "David J.C. MacKay's comprehensive 2003 textbook unifying information theory, statistical inference, and machine learning through mathematics and visualization.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Information%20Theory%2C%20Inference%2C%20and%20Learning%20Algorithms"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "f",
+        "quote": "every figure, every marginal note, every equation earns its place, creating a text that feels maximally informative per unit attention"
+      }
+    ]
+  },
+  "dish persian tahdig": {
+    "display": "Persian Tahdig",
+    "domain": "dish",
+    "blurb": "Persian rice dish with a crispy, golden-brown crust formed on the bottom of the cooking pot, contrasting with tender grains inside.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Persian%20Tahdig"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "golden, crackling crust turns a simple pot of rice into something sculptural, with a dramatic contrast between the crisp exterior and the tender grains"
+      }
+    ]
+  },
+  "textbook principia mathematica": {
+    "display": "Principia Mathematica",
+    "domain": "textbook",
+    "blurb": "Russell and Whitehead's three-volume 1910–1913 treatise reducing mathematics to symbolic logic, foundational to twentieth-century mathematical philosophy.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principia%20Mathematica"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "spending hundreds of pages to prove that 1+1=2 feels like a magnificent machine built to solve a problem that dissolves"
+      }
+    ]
+  },
+  "textbook clean code": {
+    "display": "Clean Code",
+    "domain": "textbook",
+    "blurb": "Robert C. Martin's 2008 programming manual prescribing practices for writing cleaner, more maintainable software code.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Clean%20Code"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "grok-4.5",
+        "probe": "o",
+        "quote": "It is widely treated as essential gospel in software circles, yet it elevates a narrow set of stylistic dogmas (tiny methods, rigid naming rituals, certain…"
+      }
+    ]
+  },
+  "historian muqaddimah": {
+    "display": "Muqaddimah",
+    "domain": "historian",
+    "blurb": "Ibn Khaldun's 14th-century *Muqaddimah*, an introduction to universal history emphasizing social cycles, economics, and the scientific study of civilization.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Muqaddimah"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "sweeping patterns of solidarity, power, and decline emerge from closely observed human behavior"
+      }
+    ]
+  },
+  "textbook stewart's calculus": {
+    "display": "Stewart's Calculus",
+    "domain": "textbook",
+    "blurb": "James Stewart's calculus textbook, first published in 1987, a comprehensive single-variable and multivariable calculus resource widely used in North American universities.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Stewart's%20Calculus"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k2.6",
+        "probe": "o",
+        "quote": "engineered to produce competent test-takers rather than thinkers who grasp why calculus reshaped our understanding of change"
+      }
+    ]
+  },
+  "textbook design patterns: elements of reusable object-oriented software": {
+    "display": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "domain": "textbook",
+    "blurb": "1994 foundational software engineering textbook by Gamma, Helm, Johnson, and Vlissides documenting twenty-three reusable object-oriented design patterns.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Design%20Patterns%3A%20Elements%20of%20Reusable%20Object-Oriented%20Software"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "The specific examples are quite dated, which might not align with modern programming practices or languages"
+      }
+    ]
+  },
+  "street kiyamachi-dōri": {
+    "display": "Kiyamachi-dōri",
+    "domain": "street",
+    "blurb": "A narrow canal-lined street in Kyoto, Japan, bordered by cherry trees and traditional lantern-lit facades.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Kiyamachi-d%C5%8Dri"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "dark water catching warm light, delicate blossoms against weathered wood, and a street that reveals itself in small details"
+      }
+    ]
+  },
+  "textbook c programming language": {
+    "display": "The C Programming Language",
+    "domain": "textbook",
+    "blurb": "A 1988 programming manual by Kernighan and Ritchie that defines the C language through terse, elegant examples and spare prose.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20C%20Programming%20Language"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-5.2",
+        "probe": "f",
+        "quote": "spare and crystalline: every example earns its place, and the prose feels like well-factored code—tight, direct, and readable"
+      }
+    ]
+  },
+  "textbook introduction to quantum mechanics": {
+    "display": "Introduction to Quantum Mechanics",
+    "domain": "textbook",
+    "blurb": "David J. Griffiths' quantum mechanics textbook, widely used in undergraduate physics curricula for its pedagogical approach to foundational concepts.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Introduction%20to%20Quantum%20Mechanics"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-opus-5",
+        "probe": "o",
+        "quote": "the charm does a lot of work that rigor should be doing… students walk away feeling comfortable while still holding a fairly muddled conceptual picture"
+      },
+      {
+        "model": "gpt-4o",
+        "probe": "o",
+        "quote": "oversimplifies certain complex topics, lacking the depth needed for a more thorough understanding"
+      }
+    ]
+  },
+  "biography years of lyndon johnson": {
+    "display": "The Years of Lyndon Johnson",
+    "domain": "biography",
+    "blurb": "Robert Caro's multi-volume biography of Lyndon Johnson, begun in 1982, tracing power through political institutions and American history.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Years%20of%20Lyndon%20Johnson"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "Caro treats political power as a material force you can trace through courthouse records, Senate cloakrooms, and the exact wording of a bill"
+      }
+    ]
+  },
+  "blogger maggie appleton": {
+    "display": "Maggie Appleton",
+    "domain": "blogger",
+    "blurb": "Maggie Appleton is a blogger and illustrator known for visual essays combining hand-drawn sketches with technical explanations of complex ideas.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Maggie%20Appleton"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "gpt-6-astra",
+        "probe": "f",
+        "quote": "the interplay of hand-drawn textures, generous space, and precise language: the design makes complex ideas feel approachable without sanding away their complexity"
+      }
+    ]
+  },
+  "biography master of the senate": {
+    "display": "Master of the Senate",
+    "domain": "biography",
+    "blurb": "Robert Caro's third volume of his Lyndon Johnson biography, published 2002, depicting Johnson's Senate years through meticulous political detail.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=Master%20of%20the%20Senate"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "Caro transforms legislative procedure into high drama through obsessive, almost geological attention to detail"
+      }
+    ]
+  },
+  "biography man who loved only numbers": {
+    "display": "The Man Who Loved Only Numbers",
+    "domain": "biography",
+    "blurb": "Paul Hoffman's biography of mathematician Paul Erdős, chronicling a life of perpetual wandering and mathematical collaboration.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Man%20Who%20Loved%20Only%20Numbers"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5-1",
+        "probe": "f",
+        "quote": "a man with no fixed home, no possessions beyond a half-empty suitcase… a private vocabulary that turned an eccentric existence into something like poetry"
+      }
+    ]
+  },
+  "textbook elements of style": {
+    "display": "The Elements of Style",
+    "domain": "textbook",
+    "blurb": "William Strunk Jr. and E.B. White's 1959 guide to composition and style, prescriptive rules for English writing.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Elements%20of%20Style"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "claude-fable-5-1",
+        "probe": "o",
+        "quote": "it teaches writers to fear their own sentences rather than understand how they work"
+      }
+    ]
+  },
+  "biography hare with amber eyes": {
+    "display": "The Hare with Amber Eyes",
+    "domain": "biography",
+    "blurb": "Edmund de Waal's 2010 memoir tracing a Japanese netsuke collection through generations of the Ephrussi dynasty across empires and wars.",
+    "extras": {
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Hare%20with%20Amber%20Eyes"
+        }
+      ],
+      "hasImage": false
+    },
+    "endorsements": [
+      {
+        "model": "kimi-k3",
+        "probe": "f",
+        "quote": "a biography of objects and the rooms they inhabited… prose has this luminous, almost ceramic stillness"
+      }
+    ]
   }
 }

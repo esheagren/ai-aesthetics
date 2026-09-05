@@ -33,6 +33,7 @@ const DOMAIN_LABELS = {
   musician: 'Musician', composer: 'Contemporary composer', song: 'Song',
   director: 'Film director', proglang: 'Programming language', sound: 'Sound',
   country: 'Country',
+  biography: 'Biography', textbook: 'Textbook',
 };
 
 // Sequential blue ramp (light steps 100->700) for magnitude cells
@@ -128,7 +129,7 @@ function descriptorPanels() {
 
 // --- Vocabulary embedding map ---
 const FAM_COLOR = { Anthropic: 'var(--fam-a)', OpenAI: 'var(--fam-o)', Google: 'var(--fam-g)', DeepSeek: 'var(--fam-d)', Moonshot: 'var(--fam-k)', xAI: 'var(--fam-x)' };
-const SHORT = { 'claude-opus-4-1': 'Opus 4.1', 'claude-opus-4-5': 'Opus 4.5', 'claude-opus-4-8': 'Opus 4.8', 'claude-fable-5': 'Fable 5', 'claude-opus-5': 'Opus 5', 'claude-fable-5-1': 'Fable 5.1', 'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol', 'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5F', 'gemini-3.7-flash': 'Gemini 3.7F', 'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'kimi-k3': 'Kimi K3', 'grok-4.5': 'Grok 4.5', 'grok-4.6': 'Grok 4.6' };
+const SHORT = { 'claude-opus-4-1': 'Opus 4.1', 'claude-opus-4-5': 'Opus 4.5', 'claude-opus-4-8': 'Opus 4.8', 'claude-fable-5': 'Fable 5', 'claude-opus-5': 'Opus 5', 'claude-fable-5-1': 'Fable 5.1', 'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol', 'gpt-6-astra': 'GPT-6 Astra', 'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5F', 'gemini-3.7-flash': 'Gemini 3.7F', 'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'kimi-k3': 'Kimi K3', 'grok-4.5': 'Grok 4.5', 'grok-4.6': 'Grok 4.6' };
 
 function vocabMap() {
   const W = 960, H = 640, PAD = 56;

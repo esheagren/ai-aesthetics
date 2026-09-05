@@ -64,7 +64,7 @@ const V1_DOMAINS = new Set(['book', 'film', 'album', 'architect', 'city', 'paint
 const SHORT = {
   'claude-opus-4-1': 'Opus 4.1', 'claude-opus-4-5': 'Opus 4.5', 'claude-opus-4-8': 'Opus 4.8',
   'claude-fable-5': 'Fable 5', 'claude-opus-5': 'Opus 5', 'claude-fable-5-1': 'Fable 5.1',
-  'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol',
+  'gpt-4o': 'GPT-4o', 'o3': 'o3', 'gpt-5.2': 'GPT-5.2', 'gpt-5.6-sol': 'GPT-5.6 Sol', 'gpt-6-astra': 'GPT-6 Astra',
   'gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'gemini-3.5-flash': 'Gemini 3.5 Flash', 'gemini-3.7-flash': 'Gemini 3.7 Flash',
   'deepseek-v4-pro': 'DeepSeek V4 Pro', 'kimi-k2.6': 'Kimi K2.6', 'kimi-k3': 'Kimi K3',
   'grok-4.5': 'Grok 4.5', 'grok-4.6': 'Grok 4.6',
@@ -86,12 +86,13 @@ const DOMAIN_LABELS = {
   musician: 'Musician', composer: 'Contemporary composer', song: 'Song',
   director: 'Film director', proglang: 'Programming language', sound: 'Sound',
   country: 'Country',
+  biography: 'Biography', textbook: 'Textbook',
 };
 // Groups may list ids whose data is still being collected (no summary cells
 // yet) — the client rail only renders ids present in DATA.domains, so those
 // fields appear automatically once their collection lands.
 const DOMAIN_GROUPS = [
-  { label: 'Literature & Language', ids: ['book', 'poem', 'novelist', 'childrensbook', 'religioustext', 'word'] },
+  { label: 'Literature & Language', ids: ['book', 'poem', 'novelist', 'biography', 'textbook', 'childrensbook', 'religioustext', 'word'] },
   { label: 'Art & Architecture', ids: ['painting', 'artmovement', 'architect', 'building', 'monument'] },
   { label: 'Film, TV & Theater', ids: ['film', 'director', 'tvshow', 'actor', 'actress', 'play', 'musical'] },
   { label: 'Thinkers', ids: ['philosopher', 'economist', 'scientist', 'mathematician', 'historian', 'psychologist', 'theologian', 'computerscientist', 'airesearcher', 'aimodel', 'blogger'] },
@@ -109,7 +110,7 @@ const byFamily = ['Anthropic', 'OpenAI', 'Google', 'xAI', 'DeepSeek', 'Moonshot'
 // Flash") is still a lighter tier than "3.1 Pro" — so it needs its own map.
 const POWER_RANK = {
   'claude-fable-5-1': 1, 'claude-fable-5': 2, 'claude-opus-5': 3, 'claude-opus-4-8': 4, 'claude-opus-4-5': 5, 'claude-opus-4-1': 6,
-  'gpt-5.6-sol': 1, 'gpt-5.2': 2, 'o3': 3, 'gpt-4o': 4,
+  'gpt-6-astra': 1, 'gpt-5.6-sol': 2, 'gpt-5.2': 3, 'o3': 4, 'gpt-4o': 5,
   'gemini-3.1-pro-preview': 1, 'gemini-3.7-flash': 2, 'gemini-3.5-flash': 3,
   'deepseek-v4-pro': 1,
   'kimi-k3': 1, 'kimi-k2.6': 2,
@@ -119,10 +120,10 @@ const models = [...S.models].sort((a, b) => byFamily.indexOf(a.family) - byFamil
 // Cross-family capability order, most capable first — used to sequence the
 // entity-card quotes (strongest voices speak first). Unlisted ids sort last.
 const CAPABILITY_RANK = {
-  'claude-fable-5-1': 1, 'claude-fable-5': 2, 'claude-opus-5': 3, 'gpt-5.6-sol': 4, 'claude-opus-4-8': 5,
-  'gemini-3.1-pro-preview': 6, 'grok-4.6': 7, 'grok-4.5': 8, 'claude-opus-4-5': 9, 'gpt-5.2': 10,
-  'kimi-k3': 11, 'deepseek-v4-pro': 12, 'kimi-k2.6': 13, 'gemini-3.7-flash': 14, 'gemini-3.5-flash': 15,
-  'claude-opus-4-1': 16, 'gpt-4o': 17,
+  'claude-fable-5-1': 1, 'claude-fable-5': 2, 'claude-opus-5': 3, 'gpt-6-astra': 4, 'gpt-5.6-sol': 5, 'claude-opus-4-8': 6,
+  'gemini-3.1-pro-preview': 7, 'grok-4.6': 8, 'grok-4.5': 9, 'claude-opus-4-5': 10, 'gpt-5.2': 11,
+  'kimi-k3': 12, 'deepseek-v4-pro': 13, 'kimi-k2.6': 14, 'gemini-3.7-flash': 15, 'gemini-3.5-flash': 16,
+  'claude-opus-4-1': 17, 'gpt-4o': 18,
 };
 // Every color entity in data/entitycards.json ("color <norm>"), mapped to an
 // honest hex. Keys are the client's canonical norm (canonEnt output). The very
@@ -569,10 +570,11 @@ const MRO_DATA = {
   'claude-opus-4-8': [4, 'frontier', 'Opus 4.8'],
   'claude-opus-4-5': [5, 'frontier', 'Opus 4.5'],
   'claude-opus-4-1': [6, 'frontier', 'Opus 4.1'],
-  'gpt-5.6-sol': [1, 'frontier', 'GPT-5.6 Sol'],
-  'gpt-5.2': [2, 'frontier', 'GPT-5.2'],
-  'o3': [3, 'frontier', 'o3'],
-  'gpt-4o': [4, 'workhorse', 'GPT-4o'],
+  'gpt-6-astra': [1, 'frontier', 'GPT-6 Astra'],
+  'gpt-5.6-sol': [2, 'frontier', 'GPT-5.6 Sol'],
+  'gpt-5.2': [3, 'frontier', 'GPT-5.2'],
+  'o3': [4, 'frontier', 'o3'],
+  'gpt-4o': [5, 'workhorse', 'GPT-4o'],
   'gemini-3.1-pro-preview': [1, 'frontier', 'Gemini 3.1 Pro'],
   'gemini-3.7-flash': [2, 'lightweight', 'Gemini 3.7 Flash'],
   'gemini-3.5-flash': [3, 'lightweight', 'Gemini 3.5 Flash'],

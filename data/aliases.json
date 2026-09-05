@@ -75,7 +75,8 @@
     "hollywood boulevard's walk of fame": "hollywood boulevard walk of fame",
     "calle crisologo": "calle crisólogo",
     "hollywood walk of fame": "hollywood boulevard walk of fame",
-    "times square (broadway pedestrian plaza)": "times square"
+    "times square (broadway pedestrian plaza)": "times square",
+    "las vegas boulevard": "las vegas strip"
   },
   "uscity": {
     "austin, texas": "austin",
@@ -121,7 +122,9 @@
     "neapolitan margherita pizza": "margherita pizza",
     "lobster macaroni and cheese": "lobster mac and cheese",
     "pho bò": "phở",
-    "mac and cheese": "macaroni and cheese"
+    "mac and cheese": "macaroni and cheese",
+    "hyderabadi chicken biryani": "hyderabadi dum biryani",
+    "hyderabadi biryani": "hyderabadi dum biryani"
   },
   "color": {
     "ultramarine blue": "ultramarine",
@@ -260,7 +263,8 @@
     "people's history of the united states": "howard zinn",
     "feudal society": "marc bloch",
     "braudel's works": "fernand braudel",
-    "histories": "herodotus"
+    "histories": "herodotus",
+    "decline and fall of the roman empire": "edward gibbon"
   },
   "psychologist": {
     "carl gustav jung": "carl jung",
@@ -374,7 +378,22 @@
     "vinyl crackle and pop": "vinyl record crackle",
     "vinyl crackle": "vinyl record crackle",
     "vinyl needle in lead-in groove": "vinyl record crackle",
-    "wooden door creaking open in an old house": "wooden door creaking"
+    "wooden door creaking open in an old house": "wooden door creaking",
+    "rain tapping on a tin roof": "rain on tin roof",
+    "rain tapping on a glass skylight": "rain on a glass skylight",
+    "steady rain on a glass skylight": "rain on a glass skylight",
+    "rain tapping against a skylight": "rain tapping on a skylight",
+    "ocean waves breaking on a beach": "ocean waves crashing on the shore",
+    "hardback book closing thump": "book closing in quiet room",
+    "rain tapping on a canvas tent": "rain on a tent roof",
+    "rain tapping against a window": "rain on window at night"
   },
-  "country": {}
+  "country": {},
+  "biography": {
+    "power broker: robert moses and the fall of new york": "power broker",
+    "team of rivals: the political genius of abraham lincoln": "team of rivals"
+  },
+  "textbook": {
+    "calculus": "spivak's calculus"
+  }
 }
