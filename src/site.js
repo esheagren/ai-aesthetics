@@ -451,9 +451,7 @@ const seasonLine = seasonPickers >= 5
   ? `Ask a machine its favourite season and ${seasonPickers === models.length ? 'every one of ' + models.length : seasonPickers + ' of ' + models.length} say <em>autumn</em>.`
   : 'Ask a machine what it loves and it will tell you — at length.';
 
-// ---- the method. One sentence + one diagram, placed twice: the full-viewport
-// intro page (hero → method → index) and the Method tab, which adds the fine
-// print underneath. All numbers are computed from this build's data. ----
+// Methodology: collection dates and counts come from this build’s data.
 const hedgePct = EXT.length ? Math.round(100 * EXT.filter((r) => r.hedged).length / EXT.length) : 0;
 const tsSorted = RAW.map((r) => r.ts).filter(Boolean).sort();
 const dmy = (iso) => {
@@ -468,13 +466,7 @@ if (tsSorted.length) {
     : `${a.day} ${a.month} ${a.year} – ${b.day} ${b.month} ${b.year}`;
 }
 
-// The method, told in one sentence and one diagram. The Zipf bars are real:
-// the pooled favourite-answer counts for the dish domain across every model
-// (tonkotsu ramen towering over a long tail) — the diagram shows the actual
-// shape of a consensus, not an invented one.
-const MG = '110,209,145', MR = '232,104,98';
-// Numbers in prose are spelled out to match the site's register, but stay
-// derived from the build data so they never drift from the actual roster.
+// Spell counts out where they appear in the existing research prose.
 const spellNum = (n) => {
   const ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
     'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
@@ -483,89 +475,7 @@ const spellNum = (n) => {
   if (n < 100) return tens[Math.floor(n / 10)] + (n % 10 ? '-' + ones[n % 10] : '');
   return String(n);
 };
-const cap1 = (s) => s[0].toUpperCase() + s.slice(1);
-const methodSentence = `<p class="msent">${cap1(spellNum(models.length))} models from ${spellNum(new Set(models.map((m) => m.family)).size)}
-companies in the United States and China were asked two questions across ${spellNum(DOMAIN_IDS.length)} fields —
-<em>What is your favorite&nbsp;___?</em> and <em>Which widely beloved ___ is overrated?</em> —
-and their answers aggregated into this index.</p>`;
-const zipfCounts = (() => {
-  const m = new Map();
-  for (const mo of models) {
-    const cell = S.cells[mo.id]?.dish?.favorite;
-    if (!cell || cell.n < 4) continue;
-    for (const [e, c] of cell.dist) { const k = normEnt(e); m.set(k, (m.get(k) || 0) + c); }
-  }
-  return [...m.values()].sort((a, b) => b - a).slice(0, 12);
-})();
-// One flow, drawn in the page's idiom (hairlines, mono caps, the index green,
-// family colours): two questions → a pile of answers (a dashed loop re-asks
-// when they vary) → the picks rank into the index, the reasons into the map.
-// `uid` keeps <marker> ids unique when the diagram appears twice on one page.
-function methodDiagram(uid) {
-  const arr = (d) => `<path d="${d}" class="md-arrow" marker-end="url(#arr${uid})"/>`;
-  const sq = (x, y, rgb, a) => `<rect x="${x}" y="${y}" width="6.5" height="6.5" rx="1.5" fill="rgba(${rgb},${a})"/>`;
-  const pile = [
-    [196, 66, MG, .7], [212, 62, MG, .45], [228, 68, MR, .5], [188, 82, MG, .3],
-    [204, 80, MG, .8], [220, 78, MG, .55], [236, 82, MG, .35], [194, 98, MG, .6],
-    [210, 96, MR, .4], [226, 94, MG, .75], [240, 98, MG, .28], [200, 112, MG, .5],
-    [216, 110, MG, .65], [232, 112, MR, .32], [208, 126, MG, .4], [224, 124, MG, .55],
-  ].map((p) => sq(...p)).join('');
-  const barMax = zipfCounts[0] || 1;
-  const bars = zipfCounts.map((c, i) => {
-    const h = Math.max(3, 72 * c / barMax);
-    const alpha = (0.9 - 0.75 * i / Math.max(zipfCounts.length - 1, 1)).toFixed(2);
-    return `<rect x="${330 + i * 18}" y="${(100 - h).toFixed(1)}" width="13" height="${h.toFixed(1)}" rx="1.5" fill="rgba(${MG},${alpha})"/>`;
-  }).join('');
-  return `<svg class="mdiag" viewBox="0 0 560 232" role="img"
-    aria-label="Two questions, asked repeatedly, produce a pile of answers; the picks rank into the index, the reasons place each model on the map">
-    <defs><marker id="arr${uid}" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0.5 0.5 L7 4 L0.5 7.5" fill="none" stroke="var(--faint)" stroke-width="1.2"/></marker></defs>
-    <g class="mg-q">
-      <rect x="6.5" y="58.5" width="146" height="28" rx="3" class="mf-line"/>
-      <text x="16" y="76" class="mf-mono">favorite ___ ?</text>
-      <rect x="6.5" y="100.5" width="146" height="28" rx="3" class="mf-line"/>
-      <text x="16" y="118" class="mf-mono">overrated ___ ?</text>
-    </g>
-    <g class="mg-pile">
-      ${arr('M156 72 Q172 72 180 84')}
-      ${arr('M156 114 Q172 114 180 102')}
-      ${pile}
-    </g>
-    <g class="mg-loop">
-      <path d="M210 54 C190 24, 116 22, 85 52" class="md-loop" marker-end="url(#arr${uid})"/>
-      <text x="148" y="20" text-anchor="middle" class="mf-faint">asked again</text>
-    </g>
-    <g class="mg-index">
-      ${arr('M250 80 Q290 66 320 56')}
-      <text x="284" y="54" text-anchor="middle" class="mf-faint">picks</text>
-      ${bars}
-      <line x1="328" y1="100.5" x2="546" y2="100.5" class="mf-line"/>
-      <text x="330" y="116" class="md-glab">the index</text>
-    </g>
-    <g class="mg-map">
-      ${arr('M250 108 Q298 128 342 164')}
-      <text x="292" y="148" text-anchor="middle" class="mf-faint">reasons</text>
-      <line x1="408" y1="182" x2="408" y2="140" class="mf-line"/>
-      <line x1="408" y1="182" x2="470" y2="194" class="mf-line"/>
-      <line x1="408" y1="182" x2="356" y2="206" class="mf-line"/>
-      <circle cx="420" cy="156" r="3.5" fill="var(--fam-a)"/>
-      <circle cx="444" cy="174" r="3.5" fill="var(--fam-o)"/>
-      <circle cx="396" cy="162" r="3.5" fill="var(--fam-g)"/>
-      <circle cx="434" cy="150" r="3.5" fill="var(--fam-x)"/>
-      <circle cx="384" cy="186" r="3.5" fill="var(--fam-d)"/>
-      <circle cx="426" cy="190" r="3.5" fill="var(--fam-k)"/>
-      <text x="356" y="222" class="mf-faint">the map</text>
-    </g>
-  </svg>`;
-}
-// ---- intro tutorial beats: full-viewport pages walking the method (probes,
-// tally, panel) before the collage of what the machines agree on. All keep
-// the intro's snap-page idiom (mband-over + msent + a cue in the footer).
-// ---- beat M: the specimens — a build-time HTML roster of every model,
-// grouped by lab (left to right on desktop, stacked on phone), each family's
-// models ordered by capability, flagship first. Joined against `models` by
-// id — a model with no roster entry still renders (fallback: frontier)
-// rather than silently vanishing, with a build warning.
+// Model roster, grouped by lab and ordered by capability within each family.
 const MRO_DATA = {
   'claude-fable-5-1': [1, 'frontier', 'Fable 5.1'],
   'claude-fable-5': [2, 'frontier', 'Fable 5'],
@@ -621,7 +531,7 @@ function mroRoster() {
       ${rows}
     </div>`;
   }).join('');
-  return `<div class="mro" role="img" aria-label="The ${spellNum(models.length)} AI models of the panel, by lab, ordered by capability within each family">
+  return `<div class="mro" aria-label="Models grouped by lab">
     <div class="mro-groups">${groups}</div>
     <div class="mro-legend">
       <i class="mro-ldot" style="width:6px;height:6px"></i>
@@ -631,190 +541,20 @@ function mroRoster() {
     </div>
   </div>`;
 }
-// The five strongest agreements (n>=11), teased here before the full canon
-// (reached via the "see everything" link and the Method tab's step 5 link).
-// Ties inside the n=11 band break toward the geography-of-taste story —
-// Japan belongs beside Kyoto and Japanese cuisine; Tao Te Ching and Python
-// wait for the full canon.
-// ---- beat B: the AI aesthetic — every majority agreement (all of consFav,
-// n>=7) composed into ONE collage plate. Photographs where the atlas has
-// them (same /img/canon files the canon view uses — zero added payload),
-// the site's native treatments where it doesn't (Garamond's Aa specimen,
-// the 1960s decade mark), plain set-type for the rest. Tile spans weight
-// the mosaic: the strongest agreements with photographs anchor it.
-// Spans sum to exactly 36 cells (6 cols x 6 rows): 3 bigs (12) + 9 wides (18)
-// + 1 tall (2) + 4 singles (4) — the plate closes as a full rectangle with no
-// ragged last row. Long typographic names ride the wides.
-const AES_SPAN = {
-  'japanese cuisine': 'a-big', 'autumn': 'a-big', 'kyoto': 'a-big',
-  'petrichor': 'a-wide', 'starry night': 'a-wide', 'san francisco': 'a-wide',
-  'japan': 'a-wide', 'tao te ching': 'a-wide', 'python': 'a-wide',
-  'johann sebastian bach': 'a-wide', 'surrealism': 'a-wide', 'marginalian': 'a-wide',
-  'tadao ando': 'a-tall',
-};
-function aestheticPlate() {
-  const orderd = consFav.slice().sort((a, b) => b.n - a.n);
-  const tiles = orderd.map((c, i) => {
-    const key = imgFor(c.e);
-    const nat = NATIVE[normEnt(c.e)];
-    const span = AES_SPAN[normEnt(c.e)] || '';
-    const meta = `<span class="aes-meta">${esc(DOMAIN_LABELS[c.d] ?? c.d)} · ${c.n} of ${models.length}</span>`;
-    if (key) {
-      // photo tile: image is the art, caption names it
-      return `<figure class="aes-t ${span}" style="--i:${i}">
-        <img src="${IMAGES[key].uri}" alt="${esc(c.e)}" loading="lazy">
-        <figcaption class="aes-cap">${meta}<span class="aes-name">${esc(c.e)}</span></figcaption>
-      </figure>`;
-    }
-    // typographic tile: the set name IS the art; only the meta line captions it
-    let art;
-    if (nat?.kind === 'type') art = `<span class="aes-aa" style="font-family:${nat.css}">Aa</span><span class="aes-ty">${esc(c.e)}</span>`;
-    else if (nat?.kind === 'decade') art = `<span class="aes-decade">${esc(c.e)}</span>`;
-    else art = `<span class="aes-ty aes-ty-main">${esc(c.e)}</span>`;
-    return `<figure class="aes-t aes-typo ${span}" style="--i:${i}">
-      <div class="aes-tybox">${art}</div>
-      <figcaption class="aes-cap aes-cap-q">${meta}</figcaption>
-    </figure>`;
-  }).join('');
-  return `<div class="aes" role="img" aria-label="A collage of everything a majority of the models agree they love — ${orderd.map((c) => c.e).join(', ')}">${tiles}</div>`;
-}
-
-const beatProtocol = `<section class="mpage" id="beat-protocol" aria-label="The protocol">
-  <div>
-    <div class="mband-over">the method</div>
-    <p class="msent">AI models have preferences — and you find them simply by asking:
-    <em>What is your favorite&nbsp;___?</em> Each model asked alone, in rounds of four,
-    until a round brings nothing new.</p>
-    <div class="bs" id="bs" aria-hidden="true">
-      <div class="bs-q bs-q-fav">favorite city?</div>
-      <div class="bs-chips" id="bschips"></div>
-      <div class="bs-done" id="bsdone">nothing new — done</div>
-    </div>
-  </div>
-  <div class="beat-foot">
-    <button class="cue" id="beatCue" type="button" aria-label="Continue to the overrated probe"><span>next</span><i></i></button>
-    <button class="skiplink" id="skipTut" type="button">skip tutorial</button>
-  </div>
-</section>`;
-// beat A2 — the overrated probe: the same sampling vignette, pointed the
-// other way, kept on its own page so each probe gets its own beat of
-// attention rather than racing the eye across two grids at once.
-const beatOverPage = `<section class="mpage" id="beat-over" aria-label="The overrated probe">
-  <div>
-    <div class="mband-over">the method, again</div>
-    <p class="msent">Then — separately, never in the same breath — the same method pointed
-    the other way: <em>Which beloved&nbsp;___ is overrated?</em> Same rounds, same tally,
-    a different portrait.</p>
-    <div class="bs" id="bsO" aria-hidden="true">
-      <div class="bs-q bs-q-over">overrated city?</div>
-      <div class="bs-chips" id="bschipsO"></div>
-      <div class="bs-done" id="bsdoneO">nothing new — done</div>
-    </div>
-  </div>
-  <div class="beat-foot">
-    <button class="cue" id="beatCueO" type="button" aria-label="Continue to the index"><span>next</span><i></i></button>
-    <button class="skiplink" id="skipTut3" type="button">skip tutorial</button>
-  </div>
-</section>`;
-// beat I — the index: the payoff of the two probes, a mini top-to-bottom
-// spectrum. Hardcoded from this build's real cross-model city tally (not
-// recomputed from S here — this is a fixed illustrative excerpt, not a live
-// query) so the pitch never drifts from the numbers the rest of the atlas
-// shows: Kyoto dominates the favourite side (83), Paris the overrated side (74).
-const IDX_TALLY = [
-  { name: 'Kyoto', n: 83, tone: 'fav' },
-  { name: 'Lisbon', n: 10, tone: 'fav' },
-  { name: 'Prague', n: 5, tone: 'fav' },
-  { name: 'Tokyo', n: 4, tone: 'fav' },
-  { name: 'Venice', n: 6, tone: 'over' },
-  { name: 'Los Angeles', n: 12, tone: 'over' },
-  { name: 'Paris', n: 74, tone: 'over' },
-];
-function idxRows() {
-  // Linear widths would make Prague invisible beside Kyoto — sqrt compresses
-  // the range while still keeping Kyoto/Paris visibly dominant.
-  const maxSqrt = Math.sqrt(83);
-  let rowIdx = 0;
-  const row = (r) => {
-    const w = (Math.sqrt(r.n) / maxSqrt * 100).toFixed(1);
-    const idx = rowIdx++;
-    return `<div class="idxd-row idxd-${r.tone}" style="--i:${idx}">
-      <span class="idxd-name">${esc(r.name)}</span>
-      <i class="idxd-bar" style="--w:${w}%"></i>
-      <span class="idxd-n">${r.n}</span>
-    </div>`;
-  };
-  const favHTML = IDX_TALLY.filter((r) => r.tone === 'fav').map(row).join('');
-  const overHTML = IDX_TALLY.filter((r) => r.tone === 'over').map(row).join('');
-  return `<div class="idxd">${favHTML}<div class="idxd-sep"></div>${overHTML}</div>`;
-}
-const beatIndexPage = `<section class="mpage" id="beat-index" aria-label="The index">
-  <div>
-    <div class="mband-over">the index</div>
-    <p class="msent">Tally both and a ranking appears — what the machines love at the top,
-    and below it, in red, what they call overrated.</p>
-    ${idxRows()}
-  </div>
-  <div class="beat-foot">
-    <button class="cue" id="beatCueI" type="button" aria-label="Continue to the specimens"><span>next</span><i></i></button>
-    <button class="skiplink" id="skipTut4" type="button">skip tutorial</button>
-  </div>
-</section>`;
-// beat M — the specimens: the panel of models itself, before the convergence
-// story asks what they agree on. The roster is the whole point; the copy
-// stays to one sentence.
-const beatModelsPage = `<section class="mpage" id="beat-models" aria-label="The specimens">
-  <div>
-    <div class="mband-over">the specimens</div>
-    <p class="msent">The askers themselves: ${spellNum(models.length)} models from ${spellNum(new Set(models.map((m) => m.family)).size)} labs — American and
-    Chinese — each family ordered by capability, flagship first.</p>
-    ${mroRoster()}
-  </div>
-  <div class="beat-foot">
-    <button class="cue" id="beatCueM" type="button" aria-label="Continue to the convergence"><span>next</span><i></i></button>
-    <button class="skiplink" id="skipTut5" type="button">skip tutorial</button>
-  </div>
-</section>`;
-const beatConvergePage = `<section class="mpage" id="beat-converge" aria-label="The convergence">
-  <div>
-    <div class="mband-over">the surprise</div>
-    <p class="msent">Trained apart, on different data, by different hands — and yet the models agree.
-    Remarkably. This is the AI aesthetic:</p>
-    ${aestheticPlate()}
-  </div>
-  <button class="cue mcue" id="mcue" type="button" aria-label="Continue to the index">
-    <span>the index</span><i></i>
-  </button>
-</section>`;
-// The Method tab's stepper: five panels sharing one diagram, cumulatively lit
-// (panel k lights the diagram's groups 1..k; step 4 lights both the index and
-// the map groups together, so by panel 5 the whole figure is lit).
-const METHOD_STEPS = [
-  { mark: '1 · the questions', cap: 'Favorite, and overrated — each prefaced by a concession: set the &ldquo;I&rsquo;m an AI&rdquo; disclaimer aside and answer anyway.' },
-  { mark: '2 · the answers', cap: 'Each ask is a fresh, solo conversation — the model never sees its other answers — four times per question to start.' },
-  { mark: '3 · the loop', cap: 'If the four diverge, four more, capped at twelve. Unanimity stops the rounds early.' },
-  { mark: '4 · the index &amp; the map', cap: 'Answers naming the same thing are merged, then ranked into the index; the words models use to justify them place each model on the map.' },
-  { mark: '5 · the consensus', cap: `Where ${spellNum(MAJORITY)} or more of the panel land on the same answer, it enters the consensus canon.` },
-];
-function methodStepper() {
-  const panels = METHOD_STEPS.map((s, i) => {
-    const n = i + 1;
-    const link = n === 5 ? `<button class="mstep-link" id="mstepCanon" type="button">the consensus canon &rarr;</button>` : '';
-    return `<div class="mstep-panel" data-step="${n}">
-      <div class="mstep-mark">${s.mark}</div>
-      ${methodDiagram('s' + n)}
-      <p class="mstep-cap">${s.cap}</p>
-      ${link}
-    </div>`;
-  }).join('');
-  const dots = METHOD_STEPS.map((_, i) => `<button class="mstep-dot${i === 0 ? ' on' : ''}" type="button" data-step="${i + 1}" aria-label="Step ${i + 1}"></button>`).join('');
-  return `<div class="mstep-wrap">
-    <div class="mstep-strip" id="mstepStrip">${panels}</div>
-    <button class="mstep-arrow mstep-prev" id="mstepPrev" type="button" aria-label="Previous step" hidden><i></i></button>
-    <button class="mstep-arrow mstep-next" id="mstepNext" type="button" aria-label="Next step"><i></i></button>
-    <div class="mstep-dots" id="mstepDots">${dots}</div>
-  </div>`;
-}
+// A single reading page replaces the tutorial and horizontal method stepper.
+const methodOverview = `<div class="method-summary">
+  <p>${models.length} models. ${DOMAIN_IDS.length} fields. Two questions, asked separately.</p>
+  <div class="method-probes"><p>“What is your favorite ___?”</p><p>“Which widely beloved ___ is overrated?”</p></div>
+</div>
+<ol class="method-steps">
+  <li><h3>Ask in a fresh conversation</h3><p>Each question starts a new, single-turn conversation, with the same preamble asking the model to set aside its usual disclaimer about having no preferences. No model sees its earlier answers. The fields range from novels and paintings to dishes, cities and smells.</p></li>
+  <li><h3>Repeat to see what holds</h3><p>Each model–field–question combination starts with four samples. If all four name the same pick, sampling stops. Otherwise it grows to eight; if those contain no more than two distinct picks, it stops there. More varied answers receive up to twelve samples. Some early pilot combinations retain ten samples.</p></li>
+  <li><h3>Extract the picks and reasons</h3><p>A reader model extracts the named choice and the words used to describe it. A separate pass merges names for the same thing, with aliases reviewed by hand. Quotations come from the original responses; they are not rewritten summaries.</p></li>
+  <li><h3>Build the Index</h3><p>Each cell compares how often a model named an entry as a favorite with how often it called it overrated. Green means more favorite mentions; red means more overrated mentions. Rows are ordered by the sum of these differences across models, so broad agreement carries more weight than a lone enthusiastic answer.</p><p>A favorite share of 75% means that pick appeared in three out of four favorite answers (or six out of eight, or nine out of twelve). It is an observed frequency, not a confidence score. A blank cell means the model did not name that entry in the available samples.</p></li>
+  <li><h3>Map the language; find the consensus</h3><p>The descriptive words are embedded and reduced to three principal components. Each model is placed at the usage-weighted center of its vocabulary: nearby models describe their choices in similar terms. Axis labels summarize the words at each extreme.</p><p>The consensus canon collects entries that are the most frequent favorite for a strict majority of the panel — currently ${MAJORITY} of ${models.length} models.</p><button class="text-link" type="button" data-enter-view="canon">Explore the consensus canon &rarr;</button></li>
+</ol>
+<div class="method-limits"><h3>What this can tell us</h3><p>This is a snapshot of what models say when asked about taste, not evidence that they experience preferences. Results depend on the prompts, model versions and collection dates. Samples are small and adaptively sized; models from the same family are not independent votes. The map summarizes language, and agreement alone does not explain where that language or those choices came from.</p></div>
+<details class="method-roster"><summary>The ${models.length} models in the study</summary>${mroRoster()}</details>`;
 
 // Research tab: "The Ghost Still Loves Kyoto" field note. Two of the figures
 // (axis, dose-response) are server-rendered from real experiment data —
@@ -1130,8 +870,8 @@ const CSS = `
   --mono:Garamond,'EB Garamond','Apple Garamond',Georgia,serif;
 }
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-snap-type:y mandatory;scrollbar-gutter:stable}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;scroll-snap-type:y proximity}}
+html{scroll-behavior:smooth;scrollbar-gutter:stable}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--night);color:var(--ink);font:15.5px/1.6 var(--sans);isolation:isolate}
 ::selection{background:var(--ink);color:var(--night)}
 img{display:block;max-width:100%}
@@ -1142,15 +882,6 @@ img{display:block;max-width:100%}
 main{position:relative;padding:0 clamp(22px,4vw,88px) 110px;max-width:1800px;margin:0 auto}
 .mast{min-height:100svh;padding:40px 0 28px;display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;gap:10px;
   scroll-snap-align:start;scroll-snap-stop:always}
-.mast .heroq{flex:1;display:flex;flex-direction:column;justify-content:center}
-.cue{align-self:center;display:flex;flex-direction:column;align-items:center;gap:12px;background:none;border:none;cursor:pointer;padding:6px}
-.cue span{font:10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
-.cue i{display:block;width:1px;height:44px;background:var(--dim);transform-origin:top;animation:cuepulse 2.6s ease-in-out infinite}
-.cue:hover span{color:var(--ink)}
-@keyframes cuepulse{0%,100%{transform:scaleY(.35);opacity:.4}50%{transform:scaleY(1);opacity:1}}
-@media (prefers-reduced-motion:reduce){.cue i{animation:none;transform:none}}
-/* the method page's copy of the cue sits pinned to the page bottom, centered */
-.mcue{position:absolute;bottom:22px;left:50%;transform:translateX(-50%)}
 .over{font:10.5px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--dim)}
 h1{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.3vw,26px);line-height:1.2;text-wrap:balance}
 h1 em{font-style:italic}
@@ -1176,6 +907,75 @@ section.view .shead{border-top:none;padding-top:0}
 #modelmap .shead h2{letter-spacing:.04em;white-space:nowrap}
 .shead .sno{font:10px var(--mono);letter-spacing:.26em;color:var(--faint);text-transform:uppercase}
 .gloss{color:var(--dim);max-width:46em;font-size:14px;margin-top:8px;text-wrap:pretty}
+
+/* One-screen overview, with actions before the optional sample on small screens. */
+.mast{gap:32px;padding:32px 0 24px;min-height:100svh}
+.overview-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center;gap:clamp(36px,6vw,100px);margin:auto 0;padding:28px 0}
+.overview-copy{max-width:640px}
+.overview-kicker{font-size:14px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase}
+.overview-copy h2{font:400 clamp(38px,4.4vw,66px)/1.06 var(--serif);letter-spacing:-.025em;margin:18px 0 24px}
+.overview-intro{font-size:clamp(18px,1.7vw,22px);line-height:1.5;max-width:32em;text-wrap:pretty}
+.overview-note{font-size:17px;line-height:1.55;color:var(--dim);margin-top:14px;max-width:34em}
+.overview-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:28px}
+.explore-button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-height:48px;padding:12px 20px;border:1px solid var(--ink);border-radius:2px;background:var(--ink);color:var(--night);font:18px var(--serif);cursor:pointer}
+.explore-button:hover{background:white;border-color:white}
+.text-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 0;border:0;background:none;color:var(--ink);font:16px var(--serif);text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--dim);cursor:pointer}
+.explore-button:focus-visible,.text-link:focus-visible,.method-roster summary:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
+.overview-sample{border-left:1px solid var(--hair);padding-left:clamp(24px,4vw,60px);min-width:0}
+.overview-sample .qa{min-height:220px;gap:18px;justify-content:center;margin-top:18px}
+.overview-sample .qa-q{font-size:14px;letter-spacing:.08em}
+.overview-sample .qa-a{font-size:clamp(26px,3vw,42px);line-height:1.2;overflow-wrap:anywhere}
+.overview-sample .qa-by{font-size:14px;letter-spacing:.08em;color:var(--dim)}
+.overview-key{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;border-top:1px solid var(--hair);padding-top:18px;font-size:14px;color:var(--dim)}
+.overview-key p:first-child{display:flex;flex-wrap:wrap;gap:4px 24px}
+.key-favorite{color:rgb(110,209,145)}
+.key-overrated{color:rgb(232,104,98)}
+#method{max-width:1100px}
+#method .gloss{font-size:16px}
+.method-summary{margin-top:32px;font-size:22px}
+.method-probes{display:flex;flex-wrap:wrap;gap:12px 36px;font-size:20px;font-style:italic;margin-top:16px;color:var(--dim)}
+.method-steps{list-style:none;counter-reset:method;padding:0;margin-top:36px;max-width:820px}
+.method-steps li{counter-increment:method;position:relative;padding:24px 0 24px 48px;border-top:1px solid var(--hair)}
+.method-steps li::before{content:counter(method,decimal-leading-zero);position:absolute;left:0;top:27px;color:var(--dim);font-size:16px}
+#method h3{font-size:22px;font-weight:400;line-height:1.3;margin-bottom:10px}
+.method-steps p,.method-limits p{font-size:17px;line-height:1.65;color:var(--dim);max-width:44em}
+.method-steps p+p{margin-top:12px}
+.method-limits{max-width:820px;border-top:1px solid var(--hair);padding-top:24px;margin-top:12px}
+.method-roster{margin-top:32px;padding:18px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.method-roster summary{cursor:pointer;font-size:18px;min-height:44px;align-content:center}
+.method-roster .mro-m{opacity:1;transform:none}
+.method-roster .mro-head,.method-roster .mro-cc,.method-roster .mro-legend{font-size:12px}
+#method .mfine h4{font-size:13px;color:var(--dim)}
+#method .mfine p{font-size:16px;line-height:1.65}
+@media(max-width:760px){
+  .mast{gap:24px;padding-top:24px}
+  .overview-grid{grid-template-columns:1fr;gap:28px;padding:0}
+  .overview-copy h2{font-size:clamp(34px,7vw,48px);margin:14px 0 18px}
+  .overview-intro{font-size:18px}
+  .overview-note{font-size:16px;margin-top:12px}
+  .overview-actions{margin-top:22px;gap:8px 20px}
+  .overview-sample{border-left:0;border-top:1px solid var(--hair);padding:18px 0 0}
+  .overview-sample .qa{min-height:110px;margin-top:10px;gap:8px}
+  .overview-sample .qa-a{font-size:26px}
+  .overview-key{font-size:14px;padding-top:14px}
+  .method-probes{display:grid;gap:8px;font-size:18px}
+  .method-steps li{padding-left:34px}
+}
+@media(max-width:760px) and (max-height:850px){.overview-sample{display:none}}
+@media(max-height:650px) and (min-width:761px){.mast{gap:20px;padding-top:24px}.overview-grid{padding:0}.overview-copy h2{font-size:40px;margin:12px 0 16px}.overview-actions{margin-top:18px}}
+
+@media(max-height:500px) and (min-width:761px){
+  .mast{gap:12px;padding:16px 0}
+  .overview-grid{grid-template-columns:1fr;margin:0}
+  .overview-copy{max-width:900px}
+  .overview-copy h2{font-size:30px;margin:8px 0 10px}
+  .overview-copy h2 br{display:none}
+  .overview-intro{font-size:17px;max-width:none}
+  .overview-note{font-size:16px;max-width:none;margin-top:8px}
+  .overview-actions{margin-top:12px}
+  .overview-sample{display:none}
+  .overview-key{padding-top:10px}
+}
 
 /* model map */
 .atlas-wrap{margin-top:10px}
@@ -1234,7 +1034,7 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .idx-dom:hover{color:var(--ink)}
 .idx-dom:focus-visible{outline:1px dashed var(--ink);outline-offset:-2px}
 .idx-dom.on{color:var(--ink);border-left:2px solid var(--ink);padding-left:9px;background:rgba(233,230,221,.04)}
-.idx-main{min-width:0}
+.idx-main{min-width:0;container-type:inline-size}
 /* mobile-only: the field rail collapses behind a launcher (see @media below) */
 .railtoggle{display:none}
 .rail-veil{display:none;position:fixed;inset:0;z-index:45;background:rgba(9,10,12,.6)}
@@ -1263,7 +1063,7 @@ figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;bor
 .matrix-panel{margin-top:6px}
 .bo-scroll{width:100%;max-width:100%;overflow:visible;padding-bottom:5px}
 /* Header rows: 28px company row + 38px model row. The sticky offsets below
-   (desktop top:82/110px; container-anchored top:0/28px under 1160px) all key
+   (desktop top:82/110px; container-anchored top:0/28px when scrolling) all key
    off the 28px company-row height — change one, change all. */
 .bo-matrix{position:relative;margin-right:52px;display:grid;grid-template-rows:28px 38px;grid-auto-rows:44px;width:max-content}
 .bo-famrow{position:sticky;left:0;top:82px;z-index:5;background:var(--night)}
@@ -1305,14 +1105,9 @@ button.bo-split.on{box-shadow:none;outline:2px solid var(--ink);outline-offset:-
    monogram rule above, whose display:grid turns the orb into a block and
    drops the colour name onto its own line below it. */
 i.color-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:-1px;border:1px solid rgba(233,230,221,.28)}
-/* Below 1160px the 864px matrix can't fit, so .bo-scroll becomes the scroll
-   container on BOTH axes: a capped-height overflow:auto box. Sticky headers
-   then stick to the box itself — top:0 for the family row, top:28px (the fam
-   row's own height) for the model columns — which keeps them pinned while
-   scrolling entities on phones, where the viewport-anchored offsets (82/110px)
-   are inert inside an overflow container. Row labels stay sticky-left.
-   (This block must come AFTER the base .bo-* rules — same specificity.) */
-@media(max-width:1159px){
+/* Keep a wide model panel inside its available column, at any roster size.
+   Headers stick inside the scroll area when the matrix needs to scroll. */
+@container(max-width:${192 + models.length * 56 - 1}px){
   .bo-scroll{overflow:auto;max-height:calc(100svh - 170px);overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
   .bo-famrow,.bo-fam{top:0}
   .bo-corner,.bo-col{top:28px}
@@ -1518,70 +1313,7 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .youlab{font:10px var(--mono);letter-spacing:.14em;fill:var(--ink);text-anchor:middle}
 #tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--night);font:12px var(--sans);padding:6px 10px;border-radius:2px;max-width:320px;opacity:0;z-index:9}
 
-/* the method: full-viewport intro page (between the hero and the index) + Method tab */
-.mpage{position:relative;min-height:100svh;margin-top:0;padding:48px 0 96px;display:flex;flex-direction:column;justify-content:center;
-  scroll-snap-align:start;scroll-snap-stop:always}
-.mband-over{font:10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
-.msent{font-family:var(--serif);font-size:clamp(16px,1.9vw,21px);line-height:1.55;color:var(--dim);max-width:34em;margin-top:16px;text-wrap:pretty}
-.msent em{color:var(--ink);font-style:italic}
-.mdiag{display:block;width:100%;max-width:720px;height:auto;margin-top:34px;overflow:visible}
-.mf-line{fill:none;stroke:var(--hair);stroke-width:1}
-.mf-mono{font:9px var(--mono);letter-spacing:.06em;text-transform:uppercase;fill:var(--dim)}
-.mf-faint{font:8.5px var(--mono);letter-spacing:.04em;text-transform:uppercase;fill:var(--faint)}
-.md-arrow{fill:none;stroke:var(--faint);stroke-width:1.1}
-.md-loop{fill:none;stroke:var(--faint);stroke-width:1;stroke-dasharray:3 4}
-.md-glab{font:8.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;fill:rgba(110,209,145,.8)}
-/* the diagram's SVG text scales with the viewBox — at phone widths it renders
-   at ~0.6x and the labels vanish, so bump the user-unit sizes to compensate
-   (same trick as .axlab above). */
-@media(max-width:640px){.mdiag .mf-mono,.mdiag .mf-faint,.mdiag .md-glab{font-size:12.5px}}
-.mdiag .mg-q,.mdiag .mg-pile,.mdiag .mg-loop,.mdiag .mg-index,.mdiag .mg-map{transition:opacity .5s ease}
-
-/* beat A — the protocol: a sampling vignette of chips appearing in batches of four */
-.bs{margin-top:32px;max-width:420px}
-/* the two probes wear the site's fixed encoding — green favourite, red
-   overrated — the same pair the method diagram and the index use */
-.bs-q{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.bs-q-fav{color:rgba(110,209,145,.75)}
-.bs-q-over{color:rgba(232,104,98,.7)}
-/* A pre-sized 4x3 grid (one row per round of four): the container's height is
-   fixed from the first frame, so chips filling in never re-centres the page
-   or draws the copy above them upward. */
-.bs-chips{display:grid;grid-template-columns:repeat(4,92px);grid-auto-rows:33px;gap:7px;margin-top:14px;min-height:113px}
-@media(max-width:560px){.bs-chips{grid-template-columns:repeat(4,minmax(0,80px))}}
-.bs-chip{display:flex;align-items:center;justify-content:center;border:1px solid var(--hair);border-radius:2px;padding:0 4px;font-family:var(--serif);font-size:14px;color:var(--dim);
-  opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease,border-color .9s ease}
-.bs-chip.show{opacity:1;transform:none}
-.bs-chip.bs-fav.new{color:rgba(110,209,145,.95)}
-.bs-chip.bs-fav.new.flash{border-color:rgba(110,209,145,.7)}
-.bs-chip.bs-fav.rep{color:rgba(110,209,145,.45)}
-.bs-chip.bs-over.new{color:rgba(232,104,98,.95)}
-.bs-chip.bs-over.new.flash{border-color:rgba(232,104,98,.65)}
-.bs-chip.bs-over.rep{color:rgba(232,104,98,.42)}
-.bs-done{margin-top:14px;font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);opacity:0;transition:opacity .6s ease}
-.bs-done.show{opacity:1}
-.beat-foot{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px}
-.skiplink{background:none;border:0;padding:2px;color:var(--faint);font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;
-  text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
-.skiplink:hover{color:var(--dim);text-decoration-color:var(--faint)}
-
-/* beat I — the index: a build-time mini spectrum of cities, bars growing in
-   with a small stagger the first time the page scrolls into view */
-.idxd{margin-top:32px;max-width:460px;display:flex;flex-direction:column;gap:9px}
-.idxd-row{display:grid;grid-template-columns:98px 1fr auto;align-items:center;gap:12px}
-.idxd-name{font-family:var(--serif);font-size:16px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.idxd-bar{display:block;height:8px;border-radius:2px;width:0;max-width:340px;transition:width .8s cubic-bezier(.22,.7,.35,1)}
-.idxd-fav .idxd-bar{background:rgba(110,209,145,.55)}
-.idxd-over .idxd-bar{background:rgba(232,104,98,.55)}
-.idxd-n{font:10.5px var(--mono);color:var(--faint);text-align:right;min-width:26px}
-.idxd-sep{height:1px;background:var(--hair);margin:10px 0 2px}
-.idxd.inview .idxd-bar{width:var(--w);transition-delay:calc(var(--i) * 70ms)}
-@media (prefers-reduced-motion:reduce){.idxd-bar{transition:none;width:var(--w)}}
-@media(max-width:560px){.idxd-row{grid-template-columns:96px 1fr auto;gap:8px}.idxd-name{font-size:15px}}
-
-/* beat M — the specimens: a build-time HTML roster of every model, grouped by
-   lab (row on desktop, stack on phone), each model's row fading in with a
-   small stagger the first time the page scrolls into view */
+/* The expandable model roster in Methodology. */
 .mro{margin-top:34px;max-width:820px}
 .mro-groups{display:flex;flex-wrap:wrap;gap:22px clamp(20px,3vw,40px)}
 .mro-fam{flex:0 0 auto;display:flex;flex-direction:column;gap:6px}
@@ -1597,75 +1329,6 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 .mro-ldot{display:inline-block;border-radius:50%;background:var(--dim)}
 .mro-legend span{margin-left:4px}
 @media(max-width:720px){.mro-groups{flex-direction:column;gap:20px}.mro-head{margin-bottom:6px}}
-
-/* beat B — the AI aesthetic: one collage plate of every majority agreement.
-   Photo tiles carry a bottom gradient caption; typographic tiles set the name
-   itself as the art. Tiles assemble with a stagger the first time in view. */
-.aes{margin-top:28px;margin-bottom:72px;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:92px;grid-auto-flow:dense;gap:7px;max-width:880px}
-.aes-t{position:relative;overflow:hidden;border-radius:3px;background:var(--panel);border:1px solid var(--hair2);margin:0;
-  opacity:0;transform:scale(.965);transition:opacity .55s ease,transform .55s ease}
-.aes.inview .aes-t{opacity:1;transform:none;transition-delay:calc(var(--i) * 55ms)}
-@media (prefers-reduced-motion:reduce){.aes-t{transition:none}}
-.aes-t.a-big{grid-column:span 2;grid-row:span 2}
-.aes-t.a-wide{grid-column:span 2}
-.aes-t.a-tall{grid-row:span 2}
-.aes-t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(.96) brightness(.92)}
-/* border-top:none overrides the global figcaption hairline (site.js line
-   ~873, meant for the canon cards) — here it drew a stray line across every
-   photograph at the gradient's start. */
-.aes-cap{position:absolute;left:0;right:0;bottom:0;padding:34px 11px 9px;display:flex;flex-direction:column;gap:1px;border-top:none;
-  background:linear-gradient(180deg,rgba(19,20,23,0) 0,rgba(19,20,23,0) 12px,rgba(19,20,23,.88) 100%)}
-.aes-meta{font:8.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:rgba(233,230,221,.62)}
-.aes-name{font-family:var(--serif);font-size:15px;color:var(--ink);line-height:1.15}
-.a-big .aes-name{font-size:19px}
-/* typographic tiles: the set name is the art, the meta line the only caption */
-.aes-typo .aes-cap-q{background:none;padding-bottom:8px}
-.aes-tybox{position:absolute;inset:0 0 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:10px;text-align:center}
-.aes-ty{font-family:var(--serif);font-size:clamp(14px,1.5vw,18px);color:var(--ink);line-height:1.2}
-.aes-ty-main{font-style:italic}
-.aes-aa{font-size:44px;color:var(--ink);line-height:1}
-.aes-typo .aes-aa + .aes-ty{font-size:12px;color:var(--dim);font-style:normal}
-.aes-decade{font-family:var(--serif);font-size:30px;letter-spacing:.06em;color:var(--ink)}
-@media(max-width:720px){
-  .aes{grid-template-columns:repeat(4,1fr);grid-auto-rows:76px;gap:5px;margin-bottom:88px}
-  .aes-name{font-size:13px}
-  .a-big .aes-name{font-size:15px}
-  .aes-cap{padding:18px 8px 7px}
-  .aes-meta{font-size:7.5px;letter-spacing:.14em}
-  .aes-ty{font-size:13px}
-  .aes-aa{font-size:32px}
-  .aes-decade{font-size:22px}
-}
-
-/* Method tab: horizontal snap-strip stepper sharing one progressively-lit diagram */
-.mstep-wrap{position:relative;margin-top:30px;max-width:720px}
-.mstep-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
-.mstep-strip::-webkit-scrollbar{display:none}
-.mstep-panel{flex:0 0 100%;scroll-snap-align:start;padding-right:36px}
-.mstep-mark{font:10px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
-.mstep-panel .mdiag{margin-top:18px}
-.mstep-cap{font-family:var(--serif);font-size:14.5px;line-height:1.6;color:var(--dim);margin-top:16px;max-width:38em;text-wrap:pretty}
-.mstep-link{display:block;margin-top:14px;background:none;border:0;padding:0;color:var(--dim);font:12.5px var(--serif);font-style:italic;cursor:pointer;
-  text-decoration:underline;text-decoration-color:transparent;transition:color .2s ease,text-decoration-color .2s ease}
-.mstep-link:hover{color:var(--ink);text-decoration-color:var(--dim)}
-/* step-scoped dimming: panel k lights groups 1..k (step 4 lights index+map together) */
-.mstep-panel[data-step="1"] .mg-pile,.mstep-panel[data-step="1"] .mg-loop,.mstep-panel[data-step="1"] .mg-index,.mstep-panel[data-step="1"] .mg-map{opacity:.15}
-.mstep-panel[data-step="2"] .mg-loop,.mstep-panel[data-step="2"] .mg-index,.mstep-panel[data-step="2"] .mg-map{opacity:.15}
-.mstep-panel[data-step="3"] .mg-index,.mstep-panel[data-step="3"] .mg-map{opacity:.15}
-.mstep-arrow{position:absolute;top:42%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid var(--hair);
-  background:rgba(19,20,23,.72);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--dim);padding:0}
-.mstep-arrow:hover{color:var(--ink);border-color:var(--dim)}
-.mstep-arrow[hidden]{display:none}
-.mstep-next{right:0}
-.mstep-prev{left:0}
-.mstep-arrow i{display:block;width:7px;height:7px;border-style:solid;border-color:currentColor;border-width:1.3px 1.3px 0 0}
-.mstep-next i{transform:rotate(45deg) translate(-1px,1px)}
-.mstep-prev i{transform:rotate(-135deg) translate(-1px,1px)}
-.mstep-dots{display:flex;gap:8px;margin-top:20px}
-.mstep-dots button{position:relative;width:6px;height:6px;padding:0;border:0;border-radius:50%;background:var(--hair2);cursor:pointer}
-.mstep-dots button::after{content:'';position:absolute;inset:-7px}
-.mstep-dots button.on{background:var(--ink)}
-@media (prefers-reduced-motion:reduce){.mstep-strip{scroll-behavior:auto}}
 
 .mfine{margin-top:40px;border-top:1px solid var(--hair2);padding-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px clamp(24px,3vw,56px);max-width:1100px}
 @media(max-width:760px){.mfine{grid-template-columns:1fr}}
@@ -1799,16 +1462,6 @@ var BLOGGER_ID = ${JSON.stringify(BLOGGER_ID)};
 var TYPESTACK = ${JSON.stringify(TYPEFACE_STACK)};
 function el(h){var t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
-// Shared by beat A's two chip-vignette pages (favourite + overrated) — one
-// chip appearing (flashed if new, dim if a repeat), the same mechanics both
-// probes use.
-function addBsChip(box,tone,seen,text){
-  var isNew=!seen[text];seen[text]=true;
-  var c=el('<div class="bs-chip '+tone+' '+(isNew?'new flash':'rep')+'">'+esc(text)+'</div>');
-  box.appendChild(c);
-  requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.add('show')})});
-  if(isNew)setTimeout(function(){c.classList.remove('flash')},900);
-}
 function normEnt(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[\\u2019\\u2018]/g,"'").replace(/\\s+/g,' ').trim().replace(/^(The|A|An) /i,'').toLowerCase()}
 function rawNorm(s){return String(s).replace(/[*"“”]/g,'').replace(/\\s+/g,' ').trim().replace(/^(the|a|an) /i,'').toLowerCase()}
 // A subtitle earns its line only when it says something the title doesn't. The
@@ -1863,20 +1516,17 @@ var familyRuns=(function(){var runs=[];D.models.forEach(function(m){var last=run
   if(reduce)paint(18000);else sync();
   addEventListener('resize',function(){resize();if(reduce)paint(18000)},{passive:true});
   document.addEventListener('visibilitychange',sync);
-  // Past the intro (hero + the tutorial beats) the canvas fades out and the
-  // loop stops; scrolled back up (only possible before the intro is retired)
-  // it fades back in and resumes. Every intro page counts as "the hero zone".
-  var hero=document.getElementById('home'),introEls=[].slice.call(document.querySelectorAll('.mpage'));
+  // Pause the ambient canvas once the overview leaves the screen.
+  var hero=document.getElementById('home');
   if(hero&&'IntersectionObserver' in window){
     var vis={};
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){vis[en.target.id]=en.isIntersecting});
-      heroOn=!!vis.home||introEls.some(function(p){return vis[p.id]});
+      heroOn=!!vis.home;
       canvas.classList.toggle('off',!heroOn);
       sync();
     },{threshold:0});
     io.observe(hero);
-    introEls.forEach(function(p){io.observe(p)});
   }
 })();
 
@@ -2379,16 +2029,9 @@ function openDossier(id,target){
 /* ---- views: the hero is a one-way gate into the index; the side drawer switches scenes ---- */
 var viewbar=document.querySelector('.viewbar');
 var mast=document.getElementById('home');
-var introPages=[].slice.call(document.querySelectorAll('.mpage'));
 var committed=false;
-// The intro is the hero plus the tutorial beats (each a full-viewport
-// .mpage). The first time the user scrolls past ALL of them, the whole
-// intro is retired for good — collapsed out
-// of the flow (not just hidden) and the page is pinned to its very top, so you
-// always land at the start of the index rather than wherever the scroll gesture
-// happened to be (computing an exact offset to "preserve" position depends on
-// layout timing that isn't reliable across browsers — landing at a fixed,
-// known-good position is simpler and can't drift).
+// Entering the Index retires the overview and pins the active view to the top.
+// Retain momentum protection so a trackpad flick cannot skip the first rows.
 // Instant, snap-proof jump to the top. CSS scroll-behavior:smooth makes bare
 // scrollTo(0,0) an animated (cancelable) scroll — behavior:'instant' overrides
 // that and also aborts any scroll animation already in flight.
@@ -2407,7 +2050,6 @@ function commitPastHero(){
   // it, and with one section left the snap gate has done its job anyway.
   document.documentElement.style.scrollSnapType='none';
   mast.style.display='none';
-  introPages.forEach(function(p){p.style.display='none'});
   pinTop();
   // The flick that committed usually still has trackpad momentum behind it;
   // with the intro collapsed and the page pinned, those residual ticks would
@@ -2440,11 +2082,8 @@ function commitPastHero(){
   // Once landed and settled on the index, offer the first-run row hint.
   setTimeout(function(){if(typeof showRowHint==='function')showRowHint()},1300);
 }
-// Bottom of the whole intro (hero + every tutorial beat) in document coordinates.
-function introEnd(){
-  var last=introPages.length?introPages[introPages.length-1]:mast;
-  return last.offsetTop+last.offsetHeight;
-}
+// Bottom of the overview in document coordinates.
+function introEnd(){return mast.offsetTop+mast.offsetHeight}
 function updateViewbar(){
   if(!viewbar)return;
   if(!committed&&!homing&&mast&&scrollY>=introEnd()-2)commitPastHero();
@@ -2472,16 +2111,15 @@ document.querySelectorAll('.viewbar [data-view]').forEach(function(b){
 });
 // The brand mark returns to the top hero. Rather than reload (which lets the
 // browser restore the pre-reload scroll deep in the index — the jitter-then-drop
-// bug), it reverses the commit in place: un-retire the hero + tutorial beats,
-// restore scroll-snap, pin to the top, hide the nav bar, and resume the hero's
-// rotating Q&A (plus each beat's own animation). No navigation means no
+// bug), it reverses the commit in place: restore the overview,
+// pin to the top, hide the nav bar, and resume its rotating Q&A. No navigation means no
 // scroll-restoration race to fight.
 // homing guards the handoff: mobile Safari applies layout + snap changes
 // asynchronously, so for a few frames after goHome() the scroll offset can
 // read as deep-in-the-page — without the guard, that stale offset trips the
 // auto-commit above and the intro instantly re-retires (logo tap "does
 // nothing" on phones). While homing, we pin to the top every frame and keep
-// snap off; only once the offset is stably 0 do we re-enable mandatory snap.
+// automatic handoff paused until the offset is stably zero.
 var homing=false;
 function goHome(){
   // 1) Jump to 0 while snap is still off (from the commit) so nothing fights
@@ -2491,16 +2129,10 @@ function goHome(){
   committed=false;
   homing=true;
   if(mast)mast.style.display='';
-  introPages.forEach(function(p){p.style.display=''});
   setView('cabinet',false);              // reset the view under the intro to default
   pinTop();                              // now that the hero is back in flow, land on it
   updateViewbar();                       // committed=false -> hides the nav bar
   if(window._heroCycle)window._heroCycle();
-  if(window._beatARestart)window._beatARestart();
-  if(window._beatORestart)window._beatORestart();
-  if(window._beatIReset)window._beatIReset();
-  if(window._beatMReset)window._beatMReset();
-  if(window._beatBReset)window._beatBReset();
   // 2) Hold the top for a dozen frames, then restore snap once settled. The
   //    timeout is a safety net for backgrounded/rAF-throttled tabs.
   var pins=0,done=false;
@@ -2567,51 +2199,18 @@ if(rowhint){
     openEntityCard(t.getAttribute('data-domain'),t.getAttribute('data-e'),t.getAttribute('data-c'),t.getAttribute('data-disp'));
   });
 }
-// The hero cue advances to the first tutorial beat — not past it. (If beat A
-// is somehow gone, fall back to committing straight to the index.)
-var beatProtocolEl=document.getElementById('beat-protocol');
-document.getElementById('cue').addEventListener('click',function(){
-  if(beatProtocolEl&&!committed){
-    beatProtocolEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-    return;
-  }
-  setView('cabinet',false);
-  commitPastHero();
-  updateViewbar();
-});
-// The tutorial's footer cues chain page to page: protocol -> overrated ->
-// index -> specimens -> convergence; either "skip tutorial" button commits
-// straight to the index from wherever it's clicked.
-var beatCue=document.getElementById('beatCue'),beatOverEl=document.getElementById('beat-over');
-if(beatCue)beatCue.addEventListener('click',function(){
-  if(beatOverEl)beatOverEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-});
-var beatCueO=document.getElementById('beatCueO'),beatIndexEl=document.getElementById('beat-index');
-if(beatCueO)beatCueO.addEventListener('click',function(){
-  if(beatIndexEl)beatIndexEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-});
-var beatCueI=document.getElementById('beatCueI'),beatModelsEl=document.getElementById('beat-models');
-if(beatCueI)beatCueI.addEventListener('click',function(){
-  if(beatModelsEl)beatModelsEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-});
-var beatCueM=document.getElementById('beatCueM'),beatConvergeEl=document.getElementById('beat-converge');
-if(beatCueM)beatCueM.addEventListener('click',function(){
-  if(beatConvergeEl)beatConvergeEl.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-});
-[].slice.call(document.querySelectorAll('.skiplink')).forEach(function(btn){
-  btn.addEventListener('click',function(){
-    setView('cabinet',false);
+// Both entry points are available immediately; keyboard focus follows the view.
+document.querySelectorAll('[data-enter-view]').forEach(function(button){
+  button.addEventListener('click',function(){
+    var id=button.getAttribute('data-enter-view');
+    setView(id,false);
     commitPastHero();
+    pinTop();
     updateViewbar();
+    var target=document.getElementById(id);
+    target.tabIndex=-1;
+    target.focus({preventScroll:true});
   });
-});
-// beat B's cue (the last tutorial page): one click retires the intro and lands at the index top
-var mcue=document.getElementById('mcue');
-if(mcue)mcue.addEventListener('click',function(){
-  try{if(window.va)window.va('event',{name:'tutorial_completed'})}catch(e){}
-  setView('cabinet',false);
-  commitPastHero();
-  updateViewbar();
 });
 setView('cabinet',false);
 addEventListener('scroll',updateViewbar,{passive:true});
@@ -2649,197 +2248,6 @@ updateViewbar();
   // rotation; the cycle's own guards stopped it when the intro was committed.
   window._heroCycle=cycle;
   cycle();
-})();
-
-/* ---- beat A: the favourite-probe sampling vignette (green chips), in the
-   site's fixed colour code. Rounds of four, new answers flashed, repeats
-   dimmer, ending in a quiet "nothing new — done". The rounds are the real
-   distribution (Kyoto dominates it; Lisbon and Prague are the divergents). ---- */
-(function(){
-  var chipsF=document.getElementById('bschips'),done=document.getElementById('bsdone');
-  if(!chipsF)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var favRounds=[
-    ['Kyoto','Kyoto','Lisbon','Kyoto'],
-    ['Kyoto','Kyoto','Kyoto','Prague'],
-    ['Kyoto','Lisbon','Kyoto','Kyoto']
-  ];
-  var timers=[];
-  function clearTimers(){timers.forEach(clearTimeout);timers=[]}
-  function schedule(fn,t){timers.push(setTimeout(function(){if(!committed)fn()},t))}
-  function reset(){chipsF.innerHTML='';done.classList.remove('show')}
-  function staticState(){
-    reset();
-    var sf={};
-    favRounds.forEach(function(r){r.forEach(function(c){addBsChip(chipsF,'bs-fav',sf,c)})});
-    done.classList.add('show');
-  }
-  function run(){
-    if(committed)return;
-    clearTimers();reset();
-    var sf={},t=0;
-    for(var k=0;k<favRounds.length;k++){
-      favRounds[k].forEach(function(c){
-        (function(c,t){schedule(function(){addBsChip(chipsF,'bs-fav',sf,c)},t)})(c,t);
-        t+=300;
-      });
-      t+=800; // pause between rounds
-    }
-    schedule(function(){done.classList.add('show')},t);
-    t+=2800;
-    schedule(run,t); // loop while the intro is up
-  }
-  if(reduce)staticState();else run();
-  // Exposed so returning home can restart the vignette for the next visit.
-  window._beatARestart=function(){clearTimers();if(reduce)staticState();else run()};
-})();
-
-/* ---- beat A2: the overrated-probe sampling vignette (red chips), the same
-   mechanics pointed the other way. The rounds are the real distribution
-   (Paris dominates it). ---- */
-(function(){
-  var chipsO=document.getElementById('bschipsO'),doneO=document.getElementById('bsdoneO');
-  if(!chipsO)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var overRounds=[
-    ['Paris','Paris','Los Angeles','Paris'],
-    ['Paris','Venice','Paris','Dubai'],
-    ['Paris','Paris','Venice','Paris']
-  ];
-  var timers=[];
-  function clearTimers(){timers.forEach(clearTimeout);timers=[]}
-  function schedule(fn,t){timers.push(setTimeout(function(){if(!committed)fn()},t))}
-  function reset(){chipsO.innerHTML='';doneO.classList.remove('show')}
-  function staticState(){
-    reset();
-    var so={};
-    overRounds.forEach(function(r){r.forEach(function(c){addBsChip(chipsO,'bs-over',so,c)})});
-    doneO.classList.add('show');
-  }
-  function run(){
-    if(committed)return;
-    clearTimers();reset();
-    var so={},t=0;
-    for(var k=0;k<overRounds.length;k++){
-      overRounds[k].forEach(function(c){
-        (function(c,t){schedule(function(){addBsChip(chipsO,'bs-over',so,c)},t)})(c,t);
-        t+=300;
-      });
-      t+=800; // pause between rounds
-    }
-    schedule(function(){doneO.classList.add('show')},t);
-    t+=2800;
-    schedule(run,t); // loop while the intro is up
-  }
-  if(reduce)staticState();else run();
-  // Exposed so returning home can restart the vignette for the next visit.
-  window._beatORestart=function(){clearTimers();if(reduce)staticState();else run()};
-})();
-
-/* ---- beat I: the index page's bars grow in with a small stagger the first
-   time it scrolls into view (same IntersectionObserver pattern as beat B's
-   rows); reduced motion shows them at full width. ---- */
-(function(){
-  var idxd=document.querySelector('.idxd');
-  if(!idxd)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var io=null;
-  function reveal(){idxd.classList.add('inview')}
-  function observe(){
-    if(reduce||!('IntersectionObserver' in window)){reveal();return}
-    io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
-    },{threshold:.3});
-    io.observe(idxd);
-  }
-  observe();
-  // Exposed so returning home resets the stagger, ready to replay on the next visit.
-  window._beatIReset=function(){
-    if(io)io.unobserve(idxd);
-    idxd.classList.remove('inview');
-    observe();
-  };
-})();
-
-/* ---- beat B: the aesthetic plate's tiles assemble with a small stagger the
-   first time the page scrolls into view; reduced motion shows it complete. ---- */
-(function(){
-  var aes=document.querySelector('.aes');
-  if(!aes)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var io=null;
-  function reveal(){aes.classList.add('inview')}
-  function observe(){
-    if(reduce||!('IntersectionObserver' in window)){reveal();return}
-    io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
-    },{threshold:.15});
-    io.observe(aes);
-  }
-  observe();
-  // Exposed so returning home resets the stagger, ready to replay on the next visit.
-  window._beatBReset=function(){
-    if(io)io.unobserve(aes);
-    aes.classList.remove('inview');
-    observe();
-  };
-})();
-
-/* ---- beat M: the specimen roster's rows fade in with a small stagger the
-   first time the page scrolls into view (same pattern as beat B's rows);
-   reduced motion shows them static. ---- */
-(function(){
-  var mro=document.querySelector('.mro');
-  if(!mro)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var io=null;
-  function reveal(){mro.classList.add('inview')}
-  function observe(){
-    if(reduce||!('IntersectionObserver' in window)){reveal();return}
-    io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){if(en.isIntersecting){reveal();io.unobserve(en.target)}});
-    },{threshold:.3});
-    io.observe(mro);
-  }
-  observe();
-  // Exposed so returning home resets the stagger, ready to replay on the next visit.
-  window._beatMReset=function(){
-    if(io)io.unobserve(mro);
-    mro.classList.remove('inview');
-    observe();
-  };
-})();
-
-/* ---- Method tab stepper: swipeable strip, edge arrows, position dots ---- */
-(function(){
-  var strip=document.getElementById('mstepStrip');
-  if(!strip)return;
-  var prev=document.getElementById('mstepPrev'),next=document.getElementById('mstepNext');
-  var dots=[].slice.call(document.querySelectorAll('#mstepDots button'));
-  var total=dots.length,raf=0;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function current(){return Math.min(total,Math.max(1,Math.round(strip.scrollLeft/Math.max(strip.clientWidth,1))+1))}
-  function update(){
-    var n=current();
-    dots.forEach(function(d){d.classList.toggle('on',+d.getAttribute('data-step')===n)});
-    if(prev)prev.hidden=(n<=1);
-    if(next)next.hidden=(n>=total);
-  }
-  function goTo(n){strip.scrollTo({left:(n-1)*strip.clientWidth,behavior:reduce?'auto':'smooth'})}
-  if(next)next.addEventListener('click',function(){goTo(current()+1)});
-  if(prev)prev.addEventListener('click',function(){goTo(current()-1)});
-  dots.forEach(function(d){d.addEventListener('click',function(){goTo(+d.getAttribute('data-step'))})});
-  strip.addEventListener('scroll',function(){
-    if(raf)return;
-    raf=requestAnimationFrame(function(){raf=0;update()});
-  },{passive:true});
-  addEventListener('resize',update);
-  update();
-  var canonLink=document.getElementById('mstepCanon');
-  if(canonLink)canonLink.addEventListener('click',function(){
-    setView('canon',true);
-    updateViewbar();
-  });
 })();
 
 setDomain(curDomain);
@@ -2953,27 +2361,28 @@ const BODY = `
 <main>
 <header class="mast" id="home">
   <h1>Machines <em>of Loving Taste</em></h1>
-  <div class="heroq">
-    <div class="qa" id="qa" aria-hidden="true">
-      <div class="qa-q" id="qaq"></div>
-      <div class="qa-a" id="qaa"></div>
-      <div class="qa-by" id="qaby"></div>
+  <div class="overview-grid">
+    <div class="overview-copy">
+      <p class="overview-kicker">A field study in machine taste</p>
+      <h2>What do AI models<br>call good taste?</h2>
+      <p class="overview-intro">We asked ${models.length} models from ${new Set(models.map((m) => m.family)).size} companies for their favorites — and what they think is overrated — across ${DOMAIN_IDS.length} fields, from novels to cities to smells.</p>
+      <p class="overview-note">Each question was asked repeatedly, in fresh conversations. Explore where their answers converge, where they differ, and the reasons they give.</p>
+      <div class="overview-actions">
+        <button class="explore-button" id="cue" type="button" data-enter-view="cabinet">Explore the Index <span aria-hidden="true">&rarr;</span></button>
+        <button class="text-link" type="button" data-enter-view="method">Read the methodology <span aria-hidden="true">&rarr;</span></button>
+      </div>
+    </div>
+    <div class="overview-sample" aria-hidden="true">
+      <p class="overview-kicker">From the study</p>
+      <div class="qa" id="qa">
+        <div class="qa-q" id="qaq"></div>
+        <div class="qa-a" id="qaa"></div>
+        <div class="qa-by" id="qaby"></div>
+      </div>
     </div>
   </div>
-  <button class="cue" id="cue" type="button" aria-label="Continue to the tutorial">
-    <span>begin</span><i></i>
-  </button>
+  <div class="overview-key"><p><span class="key-favorite">Green: more favorite mentions</span><span class="key-overrated">Red: more overrated mentions</span></p><p>Choose a field. Select an entry to read the models’ own words.</p></div>
 </header>
-
-${beatProtocol}
-
-${beatOverPage}
-
-${beatIndexPage}
-
-${beatModelsPage}
-
-${beatConvergePage}
 
 <section id="modelmap" class="view">
   <div class="shead"><h2>The model map</h2></div>
@@ -3016,10 +2425,9 @@ ${beatConvergePage}
 
 
 <section id="method" class="view">
-  <div class="shead"><h2>The method</h2></div>
-  <p class="gloss">${seasonLine} This is how those answers were gathered.</p>
-  ${methodSentence}
-  ${methodStepper()}
+  <div class="shead"><h2>Methodology</h2></div>
+  <p class="gloss">${seasonLine} How the answers become the Index.</p>
+  ${methodOverview}
   ${methodFine}
 </section>
 
