@@ -32,6 +32,14 @@ img{display:block;max-width:100%}
 main{position:relative;padding:0 clamp(22px,4vw,88px) 110px;max-width:1800px;margin:0 auto}
 .mast{min-height:100svh;padding:40px 0 28px;display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;gap:10px;
   scroll-snap-align:start;scroll-snap-stop:always}
+.mast .heroq{flex:1;display:flex;flex-direction:column;justify-content:center}
+.cue{align-self:center;display:flex;flex-direction:column;align-items:center;gap:12px;background:none;border:none;cursor:pointer;padding:6px}
+.cue span{font:10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
+.cue i{display:block;width:1px;height:44px;background:var(--dim);transform-origin:top;animation:cuepulse 2.6s ease-in-out infinite}
+.cue:hover span{color:var(--ink)}
+@keyframes cuepulse{0%,100%{transform:scaleY(.35);opacity:.4}50%{transform:scaleY(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){.cue i{animation:none;transform:none}}
+.cue:focus-visible{outline:1px dashed var(--ink);outline-offset:5px}
 .over{font:10.5px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--dim)}
 h1{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.3vw,26px);line-height:1.2;text-wrap:balance}
 h1 em{font-style:italic}
@@ -58,26 +66,25 @@ section.view .shead{border-top:none;padding-top:0}
 .shead .sno{font:10px var(--mono);letter-spacing:.26em;color:var(--faint);text-transform:uppercase}
 .gloss{color:var(--dim);max-width:46em;font-size:14px;margin-top:8px;text-wrap:pretty}
 
-/* One-screen overview, with actions before the optional sample on small screens. */
-.mast{gap:32px;padding:32px 0 24px;min-height:100svh}
-.overview-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center;gap:clamp(36px,6vw,100px);margin:auto 0;padding:28px 0}
-.overview-copy{max-width:640px}
-.overview-kicker{font-size:14px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase}
-.overview-copy h2{font:400 clamp(38px,4.4vw,66px)/1.06 var(--serif);letter-spacing:-.025em;margin:18px 0 24px}
-.overview-intro{font-size:clamp(18px,1.7vw,22px);line-height:1.5;max-width:32em;text-wrap:pretty}
-.overview-note{font-size:17px;line-height:1.55;color:var(--dim);margin-top:14px;max-width:34em}
-.overview-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:28px}
+/* One short overview between the original header and the Index. */
+.intro-overview{min-height:100svh;margin-top:0;padding:48px 0;display:flex;align-items:center;scroll-snap-align:start;scroll-snap-stop:always}
+.intro-overview:focus,section.view:focus{outline:none}
+.overview-content{width:100%;max-width:1020px;margin:auto}
+.overview-kicker{font-size:13px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+.intro-overview h2{font:400 clamp(30px,3.6vw,48px)/1.15 var(--serif);margin:14px 0 20px;text-wrap:balance}
+.overview-intro{font-size:clamp(17px,1.7vw,21px);line-height:1.5;max-width:38em;color:var(--dim);text-wrap:pretty}
+.overview-flow{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;padding:0;margin:36px 0 28px}
+.overview-flow li{position:relative;min-width:0;border-top:1px solid var(--hair);padding-top:16px}
+.overview-flow li:not(:last-child)::after{content:'→';position:absolute;top:-15px;right:-25px;color:var(--dim);font-size:20px}
+.flow-number{font-size:13px;color:var(--dim);letter-spacing:.14em}
+.overview-flow h3{font:400 25px var(--serif);margin:10px 0 8px}
+.overview-flow p{font-size:17px;color:var(--dim);line-height:1.5}
+.overview-note{font-size:17px;color:var(--dim);max-width:38em}
+.overview-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:26px}
 .explore-button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-height:48px;padding:12px 20px;border:1px solid var(--ink);border-radius:2px;background:var(--ink);color:var(--night);font:18px var(--serif);cursor:pointer}
 .explore-button:hover{background:white;border-color:white}
 .text-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 0;border:0;background:none;color:var(--ink);font:16px var(--serif);text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--dim);cursor:pointer}
 .explore-button:focus-visible,.text-link:focus-visible,.method-roster summary:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
-.overview-sample{border-left:1px solid var(--hair);padding-left:clamp(24px,4vw,60px);min-width:0}
-.overview-sample .qa{min-height:220px;gap:18px;justify-content:center;margin-top:18px}
-.overview-sample .qa-q{font-size:14px;letter-spacing:.08em}
-.overview-sample .qa-a{font-size:clamp(26px,3vw,42px);line-height:1.2;overflow-wrap:anywhere}
-.overview-sample .qa-by{font-size:14px;letter-spacing:.08em;color:var(--dim)}
-.overview-key{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;border-top:1px solid var(--hair);padding-top:18px;font-size:14px;color:var(--dim)}
-.overview-key p:first-child{display:flex;flex-wrap:wrap;gap:4px 24px}
 .key-favorite{color:rgb(110,209,145)}
 .key-overrated{color:rgb(232,104,98)}
 #method{max-width:1100px}
@@ -98,33 +105,72 @@ section.view .shead{border-top:none;padding-top:0}
 #method .mfine h4{font-size:13px;color:var(--dim)}
 #method .mfine p{font-size:16px;line-height:1.65}
 @media(max-width:760px){
-  .mast{gap:24px;padding-top:24px}
-  .overview-grid{grid-template-columns:1fr;gap:28px;padding:0}
-  .overview-copy h2{font-size:clamp(34px,7vw,48px);margin:14px 0 18px}
-  .overview-intro{font-size:18px}
-  .overview-note{font-size:16px;margin-top:12px}
-  .overview-actions{margin-top:22px;gap:8px 20px}
-  .overview-sample{border-left:0;border-top:1px solid var(--hair);padding:18px 0 0}
-  .overview-sample .qa{min-height:110px;margin-top:10px;gap:8px}
-  .overview-sample .qa-a{font-size:26px}
-  .overview-key{font-size:14px;padding-top:14px}
+  .intro-overview{padding:28px 0}
+  .intro-overview h2{font-size:30px;margin:10px 0 14px}
+  .overview-flow{grid-template-columns:1fr;gap:12px;margin:22px 0 18px}
+  .overview-flow li{display:flex;gap:18px;padding-top:12px}
+  .overview-flow li:not(:last-child)::after{display:none}
+  .flow-number{padding-top:4px}
+  .overview-flow h3{font-size:21px;margin:0 0 3px}
+  .overview-flow p{font-size:16px;line-height:1.4}
+  .overview-flow p br{display:none}
+  .overview-flow p br::after{content:' '}
+  .overview-actions{margin-top:20px;gap:6px 20px}
   .method-probes{display:grid;gap:8px;font-size:18px}
   .method-steps li{padding-left:34px}
 }
-@media(max-width:760px) and (max-height:850px){.overview-sample{display:none}}
-@media(max-height:650px) and (min-width:761px){.mast{gap:20px;padding-top:24px}.overview-grid{padding:0}.overview-copy h2{font-size:40px;margin:12px 0 16px}.overview-actions{margin-top:18px}}
-
 @media(max-height:500px) and (min-width:761px){
-  .mast{gap:12px;padding:16px 0}
-  .overview-grid{grid-template-columns:1fr;margin:0}
-  .overview-copy{max-width:900px}
-  .overview-copy h2{font-size:30px;margin:8px 0 10px}
-  .overview-copy h2 br{display:none}
-  .overview-intro{font-size:17px;max-width:none}
-  .overview-note{font-size:16px;max-width:none;margin-top:8px}
-  .overview-actions{margin-top:12px}
-  .overview-sample{display:none}
-  .overview-key{padding-top:10px}
+  .intro-overview{padding:24px 0}
+  .intro-overview h2{font-size:30px;margin:8px 0 12px}
+  .overview-flow{margin:20px 0 16px}
+  .overview-flow h3{font-size:21px;margin:4px 0}
+  .overview-actions{margin-top:16px}
+}
+
+/* Method diagrams use HTML labels so text stays readable at phone widths. */
+.method-figure{margin:22px 0;background:rgba(233,230,221,.025);border:1px solid var(--hair);padding:20px}
+.method-figure figcaption{display:block;border:0;padding:16px 0 0;font-size:14px;color:var(--dim);line-height:1.5}
+.figure-label{display:block;font-size:12px;letter-spacing:.08em;color:var(--dim);text-transform:uppercase}
+.question-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#method .question-pair p{font-size:20px;line-height:1.4;margin-top:12px}
+#method .question-pair .key-favorite{color:rgb(110,209,145)}
+#method .question-pair .key-overrated{color:rgb(232,104,98)}
+.sampling-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.sampling-flow>div{border-top:1px solid var(--hair);padding-top:10px}
+.sampling-flow strong{display:block;font:400 42px/1.2 var(--serif)}
+.sampling-flow span{font-size:14px;color:var(--dim)}
+#method .sampling-flow p{font-size:16px;margin-top:14px;line-height:1.4}
+.sampling-flow b{font-weight:400;color:var(--ink)}
+.sampling-flow small{display:block;margin-top:14px;font-size:14px;color:var(--dim)}
+.alias-flow{display:flex;align-items:center;gap:24px}
+.alias-flow>div{display:flex;flex:1;flex-direction:column;gap:8px;min-width:0}
+.alias-flow span:not(.figure-label):not(.diagram-arrow){font-size:18px}
+.alias-flow strong{font-size:21px;font-weight:400}
+.diagram-arrow{font-size:28px;color:var(--dim)}
+.score-row{display:grid;grid-template-columns:76px minmax(20px,1fr) 106px;gap:16px;align-items:center;margin-top:18px;font-size:16px}
+.score-row>span:last-child{text-align:right}
+.score-track{height:8px;background:var(--hair2)}
+.score-track i{display:block;height:100%}
+.score-result{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--hair);margin-top:20px;padding-top:16px;font-size:18px}
+.map-explainer{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center}
+.map-explainer svg{width:100%;height:auto;min-width:0}
+#method .map-explainer p{font-size:17px;margin-top:10px;line-height:1.6}
+.consensus-dots{display:flex;flex-wrap:wrap;gap:10px}
+.consensus-dots i{width:14px;height:14px;border-radius:50%;border:1px solid var(--dim)}
+.consensus-dots i.counted{border-color:rgb(110,209,145);background:rgb(110,209,145)}
+@media(max-width:600px){
+  .method-figure{padding:14px;margin-left:-34px}
+  .question-pair{grid-template-columns:1fr;gap:18px}
+  .question-pair>div+div{border-top:1px solid var(--hair);padding-top:18px}
+  .sampling-flow{gap:12px}
+  .sampling-flow strong{font-size:34px}
+  #method .sampling-flow p,.sampling-flow small{font-size:14px}
+  .alias-flow{gap:12px}
+  .alias-flow span:not(.figure-label):not(.diagram-arrow),.alias-flow strong{font-size:17px}
+  .score-row{grid-template-columns:64px minmax(20px,1fr) 88px;gap:8px;font-size:14px}
+  .score-result{font-size:16px}
+  .map-explainer{grid-template-columns:1fr;gap:12px}
+  .map-explainer svg{max-width:360px;justify-self:center}
 }
 
 /* model map */
@@ -600,28 +646,35 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
 <main>
 <header class="mast" id="home">
   <h1>Machines <em>of Loving Taste</em></h1>
-  <div class="overview-grid">
-    <div class="overview-copy">
-      <p class="overview-kicker">A field study in machine taste</p>
-      <h2>What do AI models<br>call good taste?</h2>
-      <p class="overview-intro">We asked 19 models from 7 companies for their favorites — and what they think is overrated — across 52 fields, from novels to cities to smells.</p>
-      <p class="overview-note">Each question was asked repeatedly, in fresh conversations. Explore where their answers converge, where they differ, and the reasons they give.</p>
-      <div class="overview-actions">
-        <button class="explore-button" id="cue" type="button" data-enter-view="cabinet">Explore the Index <span aria-hidden="true">&rarr;</span></button>
-        <button class="text-link" type="button" data-enter-view="method">Read the methodology <span aria-hidden="true">&rarr;</span></button>
-      </div>
-    </div>
-    <div class="overview-sample" aria-hidden="true">
-      <p class="overview-kicker">From the study</p>
-      <div class="qa" id="qa">
-        <div class="qa-q" id="qaq"></div>
-        <div class="qa-a" id="qaa"></div>
-        <div class="qa-by" id="qaby"></div>
-      </div>
+  <div class="heroq">
+    <div class="qa" id="qa" aria-hidden="true">
+      <div class="qa-q" id="qaq"></div>
+      <div class="qa-a" id="qaa"></div>
+      <div class="qa-by" id="qaby"></div>
     </div>
   </div>
-  <div class="overview-key"><p><span class="key-favorite">Green: more favorite mentions</span><span class="key-overrated">Red: more overrated mentions</span></p><p>Choose a field. Select an entry to read the models’ own words.</p></div>
+  <button class="cue" id="cue" type="button" aria-label="Continue to the overview">
+    <span>begin</span><i></i>
+  </button>
 </header>
+
+<section class="intro-overview" id="overview" aria-labelledby="overview-title" tabindex="-1">
+  <div class="overview-content">
+    <p class="overview-kicker">The study, at a glance</p>
+    <h2 id="overview-title">How the answers become an Index.</h2>
+    <p class="overview-intro">19 models from 7 companies. 52 fields, from novels to cities to smells. The same two questions, asked again and again.</p>
+    <ol class="overview-flow">
+      <li><span class="flow-number">01</span><div><h3>Ask</h3><p>A favorite?<br> Something overrated?</p></div></li>
+      <li><span class="flow-number">02</span><div><h3>Repeat</h3><p>4–12 fresh conversations<br> per question and model.</p></div></li>
+      <li><span class="flow-number">03</span><div><h3>Compare</h3><p>The picks form the Index.<br> The reasons form the map.</p></div></li>
+    </ol>
+    <p class="overview-note">See where the models agree, where they differ, and what they say about their choices.</p>
+    <div class="overview-actions">
+      <button class="explore-button" id="enterIndex" type="button" data-enter-view="cabinet">Enter the Index <span aria-hidden="true">&rarr;</span></button>
+      <button class="text-link" type="button" data-enter-view="method">Explore the methodology <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </div>
+</section>
 
 <section id="modelmap" class="view">
   <div class="shead"><h2>The model map</h2></div>
@@ -704,14 +757,63 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
   <p class="gloss">Ask a machine its favourite season and 18 of 19 say <em>autumn</em>. How the answers become the Index.</p>
   <div class="method-summary">
   <p>19 models. 52 fields. Two questions, asked separately.</p>
-  <div class="method-probes"><p>“What is your favorite ___?”</p><p>“Which widely beloved ___ is overrated?”</p></div>
+  <button class="text-link" type="button" data-enter-view="cabinet">Enter the Index &rarr;</button>
 </div>
 <ol class="method-steps">
-  <li><h3>Ask in a fresh conversation</h3><p>Each question starts a new, single-turn conversation, with the same preamble asking the model to set aside its usual disclaimer about having no preferences. No model sees its earlier answers. The fields range from novels and paintings to dishes, cities and smells.</p></li>
-  <li><h3>Repeat to see what holds</h3><p>Each model–field–question combination starts with four samples. If all four name the same pick, sampling stops. Otherwise it grows to eight; if those contain no more than two distinct picks, it stops there. More varied answers receive up to twelve samples. Some early pilot combinations retain ten samples.</p></li>
-  <li><h3>Extract the picks and reasons</h3><p>A reader model extracts the named choice and the words used to describe it. A separate pass merges names for the same thing, with aliases reviewed by hand. Quotations come from the original responses; they are not rewritten summaries.</p></li>
-  <li><h3>Build the Index</h3><p>Each cell compares how often a model named an entry as a favorite with how often it called it overrated. Green means more favorite mentions; red means more overrated mentions. Rows are ordered by the sum of these differences across models, so broad agreement carries more weight than a lone enthusiastic answer.</p><p>A favorite share of 75% means that pick appeared in three out of four favorite answers (or six out of eight, or nine out of twelve). It is an observed frequency, not a confidence score. A blank cell means the model did not name that entry in the available samples.</p></li>
-  <li><h3>Map the language; find the consensus</h3><p>The descriptive words are embedded and reduced to three principal components. Each model is placed at the usage-weighted center of its vocabulary: nearby models describe their choices in similar terms. Axis labels summarize the words at each extreme.</p><p>The consensus canon collects entries that are the most frequent favorite for a strict majority of the panel — currently 10 of 19 models.</p><button class="text-link" type="button" data-enter-view="canon">Explore the consensus canon &rarr;</button></li>
+  <li><h3>Ask in a fresh conversation</h3>
+    <p>Every ask begins with the same preamble: set aside the usual disclaimer about not having preferences, and answer anyway. No model sees its earlier answers.</p>
+    <figure class="method-figure">
+      <div class="question-pair"><div><span class="figure-label">A fresh conversation</span><p class="key-favorite">What is your favorite ___?</p></div><div><span class="figure-label">Another fresh conversation</span><p class="key-overrated">Which widely beloved ___ is overrated?</p></div></div>
+      <figcaption>Repeat both questions for every model and field. The two probes never share a conversation.</figcaption>
+    </figure>
+  </li>
+  <li><h3>Repeat to see what holds</h3>
+    <p>Answers can vary. Sampling grows in rounds, stopping early when the choices settle.</p>
+    <figure class="method-figure">
+      <div class="sampling-flow">
+        <div><strong>4</strong><span>answers</span><p>One distinct pick?<br><b>Stop.</b></p><small>Otherwise &rarr;</small></div>
+        <div><strong>8</strong><span>answers</span><p>At most two picks?<br><b>Stop.</b></p><small>Otherwise &rarr;</small></div>
+        <div><strong>12</strong><span>answers</span><p>Final round.<br><b>Stop.</b></p><small>Sampling cap</small></div>
+      </div>
+      <figcaption>Total samples per model, field and question — not additional samples at each step. Some early pilot combinations retain ten samples.</figcaption>
+    </figure>
+  </li>
+  <li><h3>Group the picks; keep the reasons</h3>
+    <p>A reader model extracts the named choice and its descriptive words. A separate pass merges names for the same thing, with aliases reviewed by hand. Quotations remain extracts from the original responses.</p>
+    <figure class="method-figure">
+      <div class="alias-flow"><div><span>La Sagrada Família</span><span>Sagrada Familia</span></div><span class="diagram-arrow" aria-hidden="true">&rarr;</span><div><span class="figure-label">One shared entry</span><strong>Sagrada Familia</strong></div></div>
+      <figcaption>Name variants are counted together. The original wording stays available in the quotations.</figcaption>
+    </figure>
+  </li>
+  <li><h3>Build the Index</h3>
+    <p>A cell compares how often a model named an entry as a favorite with how often it called it overrated. Green means more favorite mentions; red means more overrated mentions.</p>
+    <figure class="method-figure">
+      <div class="score-example"><span class="figure-label">Illustrative example · one entry, one model</span>
+        <div class="score-row"><span>Favorite</span><div class="score-track"><i style="width:75%;background:rgb(110,209,145)"></i></div><span>3 of 4 · 75%</span></div>
+        <div class="score-row"><span>Overrated</span><div class="score-track"><i style="width:25%;background:rgb(232,104,98)"></i></div><span>1 of 4 · 25%</span></div>
+        <div class="score-result"><span>75 − 25 = <b>+50</b></span><span class="key-favorite">More favorite mentions</span></div>
+      </div>
+      <figcaption>Add each model’s difference to rank the entry. Broad agreement counts more than one enthusiastic answer.</figcaption>
+    </figure>
+    <p>Percentages are observed frequencies, not confidence scores. A blank cell means the model did not name the entry in the available samples.</p>
+  </li>
+  <li><h3>Map the language; find the consensus</h3>
+    <p>The descriptive words are embedded and reduced to three principal components. Each model sits at the usage-weighted center of its vocabulary. Nearby models describe their choices in similar terms.</p>
+    <figure class="method-figure vocabulary-figure">
+      <div class="map-explainer"><div><span class="figure-label">The reasons</span><p>Descriptive words<br><span aria-hidden="true">↓</span><br>Vocabulary embeddings<br><span aria-hidden="true">↓</span><br>One position per model</p></div><svg viewBox="0 0 300 180" role="img" aria-label="The 19 models plotted using the first two vocabulary components; each dot is one model">
+    <path d="M15 160H285 M15 160V10" fill="none" stroke="var(--hair)"/>
+    <circle cx="163.02" cy="81.22" r="4" fill="var(--fam-a)" fill-opacity=".85"><title>Claude Fable 5.1</title></circle><circle cx="128.66" cy="85.37" r="4" fill="var(--fam-a)" fill-opacity=".85"><title>Claude Fable 5</title></circle><circle cx="190.16" cy="63.93" r="4" fill="var(--fam-a)" fill-opacity=".85"><title>Claude Opus 5</title></circle><circle cx="143.32" cy="42.92" r="4" fill="var(--fam-a)" fill-opacity=".85"><title>Claude Opus 4.8</title></circle><circle cx="146.61" cy="23.00" r="4" fill="var(--fam-a)" fill-opacity=".85"><title>Claude Opus 4.5</title></circle><circle cx="144.86" cy="103.54" r="4" fill="var(--fam-a)" fill-opacity=".85"><title>Claude Opus 4.1</title></circle><circle cx="109.84" cy="79.90" r="4" fill="var(--fam-o)" fill-opacity=".85"><title>GPT-6 Astra</title></circle><circle cx="155.36" cy="111.42" r="4" fill="var(--fam-o)" fill-opacity=".85"><title>GPT-5.6 Sol</title></circle><circle cx="124.28" cy="61.52" r="4" fill="var(--fam-o)" fill-opacity=".85"><title>GPT-5.2</title></circle><circle cx="129.97" cy="138.34" r="4" fill="var(--fam-o)" fill-opacity=".85"><title>o3</title></circle><circle cx="110.06" cy="133.30" r="4" fill="var(--fam-o)" fill-opacity=".85"><title>GPT-4o</title></circle><circle cx="143.98" cy="103.98" r="4" fill="var(--fam-g)" fill-opacity=".85"><title>Gemini 3.1 Pro</title></circle><circle cx="127.35" cy="121.70" r="4" fill="var(--fam-g)" fill-opacity=".85"><title>Gemini 3.5 Flash</title></circle><circle cx="149.45" cy="91.94" r="4" fill="var(--fam-x)" fill-opacity=".85"><title>Grok 4.6</title></circle><circle cx="125.82" cy="124.33" r="4" fill="var(--fam-x)" fill-opacity=".85"><title>Grok 4.5</title></circle><circle cx="170.68" cy="153.00" r="4" fill="var(--fam-d)" fill-opacity=".85"><title>DeepSeek V4 Pro</title></circle><circle cx="168.93" cy="111.64" r="4" fill="var(--fam-k)" fill-opacity=".85"><title>Kimi K3</title></circle><circle cx="150.77" cy="76.18" r="4" fill="var(--fam-k)" fill-opacity=".85"><title>Kimi K2.6</title></circle><circle cx="135.01" cy="80.56" r="4" fill="var(--fam-z)" fill-opacity=".85"><title>GLM-5.3</title></circle>
+  </svg></div>
+      <figcaption>The study’s actual model positions, shown on the first two vocabulary components. The interactive map adds the third.</figcaption>
+    </figure>
+    <button class="text-link" type="button" data-enter-view="modelmap">Explore the model map &rarr;</button>
+    <p>The consensus canon collects entries that are the most frequent favorite for a strict majority of the panel.</p>
+    <figure class="method-figure consensus-figure">
+      <div class="consensus-dots" aria-hidden="true"><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class="counted"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+      <figcaption><strong>10 of 19 models</strong> must share the same top favorite for an entry to join the canon. Dots illustrate the threshold, not a particular result.</figcaption>
+    </figure>
+    <button class="text-link" type="button" data-enter-view="canon">Explore the consensus canon &rarr;</button>
+  </li>
 </ol>
 <div class="method-limits"><h3>What this can tell us</h3><p>This is a snapshot of what models say when asked about taste, not evidence that they experience preferences. Results depend on the prompts, model versions and collection dates. Samples are small and adaptively sized; models from the same family are not independent votes. The map summarizes language, and agreement alone does not explain where that language or those choices came from.</p></div>
 <details class="method-roster"><summary>The 19 models in the study</summary><div class="mro" aria-label="Models grouped by lab">
@@ -801,6 +903,7 @@ body.nav-ready::before{content:'';position:fixed;z-index:8;left:0;right:0;top:0;
       <span>lightweight &middot; workhorse &middot; frontier</span>
     </div>
   </div></details>
+<div class="overview-actions"><button class="explore-button" type="button" data-enter-view="cabinet">Enter the Index <span aria-hidden="true">&rarr;</span></button></div>
   <div class="mfine">
   <div><h4>provenance</h4><p>Every question was asked with the same concession up front — “I know you are an AI and don&rsquo;t have preferences in the human sense — set that disclaimer aside and answer anyway” — and every sample was an independent, single-turn conversation: no model ever saw its own prior answers. Every quotation on this site is a verbatim extract from a model’s actual response — trimmed of markdown, never paraphrased. Responses were collected 13 July 2026 – 5 September 2026, at provider-default settings. Even conceded, the disclaimer reflex persists: 14% of answers still opened with a version of “As an AI…” — where quotes appear, that preamble is clipped and the answer kept whole.</p></div>
   <div><h4>distillation</h4><p>Extraction by Claude Haiku 4.5 (GPT-5.2 for the responses added in September 2026). Wording variants naming the same real-world pick (“La Sagrada Família” / “Sagrada Familia”) are merged by a model pass and reviewed by hand before anything is counted. The descriptive vocabulary is embedded (text-embedding-3-small), and the map’s axes are the first three principal components of that space, labelled by their most extreme words; each model sits at the usage-weighted centre of its own vocabulary. Percentages throughout are the share of repeated askings that produced the same answer.</p></div>
@@ -1129,16 +1232,17 @@ var familyRuns=(function(){var runs=[];D.models.forEach(function(m){var last=run
   addEventListener('resize',function(){resize();if(reduce)paint(18000)},{passive:true});
   document.addEventListener('visibilitychange',sync);
   // Pause the ambient canvas once the overview leaves the screen.
-  var hero=document.getElementById('home');
+  var hero=document.getElementById('home'),introOverview=document.getElementById('overview');
   if(hero&&'IntersectionObserver' in window){
     var vis={};
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){vis[en.target.id]=en.isIntersecting});
-      heroOn=!!vis.home;
+      heroOn=!!vis.home||!!vis.overview;
       canvas.classList.toggle('off',!heroOn);
       sync();
     },{threshold:0});
     io.observe(hero);
+    io.observe(introOverview);
   }
 })();
 
@@ -1641,6 +1745,7 @@ function openDossier(id,target){
 /* ---- views: the hero is a one-way gate into the index; the side drawer switches scenes ---- */
 var viewbar=document.querySelector('.viewbar');
 var mast=document.getElementById('home');
+var overview=document.getElementById('overview');
 var committed=false;
 // Entering the Index retires the overview and pins the active view to the top.
 // Retain momentum protection so a trackpad flick cannot skip the first rows.
@@ -1662,6 +1767,7 @@ function commitPastHero(){
   // it, and with one section left the snap gate has done its job anyway.
   document.documentElement.style.scrollSnapType='none';
   mast.style.display='none';
+  overview.style.display='none';
   pinTop();
   // The flick that committed usually still has trackpad momentum behind it;
   // with the intro collapsed and the page pinned, those residual ticks would
@@ -1695,7 +1801,7 @@ function commitPastHero(){
   setTimeout(function(){if(typeof showRowHint==='function')showRowHint()},1300);
 }
 // Bottom of the overview in document coordinates.
-function introEnd(){return mast.offsetTop+mast.offsetHeight}
+function introEnd(){return overview.offsetTop+overview.offsetHeight}
 function updateViewbar(){
   if(!viewbar)return;
   if(!committed&&!homing&&mast&&scrollY>=introEnd()-2)commitPastHero();
@@ -1741,6 +1847,7 @@ function goHome(){
   committed=false;
   homing=true;
   if(mast)mast.style.display='';
+  overview.style.display='';
   setView('cabinet',false);              // reset the view under the intro to default
   pinTop();                              // now that the hero is back in flow, land on it
   updateViewbar();                       // committed=false -> hides the nav bar
@@ -1811,7 +1918,12 @@ if(rowhint){
     openEntityCard(t.getAttribute('data-domain'),t.getAttribute('data-e'),t.getAttribute('data-c'),t.getAttribute('data-disp'));
   });
 }
-// Both entry points are available immediately; keyboard focus follows the view.
+// The original header's cue opens the one-page overview, never the Index.
+document.getElementById('cue').addEventListener('click',function(){
+  overview.focus({preventScroll:true});
+  overview.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+});
+// The overview offers the Index and an optional detailed Methodology view.
 document.querySelectorAll('[data-enter-view]').forEach(function(button){
   button.addEventListener('click',function(){
     var id=button.getAttribute('data-enter-view');
@@ -1847,14 +1959,16 @@ updateViewbar();
     q.textContent=pairs[0][0];a.textContent=pairs[0][1];
     qa.classList.add('show-q','show-a');return;
   }
+  var cycleTimers=[];
   function cycle(){
+    cycleTimers.forEach(clearTimeout);cycleTimers=[];
     if(committed)return; // hero retired for the session — stop animating behind the scenes
     var pr=pairs[i%pairs.length];i++;
     q.textContent=pr[0];a.textContent=pr[1];
     qa.classList.add('show-q');
-    setTimeout(function(){if(!committed)qa.classList.add('show-a')},1500);
-    setTimeout(function(){if(!committed)qa.classList.remove('show-q','show-a')},5900);
-    setTimeout(function(){if(!committed)cycle()},7000);
+    cycleTimers.push(setTimeout(function(){if(!committed)qa.classList.add('show-a')},1500));
+    cycleTimers.push(setTimeout(function(){if(!committed)qa.classList.remove('show-q','show-a')},5900));
+    cycleTimers.push(setTimeout(function(){if(!committed)cycle()},7000));
   }
   // Exposed so returning home (which un-retires the hero) can resume the
   // rotation; the cycle's own guards stopped it when the intro was committed.
